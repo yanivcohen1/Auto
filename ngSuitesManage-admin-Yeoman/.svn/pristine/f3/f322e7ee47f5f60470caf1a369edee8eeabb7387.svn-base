@@ -1,0 +1,34 @@
+app.controller('FileLoadCtrl', function ($scope, $log, $window, ManualFactory) {
+	var manualTests = {};
+    $scope.options = [];
+	$scope.content = "";
+	$scope.selected;
+	
+    $scope.showContent = function($fileContent){
+        $scope.content = $fileContent;
+    };
+    
+    getmanualTests();
+    
+    function getmanualTests() {
+    	ManualFactory.get(function(allmanualTests) {
+        	   // success
+    		manualTests = allmanualTests;
+            $scope.options = allmanualTests.testsName;
+            //$log.info('manualTests: ' + manualTests);
+            //$log.info('manualTests.testsName: ' + $scope.options);
+        	});
+    };
+    
+    $scope.runTest = function(content){
+    	var manualFactory = new ManualFactory();
+    	manualFactory.testName = $scope.selected;
+    	manualFactory.testContent = $scope.content;
+    	manualFactory.$save(function() {
+    			$window.open('http://172.21.54.222:8080/view/BAU/job/BAU_Manual/', '_blank');
+    		}
+    	);
+    	
+    };
+    
+});

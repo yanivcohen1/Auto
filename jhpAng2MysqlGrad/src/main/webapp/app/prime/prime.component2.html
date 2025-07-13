@@ -1,0 +1,61 @@
+<p>
+  prime works!
+  <p-growl [value]="msgs"></p-growl>
+  <button pButton type="button" (click)="onclick()" label="Click"></button>
+  <p-calendar [(ngModel)]="value"></p-calendar>
+  <p></p>
+  <h3>DragDrop</h3>
+  <input [ngModel]="search" (ngModelChange)="modelChange($event)" type="text"></input>
+  <div class="ui-g ui-fluid">
+      <div class="ui-g-12 ui-md-3">
+          <h4>Files</h4>
+          <p-tree [value]="TreeSource" draggableNodes="true" droppableNodes="true" dragdropScope="files" 
+            selectionMode="single" [(selection)]="selectedFile" (onNodeSelect)="nodeSelect($event)" 
+            (onNodeExpand)="nodeExpand($event)">      
+            <!-- <div *ngIf="isDivVisible(node)"> -->
+                <ng-template let-node  pTemplate="default" >
+                        <label disabled="true" style="width:70%" >
+                                {{node.label}}
+                        </label> 
+                        <!-- <button pButton type="button" (click)="addNode(node.label)" icon="fa-plus" style="width:10%">
+                        </button> -->
+                </ng-template>
+            <!-- </div> -->
+
+          </p-tree>
+      </div>
+      
+      <div class="ui-g-12 ui-md-1" style="text-align:center">
+          <i class="fa fa-exchange" style="font-size:36px;margin-top: 28px;"></i>
+      </div>
+      
+      <div class="ui-g-12 ui-md-3">
+          <h4>Server 1</h4>
+          <p-tree [value]="TreeDestanation" draggableNodes="true" droppableNodes="true" dragdropScope="files" 
+          selectionMode="single" [(selection)]="selectedFile" (onNodeDrop)="nodeDrop($event)" (onNodeSelect)="nodeDestSelect($event)">
+        
+          <ng-template let-node  pTemplate="default" >
+                <label disabled="true" >
+                        {{node.label}}
+                </label> 
+                <button pButton type="button" (click)="removeNode(node.label)" icon="fa-close" class="ui-button-danger" style="width:10%">
+                </button>
+        </ng-template>
+
+        </p-tree>
+      </div>
+      
+<!--       <div class="ui-g-12 ui-md-1" style="text-align:center">
+          <i class="fa fa-exchange" style="font-size:36px;margin-top: 28px;"></i>
+      </div>
+      
+      <div class="ui-g-12 ui-md-3">
+          <h4>Server 2</h4>
+          <p-tree [value]="filesTree9" draggableNodes="true" droppableNodes="true" dragdropScope="other"></p-tree>
+      </div> -->
+      
+      <div class="ui-g-12 ui-md-1">
+          
+      </div>
+  </div>
+</p>

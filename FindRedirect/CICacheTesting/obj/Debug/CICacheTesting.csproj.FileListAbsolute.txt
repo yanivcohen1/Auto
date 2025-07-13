@@ -1,0 +1,8 @@
+C:\SVN\FindRedirect\CICacheTesting\bin\Debug\CICacheTesting.dll.config
+C:\SVN\FindRedirect\CICacheTesting\bin\Debug\CICacheTesting.dll
+C:\SVN\FindRedirect\CICacheTesting\bin\Debug\CICacheTesting.pdb
+C:\SVN\FindRedirect\CICacheTesting\bin\Debug\Microsoft.VisualStudio.QualityTools.CodedUITestFramework.dll
+C:\SVN\FindRedirect\CICacheTesting\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Framework.dll
+C:\SVN\FindRedirect\CICacheTesting\obj\Debug\ResolveAssemblyReference.cache
+C:\SVN\FindRedirect\CICacheTesting\obj\Debug\CICacheTesting.dll
+C:\SVN\FindRedirect\CICacheTesting\obj\Debug\CICacheTesting.pdb

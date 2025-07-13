@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BRAND_DBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="BRAND_DB_Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BRAND" EntityType="BRAND_DBModel.BRAND" />
+    <EntitySet Name="BRAND_LANGUAGE" EntityType="BRAND_DBModel.BRAND_LANGUAGE" />
+    <EntitySet Name="CURRENCY" EntityType="BRAND_DBModel.CURRENCY" />
+    <EntitySet Name="LANGUAGE" EntityType="BRAND_DBModel.LANGUAGE" />
+    <EntitySet Name="LANGUAGE_CURRENCY" EntityType="BRAND_DBModel.LANGUAGE_CURRENCY" />
+    <EntitySet Name="NOTIFICATION" EntityType="BRAND_DBModel.NOTIFICATION" />
+    <EntitySet Name="sysdiagrams" EntityType="BRAND_DBModel.sysdiagrams" />
+    <EntitySet Name="USER" EntityType="BRAND_DBModel.USER" />
+    <AssociationSet Name="FK_BRAND_LANGUAGE_BRAND" Association="BRAND_DBModel.FK_BRAND_LANGUAGE_BRAND">
+      <End Role="BRAND" EntitySet="BRAND" />
+      <End Role="BRAND_LANGUAGE" EntitySet="BRAND_LANGUAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BRAND_LANGUAGE_LANGUAGE_CURRENCY" Association="BRAND_DBModel.FK_BRAND_LANGUAGE_LANGUAGE_CURRENCY">
+      <End Role="LANGUAGE_CURRENCY" EntitySet="LANGUAGE_CURRENCY" />
+      <End Role="BRAND_LANGUAGE" EntitySet="BRAND_LANGUAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NOTIFICATION_BRAND_LANGUAGE" Association="BRAND_DBModel.FK_NOTIFICATION_BRAND_LANGUAGE">
+      <End Role="BRAND_LANGUAGE" EntitySet="BRAND_LANGUAGE" />
+      <End Role="NOTIFICATION" EntitySet="NOTIFICATION" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LANGUAGE_CURRENCY_CURRENCY" Association="BRAND_DBModel.FK_LANGUAGE_CURRENCY_CURRENCY">
+      <End Role="CURRENCY" EntitySet="CURRENCY" />
+      <End Role="LANGUAGE_CURRENCY" EntitySet="LANGUAGE_CURRENCY" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LANGUAGE_CURRENCY_LANGUAGE" Association="BRAND_DBModel.FK_LANGUAGE_CURRENCY_LANGUAGE">
+      <End Role="LANGUAGE" EntitySet="LANGUAGE" />
+      <End Role="LANGUAGE_CURRENCY" EntitySet="LANGUAGE_CURRENCY" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NOTIFICATION_USER" Association="BRAND_DBModel.FK_NOTIFICATION_USER">
+      <End Role="USER" EntitySet="USER" />
+      <End Role="NOTIFICATION" EntitySet="NOTIFICATION" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="BRAND">
+    <Key>
+      <PropertyRef Name="Brand_ID" />
+    </Key>
+    <Property Name="Brand_ID" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+    <Property Name="Brand_Name" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Brand_Symbol" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="BRAND_LANGUAGE" Relationship="BRAND_DBModel.FK_BRAND_LANGUAGE_BRAND" FromRole="BRAND" ToRole="BRAND_LANGUAGE" />
+    <Property Type="String" Name="Brand_Main_URL" MaxLength="60" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="BRAND_LANGUAGE">
+    <Key>
+      <PropertyRef Name="Brand_Language_ID" />
+    </Key>
+    <Property Name="Brand_Language_ID" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+    <Property Name="Brand_ID" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="Language_Currency_ID" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="Brand_Language_URL_Template" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Brand_Language_Priority" Type="Int32" />
+    <NavigationProperty Name="BRAND" Relationship="BRAND_DBModel.FK_BRAND_LANGUAGE_BRAND" FromRole="BRAND_LANGUAGE" ToRole="BRAND" />
+    <NavigationProperty Name="LANGUAGE_CURRENCY" Relationship="BRAND_DBModel.FK_BRAND_LANGUAGE_LANGUAGE_CURRENCY" FromRole="BRAND_LANGUAGE" ToRole="LANGUAGE_CURRENCY" />
+    <NavigationProperty Name="NOTIFICATION" Relationship="BRAND_DBModel.FK_NOTIFICATION_BRAND_LANGUAGE" FromRole="BRAND_LANGUAGE" ToRole="NOTIFICATION" />
+  </EntityType>
+  <EntityType Name="CURRENCY">
+    <Key>
+      <PropertyRef Name="Currency_ID" />
+    </Key>
+    <Property Name="Currency_ID" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+    <Property Name="Currency_Symbol" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Currency_Code" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="LANGUAGE_CURRENCY" Relationship="BRAND_DBModel.FK_LANGUAGE_CURRENCY_CURRENCY" FromRole="CURRENCY" ToRole="LANGUAGE_CURRENCY" />
+  </EntityType>
+  <EntityType Name="LANGUAGE">
+    <Key>
+      <PropertyRef Name="Language_ID" />
+    </Key>
+    <Property Name="Language_ID" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+    <Property Name="Language_Symbol" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Language_Name" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Language_Browser_Accept_Langauge" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="LANGUAGE_CURRENCY" Relationship="BRAND_DBModel.FK_LANGUAGE_CURRENCY_LANGUAGE" FromRole="LANGUAGE" ToRole="LANGUAGE_CURRENCY" />
+  </EntityType>
+  <EntityType Name="LANGUAGE_CURRENCY">
+    <Key>
+      <PropertyRef Name="Language_Currency_ID" />
+    </Key>
+    <Property Name="Language_Currency_ID" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+    <Property Name="Currency_ID" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="Language_ID" Type="Decimal" Precision="20" Scale="0" />
+    <NavigationProperty Name="BRAND_LANGUAGE" Relationship="BRAND_DBModel.FK_BRAND_LANGUAGE_LANGUAGE_CURRENCY" FromRole="LANGUAGE_CURRENCY" ToRole="BRAND_LANGUAGE" />
+    <NavigationProperty Name="CURRENCY" Relationship="BRAND_DBModel.FK_LANGUAGE_CURRENCY_CURRENCY" FromRole="LANGUAGE_CURRENCY" ToRole="CURRENCY" />
+    <NavigationProperty Name="LANGUAGE" Relationship="BRAND_DBModel.FK_LANGUAGE_CURRENCY_LANGUAGE" FromRole="LANGUAGE_CURRENCY" ToRole="LANGUAGE" />
+  </EntityType>
+  <EntityType Name="NOTIFICATION">
+    <Key>
+      <PropertyRef Name="Notification_ID" />
+    </Key>
+    <Property Name="Notification_ID" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+    <Property Name="Brand_Language_ID" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="User_ID" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="Notification_Send_SMS" Type="Boolean" />
+    <Property Name="Notification_Send_Mail" Type="Boolean" />
+    <NavigationProperty Name="BRAND_LANGUAGE" Relationship="BRAND_DBModel.FK_NOTIFICATION_BRAND_LANGUAGE" FromRole="NOTIFICATION" ToRole="BRAND_LANGUAGE" />
+    <NavigationProperty Name="USER" Relationship="BRAND_DBModel.FK_NOTIFICATION_USER" FromRole="NOTIFICATION" ToRole="USER" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="USER">
+    <Key>
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="User_ID" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+    <Property Name="User_First_Name" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="User_Last_Name" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="User_Email_Address" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="User_Mobile_Address" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="NOTIFICATION" Relationship="BRAND_DBModel.FK_NOTIFICATION_USER" FromRole="USER" ToRole="NOTIFICATION" />
+  </EntityType>
+  <Association Name="FK_BRAND_LANGUAGE_BRAND">
+    <End Role="BRAND" Type="BRAND_DBModel.BRAND" Multiplicity="0..1" />
+    <End Role="BRAND_LANGUAGE" Type="BRAND_DBModel.BRAND_LANGUAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BRAND">
+        <PropertyRef Name="Brand_ID" />
+      </Principal>
+      <Dependent Role="BRAND_LANGUAGE">
+        <PropertyRef Name="Brand_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BRAND_LANGUAGE_LANGUAGE_CURRENCY">
+    <End Role="LANGUAGE_CURRENCY" Type="BRAND_DBModel.LANGUAGE_CURRENCY" Multiplicity="0..1" />
+    <End Role="BRAND_LANGUAGE" Type="BRAND_DBModel.BRAND_LANGUAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LANGUAGE_CURRENCY">
+        <PropertyRef Name="Language_Currency_ID" />
+      </Principal>
+      <Dependent Role="BRAND_LANGUAGE">
+        <PropertyRef Name="Language_Currency_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NOTIFICATION_BRAND_LANGUAGE">
+    <End Role="BRAND_LANGUAGE" Type="BRAND_DBModel.BRAND_LANGUAGE" Multiplicity="0..1" />
+    <End Role="NOTIFICATION" Type="BRAND_DBModel.NOTIFICATION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BRAND_LANGUAGE">
+        <PropertyRef Name="Brand_Language_ID" />
+      </Principal>
+      <Dependent Role="NOTIFICATION">
+        <PropertyRef Name="Brand_Language_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LANGUAGE_CURRENCY_CURRENCY">
+    <End Role="CURRENCY" Type="BRAND_DBModel.CURRENCY" Multiplicity="0..1" />
+    <End Role="LANGUAGE_CURRENCY" Type="BRAND_DBModel.LANGUAGE_CURRENCY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CURRENCY">
+        <PropertyRef Name="Currency_ID" />
+      </Principal>
+      <Dependent Role="LANGUAGE_CURRENCY">
+        <PropertyRef Name="Currency_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LANGUAGE_CURRENCY_LANGUAGE">
+    <End Role="LANGUAGE" Type="BRAND_DBModel.LANGUAGE" Multiplicity="0..1" />
+    <End Role="LANGUAGE_CURRENCY" Type="BRAND_DBModel.LANGUAGE_CURRENCY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LANGUAGE">
+        <PropertyRef Name="Language_ID" />
+      </Principal>
+      <Dependent Role="LANGUAGE_CURRENCY">
+        <PropertyRef Name="Language_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NOTIFICATION_USER">
+    <End Role="USER" Type="BRAND_DBModel.USER" Multiplicity="0..1" />
+    <End Role="NOTIFICATION" Type="BRAND_DBModel.NOTIFICATION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USER">
+        <PropertyRef Name="User_ID" />
+      </Principal>
+      <Dependent Role="NOTIFICATION">
+        <PropertyRef Name="User_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

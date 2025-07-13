@@ -1,0 +1,76 @@
+
+
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="myTestsLabel" jhiTranslate="gatwayApp.tests.home.createOrEditLabel">Create or edit a Tests</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!tests.id">
+            <label for="id" jhiTranslate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="tests.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="gatwayApp.tests.test_name" for="field_test_name">Test Name</label>
+            <input type="text" class="form-control" name="test_name" id="field_test_name"
+                [(ngModel)]="tests.test_name"
+            required />
+            <div [hidden]="!(editForm.controls.test_name?.dirty && editForm.controls.test_name?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.test_name?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="gatwayApp.tests.class_name" for="field_class_name">Class Name</label>
+            <input type="text" class="form-control" name="class_name" id="field_class_name"
+                [(ngModel)]="tests.class_name"
+             />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="gatwayApp.tests.method_name" for="field_method_name">Method Name</label>
+            <input type="text" class="form-control" name="method_name" id="field_method_name"
+                [(ngModel)]="tests.method_name"
+             />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="gatwayApp.tests.parameter_name" for="field_parameter_name">Parameter Name</label>
+            <input type="text" class="form-control" name="parameter_name" id="field_parameter_name"
+                [(ngModel)]="tests.parameter_name"
+             />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="gatwayApp.tests.parameter_value" for="field_parameter_value">Parameter Value</label>
+            <input type="text" class="form-control" name="parameter_value" id="field_parameter_value"
+                [(ngModel)]="tests.parameter_value"
+             />
+        </div>
+
+        <div class="form-group">
+            <label jhiTranslate="gatwayApp.tests.suite" for="field_suite">Suite</label>
+            <select class="form-control" id="field_suite" name="suite" [(ngModel)]="tests.suite"  required>
+                <option [ngValue]="null"></option>
+                <option [ngValue]="suiteOption.id === tests.suite?.id ? tests.suite : suiteOption" *ngFor="let suiteOption of suites; trackBy: trackSuiteById">{{suiteOption.suite_name}}</option>
+            </select>
+        </div>
+        <div [hidden]="!(editForm.controls.suite?.dirty && editForm.controls.suite?.invalid)">
+            <small class="form-text text-danger"
+                [hidden]="!editForm.controls.suite?.errors?.required" jhiTranslate="entity.validation.required">
+                This field is required.
+            </small>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

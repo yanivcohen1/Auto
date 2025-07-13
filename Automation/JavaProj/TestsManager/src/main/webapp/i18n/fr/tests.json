@@ -1,0 +1,24 @@
+{
+    "testmanagerApp": {
+        "tests" : {
+            "home": {
+                "title": "Testss",
+                "createLabel": "Créer un nouveau Tests",
+                "createOrEditLabel": "Créer ou éditer un Tests"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Tests {{ id }} ?"
+            },
+            "detail": {
+                "title": "Tests"
+            },
+            "test_name": "Test_name",
+            "class_name": "Class_name",
+            "method_name": "method_name",
+            "parameter_name": "Parameter_name",
+            "parameter_value": "Parameter_value",
+            "suite": "suite"
+        }
+    }
+}
+

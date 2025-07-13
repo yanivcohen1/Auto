@@ -1,0 +1,1146 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>com.who.tests.clients</name>
+    </assembly>
+    <members>
+        <member name="M:com.who.tests.clients.CashierPage.ClickOnCashier">
+            <summary>
+            Click On Cashier
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.CashierPage.EnterDetails">
+            <summary>
+            Enter Cashier form Details
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.CashierPage.EnterDetailsChrome">
+            <summary>
+            Enter Cashier form Details
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.CashierPage.CloseBonusPopup">
+            <summary>
+            Popup Your deposit has been approved and will be charged as WH ONLINE. Thank you and good luck!
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.CashierPage.CloseApprovePopup">
+            <summary>
+            Popup Your deposit has been approved and will be charged as WH ONLINE. Thank you and good luck!
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.CashierPage.CloseSuccessRegisterPopup">
+            <summary>
+            successfully registered message
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.CashierPage.CloseSuccessRegisterPopupChrome">
+            <summary>
+            successfully registered message
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.CongratulationsPage">
+            <summary>
+            The Congratulations Page
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.CongratulationsPage.LoginClick">
+            <summary>
+            Click On Login
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:com.who.tests.clients.CongratulationsEuroPage">
+            <summary>
+            The Congratulations Page
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.CongratulationsEuroPage.LoginClick">
+            <summary>
+            Click On Login
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:com.who.tests.clients.RegistrationChromePage">
+            <summary>
+            the RegistrationChrome Page
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.RegistrationChromePage.#ctor">
+            <summary>
+            Init the C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Clients\Clients\RgistrationPage.cs Page
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.RegistrationChromePage.Init">
+            <summary>
+            Init the RegistrationChrome Page
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.RegistrationChromePage.RegisterDataFill">
+            <summary>
+            Fill the Registeration Data
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.who.tests.clients.RegistrationChromePage.RegisterDataFillNextPage">
+            <summary>
+            Next page Fill the Registeration Data
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.who.tests.clients.RegistrationChromePage.RegisterDataFillLastPage">
+            <summary>
+            Next page Fill the Registeration Data
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:com.who.tests.clients.RegistrationWhccPage">
+            <summary>
+            the Registration Page
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.RegistrationWhccPage.RegisterDataFill(System.String)">
+            <summary>
+            Fill the Registeration Data
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.who.tests.clients.RegistrationWhccPage.RegisterDataFillNew(System.String)">
+            <summary>
+            Fill the Registeration Data
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.who.tests.clients.RegistrationWhccPage.RegisterDataFillChrome(System.String)">
+            <summary>
+            Fill the Registeration Data
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:com.who.tests.clients.Registration21novaPage">
+            <summary>
+            the Registration Page
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.Registration21novaPage.RegisterDataFill(System.String)">
+            <summary>
+            Fill the Registeration Data
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.who.tests.clients.Registration21novaPage.RegisterDataFillNew(System.String)">
+            <summary>
+            Fill the Registeration Data
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:com.who.tests.clients.DepositPage">
+            <summary>
+            The Deposit Page
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.DepositPage.Deposit">
+            <summary>
+            Deposit 50 URO
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.who.tests.clients.DepositPage.DepositChrome">
+            <summary>
+            Deposit 50 URO
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.who.tests.clients.DepositPage.CloseApprovePopup">
+            <summary>
+            Popup Your deposit has been approved and will be charged as WH ONLINE. Thank you and good luck!
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.DepositPage.CloseBonusPopup">
+            <summary>
+            Popup Your deposit has been approved and will be charged as WH ONLINE. Thank you and good luck!
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.DepositPage.ReadCurrentBalance">
+            <summary>
+            Read Current Balance
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.DepositPage.ReadCurrentBalanceChrome">
+            <summary>
+            Read Current Balance chrome
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.DownloadPage">
+            <summary>
+            Download Page
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.DownloadPage.#ctor(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            constractor for Download Page
+            </summary>
+            <param name="_driver"></param>
+        </member>
+        <member name="M:com.who.tests.clients.DownloadPage.RunDownload">
+            <summary>
+            Run or retry the Download file
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:com.who.tests.clients.FinishPage">
+            <summary>
+            The Finish Page
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.FinishPage.DoneClick">
+            <summary>
+            Click on Done
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:com.who.tests.clients.GameModePage">
+            <summary>
+            The Game Mode Page
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.GameModePage.RealModeClick">
+            <summary>
+            Real Mode Click
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:com.who.tests.clients.JoinNowPage">
+            <summary>
+            The Join Now Page
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.JoinNowPage.clickNextPage">
+            <summary>
+            click on Join Now
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.who.tests.clients.JoinNowPage.clickNextPageChrome">
+            <summary>
+            click on Join Now
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:com.who.tests.clients.LanguagePage">
+            <summary>
+            the Language Page
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.LanguagePage.#ctor(AutomationLib.WebSelenium)">
+            <summary>
+            constractor for Language Page
+            </summary>
+            <param name="MainWindow"></param>
+            <param name="_driver"></param>
+        </member>
+        <member name="M:com.who.tests.clients.LanguagePage.clickNextPage">
+            <summary>
+            click the Next Page
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.who.tests.clients.LanguagePage.clickNextPageNew">
+            <summary>
+            click the Next Page new install
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.who.tests.clients.LanguagePage.clickOldRegister">
+            <summary>
+            click the Next Page new install
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.who.tests.clients.LanguagePage.clickOldRegister2">
+            <summary>
+            click the Next Page new install
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.who.tests.clients.LanguagePage.clickNextPage21nova">
+            <summary>
+            click the Next Page new install
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:com.who.tests.clients.LicensePage">
+            <summary>
+            the License Page
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.LicensePage.clickNextPage">
+            <summary>
+            click the Agree and Next Page
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.who.tests.clients.LicensePage.clickNextPageNew">
+            <summary>
+            click the Agree and Next Page
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:com.who.tests.clients.PopupMsgPage">
+            <summary>
+            The Popup Msgessage Page
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.PopupMsgPage.clickCloseMsg">
+            <summary>
+            Click on close MSG
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.who.tests.clients.PopupMsgPage.clickCloseMsg2">
+            <summary>
+            Click on close MSG
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.who.tests.clients.PopupMsgPage.clickCloseMsgEuro">
+            <summary>
+            Click on close MSG
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:com.who.tests.clients.RegistrationEuroPage">
+            <summary>
+            the Registration Page
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.RegistrationEuroPage.RegisterDataFill(System.String)">
+            <summary>
+            Fill the Registeration Data
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.who.tests.clients.RegistrationEuroPage.RegisterDataFill_PT(System.String)">
+            <summary>
+            Fill the Registeration Data
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.who.tests.clients.RegistrationEuroPage.RegisterDataFillNew(System.String)">
+            <summary>
+            Fill the Registeration Data
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:com.who.tests.clients.WilliamhillNewDe">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:com.who.tests.clients.WilliamhillNewDe._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.WilliamhillNewDe.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.WilliamhillNewDe.WilliamhillDeClientTestDebug">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.WilliamhillNewDe.WilliamhillDeNewClient">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.WilliamhillNewDe.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:com.who.tests.clients.WilliamhillNewDe.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.WilliamhillNewEn">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:com.who.tests.clients.WilliamhillNewEn._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.WilliamhillNewEn.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.WilliamhillNewEn.WilliamhillEnClientTestDebug">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.WilliamhillNewEn.WilliamhillEnNewClient">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.WilliamhillNewEn.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:com.who.tests.clients.WilliamhillNewEn.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.Nova21DeNew">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:com.who.tests.clients.Nova21DeNew._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.Nova21DeNew.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.Nova21DeNew.Nova21EnClientTestDebug">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.Nova21DeNew.Nova21DeNewClient">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.Nova21DeNew.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:com.who.tests.clients.Nova21DeNew.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.Nova21EnNew">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:com.who.tests.clients.Nova21EnNew._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.Nova21EnNew.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.Nova21EnNew.Nova21EnClientTestDebug">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.Nova21EnNew.Nova21EnNewClient">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.Nova21EnNew.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:com.who.tests.clients.Nova21EnNew.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.EurograndDeNew">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:com.who.tests.clients.EurograndDeNew._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.EurograndDeNew.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.EurograndDeNew.EurograndDeClientTestDebug">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.EurograndDeNew.EurograndDeNewClient">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.EurograndDeNew.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:com.who.tests.clients.EurograndDeNew.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.EurograndEnNew">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:com.who.tests.clients.EurograndEnNew._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.EurograndEnNew.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.EurograndEnNew.EurograndEnClientTestDebug">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.EurograndEnNew.EurograndEnNewClient">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.EurograndEnNew.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:com.who.tests.clients.EurograndEnNew.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.EurograndEnParam">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:com.who.tests.clients.EurograndEnParam._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.EurograndEnParam.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.EurograndEnParam.EurograndEnClientTestDebug(System.String)">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.EurograndEnParam.EurograndEnClient(System.String)">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.EurograndEnParam.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:com.who.tests.clients.EurograndEnParam.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.WilliamhillEnParam">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:com.who.tests.clients.WilliamhillEnParam._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.WilliamhillEnParam.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.WilliamhillEnParam.WilliamhillEnClientTestDebug(System.String)">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.WilliamhillEnParam.WilliamhillEnClient(System.String)">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.WilliamhillEnParam.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:com.who.tests.clients.WilliamhillEnParam.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.EurograndDe">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:com.who.tests.clients.EurograndDe._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.EurograndDe.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.EurograndDe.EurograndDeClientTestDebug">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.EurograndDe.EurograndDeClient">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.EurograndDe.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:com.who.tests.clients.EurograndDe.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.EurograndEn">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:com.who.tests.clients.EurograndEn._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.EurograndEn.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.EurograndEn.EurograndEnClientTestDebug">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.EurograndEn.EurograndEnClient">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.EurograndEn.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:com.who.tests.clients.EurograndEn.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.Nova21De">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:com.who.tests.clients.Nova21De._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.Nova21De.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.Nova21De.Nova21DeClientTestDebug">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.Nova21De.Nova21DeClient">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.Nova21De.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:com.who.tests.clients.Nova21De.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.Nova21En">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:com.who.tests.clients.Nova21En._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.Nova21En.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.Nova21En.Nova21EnClientTestDebug">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.Nova21En.Nova21EnClient">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.Nova21En.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:com.who.tests.clients.Nova21En.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.Nova21Ru">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:com.who.tests.clients.Nova21Ru._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.Nova21Ru.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.Nova21Ru.Nova21RuClientTestDebug">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.Nova21Ru.Nova21RuClient">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.Nova21Ru.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:com.who.tests.clients.Nova21Ru.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.WilliamhillDe">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:com.who.tests.clients.WilliamhillDe._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.WilliamhillDe.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.WilliamhillDe.WilliamhillDeClientTestDebug">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.WilliamhillDe.WilliamhillDeClient">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.WilliamhillDe.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:com.who.tests.clients.WilliamhillDe.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.WilliamhillEn">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:com.who.tests.clients.WilliamhillEn._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.WilliamhillEn.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.WilliamhillEn.WilliamhillEnClientTestDebug">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.WilliamhillEn.WilliamhillEnClient">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.WilliamhillEn.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:com.who.tests.clients.WilliamhillEn.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.JoylandDe">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:com.who.tests.clients.JoylandDe._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.JoylandDe.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.JoylandDe.JoylandDeClientTestDebug">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.JoylandDe.JoylandDeClient">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.JoylandDe.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:com.who.tests.clients.JoylandDe.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.JoylandEn">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:com.who.tests.clients.JoylandEn._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.JoylandEn.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.JoylandEn.JoylandEnClientTestDebug">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.JoylandEn.JoylandEnClient">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.JoylandEn.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:com.who.tests.clients.JoylandEn.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.PrestigeDe">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:com.who.tests.clients.PrestigeDe._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.PrestigeDe.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.PrestigeDe.PrestigeDeClientTestDebug">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.PrestigeDe.PrestigeDeClient">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.PrestigeDe.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:com.who.tests.clients.PrestigeDe.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.PrestigeEn">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:com.who.tests.clients.PrestigeEn._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.PrestigeEn.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.PrestigeEn.PrestigeEnClientTestDebug">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.PrestigeEn.PrestigeEnClient">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.PrestigeEn.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:com.who.tests.clients.PrestigeEn.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.SkykingDe">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:com.who.tests.clients.SkykingDe._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.SkykingDe.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.SkykingDe.SkykingDeClientTestDebug">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.SkykingDe.SkykingDeClient">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.SkykingDe.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:com.who.tests.clients.SkykingDe.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.SkykingEn">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:com.who.tests.clients.SkykingEn._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.SkykingEn.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.SkykingEn.SkykingEnClientTestDebug">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.SkykingEn.SkykingEnClient">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.SkykingEn.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:com.who.tests.clients.SkykingEn.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="T:com.who.tests.clients.RegistrationPage">
+            <summary>
+            the Registration Page
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.RegistrationPage.#ctor">
+            <summary>
+            Init the Registration Page
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.RegistrationPage.Init">
+            <summary>
+            Init the Registration Page
+            </summary>
+        </member>
+        <member name="M:com.who.tests.clients.RegistrationPage.RegisterDataFill">
+            <summary>
+            Fill the Registeration Data
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.who.tests.clients.RegistrationPage.RegisterDataFillNextPage">
+            <summary>
+            Next page Fill the Registeration Data
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:com.who.tests.clients.RegistrationPage.RegisterDataFillLastPage">
+            <summary>
+            Next page Fill the Registeration Data
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

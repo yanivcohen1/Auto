@@ -1,0 +1,10 @@
+{
+    "gatwayApp": {
+        "Enums" : {
+            "null": "",
+            "one": "one",
+            "two": "two",
+            "tree": "tree"
+        }
+    }
+}

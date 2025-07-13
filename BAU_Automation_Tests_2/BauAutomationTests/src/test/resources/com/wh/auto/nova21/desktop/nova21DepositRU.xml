@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config />
+    <context:component-scan base-package="com.wh.auto"/>
+
+    <bean class="com.wh.auto.nova21.desktop.pages.MainWebPage" lazy-init="true">
+        <constructor-arg><ref bean="Browsers"/></constructor-arg>
+<!--         <property name="browserType" value="firefox" /> -->
+        <property name="url" value="http://ads.21nova.com/redirect.aspx?pid=17213278&amp;lpid=1487411764&amp;bid=1487410486" />
+        <property name="language" value="http://www.21nova.com/ru" />
+    </bean>
+    
+    <bean class="com.wh.auto.nova21.desktop.TestDeposit21Nova">    
+        <property name="browserType" value="chrome" />
+    </bean>
+       	   
+    <bean class="com.wh.auto.nova21.desktop.pages.RegisterPage" lazy-init="true">
+        <constructor-arg><ref bean="Browsers"/></constructor-arg>    
+        <property name="gender" value="Господин" />
+        <property name="birthMonth" value="Январь" />
+        <property name="playersUsersName" value="\\PlayersUsersNames.txt" />
+        <property name="casinoName" value="21novaWebRU" />
+    </bean>
+    
+    <bean class="com.wh.auto.nova21.desktop.pages.DepositPage" lazy-init="true">
+        <constructor-arg><ref bean="Browsers"/></constructor-arg>
+        <property name="month" value="янв" />  
+    </bean>	
+    
+    <bean id="Browsers" class="com.wh.auto.common.Browsers">
+    </bean>
+    	    
+</beans>

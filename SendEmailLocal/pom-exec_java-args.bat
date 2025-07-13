@@ -1,0 +1,1 @@
+mvn -Dexec.arguments="arg0" clean install exec:java

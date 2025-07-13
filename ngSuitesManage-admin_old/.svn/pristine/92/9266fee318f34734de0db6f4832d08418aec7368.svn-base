@@ -1,0 +1,11 @@
+<div class="orders view">
+    <div class="container">
+    <!-- <h3 style="width: 700px;">Run Tests</h3> -->
+	    <iframe width="500" height="800" src="https://10.1.1.20/RunSuiteSelectedTests/">
+		  <p>Your browser does not support iframes.</p>
+		</iframe>
+    	 <!-- <frameset cols="*">
+		  <frame src="http://www.w3schools.com/">
+		</frameset> -->   
+    </div>
+</div>

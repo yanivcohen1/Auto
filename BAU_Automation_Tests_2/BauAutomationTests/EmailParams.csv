@@ -1,0 +1,7 @@
+Build Path,C:\SVN\BAU_Automation_Tests\ClientsAutomationTests\TestBuild
+Fail Param,--- Test Fail ---
+Pic List,PicList.txt
+Error file,Error.log
+To,Yaniv.Cohen@williamhill.com
+Report Path,C:\SVN\BAU_Automation_Tests\BauAutomationTests\target\failsafe-reports\html\
+smtp IP,10.117.0.16

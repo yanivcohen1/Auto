@@ -1,0 +1,16 @@
+grunt build
+grunt serve
+grunt serve:dist
+grunt test
+npm install karma-chrome-launcher --save-dev
+bower install ng-table --save-dev
+npm install -g yo to update
+npm install --global npm@latest
+npm install grunt-contrib-imagemin --save-dev
+npm install -g generator-angular
+yo angular
+yo angular:controller myController
+yo angular:directive myDirective
+yo angular:filter myFilter
+yo angular:service myService
+bower update

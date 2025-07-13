@@ -1,0 +1,4096 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Tag: @PaymentMethods</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>Bau-Automation</td>
+                          <td>1</td>
+                        <td>05 Apr 2017, 19:48</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Tag Report</h2>
+          </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@PaymentMethods</td>
+                    <td      class="passed"    >110</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">110</td>
+
+          <td  class="passed"    >10</td>
+          <td >0</td>
+          <td class="total">10</td>
+
+          <td class="duration" data-value="703782523200">11m 43s 782ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_casino-migration-PaymentMethodsTest_desk-feature.html">PaymentMethods Desktop</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_PaymentMethods.html">@PaymentMethods</a>
+           <a href="report-tag_AllMig.html">@AllMig</a>
+      </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">TestPaymentMethod_Mobile_Desk_Eg_payPal_en</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">SharedSteps.before(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">"Desk" User is connect to the internet ""</span>
+  
+  <span class="lead-duration duration">2s 867ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">migUser language "en" and Brand "Eg" and "Desk"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">migUser is navigating to ""</span>
+  
+  <span class="lead-duration duration">13s 506ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-4" class="collapse collapsable-details">
+          <pre>User Navigate to:https://www.eurogrand.com/en/?js_fast_load=0</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Click on LOGIN top button on main page</span>
+  
+  <span class="lead-duration duration">14s 638ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-5" class="collapse collapsable-details">
+          <pre>Start Login</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Fill Username "141215123054" in popup window</span>
+  
+  <span class="lead-duration duration">1s 087ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Fill Password "123456" in popup window</span>
+  
+  <span class="lead-duration duration">330ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Click on LOGIN Butten in popup window</span>
+  
+  <span class="lead-duration duration">311ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">migUser read the Current Balance</span>
+  
+  <span class="lead-duration duration">11s 148ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-6" class="collapse collapsable-details">
+          <pre>Find Amount: : £100</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">migUser click on Deposit top Button</span>
+  
+  <span class="lead-duration duration">374ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-7" class="collapse collapsable-details">
+          <pre>Start Deposit</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Desktop MigUser Select Payment Methode "payPal"</span>
+  
+  <span class="lead-duration duration">4s 648ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Desktop migUser Read Payment URL "https://www.paypal.com/cgi-bin/webscr"</span>
+  
+  <span class="lead-duration duration">10s 754ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-8" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">SharedSteps.after(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 506ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_casino-migration-PaymentMethodsTest_desk-feature.html">PaymentMethods Desktop</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_PaymentMethods.html">@PaymentMethods</a>
+           <a href="report-tag_AllMig.html">@AllMig</a>
+      </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">TestPaymentMethod_Mobile_Desk_Eg_paySafeCard_en</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-10" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">SharedSteps.before(Scenario)</span>
+                        
+  <span class="lead-duration duration">002ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">"Desk" User is connect to the internet ""</span>
+  
+  <span class="lead-duration duration">2s 343ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">migUser language "en" and Brand "Eg" and "Desk"</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">migUser is navigating to ""</span>
+  
+  <span class="lead-duration duration">35s 109ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-12" class="collapse collapsable-details">
+          <pre>User Navigate to:https://www.eurogrand.com/en/?js_fast_load=0</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Click on LOGIN top button on main page</span>
+  
+  <span class="lead-duration duration">2s 033ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-13" class="collapse collapsable-details">
+          <pre>Start Login</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Fill Username "141215123054" in popup window</span>
+  
+  <span class="lead-duration duration">610ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Fill Password "123456" in popup window</span>
+  
+  <span class="lead-duration duration">310ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Click on LOGIN Butten in popup window</span>
+  
+  <span class="lead-duration duration">279ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">migUser read the Current Balance</span>
+  
+  <span class="lead-duration duration">10s 369ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-14" class="collapse collapsable-details">
+          <pre>Find Amount: : £100</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">migUser click on Deposit top Button</span>
+  
+  <span class="lead-duration duration">465ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-15" class="collapse collapsable-details">
+          <pre>Start Deposit</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Desktop MigUser Select Payment Methode "paySafeCard"</span>
+  
+  <span class="lead-duration duration">4s 298ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Desktop migUser Read Payment URL "https://customer.cc.at.paysafecard.com/rest/payment/panel"</span>
+  
+  <span class="lead-duration duration">10s 302ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-16">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-16" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">SharedSteps.after(Scenario)</span>
+                        
+  <span class="lead-duration duration">2s 256ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_casino-migration-PaymentMethodsTest_desk-feature.html">PaymentMethods Desktop</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_PaymentMethods.html">@PaymentMethods</a>
+           <a href="report-tag_AllMig.html">@AllMig</a>
+      </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">TestPaymentMethod_Mobile_Desk_Eg_Skrill_en</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-18">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-18" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">SharedSteps.before(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-19">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-19" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">"Desk" User is connect to the internet ""</span>
+  
+  <span class="lead-duration duration">2s 122ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">migUser language "en" and Brand "Eg" and "Desk"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">migUser is navigating to ""</span>
+  
+  <span class="lead-duration duration">31s 597ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-20" class="collapse collapsable-details">
+          <pre>User Navigate to:https://www.eurogrand.com/en/?js_fast_load=0</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Click on LOGIN top button on main page</span>
+  
+  <span class="lead-duration duration">5s 036ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-21" class="collapse collapsable-details">
+          <pre>Start Login</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Fill Username "141215123054" in popup window</span>
+  
+  <span class="lead-duration duration">685ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Fill Password "123456" in popup window</span>
+  
+  <span class="lead-duration duration">338ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Click on LOGIN Butten in popup window</span>
+  
+  <span class="lead-duration duration">254ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">migUser read the Current Balance</span>
+  
+  <span class="lead-duration duration">10s 389ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-22" class="collapse collapsable-details">
+          <pre>Find Amount: : £100</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">migUser click on Deposit top Button</span>
+  
+  <span class="lead-duration duration">535ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-23" class="collapse collapsable-details">
+          <pre>Start Deposit</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Desktop MigUser Select Payment Methode "Skrill"</span>
+  
+  <span class="lead-duration duration">4s 399ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Desktop migUser Read Payment URL "https://pay.skrill.com/app/"</span>
+  
+  <span class="lead-duration duration">10s 169ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-24">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-24" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">SharedSteps.after(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 447ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_casino-migration-PaymentMethodsTest_desk-feature.html">PaymentMethods Desktop</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_PaymentMethods.html">@PaymentMethods</a>
+           <a href="report-tag_AllMig.html">@AllMig</a>
+      </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">TestPaymentMethod_Mobile_Desk_Eg_EcoCard_en</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-25" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-26">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-26" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">SharedSteps.before(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-27" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">"Desk" User is connect to the internet ""</span>
+  
+  <span class="lead-duration duration">2s 214ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">migUser language "en" and Brand "Eg" and "Desk"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">migUser is navigating to ""</span>
+  
+  <span class="lead-duration duration">32s 683ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-28" class="collapse collapsable-details">
+          <pre>User Navigate to:https://www.eurogrand.com/en/?js_fast_load=0</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Click on LOGIN top button on main page</span>
+  
+  <span class="lead-duration duration">5s 261ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-29" class="collapse collapsable-details">
+          <pre>Start Login</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Fill Username "141215123054" in popup window</span>
+  
+  <span class="lead-duration duration">618ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Fill Password "123456" in popup window</span>
+  
+  <span class="lead-duration duration">351ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Click on LOGIN Butten in popup window</span>
+  
+  <span class="lead-duration duration">283ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">migUser read the Current Balance</span>
+  
+  <span class="lead-duration duration">10s 691ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-30" class="collapse collapsable-details">
+          <pre>Find Amount: : £100</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">migUser click on Deposit top Button</span>
+  
+  <span class="lead-duration duration">365ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-31" class="collapse collapsable-details">
+          <pre>Start Deposit</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Desktop MigUser Select Payment Methode "EcoCard"</span>
+  
+  <span class="lead-duration duration">4s 373ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Desktop migUser Read Payment URL "ecopayz.com/"</span>
+  
+  <span class="lead-duration duration">10s 246ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-32">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-32" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">SharedSteps.after(Scenario)</span>
+                        
+  <span class="lead-duration duration">2s 134ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_casino-migration-PaymentMethodsTest_desk-feature.html">PaymentMethods Desktop</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_PaymentMethods.html">@PaymentMethods</a>
+           <a href="report-tag_AllMig.html">@AllMig</a>
+      </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-33">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">TestPaymentMethod_Mobile_Desk_Eg_LocalBankPayment_en</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-33" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-34">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-34" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">SharedSteps.before(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-35">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-35" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">"Desk" User is connect to the internet ""</span>
+  
+  <span class="lead-duration duration">2s 818ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">migUser language "en" and Brand "Eg" and "Desk"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">migUser is navigating to ""</span>
+  
+  <span class="lead-duration duration">32s 809ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-36">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-36" class="collapse collapsable-details">
+          <pre>User Navigate to:https://www.eurogrand.com/en/?js_fast_load=0</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Click on LOGIN top button on main page</span>
+  
+  <span class="lead-duration duration">5s 329ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-37">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-37" class="collapse collapsable-details">
+          <pre>Start Login</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Fill Username "141215123054" in popup window</span>
+  
+  <span class="lead-duration duration">673ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Fill Password "123456" in popup window</span>
+  
+  <span class="lead-duration duration">343ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Click on LOGIN Butten in popup window</span>
+  
+  <span class="lead-duration duration">274ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">migUser read the Current Balance</span>
+  
+  <span class="lead-duration duration">10s 734ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-38">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-38" class="collapse collapsable-details">
+          <pre>Find Amount: : £100</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">migUser click on Deposit top Button</span>
+  
+  <span class="lead-duration duration">319ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-39">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-39" class="collapse collapsable-details">
+          <pre>Start Deposit</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Desktop MigUser Select Payment Methode "LocalBankPayment"</span>
+  
+  <span class="lead-duration duration">4s 279ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Desktop migUser Read Payment URL "https://www.envoytransfers.com/default.aspx"</span>
+  
+  <span class="lead-duration duration">10s 172ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-40">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-40" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">SharedSteps.after(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 524ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_casino-migration-PaymentMethodsTest_mobi-feature.html">PaymentMethods mobile</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_PaymentMethods.html">@PaymentMethods</a>
+           <a href="report-tag_AllMig.html">@AllMig</a>
+      </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-41">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">TestPaymentMethod_Mobile_Mobi_Eg_payPal_en</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-41" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-42">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-42" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">SharedSteps.before(Scenario)</span>
+                        
+  <span class="lead-duration duration">001ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-43">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-43" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">"Mobi" User is connect to the internet ""</span>
+  
+  <span class="lead-duration duration">2s 326ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">migUser language "en" and Brand "Eg" and "Mobi"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">migUser is navigating to ""</span>
+  
+  <span class="lead-duration duration">13s 530ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-44">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-44" class="collapse collapsable-details">
+          <pre>User Navigate to:https://www.eurogrand.com/en/?js_fast_load=0</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Click on LOGIN top button on main page</span>
+  
+  <span class="lead-duration duration">12s 727ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-45">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-45" class="collapse collapsable-details">
+          <pre>Start Login</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Fill Username "141215123054" in popup window</span>
+  
+  <span class="lead-duration duration">993ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Fill Password "123456" in popup window</span>
+  
+  <span class="lead-duration duration">349ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Click on LOGIN Butten in popup window</span>
+  
+  <span class="lead-duration duration">332ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">migUser read the Current Balance</span>
+  
+  <span class="lead-duration duration">11s 016ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-46">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-46" class="collapse collapsable-details">
+          <pre>Find Amount: : £100</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">migUser click on Deposit top Button</span>
+  
+  <span class="lead-duration duration">444ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-47">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-47" class="collapse collapsable-details">
+          <pre>Start Deposit</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">migUser Select Payment Methode "payPal"</span>
+  
+  <span class="lead-duration duration">8s 470ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">migUser Read Payment URL "https://www.paypal.com/cgi-bin/webscr"</span>
+  
+  <span class="lead-duration duration">11s 869ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-48">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-48" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">SharedSteps.after(Scenario)</span>
+                        
+  <span class="lead-duration duration">2s 180ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_casino-migration-PaymentMethodsTest_mobi-feature.html">PaymentMethods mobile</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_PaymentMethods.html">@PaymentMethods</a>
+           <a href="report-tag_AllMig.html">@AllMig</a>
+      </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-49">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">TestPaymentMethod_Mobile_Mobi_Eg_paySafeCard_en</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-49" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-50">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-50" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">SharedSteps.before(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-51">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-51" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">"Mobi" User is connect to the internet ""</span>
+  
+  <span class="lead-duration duration">2s 670ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">migUser language "en" and Brand "Eg" and "Mobi"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">migUser is navigating to ""</span>
+  
+  <span class="lead-duration duration">13s 280ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-52">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-52" class="collapse collapsable-details">
+          <pre>User Navigate to:https://www.eurogrand.com/en/?js_fast_load=0</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Click on LOGIN top button on main page</span>
+  
+  <span class="lead-duration duration">32s 083ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-53">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-53" class="collapse collapsable-details">
+          <pre>Start Login</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Fill Username "141215123054" in popup window</span>
+  
+  <span class="lead-duration duration">706ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Fill Password "123456" in popup window</span>
+  
+  <span class="lead-duration duration">249ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Click on LOGIN Butten in popup window</span>
+  
+  <span class="lead-duration duration">375ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">migUser read the Current Balance</span>
+  
+  <span class="lead-duration duration">11s 273ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-54">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-54" class="collapse collapsable-details">
+          <pre>Find Amount: : £100</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">migUser click on Deposit top Button</span>
+  
+  <span class="lead-duration duration">230ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-55">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-55" class="collapse collapsable-details">
+          <pre>Start Deposit</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">migUser Select Payment Methode "paySafeCard"</span>
+  
+  <span class="lead-duration duration">8s 617ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">migUser Read Payment URL "https://customer.cc.at.paysafecard.com/rest/payment/panel"</span>
+  
+  <span class="lead-duration duration">10s 048ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-56">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-56" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">SharedSteps.after(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 614ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_casino-migration-PaymentMethodsTest_mobi-feature.html">PaymentMethods mobile</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_PaymentMethods.html">@PaymentMethods</a>
+           <a href="report-tag_AllMig.html">@AllMig</a>
+      </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-57">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">TestPaymentMethod_Mobile_Mobi_Eg_Skrill_en</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-57" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-58">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-58" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">SharedSteps.before(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-59">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-59" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">"Mobi" User is connect to the internet ""</span>
+  
+  <span class="lead-duration duration">2s 646ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">migUser language "en" and Brand "Eg" and "Mobi"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">migUser is navigating to ""</span>
+  
+  <span class="lead-duration duration">14s 305ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-60">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-60" class="collapse collapsable-details">
+          <pre>User Navigate to:https://www.eurogrand.com/en/?js_fast_load=0</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Click on LOGIN top button on main page</span>
+  
+  <span class="lead-duration duration">32s 526ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-61">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-61" class="collapse collapsable-details">
+          <pre>Start Login</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Fill Username "141215123054" in popup window</span>
+  
+  <span class="lead-duration duration">1s 052ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Fill Password "123456" in popup window</span>
+  
+  <span class="lead-duration duration">439ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Click on LOGIN Butten in popup window</span>
+  
+  <span class="lead-duration duration">261ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">migUser read the Current Balance</span>
+  
+  <span class="lead-duration duration">13s 530ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-62">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-62" class="collapse collapsable-details">
+          <pre>Find Amount: : £100</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">migUser click on Deposit top Button</span>
+  
+  <span class="lead-duration duration">588ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-63">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-63" class="collapse collapsable-details">
+          <pre>Start Deposit</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">migUser Select Payment Methode "Skrill"</span>
+  
+  <span class="lead-duration duration">8s 662ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">migUser Read Payment URL "https://pay.skrill.com/app/"</span>
+  
+  <span class="lead-duration duration">10s 043ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-64">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-64" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">SharedSteps.after(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 768ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_casino-migration-PaymentMethodsTest_mobi-feature.html">PaymentMethods mobile</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_PaymentMethods.html">@PaymentMethods</a>
+           <a href="report-tag_AllMig.html">@AllMig</a>
+      </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-65">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">TestPaymentMethod_Mobile_Mobi_Eg_EcoCard_en</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-65" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-66">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-66" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">SharedSteps.before(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-67">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-67" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">"Mobi" User is connect to the internet ""</span>
+  
+  <span class="lead-duration duration">2s 888ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">migUser language "en" and Brand "Eg" and "Mobi"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">migUser is navigating to ""</span>
+  
+  <span class="lead-duration duration">14s 406ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-68">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-68" class="collapse collapsable-details">
+          <pre>User Navigate to:https://www.eurogrand.com/en/?js_fast_load=0</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Click on LOGIN top button on main page</span>
+  
+  <span class="lead-duration duration">29s 109ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-69">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-69" class="collapse collapsable-details">
+          <pre>Start Login</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Fill Username "141215123054" in popup window</span>
+  
+  <span class="lead-duration duration">2s 525ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Fill Password "123456" in popup window</span>
+  
+  <span class="lead-duration duration">343ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Click on LOGIN Butten in popup window</span>
+  
+  <span class="lead-duration duration">346ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">migUser read the Current Balance</span>
+  
+  <span class="lead-duration duration">12s 877ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-70">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-70" class="collapse collapsable-details">
+          <pre>Find Amount: : £100</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">migUser click on Deposit top Button</span>
+  
+  <span class="lead-duration duration">1s 246ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-71">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-71" class="collapse collapsable-details">
+          <pre>Start Deposit</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">migUser Select Payment Methode "EcoCard"</span>
+  
+  <span class="lead-duration duration">8s 847ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">migUser Read Payment URL "ecopayz.com/"</span>
+  
+  <span class="lead-duration duration">10s 040ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-72">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-72" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">SharedSteps.after(Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 798ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_casino-migration-PaymentMethodsTest_mobi-feature.html">PaymentMethods mobile</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_PaymentMethods.html">@PaymentMethods</a>
+           <a href="report-tag_AllMig.html">@AllMig</a>
+      </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-73">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">TestPaymentMethod_Mobile_Mobi_Eg_LocalBankPayment_en</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-73" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-74">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-74" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">SharedSteps.before(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-75">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-75" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">"Mobi" User is connect to the internet ""</span>
+  
+  <span class="lead-duration duration">3s 013ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">migUser language "en" and Brand "Eg" and "Mobi"</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">migUser is navigating to ""</span>
+  
+  <span class="lead-duration duration">29s 813ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-76">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-76" class="collapse collapsable-details">
+          <pre>User Navigate to:https://www.eurogrand.com/en/?js_fast_load=0</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Click on LOGIN top button on main page</span>
+  
+  <span class="lead-duration duration">5s 171ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-77">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-77" class="collapse collapsable-details">
+          <pre>Start Login</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Fill Username "141215123054" in popup window</span>
+  
+  <span class="lead-duration duration">913ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Fill Password "123456" in popup window</span>
+  
+  <span class="lead-duration duration">498ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">migUser Click on LOGIN Butten in popup window</span>
+  
+  <span class="lead-duration duration">461ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">migUser read the Current Balance</span>
+  
+  <span class="lead-duration duration">10s 437ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-78">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-78" class="collapse collapsable-details">
+          <pre>Find Amount: : £100</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">migUser click on Deposit top Button</span>
+  
+  <span class="lead-duration duration">625ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+                <div data-toggle="collapse" class="collapsable-control" data-target="#msg-79">
+                    <a>Output 1</a>
+        </div>
+        <div id="msg-79" class="collapse collapsable-details">
+          <pre>Start Deposit</pre>
+        </div>
+      </div>
+      </div>
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">migUser Select Payment Methode "LocalBankPayment"</span>
+  
+  <span class="lead-duration duration">8s 335ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">migUser Read Payment URL "https://www.envoytransfers.com/default.aspx"</span>
+  
+  <span class="lead-duration duration">10s 050ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-80">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-80" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">SharedSteps.after(Scenario)</span>
+                        
+  <span class="lead-duration duration">2s 221ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

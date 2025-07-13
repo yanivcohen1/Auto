@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<project name="EurograndClient" default="build" basedir=".">
+  <description>Eurogrand Client test.</description>
+  <property name="debug" value="true" overwrite="false" />
+  <tstamp property="build.date" pattern="dd-MM-yyyy" verbose="true"/>
+  <sysinfo/>
+  
+  <target name="clean" description="remove all generated files">
+    <delete file="EurograndClient.exe" failonerror="false" />
+    <delete file="EurograndClient.pdb" failonerror="false" />
+  </target>
+  
+  <target name="build" description="compiles the source code">
+    <csc target="exe" output="EurograndClient.exe" debug="${debug}">
+      <sources>
+        <includes name="Search_Tests.cs"/>
+        <!--<includes name="..\AutomationLib\bin\Debug\*.*"/>-->
+      </sources>
+    </csc>
+  </target>
+  
+<!--Report build -->
+  <target name="nunitreport" description="Create the report">
+    
+    <nunit2report out="EurograndClient.html" >
+      <fileset>
+        <includes name="EurograndClient.xml" />
+      </fileset>
+    </nunit2report>
+    
+    <nunit2report format="frames" lang="en" opendesc="yes" todir="EurograndClient-Report">
+      <fileset>
+        <includes name="EurograndClient.xml" />
+      </fileset>
+      <summaries>
+        <includes name="EurograndClient.Comment.xml" />
+      </summaries>
+    </nunit2report>
+
+  <echo message="NUnit report generated."/>  
+  </target>
+  
+</project>

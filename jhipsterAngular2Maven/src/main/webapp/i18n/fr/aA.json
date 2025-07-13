@@ -1,0 +1,23 @@
+{
+    "jhipsterAngular2MavenApp": {
+        "aA" : {
+            "home": {
+                "title": "AAS",
+                "createLabel": "Créer un nouveau AA",
+                "createOrEditLabel": "Créer ou éditer un AA",
+                "search": "Recherche pour AA"
+            },
+            "created": "Un nouveau AA a été créé avec l'identifiant {{ param }}",
+            "updated": "Le AA avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le AA avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le AA {{ id }} ?"
+            },
+            "detail": {
+                "title": "AA"
+            },
+            "aaName": "Aa Name",
+            "value": "Value"
+        }
+    }
+}

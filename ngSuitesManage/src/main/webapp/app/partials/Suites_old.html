@@ -1,0 +1,46 @@
+<div class="orders view">
+    <div class="container">
+        <header>
+            <h3>All Suites</h3>
+        </header>
+        <h3>All Suites</h3>
+        Filter Suites:
+        <input type="text" ng-model="search" class="search-query" placeholder="Search" >
+        <br />
+        <br />
+        <div>
+            <div class="row">
+                <table ng-table="tableParams" class="table">
+                    <tr ng-repeat="user in data | filter:search | orderBy:suiteName">
+                        <td data-title="'Suite Name'">
+                            <span ng-if="!user.$edit">{{user.suiteName}}</span>
+                            <div ng-if="user.$edit"><input class="form-control" type="text" ng-model="user.suiteName" /></div>
+                        </td>
+                        <td data-title="'Xml FileLocation'" width="200">
+                            <span ng-if="!user.$edit">{{user.xmlFileLocation}}</span>
+                            <div ng-if="user.$edit"><input class="form-control" type="text" ng-model="user.xmlFileLocation" /></div>
+                        </td>
+                        <td data-title="'Jenkins URL'" width="200">
+                            <span ng-if="!user.$edit">{{user.jenkinsURL}}</span>
+                            <div ng-if="user.$edit"><input class="form-control" type="text" ng-model="user.jenkinsURL" /></div>
+                        </td>
+                        <td data-title="'Actions'" width="200">
+                            <a ng-if="!user.$edit" href="" class="btn btn-primary btn-xs" ng-click="user.$edit = true">Edit</a>
+                            <a ng-if="user.$edit" href="" class="btn btn-primary btn-xs" ng-click="user.$edit = false">Save</a>
+                            <a ng-if="user.$edit" href="" class="btn btn-info btn-xs" ng-click="updateSuites(); user.$edit = false">Cancel</a>
+                            <a ng-if="!user.$edit" href="" class="btn btn-danger btn-xs" ng-click="deleteSuite(user.suiteId)">Delete</a>
+                        </td>
+                    </tr>
+                </table>
+                <div class="row">
+                    <div class="span3">
+                       <a href="" class="btn btn-primary btn-xs" ng-click="saveSuites()">Save Changes</a>
+                    </div>
+                    <div class="span3">
+                        <a href="" class="btn btn-danger btn-xs" ng-click="updateSuites()">Discard Changes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

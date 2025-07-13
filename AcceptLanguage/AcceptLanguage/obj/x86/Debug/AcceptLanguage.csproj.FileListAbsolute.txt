@@ -1,0 +1,102 @@
+C:\Temp2\AcceptLanguage\AcceptLanguage\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Temp2\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.Properties.Resources.resources
+C:\Temp2\AcceptLanguage\AcceptLanguage\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Temp2\AcceptLanguage\AcceptLanguage\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Temp2\AcceptLanguage\AcceptLanguage\bin\Debug\AcceptLanguage.exe
+C:\Temp2\AcceptLanguage\AcceptLanguage\bin\Debug\AcceptLanguage.pdb
+C:\Temp2\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.exe
+C:\Temp2\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.pdb
+C:\Temp2\AcceptLanguage\AcceptLanguage\bin\Debug\WH_MAIN_Service.dll
+C:\Temp2\AcceptLanguage\AcceptLanguage\bin\Debug\WH_MAIN_Service.pdb
+C:\Temp2\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.MAIN_AL.resources
+C:\Temp2\AcceptLanguage\AcceptLanguage\bin\Debug\AcceptLanguage.exe.config
+C:\Temp2\AcceptLanguage\AcceptLanguage\bin\Debug\AcceptLanguage.exe.manifest
+C:\Temp2\AcceptLanguage\AcceptLanguage\bin\Debug\AcceptLanguage.application
+C:\Temp2\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.exe.manifest
+C:\Temp2\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.application
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\bin\Debug\AcceptLanguage.exe.config
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.exe
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.pdb
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\bin\Debug\AcceptLanguage.exe.manifest
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\bin\Debug\AcceptLanguage.application
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\bin\Debug\AcceptLanguage.exe
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\bin\Debug\AcceptLanguage.pdb
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\bin\Debug\WH_MAIN_Service.dll
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\bin\Debug\WH_MAIN_Service.pdb
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\obj\x86\Debug\ResolveAssemblyReference.cache
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.MAIN_AL.resources
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.Properties.Resources.resources
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\obj\x86\Debug\GenerateResource.read.1.tlog
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\obj\x86\Debug\GenerateResource.write.1.tlog
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.exe.manifest
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.application
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\AcceptLanguage.exe.config
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.exe
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.pdb
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\AcceptLanguage.exe.manifest
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\AcceptLanguage.application
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\AcceptLanguage.exe
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\AcceptLanguage.pdb
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\WH_MAIN_Service.dll
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\WH_MAIN_Service.pdb
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.MAIN_AL.resources
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.Properties.Resources.resources
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.exe.manifest
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.application
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.QualityTools.CodedUITestFramework.dll
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.CodeGeneration.dll
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Extension.IE.dll
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Extension.Uia.dll
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Framework.dll
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Playback.dll
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITesting.dll
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\TestProjectBT.dll
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Extension.dll
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Common.dll
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.dll
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.Data.dll
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.Data.ConnectionUI.dll
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\TestProjectBT.pdb
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITesting.xml
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Extension.xml
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Common.xml
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.Data.xml
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.Data.ConnectionUI.xml
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\AcceptLanguage.exe.config
+C:\SVN\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.exe
+C:\SVN\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.pdb
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\AcceptLanguage.exe.manifest
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\AcceptLanguage.application
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\AcceptLanguage.exe
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\AcceptLanguage.pdb
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.QualityTools.CodedUITestFramework.dll
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.CodeGeneration.dll
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Extension.IE.dll
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Extension.Uia.dll
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Framework.dll
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Playback.dll
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITesting.dll
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\TestProjectBT.dll
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\WH_MAIN_Service.dll
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Extension.dll
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Common.dll
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.dll
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.Data.dll
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.Data.ConnectionUI.dll
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\TestProjectBT.pdb
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\WH_MAIN_Service.pdb
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITesting.xml
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Extension.xml
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Common.xml
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.VisualStudio.Data.xml
+C:\SVN\AcceptLanguage\AcceptLanguage\bin\Debug\Microsoft.Data.ConnectionUI.xml
+C:\SVN\AcceptLanguage\AcceptLanguage\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\SVN\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.MAIN_AL.resources
+C:\SVN\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.Properties.Resources.resources
+C:\SVN\AcceptLanguage\AcceptLanguage\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\SVN\AcceptLanguage\AcceptLanguage\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\SVN\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.exe.manifest
+C:\SVN\AcceptLanguage\AcceptLanguage\obj\x86\Debug\AcceptLanguage.application

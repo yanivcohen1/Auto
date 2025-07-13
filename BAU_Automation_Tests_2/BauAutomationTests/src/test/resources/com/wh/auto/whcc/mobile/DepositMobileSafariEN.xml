@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config />
+    <context:component-scan base-package="com.wh.auto"/>
+
+    <bean class="com.wh.auto.whcc.mobile.pages.MainWebPage" lazy-init="true">
+        <constructor-arg><ref bean="Browsers"/></constructor-arg>   
+		<property name="browserType" value="safari" />
+        <property name="url" value="http://ads.williamhillcasino.com/redirect.aspx?pid=17213278&amp;lpid=13512629&amp;bid=1487411824" />
+        <property name="language" value="https://mobile.williamhillcasino.com/" />
+        <property name="userAgent" value="Mozilla/5.0 (iPhone; CPU iPhone OS 8_0_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12A366 Safari/600.1.4" />
+    </bean>
+       	   
+    <bean class="com.wh.auto.whcc.mobile.pages.RegisterPage" lazy-init="true">
+        <constructor-arg><ref bean="Browsers"/></constructor-arg>
+        <property name="joinNow" value="Join Now" /> 
+        <property name="gender" value="Mr" />
+        <property name="birthMonth" value="August" />
+        <property name="playersUsersName" value="\\PlayersUsersNames.txt" />
+        <property name="casinoName" value="WhccSafariMobileEN" />
+    </bean>
+    
+    <bean class="com.wh.auto.whcc.mobile.pages.DepositPage" lazy-init="true">
+        <constructor-arg><ref bean="Browsers"/></constructor-arg>
+        <property name="month" value="February" /> 
+        <property name="currency" value="£" />
+    </bean>	
+    
+    <bean id="Browsers" class="com.wh.auto.common.Browsers">
+    </bean>
+    	    
+</beans>

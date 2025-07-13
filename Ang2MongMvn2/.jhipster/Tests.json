@@ -1,0 +1,36 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "num",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required",
+                "min"
+            ],
+            "fieldValidateRulesMin": "3"
+        },
+        {
+            "fieldName": "str",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "enm",
+            "fieldType": "Enm",
+            "fieldValues": "yaniv,tamir,yaron"
+        },
+        {
+            "fieldName": "time",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "tests",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pagination"
+}

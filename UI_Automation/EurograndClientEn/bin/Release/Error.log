@@ -1,0 +1,32 @@
+2013-11-14 14:50:30,809 [Agent: adapter run thread for test 'EurograndClientEnTest' with id 'f9f891a0-0f91-42cf-9064-4c7a364772d7'] ERROR EuroGrandClientEn.EuroGrandEN.EurograndClientEnTest(98) - Fatal Error: 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EurograndClientEn.DownloadPage.RunDownload() in C:\SVN\UI_Automation\EurograndClientEn\DownloadPage.cs:line 26
+   at EuroGrandClientEn.EuroGrandEN.EurograndClientEnTest() in C:\SVN\UI_Automation\EurograndClientEn\EurograndEnTest.cs:line 91
+2013-11-14 15:34:32,965 [Agent: adapter run thread for test 'EurograndClientEnTest' with id '817f5cea-fafe-4f1a-afef-379987e95e95'] ERROR EuroGrandClientEn.EuroGrandEN.EurograndClientEnTest(98) - Fatal Error: 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EurograndClientEn.DownloadPage.RunDownload() in C:\SVN\UI_Automation\EurograndClientEn\DownloadPage.cs:line 26
+   at EuroGrandClientEn.EuroGrandEN.EurograndClientEnTest() in C:\SVN\UI_Automation\EurograndClientEn\EurograndEnTest.cs:line 91
+2013-11-14 15:44:38,166 [Agent: adapter run thread for test 'EurograndClientEnTest' with id '68b7e3d8-3fae-47e6-939e-17e67bae60c9'] ERROR EuroGrandClientEn.EuroGrandEN.EurograndClientEnTest(99) - Fatal Error: 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EurograndClientEn.DownloadPage.RunDownload() in C:\SVN\UI_Automation\EurograndClientEn\DownloadPage.cs:line 26
+   at EuroGrandClientEn.EuroGrandEN.EurograndClientEnTest() in C:\SVN\UI_Automation\EurograndClientEn\EurograndEnTest.cs:line 92
+2013-11-14 15:46:48,676 [Agent: adapter run thread for test 'EurograndClientEnTest' with id '1d5ab40d-c078-4b59-a4d5-8a3d7822e926'] ERROR EuroGrandClientEn.EuroGrandEN.EurograndClientEnTest(99) - Fatal Error: 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EurograndClientEn.DownloadPage.RunDownload() in C:\SVN\UI_Automation\EurograndClientEn\DownloadPage.cs:line 26
+   at EuroGrandClientEn.EuroGrandEN.EurograndClientEnTest() in C:\SVN\UI_Automation\EurograndClientEn\EurograndEnTest.cs:line 92
+2013-11-14 15:48:58,113 [Agent: adapter run thread for test 'EurograndClientEnTest' with id '8d788fa9-25fc-461f-b729-1248b7a3acdf'] ERROR EuroGrandClientEn.EuroGrandEN.EurograndClientEnTest(99) - Fatal Error: 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EurograndClientEn.DownloadPage.RunDownload() in C:\SVN\UI_Automation\EurograndClientEn\DownloadPage.cs:line 26
+   at EuroGrandClientEn.EuroGrandEN.EurograndClientEnTest() in C:\SVN\UI_Automation\EurograndClientEn\EurograndEnTest.cs:line 92
+2013-11-14 15:51:51,153 [Agent: adapter run thread for test 'EurograndClientEnTest' with id 'b18f6111-a0b5-4193-9650-314357c9b210'] ERROR EuroGrandClientEn.EuroGrandEN.EurograndClientEnTest(99) - Fatal Error: 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EurograndClientEn.DownloadPage.RunDownload() in C:\SVN\UI_Automation\EurograndClientEn\DownloadPage.cs:line 26
+   at EuroGrandClientEn.EuroGrandEN.EurograndClientEnTest() in C:\SVN\UI_Automation\EurograndClientEn\EurograndEnTest.cs:line 92
+2013-11-14 15:56:22,862 [Agent: adapter run thread for test 'EurograndClientEnTest' with id 'bc729a93-7769-4f12-bd27-2e3ebc0fd5b1'] ERROR EuroGrandClientEn.EuroGrandEN.EurograndClientEnTest(99) - Fatal Error: 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EurograndClientEn.DownloadPage.RunDownload() in C:\SVN\UI_Automation\EurograndClientEn\DownloadPage.cs:line 26
+   at EuroGrandClientEn.EuroGrandEN.EurograndClientEnTest() in C:\SVN\UI_Automation\EurograndClientEn\EurograndEnTest.cs:line 92
+2013-11-14 16:10:04,706 [Agent: adapter run thread for test 'EurograndClientEnTest' with id 'c2b04598-70de-4c51-bcca-1a3bd5b1d944'] ERROR EuroGrandClientEn.EuroGrandEN.EurograndClientEnTest(99) - Fatal Error: 
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EurograndClientEn.DownloadPage.RunDownload() in C:\SVN\UI_Automation\EurograndClientEn\DownloadPage.cs:line 26
+   at EuroGrandClientEn.EuroGrandEN.EurograndClientEnTest() in C:\SVN\UI_Automation\EurograndClientEn\EurograndEnTest.cs:line 92

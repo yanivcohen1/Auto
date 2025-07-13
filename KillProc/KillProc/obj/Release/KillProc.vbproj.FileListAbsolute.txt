@@ -1,0 +1,6 @@
+C:\Temp2\KillProc\KillProc\obj\Release\KillProc.exe
+C:\Temp2\KillProc\KillProc\obj\Release\KillProc.xml
+C:\Temp2\KillProc\KillProc\obj\Release\KillProc.pdb
+C:\SVN\Automation_Tools\KillProc\KillProc\obj\Release\KillProc.exe
+C:\SVN\Automation_Tools\KillProc\KillProc\obj\Release\KillProc.xml
+C:\SVN\Automation_Tools\KillProc\KillProc\obj\Release\KillProc.pdb

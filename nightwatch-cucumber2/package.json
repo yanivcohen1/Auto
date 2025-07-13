@@ -1,0 +1,27 @@
+{
+  "name": "nightwatch-cucumber-tests",
+  "version": "1.0.0",
+  "description": "seleniumjs tests",
+  "main": "nightwatch.conf.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "chromedriver": "2.28.0",
+    "cucumber": "^2.3.1",
+    "cucumber-html-reporter": "^2.0.3",
+    "nightwatch": "^0.9.16",
+    "nightwatch-cucumber": "^7.1.10",
+    "phantomjs-prebuilt": "^2.1.14",
+    "selenium-server": "3.0.0",
+    "webdriverio": "^4.8.0"
+  },
+  "scripts": {
+    "test": "nightwatch",
+    "debug": "node_modules\\.bin\\nightwatch --tag Add --debug-brk=5858"
+  },
+  "author": "yaniv",
+  "license": "ISC"
+}

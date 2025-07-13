@@ -1,0 +1,110 @@
+package com.who.rest.tests.e2e;
+
+import java.awt.AWTException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map.Entry;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import com.who.rest.tests.utils.Browsers;
+import com.who.rest.tests.utils.IWaitForCallBack;
+import com.who.rest.tests.utils.Utility;
+import com.who.rest.tests.utils.WaitForCallBack;
+import com.who.rest.tests.utils.WebDriverUtils;
+
+public class AjaxTest extends WebDriverUtils {
+
+    protected boolean debug = true;
+    protected WebDriver driver;
+    
+    public static void main(String argv[]) {
+    	WaitForCallBack waitForCallBack = new WaitForCallBack();
+    	waitForCallBack.savePointer(new IWaitForCallBack() {
+
+			public WebElement runCallBackFun(int timeout) {
+				return null;
+			}
+    	}); // end argument and exampleMethod call
+		System.out.println("return " + waitForCallBack.runCallBackFun(5));
+	}
+    
+    /**
+	 * Before all tests start
+	 */
+	@BeforeClass
+	public void beforeClass() {
+		Utility.terminateChrome();
+		debug = true;
+	}
+    
+	/**
+	 * initiaze for running test and browser
+	 * @return
+	 */
+	@DataProvider(name = "AjaxTest", parallel = true)
+	public Object[][] createDataProvider() {
+		List<Object[]> Result = new ArrayList<Object[]>();
+		Object[][] obj = new Object[2][0];
+		return obj;
+	}
+	
+	/**
+	 * load Test
+	 * @throws IOException
+	 * @throws InterruptedException
+	 * @throws AWTException 
+	 */
+	//@Test(dataProvider = "AjaxTest", timeOut = 600000, description = "LoadTest")//10 min timeout
+	public void AjaxTest() {
+		//myTestContext.setAttribute("Name", test.getValue());
+		System.out.println("Start test: ");
+		Browsers browsers = new Browsers();
+		browsers.setBrowseName("chrome");
+		final WebDriver driver = browsers.getDriver();
+    	driver.get("https://10.1.1.20/ngSuitesManage/#/login");
+    	driver.findElement(By.linkText("Suites Manage")).click();
+    	new WebDriverWait(driver, 60).until(ExpectedConditions
+				.visibilityOfElementLocated(By.cssSelector("input.btn.btn-primary")));
+    	driver.findElement(By.id("username")).sendKeys("yaniv");
+    	driver.findElement(By.id("password")).sendKeys("yanivc");
+    	driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
+    	
+    	WaitForCallBack waitForCallBack = new WaitForCallBack();
+    	waitForCallBack.savePointer(new IWaitForCallBack() {
+			public WebElement runCallBackFun(int timeoutSec) {
+				WebElement table = null;
+					try {
+						table = driver.findElement(By
+								.cssSelector("table.table.ng-scope.ng-table"));
+						Collection<WebElement> tableRows = GetTableRows(table);
+						System.out.println("Size:" + tableRows.size());
+						if (tableRows.size() < 1) {
+							table = null;
+						}
+					} catch (Exception e) {
+						table = null;
+					}
+				return table;
+			} // end interfaceMethod
+		}); // end argument and exampleMethod call
+    	WebElement table = waitForCallBack.runCallBackFun(30);
+    	try {
+    		//Thread.sleep(8000);
+			driver.quit();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+    	org.testng.Assert.assertTrue(table != null, "Ajax fail");
+	}
+}

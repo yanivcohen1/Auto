@@ -1,0 +1,41 @@
+<div class="orders view">
+    <div class="container">
+        <header>
+            <h3>All Suites</h3>
+        </header>
+        <br />
+        <div>
+            <div class="row">
+                <table ng-table="tableParams" show-filter="true" class="table">
+					<tbody ng-repeat="user in $data"  >
+					<!-- | filter:search | orderBy:suiteName"> -->
+						<tr id="tr{{user.suiteId}}" ng-class-odd="'odd'" ng-class-even="'even'">
+							<td class="rowTd" data-title="'Suite_Name'"
+								sortable="'suiteName'" filter="{ 'suiteName': 'text' }">{{user.suiteName}}</td>
+							<td class="rowTd" data-title="'Xml FileLocation'"
+								sortable="'xmlFileLocation'"
+								filter="{ 'xmlFileLocation': 'text' }">{{user.xmlFileLocation}}</td>
+							<td class="rowTd" data-title="'Jenkins URL'"
+								sortable="'jenkinsURL'" filter="{ 'jenkinsURL': 'text' }">{{user.jenkinsURL}}</td>
+							<td class="rowTd" data-title="'Actions'">
+								<input type=button
+									id="editRowBtn{{user.suiteId}}" class="btn btn-primary btn-sm"
+									ng-click="setEditId(user.suiteId)" value="Edit"> 
+								<input	type=button id="editRowBtn{{user.suiteId}}"
+									class="btn btn-danger btn-sm"
+									ng-click="deleteSuite(user.suiteId)" value="Delete">
+							</td>
+						</tr>
+						<tr ng-show="editId===user.suiteId" ng-if="editId===user.suiteId">
+							<td colspan="7" ng-include src="'/ngSuitesManage/app/partials/editRow.html'"></td>
+						</tr>
+					</tbody>
+				</table>
+				<button class="btn btn-primary" ng-click="open('lg')">New Suite</button>
+				<script type="text/ng-template" id="myModalContent.html">
+					<div ng-include src="'/ngSuitesManage/app/partials/newSuiteModal.html'"></div>
+				</script>
+            </div>
+        </div>
+    </div>
+</div>

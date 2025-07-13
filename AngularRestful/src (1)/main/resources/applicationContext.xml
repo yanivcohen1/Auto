@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 	xmlns="http://www.springframework.org/schema/beans"
+		xmlns:p="http://www.springframework.org/schema/p" 
+      	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       	xmlns:context="http://www.springframework.org/schema/context"
+      	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context-3.2.xsd
+                           http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
+	
+	<bean id="propertyConfigurer" class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
+		<property name="ignoreResourceNotFound" value="true" />
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+		<property name="localOverride" value="false" />
+		<property name="location" value="classpath:/Config.properties" />
+
+		<!-- Use this property file for Production: <property name="location" value="classpath:mars.prod.properties"/> Use this property file for PP1: <property 
+			name="location" value="classpath:mars.test.properties"/> Use this property file for Systest: <property name="location" value="classpath:mars.systest.properties"/> 
+			Use this property file for PTE: <property name="location" value="classpath:mars.pte.properties"/> -->
+	</bean>
+	
+	<context:component-scan base-package="com.who.rest" />
+    <context:annotation-config/>
+    <context:property-placeholder location="classpath:/Config.properties" />
+	
+	<bean id="entityUtil" class="com.who.rest.db.EntityUtil" init-method="init">
+		<property name="dbUrl" value="${DB.url}" />
+		<property name="dbUsername" value="${DB.username}" />
+		<property name="dbPassword" value="${DB.password}" />
+		<property name="createDB" value="${DB.create}" />
+		<property name="show_sql" value="${DB.show_sql}" />
+		<property name="driver_class" value="com.mysql.jdbc.Driver" />
+		<property name="dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+		<property name="format_sql" value="true" />
+	</bean>
+	
+</beans>

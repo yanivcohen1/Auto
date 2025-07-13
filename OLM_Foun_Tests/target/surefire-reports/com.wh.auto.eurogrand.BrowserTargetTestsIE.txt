@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.wh.auto.eurogrand.BrowserTargetTestsIE
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 55.777 sec - in com.wh.auto.eurogrand.BrowserTargetTestsIE

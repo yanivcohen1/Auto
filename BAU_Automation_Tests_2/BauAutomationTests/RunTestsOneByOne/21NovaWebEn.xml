@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="PT Portal Tests" verbose="1">
+    
+	<test name="21NovaWebEn">
+         <parameter name="parametersFileName"  value="nova21DepositEN.xml"/>
+         <classes>
+             <class name="com.wh.auto.nova21.TestDeposit21Nova" />
+		</classes>	
+	</test>
+    
+</suite>

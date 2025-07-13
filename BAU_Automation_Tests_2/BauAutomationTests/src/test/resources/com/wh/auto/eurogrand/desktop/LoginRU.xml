@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config />
+    <context:component-scan base-package="com.wh.auto"/>
+
+    <bean class="com.wh.auto.eurogrand.desktop.pages.MainWebPage" lazy-init="true">
+        <constructor-arg><ref bean="Browsers"/></constructor-arg>   
+        <property name="url" value="http://www.eurogrand.com/ru" />
+        <property name="language" value="" />
+        <property name="password" value="123456" />
+        <property name="userName" value="150326025628" />
+    </bean>
+    
+    <bean class="com.wh.auto.eurogrand.desktop.TestLogin">
+        <property name="browserType" value="chrome" /><!-- chrome -->
+    </bean>
+    
+    <bean id="Browsers" class="com.wh.auto.common.Browsers">
+    </bean>
+    	    
+</beans>

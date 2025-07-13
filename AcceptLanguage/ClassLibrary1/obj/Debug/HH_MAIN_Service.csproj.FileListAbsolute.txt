@@ -1,0 +1,6 @@
+C:\Temp2\AcceptLanguage\ClassLibrary1\obj\Debug\ResolveAssemblyReference.cache
+C:\Temp2\AcceptLanguage\ClassLibrary1\bin\Debug\HH_MAIN_Service.dll.config
+C:\Temp2\AcceptLanguage\ClassLibrary1\bin\Debug\HH_MAIN_Service.dll
+C:\Temp2\AcceptLanguage\ClassLibrary1\bin\Debug\HH_MAIN_Service.pdb
+C:\Temp2\AcceptLanguage\ClassLibrary1\obj\Debug\HH_MAIN_Service.dll
+C:\Temp2\AcceptLanguage\ClassLibrary1\obj\Debug\HH_MAIN_Service.pdb

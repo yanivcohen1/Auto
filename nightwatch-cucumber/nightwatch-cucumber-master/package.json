@@ -1,0 +1,97 @@
+{
+  "name": "nightwatch-cucumber",
+  "version": "0.0.0-development",
+  "description": "Nightwatch.js plugin for Cucumber.js",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "author": "Igor Muchychka <mucsi_96@yahoo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "btoa": "^1.1.2",
+    "co": "^4.6.0",
+    "glob": "^7.1.1",
+    "lodash.clonedeep": "^4.5.0",
+    "lodash.template": "^4.4.0",
+    "mkdirp": "^0.5.1",
+    "open": "^0.0.5",
+    "pify": "^2.3.0",
+    "resolve": "^1.3.3",
+    "semver": "^5.3.0",
+    "tmp": "^0.0.31"
+  },
+  "scripts": {
+    "add-contributor": "all-contributors add",
+    "generate-contributors": "all-contributors generate",
+    "code-style": "eslint lib resources test",
+    "e2e-test": "mocha --no-timeouts",
+    "test": "npm run code-style && npm run e2e-test && istanbul report",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "precommit": "npm run code-style",
+    "create-examples": "node examples/create-examples.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mucsi96/nightwatch-cucumber.git"
+  },
+  "keywords": [
+    "nightwatch",
+    "cucumber",
+    "gherkin",
+    "bdd",
+    "selenium",
+    "browser",
+    "automation",
+    "testing",
+    "test"
+  ],
+  "bugs": {
+    "url": "https://github.com/mucsi96/nightwatch-cucumber/issues"
+  },
+  "homepage": "https://github.com/mucsi96/nightwatch-cucumber#readme",
+  "files": [
+    "lib",
+    "resources"
+  ],
+  "peerDependencies": {
+    "cucumber": "^2.0.0",
+    "nightwatch": "^0.9.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "chai": "^4.0.1",
+    "chromedriver": "^2.29.0",
+    "coveralls": "^2.13.1",
+    "cucumber": "^2.2.0",
+    "cucumber-html-reporter": "^2.0.1",
+    "cz-conventional-changelog": "^2.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-no-only-tests": "^1.1.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "grunt": "^1.0.1",
+    "gulp": "^3.9.1",
+    "gulp-nightwatch": "^0.3.2",
+    "husky": "^0.14.0",
+    "istanbul": "^0.4.5",
+    "jsdom": "^11.0.0",
+    "mocha": "^3.4.0",
+    "nightwatch": "^0.9.15",
+    "phantomjs-prebuilt": "^2.1.14",
+    "rimraf": "^2.6.1",
+    "selenium-server": "^3.4.0",
+    "semantic-release": "^6.3.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

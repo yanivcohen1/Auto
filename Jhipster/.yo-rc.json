@@ -1,0 +1,20 @@
+{
+  "generator-jhipster": {
+    "baseName": "TestManage",
+    "packageName": "com.who.auto",
+    "packageFolder": "com/who/auto",
+    "authenticationType": "session",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": "no",
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "useCompass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "javaVersion": "8",
+    "rememberMeKey": "8dd2e5496c83bef74294f4747ac265b5099ffdd6"
+  }
+}

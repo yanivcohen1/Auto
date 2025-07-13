@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AutomationModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="AutomationModelStoreContainer">
+    <EntitySet Name="BRAND" EntityType="AutomationModel.Store.BRAND" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BRAND_LANGUAGE" EntityType="AutomationModel.Store.BRAND_LANGUAGE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BrandsResult" EntityType="AutomationModel.Store.BrandsResult" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tool" EntityType="AutomationModel.Store.Tool" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TOOL_RESULT" EntityType="AutomationModel.Store.TOOL_RESULT" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_BRAND_LANGUAGE_BRAND" Association="AutomationModel.Store.FK_BRAND_LANGUAGE_BRAND">
+      <End Role="BRAND" EntitySet="BRAND" />
+      <End Role="BRAND_LANGUAGE" EntitySet="BRAND_LANGUAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BrandsResult_BRAND1" Association="AutomationModel.Store.FK_BrandsResult_BRAND1">
+      <End Role="BRAND" EntitySet="BRAND" />
+      <End Role="BrandsResult" EntitySet="BrandsResult" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tool_BRAND_LANGUAGE" Association="AutomationModel.Store.FK_Tool_BRAND_LANGUAGE">
+      <End Role="BRAND_LANGUAGE" EntitySet="BRAND_LANGUAGE" />
+      <End Role="Tool" EntitySet="Tool" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TOOL_RESULT_Tool" Association="AutomationModel.Store.FK_TOOL_RESULT_Tool">
+      <End Role="Tool" EntitySet="Tool" />
+      <End Role="TOOL_RESULT" EntitySet="TOOL_RESULT" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="BRAND">
+    <Key>
+      <PropertyRef Name="Brand_ID" />
+    </Key>
+    <Property Name="Brand_ID" Type="decimal" Nullable="false" Precision="20" />
+    <Property Name="Brand_Name" Type="varchar" MaxLength="60" />
+    <Property Name="Brand_Symbol" Type="varchar" MaxLength="60" />
+    <Property Name="Brand_Main_URL" Type="varchar" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="BRAND_LANGUAGE">
+    <Key>
+      <PropertyRef Name="Brand_Language_ID" />
+    </Key>
+    <Property Name="Brand_Language_ID" Type="decimal" Nullable="false" Precision="20" />
+    <Property Name="Brand_ID" Type="decimal" Nullable="false" Precision="20" />
+    <Property Name="Currency_ID" Type="decimal" Nullable="false" Precision="20" />
+    <Property Name="Language_ID" Type="decimal" Nullable="false" Precision="20" />
+    <Property Name="Notification_ID" Type="decimal" Precision="20" />
+    <Property Name="Brand_Language_URL_Template" Type="varchar" MaxLength="60" />
+    <Property Name="Brand_Language_Priority" Type="int" />
+    <Property Name="Group_Number" Type="decimal" Precision="20" />
+  </EntityType>
+  <EntityType Name="BrandsResult">
+    <Key>
+      <PropertyRef Name="Brand_Result_ID" />
+    </Key>
+    <Property Name="Brand_Result_ID" Type="decimal" Nullable="false" Precision="20" />
+    <Property Name="Brand_ID" Type="decimal" Nullable="false" Precision="20" />
+    <Property Name="Tool_Name" Type="varchar" Nullable="false" MaxLength="60" />
+    <Property Name="Tool_Result" Type="bit" />
+    <Property Name="Tool_last_Run_Date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Tool">
+    <Key>
+      <PropertyRef Name="Tool_ID" />
+    </Key>
+    <Property Name="Tool_ID" Type="decimal" Nullable="false" Precision="20" />
+    <Property Name="Brand_Language_ID" Type="decimal" Nullable="false" Precision="20" />
+    <Property Name="Tool_Name" Type="varchar" MaxLength="60" />
+    <Property Name="Tool_Type" Type="varchar" MaxLength="60" />
+    <Property Name="Tool_Description" Type="varchar" MaxLength="60" />
+    <Property Name="Tool_SMS_Message_Format" Type="varchar" MaxLength="60" />
+    <Property Name="Tool_Email_Message_Format" Type="varchar" MaxLength="60" />
+    <Property Name="Tool_Argument" Type="varchar" MaxLength="60" />
+    <Property Name="Tool_FilePath" Type="varchar" MaxLength="60" />
+    <Property Name="Tool_IPAddress" Type="varchar" MaxLength="60" />
+    <Property Name="Group_Number" Type="decimal" Precision="20" />
+    <Property Name="Tool_TimeOut" Type="decimal" Precision="20" />
+    <Property Name="Tool_Run_Order" Type="decimal" Precision="20" />
+    <Property Name="Tool_Start_Time" Type="datetime" />
+    <Property Name="EstimateRunTimeMin" Type="decimal" Precision="20" />
+    <Property Name="RunFreqMinutes" Type="decimal" Precision="20" />
+    <Property Name="ParallelEnable" Type="bit" />
+    <Property Name="IsSkip" Type="bit" />
+    <Property Name="IsRunning" Type="bit" />
+    <Property Name="Running" Type="bit" />
+  </EntityType>
+  <EntityType Name="TOOL_RESULT">
+    <Key>
+      <PropertyRef Name="Tool_Result_ID" />
+    </Key>
+    <Property Name="Tool_Result_ID" Type="decimal" Nullable="false" Precision="20" />
+    <Property Name="Tool_ID" Type="decimal" Nullable="false" Precision="20" />
+    <Property Name="Tool_Result_Result" Type="bit" />
+    <Property Name="Tool_Result_Description" Type="varchar" MaxLength="220" />
+    <Property Name="Tool_Result_Last_Pass_Date" Type="datetime" />
+    <Property Name="id_temp" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Tool_Result_Last_Run_Date" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_BRAND_LANGUAGE_BRAND">
+    <End Role="BRAND" Type="AutomationModel.Store.BRAND" Multiplicity="1" />
+    <End Role="BRAND_LANGUAGE" Type="AutomationModel.Store.BRAND_LANGUAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BRAND">
+        <PropertyRef Name="Brand_ID" />
+      </Principal>
+      <Dependent Role="BRAND_LANGUAGE">
+        <PropertyRef Name="Brand_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BrandsResult_BRAND1">
+    <End Role="BRAND" Type="AutomationModel.Store.BRAND" Multiplicity="1" />
+    <End Role="BrandsResult" Type="AutomationModel.Store.BrandsResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BRAND">
+        <PropertyRef Name="Brand_ID" />
+      </Principal>
+      <Dependent Role="BrandsResult">
+        <PropertyRef Name="Brand_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tool_BRAND_LANGUAGE">
+    <End Role="BRAND_LANGUAGE" Type="AutomationModel.Store.BRAND_LANGUAGE" Multiplicity="1" />
+    <End Role="Tool" Type="AutomationModel.Store.Tool" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BRAND_LANGUAGE">
+        <PropertyRef Name="Brand_Language_ID" />
+      </Principal>
+      <Dependent Role="Tool">
+        <PropertyRef Name="Brand_Language_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TOOL_RESULT_Tool">
+    <End Role="Tool" Type="AutomationModel.Store.Tool" Multiplicity="1" />
+    <End Role="TOOL_RESULT" Type="AutomationModel.Store.TOOL_RESULT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tool">
+        <PropertyRef Name="Tool_ID" />
+      </Principal>
+      <Dependent Role="TOOL_RESULT">
+        <PropertyRef Name="Tool_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>20</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
+          <name>TestName</name>
+          <description>Select test to execute</description>
+          <quoteValue>false</quoteValue>
+          <saveJSONParameterToFile>false</saveJSONParameterToFile>
+          <visibleItemCount>5</visibleItemCount>
+          <type>PT_RADIO</type>
+          <value>RunAllSenarions,CasinoMainPage,LoginStress,ChatStress,RegisterStress</value>
+          <defaultValue>ChatStress</defaultValue>
+          <multiSelectDelimiter>,</multiSelectDelimiter>
+          <projectName>preformence</projectName>
+        </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
+        <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
+          <name>Environment</name>
+          <description>Run time environment selection</description>
+          <quoteValue>false</quoteValue>
+          <saveJSONParameterToFile>false</saveJSONParameterToFile>
+          <visibleItemCount>5</visibleItemCount>
+          <type>PT_RADIO</type>
+          <value>live,desktop-admin,ww2,dev-mig</value>
+          <defaultValue>live</defaultValue>
+          <multiSelectDelimiter>,</multiSelectDelimiter>
+          <projectName>preformence</projectName>
+        </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>Send_results_report</name>
+          <description>If selected (default), mail notification will be sent</description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
+          <name>NumberOfUsersToInject</name>
+          <description>Inject users at a constant rate, defined in users per second, during a given duration</description>
+          <quoteValue>false</quoteValue>
+          <saveJSONParameterToFile>false</saveJSONParameterToFile>
+          <visibleItemCount>1</visibleItemCount>
+          <type>PT_TEXTBOX</type>
+          <defaultValue>10</defaultValue>
+          <multiSelectDelimiter>,</multiSelectDelimiter>
+          <projectName>preformence</projectName>
+        </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
+        <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
+          <name>TestDuration</name>
+          <description>Test duration in secound</description>
+          <quoteValue>false</quoteValue>
+          <saveJSONParameterToFile>false</saveJSONParameterToFile>
+          <visibleItemCount>5</visibleItemCount>
+          <type>PT_TEXTBOX</type>
+          <defaultValue>10</defaultValue>
+          <multiSelectDelimiter>,</multiSelectDelimiter>
+          <projectName>preformence</projectName>
+        </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>jenkins_slave</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>echo *********************************************************
+echo SELECTED TESTS TO EXECUTE list for current test is: ${TestName}
+echo SELECTED Envirment is: ${Environment}
+echo CHECK IF MAIL NOTIFICATION SHOULD BE SENT: ${Send_results_report}
+echo NumberOfUsersToInject is: ${NumberOfUsersToInject}
+echo TestDuration is: ${TestDuration}
+echo *********************************************************</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>#init operations
+#git clone ssh://git@192.168.99.100:23/yaniv/sac-load-tests.git
+#docker run -d -P --name ${JOB_NAME} -v /var/lib/jenkins/slaves/workspace:/share selenium/standalone-chrome-debug-loc:2.53.0
+#cd sac-load-tests
+cd sac-load-tests
+git pull
+#sudo docker start ${JOB_NAME}
+#pkill chromedriver
+#Run the test
+cd GatlingLoadTests
+mvn clean gatling:execute -Dgatling.simulationClass=com.who.auto.records.${TestName} -DinjectUsers=${NumberOfUsersToInject} -DinjectPeriodInSeconds=${TestDuration} -Denv=${Environment} -Dbrand=Eg
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.plugins.postbuildtask.PostbuildTask plugin="postbuild-task@1.8">
+      <tasks>
+        <hudson.plugins.postbuildtask.TaskProperties>
+          <logTexts>
+            <hudson.plugins.postbuildtask.LogProperties>
+              <logText></logText>
+              <operator>AND</operator>
+            </hudson.plugins.postbuildtask.LogProperties>
+          </logTexts>
+          <EscalateStatus>false</EscalateStatus>
+          <RunIfJobSuccessful>false</RunIfJobSuccessful>
+          <script>echo ************************************************&#xd;
+echo Copy Report to Workspace&#xd;
+echo ************************************************&#xd;
+cp -a sac-load-tests/GatlingLoadTests/target/gatling/*/. results/</script>
+        </hudson.plugins.postbuildtask.TaskProperties>
+      </tasks>
+    </hudson.plugins.postbuildtask.PostbuildTask>
+    <htmlpublisher.HtmlPublisher plugin="htmlpublisher@1.12">
+      <reportTargets>
+        <htmlpublisher.HtmlPublisherTarget>
+          <reportName>Preformence HTML Report</reportName>
+          <reportDir>results/</reportDir>
+          <reportFiles>index.html</reportFiles>
+          <alwaysLinkToLastBuild>false</alwaysLinkToLastBuild>
+          <keepAll>true</keepAll>
+          <allowMissing>true</allowMissing>
+        </htmlpublisher.HtmlPublisherTarget>
+      </reportTargets>
+    </htmlpublisher.HtmlPublisher>
+  </publishers>
+  <buildWrappers/>
+</project>

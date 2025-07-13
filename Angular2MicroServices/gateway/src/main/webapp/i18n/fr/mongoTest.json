@@ -1,0 +1,29 @@
+{
+    "gatwayApp": {
+        "mongoTest" : {
+            "home": {
+                "title": "MongoTests",
+                "createLabel": "Créer un nouveau Mongo Test",
+                "createOrEditLabel": "Créer ou éditer un Mongo Test",
+                "search": "Recherche pour Mongo Test"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Mongo Test {{ id }} ?"
+            },
+            "detail": {
+                "title": "Mongo Test"
+            },
+            "name": "Name",
+            "val": "Val",
+            "date": "Date",
+            "enums": "Enums"
+        }
+    },
+    "microServiceMongoMvnApp": {
+        "mongoTest" : {
+            "created": "Un nouveau Mongo Test a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Mongo Test avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Mongo Test avec l'identifiant {{ param }} a été supprimé"
+        }
+    }
+}

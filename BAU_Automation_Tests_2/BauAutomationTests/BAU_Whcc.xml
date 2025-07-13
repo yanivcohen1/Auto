@@ -1,0 +1,123 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="BAU WHCC Tests" verbose="1">
+    
+    <test name="WhccMobileDeDeposit">
+		<parameter name="parametersFileName" value="WhccMobileDeDeposit.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+	<test name="WhccMobileEnDeposit">
+		<parameter name="parametersFileName" value="WhccMobileEnDeposit.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+    <test name="WhccMobileDeSafariDeposit">
+		<parameter name="parametersFileName" value="WhccMobileDeSafariDeposit.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+	<test name="WhccMobileEnSafariDeposit">
+		<parameter name="parametersFileName" value="WhccMobileEnSafariDeposit.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+    <test name="WhccMobileEnLogin">
+		<parameter name="parametersFileName" value="WhccMobileEnLogin.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+	<test name="WhccMobileDeLogin">
+		<parameter name="parametersFileName" value="WhccMobileDeLogin.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+    <test name="WhccMobileEnSafariLogin">
+		<parameter name="parametersFileName" value="WhccMobileEnSafariLogin.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+	<test name="WhccMobileDeSafariLogin">
+		<parameter name="parametersFileName" value="WhccMobileDeSafariLogin.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+     <test name="WhccWebEn">
+         <parameter name="parametersFileName"  value="DepositEN.xml"/>
+         <classes>
+             <class name="com.wh.auto.whcc.desktop.TestDeposit" />
+		</classes>	
+	</test>
+     
+     <test name="WHccWebLoginEn">
+         <parameter name="parametersFileName"  value="LoginEN.xml"/>
+         <classes>
+             <class name="com.wh.auto.whcc.desktop.TestLogin" />
+		</classes>		
+	</test>
+     
+     <test name="WhccClientEn">
+         <parameter name="test-name"  value="WilliamhillEnClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	 </test>
+     
+     <test name="WhccWebDe">
+         <parameter name="parametersFileName"  value="DepositDE.xml"/>
+         <classes>
+             <class name="com.wh.auto.whcc.desktop.TestDeposit" />
+		</classes>	
+	</test>
+     
+     <test name="WhccClientPT_EN">
+         <parameter name="test-name"  value="Williamhill_EnNewClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>
+	 </test>
+	 
+	 <test name="WhccWebLoginDe">
+         <parameter name="parametersFileName"  value="LoginDE.xml"/>
+         <classes>
+             <class name="com.wh.auto.whcc.desktop.TestLogin" />
+		</classes>		
+	</test>
+	 
+      <test name="WhccClientDe">
+         <parameter name="test-name"  value="WilliamhillDeClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	</test>
+    
+    <test name="WhccClientPT_DE">
+         <parameter name="test-name"  value="Williamhill_DeNewClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>		
+	 </test>
+    
+     <test name="Tracking">
+         <parameter name="parametersFileName"  value="PT_Advertiser.ini"/>
+         <classes>
+             <class name="com.wh.auto.pt_admin.Test_PT_Advertiser" />
+		</classes>	
+	</test>
+     
+</suite>

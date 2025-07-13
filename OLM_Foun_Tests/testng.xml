@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+   <!-- mvn -Dtest=com.wh.auto.eurogrand.BrowserTargetTestsIE test --> 
+  <test name="Browser Target Test">
+    <classes>
+      <class name="com.wh.auto.eurogrand.BrowserTargetTestsChrome"/>
+      <class name="com.wh.auto.eurogrand.BrowserTargetTestsFF"/>
+      <class name="com.wh.auto.eurogrand.BrowserTargetTestsIE"/>      
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="GRO IP Test">
+    <classes>
+      <class name="com.wh.auto.eurogrand.GEO_IP_Tests_FF"/>        
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="GRO IP Regulated Test">
+    <classes>
+      <class name="com.wh.auto.eurogrand.Regulated_GEO_IP_Tests_FF"/>            
+    </classes>
+  </test>
+  
+  </test> <!-- Test -->
+    <test name="UserAgentTests Test">
+    <classes>
+      <class name="com.wh.auto.eurogrand.UserAgentTestsChrome"/>            
+    </classes>
+  </test> <!-- Test UserAgentTestsChrome-->
+  
+</suite> <!-- Suite -->

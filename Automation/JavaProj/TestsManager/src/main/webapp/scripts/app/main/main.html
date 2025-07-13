@@ -1,0 +1,137 @@
+<!-- <div class="orders"> 
+ <div class="container"> -->
+	<!-- <link rel="stylesheet" href="css/tree.css"> -->
+  <!-- Nested node template -->
+  <script type="text/ng-template" id="nodes_renderer1.html">
+    <div ui-tree-handle class="tree-node">
+      <div class="tree-node-content">
+        <a class="btn btn-success btn-xs" data-nodrag ng-click="toggle(this)"><span class="glyphicon" ng-class="{'glyphicon-chevron-right': collapsed, 'glyphicon-chevron-down': !collapsed}"></span></a>
+        {{node.title}}
+        <!-- <a class="pull-right btn btn-danger btn-xs" data-nodrag ng-click="remove(this)"><span class="glyphicon glyphicon-remove"></span></a> -->
+        <a class="pull-right btn btn-primary btn-xs" data-nodrag ng-click="add(this)" style="margin-right: 8px;"><span class="glyphicon glyphicon-plus"></span></a>
+      </div>
+    </div>
+    <ol ui-tree-nodes="" ng-model="node.nodes" ng-class="{hidden: !collapsed}">
+      <li ng-repeat="node in node.nodes" ui-tree-node ng-include="'nodes_renderer1.html'" ng-show="visible(node)">
+      </li>
+    </ol>
+  </script>
+  <script type="text/ng-template" id="nodes_renderer2.html">
+    <div class="tree-node">
+      <div class="pull-left tree-handle" ui-tree-handle>
+        <span class="glyphicon glyphicon-list"></span>
+      </div>
+      <div class="tree-node-content">
+        <!-- <a class="btn btn-success btn-xs" data-nodrag ng-click="toggle(this)"><span class="glyphicon" ng-class="{'glyphicon-chevron-right': collapsed, 'glyphicon-chevron-down': !collapsed}"></span></a> -->
+        {{node.title}}
+        <a class="pull-right btn btn-danger btn-xs" data-nodrag ng-click="remove(this)"><span class="glyphicon glyphicon-remove"></span></a>
+        <!-- <a class="pull-right btn btn-primary btn-xs" data-nodrag ng-click="newSubItem(this)" style="margin-right: 8px;"><span class="glyphicon glyphicon-plus"></span></a> -->
+      </div>
+    </div>
+    <ol ui-tree-nodes="" ng-model="node.nodes" ng-class="{hidden: collapsed}">
+      <li ng-repeat="node in node.nodes" ui-tree-node ng-include="'nodes_renderer2.html'">
+      </li>
+    </ol>
+  </script>  
+  <!-- <div class="container" > -->
+    <h1 class="page-header">Run Tests</h1>
+
+	<label>Search: <input ng-model="query" ng-change="change()"> And= (.*)</label>
+
+    <!-- <h3>Connected lists</h3> -->
+    <div class="row">
+      <div class="col-sm-6">
+        <h3>Available Tests</h3>
+        <div ui-tree id="tree1-root">
+          <ol ui-tree-nodes="" ng-model="tree1">
+            <li ng-repeat="node in tree1" ui-tree-node ng-include="'nodes_renderer1.html'"></li>
+          </ol>
+        </div>
+      </div>
+      
+      
+
+      <div class="col-sm-6">
+        <h3>Your Tests</h3>
+        <div ui-tree id="tree2-root">
+          <ol ui-tree-nodes="" ng-model="tree2">
+            <li ng-repeat="node in tree2" ui-tree-node ng-include="'nodes_renderer2.html'"></li>
+          </ol>
+        </div>
+        <h3></h3>
+        
+        <div class="col-sm-12">
+        	<div class="col-sm-3">
+	        	<label>
+			    <input type="radio" ng-model="envirment.name" value="live" checked="checked">
+			      Live
+			    </label><br/>
+			    <label>
+			    <input type="radio" ng-model="envirment.name" value="admin">
+			      Admin
+			  </label><br/>
+			  <label>
+			    <input type="radio" ng-model="envirment.name" value="dev">
+			      Dev
+			  </label><br/>
+			  <label>
+			  <input type="radio" ng-model="envirment.name" value="stging">
+			      Staging
+			  </label><br/>
+        	</div>
+        	<div class="col-sm-9">
+        		<div class="col-sm-12">
+		        	<label class="col-sm-12">ImportTests:</label>
+		        	<input type="file" on-read-file="showContent($fileContent)" class="btn btn-primary btn-xs col-sm-12" 
+		        		ng-disabled="Process" ></input> 
+					<!-- <a class="btn btn-success btn-xs" ng-click="importTests()" 
+						ng-disabled="Process  || !tree2.length > 0">
+						<font size="4">Import Tests</font>
+					</a> -->
+					<br/>
+				</div>
+        		<div class="col-sm-12">
+        			<br/>
+					<a class="btn btn-primary btn-xs" ng-click="exportTests()" 
+						ng-disabled="Process  || !tree2.length > 0">
+						<font size="2">Export Tests</font>
+					</a>
+				</div>
+			
+			</div>
+			
+        </div>
+        <div class="col-sm-12">
+				<label>Email: <input ng-model="email" placeholder="Enter your email Optional"></label>
+		</div>
+        <div class="col-sm-12">
+			<a class="btn btn-success btn-xs" ng-click="runTest()" 
+				ng-disabled="Process  || !tree2.length > 0">
+				<font size="4">Run Tests</font>
+			</a>
+		</div>
+      </div>
+    </div>
+    
+    <!-- <h3></h3>
+	<div class="row">
+		<div class="col-sm-12">
+			<a class="btn btn-success btn-xs" ng-click="runTest()" ng-disabled="Process"><font size="4">Run Tests</font></a>
+		</div>
+	</div> -->
+	
+	
+    <!-- <h3>Data binding (For Testing)</h3>
+    <div class="row">
+      <div class="col-sm-6">
+        <pre class="code">{{ tree1 | json }}</pre>
+      </div>
+
+      <div class="col-sm-6">
+        <pre class="code">{{ tree2 | json }}</pre>
+      </div>
+    </div> -->
+
+  <!-- </div> -->
+ <!-- </div>
+ </div> -->

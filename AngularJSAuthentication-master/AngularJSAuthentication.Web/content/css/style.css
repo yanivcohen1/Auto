@@ -1,0 +1,145 @@
+/* ********************************************************
+   * GLOBAL DEFINITIONS                                   *
+   ******************************************************** */
+body {
+    margin:0;
+    padding:0;
+    width:100%;/* needed for background decoration */
+    height:100%;/* needed for background decoration */
+    text-align:center;
+    background-color:#F8F8F8;
+    color:#222222;
+    font-family:Arial,"Lucida Sans","Lucida Grande",Lucida,sans-serif;
+    font-size:13px; /* all other sizes depend on this and will be defined as X.Yem */
+}
+
+a {text-decoration: none;}
+a:link, a:visited, a:hover {color:#004588;}
+a:active {color:#FF0000;}
+
+div.spacer05 {height:5px;}
+div.spacer10 {height:10px;}
+div.spacer15 {height:15px;}
+div.clear {clear:both;} /* after floats */
+
+input.w40  {width:40px;}
+input.w60  {width:60px;}
+input.w80  {width:80px;}
+input.w100 {width:100px;}
+input.w120 {width:120px;}
+input.w140 {width:140px;}
+input.w160 {width:160px;}
+input.w180 {width:180px;}
+input.w200 {width:200px;}
+
+.ng-cloak {display: none !important;}
+
+
+/* ********************************************************
+   * PAGE ARCHITECTURE
+   ******************************************************** */
+#headdiv {
+    position:absolute;
+    width:100%;
+    height:40px;
+    top:0px;
+    text-align:left;
+    padding-left:40px;
+    background-color: #000000;
+    color: #CCCCCC;
+    font-size:2em;
+    font-weight:bold;
+}
+
+#maindiv {
+    margin:0 auto;
+    margin-top:80px;
+    width:960px;
+    min-width:960px;
+    min-height:600px;
+    text-align:left;
+}
+
+
+/* ********************************************************
+   * THE LIST TABLE                                       *
+   ******************************************************** */
+div.btn-group {display:none;} /* Buttons for rows per page: 25/50/100 */
+
+.ng-table {
+    border: 1px solid #000;
+    border-collapse:collapse;
+    background-color: #dddddd;
+}
+
+.table {
+    /* width: 100%; */
+    width: 958px;
+    margin-bottom: 0px;
+}
+
+/* List rows and cells */
+th, td {
+    border: 1px solid black;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+th {
+    padding-top:6px;
+    padding-bottom:6px;
+}
+
+tr.odd {
+    background-color: #f8f8f8;
+}
+tr.even {
+    background-color: #f0f0f0;
+}
+
+td.rowTd {
+}
+
+td.editRowTd {
+    border-left:0px none white;
+    border-right:0px none white;
+}
+
+th.sortable.sort-asc {
+    background-color: #ffcccc;
+    /* text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75); */
+}
+
+table.noborder, table.noborder td {border: 0px none white;}
+
+/* Pagination buttons */
+/*
+.pagination {
+    display: inline-block;
+    padding-left: 0px;
+    margin: 8px 0px;
+    border-radius: 4px;
+}
+*/
+ul.pagination {
+    list-style-type: none;
+}
+
+ul.pagination li {
+    list-style-type: none;
+    display:inline;
+}
+
+.pagination > li > a, .pagination > li > a:hover, .pagination > li > a:focus {
+    border-color: #444444;
+    color:#000000;
+    cursor:pointer;
+
+}.pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+    display:none;
+    border-color: #444444;
+    color:#000000;
+    cursor:pointer;
+}

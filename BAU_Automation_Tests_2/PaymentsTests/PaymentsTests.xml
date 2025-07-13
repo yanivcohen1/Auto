@@ -1,0 +1,115 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Payments Tests" verbose="1">
+
+	<listeners>
+               <listener class-name="com.wh.auto.common.TestListener" />
+   
+    </listeners>
+    
+	<test name="WhccDepositLimit">
+		<classes>
+			<class name="com.wh.auto.whcc.TestDeposit">
+				<methods>
+					<include name="depositLimit" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="WhccDepositLimitExtended">
+		<classes>
+			<class name="com.wh.auto.whcc.DepositLimit" />
+		</classes>
+	</test>
+
+	<test name="WhccDepositLimitMobileExtended">
+		<classes>
+			<class name="com.wh.auto.whcc.DepositLimitMobile" />
+		</classes>
+	</test>
+
+	<test name="WhccDepositLimitMobile">
+		<classes>
+			<class name="com.wh.auto.whcc.TestDepositMobile">
+				<methods>
+					<include name="depositLimit" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="WhccSelfExcludeMobile">
+		<classes>
+			<class name="com.wh.auto.whcc.SelfExcludeMobile" />
+		</classes>
+	</test>
+	
+	<test name="WhccSelfExclude">
+		<classes>
+			<class name="com.wh.auto.whcc.SelfExclude" />
+		</classes>
+	</test>
+	
+	<test name="WhccTimeoutMobile">
+		<classes>
+			<class name="com.wh.auto.whcc.TimeoutMobile" />
+		</classes>
+	</test>
+	
+	<test name="WhccTimeout">
+		<classes>
+			<class name="com.wh.auto.whcc.Timeout" />
+		</classes>
+	</test>
+	
+	<test name="WhccDepositCancel">
+		<classes>
+			<class name="com.wh.auto.whcc.TestDeposit">
+				<methods>
+					<include name="depositCancel" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="WhccClickHereOpenWin">
+		<classes>
+			<class name="com.wh.auto.whcc.TestDeposit">
+				<methods>
+					<include name="clickHereOpenWin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="WhccDepositMsg">
+		<classes>
+			<class name="com.wh.auto.whcc.TestDeposit">
+				<methods>
+					<include name="depositMsg" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="WhcclimitMsg">
+		<classes>
+			<class name="com.wh.auto.whcc.TestDeposit">
+				<methods>
+					<include name="limitMsg" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="WhccRegulationLinkOpen">
+		<classes>
+			<class name="com.wh.auto.whcc.TestDeposit">
+				<methods>
+					<include name="regulationLinkOpen" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+</suite>

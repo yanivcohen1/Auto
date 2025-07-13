@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+	<title>Tests Managment</title>
+	<link rel="shortcut icon" href="images/people.png">
+	<link href="css/bootstrap-3.1.1.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="css/ng-table.css" rel="stylesheet" />
+    <link href="css/loading-bar.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/customerManagementStyles.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div class="loader" ng-hide="initialized">
+		Loading...
+	</div>
+
+	<nav class="navbar navbar-fixed-top navbar-inverse ng-hide" role="navigation" ng-show="initialized">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<!-- <ul class="nav navbar-nav">
+					<li><a href="#!/">Home</a></li>
+				</ul> -->
+ 				<ul class="nav navbar-nav" data-ng-controller="NavbarController">
+                	<li>
+                		<a class="brand " href="#/">
+                    		<img src="images/people.png" alt="logo"> Tests Management
+                		</a>
+                	</li>
+                	<li data-ng-class="{'active':getClass('/runTests')}"><a href="#/runTests"><span class="glyphicon glyphicon-home"></span> Run Tests</a>
+                	<li data-ng-class="{'active':getClass('/about')}"><a href="#/about"><span class="glyphicon glyphicon-play"></span> Manual Tests</a>
+                    <li data-ng-class="{'active':getClass('/Suites')}"><a href="#/Suites"><span class="glyphicon glyphicon-align-left"></span> Suites Manage</a>
+                    <li data-ng-class="{'active':getClass('/tests/-1')}"><a href="#/tests/-1"><span class="glyphicon glyphicon-list-alt"></span> Tests Manage</a></li>
+                </ul>
+				<ul class="nav navbar-nav navbar-right" >
+					<li class="dropdown open" ng-show="user">
+						<a href="" class="dropdown-toggle active ng-binding" data-toggle="dropdown active">
+							<i class="glyphicon glyphicon-user"></i> {{user.name}}  <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a tabindex="-1" href="" ng-click="logout()">
+								<i class="glyphicon glyphicon-off"></i> Logout</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container ng-hide" ng-show="initialized">
+	<br>
+	<br>
+		<div class="alert alert-danger" ng-show="error">{{error}}</div>
+		<!-- <div ng-view></div> --><div animated-view></div>
+	</div>
+	
+	<!-- Vendor Libs: jQuery only used for Bootstrap functionality -->
+	<script src="js/jquery-2.0.2.js"></script>
+	<script src="js/bootstrap-3.1.1.min.js"></script>
+	<script src="js/angular-1.2.3.js"></script>
+	<script src="js/angular-resource-1.2.3.js"></script>
+	<script src="js/angular-route-1.2.3.js"></script>
+	<script src="js/angular-cookies-1.2.3.js"></script>
+	<script src="js/config.js"></script>
+	
+	<!-- UI Libs -->
+    <script src="js/ui-bootstrap-tpls-0.11.0.js"></script>
+    <script src="js/ng-table.js"></script>
+    <script src="js/ng-table-export.js"></script>
+    <script src="js/loading-bar.min.js"></script>
+
+    <!-- App libs -->
+    <script src="app/app.js"></script>
+    <script src="app/controllers/SuitesController.js"></script>
+    <script src="app/controllers/TestsController.js"></script>
+    <script src="app/controllers/ManualCtrl.js"></script>
+    <script src="app/services/SuitesService.js"></script>
+    <script src="app/services/TestsService.js"></script>
+    <script src="app/directives/animatedView.js"></script>
+    <script src="app/directives/OnRaedFileDirc.js"></script>
+	
+</body>
+</html>

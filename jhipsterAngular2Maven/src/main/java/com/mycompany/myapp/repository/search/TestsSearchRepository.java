@@ -1,0 +1,10 @@
+package com.mycompany.myapp.repository.search;
+
+import com.mycompany.myapp.domain.Tests;
+import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
+
+/**
+ * Spring Data Elasticsearch repository for the Tests entity.
+ */
+public interface TestsSearchRepository extends ElasticsearchRepository<Tests, Long> {
+}

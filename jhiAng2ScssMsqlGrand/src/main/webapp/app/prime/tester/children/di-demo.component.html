@@ -1,0 +1,15 @@
+<h4>Tabs Children Demo</h4>
+<jhi-ui-tabs #context>
+  <ng-template jhiUiPane title='Overview &nbsp;' active="true">
+    You have {{details.length}} details.
+  </ng-template>
+  <ng-template *ngFor="let detail of details" jhiUiPane title='{{detail.title}} &nbsp;'>
+    {{detail.text}} <br><br>
+    <button class="btn" (click)="removeDetail(detail)">Remove</button>
+  </ng-template>
+  <ng-template jhiUiPane title='Summary &nbsp;'>
+    Next last ID is {{id}}.
+  </ng-template>
+</jhi-ui-tabs>
+<hr>
+<button class="btn" (click)="addDetail()">Add Detail</button>

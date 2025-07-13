@@ -1,0 +1,40 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "suite",
+            "relationshipNameCapitalized": "Suite",
+            "relationshipFieldName": "suite",
+            "otherEntityName": "suite",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Suite",
+            "otherEntityField": "suite_name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "test_name",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Test_name",
+            "fieldNameUnderscored": "test_name",
+            "fieldInJavaBeanMethod": "Test_name",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150820101455",
+    "dto": "no",
+    "pagination": "pager",
+    "validation": true
+}

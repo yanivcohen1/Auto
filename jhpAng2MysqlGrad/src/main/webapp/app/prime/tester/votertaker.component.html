@@ -1,0 +1,104 @@
+<p-growl [value]="glowMsgs"></p-growl>
+
+<sticky [sticky-offset-top]="10" [ngbCollapse]="isCollapsed" >
+  <div class="float">
+      To hide this ?  &nbsp;
+      <button pButton type="button" (click)="this.isCollapsed = true" 
+      class="ui-button-secondary" label="Yes"></button>
+      &nbsp;
+      <button pButton type="button" (click)="this.isCollapsed = false" 
+      class="ui-button-secondary" label="No"></button>
+  </div>
+</sticky>
+
+<br/>
+<button (click)="startLoading()">Start Loading</button>
+<button (click)="stopLoading()">Stop Loading</button>
+<button (click)="completeLoading()">Complete Loading</button>
+
+<br/>
+<br/>
+<button (click)='modalService.open(modalId)'>Open Modal</button>
+<jhi-app-modal [modalTitle]="'Some title'" [blocking]='false' [bgColor]="'e4e5e6'" [modalId]='modalId'>
+  <div align="center"> Are You confairm ? </div>
+  <div align="right">
+    <button pButton type="button" (click)="onclickDialog(true)" label="Yes"></button>
+    <button pButton type="button" (click)="onclickDialog(false)" label="No"></button>
+  </div>
+</jhi-app-modal>
+
+<br/>
+<jhi-modal-dialog></jhi-modal-dialog>
+
+<p-confirmDialog></p-confirmDialog>
+<button type="button" (click)="confirm1()" pButton icon="fa-check" label="Confirm"></button>
+<button type="button" (click)="confirm2()" pButton icon="fa-trash" label="Delete"></button>
+
+<br/>
+<br/>
+<div>
+  <jhi-markdown></jhi-markdown>
+</div>
+
+<br/>
+<h2>Should mankind colonize the Universe?</h2>
+<input [(ngModel)]="search" type="text" placeholder="Enter your search"/>
+<button pButton type="button" (click)="onclick()" label="Click"></button>
+<h3>Agree: {{agreed}}, Disagree: {{disagreed}}</h3>
+<jhi-my-voter *ngFor="let voter of voters | filter:search"
+  [name]="voter"
+  (onVoted)="onVoted($event)">
+</jhi-my-voter>
+
+<p [jhiMyHighlight]="color" defaultColor="violet">
+    Highlight me too!
+</p>
+
+<p-tieredMenu #menu popup="true" [model]="items"></p-tieredMenu>
+<button type="button" pButton icon="fa fa-list" label="Show menu" (click)="menu.toggle($event)"></button>
+
+<br/>
+<br/>
+<div class="col">
+  <div ngbDropdown class="d-inline-block">
+    <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+      <button class="dropdown-item" (click)="onPopup('1')">Action - 1</button>
+      <button class="dropdown-item" (click)="onPopup('2')">Another Action - 2</button>
+      <button class="dropdown-item" (click)="onPopup('3')">Something else is here -3</button>
+    </div>
+  </div>
+</div>
+
+
+
+<br/>
+<button type="text" pButton label="popup view" (click)="op1.toggle($event)"></button>
+
+<p-overlayPanel #op1>
+    <img src="../../../content/images/hipster.png" alt="Galleria 1" />
+</p-overlayPanel>
+
+<br/>
+<p-tabMenu [model]="items" [activeItem]="items[0]"></p-tabMenu>
+<div>show content for {{selectedTab}}</div>
+
+<br/>
+<p-tabView [activeIndex]="index" orientation="left">
+    <p-tabPanel header="Header 1" leftIcon="fa-bell-o">
+       Content 1
+    </p-tabPanel>
+    <p-tabPanel header="Header 2" [selected]="true">
+        Content 2
+    </p-tabPanel>
+    <p-tabPanel header="Header 3" [disabled]="true">
+        Content 3    
+    </p-tabPanel>
+</p-tabView>
+
+<br/>
+<jhi-data-table-crud></jhi-data-table-crud>
+
+<br/>
+<button type="button" (click)="update(chart)">update chart</button>
+<p-chart #chart type="doughnut" [data]="data"></p-chart>

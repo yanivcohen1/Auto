@@ -1,0 +1,62 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder
+  xmlns:ui="urn:ui:com.google.gwt.uibinder"
+  xmlns:g="urn:import:com.google.gwt.user.client.ui"
+  xmlns:c="urn:import:com.google.gwt.user.cellview.client">
+
+  <ui:style>
+    .cellTable {
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+      margin-bottom: 4px;
+    }
+  </ui:style>
+
+  <g:HTMLPanel>
+    <table cellspacing='0' cellpadding='0' style='width:100%;'>
+      <tr>
+        <td
+          valign='top'>
+          <c:CellTable
+            addStyleNames='{style.cellTable}'
+            pageSize='1'
+            ui:field='table' />
+        </td>
+      </tr>
+      <tr>
+        <td left="106" top="108">
+			<g:Button text="OK" ui:field="okButten"/>
+		</td>
+		<td left="222" top="108">
+			<g:Button text="Cancel" ui:field="cancelButten"/>
+		</td>
+      </tr>
+    </table>
+  </g:HTMLPanel>
+</ui:UiBinder>
+
+<!-- <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" 
+	xmlns:p1="urn:import:com.google.gwt.user.cellview.client">
+	<ui:style>
+	.important {
+		font-weight: bold;
+	}
+	</ui:style>
+	<g:HTMLPanel>
+		<g:AbsolutePanel height="154px" ui:field="absolutePanel">
+			<g:at left="0" top="0">
+				<p1:CellTable ui:field="table" width="429px" height="102px" pageSize="1"/>
+			</g:at>
+			<g:at left="106" top="108">
+				<g:Button text="OK" ui:field="okButten"/>
+			</g:at>
+			<g:at left="222" top="108">
+				<g:Button text="Cancel" ui:field="cancelButten"/>
+			</g:at>
+		</g:AbsolutePanel>
+		
+		
+	</g:HTMLPanel>
+</ui:UiBinder>  -->

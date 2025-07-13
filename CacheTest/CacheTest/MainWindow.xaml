@@ -1,0 +1,13 @@
+﻿<Window x:Class="CacheTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CacheTest" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid>
+        <Button Content="Cache" Height="26" HorizontalAlignment="Left" Margin="52,12,0,0" Name="B_Start" VerticalAlignment="Top" Width="40" Click="Start_Click" />
+        <Label Height="28" Margin="142,10,70,0" Name="L_FileName" VerticalAlignment="Top" />
+        <TextBox Margin="12,45,12,12" Name="T_Result" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" />
+        <Label Height="27" Margin="0,10,3,0" Name="l_Progress" VerticalAlignment="Top" HorizontalAlignment="Right" Width="61" />
+        <Button Content="Config" Height="26" HorizontalAlignment="Left" Margin="5,12,0,0" Name="B_Config" VerticalAlignment="Top" Width="41" Click="B_Config_Click" />
+        <Button Content="Size" Height="26" HorizontalAlignment="Left" Margin="98,12,0,0" Name="B_Size" VerticalAlignment="Top" Width="38" Click="B_Size_Click" />
+    </Grid>
+</Window>

@@ -1,0 +1,21 @@
+
+<div [ngbCollapse]="isBuildCollapsed" >
+    <h3>Builds</h3>
+    <div *ngIf="product$ | async as product">
+      <h4>Product: "{{ product.name }}"</h4>
+      <!-- <div>
+        <label>Id: </label>{{ product.id }}
+      </div> -->
+      <input type="text" placeholder="Search" #queryElem (keyup)="0">
+      <ul class="items">
+        <li *ngFor="let build of builds$ | async | filterAsync:queryElem.value:'name'"
+          [class.selected]="build.id === selectedId">
+          <a [routerLink]="['./build', build.id]" (click)="selectBuildId(build.id)">
+            <span class="badge">{{ build.id }}</span>{{ build.name }}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <router-outlet></router-outlet>

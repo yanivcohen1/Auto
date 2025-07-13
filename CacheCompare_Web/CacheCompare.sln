@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheCompare", "CacheCompare\CacheCompare.csproj", "{6F6855A5-364F-404E-BCBD-F636A67D93C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheCompare.Web", "CacheCompare.Web\CacheCompare.Web.csproj", "{1EF50810-0358-408C-A00E-B1A1E6C5DF85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F6855A5-364F-404E-BCBD-F636A67D93C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F6855A5-364F-404E-BCBD-F636A67D93C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F6855A5-364F-404E-BCBD-F636A67D93C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F6855A5-364F-404E-BCBD-F636A67D93C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EF50810-0358-408C-A00E-B1A1E6C5DF85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EF50810-0358-408C-A00E-B1A1E6C5DF85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EF50810-0358-408C-A00E-B1A1E6C5DF85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EF50810-0358-408C-A00E-B1A1E6C5DF85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

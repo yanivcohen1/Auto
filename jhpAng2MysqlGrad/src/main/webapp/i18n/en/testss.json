@@ -1,0 +1,25 @@
+{
+    "testManagerApp": {
+        "testss" : {
+            "home": {
+                "title": "Testsses",
+                "createLabel": "Create a new Testss",
+                "createOrEditLabel": "Create or edit a Testss",
+                "search": "Search for Testss"
+            },
+            "created": "A new Testss is created with identifier {{ param }}",
+            "updated": "A Testss is updated with identifier {{ param }}",
+            "deleted": "A Testss is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Testss {{ id }}?"
+            },
+            "detail": {
+                "title": "Testss"
+            },
+            "name": "Name",
+            "val": "Val",
+            "enums": "Enums",
+            "dates": "Dates"
+        }
+    }
+}

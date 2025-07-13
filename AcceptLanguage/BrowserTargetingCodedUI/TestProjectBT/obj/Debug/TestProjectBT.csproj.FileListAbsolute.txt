@@ -1,0 +1,37 @@
+C:\Temp2\Browser Control\TestProjectBT\bin\Debug\TestProjectBT.dll
+C:\Temp2\Browser Control\TestProjectBT\bin\Debug\TestProjectBT.pdb
+C:\Temp2\Browser Control\TestProjectBT\obj\Debug\ResolveAssemblyReference.cache
+C:\Temp2\Browser Control\TestProjectBT\obj\Debug\TestProjectBT.dll
+C:\Temp2\Browser Control\TestProjectBT\obj\Debug\TestProjectBT.pdb
+C:\Temp2\BrowserTargetingCodedUI\TestProjectBT\bin\Debug\TestProjectBT.dll
+C:\Temp2\BrowserTargetingCodedUI\TestProjectBT\bin\Debug\TestProjectBT.pdb
+C:\Temp2\BrowserTargetingCodedUI\TestProjectBT\obj\Debug\ResolveAssemblyReference.cache
+C:\Temp2\BrowserTargetingCodedUI\TestProjectBT\obj\Debug\TestProjectBT.dll
+C:\Temp2\BrowserTargetingCodedUI\TestProjectBT\obj\Debug\TestProjectBT.pdb
+C:\Temp2\BrowserTargetingCodedUI - Test\TestProjectBT\obj\Debug\ResolveAssemblyReference.cache
+C:\Temp2\BrowserTargetingCodedUI - Test\TestProjectBT\obj\Debug\TestProjectBT.dll
+C:\Temp2\BrowserTargetingCodedUI - Test\TestProjectBT\bin\Debug\TestProjectBT.dll
+C:\Temp2\BrowserTargetingCodedUI - Test\TestProjectBT\bin\Debug\TestProjectBT.pdb
+C:\Temp2\BrowserTargetingCodedUI - Test\TestProjectBT\obj\Debug\TestProjectBT.pdb
+C:\SVN\Automation_Tools\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\bin\Debug\TestProjectBT.dll
+C:\SVN\Automation_Tools\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\bin\Debug\TestProjectBT.pdb
+C:\SVN\Automation_Tools\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\obj\Debug\ResolveAssemblyReference.cache
+C:\SVN\Automation_Tools\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\obj\Debug\TestProjectBT.dll
+C:\SVN\Automation_Tools\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\obj\Debug\TestProjectBT.pdb
+C:\SVN\Automation_Tools\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Extension.Firefox.dll
+C:\SVN\Automation_Tools\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\obj\Debug\Interop.SHDocVw.dll
+C:\SVN\Automation_Tools\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\obj\Debug\TestProjectBT.csproj.ResolveComReference.cache
+C:\SVN\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\bin\Debug\TestProjectBT.dll
+C:\SVN\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\bin\Debug\TestProjectBT.pdb
+C:\SVN\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\bin\Debug\Microsoft.VisualStudio.QualityTools.CodedUITestFramework.dll
+C:\SVN\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Common.dll
+C:\SVN\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Extension.dll
+C:\SVN\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\bin\Debug\Microsoft.VisualStudio.TestTools.UITesting.dll
+C:\SVN\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Common.xml
+C:\SVN\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Extension.xml
+C:\SVN\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\bin\Debug\Microsoft.VisualStudio.TestTools.UITesting.xml
+C:\SVN\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\obj\Debug\ResolveAssemblyReference.cache
+C:\SVN\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\obj\Debug\Interop.SHDocVw.dll
+C:\SVN\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\obj\Debug\TestProjectBT.csproj.ResolveComReference.cache
+C:\SVN\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\obj\Debug\TestProjectBT.dll
+C:\SVN\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\obj\Debug\TestProjectBT.pdb

@@ -1,0 +1,34 @@
+@AllMig
+Feature: Register mobile
+  As a new migUser I want to be able Register
+
+  @Register
+  Scenario: Register
+    #Given "mobile" User is connect to the internet ""
+    Given migUser language "En" and Brand "WHCC" and "DESK"
+    Given migUser is navigating to "https://www.williamhillcasino.com"
+    #Register
+    And migUser Click Register top Button
+    # And migUser fill Title "Mr"
+    # And migUser fill first "first name"
+    # And migUser fill last "last name"
+    # And migUser fill email with email: "test@playtech.com"
+    # And migUser fill user name with timestamp
+    # And migUser fill password 123456
+    # And migUser Contiue to step 2
+    # #Step 2
+    # And migUser click enter address manualy
+    # And migUser fill City "city"
+    # And migUser fill date of birth 1/1/1980
+    # And migUser select country "United Kingdom"
+    # And migUser fill Address "address"
+    # And migUser fill Post code 123
+    # And migUser fill Mobile 1227768276
+    # And migUser select currency GBP
+    # And migUser click on Register Now
+    # Then migUser Account was Created
+
+    #@WhccMobiRegisterEn
+    #Examples: 
+    #  | language | Brand | Type |                                                           | freeSpins  | depositApproved                                                 |
+    #  | en       | Whcc  | Mobi |

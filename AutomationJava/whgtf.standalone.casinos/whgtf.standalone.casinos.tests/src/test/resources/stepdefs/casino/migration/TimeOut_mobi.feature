@@ -1,0 +1,59 @@
+@TimeOut @AllMig
+Feature: TimeOutEn Mobile 
+	As a new user I want to be able to TimeOut
+	
+Scenario Outline: MobiTimeOut_<Type>_<Brand>_<language>
+	Given "<Type>" User is connect to the internet ""
+    Given migUser language "<language>" and Brand "<Brand>" and "<Type>"
+    Given migUser is navigating to ""
+    #Register
+    And migUser Click Register top Button
+	And migUser fill Title "Mr"
+	And migUser fill first "first name"
+	And migUser fill last "last name"
+	And migUser fill email with email: "test@playtech.com"
+	And migUser fill user name with timestamp
+	And migUser fill password 123456
+	And migUser Contiue to step 2
+	#Step 2
+	And migUser click enter address manualy
+	And migUser fill City "city"
+	And migUser fill date of birth 1/1/1980
+	And migUser select country "United Kingdom"
+	And migUser fill Address "address"
+	And migUser fill Post code 123
+	And migUser fill Mobile 1227768276
+	And migUser select currency GBP
+	And migUser click on Register Now
+	Then migUser Account was Created
+	#Start TimeOut
+	Then User open Menu
+	Then User open my account
+	Then User open Responsible Gaming
+	Then user click on timeout
+	#Given migUser is navigating to url "/en/responsible-gaming"
+	Then User Set 24 Hours
+	Then User save TimeOut
+	Then User Successfull timeOut ok click
+	Then User Click on Timeout ok
+	Then User read timeout msg "<Msg>"
+	Then User Click on Timeout ok
+	Then User Logout msg OK click
+	#login
+	#Given migUser is navigating to ""
+	And User Click on LOGIN top button on main page
+	And User Fill Last Username in popup window
+	And User Fill Password "123456" in popup window
+	And User Click on LOGIN Butten in popup window
+	#finish
+	Then User read exclude "<Timeout_msg>"
+    
+    @EgMobiTimeOutEn @EgAllMig
+    Examples:
+		| language | Brand | Type   |  UserAccount  					    | Msg 														  													  | Timeout_msg 																										 |
+    	| En	   | Eg    | Mobi   |  Wellcome to william hill casino club | Sorry, you have asked to be timed-out from playing and were automatically logged off. You can play again after | Sorry, the action cannot be performed because you have asked to be timed-out from playing. You can login again after |
+	
+	@WhccMobiTimeOutEn @WhccAllMig
+    Examples:
+		| language | Brand | Type   |  UserAccount  					    | Msg 														  												    | Timeout_msg 																										   |
+    	| En	   | Whcc    | Mobi   |  Wellcome to william hill casino club | Sorry, you have asked to be timed-out from playing and were automatically logged off. You can play again after | Sorry, the action cannot be performed because you have asked to be timed-out from playing. You can login again after |

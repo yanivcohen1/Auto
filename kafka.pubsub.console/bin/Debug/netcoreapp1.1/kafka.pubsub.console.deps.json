@@ -1,0 +1,96 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v1.1",
+    "signature": "0afbe56ea0dabf002b2dbf28ff605d41f6b8339e"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v1.1": {
+      "kafka.pubsub.console/1.0.0": {
+        "dependencies": {
+          "Confluent.Kafka": "0.11.3"
+        },
+        "runtime": {
+          "kafka.pubsub.console.dll": {}
+        }
+      },
+      "confluent.kafka/0.11.3": {
+        "dependencies": {
+          "librdkafka.redist": "0.11.3"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Confluent.Kafka.dll": {}
+        }
+      },
+      "librdkafka.redist/0.11.3": {
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/debian9-librdkafka.so": {
+            "rid": "linux-x64",
+            "assetType": "native"
+          },
+          "runtimes/linux-x64/native/librdkafka.so": {
+            "rid": "linux-x64",
+            "assetType": "native"
+          },
+          "runtimes/osx-x64/native/librdkafka.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native"
+          },
+          "runtimes/win7-x64/native/librdkafka.dll": {
+            "rid": "win7-x64",
+            "assetType": "native"
+          },
+          "runtimes/win7-x64/native/librdkafkacpp.dll": {
+            "rid": "win7-x64",
+            "assetType": "native"
+          },
+          "runtimes/win7-x64/native/msvcr120.dll": {
+            "rid": "win7-x64",
+            "assetType": "native"
+          },
+          "runtimes/win7-x64/native/zlib.dll": {
+            "rid": "win7-x64",
+            "assetType": "native"
+          },
+          "runtimes/win7-x86/native/librdkafka.dll": {
+            "rid": "win7-x86",
+            "assetType": "native"
+          },
+          "runtimes/win7-x86/native/librdkafkacpp.dll": {
+            "rid": "win7-x86",
+            "assetType": "native"
+          },
+          "runtimes/win7-x86/native/msvcr120.dll": {
+            "rid": "win7-x86",
+            "assetType": "native"
+          },
+          "runtimes/win7-x86/native/zlib.dll": {
+            "rid": "win7-x86",
+            "assetType": "native"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "kafka.pubsub.console/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "confluent.kafka/0.11.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-snxS/cf3gn2r2WLjmU7zwABsZuVXPH0nWrCdwh0FNyI7/0KXHmjuVsDK3nqcq6pAOWXMvo6TmD94CCu0+FB6nQ==",
+      "path": "confluent.kafka/0.11.3",
+      "hashPath": "confluent.kafka.0.11.3.nupkg.sha512"
+    },
+    "librdkafka.redist/0.11.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MXWdnho9lYKZ4Xq3m4xvAvlsBviGEIug9bt6xmk5PPuaiPKZp6phjaMuyhyO8Y2Ki0CnuHWPA1JKR4mclWqhfQ==",
+      "path": "librdkafka.redist/0.11.3",
+      "hashPath": "librdkafka.redist.0.11.3.nupkg.sha512"
+    }
+  }
+}

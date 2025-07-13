@@ -1,0 +1,10 @@
+{
+  "simulation": "com.who.auto.records.ChatStress",
+  "simulationId": "chatstress",
+  "start": 1492108524982,
+  "description": "",
+  "scenarios": ["Login"],
+  "assertions": [
+
+  ]
+}

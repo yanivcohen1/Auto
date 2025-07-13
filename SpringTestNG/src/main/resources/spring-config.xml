@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config />
+    <context:component-scan base-package="com.codesolid"/>
+
+    <bean class="com.codesolid.tutorials.tests.pt_admin.Test_PT_Advertiser">
+        <property name="playersUsersNamesFile" value="C:\\SVN\\BAU_Automation_Tests\\ClientsAutomationTests\\TestBuild\\PlayersUsersNames.txt" />
+        <property name="testBrowsers">
+	        <array value-type="java.lang.String">
+			  <value>chrome</value>
+			</array>
+		</property>
+    </bean>
+    
+     <bean class="com.codesolid.tutorials.tests.pt_admin.PT_AdminMainPage">
+        <property name="playtechAdminUrl" value="https://GE1wkhyBI:AjJtUsbdH@admin.digitalarea1000.com/main.php" />
+        <property name="playtechAdminUsername" value="YanivC" />
+        <property name="playtechAdminPassword" value="Yanivco3" />
+        <property name="playtechAdminSearchUserUrl" value="https://admin.digitalarea1000.com/user_search.php?context=ums" />
+    </bean>
+    
+    <!-- Our dependencies -->
+    <bean id="userStory" name="userStory" class="com.codesolid.tutorials.UserStory">
+        <property name="user" ref="aSuperGeniusUser" />
+    </bean>
+    
+    <bean id="aSuperGeniusUser" name="user" class="com.codesolid.tutorials.User">
+        <property name="role" value="SuperGenius User" />
+    </bean>
+
+    
+</beans>

@@ -1,0 +1,19 @@
+<table class="table" ng-init="udSuite1={suiteName:udSuite.suiteName, xmlFileLocation:udSuite.xmlFileLocation, jenkinsURL:udSuite.jenkinsURL}">
+    <tr ng-class-odd="'odd'" ng-class-even="'even'">
+        <td class="rowTd">Suite Name:</td>
+        <td class="rowTd">Xml FileLocation:</td>
+        <td class="rowTd">Jenkins URL:</td>
+        <td></td>
+    </tr>
+	<tr ng-class-odd="'odd'" ng-class-even="'even'">    
+        <td class="rowTd"><input type="text" data-ng-model="udSuite1.suiteName" class="w100" style="width:100%; padding-left:0px; padding-right:0px;"></td>
+        <td class="rowTd"><input type="text" class="w100" data-ng-model="udSuite1.xmlFileLocation" style="width:100%; padding-left:0px; padding-right:0px;"></td>
+        <td class="rowTd"><input type="text" class="w100" data-ng-model="udSuite1.jenkinsURL" style="width:100%; padding-left:0px; padding-right:0px;"></td>
+        <td>
+			<a href="" class="btn btn-info btn-xs" ng-click="updateSuite(user.suiteId, udSuite1.suiteName, udSuite1.xmlFileLocation, udSuite1.jenkinsURL)">Update</a>
+			<br>
+			<br>
+			<a href="" class="btn btn-warning btn-xs" ng-click="setEditId(-1)">Cancel</a>
+		</td>
+    </tr>
+</table>

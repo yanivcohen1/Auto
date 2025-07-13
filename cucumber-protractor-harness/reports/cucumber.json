@@ -1,0 +1,81 @@
+[
+  {
+    "description": "  As a basic user\n  I should be able to add and remove tasks from the task list\n  So that I can keep track of my tasks",
+    "elements": [
+      {
+        "id": "angular-task-list;protractor-and-cucumber-test",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Protractor and Cucumber Test",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I go to \"https://angularjs.org/\"",
+            "result": {
+              "status": "passed",
+              "duration": 5317158025
+            },
+            "line": 9,
+            "match": {
+              "location": "D:\\git\\Protractor-cucumber\\cucumber-protractor-harness-master\\features\\step_definitions\\stepDefinitions.js:13"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I add \"Be Awesome\" in the task field",
+            "result": {
+              "status": "passed",
+              "duration": 843276
+            },
+            "line": 10,
+            "match": {
+              "location": "D:\\git\\Protractor-cucumber\\cucumber-protractor-harness-master\\features\\step_definitions\\stepDefinitions.js:19"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click the add button",
+            "result": {
+              "status": "passed",
+              "duration": 353268
+            },
+            "line": 11,
+            "match": {
+              "location": "D:\\git\\Protractor-cucumber\\cucumber-protractor-harness-master\\features\\step_definitions\\stepDefinitions.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see my new task in the list",
+            "result": {
+              "status": "failed",
+              "duration": 335951781,
+              "error_message": "AssertionError: expected 'Be Awesome' to equal 'Be Awesome1'"
+            },
+            "line": 12,
+            "match": {
+              "location": "D:\\git\\Protractor-cucumber\\cucumber-protractor-harness-master\\features\\step_definitions\\stepDefinitions.js:32"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@main",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "angular-task-list",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "Angular Task List",
+    "tags": [],
+    "uri": "D:\\git\\Protractor-cucumber\\cucumber-protractor-harness-master\\features\\test.feature"
+  }
+]

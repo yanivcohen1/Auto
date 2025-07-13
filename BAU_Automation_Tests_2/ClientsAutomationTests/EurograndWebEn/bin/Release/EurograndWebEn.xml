@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EurograndWebEn</name>
+    </assembly>
+    <members>
+        <member name="M:EurograndWebEn.CashierPage.EnterDetails">
+            <summary>
+            Enter Cashier form Details
+            </summary>
+        </member>
+        <member name="M:EurograndWebEn.CashierPage.CloseApprovePopup">
+            <summary>
+            Popup Your deposit has been approved and will be charged as WH ONLINE. Thank you and good luck!
+            </summary>
+        </member>
+        <member name="M:EurograndWebEn.CongragulationPage.#ctor(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Open the WebPage
+            </summary>
+            <param name="_driver"></param>
+        </member>
+        <member name="M:EurograndWebEn.CongragulationPage.ClickOnDeposit">
+            <summary>
+            Click On PlayBingo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EurograndWebEn.DepositPage">
+            <summary>
+            The Deposit Page
+            </summary>
+        </member>
+        <member name="M:EurograndWebEn.DepositPage.Deposit">
+            <summary>
+            Deposit 50 URO
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EurograndWebEn.DepositPage.confirmDeposit">
+            <summary>
+            confirmDeposit
+            </summary>
+        </member>
+        <member name="M:EurograndWebEn.DepositPage.CloseApprovePopup">
+            <summary>
+            Popup Your deposit has been approved and will be charged as WH ONLINE. Thank you and good luck!
+            </summary>
+        </member>
+        <member name="M:EurograndWebEn.DepositPage.ReadCurrentBalance">
+            <summary>
+            Read Current Balance
+            </summary>
+        </member>
+        <member name="T:EurograndWebEn.EurograndWebEn">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:EurograndWebEn.EurograndWebEn._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:EurograndWebEn.EurograndWebEn.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:EurograndWebEn.EurograndWebEn.EurograndWebEnTestDebug">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:EurograndWebEn.EurograndWebEn.EurograndWebEnTest">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:EurograndWebEn.EurograndWebEn.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:EurograndWebEn.EurograndWebEn.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+        <member name="M:EurograndWebEn.MainWebPage.#ctor(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Open the WebPage
+            </summary>
+            <param name="_driver"></param>
+        </member>
+        <member name="M:EurograndWebEn.MainWebPage.ClickOnJoinNow">
+            <summary>
+            Click On PlayBingo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EurograndWebEn.RegistrationPage.FillRegisterDetail(System.String)">
+            <summary>
+            Fill Register Detail
+            </summary>
+        </member>
+    </members>
+</doc>

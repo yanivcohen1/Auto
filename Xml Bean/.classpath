@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="Test/" kind="src" path="src"/>
+	<classpathentry kind="src" path="Config"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/asm-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/aspectj-1.7.1.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/aspectjtools.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/aspectjweaver.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/commons-codec-1.7.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/commons-net-3.2.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/cssparser-0.9.8.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/hibernate-commons-annotations-4.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/hibernate-core-4.1.9.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/hibernate-entitymanager-4.1.9.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/htmlunit-2.11.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/htmlunit-core-js-2.11.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/httpclient-4.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/httpcore-4.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/httpmime-4.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/javassist-3.17.1-GA.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/javax.servlet.jsp.jstl-1.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/javax.servlet.jsp.jstl-api-1.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/jaxb-api-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/jaxb-impl-2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/jboss-logging-3.1.0.GA.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/jboss-transaction-api_1.1_spec-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/jcl-over-slf4j-1.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/jersey-client-1.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/jersey-core-1.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/jersey-json-1.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/jersey-server-1.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/jersey-spring-1.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/jettison-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/jetty-http-8.1.7.v20120910.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/jetty-io-8.1.7.v20120910.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/jetty-util-8.1.7.v20120910.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/jetty-websocket-8.1.7.v20120910.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/jexample-4.5-391.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/jsch-0.1.48.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/jsr311-api-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/jul-to-slf4j-1.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/junit-4.7.jar" sourcepath="C:/Users/tomerb/.m2/repository/junit/junit/4.7/junit-4.7-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/logback-access-1.0.9.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/logback-classic-1.0.9.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/logback-core-1.0.9.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/mail.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/mockito-all-1.9.5.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/nekohtml-1.9.17.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/org.aspectj.matcher.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/quartz-2.1.6.jar" sourcepath="C:/MyStuff/quartz/src/main/java"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/serializer-2.7.1.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/slf4j-api-1.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/slf4j-ext-1.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/slf4j-migrator-1.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/spring-aop-3.2.0.RELEASE.jar" sourcepath="/MarketingServices/src/main/com/who/tlv/mars/taskmanager"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/spring-aspects-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/spring-beans-3.2.0.RELEASE.jar" sourcepath="C:/Users/yosefa/.m2/repository/org/springframework/spring-beans/3.2.0.RELEASE/spring-beans-3.2.0.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/spring-context-3.2.0.RELEASE.jar" sourcepath="C:/Users/yosefa/.m2/repository/org/springframework/spring-context/3.2.0.RELEASE/spring-context-3.2.0.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/spring-context-support-3.2.0.RELEASE.jar" sourcepath="C:/Users/yosefa/.m2/repository/org/springframework/spring-context-support/3.2.0.RELEASE/spring-context-support-3.2.0.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/spring-core-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/spring-expression-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/spring-instrument-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/spring-instrument-tomcat-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/spring-jdbc-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/spring-jms-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/spring-orm-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/spring-oxm-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/spring-struts-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/spring-test-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/spring-test-3.2.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/spring-tx-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/spring-web-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/spring-webmvc-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/spring-webmvc-portlet-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/stax-api-1.0-2.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/testng-6.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/wstx-asl-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/xalan-2.7.1.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/xercesImpl-2.10.0.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="C:/Projects/MarketingServices/Project/Lib/ThirdParty/xstream-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/ProgramData/Eclipse/Workspace/Xml-Beaninjection/Config"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,16 @@
+version: '2'
+services:
+    ang2mongmvn-mongodb:
+        image: mongo:3.2.10
+        ports:
+            - "27017:27017"
+        command: mongos --configdb ang2mongmvn-mongodb-config
+    ang2mongmvn-mongodb-node:
+        build:
+            context: .
+            dockerfile: mongodb/MongoDB.Dockerfile
+        command: mongod --replSet rs1 --noprealloc --smallfiles
+    ang2mongmvn-mongodb-config:
+        image: mongo:3.2.10
+        container_name: ang2mongmvn-mongodb-config
+        command: mongod --noprealloc --smallfiles --configsvr --dbpath /data/db

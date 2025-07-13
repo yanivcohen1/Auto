@@ -1,0 +1,3 @@
+16:28:09,063 [9] FATAL Log4NetTest.frmMain - Fatal error logging
+System.IO.FileNotFoundException: Unable to find the specified file.
+   at Log4NetTest.frmMain.butRunTest_Click(Object sender, EventArgs e) in C:\SVN\log4net\Log4NetTest\frmMain.cs:line 44

@@ -1,0 +1,1 @@
+var environment = {'TestCodebase':'C:/SVN/UI_Automation/prestigeClientEn/bin/Release/PrestigeClientEn.DLL','Timestamp':'13/11/2013 17:32:38','MachineName':'WH5000727','UserName':'ADGENCY-DOMAIN\yanivc','OriginalTRXFile':'yanivc@WH5000727 2013-11-13 17:32:38'};

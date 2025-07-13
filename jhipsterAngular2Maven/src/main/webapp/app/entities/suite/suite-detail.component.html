@@ -1,0 +1,33 @@
+
+<div *ngIf="suite">
+    <h2><span jhiTranslate="jhipsterAngular2MavenApp.suite.detail.title">Suite</span> {{suite.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row">
+        <dt><span jhiTranslate="jhipsterAngular2MavenApp.suite.suite_name">Suite Name</span></dt>
+        <dd>
+            <span>{{suite.suite_name}}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterAngular2MavenApp.suite.xml_file_location">Xml File Location</span></dt>
+        <dd>
+            <span>{{suite.xml_file_location}}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterAngular2MavenApp.suite.jenkins_url">Jenkins Url</span></dt>
+        <dd>
+            <span>{{suite.jenkins_url}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'suite/'+ suite.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

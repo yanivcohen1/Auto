@@ -1,0 +1,5 @@
+C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\ClickElement\bin\Release\ClickControlByNameAndWinClass.exe
+C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\ClickElement\bin\Release\ClickControlByNameAndWinClass.pdb
+C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\ClickElement\obj\x86\Release\ClickControlByNameAndWinClass.csprojResolveAssemblyReference.cache
+C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\ClickElement\obj\x86\Release\ClickControlByNameAndWinClass.exe
+C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\ClickElement\obj\x86\Release\ClickControlByNameAndWinClass.pdb

@@ -1,0 +1,80 @@
+const seleniumServer = require('selenium-server')
+const phantomjs = require('phantomjs-prebuilt')
+const chromedriver = require('chromedriver')
+
+require('<%=main%>')({
+  cucumberArgs: <%=cucumberArgs%>
+})
+
+module.exports = {
+  <% if (includePlainNightwatchTests) { %>
+  src_folders: ['../../test/fixture/plain-nightwatch-test'],
+  <% } %>
+  output_folder: 'reports',
+  <% if (customCommands) { %>
+  custom_commands_path: 'custom_commands',
+  <% } %>
+  custom_assertions_path: '',
+  <% if (pageObjects) { %>
+  page_objects_path: 'page_objects',
+  <% } %>
+  live_output: false,
+  disable_colors: false,
+  <% if (paralell) { %>
+  test_workers: {
+    enabled: true,
+    workers: 'auto'
+  },
+  <% } %>
+
+  selenium: {
+    start_process: true,
+    server_path: seleniumServer.path,
+    log_path: '',
+    host: '127.0.0.1',
+    port: 4444
+  },
+
+  test_settings: {
+    default: {
+      launch_url: 'http://localhost:8087',
+      selenium_port: 4444,
+      selenium_host: '127.0.0.1',
+      <% if (screenshots) { %>
+      screenshots: {
+        enabled: true,
+        on_failure: true,
+        on_error: false,
+        path: 'screenshots/default'
+      },
+      <% } %>
+      desiredCapabilities: {
+        browserName: 'phantomjs',
+        javascriptEnabled: true,
+        acceptSslCerts: true,
+        'phantomjs.binary.path': phantomjs.path
+      }
+    },
+
+    chrome: {
+      desiredCapabilities: {
+        browserName: 'chrome',
+        javascriptEnabled: true,
+        acceptSslCerts: true
+      },
+      selenium: {
+        cli_args: {
+          'webdriver.chrome.driver': chromedriver.path
+        }
+      }
+    },
+
+    firefox: {
+      desiredCapabilities: {
+        browserName: 'firefox',
+        javascriptEnabled: true,
+        acceptSslCerts: true
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+C:\SVN\SiteMapBuilder\Nomad.Extensions.UI\bin\Debug\Nomad.Extensions.Windows.Forms.dll
+C:\SVN\SiteMapBuilder\Nomad.Extensions.UI\bin\Debug\Nomad.Extensions.Windows.Forms.pdb
+C:\SVN\SiteMapBuilder\Nomad.Extensions.UI\obj\Debug\ResolveAssemblyReference.cache
+C:\SVN\SiteMapBuilder\Nomad.Extensions.UI\obj\Debug\Nomad.Extensions.Windows.Forms.dll
+C:\SVN\SiteMapBuilder\Nomad.Extensions.UI\obj\Debug\Nomad.Extensions.Windows.Forms.pdb

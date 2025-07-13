@@ -1,0 +1,75 @@
+<br>
+<div class="view">
+	<div class="container">
+	    <header>
+	    <center><h3 >URLs Test</h3></center>
+	    </header>
+		<div class="row" >
+		
+			<div class="well col-md-12">
+				<form class="form-horizontal">
+					<!-- <h1>Select text file</h1> -->
+					<div class="form-group">
+					<!-- <span class="btn btn-default btn-file">
+					    Browse <input type="file" on-read-file="showContent($fileContent)" class="col-sm-3">
+					</span> -->
+						<input type="file" on-read-file="showContent($fileContent)" class="btn btn-success col-sm-3" />
+						<span class="col-sm-1"></span>
+						<input type="button" value="Download CSV" class="btn btn-primary col-sm-2"
+							ng-click="downloadCsv()" ng-show="status == 'Done'" />
+						<label for="sel1" class="col-sm-2 control-label">Status:</label>
+						<div class="col-sm-3">
+							<pre>{{ status }}</pre>
+						</div>
+						<input type="button" value={{battonStatus}} class="btn btn-primary col-sm-1"
+							ng-click="runTest(content)" data-ng-disabled="!content" />
+					</div>
+					<br>
+					<div class="form-group">
+						<!-- ng-if="content" -->
+						<button class="btn btn-default" ng-click="isCollapsed = !isCollapsed">Content Toggle</button>
+						<div collapse="isCollapsed">
+							<strong class="col-sm-12">Manual content is:</strong>
+							<textarea class="col-sm-12" ng-model="content" rows="10%"></textarea> 
+						</div>
+					</div>
+					<div class="form-group">
+						<!-- ng-if="content" -->
+						<div collapse="isCollapsed">
+							<strong class="col-sm-12">Errors are:</strong>
+							<textarea class="col-sm-12" ng-model="errorContent" rows="10%"></textarea>
+						</div>
+						<strong class="col-sm-12">
+						<br>
+						Errors in table:</strong>
+						<div class="col-sm-12">
+			                <table ng-table="tableParams" show-filter="true" class="table">
+								<tbody ng-repeat="user in $data"  >
+								<!-- | filter:search | orderBy:url"> Suite_Name =URL Xml FileLocation=returnCode Jenkins URL=MSG -->
+									<tr id="tr{{user.index}}" ng-class-odd="'odd'" ng-class-even="'even'">
+										<td class="rowTd" data-title="'URL'"
+											sortable="'url'" filter="{ 'url': 'text' }">
+											<a href="#/tests/{{user.index}}" ng-click="alert(user.url)">{{user.url}}</a>
+										</td>
+										<td class="rowTd" data-title="'MSG'"
+											sortable="'msg'" filter="{ 'msg': 'text' }">{{user.msg}}
+										</td>
+										<td class="rowTd" data-title="'Return Code'"
+											sortable="'returnCode'"
+											filter="{ 'returnCode': 'text' }">{{user.returnCode}}
+										</td>
+									</tr>
+									<!-- <tr  ng-show="editId===user.suiteId">
+										<td colspan="7"> <div collapse="!(editId===user.suiteId)" ng-include src="'views/editSuiteRow.html'" ></div></td>
+									</tr> -->
+								</tbody>
+							</table>
+            			</div>
+					</div>
+					<hr />
+				</form>
+			</div>
+		
+		</div>
+	</div>
+<div>

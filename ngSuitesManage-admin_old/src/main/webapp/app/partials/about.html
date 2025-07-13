@@ -1,0 +1,37 @@
+<br>
+<br>
+<div class="row" >
+
+	<div class="well col-md-12">
+		<form class="form-horizontal">
+			<!-- <h1>Select text file</h1> -->
+			<div class="form-group">
+				<input type="file" on-read-file="showContent($fileContent)" class="col-sm-3" />
+					<label for="sel1" class="col-sm-3 control-label">Selectlist:</label>
+					<div class="col-sm-4">
+						<select class="form-control col-sm-6" id="sel1" >
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select> 
+					</div>
+				<input type="button" value="Read Content" class="btn btn-primary"
+					ng-click="alert2(content)" data-ng-disabled="!content"
+					class="col-sm-2" />
+			</div>
+			<br>
+			<div class="form-group">
+				<!-- ng-if="content" -->
+				<strong class="col-sm-12">Manual content is:</strong>
+				<!-- 				        <pre>{{ content }}</pre> -->
+				<textarea class="col-sm-12" ng-model="content" cols="100%" rows="10%"></textarea>
+
+			</div>
+			<hr />
+
+
+		</form>
+	</div>
+
+</div>

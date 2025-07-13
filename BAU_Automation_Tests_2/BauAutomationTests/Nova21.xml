@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="21nova" verbose="1">
+    
+     <test name="BrowserTargetChrome">
+         <classes>
+             <class name="com.wh.auto.nova21.TestBrowserTargetNova21" />
+		</classes>	
+	</test>
+	
+     <test name="BrowserTargetFirefox">
+         <classes>
+             <class name="com.wh.auto.nova21.TestBrowserTargetNova21" />
+		</classes>	
+	</test>
+     
+     <test name="BrowserTargetIe">
+         <classes>
+             <class name="com.wh.auto.nova21.TestBrowserTargetNova21" />
+		</classes>	
+	</test>
+     
+</suite>

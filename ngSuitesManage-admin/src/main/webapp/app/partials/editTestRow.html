@@ -1,0 +1,21 @@
+<table class="table">
+    <tr ng-class-odd="'odd'" ng-class-even="'even'">   
+        <td class="rowTd">Test Name:</td>
+        <td class="rowTd">Class Names:</td>
+        <td class="rowTd">Parameter Names:</td>
+        <td class="rowTd">Parameter Values:</td>
+        <td></td>
+    </tr>
+	<tr ng-class-odd="'odd'" ng-class-even="'even'">    
+        <td class="rowTd"><input type="text" id="ud.testName" class="w100" value="{{user.testName}}" style="width:100%; padding-left:0px; padding-right:0px;"></td>
+        <td class="rowTd"><input type="text" id="ud.classesNamef" class="w100" value="{{user.classesNamef}}" style="width:100%; padding-left:0px; padding-right:0px;"></td>
+        <td class="rowTd"><input type="text" id="ud.parametersNamef" class="w100" value="{{user.parametersNamef}}" style="width:100%; padding-left:0px; padding-right:0px;"></td>
+        <td class="rowTd"><input type="text" id="ud.parametersValuef" class="w100" value="{{user.parametersValuef}}" style="width:100%; padding-left:0px; padding-right:0px;"></td>
+        <td>
+			<a href="" class="btn btn-info btn-xs" ng-click="updateTest(user.suiteId, user.testId, user.suiteName, user.classesIDs, user.parametersIDs)">Update</a>
+			<br>
+			<br>
+			<a href="" class="btn btn-warning btn-xs" ng-click="setEditId(-1)">Cancel</a>
+		</td>
+    </tr>
+</table>

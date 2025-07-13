@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'HttpMonitor'
+		'HttpMonitor.DLL'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}

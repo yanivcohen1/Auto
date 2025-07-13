@@ -1,0 +1,70 @@
+<br>
+<div class="container">
+	<header>
+		<h3>URLs Test</h3>
+	</header>
+	<div class="row">
+		<div class="well col-md-12">
+			<!-- <h1>Select text file</h1> -->
+			<div class="form-group">
+				<!-- <span class="btn btn-default btn-file">
+			    Browse <input type="file" on-read-file="showContent($fileContent)" class="col-sm-3">
+			</span> -->
+				<input type="file" on-read-file="showContent($fileContent)"
+					class="btn btn-success col-sm-3" />
+					<!-- <span class="col-sm-1"></span> -->
+				<div class="col-sm-2">
+					<input type="button" value="Download CSV"
+						class="btn btn-primary col-sm-12 " ng-click="downloadCsv()"
+						ng-disabled="status != 'Done'" />
+				</div>
+				<div class="nullable col-sm-2">
+					<select ng-model="selected" class="form-control col-sm-12" ng-options="option for option in options"><!-- ng-options="color.name for color in colors" -->
+						<option value="">-- choose test --</option>
+						<!-- <option>TestManualRedirect</option> -->
+					</select> 
+				</div>
+				<div class="col-sm-2">
+					<!-- <label for="sel1" class="control-label">Status:</label> -->
+					<pre id="sel1" class="form-control">{{ status }}</pre>
+				</div>
+				<div class="col-sm-2">
+					<button class="btn btn-sucsses col-sm-12"
+					ng-click="isCollapsed = !isCollapsed">Content Toggel</button>
+				</div>
+				<input type="button" value={{battonStatus}}
+					class="btn btn-primary col-sm-1" ng-click="runTest(content)"
+					data-ng-disabled="!content || !selected" />			
+			</div>
+			<div class="form-group">
+				<!-- ng-if="content" -->
+				<div collapse="isCollapsed">
+					<strong class="col-sm-12">Manual content is:</strong>
+					<textarea class="col-sm-12" ng-model="content" rows="10%"></textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<!-- ng-if="content" -->
+				<div collapse="isCollapsed">
+					<strong class="col-sm-12">Manual Table is:</strong>
+					<div class="col-sm-12 " ng-grid="gridOptions" rows="30%"></div>
+				</div>
+			</div>
+			<div class="form-group">
+				<!-- ng-if="content" -->
+				<div collapse="isCollapsed">
+					<strong class="col-sm-12">Errors are:</strong>
+					<textarea class="col-sm-12" ng-model="errorContent" rows="10%"></textarea>
+				</div>
+				<strong class="col-sm-12"> <br> Errors in table:</strong>
+				<div class="col-sm-12 pull-Left">
+				<strong class="col-sm-1">Filter:</strong> </string><input type="text" ng-model="filterOptions.filterText" class="col-sm-4">
+				<br/>
+				<br/>
+				</div>
+				<div class="col-sm-12 gridStyle" ng-grid="gridOptions2"></div>
+			</div>
+			<hr />
+		</div>
+	</div>
+</div>

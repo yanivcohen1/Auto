@@ -1,0 +1,167 @@
+package com.who.rest.data;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.List;
+
+import org.codehaus.jackson.map.annotate.JsonSerialize;
+
+@JsonSerialize()
+public class TestsDataFlat {
+	
+	private Integer suiteId;
+	private String suiteName;
+	private Integer testId;
+    private String testName;
+    private String parametersNamef;
+    private String parametersValuef;
+    private String classesNamef;
+    private List<Integer> parametersIDs;
+    private List<Integer> classesIDs;
+    
+	public Integer getSuiteId() {
+		return suiteId;
+	}
+	
+	public void setSuiteId(Integer suiteId) {
+		this.suiteId = suiteId;
+	}
+	
+	public String getSuiteName() {
+		return suiteName;
+	}
+	
+	public void setSuiteName(String suiteName) {
+		this.suiteName = suiteName;
+	}
+	
+	public Integer getTestId() {
+		return testId;
+	}
+	
+	public void setTestId(Integer testId) {
+		this.testId = testId;
+	}
+	
+	public String getTestName() {
+		return testName;
+	}
+	
+	public void setTestName(String testName) {
+		this.testName = testName;
+	}
+	
+	public List<Integer> getParametersIDs() {
+		return parametersIDs;
+	}
+	
+	public void setParametersIDs(List<Integer> parametersIDs) {
+		this.parametersIDs = parametersIDs;
+	}
+	
+	public List<String> getParametersNames() {
+		return stringToList(parametersNamef, ",");
+	}
+	
+	public void setParametersNames(List<String> parametersNames) {
+		setParametersNamef(ListToString(parametersNames, ","));
+	}
+	
+	public List<String> getParametersValues() {
+		return stringToList(parametersValuef, ",");
+	}
+	
+	public void setParametersValues(List<String> parametersValues) {
+		setParametersValuef(ListToString(parametersValues, ","));
+	}
+	
+	public List<Integer> getClassesIDs() {
+		return classesIDs;
+	}
+	
+	public void setClassesIDs(List<Integer> classesIDs) {
+		this.classesIDs = classesIDs;
+	}
+	
+	public List<String> getClassesNames() {
+		return stringToList(classesNamef, ",");
+	}
+	
+	public void setClassesNames(List<String> classesNames) {
+		setClassesNamef(ListToString(classesNames, ","));
+	}
+
+	public TestsDataFlat(Integer suiteId, String suiteName, Integer testId,
+			String testName, List<Integer> parametersIDs,
+			List<String> parametersNames, List<String> parametersValues,
+			List<Integer> classesIDs, List<String> classesNames) {
+
+		this.suiteId = suiteId;
+		this.suiteName = suiteName;
+		this.testId = testId;
+		this.testName = testName;
+		this.parametersIDs = parametersIDs;
+		this.classesIDs = classesIDs;
+	}
+
+	public TestsDataFlat(String suiteName, String testName,
+			String parametersNamef, String parametersValuef,
+			String classesNamef) {
+
+		this.suiteName = suiteName;
+		this.testName = testName;
+		this.parametersNamef = parametersNamef;
+		this.parametersValuef = parametersValuef;
+		this.classesNamef = classesNamef;
+	}
+
+	public TestsDataFlat(){
+		
+	}
+	public String getParametersNamef() {
+		return parametersNamef;
+	}
+
+	public void setParametersNamef(String parametersNamesf) {
+		this.parametersNamef = parametersNamesf;
+	}
+
+	public String getParametersValuef() {
+		return parametersValuef;
+	}
+
+	public void setParametersValuef(String parametersValuef) {
+		this.parametersValuef = parametersValuef;
+	}
+
+	public String getClassesNamef() {
+		return classesNamef;
+	}
+
+	public void setClassesNamef(String classesNamef) {
+		this.classesNamef = classesNamef;
+	}
+
+	protected String ListToString(List<String> list, String separator) {
+		String ResultString = "";
+		for (int i = list.size() - 1; i >= 0; i--)
+		{
+			ResultString = ResultString + list.get(i).trim() + separator;
+		}
+		
+		return ResultString;
+	}
+	
+	protected List<String> stringToList(String stringArray, String separator) {
+		
+		String[] pieces = stringArray.split(separator);
+		
+		for (int i = pieces.length - 1; i >= 0; i--)
+		{
+			pieces[i] = pieces[i].trim();
+		}
+		
+		return new ArrayList<String>(Arrays.asList(pieces));
+	}
+}

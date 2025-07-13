@@ -1,0 +1,80 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "suite",
+            "relationshipNameCapitalized": "Suite",
+            "relationshipFieldName": "suite",
+            "otherEntityName": "suite",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Suite",
+            "otherEntityField": "suite_name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "test_name",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Test_name",
+            "fieldNameUnderscored": "test_name",
+            "fieldInJavaBeanMethod": "Test_name",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "class_name",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Class_name",
+            "fieldNameUnderscored": "class_name",
+            "fieldInJavaBeanMethod": "Class_name",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+		{
+            "fieldId": 3,
+            "fieldName": "method_name",
+            "fieldType": "String",
+            "fieldNameCapitalized": "method_name",
+            "fieldNameUnderscored": "method_name",
+            "fieldInJavaBeanMethod": "method_name",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "parameter_name",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Parameter_name",
+            "fieldNameUnderscored": "parameter_name",
+            "fieldInJavaBeanMethod": "Parameter_name",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "parameter_value",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Parameter_value",
+            "fieldNameUnderscored": "parameter_value",
+            "fieldInJavaBeanMethod": "Parameter_value",
+            "fieldValidate": false
+        }
+		
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150610081854",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "validation": true
+}

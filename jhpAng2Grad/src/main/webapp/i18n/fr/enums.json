@@ -1,0 +1,10 @@
+{
+    "testManagerApp": {
+        "Enums" : {
+            "null": "",
+            "one": "one",
+            "two": "two",
+            "tree": "tree"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="BrowserTargetFF" verbose="1">
+    
+     <test name="Affutd">
+     		       <parameter name="parametersFileName"  
+                	       value="Affutd.ini"/>
+           <classes>
+               		       <class name="com.wh.auto.affutd.TestAffutd" />
+                   </classes>
+           </test>
+     <test name="Freespin">
+     		       <parameter name="parametersFileName"  
+                	       value="FreespinTest.ini"/>
+           <classes>
+               		       <class name="com.wh.auto.prestige.TestFreespin" />
+                   </classes>
+           </test>
+	
+</suite>

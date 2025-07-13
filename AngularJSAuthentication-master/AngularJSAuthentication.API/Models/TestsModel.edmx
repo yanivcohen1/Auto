@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="AngularJSAuthModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="AngularJSAuthModelStoreContainer">
+          <EntitySet Name="suites" EntityType="AngularJSAuthModel.Store.suites" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tests" EntityType="AngularJSAuthModel.Store.tests" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_tests_suites" Association="AngularJSAuthModel.Store.FK_tests_suites">
+            <End Role="suites" EntitySet="suites" />
+            <End Role="tests" EntitySet="tests" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="suites">
+          <Key>
+            <PropertyRef Name="SuitesId" />
+          </Key>
+          <Property Name="SuitesId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SuiteName" Type="nvarchar" MaxLength="50" />
+          <Property Name="xmlFileLocation" Type="nvarchar(max)" />
+          <Property Name="jenkinsURL" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="tests">
+          <Key>
+            <PropertyRef Name="TestsId" />
+          </Key>
+          <Property Name="TestsId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SuitesId" Type="int" />
+          <Property Name="TestName" Type="nvarchar" MaxLength="50" />
+          <Property Name="classesName" Type="nvarchar(max)" />
+          <Property Name="parametersName" Type="nvarchar(max)" />
+          <Property Name="parametersValue" Type="nvarchar(max)" />
+        </EntityType>
+        <Association Name="FK_tests_suites">
+          <End Role="suites" Type="AngularJSAuthModel.Store.suites" Multiplicity="0..1" />
+          <End Role="tests" Type="AngularJSAuthModel.Store.tests" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="suites">
+              <PropertyRef Name="SuitesId" />
+            </Principal>
+            <Dependent Role="tests">
+              <PropertyRef Name="SuitesId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AngularJSAuthModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="AngularJSAuthEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="suites" EntityType="AngularJSAuthModel.suite" />
+          <EntitySet Name="tests" EntityType="AngularJSAuthModel.test" />
+          <AssociationSet Name="FK_tests_suites" Association="AngularJSAuthModel.FK_tests_suites">
+            <End Role="suites" EntitySet="suites" />
+            <End Role="tests" EntitySet="tests" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="suite">
+          <Key>
+            <PropertyRef Name="SuitesId" />
+          </Key>
+          <Property Name="SuitesId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="SuiteName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="xmlFileLocation" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="jenkinsURL" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="tests" Relationship="AngularJSAuthModel.FK_tests_suites" FromRole="suites" ToRole="tests" />
+        </EntityType>
+        <EntityType Name="test">
+          <Key>
+            <PropertyRef Name="TestsId" />
+          </Key>
+          <Property Name="TestsId" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="SuitesId" Type="Int32" />
+          <Property Name="TestName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="classesName" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="parametersName" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="parametersValue" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="suite" Relationship="AngularJSAuthModel.FK_tests_suites" FromRole="tests" ToRole="suites" />
+        </EntityType>
+        <Association Name="FK_tests_suites">
+          <End Role="suites" Type="AngularJSAuthModel.suite" Multiplicity="0..1" />
+          <End Role="tests" Type="AngularJSAuthModel.test" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="suites">
+              <PropertyRef Name="SuitesId" />
+            </Principal>
+            <Dependent Role="tests">
+              <PropertyRef Name="SuitesId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AngularJSAuthModelStoreContainer" CdmEntityContainer="AngularJSAuthEntities">
+          <EntitySetMapping Name="suites">
+            <EntityTypeMapping TypeName="AngularJSAuthModel.suite">
+              <MappingFragment StoreEntitySet="suites">
+                <ScalarProperty Name="SuitesId" ColumnName="SuitesId" />
+                <ScalarProperty Name="SuiteName" ColumnName="SuiteName" />
+                <ScalarProperty Name="xmlFileLocation" ColumnName="xmlFileLocation" />
+                <ScalarProperty Name="jenkinsURL" ColumnName="jenkinsURL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tests">
+            <EntityTypeMapping TypeName="AngularJSAuthModel.test">
+              <MappingFragment StoreEntitySet="tests">
+                <ScalarProperty Name="TestsId" ColumnName="TestsId" />
+                <ScalarProperty Name="SuitesId" ColumnName="SuitesId" />
+                <ScalarProperty Name="TestName" ColumnName="TestName" />
+                <ScalarProperty Name="classesName" ColumnName="classesName" />
+                <ScalarProperty Name="parametersName" ColumnName="parametersName" />
+                <ScalarProperty Name="parametersValue" ColumnName="parametersValue" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

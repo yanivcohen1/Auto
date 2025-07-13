@@ -1,0 +1,90 @@
+package com.who.rest;
+
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
+
+import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Request;
+import javax.ws.rs.core.Response;
+
+import org.codehaus.jackson.JsonGenerationException;
+import org.codehaus.jackson.JsonParseException;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
+import org.springframework.context.ApplicationContext;
+
+import com.who.rest.data.SuitesData;
+import com.who.rest.data.SuitesDatas;
+import com.who.rest.data.TestsData;
+import com.who.rest.data.TestsDataFlat;
+import com.who.rest.data.TestsDatasf;
+import com.who.rest.data.TestsDatas;
+import com.who.rest.db.model.Suites;
+import com.who.rest.service.SuitesUtil;
+import com.who.rest.service.TestsUtil;
+import com.who.rest.util.Common;
+
+@Path("/tests")
+public class TestRestService extends Common{
+
+	private static final TestsUtil testsUtil = getApplicationContext().getBean(TestsUtil.class);
+    
+  //http://localhost:8080/ngSuitesManage/rest/tests/readAllTests/-1
+  	@GET
+  	@Path("/readAllTests/{id}")
+  	@Produces(MediaType.APPLICATION_JSON)
+  	public TestsDatasf readAllTests( @PathParam("id") String id ) throws JsonGenerationException, JsonMappingException, IOException {
+  
+  		TestsDatasf testsDatasf = new TestsDatasf();
+  		testsDatasf.getTestsFlat().addAll(testsUtil.getTestsData(Integer.parseInt(id)));
+  		return testsDatasf;
+  	}
+  	
+    //http://localhost:8080/ngSuitesManage/rest/tests/updateTests
+  	@POST
+  	@Path("/updateTests")
+  	@Consumes(MediaType.APPLICATION_JSON)
+  	public Response updateTests( TestsDatasf testsDatasf ) throws JsonParseException, JsonMappingException, IOException {
+  		
+  		boolean res = testsUtil.updateTests(testsDatasf.getTestsFlat());
+  		return Response.status(200).entity(res).build();
+  	}
+  	
+  	//http://localhost:8080/ngSuitesManage/rest/suites/newSuite
+  	@POST
+  	@Path("/newTest")
+  	@Consumes(MediaType.APPLICATION_JSON)
+  	public Response newTest( TestsDataFlat testsDataFlat ) throws JsonParseException, JsonMappingException, IOException {
+  		
+  		boolean res = testsUtil.addTest(testsDataFlat);
+  		return Response.status(200).entity(String.valueOf(res)).build();
+  	}
+    
+  //http://localhost:8080/ngSuitesManage/rest/suites/updateSuite
+  	@POST
+  	@Path("/updateTest")
+  	@Consumes(MediaType.APPLICATION_JSON)
+  	public Response updateTest( TestsDataFlat testsDataFlat ) throws JsonParseException, JsonMappingException, IOException {
+  		
+  		boolean res =testsUtil.updateTests(Arrays.asList(testsDataFlat));
+  		return Response.status(200).entity(String.valueOf(res)).build();
+  	}
+  	
+  //http://localhost:8080/ngSuitesManage/rest/suites/deleteSuite/{id}
+  	@GET
+  	@Path("/deleteTest/{id}")
+  	@Produces(MediaType.APPLICATION_JSON)
+  	public Response deleteTest( @PathParam("id") String id ) throws JsonGenerationException, JsonMappingException, IOException {
+  		
+  		boolean res = testsUtil.removeTest(Integer.parseInt(id));
+  		return Response.status(200).entity(String.valueOf(res)).build();
+  	}
+  	
+}

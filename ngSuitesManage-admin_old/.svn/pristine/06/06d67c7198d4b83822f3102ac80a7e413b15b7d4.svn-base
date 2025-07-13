@@ -1,0 +1,34 @@
+﻿/// <reference path="../Scripts/angular-1.1.4.js" />
+
+/*#######################################################################
+  /app
+      /controllers      
+      /directives
+      /services
+      /partials
+      /views
+  #######################################################################*/
+
+var app = angular.module('customersApp', ['ngRoute', 'ngTable', 'ngResource', 'ui.bootstrap']);
+
+//This configures the routes and associates each route with a view and a controller
+app.config(function ($routeProvider) {
+    $routeProvider
+        .when('/Suites',
+            {
+                controller: 'SuitesController',
+                templateUrl: '/ngSuitesManage/app/partials/Suites.html'
+            })
+        //Define a route that has a route parameter in it (:suiteID)
+        .when('/tests/:suiteID',
+            {
+                controller: 'TestsController',
+                templateUrl: '/ngSuitesManage/app/partials/Tests.html'
+            })
+        .when('/newSuite',
+            {
+                controller: 'newSuiteController',
+                templateUrl: '/ngSuitesManage/app/partials/newSuite.html'
+            })
+        .otherwise({ redirectTo: '/Suites' });
+});

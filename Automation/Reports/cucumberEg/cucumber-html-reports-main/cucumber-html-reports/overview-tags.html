@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Tags Overview</title>
+
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+
+    var chartData = {
+        labels: ["@AllMig","@Deposit","@DepositLimitMobile","@Login","@LoginPopup","@PaymentMethods","@RedirectEn","@Register","@RegisterNonUKGC","@SelfExclude","@TimeOut","@Tracking"],
+        datasets: [
+            {
+                label: "Passed",
+                backgroundColor: "#92DD96",
+                data: [92.31, 100.00, 100.00, 100.00, 75.00, 63.64, 100.00, 100.00, 100.00, 100.00, 100.00, 100.00]
+            },
+            {
+                label: "Failed",
+                backgroundColor: "#F2928C",
+                data: [2.20, 0.00, 0.00, 0.00, 25.00, 9.09, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
+            },
+            {
+                label: "Skipped",
+                backgroundColor: "#8AF",
+                data: [5.49, 0.00, 0.00, 0.00, 0.00, 27.27, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
+            },
+            {
+                label: "Pending",
+                backgroundColor: "#F5F28F",
+                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
+            },
+            {
+                label: "Undefined",
+                backgroundColor: "#F5B975",
+                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
+            }
+        ]
+    };
+
+    var context = document.getElementById("tags-chart");
+    window.myBar = new Chart(context, {
+        type: "bar",
+        data: chartData,
+        options: {
+            tooltips: {
+                mode: "label"
+            },
+            responsive: true,
+            legend: {
+                display: false
+            },
+            scales: {
+                xAxes: [{
+                    stacked: true
+                }],
+                yAxes: [{
+                    stacked: true
+                }]
+            }
+        }
+    });
+
+});  </script>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation"      class="active" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>Bau-Automation</td>
+                          <td>1</td>
+                        <td>15 Apr 2017, 04:39</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Tags Statistics</h2>
+              <p>The following graph shows passing and failing statistics for tags</p>
+          </div>
+  </div>
+</div>
+
+
+  <div class="container-fluid" id="charts">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <canvas id="tags-chart" height="50"></canvas>
+      </div>
+    </div>
+  </div>
+
+<br>
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              
+<table id="tablesorter" class="stats-table table-hover">
+  
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+  <tbody>
+          <tr>
+        <td class="tagname"><a href="report-tag_AllMig.html">@AllMig</a></td>
+        
+        <td      class="passed"    >504</td>
+        <td      class="failed"    >12</td>
+        <td     class="skipped"   >30</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">546</td>
+
+        <td  class="passed"    >18</td>
+        <td  class="failed"    >12</td>
+        <td class="total">30</td>
+
+        <td class="duration" data-value="2349564316701">39m 9s 564ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_Deposit.html">@Deposit</a></td>
+        
+        <td      class="passed"    >64</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">64</td>
+
+        <td  class="passed"    >2</td>
+        <td >0</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="306820545912">5m 6s 820ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_DepositLimitMobile.html">@DepositLimitMobile</a></td>
+        
+        <td      class="passed"    >71</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">71</td>
+
+        <td  class="passed"    >2</td>
+        <td >0</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="247135038113">4m 7s 135ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_Login.html">@Login</a></td>
+        
+        <td      class="passed"    >16</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">16</td>
+
+        <td  class="passed"    >2</td>
+        <td >0</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="89547191333">1m 29s 547ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_LoginPopup.html">@LoginPopup</a></td>
+        
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">8</td>
+
+        <td >0</td>
+        <td  class="failed"    >2</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="64156291095">1m 4s 156ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_PaymentMethods.html">@PaymentMethods</a></td>
+        
+        <td      class="passed"    >70</td>
+        <td      class="failed"    >10</td>
+        <td     class="skipped"   >30</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">110</td>
+
+        <td >0</td>
+        <td  class="failed"    >10</td>
+        <td class="total">10</td>
+
+        <td class="duration" data-value="673728148130">11m 13s 728ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_RedirectEn.html">@RedirectEn</a></td>
+        
+        <td      class="passed"    >8</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">8</td>
+
+        <td  class="passed"    >2</td>
+        <td >0</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="26546653554">26s 546ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_Register.html">@Register</a></td>
+        
+        <td      class="passed"    >39</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">39</td>
+
+        <td  class="passed"    >2</td>
+        <td >0</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="140366442661">2m 20s 366ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_RegisterNonUKGC.html">@RegisterNonUKGC</a></td>
+        
+        <td      class="passed"    >47</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">47</td>
+
+        <td  class="passed"    >2</td>
+        <td >0</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="149980873545">2m 29s 980ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_SelfExclude.html">@SelfExclude</a></td>
+        
+        <td      class="passed"    >61</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">61</td>
+
+        <td  class="passed"    >2</td>
+        <td >0</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="257929104120">4m 17s 929ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_TimeOut.html">@TimeOut</a></td>
+        
+        <td      class="passed"    >65</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">65</td>
+
+        <td  class="passed"    >2</td>
+        <td >0</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="199632420885">3m 19s 632ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-tag_Tracking.html">@Tracking</a></td>
+        
+        <td      class="passed"    >57</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">57</td>
+
+        <td  class="passed"    >2</td>
+        <td >0</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="193721607353">3m 13s 721ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+      </tbody>
+
+  <tfoot class="total">
+    <tr>
+      <td>12</td>
+            <td>1008</td>
+      <td>24</td>
+      <td>60</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1092</td>
+
+      <td>36</td>
+      <td>24</td>
+      <td>60</td>
+
+      <td class="duration">1h 18m 19s 128ms</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+            <td>92.31%</td>
+      <td>2.20%</td>
+      <td>5.49%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+      <td></td>
+      <td>60.00%</td>
+      <td>40.00%</td>
+      <td></td>
+      <td></td>
+      <td>81.82%</td>
+    </tr>
+  </tfoot>
+</table>
+
+          </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+node_modules
+*.log
+screenshots
+reports
+tests_output
+*.bat
+.DS_Store
+.vscode
+.idea
+tmp
+coverage

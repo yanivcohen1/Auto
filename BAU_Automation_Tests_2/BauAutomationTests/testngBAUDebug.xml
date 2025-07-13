@@ -1,0 +1,60 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="BAU Tests" verbose="1">
+
+     <!-- <test name="BuildClients">
+         <parameter name="parametersFileName"  value="ClientsTest.ini"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestBuildClients" />
+		</classes>	
+	</test>
+	
+	<test name="WilliamhillClientEn">
+         <parameter name="test-name"  value="WilliamhillEnClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	 </test>
+     
+      <test name="WilliamhillClientDe">
+         <parameter name="test-name"  value="WilliamhillDeClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	</test>  -->
+      
+    <test name="WHCCwebEn" > 
+         <parameter name="parametersFileName"  value="DepositEN.xml"/>
+         <classes>
+             <class name="com.wh.auto.whcc.TestDeposit" />
+		</classes>	
+	</test>
+     
+     <test name="WHCCwebDe">
+         <parameter name="parametersFileName"  value="DepositDE.xml"/>
+         <classes>
+             <class name="com.wh.auto.whcc.TestDeposit" />
+		</classes>	
+	</test>
+     
+     <test name="21NovaWebLoginEn">
+         <parameter name="parametersFileName"  value="LoginEN.xml"/>
+         <classes>
+             <class name="com.wh.auto.whcc.TestLogin" />
+		</classes>		
+	</test>
+	
+    <test name="21NovaWebLoginDe">
+         <parameter name="parametersFileName"  value="LoginDE.xml"/>
+         <classes>
+             <class name="com.wh.auto.whcc.TestLogin" />
+		</classes>		
+	</test>
+	
+     <test name="Tracing">
+         <parameter name="parametersFileName"  value="PT_Advertiser.ini"/>
+         <classes>
+             <class name="com.wh.auto.pt_admin.Test_PT_Advertiser" />
+		</classes>	
+	</test>
+     
+</suite>

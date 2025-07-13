@@ -1,0 +1,60 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+mainClassName = 'com.who.mail.HtmlParse'
+//group = 'com.who.mail'
+//archivesBaseName = 'HtmlParse'
+//version = '1.0-SNAPSHOT'
+
+// tag::repositories[]
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'lib'
+    }
+}
+
+// tag::jar[]
+jar {
+	manifest {
+	        attributes 'Main-Class': 'com.who.mail.HtmlParse'
+	    }
+	from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    baseName = 'mail-crm'
+    version =  '0.1.0'
+}
+
+// tag::dependencies[]
+dependencies {
+    compile 'com.google.guava:guava:18.0'
+    compile 'com.sun.mail:javax.mail:1.4.7'
+    compile 'org.springframework:spring-context:4.1.6.RELEASE'
+    compile ('log4j:log4j:1.2.17'){
+        //exclude(group: 'junit', module: 'junit')
+    }
+    //testCompile group: 'junit', name: 'junit', version: '4.+'
+    testCompile group: 'org.testng', name: 'testng', version: '6.5.2'
+}
+
+test {
+ 	 useTestNG {
+         //suites 'src/test/resources/testng.xml'
+     }
+     //options {
+     //        listeners << 'org.uncommons.reportng.HTMLReporter'
+     //        listeners << 'org.uncommons.reportng.JUnitXMLReporter'
+     //}
+}
+
+// tag::wrapper[]
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
+
+//gradle
+//gradle build
+//gradle test
+//gradle wrapper
+//gradlew build
+//gradlew run

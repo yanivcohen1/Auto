@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asmv1:assemblyIdentity name="DeleteAllCasinosConsole.exe" version="1.0.0.1" publicKeyToken="6e357ebd117913fb" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="error.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="DeleteAllCasinosConsole" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="DeleteAllCasinosConsole.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet class="System.Security.PermissionSet" version="1" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DeleteAllCasinosConsole.exe" size="69632">
+      <assemblyIdentity name="DeleteAllCasinosConsole" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>IB8UGXUcsRx5jQPdmXn6IonFkIU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="error.ico" size="23878">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>jTAKcODXfwA8lLi9scSdUCIuRpc=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=ADGENCY-DOMAIN\player_batch" issuerKeyHash="0074ac728229469e136e9d46c8d24944ff5b115d" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>Ms6TcbLKWcrZWK1c0Ocon+DchTc=</DigestValue></Reference></SignedInfo><SignatureValue>YmHwnTKzmlw1galpA98HeTQ5HIqsOSjKlXBgh2lC8CK1/VdN0PKkmuYDXSDB++RZGmdARLxbmvQAKTErOPcyx+eK2gz4OC+sWHP2CrFkk7n2ozT42OEijl62hIxR28oxqo91yoZ22Db3HKMs44yUw7X6Uo0wLcNNxXQwZrV49qo=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>t0qjmOpTKKXAc4tYuHvQcR/0A6KvoKjwnMVz1s73jdvcKezI8WFSVNembpKJnmBu6Ud9cx5+yq2TCEOl1CIyTMOcSs9uk5rhlTI4CyAmmc9QlByydotvg7E05TuLZAFVG590UTpsG/2rYCR1TRzeofGpQhFDMf4jH77ua1MtcMc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="3785dce09f28e7d05cad58d9ca59cab27193ce32" Description="" Url=""><as:assemblyIdentity name="DeleteAllCasinosConsole.exe" version="1.0.0.1" publicKeyToken="6e357ebd117913fb" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ADGENCY-DOMAIN\player_batch</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>OCwR7EDoYs9di2iaUxwFG7X694w=</DigestValue></Reference></SignedInfo><SignatureValue>fsbeAJ9Eb1K35m7GLu05VoderL4NputYUl5oiACKjubUMjtYtjlvWzxwf7UlcVvOFhVM8VVa7ruRdqmB/Uh4WuZHZrTLCMYU5UYYwg0+9T6ZbAC3AGaceVkrkXXPZJZhJpB5C6Or2HbfEmsYlmF8WV/k3SFikz14LB0dJAs1TQQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>t0qjmOpTKKXAc4tYuHvQcR/0A6KvoKjwnMVz1s73jdvcKezI8WFSVNembpKJnmBu6Ud9cx5+yq2TCEOl1CIyTMOcSs9uk5rhlTI4CyAmmc9QlByydotvg7E05TuLZAFVG590UTpsG/2rYCR1TRzeofGpQhFDMf4jH77ua1MtcMc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB/TCCAWqgAwIBAgIQMBiLFAcGh4ZKWuOJ0/itYzAJBgUrDgMCHQUAMEExPzA9BgNVBAMeNgBBAEQARwBFAE4AQwBZAC0ARABPAE0AQQBJAE4AXABwAGwAYQB5AGUAcgBfAGIAYQB0AGMAaDAeFw0wODAyMjAwODQ3MTVaFw0wOTAyMTkxNDQ3MTVaMEExPzA9BgNVBAMeNgBBAEQARwBFAE4AQwBZAC0ARABPAE0AQQBJAE4AXABwAGwAYQB5AGUAcgBfAGIAYQB0AGMAaDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAt0qjmOpTKKXAc4tYuHvQcR/0A6KvoKjwnMVz1s73jdvcKezI8WFSVNembpKJnmBu6Ud9cx5+yq2TCEOl1CIyTMOcSs9uk5rhlTI4CyAmmc9QlByydotvg7E05TuLZAFVG590UTpsG/2rYCR1TRzeofGpQhFDMf4jH77ua1MtcMcCAwEAATAJBgUrDgMCHQUAA4GBAHKt5wFL96OdNXKYkU/HB6ICk8KO3KJkShTd/EZ8Kb/mVIMZYhBbvNc/IHtrX6OTh4Zer0E+3oxd0ij7vlocsLoxyHEHxnO1zQpoeqJREX1C/Ajm1F0VcbIcpuC1PG4WFoFGYAGFrQyk23juwQG7yf/tybIAUwdl5rbl1TobCr6D</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

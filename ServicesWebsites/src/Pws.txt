@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+       <User>
+              <Psw>AdminYaniv</Psw>
+              <Admin>true</Admin>
+       </User>
+       <User>
+              <Psw>SimpleUser</Psw>
+              <Admin>false</Admin>
+       </User>
+</Users>

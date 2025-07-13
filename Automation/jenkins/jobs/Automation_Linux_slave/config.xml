@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>20</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
+          <name>Tests</name>
+          <description>Select tests to execute</description>
+          <quoteValue>false</quoteValue>
+          <saveJSONParameterToFile>false</saveJSONParameterToFile>
+          <visibleItemCount>10</visibleItemCount>
+          <type>PT_CHECKBOX</type>
+          <value>@AllMig,@WhccAllMig,@WhccDeskDepositEn,@WhccDeskLoginEn,@WhccDeskRegisterEn,@WhccDeskTrackingEn,@WhccDeskPaymentMethodsEn,@WhccMobiDepositEn,@WhccMobiLoginEn,@WhccMobiRegisterEn,@WhccMobiTrackingEn,@WhccMobiPaymentMethodsEn,@WhccDeskDepositLimitEn,@WhccMobiDepositLimitEn,@WhccSelfExclude,@WhccTimeOut</value>
+          <defaultValue>@WhccDeskLoginEn</defaultValue>
+          <multiSelectDelimiter>,</multiSelectDelimiter>
+          <projectName>Automation_Linux_slave</projectName>
+        </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
+        <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
+          <name>Environment</name>
+          <description>Run time environment selection</description>
+          <quoteValue>false</quoteValue>
+          <saveJSONParameterToFile>false</saveJSONParameterToFile>
+          <visibleItemCount>5</visibleItemCount>
+          <type>PT_RADIO</type>
+          <value>live,desktop-admin,ww2,dev-mig</value>
+          <defaultValue>live</defaultValue>
+          <multiSelectDelimiter>,</multiSelectDelimiter>
+          <projectName>Automation_Linux_slave</projectName>
+        </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>Run_security_test</name>
+          <description>If selected (not default), traffic will be caprured, ZAP_PROXY report will be generated</description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>Create_javadoc</name>
+          <description>If selected (not default), java doc will be created</description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>Send_email</name>
+          <description>Send email report</description>
+          <defaultValue>false</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>BDD_load_results</name>
+          <description>Is to load BDD results to web</description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition plugin="extended-choice-parameter@0.76">
+          <name>Device</name>
+          <description>Device type selection (Default is desktop browser)</description>
+          <quoteValue>false</quoteValue>
+          <saveJSONParameterToFile>false</saveJSONParameterToFile>
+          <visibleItemCount>10</visibleItemCount>
+          <type>PT_SINGLE_SELECT</type>
+          <value>iPhone,iPad,iPad7.1,iPad7.0,iPad6.1.3,iPhone7.0,iPhone6.1.3,SamsungGalaxy4.1.2,SamsungGalaxy4.0.4,SamsungGalaxy4.2.2,SamsungGalaxyS3Mini4.1.2,SamsungGalaxyS4Mini4.2.2,SamsungGalaxyTab4.1.2,SamsungGalaxyTab4.2.2,SamsungGalaxynote4.3,SamsunggalaxyAce2.3.6,GoogleNexus4.4.2,SonyExperia4.2.2,HTCOne4.2.2,Yahoo,Bing,Baidu,Google</value>
+          <defaultValue>iPhone7.0</defaultValue>
+          <multiSelectDelimiter>,</multiSelectDelimiter>
+          <projectName>Automation_Linux_slave</projectName>
+        </com.cwctravel.hudson.plugins.extended__choice__parameter.ExtendedChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>ManualTests</name>
+          <description>Select Manual Tests</description>
+          <defaultValue></defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>jenkins_slave</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <authToken>RUN</authToken>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>echo Show all environment variable
+echo *********************************************************
+echo SELECTED TESTS TO EXECUTE list for current test is: ${Tests}
+echo SELECTED Manual TESTS TO EXECUTE list for current test is:  ${ManualTests}
+echo CHECK IF MAIL NOTIFICATION SHOULD BE SENT:  ${Send_email}
+echo RUN_ALL_TESTS_WITH_MAIL_NOTIFICATION value for current test is:  ${Send_email}
+echo SET IF BROWSER SHOULD BE LOADED WITH PROXY is:  ${Run_security_test}
+echo ENVIRONMENT VALUE:  ${Environment}
+echo Selected Device is:  ${Device}
+echo is load Bdd Results:  ${BDD_load_results}
+echo *********************************************************</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>echo *********************************************************
+echo pull from git
+echo *********************************************************
+#git clone --progress -v ssh://git@192.168.99.100:23/yanivc/sac-auto-tests.git
+
+cd sac-auto-tests
+git reset --hard HEAD
+git clean -f -d
+#rm .git\index.lock
+git pull
+
+cd whgtf.standalone.casinos.tests/src/test/resources/selenium/linux/chromeDriver/64bit/2.14
+chmod +777 chromedriver</command>
+    </hudson.tasks.Shell>
+    <org.jenkinsci.plugins.conditionalbuildstep.singlestep.SingleConditionalBuilder plugin="conditional-buildstep@1.3.5">
+      <condition class="org.jenkins_ci.plugins.run_condition.core.BooleanCondition" plugin="run-condition@1.0">
+        <token> ${Run_security_test}</token>
+      </condition>
+      <buildStep class="hudson.tasks.Shell">
+        <command>echo &quot;*********************************************************&quot;
+echo &quot;START ZAP PROXY IN BACKROUND&quot;
+echo &quot;*********************************************************&quot;
+
+cd sac-auto-tests
+sh start_zap.sh</command>
+      </buildStep>
+      <runner class="org.jenkins_ci.plugins.run_condition.BuildStepRunner$Fail" plugin="run-condition@1.0"/>
+    </org.jenkinsci.plugins.conditionalbuildstep.singlestep.SingleConditionalBuilder>
+    <hudson.tasks.Shell>
+      <command>cd sac-auto-tests/whgtf.standalone.casinos.lib
+mvn clean install</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>echo *********************************************************
+echo RUN TESTS IN LIVE ENVIRONMENT - NOT ALL TESTS WILL BE EXECUTED
+echo *********************************************************
+
+if [ &quot;${ManualTests}&quot; != &quot;&quot; -a &quot;${Tests}&quot; != &quot;&quot; ] ; then
+	RunTests=${ManualTests},${Tests}
+    echo both
+fi
+#if [ &quot;${ManualTests}&quot; = &quot;&quot; -a &quot;${Tests}&quot; = &quot;&quot; ] || [ &quot;$g&quot; -eq 2 -a &quot;$c&quot; = &quot;456&quot; ]
+#then RunTests=${ManualTests},${Tests}
+
+if [ &quot;${ManualTests}&quot; != &quot;&quot; ] ; then
+	RunTests=${ManualTests}
+    echo ManualTests
+fi
+
+if [ &quot;${Tests}&quot; != &quot;&quot; ] ; then
+	RunTests=${Tests}
+    echo Tests
+fi
+
+
+cd sac-auto-tests/whgtf.standalone.casinos.parent
+mvn clean -q -U test -Dtest=ExtendTestRunner -DfailIfNoTests=false -Denv=${Environment} -Dbrowser=chrome -Ddevice=${Device} -Dsuite=EgMigration -Dproxy=${Run_security_test} -Dcucumber.options=&quot;--tags ${RunTests}&quot;</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.plugins.postbuildtask.PostbuildTask plugin="postbuild-task@1.8">
+      <tasks>
+        <hudson.plugins.postbuildtask.TaskProperties>
+          <logTexts>
+            <hudson.plugins.postbuildtask.LogProperties>
+              <logText></logText>
+              <operator>AND</operator>
+            </hudson.plugins.postbuildtask.LogProperties>
+          </logTexts>
+          <EscalateStatus>false</EscalateStatus>
+          <RunIfJobSuccessful>false</RunIfJobSuccessful>
+          <script>echo *********************************************************&#xd;
+echo REMOVE ZAP PROXY REPORT FILES FROM LAST RUN&#xd;
+echo *********************************************************&#xd;
+&#xd;
+cd sac-auto-tests&#xd;
+sh generated_zap_report.sh</script>
+        </hudson.plugins.postbuildtask.TaskProperties>
+        <hudson.plugins.postbuildtask.TaskProperties>
+          <logTexts>
+            <hudson.plugins.postbuildtask.LogProperties>
+              <logText></logText>
+              <operator>AND</operator>
+            </hudson.plugins.postbuildtask.LogProperties>
+          </logTexts>
+          <EscalateStatus>false</EscalateStatus>
+          <RunIfJobSuccessful>false</RunIfJobSuccessful>
+          <script>echo *********************************************************&#xd;
+echo Build Report Xcopy script formatter.js&#xd;
+echo *********************************************************&#xd;
+&#xd;
+cp sac-auto-tests\whgtf.standalone.casinos.tests\src\test\resources\Report\formatter.js sac-auto-tests\whgtf.standalone.casinos.tests\target\cucumber\cucumber-html-report\formatter.js</script>
+        </hudson.plugins.postbuildtask.TaskProperties>
+        <hudson.plugins.postbuildtask.TaskProperties>
+          <logTexts>
+            <hudson.plugins.postbuildtask.LogProperties>
+              <logText></logText>
+              <operator>AND</operator>
+            </hudson.plugins.postbuildtask.LogProperties>
+          </logTexts>
+          <EscalateStatus>false</EscalateStatus>
+          <RunIfJobSuccessful>false</RunIfJobSuccessful>
+          <script>echo *********************************************************&#xd;
+echo send Email: %Send_email% &#xd;
+echo *********************************************************&#xd;
+&#xd;
+if [ &quot;$Send_email&quot; = true ] ; then&#xd;
+    ECHO Sending Email&#xd;
+    curl &quot;http://172.21.54.222:8080/view/Dynamo/job/Automation_Tests_Report/buildWithParameters?token=run&amp;Environment=EgMigration&amp;SendTo=All&quot;&#xd;
+fi</script>
+        </hudson.plugins.postbuildtask.TaskProperties>
+        <hudson.plugins.postbuildtask.TaskProperties>
+          <logTexts>
+            <hudson.plugins.postbuildtask.LogProperties>
+              <logText></logText>
+              <operator>AND</operator>
+            </hudson.plugins.postbuildtask.LogProperties>
+          </logTexts>
+          <EscalateStatus>false</EscalateStatus>
+          <RunIfJobSuccessful>false</RunIfJobSuccessful>
+          <script>if [ &quot;$BDD_load_results&quot; = true ] ; then&#xd;
+	echo &quot;*********************************************************&quot;;&#xd;
+	echo Send BDD Automation Report;&#xd;
+	echo &quot;*********************************************************&quot;;&#xd;
+&#xd;
+	pwd1=$(pwd);&#xd;
+	echo $pws1&#xd;
+	file=&quot;/BuildNumber.txt&quot;&#xd;
+	BuildNumber=$pwd1$file;&#xd;
+	echo $BuildNumber&#xd;
+	cd sac-auto-tests/whgtf.standalone.casinos.tests;&#xd;
+	versionBuild=versionBuild.txt;&#xd;
+	echo versions are: $(cat $versionBuild)-$(cat $BuildNumber);&#xd;
+&#xd;
+	curl -X PUT -d @./target/cucumber/cucumber-json-report.json https://192.168.99.100:8086/xbdd/rest/reports/Eurogrand/$(cat $versionBuild)2/$(cat $BuildNumber) --header Content-Type:application/json -u admin:password -k -sS&#xd;
+&#xd;
+	echo &quot;*********************************************************&quot;;&#xd;
+	echo Send BDD ManualReport;&#xd;
+	echo &quot;*********************************************************&quot;;&#xd;
+&#xd;
+	cd ../whgtf.standalone.casinos.parent;&#xd;
+&#xd;
+	mvn -q -U test -Dtest=TestRunnerDry -Dcucumber.options=&quot;--dry-run --tags @manual&quot; -DfailIfNoTests=false&#xd;
+&#xd;
+	cd ../whgtf.standalone.casinos.tests;&#xd;
+	curl -X PUT -d @./target/cucumber/cucumber-json-report-manual.json https://192.168.99.100:8086/xbdd/rest/reports/Eurogrand/$(cat $versionBuild)2/$(cat $BuildNumber) --header Content-Type:application/json -u admin:password -k -sS&#xd;
+&#xd;
+	cd ../../;&#xd;
+	BuildNumber=`expr $(cat $BuildNumber) + 1`&#xd;
+	#BuildNumber1=$(cat $BuildNumber)+1;&#xd;
+	pwd;&#xd;
+	echo $BuildNumber&gt;BuildNumber.txt;&#xd;
+fi</script>
+        </hudson.plugins.postbuildtask.TaskProperties>
+        <hudson.plugins.postbuildtask.TaskProperties>
+          <logTexts>
+            <hudson.plugins.postbuildtask.LogProperties>
+              <logText></logText>
+              <operator>AND</operator>
+            </hudson.plugins.postbuildtask.LogProperties>
+          </logTexts>
+          <EscalateStatus>false</EscalateStatus>
+          <RunIfJobSuccessful>false</RunIfJobSuccessful>
+          <script>if [ &quot;$Run_security_test&quot; = true ] ; then&#xd;
+     echo &quot;*********************************************************&quot;&#xd;
+     echo &quot;Send Security Report to Threadfix&quot;&#xd;
+     echo &quot;*********************************************************&quot;&#xd;
+echo pwd&#xd;
+cat results.xml &#xd;
+     curl --insecure -H &apos;Accept: application/json&apos; -X POST --form file=@/jenkins/workspace/Automation_Linux_slave/results.xml https://192.168.99.100:8443/threadfix/rest/applications/1/upload?apiKey=hRUNPJ8xlvkDiiExfc5nM9EZ7xbbdWxsruZBIF4GqcU&#xd;
+fi</script>
+        </hudson.plugins.postbuildtask.TaskProperties>
+        <hudson.plugins.postbuildtask.TaskProperties>
+          <logTexts>
+            <hudson.plugins.postbuildtask.LogProperties>
+              <logText></logText>
+              <operator>AND</operator>
+            </hudson.plugins.postbuildtask.LogProperties>
+          </logTexts>
+          <EscalateStatus>false</EscalateStatus>
+          <RunIfJobSuccessful>false</RunIfJobSuccessful>
+          <script>if [ &quot;$Create_javadoc&quot; = true ] ; then&#xd;
+	echo *********************************************************&#xd;
+	echo CREATE JAVA TESTS DOC DOCUMENTATION&#xd;
+	echo *********************************************************&#xd;
+	cd sac-auto-tests/whgtf.standalone.casinos.tests&#xd;
+	mvn javadoc:test-javadoc&#xd;
+&#xd;
+	@echo off&#xd;
+	echo *********************************************************&#xd;
+	echo CREATE JAVA LIB DOC DOCUMENTATION&#xd;
+	echo *********************************************************&#xd;
+	cd ../whgtf.standalone.casinos.lib&#xd;
+	mvn javadoc:javadoc&#xd;
+fi</script>
+        </hudson.plugins.postbuildtask.TaskProperties>
+        <hudson.plugins.postbuildtask.TaskProperties>
+          <logTexts>
+            <hudson.plugins.postbuildtask.LogProperties>
+              <logText></logText>
+              <operator>AND</operator>
+            </hudson.plugins.postbuildtask.LogProperties>
+          </logTexts>
+          <EscalateStatus>false</EscalateStatus>
+          <RunIfJobSuccessful>false</RunIfJobSuccessful>
+          <script>echo *********************************************************&#xd;
+echo TURN ZAP PROXY OFF&#xd;
+echo *********************************************************.&#xd;
+if [ &quot;$Run_security_test&quot; = true ] ; then&#xd;
+   #taskkill /F /im cmd.exe&#xd;
+   PID_PATH_NAME=/share/ZAP.pid&#xd;
+   PID=$(cat $PID_PATH_NAME);&#xd;
+   echo &quot;ZAP stoping ...&quot;&#xd;
+   kill $PID;&#xd;
+   echo &quot;ZAP stopped ...&quot;&#xd;
+   rm $PID_PATH_NAME;&#xd;
+fi</script>
+        </hudson.plugins.postbuildtask.TaskProperties>
+      </tasks>
+    </hudson.plugins.postbuildtask.PostbuildTask>
+    <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1.20">
+      <testResults>sac-auto-tests/whgtf.standalone.casinos.tests/**/*.xml</testResults>
+      <keepLongStdio>false</keepLongStdio>
+      <healthScaleFactor>1.0</healthScaleFactor>
+      <allowEmptyResults>true</allowEmptyResults>
+    </hudson.tasks.junit.JUnitResultArchiver>
+    <htmlpublisher.HtmlPublisher plugin="htmlpublisher@1.12">
+      <reportTargets>
+        <htmlpublisher.HtmlPublisherTarget>
+          <reportName>Tests java doc</reportName>
+          <reportDir>sac-auto-tests/whgtf.standalone.casinos.tests/target/site/testapidocs</reportDir>
+          <reportFiles>index.html</reportFiles>
+          <alwaysLinkToLastBuild>false</alwaysLinkToLastBuild>
+          <keepAll>true</keepAll>
+          <allowMissing>true</allowMissing>
+        </htmlpublisher.HtmlPublisherTarget>
+        <htmlpublisher.HtmlPublisherTarget>
+          <reportName>HTML Report</reportName>
+          <reportDir>Security test results</reportDir>
+          <reportFiles>results.html</reportFiles>
+          <alwaysLinkToLastBuild>false</alwaysLinkToLastBuild>
+          <keepAll>true</keepAll>
+          <allowMissing>true</allowMissing>
+        </htmlpublisher.HtmlPublisherTarget>
+        <htmlpublisher.HtmlPublisherTarget>
+          <reportName>Lib java doc</reportName>
+          <reportDir>sac-auto-tests/whgtf.standalone.casinos.lib/target/site/apidocs</reportDir>
+          <reportFiles>index.html</reportFiles>
+          <alwaysLinkToLastBuild>false</alwaysLinkToLastBuild>
+          <keepAll>true</keepAll>
+          <allowMissing>true</allowMissing>
+        </htmlpublisher.HtmlPublisherTarget>
+        <htmlpublisher.HtmlPublisherTarget>
+          <reportName>HTML Tests Report</reportName>
+          <reportDir>sac-auto-tests/whgtf.standalone.casinos.tests/target/cucumber/cucumber-html-report</reportDir>
+          <reportFiles>index.html</reportFiles>
+          <alwaysLinkToLastBuild>false</alwaysLinkToLastBuild>
+          <keepAll>true</keepAll>
+          <allowMissing>false</allowMissing>
+        </htmlpublisher.HtmlPublisherTarget>
+      </reportTargets>
+    </htmlpublisher.HtmlPublisher>
+    <net.masterthought.jenkins.CucumberReportPublisher plugin="cucumber-reports@3.6.1">
+      <jsonReportDirectory>sac-auto-tests/whgtf.standalone.casinos.tests/target/cucumber/</jsonReportDirectory>
+      <fileIncludePattern>cucumber-json-report.json</fileIncludePattern>
+      <fileExcludePattern></fileExcludePattern>
+      <failedStepsNumber>0</failedStepsNumber>
+      <skippedStepsNumber>0</skippedStepsNumber>
+      <pendingStepsNumber>0</pendingStepsNumber>
+      <undefinedStepsNumber>0</undefinedStepsNumber>
+      <failedScenariosNumber>0</failedScenariosNumber>
+      <failedFeaturesNumber>0</failedFeaturesNumber>
+      <trendsLimit>0</trendsLimit>
+      <parallelTesting>false</parallelTesting>
+      <classifications class="empty-list"/>
+    </net.masterthought.jenkins.CucumberReportPublisher>
+  </publishers>
+  <buildWrappers>
+    <hudson.plugins.build__timeout.BuildTimeoutWrapper plugin="build-timeout@1.18">
+      <strategy class="hudson.plugins.build_timeout.impl.AbsoluteTimeOutStrategy">
+        <timeoutMinutes>120</timeoutMinutes>
+      </strategy>
+      <operationList>
+        <hudson.plugins.build__timeout.operations.AbortOperation/>
+      </operationList>
+    </hudson.plugins.build__timeout.BuildTimeoutWrapper>
+  </buildWrappers>
+</project>

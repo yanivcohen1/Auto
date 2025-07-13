@@ -1,0 +1,11 @@
+C:\SVN\log4net\Log4NetTest\bin\Debug\Log4NetTest.exe.config
+C:\SVN\log4net\Log4NetTest\bin\Debug\Log4NetTest.exe
+C:\SVN\log4net\Log4NetTest\bin\Debug\Log4NetTest.pdb
+C:\SVN\log4net\Log4NetTest\bin\Debug\log4net.dll
+C:\SVN\log4net\Log4NetTest\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\SVN\log4net\Log4NetTest\obj\x86\Debug\Log4NetTest.frmMain.resources
+C:\SVN\log4net\Log4NetTest\obj\x86\Debug\Log4NetTest.Properties.Resources.resources
+C:\SVN\log4net\Log4NetTest\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\SVN\log4net\Log4NetTest\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\SVN\log4net\Log4NetTest\obj\x86\Debug\Log4NetTest.exe
+C:\SVN\log4net\Log4NetTest\obj\x86\Debug\Log4NetTest.pdb

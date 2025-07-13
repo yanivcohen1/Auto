@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AutomationModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="AutomationEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BRAND" EntityType="AutomationModel.BRAND" />
+    <EntitySet Name="BRAND_LANGUAGE" EntityType="AutomationModel.BRAND_LANGUAGE" />
+    <EntitySet Name="BrandsResult" EntityType="AutomationModel.BrandsResult" />
+    <EntitySet Name="Tool" EntityType="AutomationModel.Tool" />
+    <EntitySet Name="TOOL_RESULT" EntityType="AutomationModel.TOOL_RESULT" />
+    <AssociationSet Name="FK_BRAND_LANGUAGE_BRAND" Association="AutomationModel.FK_BRAND_LANGUAGE_BRAND">
+      <End Role="BRAND" EntitySet="BRAND" />
+      <End Role="BRAND_LANGUAGE" EntitySet="BRAND_LANGUAGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BrandsResult_BRAND1" Association="AutomationModel.FK_BrandsResult_BRAND1">
+      <End Role="BRAND" EntitySet="BRAND" />
+      <End Role="BrandsResult" EntitySet="BrandsResult" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tool_BRAND_LANGUAGE" Association="AutomationModel.FK_Tool_BRAND_LANGUAGE">
+      <End Role="BRAND_LANGUAGE" EntitySet="BRAND_LANGUAGE" />
+      <End Role="Tool" EntitySet="Tool" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TOOL_RESULT_Tool" Association="AutomationModel.FK_TOOL_RESULT_Tool">
+      <End Role="Tool" EntitySet="Tool" />
+      <End Role="TOOL_RESULT" EntitySet="TOOL_RESULT" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="BRAND">
+    <Key>
+      <PropertyRef Name="Brand_ID" />
+    </Key>
+    <Property Name="Brand_ID" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+    <Property Name="Brand_Name" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Brand_Symbol" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Brand_Main_URL" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="BRAND_LANGUAGE" Relationship="AutomationModel.FK_BRAND_LANGUAGE_BRAND" FromRole="BRAND" ToRole="BRAND_LANGUAGE" />
+    <NavigationProperty Name="BrandsResult" Relationship="AutomationModel.FK_BrandsResult_BRAND1" FromRole="BRAND" ToRole="BrandsResult" />
+  </EntityType>
+  <EntityType Name="BRAND_LANGUAGE">
+    <Key>
+      <PropertyRef Name="Brand_Language_ID" />
+    </Key>
+    <Property Name="Brand_Language_ID" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+    <Property Name="Brand_ID" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+    <Property Name="Currency_ID" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+    <Property Name="Language_ID" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+    <Property Name="Notification_ID" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="Brand_Language_URL_Template" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Brand_Language_Priority" Type="Int32" />
+    <Property Name="Group_Number" Type="Decimal" Precision="20" Scale="0" />
+    <NavigationProperty Name="BRAND" Relationship="AutomationModel.FK_BRAND_LANGUAGE_BRAND" FromRole="BRAND_LANGUAGE" ToRole="BRAND" />
+    <NavigationProperty Name="Tool" Relationship="AutomationModel.FK_Tool_BRAND_LANGUAGE" FromRole="BRAND_LANGUAGE" ToRole="Tool" />
+  </EntityType>
+  <EntityType Name="BrandsResult">
+    <Key>
+      <PropertyRef Name="Brand_Result_ID" />
+    </Key>
+    <Property Name="Brand_Result_ID" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+    <Property Name="Brand_ID" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+    <Property Name="Tool_Name" Type="String" Nullable="false" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Tool_Result" Type="Boolean" />
+    <Property Name="Tool_last_Run_Date" Type="DateTime" />
+    <NavigationProperty Name="BRAND" Relationship="AutomationModel.FK_BrandsResult_BRAND1" FromRole="BrandsResult" ToRole="BRAND" />
+  </EntityType>
+  <EntityType Name="Tool">
+    <Key>
+      <PropertyRef Name="Tool_ID" />
+    </Key>
+    <Property Name="Tool_ID" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+    <Property Name="Brand_Language_ID" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+    <Property Name="Tool_Name" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Tool_Type" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Tool_Description" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Tool_SMS_Message_Format" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Tool_Email_Message_Format" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Tool_Argument" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Tool_FilePath" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Tool_IPAddress" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="Group_Number" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="Tool_TimeOut" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="Tool_Run_Order" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="Tool_Start_Time" Type="DateTime" />
+    <Property Name="EstimateRunTimeMin" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="RunFreqMinutes" Type="Decimal" Precision="20" Scale="0" />
+    <Property Name="ParallelEnable" Type="Boolean" />
+    <Property Name="IsSkip" Type="Boolean" />
+    <Property Name="IsRunning" Type="Boolean" />
+    <Property Name="Running" Type="Boolean" />
+    <NavigationProperty Name="BRAND_LANGUAGE" Relationship="AutomationModel.FK_Tool_BRAND_LANGUAGE" FromRole="Tool" ToRole="BRAND_LANGUAGE" />
+    <NavigationProperty Name="TOOL_RESULT" Relationship="AutomationModel.FK_TOOL_RESULT_Tool" FromRole="Tool" ToRole="TOOL_RESULT" />
+  </EntityType>
+  <EntityType Name="TOOL_RESULT">
+    <Key>
+      <PropertyRef Name="Tool_Result_ID" />
+    </Key>
+    <Property Name="Tool_Result_ID" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+    <Property Name="Tool_ID" Type="Decimal" Nullable="false" Precision="20" Scale="0" />
+    <Property Name="Tool_Result_Result" Type="Boolean" />
+    <Property Name="Tool_Result_Description" Type="String" MaxLength="220" Unicode="false" FixedLength="false" />
+    <Property Name="Tool_Result_Last_Pass_Date" Type="DateTime" />
+    <Property Name="id_temp" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tool_Result_Last_Run_Date" Type="DateTime" />
+    <NavigationProperty Name="Tool" Relationship="AutomationModel.FK_TOOL_RESULT_Tool" FromRole="TOOL_RESULT" ToRole="Tool" />
+  </EntityType>
+  <Association Name="FK_BRAND_LANGUAGE_BRAND">
+    <End Role="BRAND" Type="AutomationModel.BRAND" Multiplicity="1" />
+    <End Role="BRAND_LANGUAGE" Type="AutomationModel.BRAND_LANGUAGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BRAND">
+        <PropertyRef Name="Brand_ID" />
+      </Principal>
+      <Dependent Role="BRAND_LANGUAGE">
+        <PropertyRef Name="Brand_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BrandsResult_BRAND1">
+    <End Role="BRAND" Type="AutomationModel.BRAND" Multiplicity="1" />
+    <End Role="BrandsResult" Type="AutomationModel.BrandsResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BRAND">
+        <PropertyRef Name="Brand_ID" />
+      </Principal>
+      <Dependent Role="BrandsResult">
+        <PropertyRef Name="Brand_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tool_BRAND_LANGUAGE">
+    <End Role="BRAND_LANGUAGE" Type="AutomationModel.BRAND_LANGUAGE" Multiplicity="1" />
+    <End Role="Tool" Type="AutomationModel.Tool" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BRAND_LANGUAGE">
+        <PropertyRef Name="Brand_Language_ID" />
+      </Principal>
+      <Dependent Role="Tool">
+        <PropertyRef Name="Brand_Language_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TOOL_RESULT_Tool">
+    <End Role="Tool" Type="AutomationModel.Tool" Multiplicity="1" />
+    <End Role="TOOL_RESULT" Type="AutomationModel.TOOL_RESULT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tool">
+        <PropertyRef Name="Tool_ID" />
+      </Principal>
+      <Dependent Role="TOOL_RESULT">
+        <PropertyRef Name="Tool_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,123 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="BAU Eurogrand Tests" verbose="1">
+	
+	<test name="EgMobileDeDeposit">
+		<parameter name="parametersFileName" value="EgMobileDeDeposit.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+	<test name="EgMobileEnDeposit">
+		<parameter name="parametersFileName" value="EgMobileEnDeposit.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+    <test name="EgMobileDeSafariDeposit">
+		<parameter name="parametersFileName" value="EgMobileDeSafariDeposit.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+	<test name="EgMobileEnSafariDeposit">
+		<parameter name="parametersFileName" value="EgMobileEnSafariDeposit.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+    <test name="EgMobileEnLogin">
+		<parameter name="parametersFileName" value="EgMobileEnLogin.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+	<test name="EgMobileDeLogin">
+		<parameter name="parametersFileName" value="EgMobileDeLogin.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+    <test name="EgMobileEnSafariLogin">
+		<parameter name="parametersFileName" value="EgMobileEnSafariLogin.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+	<test name="EgMobileDeSafariLogin">
+		<parameter name="parametersFileName" value="EgMobileDeSafariLogin.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+	
+    <test name="EgWebEN">
+         <parameter name="parametersFileName"  value="DepositEN.xml"/>
+         <classes>
+             <class name="com.wh.auto.eurogrand.desktop.TestDeposit" />
+		</classes>		
+	</test>
+	
+    <test name="EgWebLoginEN">
+         <parameter name="parametersFileName"  value="LoginDE.xml"/>
+         <classes>
+             <class name="com.wh.auto.eurogrand.desktop.TestLogin" />
+		</classes>		
+	</test>
+	
+	<test name="EgWebDE">
+         <parameter name="parametersFileName"  value="DepositDE.xml"/>
+         <classes>
+             <class name="com.wh.auto.eurogrand.desktop.TestDeposit" />
+		</classes>		
+	</test>
+	
+    <test name="EgWebLoginDE">
+         <parameter name="parametersFileName"  value="LoginEN.xml"/>
+         <classes>
+             <class name="com.wh.auto.eurogrand.desktop.TestLogin" />
+		</classes>		
+	</test>
+    
+    <test name="EgClientEn">
+         <parameter name="test-name"  value="EurograndEnClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	</test>
+	
+	<test name="EgClientEnPT">
+         <parameter name="test-name"  value="EurograndEnNewClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	</test>
+      
+    <test name="EgClientDe">
+         <parameter name="test-name"  value="EurograndDeClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>
+	</test>
+    
+    <test name="EgClientDePT">
+         <parameter name="test-name"  value="EurograndDeNewClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>
+	</test>
+    
+     <test name="Tracking">
+         <parameter name="parametersFileName"  value="PT_Advertiser.ini"/>
+         <classes>
+             <class name="com.wh.auto.pt_admin.Test_PT_Advertiser" />
+		</classes>	
+	</test>
+     
+</suite>

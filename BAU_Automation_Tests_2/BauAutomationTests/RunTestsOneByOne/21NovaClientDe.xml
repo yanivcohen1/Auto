@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="PT Portal Tests" verbose="1">
+    
+	<test name="21NovaClientDe">
+         <parameter name="test-name"  value="Nova21DeClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	</test>
+    
+</suite>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net" >
+  <description>skykings casino Client De Context</description>
+  
+  <object type="Spring.Objects.Factory.Attributes.RequiredAttributeObjectPostProcessor, Spring.Core"/>
+
+  <!--<object type="Spring.Objects.Factory.Config.VariablePlaceholderConfigurer, Spring.Core">
+    <property name="VariableSources">
+      <list>
+        <object type="Spring.Objects.Factory.Config.ConnectionStringsVariableSource, Spring.Core" />
+        <object type="Spring.Objects.Factory.Config.ConfigSectionVariableSource, Spring.Core">
+          --><!-- Sections to read, sepearated by comma (leave out spaces) --><!--
+          <property name="SectionNames"
+                    value="appSettings,userSettings/com.who.tests.Properties.Settings" />
+          --><!--,applicationSettings/com.who.tests.Properties.Settings,--><!--
+        </object>
+      </list>
+    </property>
+  </object>-->
+  
+  <object id="MainWebPage" type="com.who.tests.clients.MainWebPage, com.who.tests.clients" init-method="init" >
+    <constructor-arg name="webSelenium" ref="WebSelenium"/>
+    <property name="URL_Main" value="http://serve.skykingscasino.com/promoRedirect?member=goodaff&amp;campaign=DEFAULT&amp;channel=DEFAULT&amp;zone=14153423&amp;lp=0"/>
+    <property name="URL_Language" value="http://de.skykingscasino.com/"/>
+  </object>
+
+  <object id="WebSelenium" type="AutomationLib.WebSelenium, AutomationLib">
+    <!--<constructor-arg name="driverType" value="chrome"/>--><!--value="${Driver}"/>-->
+  </object>
+
+  <object id="LanguagePage" type="com.who.tests.clients.LanguagePage, com.who.tests.clients" >
+    <constructor-arg name="webSelenium" ref="WebSelenium"/>
+    <property name="Next" value="WEITER"/>
+    <property name="WinClass" value="PT_installerTopFramWnd123_0"/>
+  </object>
+
+  <object id="LicensePage" type="com.who.tests.clients.LicensePage, com.who.tests.clients" >
+    <property name="Next" value="WEITER"/>
+    <property name="WinClass" value="PT_installerTopFramWnd123_0"/>
+  </object>
+
+  <object id="FinishPage" type="com.who.tests.clients.FinishPage, com.who.tests.clients" >
+    <property name="Done" value="Done"/>
+  </object>
+
+  <object id="GameModePage" type="com.who.tests.clients.GameModePage, com.who.tests.clients" >
+    <property name="Points" ref="GameModePoints"/>
+  </object>
+
+  <object id="GameModePoints" type="System.Drawing.Point, System.Drawing" >
+    <constructor-arg name="X" value="393"/>
+    <constructor-arg name="Y" value="423"/>
+  </object>
+
+  <object id="JoinNowPage" type="com.who.tests.clients.JoinNowPage, com.who.tests.clients" >
+    <property name="Points" ref="JoinNowPoints"/>
+  </object>
+
+  <object id="JoinNowPoints" type="System.Drawing.Point, System.Drawing" >
+    <constructor-arg name="X" value="201"/>
+    <constructor-arg name="Y" value="600"/>
+  </object>
+  
+  <object id="RegistrationPage" type="com.who.tests.clients.RegistrationPage, com.who.tests.clients" init-method="init" lazy-init="true">
+    <property name="Next" value="Weiter >>"/>
+    <property name="FirstName" value="WHO"/>
+    <property name="LastName" value="QA"/>
+    <property name="Email" value="test@playtech.com"/>
+    <property name="Title" value="Her"/>
+    <property name="DayOfBirth" value="01"/>
+    <property name="MounthOfBirth" value="Jan"/>
+    <property name="YearOfBirth" value="1973"/>
+    <property name="Address" value="Addr"/>
+    <property name="State" value="State"/>
+    <property name="PostalCode" value="1234"/>
+    <property name="PhoneNumber" value="1234567"/>
+    <property name="MobileNumber" value="1234567"/>
+    <property name="SelectCountry" value="United Kingdom"/>
+    <property name="City" value="city"/>
+    <property name="Password" value="123456"/>
+    <property name="Create" value="Erstellen "/>
+    <property name="SecretQuestion" value="Mother's maiden name?"/>
+  </object>
+
+  <object id="CongratulationsPage" type="com.who.tests.clients.CongratulationsPage, com.who.tests.clients" >
+    <property name="Continue" value="Weiter "/>
+    <property name="UserName" value="Ihr Benutzername ist:"/>
+    <property name="PlayersUsersFile" value="SkykingClientDe"/>
+  </object>
+
+  <object id="PopupMsgPage" type="com.who.tests.clients.PopupMsgPage, com.who.tests.clients" >
+    <property name="DearWHO" value="Hallo WHO"/>
+    <property name="Points" ref="PopupMsgPoints"/>
+  </object>
+
+  <object id="PopupMsgPoints" type="System.Drawing.Point, System.Drawing" >
+    <constructor-arg name="X" value="420"/>
+    <constructor-arg name="Y" value="287"/>
+  </object>
+
+  <object id="CashierPage" type="com.who.tests.clients.CashierPage, com.who.tests.clients" >
+    <property name="SaveDetails" value="Angaben speichern und einzahlen"/>
+    <property name="AmountToDeposit" value=""/>
+    <property name="CardNumber" value="1111111111111111"/>
+    <property name="CVV2" value="111"/>
+    <property name="State" value="State"/>
+    <property name="CardType" value="Visa Delta"/>
+    <property name="ExpirationMounth" value="Jan"/>
+    <property name="ExpirationYear" value="2023"/>
+    <property name="SelectCountry" value="United Kingdom"/>
+    <property name="DepositApproved" value="Ihre Kreditkarten-Einzahlung wurde genehmigt und erscheint als WHG Online/AquaPay London. Vielen Dank und viel Glück!"/>
+    <property name="SuccessRegister" value="OK"/>
+    <property name="CashierPoints" ref="CashierPoints"/>
+    <property name="BonusPoints" ref="BonusPoints"/>
+    <property name="ApproveMsgPoints" ref="ApproveMsgPoints"/>
+  </object>
+
+  <object id="CashierPoints" type="System.Drawing.Point, System.Drawing" >
+    <constructor-arg name="X" value="433"/>
+    <constructor-arg name="Y" value="115"/>
+  </object>
+
+  <object id="BonusPoints" type="System.Drawing.Point, System.Drawing" >
+    <constructor-arg name="X" value="290"/>
+    <constructor-arg name="Y" value="289"/>
+  </object>
+
+  <object id="ApproveMsgPoints" type="System.Drawing.Point, System.Drawing" >
+    <constructor-arg name="X" value="238"/>
+    <constructor-arg name="Y" value="290"/>
+  </object>
+
+  <object id="DepositPage" type="com.who.tests.clients.DepositPage, com.who.tests.clients" >
+    <property name="DepositText" value="Einzahlung "/>
+    <property name="AmountToDeposit" value="100"/>
+    <property name="CVV2" value="111"/>
+    <property name="DepositApproved" value="Ihre Kreditkarten-Einzahlung wurde genehmigt und erscheint als WH Online. Vielen Dank und viel Glück!"/>
+    <property name="CurrentBalance" value="Balance:"/><!--Current Balance:-->
+    <property name="BonusPoints" ref="BonusPoints"/>
+    <property name="ApproveMsgPoints" ref="ApproveMsgPoints"/>
+  </object>
+
+</objects>

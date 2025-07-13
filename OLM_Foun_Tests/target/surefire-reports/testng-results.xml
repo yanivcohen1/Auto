@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="com.wh.auto.eurogrand.BrowserTargetTestsIE" duration-ms="54827" started-at="2013-08-13T07:22:50Z" finished-at="2013-08-13T07:23:45Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="54827" started-at="2013-08-13T07:22:50Z" finished-at="2013-08-13T07:23:45Z">
+      <class name="com.wh.auto.eurogrand.BrowserTargetTestsIE">
+        <test-method status="PASS" signature="BrowserTarget(java.lang.String, java.lang.String)[pri:0, instance:com.wh.auto.eurogrand.BrowserTargetTestsIE@129b073]" name="BrowserTarget" duration-ms="19080" started-at="2013-08-13T10:22:50Z" description="Test The Browser Targeting in InternetExplorer" data-provider="Language" finished-at="2013-08-13T10:23:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[en-us]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://www.eurogrand.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserTarget -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.wh.auto.eurogrand.BrowserTargetTestsIE@129b073]" name="after" is-config="true" duration-ms="1147" started-at="2013-08-13T10:23:09Z" finished-at="2013-08-13T10:23:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="BrowserTarget(java.lang.String, java.lang.String)[pri:0, instance:com.wh.auto.eurogrand.BrowserTargetTestsIE@129b073]" name="BrowserTarget" duration-ms="16235" started-at="2013-08-13T10:23:10Z" description="Test The Browser Targeting in InternetExplorer" data-provider="Language" finished-at="2013-08-13T10:23:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[de]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://www.eurogrand.com/de]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserTarget -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.wh.auto.eurogrand.BrowserTargetTestsIE@129b073]" name="after" is-config="true" duration-ms="1060" started-at="2013-08-13T10:23:27Z" finished-at="2013-08-13T10:23:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="BrowserTarget(java.lang.String, java.lang.String)[pri:0, instance:com.wh.auto.eurogrand.BrowserTargetTestsIE@129b073]" name="BrowserTarget" duration-ms="16015" started-at="2013-08-13T10:23:28Z" description="Test The Browser Targeting in InternetExplorer" data-provider="Language" finished-at="2013-08-13T10:23:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://www.eurogrand.com/ru]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserTarget -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.wh.auto.eurogrand.BrowserTargetTestsIE@129b073]" name="after" is-config="true" duration-ms="1139" started-at="2013-08-13T10:23:44Z" finished-at="2013-08-13T10:23:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="AfterSuite()[pri:0, instance:com.wh.auto.eurogrand.BrowserTargetTestsIE@129b073]" name="AfterSuite" is-config="true" duration-ms="119" started-at="2013-08-13T10:23:45Z" finished-at="2013-08-13T10:23:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterSuite -->
+      </class> <!-- com.wh.auto.eurogrand.BrowserTargetTestsIE -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.wh.auto.eurogrand.BrowserTargetTestsIE -->
+</testng-results>

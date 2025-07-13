@@ -1,0 +1,149 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Yaniv Tool</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/ng-table/dist/ng-table.min.css" />
+    <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css" />
+    <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    	<link rel="shortcut icon" href="images/people.png">
+	<link href="styles/custom.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+  <body ><!-- ng-app="ngSuitesManageAdminYeomanApp"> -->
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+   <div class="loader" ng-hide="initialized">
+		Loading...
+	</div>
+
+	<nav class="navbar navbar-fixed-top navbar-inverse ng-hide" role="navigation" ng-show="initialized">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbar-collapse">
+				<!-- <ul class="nav navbar-nav">
+					<li><a href="#!/">Home</a></li>
+				</ul> -->
+ 				<ul class="nav navbar-nav" >
+                	<li>
+                		<a class="brand " href="#/">
+                    		<img src="images/people.png" alt="logo" height="30px"> Tests Management
+                		</a>
+                	</li>
+	                	<li data-ng-class="{'active':getClass('/runTests')}"><a href="#/runTests"><span class="glyphicon glyphicon-home"></span> Run Tests</a>
+	                	<li data-ng-class="{'active':getClass('/about')}"><a href="#/about"><span class="glyphicon glyphicon-play"></span> Manual Tests</a>
+	                    <li data-ng-class="{'active':getClass('/Suites')}"><a href="#/Suites"><span class="glyphicon glyphicon-align-left"></span> Suites Manage</a>
+	                    <li data-ng-class="{'active':getClass('/tests/-1')}"><a href="#/tests/-1"><span class="glyphicon glyphicon-list-alt"></span> Tests Manage</a>
+                    </li>
+                </ul>
+				<ul class="nav navbar-nav navbar-right" >
+					<li class="dropdown" ng-show="user">
+						<a href="" class="dropdown active" data-toggle="dropdown" ><!-- dropdown active -->
+							<i class="glyphicon glyphicon-user"></i> {{user.name}}  <b class="caret"></b>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a tabindex="" href="" ng-click="logout()">
+								<i class="glyphicon glyphicon-off"></i> Logout</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container ng-hide" ng-show="initialized">
+		<br>
+		<br>
+		<div ng-show="error">
+		<br>
+		<br>
+			<div class="alert alert-danger" >{{error}}</div>
+		</div>
+		<!-- <div ng-view></div> --><div animated-view></div>
+	</div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/oldieshim.js -->
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/ng-table-export/ng-table-export.js"></script>
+    <script src="bower_components/ng-table/dist/ng-table.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+    <script src="bower_components/angular-ui-grid/ui-grid.js"></script>
+    <script src="bower_components/oclazyload/dist/ocLazyLoad.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+		<script src="scripts/config.js"></script>
+		
+		<!-- <script src="scripts/js/ui-bootstrap-tpls-0.11.0.js"></script> -->
+		<!-- <script src="scripts/js/ng-table.js"></script>
+		<script src="scripts/js/ng-table-export.js"></script> -->
+		<!-- <script src="scripts/js/loading-bar.min.js"></script> -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/SuitesController.js"></script>
+    <script src="scripts/controllers/TestsController.js"></script>
+    <!-- <script src="scripts/controllers/ManualCtrl.js"></script> -->
+    <script src="scripts/controllers/LoginCtrl.js"></script>
+    <script src="scripts/services/SuitesService.js"></script>
+    <script src="scripts/services/TestsService.js"></script>
+    <script src="scripts/directives/animatedView.js"></script>
+    <script src="scripts/directives/OnRaedFileDirc.js"></script>
+	
+        <!-- endbuild -->
+		
+	<!-- UI Libs -->
+    
+</body>
+</html>

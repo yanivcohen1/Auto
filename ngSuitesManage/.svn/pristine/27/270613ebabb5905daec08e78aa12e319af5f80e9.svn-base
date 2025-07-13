@@ -1,0 +1,73 @@
+﻿<!doctype html>
+<html lang="en" data-ng-app="customersApp">
+<head>
+	<meta charset="utf-8">
+    <title>Suites Managment</title>
+    <!--<script data-require="angular.js@*" data-semver="1.2.0-rc3-nonmin" src="http://code.angularjs.org/1.2.0-rc.3/angular.js"></script>
+    <script data-require="ng-table@*" data-semver="0.3.0" src="http://bazalt-cms.com/assets/ng-table/0.3.0/ng-table.js"></script>
+    <script data-require="ng-table-export@0.1.0" data-semver="0.1.0" src="http://bazalt-cms.com/assets/ng-table-export/0.1.0/ng-table-export.js"></script>
+    
+    <link data-require="ng-table@*" data-semver="0.3.0" rel="stylesheet" href="http://bazalt-cms.com/assets/ng-table/0.3.0/ng-table.css" />
+    <link data-require="bootstrap-css@*" data-semver="3.0.0" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />-->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="Content/ng-table.css" rel="stylesheet" />
+    <link href="Content/style.css" rel="stylesheet" />
+    <link href="Content/customerManagementStyles.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand " href="#/">
+                    <img src="Content/Images/people.png" alt="logo"> Suites Managment
+                </a>
+                <ul class="nav nav-pills" data-ng-controller="NavbarController">
+                    <li data-ng-class="{'active':getClass('/Suites')}"><a href="#/Suites">Suites Manage</a></li>
+                    <li data-ng-class="{'active':getClass('/newSuite')}"><a href="#/newSuite">New Suite</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Note that AngularJS 1.2+ now has a built-in ng-animation direction. Left in animated-view to show a 
+         custom directive -->
+    <div animated-view></div>
+
+
+    <div id="footer">
+        <div class="navbar navbar-fixed-bottom">
+            <div class="navbar-inner">
+                <div class="container">
+                    <footer>
+                        <div class="row">
+                            <div class="span4">
+                                Created by Yaniv Cohen
+                            </div>
+                            </div>
+                        </div>
+                   </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vendor Libs: jQuery only used for Bootstrap functionality -->
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+    <script src="Scripts/jquery.min.js"></script>
+
+    <!-- UI Libs -->
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/ng-table.js"></script>
+    <script src="Scripts/ng-table-export.js"></script>
+
+    <!-- App libs -->
+    <script src="app/app.js"></script>
+    <script src="app/controllers/controllers.js"></script>
+    <script src="app/services/customersService.js"></script>
+    <script src="app/directives/animatedView.js"></script>
+</body>
+</html>

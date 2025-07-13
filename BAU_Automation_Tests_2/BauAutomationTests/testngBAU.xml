@@ -1,0 +1,24 @@
+<!-- <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" > -->
+<suite name="Empty" preserver-order="true">
+  
+  <listeners>
+       <listener class-name="com.wh.auto.common.TestListener" />
+  </listeners>
+    
+  <suite-files>
+
+<!--       <suite-file path="./GameOfTheMonthFirefox.xml" /> -->
+      
+   <!-- <suite-file path="./BrowserTargetFirefox.xml" /> -->
+
+   <suite-file path="./testngClients.xml" />
+   
+   <suite-file path="./BAU_Whcc.xml" />
+   
+   <suite-file path="./BAU_Euro.xml" />
+   
+   <suite-file path="./BAU_21nova.xml" />
+   
+  </suite-files>
+
+</suite>

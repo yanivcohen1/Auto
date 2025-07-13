@@ -1,0 +1,305 @@
+#
+###############
+# REGISTRATION
+###############
+#
+FIRSTNAME_LABEL=Name
+FIRSTNAME_PLACEHOLDER=First name
+FIRSTNAME_ERROR_REQUIRED=First name is required
+FIRSTNAME_ERROR_MINLENGTH=First name must be at least 2 characters
+FIRSTNAME_ERROR_MAXLENGTH=First name must not exceed 60 characters
+FIRSTNAME_ERROR_PATTERN=First name must contain only letters .'/-FIRSTNAME_PLACEHOLDER=First name
+#
+LASTNAME_PLACEHOLDER=Surname
+LASTNAME_LABEL=Surname
+LASTNAME_ERROR_REQUIRED=Surname is required
+LASTNAME_ERROR_MINLENGTH=Surname must be at least 2 characters
+LASTNAME_ERROR_MAXLENGTH=Surname must not exceed 60 characters
+LASTNAME_ERROR_PATTERN=Surname must contain only letters . ' / -
+#
+GENDER_MALE=Male
+GENDER_FEMALE=Female
+#
+DOB_LABEL=Date of Birth (You must be 18 or over)
+DOB_ERROR_REQUIRED=Date of birth is required
+DOB_ERROR_LEGAL=You must be at least 18 years old to open an account
+DOB_ERROR_EXISTING=You cannot be more than 120 years old to open an account
+#
+TERMS_LABEL_PRE=I am 18 or over and I accept the Terms & Conditions, Privacy Policy & Age Verification Policy as published on this site
+TERMS_TERMS=Terms & Conditions
+TERMS_PRIVACY=Privacy Policy
+TERMS_AGE=Age Verification Policy
+#
+CONTACT_DETAILS_SECTION=Contact details
+CONTACT_DETAILS_PLACEHOLDER=Email
+EMAIL_ERROR_PATTERN=Email address must contain only letters, numbers _ . and one @
+EMAIL_ERROR_MAXLENGTH=Email address must not exceed 60 characters
+EMAIL_ERROR_REQUIRED=Email address is required
+SYSTEM_ERROR_EMAIL_TAKEN=This email is already registered; log in or retrieve your login details
+EMAIL_ERROR_VALID=Should be a valid email address
+# 
+PROMOCODE_ERROR_MAXLENGTH=Maximum length is 15 characters
+PROMOCODE_LABEL=Bonus code
+#
+CREATE_BUTTON=Create your account
+SYSTEM_ERROR_FAILED_VALIDATION=Please check the errors in the form below
+#
+
+MOBILE_PLACEHOLDER=Mobile
+MOBILE_ERROR_PATTERN=Mobile number must contain only numbers - () / . +
+MOBILE_ERROR_MAXLENGTH=Mobile number must not exceed 20 characters
+MOBILE_ERROR_REQUIRED=Mobile number is required
+MOBILE_ERROR_MINLENGTH=Mobile number must be at least 6 characters
+#
+CONTACTABLE_LABEL=I want to receive free bets, bonuses & exclusive offer news from William Hill
+#
+CURRENCY_SECTION=Currency
+CURRENCY_DEFAULT.UK=GBP - British Pound
+CURRENCY_GBP=GBP - British Pound
+CURRENCY_EUR=EUR - Euro
+CURRENCY_AUD=AUD - Australian Dollar
+CURRENCY_CAD=CAD - Canadian Dollar
+CURRENCY_USD=USD - US Dollar
+CURRENCY_DKK=DKK - Danish Krone
+CURRENCY_SEK=SEK - Swedish Krona
+CURRENCY_JPY=JPY - Japanese Yen
+CURRENCY_SGD=SGD - Singapore Dollar
+CURRENCY_HKD=HKD - Hong Kong Dollar
+CURRENCY_CHF=CHF - Swiss Franc
+#
+DAILYDEPOSITLIMIT_LABEL=Daily Deposit limit
+DAILY_DEPOSIT_LIMIT_ERROR_PATTERN=Daily Deposit Limit is required
+DAILY_DEPOSIT_DEFAULT=Please select a limit
+DAILY_DEPOSIT_NO_LIMIT=No limit
+DAILY_DEPOSIT_HUNDRED_THOUSAND=£100000
+DAILY_DEPOSIT_FIFTY_THOUSAND=£50000
+DAILY_DEPOSIT_TWENTY_THOUSAND=£20000
+DAILY_DEPOSIT_TEN_THOUSAND=£10000
+DAILY_DEPOSIT_FIVE_THOUSAND=£5000
+DAILY_DEPOSIT_ONE_THOUSAND=£1000
+DAILY_DEPOSIT_FIVE_HUNDRED=£500
+DAILY_DEPOSIT_ONE_HUNDRED=£100
+DAILY_DEPOSIT_FIFTY=£50
+DAILY_DEPOSIT_TWENTY_FIVE=£25
+DAILY_DEPOSIT_TEN=£10
+
+#
+ADDRESS_SECTION=Address
+UNITED_KINGDOM=United Kingdom
+COUNTRY_EXCEPTION_MESSAGE.ES=As a Spanish resident you need to create an account on our regulated site:
+COUNTRY_EXCEPTION_MESSAGE.IT=As an Italian resident you need to create an account on our regulated site:
+WH_SITE.ES=www.williamhill.es
+WH_SITE.IT=www.williamhill.it
+#
+STEP1_LABEL=Create an account
+STEP2_LABEL=Deposit
+SECURED_BY_LABEL=Secured by
+#
+SECURITY_SECTION=Secure your login
+SECURITY_DEFAULT_QUESTION=Mother's Maiden Name
+SECURITY_DEFAULT_QUESTION_1=Mother's Maiden Name
+SECURITY_DEFAULT_QUESTION_2=My favourite player
+SECURITY_DEFAULT_QUESTION_3=My first car
+SECURITY_DEFAULT_QUESTION_4=My first pets name
+SECURITY_DEFAULT_QUESTION_5=My first school
+SECURITY_DEFAULT_QUESTION_6=Mother's date of birth
+SECURITY_DEFAULT_QUESTION_7=Anniversary date
+SECURITY_DEFAULT_QUESTION_8=Spouse's middle name
+#
+RESPONSE_PLACEHOLDER=Your answer
+RESPONSE_ERROR_REQUIRED=Answer to your Security Question is required
+RESPONSE_ERROR_PATTERN=Answer must contain only letters, numbers # & . , ' / -
+RESPONSE_ERROR_MAXLENGTH=Answer must not exceed 160 characters
+#
+HOUSE_NUMBER_NAME_PLACEHOLDER=House number/name
+STREET1_PLACEHOLDER=Address line 1
+STREET1_ERROR_PATTERN=House number/name must contain only letters, numbers # & . , ' / -
+STREET1_ERROR_MAXLENGTH=House number/name must not exceed 160 characters
+STREET1_ERROR_REQUIRED=House number/name is required
+#
+STREET2_PLACEHOLDER=Address line 2
+STREET2_ERROR_PATTERN=Address must contain only letters, numbers # & . , ' / -
+STREET2_ERROR_MAXLENGTH=Address must not exceed 160 characters
+#
+CITY_PLACEHOLDER=Town/City
+CITY_ERROR_PATTERN=Town/City must contain only letters . ' / -
+CITY_ERROR_MAXLENGTH=Town/City must not exceed 60 characters
+CITY_ERROR_REQUIRED=Town/City is required
+#
+COUNTY_PLACEHOLDER=County/State
+COUNTY_ERROR_PATTERN=County/State must contain only letters . ' / -
+COUNTY_ERROR_MAXLENGTH=County/State must not exceed 160 characters
+STATE_ERROR_REQUIRED=County/State is required
+STATE_DEFAULT=Select a state
+#
+POSTCODE_PLACEHOLDER=Postcode/ZIP
+POSTCODE_ERROR_PATTERN=Postcode/ZIP must contain only letters, numbers # . , ' / -
+POSTCODE_ERROR_REQUIRED=Postcode/ZIP is required
+POSTCODE_ERROR_MAXLENGTH=Postcode/ZIP must not exceed 20 characters
+#
+USERNAME_PLACEHOLDER=Username - 6 to 15 characters
+USERNAME_ERROR_MAXLENGTH=Username must not exceed 15 characters
+USERNAME_ERROR_MINLENGTH=Username must be at least 6 characters
+USERNAME_ERROR_PATTERN=Username must contain only letters, numbers _ -
+USERNAME_ERROR_REQUIRED=Create your William Hill username - 6 to 15 characters
+USERNAME_ERROR_TAKEN=This username is taken; amend or try
+#
+PASSWORD_PLACEHOLDER=Password - 6 to 15 characters
+PASSWORD_ERROR_MINLENGTH=Password must be at least 6 characters
+PASSWORD_ERROR_MAXLENGTH=Password must not exceed 15 characters 
+PASSWORD_ERROR_PATTERN=Invalid character! Only letters, numbers, hyphens and underscores allowed
+PASSWORD_ERROR_REQUIRED=Create your William Hill password - 6 to 15 characters
+PASSWORD_SHOW_PASSWORD=Show
+PASSWORD_HIDE_PASSWORD=Hide
+#
+FIND_ADDRESS_BUTTON=Find address
+QAS_ERROR=Unable to find address, please enter manually
+ENTER_MANUALLY_BUTTON=Enter manually
+#
+COUNTY_STATE_PLACEHOLDER=County/State
+#
+		############
+		# DEPOSIT  #
+		############
+#
+CARDNUMBER_PLACEHOLDER=Visa, MasterCard, Maestro, DinersClub
+CARDNUMBER=Card number
+CARDNUMBER_ERROR_REQUIRED=We cannot recognise the card, please double check the number
+CARDNUMBER_ERROR_PATTERN=Card number must contain only numbers
+# These should read as CARDNUMBER_ERROR_LENGTH
+CARDNUMBER_ERROR_MAXLENGTH=Card number too long
+CARDNUMBER_ERROR_MINLENGTH=Card number not long enough
+CARDNUMBER_ERROR_LENGTH=Card number must be 16 digits
+#
+EXPIRY_DATE=Expiry date
+EXPIRY_DATE_ERROR_REQUIRED=Expiry date cannot be in the past
+EXPIRY_ERROR_REQUIRED=Select a valid expiry date
+EXPIRY_ERROR_PATTERN=Expiry date is required
+EXPIRY_ERROR_MINLENGTH=Expiry date must have both a month and year selected
+# following scripted messages do not exist ?
+EXPIRY_ERROR_EXPIRED=Your card appears to have expired
+#Expiry month is required
+#
+NAME_ON_CARD=Name on card
+CARDNAME_ERROR_PATTERN=Name must contain only letters . ' / -
+CARDNAME_ERROR_MAXLENGTH=Name must not exceed 121 characters
+CARDNAME_ERROR_REQUIRED=The card must be your own. Please enter your name as it appears on the card
+CARDNAME_ERROR_MINLENGTH=Name must be at least 2 characters
+#
+DEPOSIT_BUTTON=Deposit
+#
+SECURITY_CODE=Signature stripe security code
+SECURITY_CODE_PLACEHOLDER=last 3 digits
+CVV2_ERROR_PATTERN=Security code can only contain numbers
+CVV2_ERROR_MINLENGTH=Security code must be at least 3 characters
+CVV2_ERROR_MAXLENGTH=Security code must not exceed 3 characters
+CVV2_ERROR_REQUIRED=Security code is required
+SECURITY_CODE_HELP_MESSAGE=Last 3 digits on the signature strip on the back of your card
+#
+HELP_SECTION=Need a helping hand?
+HELP_CHAT=Chat with us
+HELP_PHONE=Call us (free) - 0800 085 6296
+HELP_EMAIL=Email Us
+#
+AMOUNT_LABEL=Amount (£)
+AMOUNT_ERROR_PATTERN=Amount must only contain numbers and a .
+AMOUNT_ERROR_MINAMOUNT=Minimum amount not met
+AMOUNT_ERROR_MAXAMOUNT=Maximum amount exceeded
+AMOUNT_ERROR_REQUIRED=Amount is required, in the format xx.xx
+#
+	###################
+	# DEPOSIT SUCCESS #
+	###################
+#
+# The following is prefixed by the user's first name
+YOU_HAVE_SUCCESSFULLY_FUNDED_YOUR_ACCOUNT=, you have successfully funded your
+DEPOSIT_DETAILS=Deposit details
+DEPOSIT_DETAIL_REFERENCE=Reference:
+YOUR_TRANSACTION_WILL_APPEAR_AS_WHG_LTD_ON_YOUR_CARD_STATEMENT=Your transaction will appear as WHG Ltd on your card statement.
+BONUS=Bonus
+BALANCE=Balance
+CARDTYPE=CARDTYPE
+START_PLAYING=Start playing
+PRINT_MSG_1=You can
+PRINT=print
+PRINT_MSG_2=your deposit details
+#
+	########################
+	# DETAILS AND SETTINGS #
+	########################
+#
+# Change password
+PAGE_TITLE=Update Account Details & Settings
+CHANGE_PASSWORD_SECTION_LABEL=Change Password
+UPDATE_PASSWORD_BUTTON=Update Password
+CURRENT_PASSWORD_PLACEHOLDER=Current Password
+NEW_PASSWORD_PLACEHOLDER=New Password - 6 to 15 characters
+UPDATE_PASSWORD_BUTTON_HIDE=Hide
+PASSWORD_ERROR_MINLENGTH=Password must be at least 6 characters
+PASSWORD_ERROR_MAXLENGTH=Password must not exceed 15 characters
+PASSWORD_ERROR_REQUIRED=Create your William Hill password - 6 to 15 characters
+PASSWORD_ERROR_REQUIRED=Password is required
+# Contact details
+CONTACT_DETAILS_LABEL=Contact details
+CONTACT_DETAILS_UPDATED=CONTACT_DETAILS_UPDATED=
+EMAIL_LABEL=Email
+# Time zones
+TIMEZONES_LABEL=Timezones
+UPDATE_TIMEZONE_BUTTON=Update Timezone
+TIMEZONE_HELP_ANCHOR_TEXT=What is this?
+TIMEZONE_DEFAULT=Europe/London
+# Marketing Information
+MARKETING_INFORMATION_LABEL=Marketing Information
+CONTACTABLE_LABEL=I want to receive free bets, bonuses & exclusive offer news from William Hill
+MARKETING_UPDATED=Your marketing preferences have been successfully updated 
+# Daily deposit
+DAILY_DEPOSIT_LIMIT_LABEL=Daily Deposit limit
+DAILY_DEPOSIT_TEXT=To request alternative daily deposit limit values,
+DAILY_DEPOSIT_ANCHOR_TEXT=contact Customer Services
+RESPONSIBLE_GAMBLING=View The William Hill Responsible Gambling Policy
+DAILY_DEPOSIT_HELP_ANCHOR_TEXT=What is this?
+DAILY_DEPOSIT_BUTTON_TEXT=Update Daily Deposit Limit
+DAILY_DEPOSIT_UPDATED=DAILY_DEPOSIT_UPDATED
+CUSTOMER_SERVICES_TEXT=To request alternative daily deposit limit values,
+CUSTOMER_SERVICES_ANCHOR_TEXT=contact Customer Services
+## UPDATE SUCCESS#
+CONTACT_DETAILS_UPDATED=Your contact details have successfully been updated
+PASSWORD_UPDATED=Your password has successfully been updated
+DAILY_DEPOSIT_UPDATED=Deposit limit successfully set
+TIMEZONE_UPDATED=Timezone successfully set
+#
+	#########
+	# DATES # 
+	#########
+#
+DOB_ERROR_INVALID=Please select a valid date
+DAY=Day
+MONTH=Month
+YEAR=Year
+JANUARY=January
+FEBRUARY=February
+MARCH=March
+APRIL=April
+MAY=May
+JUNE=June
+JULY=July
+AUGUST=August
+SEPTEMBER=September
+OCTOBER=October
+NOVEMBER=November
+DECEMBER=December
+     
+     
+     
+ 
+  
+   
+    
+     
+
+
+ 
+  
+   
+    
+         

@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SuitesManagement", "http://localhost:32475", "{FF68079A-7838-4D76-AACB-315FDE12297C}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/SuitesManagement"
+		Debug.AspNetCompiler.PhysicalPath = "C:\Yaniv\Angular\SuitesManagement\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\SuitesManagement\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/SuitesManagement"
+		Release.AspNetCompiler.PhysicalPath = "C:\Yaniv\Angular\SuitesManagement\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\SuitesManagement\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "C:\Yaniv\Angular\SuitesManagement\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF68079A-7838-4D76-AACB-315FDE12297C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF68079A-7838-4D76-AACB-315FDE12297C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

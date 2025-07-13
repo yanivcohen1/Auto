@@ -1,0 +1,99 @@
+// features/step_definitions/stepDefinitions.js
+//var homePage = require('../pages/homePage.js');
+var chai = require('chai');
+var chaiAsPromised = require('chai-as-promised');
+var Promise = require('es6-promise').Promise;
+
+chai.use(chaiAsPromised);
+var expect = chai.expect;
+var until = protractor.ExpectedConditions;
+
+module.exports = function() {
+
+  this.Given(/^migUser fill Title "([^"]*)"$/, function (title, callback) {
+         // Write code here that turns the phrase above into concrete actions
+         callback(null, 'pending');
+       });
+
+  this.Given(/^migUser fill first "([^"]*)"$/, function (firstName, callback) {
+         // Write code here that turns the phrase above into concrete actions
+         callback(null, 'pending');
+       });
+
+  this.Given(/^migUser fill last "([^"]*)"$/, function (lastName, callback) {
+         // Write code here that turns the phrase above into concrete actions
+         callback(null, 'pending');
+       });
+
+  this.Given(/^migUser fill email with email: "([^"]*)"$/, function (email,callback) {
+         // Write code here that turns the phrase above into concrete actions
+         callback(null, 'pending');
+       });
+
+  this.Given(/^migUser fill user name with timestamp$/, function (callback) {
+         // Write code here that turns the phrase above into concrete actions
+         callback(null, 'pending');
+       });
+  
+  this.Given(/^migUser fill password (\d+)$/, function (password, callback) {
+         // Write code here that turns the phrase above into concrete actions
+         callback(null, 'pending');
+       });
+
+  this.Given(/^migUser Contiue to step (\d+)$/, function (step, callback) {
+          // Write code here that turns the phrase above into concrete actions
+          callback(null, 'pending');
+        });
+ 
+  this.Given(/^migUser click enter address manualy$/, function (callback) {
+          // Write code here that turns the phrase above into concrete actions
+          callback(null, 'pending');
+        });
+
+  this.Given(/^migUser fill City "([^"]*)"$/, function (city, callback) {
+          // Write code here that turns the phrase above into concrete actions
+          callback(null, 'pending');
+        });
+        
+  this.Given(/^migUser fill date of birth (\d+)\/(\d+)\/(\d+)$/, function (day, mounth, year, callback) {
+          // Write code here that turns the phrase above into concrete actions
+          callback(null, 'pending');
+        });
+
+  this.Given(/^migUser select country "([^"]*)"$/, function (cuntry, callback) {
+          // Write code here that turns the phrase above into concrete actions
+          callback(null, 'pending');
+        });
+        
+  this.Given(/^migUser fill Address "([^"]*)"$/, function (address, callback) {
+          // Write code here that turns the phrase above into concrete actions
+          callback(null, 'pending');
+        });
+        
+  this.Given(/^migUser fill Post code (\d+)$/, function (code, callback) {
+
+          // Write code here that turns the phrase above into concrete actions
+          callback(null, 'pending');
+        });
+
+  this.Given(/^migUser fill Mobile (\d+)$/, function (mobileNumber, callback) {
+          // Write code here that turns the phrase above into concrete actions
+          callback(null, 'pending');
+        });
+
+  this.Given(/^migUser select currency GBP$/, function (callback) {
+          // Write code here that turns the phrase above into concrete actions
+          callback(null, 'pending');
+        });
+
+  this.Given(/^migUser click on Register Now$/, function (callback) {
+          // Write code here that turns the phrase above into concrete actions
+          callback(null, 'pending');
+        });
+
+  this.Then(/^migUser Account was Created$/, function (callback) {
+          // Write code here that turns the phrase above into concrete actions
+          callback(null, 'pending');
+        });
+
+};

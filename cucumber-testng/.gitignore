@@ -1,0 +1,13 @@
+.settings
+target/
+build/
+gradle/
+*.impl
+*.iml
+.idea/*
+.gradle/*
+!/.idea/codeStyleSettings.xml
+!/.idea/inspectionProfiles/
+!/.idea/runConfigurations/
+.project
+.classpath

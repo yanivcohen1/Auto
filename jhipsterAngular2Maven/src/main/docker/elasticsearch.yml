@@ -1,0 +1,10 @@
+version: '2'
+services:
+    jhipsterangular2maven-elasticsearch:
+        container_name: jhipsterangular2maven-elasticsearch
+        image: elasticsearch:2.4.1
+        # volumes:
+        #     - ~/volumes/jhipster/jhipsterAngular2Maven/elasticsearch/:/usr/share/elasticsearch/data/
+        ports:
+            - 9200:9200
+            - 9300:9300

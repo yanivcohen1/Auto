@@ -1,0 +1,64 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="BrowserTargetChrome" verbose="1">
+    
+     <test name="21nova">
+         <classes>
+             <class name="com.wh.auto.general.Test_BrowserTarget" />
+		</classes>	
+	</test>
+	
+	<test name="cotedazurpalace">
+         <classes>
+             <class name="com.wh.auto.general.Test_BrowserTarget" />
+		</classes>	
+	</test>
+	
+	<test name="EuroGrand">
+         <classes>
+             <class name="com.wh.auto.general.Test_BrowserTarget" />
+		</classes>	
+	</test>
+	
+	<test name="joylandcasino">
+         <classes>
+             <class name="com.wh.auto.general.Test_BrowserTarget" />
+		</classes>	
+	</test>
+	
+	<test name="LiveEuroGrand">
+         <classes>
+             <class name="com.wh.auto.general.Test_BrowserTarget" />
+		</classes>	
+	</test>
+	
+	<test name="Prestige">
+         <classes>
+             <class name="com.wh.auto.general.Test_BrowserTarget" />
+		</classes>	
+	</test>
+	
+	<test name="rubybingo">
+         <classes>
+             <class name="com.wh.auto.general.Test_BrowserTarget" />
+		</classes>	
+	</test>
+	
+	<test name="SkyKingsCasino">
+         <classes>
+             <class name="com.wh.auto.general.Test_BrowserTarget" />
+		</classes>	
+	</test>
+	
+	<test name="williamhillcasino">
+         <classes>
+             <class name="com.wh.auto.general.Test_BrowserTarget" />
+		</classes>	
+	</test>
+	
+	<test name="www2">
+         <classes>
+             <class name="com.wh.auto.general.Test_BrowserTarget" />
+		</classes>	
+	</test>
+	
+</suite>

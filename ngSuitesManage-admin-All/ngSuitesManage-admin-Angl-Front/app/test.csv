@@ -1,0 +1,5 @@
+inUrl,expectedUrl
+https://www.google.co.il/,https://www.google.co.il/
+https://www.google1.co.il/,https://www.google2.co.il/
+https://www.google2.co.il/,https://www.google2.co.il/
+https://www.google2.co.il/,https://www.google1.co.il/

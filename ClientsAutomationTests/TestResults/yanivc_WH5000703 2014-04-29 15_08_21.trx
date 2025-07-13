@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c396e692-a057-4659-a00a-2c5e45b1e5eb" name="yanivc@WH5000703 2014-04-29 15:08:21" runUser="ADGENCY-DOMAIN\yanivc" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Trace and Test Impact" id="76148d2d-336e-4c3d-89fc-2d0e04d85b16">
+    <Description>These are test settings for Trace and Test Impact.</Description>
+    <Deployment runDeploymentRoot="yanivc_WH5000703 2014-04-29 15_08_21">
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\AutomationLib\bin\Debug\AutomationLib.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\Common.Logging.Log4Net.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\Common.Logging.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\Selenium.WebDriverBackedSelenium.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\log4net.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\Spring.Core.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\ThoughtWorks.Selenium.Core.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\WebDriver.Support.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\WebDriver.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+        <DataCollectors>
+          <DataCollector uri="datacollector://microsoft/SystemInfo/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.SystemInfo.SystemInfoDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.SystemInfo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="System Information">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/ActionLog/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.ManualTest.ActionLog.ActionLogPlugin, Microsoft.VisualStudio.TestTools.ManualTest.ActionLog, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Actions">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/HttpProxy/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.HttpProxyCollector, Microsoft.VisualStudio.TraceCollector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/TestImpact/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.TestImpactDataCollector, Microsoft.VisualStudio.TraceCollector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Test Impact">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/TraceDebugger/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.TraceDebuggerDataCollector, Microsoft.VisualStudio.TraceCollector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="IntelliTrace">
+          </DataCollector>
+        </DataCollectors>
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-04-29T15:08:21.2037008+03:00" queuing="2014-04-29T15:08:21.8497008+03:00" start="2014-04-29T15:08:25.6027008+03:00" finish="2014-04-29T15:17:44.6467008+03:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="WH5000703" outcome="Error" timestamp="2014-04-29T15:17:44.6447008+03:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Nova21DeClient" storage="c:\svn\bau_automation_tests\trunk\clientsautomationtests\clients\bin\debug\com.who.tests.clients.dll" id="515d957c-d18a-d880-05d3-8e06386abb16">
+      <Execution timeOut="900000" id="21aabd37-b5fe-4dce-ab96-4a137ba2ec53" />
+      <TestMethod codeBase="C:/SVN/BAU_Automation_Tests/trunk/ClientsAutomationTests/Clients/bin/Debug/com.who.tests.clients.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="com.who.tests.clients.Nova21De, com.who.tests.clients, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Nova21DeClient" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="515d957c-d18a-d880-05d3-8e06386abb16" executionId="21aabd37-b5fe-4dce-ab96-4a137ba2ec53" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="21aabd37-b5fe-4dce-ab96-4a137ba2ec53" testId="515d957c-d18a-d880-05d3-8e06386abb16" testName="Nova21DeClient" computerName="WH5000703" duration="00:09:18.9370000" startTime="2014-04-29T15:08:25.7097008+03:00" endTime="2014-04-29T15:17:44.6467008+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="21aabd37-b5fe-4dce-ab96-4a137ba2ec53">
+      <DataCollectorMessages>
+        <DataCollectorMessage timestamp="2014-04-29T15:08:35.5007008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An established connection was aborted by the software in your host machine</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:08:35.5017008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. An established connection was aborted by the software in your host machine</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:08:35.5027008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An established connection was aborted by the software in your host machine</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:09:26.9837008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:09:28.7577008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:09:30.4457008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:09:32.1887008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:09:34.4007008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:09:36.3217008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:09:38.2477008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:09:39.9767008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:09:45.0607008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:09:57.4137008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:09:59.4687008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:00.2407008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:01.3597008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:02.3227008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:03.1567008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:04.9147008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:06.4607008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:07.5757008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:09.0277008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:09.0277008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:09.0277008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:09.0277008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:09.0287008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:09.0897008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:09.0897008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:09.0897008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:09.1897008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:09.1907008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:09.1907008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:09.1927008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:09.1927008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:09.1927008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:09.2067008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:09.2067008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:09.2067008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:11.2937008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:12.0867008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:13.5397008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:19.5327008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:21.5267008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:46.5577008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:47.6597008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:10:49.1287008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:11:29.1587008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:11:31.3997008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:11:32.8877008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:11:38.9877008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:11:40.5117008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:11:42.8547008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:11:43.6517008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:11:44.5337008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:11:45.3547008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:11:49.1557008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:12:20.1877008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:12:21.3577008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:12:24.5197008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:12:26.6627008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:12:27.2727008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:12:27.9677008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:12:31.7567008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:12:33.6937008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:12:35.0277008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:12:35.7677008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:12:41.5597008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:12:42.3357008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:12:45.4117008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:12:46.4857008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:12:48.5897008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:12:49.8437008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:12:52.1847008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:12:53.5467008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:12:55.9687008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:12:56.8047008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:13:02.5717008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:13:04.0107008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:13:07.4607008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:13:09.2027008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:13:10.1517008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:13:10.9767008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:13:22.3247008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:14:25.6677008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:14:27.8327008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:14:29.2637008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:14:30.1407008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:14:31.6327008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:14:36.2487008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:14:45.9677008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:14:47.2147008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:14:48.3387008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:14:49.4097008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:14:51.7737008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:14:52.6017008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:15:11.1537008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:15:16.7157008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:15:19.2247008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:15:22.2877008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:15:25.6587008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:15:35.4927008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:15:36.1437008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:15:37.7287008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:15:40.1887008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:15:41.3277008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:15:50.5837008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:15:52.2727008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:15:56.3127008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:15:58.5807008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:16:00.4797008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:16:01.4397008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. </Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:16:20.4977008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0027: Unable to connect to the server described by the URI: http://cas.criteo.com/delivery/ajs.php?zoneid=82347&amp;nodis=1&amp;cb=88478029611&amp;exclude=undefined&amp;charset=UTF-8&amp;loc=http%3A//tunein.com/radio/DI-Euro-Dance-s49625/%23&amp;referer=http%3A//tunein.com/radio/DI-Euro-Dance-s49625/&amp;ct0=http%3A//adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DBiIUK_5dfU_WMG8bD8QPZtoCgA8_t_eYDAAAAEAEgv4KQHjgAWPeSipZRYPm69IOcELIBCnR1bmVpbi5jb226AQlnZnBfaW1hZ2XIAQnaAS1odHRwOi8vdHVuZWluLmNvbS9yYWRpby9ESS1FdXJvLURhbmNlLXM0OTYyNS-YAjLAAgLgAgDqAi4xNTQ4MDc4My9jYS1wdWItMTU0MjkyNTU1MTg2MTcwMi9TdGF0aW9uTGVhZGVy-AL-0R6QA4QHmAPgA6gDAeAEAaAGFg%26num%3D0%26sig%3DAOD64_1VOhUfGAcluD81mMjXIBPUkX_egQ%26client%3Dca-pub-1542925551861702%26adurl%3D. A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 208.69.34.25:80</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:16:20.4977008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An established connection was aborted by the software in your host machine</Text>
+        </DataCollectorMessage>
+      </DataCollectorMessages>
+    </UnitTestResult>
+  </Results>
+</TestRun>

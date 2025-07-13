@@ -1,0 +1,167 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Marketing Tests" verbose="1">
+
+	<listeners>
+               <listener class-name="com.wh.auto.common.TestListener" />
+   
+    </listeners>
+    
+	<test name="NV_LP_tl42520">
+		<classes>
+			<class name="com.wh.auto.nova21.desktop.TestRegistration">
+				<methods>
+					<include name="NV_LP_tl42520" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="NV_LP_promotool3">
+		<classes>
+			<class name="com.wh.auto.nova21.desktop.TestRegistration">
+				<methods>
+					<include name="NV_LP_promotool3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="NV_LP_promotool31">
+		<classes>
+			<class name="com.wh.auto.nova21.desktop.TestRegistration">
+				<methods>
+					<include name="NV_LP_promotool31" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="NV_LP_promotool32">
+		<classes>
+			<class name="com.wh.auto.nova21.desktop.TestRegistration">
+				<methods>
+					<include name="NV_LP_promotool32" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="NV_LP_upsky">
+		<classes>
+			<class name="com.wh.auto.nova21.desktop.TestRegistration">
+				<methods>
+					<include name="NV_LP_upsky" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="NV_LP_upsky2">
+		<classes>
+			<class name="com.wh.auto.nova21.desktop.TestRegistration">
+				<methods>
+					<include name="NV_LP_upsky2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="NV_HP_masdineros">
+		<classes>
+			<class name="com.wh.auto.nova21.desktop.TestRegistration">
+				<methods>
+					<include name="NV_HP_masdineros" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="EG_HP_rbplus2Othersideinc">
+		<classes>
+			<class name="com.wh.auto.eurogrand.desktop.TestRegistration">
+				<methods>
+					<include name="EG_HP_rbplus2Othersideinc" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="BuildClients">
+		<parameter name="parametersFileName" value="ClientsTest.ini" />
+		<classes>
+			<class name="com.wh.auto.clients.TestBuildClients" />
+		</classes>
+	</test>
+	
+	<test name="EG_DL_rbplus2Othersideinc">
+         <parameter name="test-name"  value="EG_DL_rbplus2Othersideinc"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	</test>
+	
+	<test name="EG_LP_naturaline">
+		<classes>
+			<class name="com.wh.auto.eurogrand.desktop.TestRegistration">
+				<methods>
+					<include name="EG_LP_naturaline" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="EG_LP_BAYBETS">
+		<classes>
+			<class name="com.wh.auto.eurogrand.desktop.TestRegistration">
+				<methods>
+					<include name="EG_LP_BAYBETS" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="EG_LP_amona">
+		<classes>
+			<class name="com.wh.auto.eurogrand.desktop.TestRegistration">
+				<methods>
+					<include name="EG_LP_amona" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="WHCC_HP_rbplus2Othersideinc">
+		<classes>
+			<class name="com.wh.auto.whcc.desktop.TestRegistration">
+				<methods>
+					<include name="WHCC_HP_rbplus2Othersideinc" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="WHCC_HP_rbplus1">
+		<classes>
+			<class name="com.wh.auto.whcc.desktop.TestRegistration">
+				<methods>
+					<include name="WHCC_HP_rbplus1" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="WH_DL_rbplus2Othersideinc">
+         <parameter name="test-name"  value="WH_DL_rbplus2Othersideinc"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	</test>
+	
+	<test name="Tracking">
+         <parameter name="parametersFileName"  value="PT_Advertiser.ini"/>
+         <classes>
+             <class name="com.wh.auto.pt_admin.Test_PT_Advertiser" />
+		</classes>	
+	</test>
+	
+</suite>

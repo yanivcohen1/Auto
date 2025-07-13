@@ -1,0 +1,23 @@
+<!-- <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" > -->
+<suite name="Empty" preserver-order="true">
+  
+  <listeners>
+               <listener class-name="com.wh.auto.common.TestListener" />
+   
+    </listeners>
+    
+  <suite-files>
+
+<!--       <suite-file path="./GameOfTheMonthFirefox.xml" /> -->
+      
+   <!-- <suite-file path="./BrowserTargetFirefox.xml" /> -->
+
+   <suite-file path="./BrowserTargetChrome.xml" />
+   
+   <suite-file path="./BrowserTargetFirefox.xml" />
+   
+    <suite-file path="./BrowserTargetIE.xml" />
+    
+  </suite-files>
+
+</suite>

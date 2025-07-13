@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ae8e53d6dde64d4296e1f73b1fb4d369" Name="Diagram1">
+        <EntityTypeShape EntityType="AngularJSAuthModel.suite" Width="1.5" PointX="3.25" PointY="10.375" />
+        <EntityTypeShape EntityType="AngularJSAuthModel.test" Width="1.5" PointX="4.8790800333391315" PointY="18.442556658034473" />
+        <AssociationConnector Association="AngularJSAuthModel.FK_dbo_tests_dbo_suites_SuiteId" ></AssociationConnector>
+      </Diagram>
+      <Diagram DiagramId="9163bb3bbf5047bfb8e236fd33b75065" Name="Diagram2" />
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="15" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="20" time="33.268767">
+<testcase classname="Login" name="Login with guest account value11" time="4.903999">
+<system-out><![CDATA[Given a precondition has value value11 val value12..........................passed
+When something with value12.................................................passed
+Then check value33 is the output............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Login with guest account value31" time="2.150117">
+<failure message="java.lang.AssertionError: expected:&lt;33&gt; but was:&lt;13&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:743)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:118)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:555)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:542)&#13;&#10;&#9;at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)&#13;&#10;&#9;at ✽.Then check value13 is the output(login.feature:13)&#13;&#10;"><![CDATA[Given a precondition has value value31 val value32..........................passed
+When something with value32.................................................passed
+Then check value13 is the output............................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<33> but was:<13>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+	at ✽.Then check value13 is the output(login.feature:13)
+]]></failure>
+</testcase>
+<testcase classname="Login" name="Login with guest account value31 2" time="1.522277">
+<failure message="java.lang.AssertionError: expected:&lt;33&gt; but was:&lt;13&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:743)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:118)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:555)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:542)&#13;&#10;&#9;at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)&#13;&#10;&#9;at ✽.Then check value13 is the output(login.feature:13)&#13;&#10;"><![CDATA[Given a precondition has value value31 val value32..........................passed
+When something with value32.................................................passed
+Then check value13 is the output............................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<33> but was:<13>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+	at ✽.Then check value13 is the output(login.feature:13)
+]]></failure>
+</testcase>
+<testcase classname="Login" name="Login with guest account value31 3" time="1.088503">
+<failure message="java.lang.AssertionError: expected:&lt;33&gt; but was:&lt;13&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:743)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:118)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:555)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:542)&#13;&#10;&#9;at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)&#13;&#10;&#9;at ✽.Then check value13 is the output(login.feature:13)&#13;&#10;"><![CDATA[Given a precondition has value value31 val value32..........................passed
+When something with value32.................................................passed
+Then check value13 is the output............................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<33> but was:<13>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+	at ✽.Then check value13 is the output(login.feature:13)
+]]></failure>
+</testcase>
+<testcase classname="Login" name="Login with guest account4" time="1.620888">
+<system-out><![CDATA[Given a precondition has value value41 val value42..........................passed
+When something with value42.................................................passed
+Then check value33 is the output............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Login with guest account4" time="1.125791">
+<system-out><![CDATA[Given a precondition has value value41 val value42..........................passed
+When something with value42.................................................passed
+Then check value33 is the output............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Login with guest account5" time="1.211391">
+<failure message="java.lang.AssertionError: expected:&lt;33&gt; but was:&lt;55&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:743)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:118)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:555)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:542)&#13;&#10;&#9;at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)&#13;&#10;&#9;at ✽.Then check value55 is the output(login.feature:32)&#13;&#10;"><![CDATA[Given a precondition has value value41 val value42..........................passed
+When something with value42.................................................passed
+Then check value55 is the output............................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<33> but was:<55>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+	at ✽.Then check value55 is the output(login.feature:32)
+]]></failure>
+</testcase>
+<testcase classname="Login" name="Login with guest account5" time="1.085232">
+<failure message="java.lang.AssertionError: expected:&lt;33&gt; but was:&lt;55&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:743)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:118)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:555)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:542)&#13;&#10;&#9;at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)&#13;&#10;&#9;at ✽.Then check value55 is the output(login.feature:32)&#13;&#10;"><![CDATA[Given a precondition has value value41 val value42..........................passed
+When something with value42.................................................passed
+Then check value55 is the output............................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<33> but was:<55>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+	at ✽.Then check value55 is the output(login.feature:32)
+]]></failure>
+</testcase>
+<testcase classname="Login" name="Login with guest account5" time="1.166949">
+<failure message="java.lang.AssertionError: expected:&lt;33&gt; but was:&lt;55&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:743)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:118)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:555)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:542)&#13;&#10;&#9;at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)&#13;&#10;&#9;at ✽.Then check value55 is the output(login.feature:32)&#13;&#10;"><![CDATA[Given a precondition has value value41 val value42..........................passed
+When something with value42.................................................passed
+Then check value55 is the output............................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<33> but was:<55>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+	at ✽.Then check value55 is the output(login.feature:32)
+]]></failure>
+</testcase>
+<testcase classname="Logis" name="Login with guest account value41" time="1.498317">
+<failure message="java.lang.AssertionError: expected:&lt;33&gt; but was:&lt;13&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:743)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:118)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:555)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:542)&#13;&#10;&#9;at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)&#13;&#10;&#9;at ✽.Then check value13 is the output(login2.feature:12)&#13;&#10;"><![CDATA[Given a precondition has value value41 val value12..........................passed
+Then check value13 is the output............................................failed
+When something with value12.................................................skipped
+
+StackTrace:
+java.lang.AssertionError: expected:<33> but was:<13>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+	at ✽.Then check value13 is the output(login2.feature:12)
+]]></failure>
+</testcase>
+<testcase classname="Logis" name="Login with guest account value41 2" time="1.414997">
+<failure message="java.lang.AssertionError: expected:&lt;33&gt; but was:&lt;13&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:743)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:118)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:555)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:542)&#13;&#10;&#9;at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)&#13;&#10;&#9;at ✽.Then check value13 is the output(login2.feature:12)&#13;&#10;"><![CDATA[Given a precondition has value value41 val value12..........................passed
+Then check value13 is the output............................................failed
+When something with value12.................................................skipped
+
+StackTrace:
+java.lang.AssertionError: expected:<33> but was:<13>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+	at ✽.Then check value13 is the output(login2.feature:12)
+]]></failure>
+</testcase>
+<testcase classname="Logis" name="Login with guest account value41 3" time="1.778873">
+<failure message="java.lang.AssertionError: expected:&lt;33&gt; but was:&lt;13&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:743)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:118)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:555)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:542)&#13;&#10;&#9;at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)&#13;&#10;&#9;at ✽.Then check value13 is the output(login2.feature:12)&#13;&#10;"><![CDATA[Given a precondition has value value41 val value12..........................passed
+Then check value13 is the output............................................failed
+When something with value12.................................................skipped
+
+StackTrace:
+java.lang.AssertionError: expected:<33> but was:<13>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+	at ✽.Then check value13 is the output(login2.feature:12)
+]]></failure>
+</testcase>
+<testcase classname="Logis" name="Login with guest account value51" time="1.42377">
+<system-out><![CDATA[Given a precondition has value value51 val value32..........................passed
+Then check value33 is the output............................................passed
+When something with value32.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logis" name="Login with guest account value51 2" time="1.372885">
+<system-out><![CDATA[Given a precondition has value value51 val value32..........................passed
+Then check value33 is the output............................................passed
+When something with value32.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logis" name="Login with guest account8" time="1.436924">
+<failure message="java.lang.AssertionError: expected:&lt;33&gt; but was:&lt;44&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:743)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:118)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:555)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:542)&#13;&#10;&#9;at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)&#13;&#10;&#9;at ✽.Then check value44 is the output(login2.feature:28)&#13;&#10;"><![CDATA[Given a precondition has value value41 val value42..........................passed
+When something with value42.................................................passed
+Then check value44 is the output............................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<33> but was:<44>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+	at ✽.Then check value44 is the output(login2.feature:28)
+]]></failure>
+</testcase>
+<testcase classname="Logis" name="Login with guest account8" time="1.550877">
+<failure message="java.lang.AssertionError: expected:&lt;33&gt; but was:&lt;44&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:743)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:118)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:555)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:542)&#13;&#10;&#9;at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)&#13;&#10;&#9;at ✽.Then check value44 is the output(login2.feature:28)&#13;&#10;"><![CDATA[Given a precondition has value value41 val value42..........................passed
+When something with value42.................................................passed
+Then check value44 is the output............................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<33> but was:<44>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+	at ✽.Then check value44 is the output(login2.feature:28)
+]]></failure>
+</testcase>
+<testcase classname="Logis" name="Login with guest account8" time="2.261607">
+<failure message="java.lang.AssertionError: expected:&lt;33&gt; but was:&lt;44&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:743)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:118)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:555)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:542)&#13;&#10;&#9;at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)&#13;&#10;&#9;at ✽.Then check value44 is the output(login2.feature:28)&#13;&#10;"><![CDATA[Given a precondition has value value41 val value42..........................passed
+When something with value42.................................................passed
+Then check value44 is the output............................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<33> but was:<44>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+	at ✽.Then check value44 is the output(login2.feature:28)
+]]></failure>
+</testcase>
+<testcase classname="Logis" name="Login with guest account9" time="1.416556">
+<failure message="java.lang.AssertionError: expected:&lt;33&gt; but was:&lt;53&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:743)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:118)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:555)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:542)&#13;&#10;&#9;at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)&#13;&#10;&#9;at ✽.Then check value53 is the output(login2.feature:32)&#13;&#10;"><![CDATA[Given a precondition has value value41 val value42..........................passed
+Then check value53 is the output............................................failed
+When something with value42.................................................skipped
+
+StackTrace:
+java.lang.AssertionError: expected:<33> but was:<53>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+	at ✽.Then check value53 is the output(login2.feature:32)
+]]></failure>
+</testcase>
+<testcase classname="Logis" name="Login with guest account9" time="1.63138">
+<failure message="java.lang.AssertionError: expected:&lt;33&gt; but was:&lt;53&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:743)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:118)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:555)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:542)&#13;&#10;&#9;at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)&#13;&#10;&#9;at ✽.Then check value53 is the output(login2.feature:32)&#13;&#10;"><![CDATA[Given a precondition has value value41 val value42..........................passed
+Then check value53 is the output............................................failed
+When something with value42.................................................skipped
+
+StackTrace:
+java.lang.AssertionError: expected:<33> but was:<53>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+	at ✽.Then check value53 is the output(login2.feature:32)
+]]></failure>
+</testcase>
+<testcase classname="Logis" name="Login with guest account9" time="1.607434">
+<failure message="java.lang.AssertionError: expected:&lt;33&gt; but was:&lt;53&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:743)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:118)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:555)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:542)&#13;&#10;&#9;at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)&#13;&#10;&#9;at ✽.Then check value53 is the output(login2.feature:32)&#13;&#10;"><![CDATA[Given a precondition has value value41 val value42..........................passed
+Then check value53 is the output............................................failed
+When something with value42.................................................skipped
+
+StackTrace:
+java.lang.AssertionError: expected:<33> but was:<53>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+	at ✽.Then check value53 is the output(login2.feature:32)
+]]></failure>
+</testcase>
+</testsuite>

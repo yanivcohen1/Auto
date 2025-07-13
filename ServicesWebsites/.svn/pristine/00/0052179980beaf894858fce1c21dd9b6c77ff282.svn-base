@@ -1,0 +1,777 @@
+package com.who.tlv.ServicesWebsites.server.RequestX;
+
+import java.awt.EventQueue;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.InputStreamReader;
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.security.CodeSource;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.GroupLayout;
+import javax.swing.GroupLayout.Alignment;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JLayeredPane;
+import javax.swing.JPanel;
+import javax.swing.JProgressBar;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.LayoutStyle.ComponentPlacement;
+import javax.swing.SwingUtilities;
+import javax.swing.SwingWorker;
+
+
+public class RequstX {
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main2(String[] args) {
+		m_args = args;
+		if (args.length != 0) {
+			if (!args[0].contentEquals("Debug"))
+				m_IsAutoStart = true;
+			else{
+				m_Debug = true;
+			}
+		}
+	}
+
+	public void Start(){
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					RequstX window = new RequstX();
+					window.RequstX1();
+					window.JfrmRequestx.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+	
+	/**
+	 * Create the application.
+	 */
+	public void RequstX1() {
+		initialize();
+		try {
+			JstatusMessageLabel.setText(" ");
+			ArrayList<String> To = new ArrayList<String>();
+			To.add("Yaniv.Cohen@williamhill.com");
+			m_ReqX_DB = new ReqX_DB();
+			m_ReqX_DB.ReadAllDB();
+			GetAllBrands();
+			if (m_IsAutoStart) {
+				JAllCheck.setSelected(true);
+				JStartFF_Butten.doClick();
+			}
+		} catch (Exception ex) {
+			Logger.getLogger(RequstX.class.getName()).log(Level.SEVERE, null,
+					ex);
+		}
+	}
+
+	
+	private void GetAllBrands() throws SQLException {
+		m_ReqX_DB.ReadBrands();
+		List<String> lsArray = new ArrayList<String>();
+		for (ReqX_DB.Brand_Data brand_Data : m_ReqX_DB.m_Brand_Data_Array) {
+			lsArray.add(brand_Data.Brand_Main_URL);
+		}
+		lsArray.add("http://www.RequsetxTest.com/");
+		String[] Arry = new String[lsArray.size()];
+		lsArray.toArray(Arry);
+		JBrandsCombo.setModel(new DefaultComboBoxModel(Arry));
+	}
+
+	private void SeleniumStart() throws Exception {
+		if (!m_Selenium2.DriverExist()) {
+			m_Selenium2.setUp();
+			m_seleniumStart = true;
+		}
+	}
+
+	public String getJarFolder() throws URISyntaxException {
+		CodeSource codeSource = RequstX.class.getProtectionDomain()
+				.getCodeSource();
+		File jarFile = new File(codeSource.getLocation().toURI().getPath());
+		String jarDir = jarFile.getParentFile().getParentFile().getPath();
+		return jarDir + System.getProperty("file.separator") + "dist"
+				+ System.getProperty("file.separator") + "lib"
+				+ System.getProperty("file.separator")
+				+ "selenium-server-standalone-2.17.0.jar";
+	}
+
+	public void ClearResutArea() {
+		JResultArea.setText("");
+		m_mp.clear();
+	}
+
+	public void EnableAll(Boolean Disable) {
+		JAllCheck.setEnabled(Disable);
+		JBrandsCombo.setEnabled(Disable);
+		JClearButten.setEnabled(Disable);
+		JSortResultButten.setEnabled(Disable);
+		JStartFF_Butten.setEnabled(Disable);
+		JStartGetButton.setEnabled(Disable);
+	}
+
+	private class GetReqClickTask extends SwingWorker<Object, Void> {// org.jdesktop.application.Task
+		GetReqClickTask() {
+			EnableAll(false);
+			ClearResutArea();
+			JStartGetButton.setText("Stop Get Req");
+			JStartGetButton.setEnabled(true);
+			JprogressBar.setValue(0);
+			JResultArea.setText("");
+		}
+
+		@Override
+		protected Object doInBackground() {
+			String SelectedBrand = "";
+			int length;
+			if (m_AllChacked) {
+				length = JBrandsCombo.getItemCount();
+			} else {
+				length = 1;
+			}
+			for (int i = 0; i < length; i++) {
+				Boolean ResultPass = true;
+				if (m_Stop) {
+					break;
+				}
+				for (int j = 0; j < 3; j++) {
+					if (m_Stop) {
+						break;
+					}
+					if (m_AllChacked) {
+						SelectedBrand = (String) JBrandsCombo.getItemAt(i);
+					} else {
+						SelectedBrand = (String) JBrandsCombo.getSelectedItem();
+					}
+					Update_GUI(m_GUI_Update.message, null, "Run Brand: "
+							+ SelectedBrand);
+					try {
+						URL URL1 = new URL(SelectedBrand);
+						URLConnection yc = URL1.openConnection();
+						yc.setConnectTimeout(m_TimeOutMilisecFF);
+						BufferedReader in = new BufferedReader(
+								new InputStreamReader(yc.getInputStream()));
+						in.close();
+					} catch (Exception ex) {
+						ResultPass = false;
+					}
+					if (ResultPass) {
+						break;
+					}
+				}
+
+				Update_GUI(m_GUI_Update.SetResutArea, ResultPass.toString(),
+						"Brand: " + SelectedBrand + "  GetResult: "
+								+ ResultPass);
+				m_mp.put(SelectedBrand, ResultPass.toString());
+				double ProcessValue = 100;
+				if (m_AllChacked) {
+					ProcessValue = ((double) (i + 1) / (double) length) * 100;
+				}
+				Update_GUI(m_GUI_Update.progress, null, (int) ProcessValue);
+			}
+			return null;
+		}
+
+		@Override
+		protected void done() {
+			EnableAll(true);
+			JStartGetButton.setText("Start Get Req");
+			JStartGetButton.setEnabled(true);
+			JstatusMessageLabel.setText("Done");
+		}
+	}
+
+	private class FFClickTask extends SwingWorker<Object, Void> {
+		FFClickTask() {
+			ClearResutArea();
+			EnableAll(false);
+			JStartFF_Butten.setText("Stop FireFox");
+			JStartFF_Butten.setEnabled(true);
+			JprogressBar.setValue(0);
+			JResultArea.setText("");
+		}
+
+		@Override
+		protected Object doInBackground() throws Exception {
+			String SelectedBrand = "";
+			SeleniumStart();
+			int NumbersOfBrands;
+			int RunningIndex;
+			if (m_AllChacked) {
+				NumbersOfBrands = JBrandsCombo.getItemCount();
+			} else {
+				NumbersOfBrands = 1;
+			}
+			/**
+			 * Brand Loop.
+			 */
+			int runningCount = 1;
+			for (int i = 0; i < NumbersOfBrands; i++) {
+				if (m_AllChacked) {
+					RunningIndex = i;
+				} else {
+					RunningIndex = JBrandsCombo.getSelectedIndex();
+				}
+				int Brand_ID = m_ReqX_DB.m_Brand_Data_Array.get(RunningIndex).Brand_ID;
+				SelectedBrand = m_ReqX_DB.m_Brand_Data_Array.get(RunningIndex).Brand_Main_URL;
+				Update_GUI(m_GUI_Update.message, null, "Run Brand: "
+						+ SelectedBrand);
+				List<Integer> Indexs = new ArrayList<Integer>();
+				for (int j = 0; j < m_ReqX_DB.m_ReqX_DB_Data_Array.size(); j++) {
+					if (m_ReqX_DB.m_ReqX_DB_Data_Array.get(j).Brand_ID == Brand_ID) {
+						Indexs.add(j);
+					}
+				}
+				List<Boolean> ResultArray = new ArrayList<Boolean>();
+				List<String> DescriptionArray = new ArrayList<String>();
+				List<String> LanguagesArray = new ArrayList<String>();
+				ArrayList<String> captureFilesName = new ArrayList<String>();
+				int Brand_Group_Number = 0;
+				/**
+				 * BrandLanguage loop.
+				 */
+				for (int ii = 0; ii < Indexs.size(); ii++) {
+					Boolean ResultPass = true;
+					runningCount++;
+					if (m_Stop) {
+						break;
+					}
+					String URL = m_ReqX_DB.m_ReqX_DB_Data_Array.get(Indexs
+							.get(ii)).Brand_Language_URL_Template;
+					String newChar = m_ReqX_DB.m_ReqX_DB_Data_Array.get(Indexs
+							.get(ii)).Language_Symbol;
+					URL = URL.replace("<LS>", newChar);
+					String ErrorDescription = "";
+					if (!URL.contains("http://download")) {
+						for (int j = 0; j < 3; j++) {
+							ErrorDescription = "";
+							if (m_Stop) {
+								break;
+							}
+
+							ErrorDescription = m_Selenium2.test(URL, m_ReqX_DB.m_ReqX_DB_Data_Array
+									.get(Indexs.get(ii)).Tool_Argument);
+
+							if (ErrorDescription == "") {
+								ResultPass = true;
+								break;
+							} else {
+								ResultPass = false;
+							}
+						}
+					} else {
+						ResultPass = GetRequstes(URL);
+					}
+					ResultArray.add(ResultPass);
+					if (ErrorDescription != "") {
+						Brand_Group_Number = m_ReqX_DB.m_ReqX_DB_Data_Array
+								.get(Indexs.get(ii)).Group_Number;
+						LanguagesArray.add(newChar);
+						DescriptionArray.add(" Lan:" + newChar + " Error:"
+								+ ErrorDescription);
+						m_date = new Date();
+						String filename = "C:"+ m_fileSeparator +"Capture"+ m_fileSeparator + URL.substring(URL.indexOf('.') , URL.indexOf("com")) 
+								+"_"+ newChar +"_"+ m_date.getTime() + ".png";
+						m_Selenium2.captureEntirePageScreenshot(filename, "background=#CCFFDD");
+						captureFilesName.add(filename);
+					}
+					/**
+					 * UPDATE ToolResult.
+					 */
+					Timestamp Now = new Timestamp(m_date.getTime());
+					int Tool_Result_ID = m_ReqX_DB.m_ReqX_DB_Data_Array
+							.get(Indexs.get(ii)).Tool_Result_ID;
+					m_ReqX_DB.ToolResultUpdate(Tool_Result_ID,
+							ErrorDescription, ResultPass, Now, Now);
+					Update_GUI(m_GUI_Update.SetResutArea,
+							ResultPass.toString(), "URL: " + URL
+									+ "  FFResult: " + ResultPass);
+					m_mp.put(URL, ResultPass.toString());
+					double ProcessValue = 100;
+					if (m_AllChacked) {
+						ProcessValue = ((double) (runningCount) / (double) m_ReqX_DB.TotalCount) * 100;
+					}else{
+						ProcessValue = ((double) (runningCount) / (double) Indexs.size()) * 100;
+					}
+					Update_GUI(m_GUI_Update.progress, null, (int) ProcessValue);
+				}
+				if (m_Stop) {
+					break;
+				}
+				/**
+				 * UPDATE BrandResult.
+				 */
+				Boolean IsBrandResultPass = true;
+				for (int j = 0; j < ResultArray.size(); j++) {
+					IsBrandResultPass = IsBrandResultPass & ResultArray.get(j);
+				}
+				String BrandDescription = "";
+				for (int j = 0; j < DescriptionArray.size(); j++) {
+					BrandDescription = BrandDescription
+							+ DescriptionArray.get(j) + m_newline;
+				}
+				String Languages = "";
+				for (int j = 0; j < LanguagesArray.size(); j++) {
+					Languages = Languages + LanguagesArray.get(j) + ", ";
+				}
+				Timestamp Now = new Timestamp(m_date.getTime());
+				m_ReqX_DB.BrandResultUpdate(Brand_ID, IsBrandResultPass, Now);
+				if (!IsBrandResultPass) {
+					SendGroupEmail(Brand_Group_Number, "RequstX Error Brand:"
+							+ SelectedBrand + " Lan:" + Languages,
+							BrandDescription, captureFilesName);
+				}
+			}
+			return null; // return your result
+		}
+
+		@Override
+		protected void done() {
+			// Runs on the EDT. Update the GUI based on
+			// the result computed by doInBackground().
+			EnableAll(true);
+			JStartFF_Butten.setText("Start FireFox");
+			JStartFF_Butten.setEnabled(true);
+			JstatusMessageLabel.setText("Done");
+		}
+	}
+
+	private void Update_GUI(final m_GUI_Update propertyName,
+			final Object OldValue, final Object Value) {
+		try {
+			SwingUtilities.invokeAndWait(new Runnable() {
+				public void run() {
+					if (m_GUI_Update.message.equals(propertyName)) {
+						String text = (String) Value;
+						JstatusMessageLabel.setText((text == null) ? "" : text);
+						// statusMessageLabel.restart();
+					} else if (m_GUI_Update.progress.equals(propertyName)) {
+						int value = (Integer) Value;
+						JprogressBar.setVisible(true);
+						JprogressBar.setIndeterminate(false);
+						JprogressBar.setValue(value);
+					} else if (m_GUI_Update.SetResutArea.equals(propertyName)) {
+						JResultArea.setText(JResultArea.getText() + m_newline
+								+ (String) Value);
+					} else if (m_GUI_Update.SetFirefoxText.equals(propertyName)) {
+						JStartFF_Butten.setText((String) Value);
+					} else if (m_GUI_Update.SetGetText.equals(propertyName)) {
+						JStartGetButton.setText((String) Value);
+					} else if (m_GUI_Update.SetResutAreaClear
+							.equals(propertyName)) {
+						JResultArea.setText("");
+						m_mp.clear();
+					}
+				}
+			});
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	private boolean SendGroupEmail(int GroupNumber, String Subject, String body, ArrayList<String> AttachFiles) {
+		boolean SendEmail = false;
+		ArrayList<String> To = new ArrayList<String>();
+		for (int i = 0; i < m_ReqX_DB.m_Notification_Data_Arry.size(); i++) {
+			if (m_ReqX_DB.m_Notification_Data_Arry.get(i).Notification_Send_Mail) {
+				if (m_ReqX_DB.m_Notification_Data_Arry.get(i).Group_Number == GroupNumber) {
+					for (int j = 0; j < m_ReqX_DB.m_User_Data_arry.size(); j++) {
+						if (m_ReqX_DB.m_Notification_Data_Arry.get(i).User_ID == m_ReqX_DB.m_User_Data_arry
+								.get(j).User_ID) {
+							To.add(m_ReqX_DB.m_User_Data_arry.get(j).User_Email_Address);
+						}
+					}
+
+				}
+			}
+		}
+		if (To.size() != 0) {
+			// Attachs.add("C:\test.bmp");
+			m_SendEmail.SendEmails(To, Subject, body, AttachFiles);
+			SendEmail = true;
+		}
+		return SendEmail;
+	}
+
+	private boolean GetRequstes(String URL) {
+		boolean ResultPass = true;
+		for (int j = 0; j < 3; j++) {
+			if (m_Stop) {
+				break;
+			}
+			try {
+				URL URL1 = new URL(URL);
+				URLConnection yc = URL1.openConnection();
+				yc.setConnectTimeout(m_TimeOutMilisecFF);
+				BufferedReader in = new BufferedReader(new InputStreamReader(
+						yc.getInputStream()));
+				in.close();
+			} catch (Exception ex) {
+				ResultPass = false;
+			}
+			if (ResultPass) {
+				break;
+			}
+		}
+		return ResultPass;
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		JfrmRequestx = new JFrame();
+
+		JfrmRequestx.setTitle("RequestX");
+		JfrmRequestx.addWindowListener(new WindowAdapter() {
+			@Override
+			public void windowClosing(WindowEvent arg0) {
+				if (m_seleniumStart) {
+					try {
+						m_Selenium2.tearDown();
+					} catch (Exception ex) {
+						Logger.getLogger(RequstX.class.getName()).log(
+								Level.SEVERE, null, ex);
+					}
+				}
+				 System.exit(0);
+			}
+		});
+		JfrmRequestx.setBounds(100, 100, 480, 331);
+		JfrmRequestx.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		JfrmRequestx.getContentPane().setLayout(new GridLayout(1, 0, 0, 0));
+
+		JLayeredPane layeredPane = new JLayeredPane();
+		JfrmRequestx.getContentPane().add(layeredPane);
+
+		JAllCheck = new JCheckBox("All");
+
+		JStartFF_Butten = new JButton("Start FireFox");
+		JStartFF_Butten.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				m_AllChacked = JAllCheck.isSelected();
+				FFClickTask ClickTask1 = null;
+				if (JStartFF_Butten.getText().equals("Start FireFox")) {
+					ClickTask1 = new FFClickTask();// getApplication()
+					ClickTask1.execute();
+					m_Stop = false;
+				} else {
+					m_Stop = true;
+					// final ThreadEvent resultsReady = new ThreadEvent();
+					// Update_GUI(GUI.SetFirefoxText.toString(),
+					// resultsReady,"Stop....." );
+					JStartFF_Butten.setText("Stop.....");
+					JStartFF_Butten.setEnabled(false);
+				}
+				// return ClickTask1;
+			}
+		});
+
+		JStartGetButton = new JButton("Start Get Req");
+		JStartGetButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				m_AllChacked = JAllCheck.isSelected();
+				GetReqClickTask GetClickTask1 = null;
+				if (JStartGetButton.getText().equals("Start Get Req")) {
+					GetClickTask1 = new GetReqClickTask();// getApplication()
+					GetClickTask1.execute();
+					m_Stop = false;
+				} else {
+					m_Stop = true;
+					// final ThreadEvent resultsReady = new ThreadEvent();
+					// Update_GUI(GUI.SetFirefoxText.toString(),
+					// resultsReady,"Stop....." );
+					JStartGetButton.setText("Stop.....");
+					JStartGetButton.setEnabled(false);
+				}
+				// return GetClickTask1;
+			}
+		});
+		// StartGetButton.setAction(action);
+
+		JSortResultButten = new JButton("Fail Result");
+		JSortResultButten.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				Map<String, String> mp1 = new HashMap<String, String>();
+				JResultArea.setText("");
+				// int i = 0;
+				List<String> lsArray = new ArrayList<String>();
+				// Get Map in Set interface to get key and value
+				Set<Entry<String, String>> s = m_mp.entrySet();
+				// Move next key and value of Map by iterator
+				Iterator<Entry<String, String>> it = s.iterator();
+
+				while (it.hasNext()) {
+					// key=value separator this by Map.Entry to get key and
+					// value
+					Entry<String, String> m = it.next();
+
+					// getKey is used to get key of Map
+					// int key=(Integer)m.getKey();
+
+					if (m.getValue().equals("false")) {
+						// ResultArea.setText( ResultArea.getText() +newline +
+						// (String)m.getKey() );
+						mp1.put(m.getKey(), m.getValue());
+						lsArray.add(m.getKey());
+					}
+					// getValue is used to get value of key in Map
+					// String value=(String)m.getValue();
+					// i++;
+				}
+				m_mp = mp1;
+				// String[] Arry = null;
+				if (JBrandsCombo.getItemCount() != 0) {
+					Collections.reverse(lsArray);
+					// ArrayUtils.reverse(_args);
+					String[] Arry = new String[lsArray.size()];
+					lsArray.toArray(Arry);
+					JBrandsCombo.setModel(new DefaultComboBoxModel(Arry));
+				} else {
+					JResultArea.setText("All Pass");
+				}
+			}
+		});
+
+		JClearButten = new JButton("Clear");
+		JClearButten.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				ClearResutArea();
+				try {
+					GetAllBrands();
+				} catch (SQLException ex) {
+					Logger.getLogger(RequstX.class.getName()).log(Level.SEVERE,
+							null, ex);
+				}
+			}
+		});
+
+		JBrandsCombo = new JComboBox();
+
+		JPanel panel;
+		GroupLayout gl_layeredPane;
+		GroupLayout gl_panel;
+		// #region Panel Generated Code
+		panel = new JPanel();
+
+		JScrollPane = new JScrollPane();
+		gl_layeredPane = new GroupLayout(layeredPane);
+		gl_layeredPane
+				.setHorizontalGroup(gl_layeredPane
+						.createParallelGroup(Alignment.TRAILING)
+						.addGroup(
+								gl_layeredPane
+										.createSequentialGroup()
+										.addContainerGap()
+										.addComponent(panel,
+												GroupLayout.DEFAULT_SIZE,
+												GroupLayout.DEFAULT_SIZE,
+												Short.MAX_VALUE).addGap(9))
+						.addGroup(
+								gl_layeredPane
+										.createSequentialGroup()
+										.addGroup(
+												gl_layeredPane
+														.createParallelGroup(
+																Alignment.TRAILING)
+														.addGroup(
+																Alignment.LEADING,
+																gl_layeredPane
+																		.createSequentialGroup()
+																		.addContainerGap()
+																		.addComponent(
+																				JScrollPane,
+																				GroupLayout.DEFAULT_SIZE,
+																				434,
+																				Short.MAX_VALUE))
+														.addGroup(
+																gl_layeredPane
+																		.createSequentialGroup()
+																		.addGap(12)
+																		.addGroup(
+																				gl_layeredPane
+																						.createParallelGroup(
+																								Alignment.LEADING)
+																						.addGroup(
+																								gl_layeredPane
+																										.createSequentialGroup()
+																										.addComponent(
+																												JStartFF_Butten,
+																												GroupLayout.PREFERRED_SIZE,
+																												113,
+																												GroupLayout.PREFERRED_SIZE)
+																										.addGap(12)
+																										.addComponent(
+																												JStartGetButton,
+																												GroupLayout.PREFERRED_SIZE,
+																												113,
+																												GroupLayout.PREFERRED_SIZE)
+																										.addGap(12)
+																										.addComponent(
+																												JSortResultButten,
+																												GroupLayout.PREFERRED_SIZE,
+																												96,
+																												GroupLayout.PREFERRED_SIZE)
+																										.addGap(12)
+																										.addComponent(
+																												JClearButten,
+																												GroupLayout.PREFERRED_SIZE,
+																												76,
+																												GroupLayout.PREFERRED_SIZE))
+																						.addGroup(
+																								gl_layeredPane
+																										.createSequentialGroup()
+																										.addComponent(
+																												JAllCheck)
+																										.addGap(4)
+																										.addComponent(
+																												JBrandsCombo,
+																												0,
+																												387,
+																												Short.MAX_VALUE)))))
+										.addGap(16)));
+		gl_layeredPane
+				.setVerticalGroup(gl_layeredPane
+						.createParallelGroup(Alignment.LEADING)
+						.addGroup(
+								gl_layeredPane
+										.createSequentialGroup()
+										.addGap(13)
+										.addGroup(
+												gl_layeredPane
+														.createParallelGroup(
+																Alignment.LEADING)
+														.addComponent(
+																JStartFF_Butten)
+														.addComponent(
+																JStartGetButton)
+														.addComponent(
+																JSortResultButten)
+														.addComponent(
+																JClearButten))
+										.addGap(9)
+										.addGroup(
+												gl_layeredPane
+														.createParallelGroup(
+																Alignment.LEADING)
+														.addComponent(JAllCheck)
+														.addGroup(
+																gl_layeredPane
+																		.createSequentialGroup()
+																		.addGap(1)
+																		.addComponent(
+																				JBrandsCombo,
+																				GroupLayout.PREFERRED_SIZE,
+																				24,
+																				GroupLayout.PREFERRED_SIZE)))
+										.addPreferredGap(
+												ComponentPlacement.RELATED)
+										.addComponent(JScrollPane,
+												GroupLayout.DEFAULT_SIZE, 181,
+												Short.MAX_VALUE)
+										.addPreferredGap(
+												ComponentPlacement.RELATED)
+										.addComponent(panel,
+												GroupLayout.PREFERRED_SIZE, 19,
+												GroupLayout.PREFERRED_SIZE)));
+
+		JResultArea = new JTextArea();
+		JScrollPane.setViewportView(JResultArea);
+		JprogressBar = new JProgressBar();
+		JstatusMessageLabel = new JLabel("ww");
+		gl_panel = new GroupLayout(panel);
+		gl_panel.setHorizontalGroup(gl_panel.createParallelGroup(
+				Alignment.TRAILING).addGroup(
+				gl_panel.createSequentialGroup()
+						.addContainerGap()
+						.addComponent(JstatusMessageLabel,
+								GroupLayout.DEFAULT_SIZE, 266, Short.MAX_VALUE)
+						.addPreferredGap(ComponentPlacement.RELATED)
+						.addComponent(JprogressBar, GroupLayout.PREFERRED_SIZE,
+								GroupLayout.DEFAULT_SIZE,
+								GroupLayout.PREFERRED_SIZE).addContainerGap()));
+		gl_panel.setVerticalGroup(gl_panel.createParallelGroup(
+				Alignment.LEADING).addGroup(
+				gl_panel.createSequentialGroup()
+						.addGroup(
+								gl_panel.createParallelGroup(Alignment.LEADING)
+										.addComponent(JprogressBar,
+												GroupLayout.PREFERRED_SIZE,
+												GroupLayout.DEFAULT_SIZE,
+												GroupLayout.PREFERRED_SIZE)
+										.addComponent(JstatusMessageLabel))
+						.addContainerGap(GroupLayout.DEFAULT_SIZE,
+								Short.MAX_VALUE)));
+		// #endregion
+		panel.setLayout(gl_panel);
+		layeredPane.setLayout(gl_layeredPane);
+
+	}
+
+	public  static  boolean m_Debug = false;
+	private JScrollPane JScrollPane;
+	private JFrame JfrmRequestx;
+	private JCheckBox JAllCheck;
+	private JButton JStartFF_Butten;
+	private JButton JStartGetButton;
+	private JComboBox JBrandsCombo;
+	private JButton JClearButten;
+	private JButton JSortResultButten;
+	private JLabel JstatusMessageLabel;
+	private JProgressBar JprogressBar;
+	private JTextArea JResultArea;
+	static String[] m_args;
+	static boolean m_IsAutoStart = false;
+	Statement m_select;
+	ResultSet m_Brandresult;
+	boolean m_Stop = false;
+	String m_newline = System.getProperty("line.separator");
+	String m_fileSeparator = System.getProperty("file.separator");
+	public enum m_GUI_Update {
+		SetResutArea, SetFirefoxText, SetGetText, message, progress, SetResutAreaClear
+	}
+	Boolean m_seleniumStart = false;
+	Boolean m_AllChacked = false;
+	Map<String, String> m_mp = new HashMap<String, String>();
+	int m_TimeOutMilisecSelenium = 30000;
+	int m_TimeOutMilisecFF = 30000;
+	SelleniumClass m_Selenium2 = new SelleniumClass(m_TimeOutMilisecSelenium);
+	ReqX_DB m_ReqX_DB;// = new ReqX_DB();
+	Date m_date = new Date();
+	SendEmail m_SendEmail = new SendEmail();
+
+}

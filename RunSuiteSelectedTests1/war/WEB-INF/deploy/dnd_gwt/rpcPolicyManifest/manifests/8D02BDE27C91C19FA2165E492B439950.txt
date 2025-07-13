@@ -1,0 +1,2 @@
+serviceClass: com.who.test.client.IMainService
+path: 9234F85D23572639DB55066D1A96E81F.gwt.rpc

@@ -1,0 +1,29 @@
+{
+    "gatwayApp": {
+        "test_mon" : {
+            "home": {
+                "title": "Test_mons",
+                "createLabel": "Créer un nouveau Test Mon",
+                "createOrEditLabel": "Créer ou éditer un Test Mon",
+                "search": "Recherche pour Test Mon"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Test Mon {{ id }} ?"
+            },
+            "detail": {
+                "title": "Test Mon"
+            },
+            "name": "Name",
+            "value": "Value",
+            "date": "Date",
+            "enums": "Enums"
+        }
+    },
+    "microServiceMongoApp": {
+        "test_mon" : {
+            "created": "Un nouveau Test Mon a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Test Mon avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Test Mon avec l'identifiant {{ param }} a été supprimé"
+        }
+    }
+}

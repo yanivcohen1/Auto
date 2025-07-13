@@ -1,0 +1,2 @@
+serviceClass: com.who.tlv.ServicesWebsites.client.SessionInterfaceService
+path: DB25BDB01F99DD05F864CA34FBFE3B5B.gwt.rpc

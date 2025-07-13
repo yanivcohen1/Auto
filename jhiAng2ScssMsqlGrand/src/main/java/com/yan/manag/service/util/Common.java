@@ -1,0 +1,61 @@
+package com.yan.manag.service.util;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.naming.InitialContext;
+import javax.persistence.EntityManager;
+import javax.persistence.Persistence;
+import javax.persistence.PersistenceContext;
+import javax.sql.DataSource;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
+import org.springframework.beans.BeansException;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+
+public class Common {
+
+	private static ApplicationContext context;//  = buildApplicationContext();
+	public static final String newline = System.getProperty("line.separator");
+	
+	/*private static ApplicationContext buildApplicationContext() {
+		
+		context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		context.getBean(EntityUtil.class).getEntityManager();
+		return context;
+	}*/
+	
+	public static void setApplicationContext(ApplicationContext applicationContext){
+		context = applicationContext;
+	}
+	
+	public static ApplicationContext getApplicationContext() {
+		return context;
+	}
+ 
+    public static Logger getLoger() {
+        return getApplicationContext().getBean(Logger.class);//logger;
+    }
+    
+    
+	public static EntityManager getEntityManager() {
+		return null;//getApplicationContext().getBean(EntityUtil.class).getEntityManager();
+	}
+	
+	public static <T> T getBean(String id) throws BeansException
+    {
+		return (T) context.getBean(id);
+    }
+	
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config />
+    <context:component-scan base-package="com.wh.auto"/>
+
+    <bean class="com.wh.auto.whcc.mobile.pages.MainWebPage" lazy-init="true">
+   		<property name="browserType" value="safari" />
+        <constructor-arg><ref bean="Browsers"/></constructor-arg>   
+        <property name="url" value="http://serve.williamhillcasino.com/promoRedirect?member=goodaff&amp;campaign=DEFAULT&amp;channel=DEFAULT&amp;zone=14184098&amp;lp=0" />
+        <property name="userAgent" value="Mozilla/5.0 (iPhone; CPU iPhone OS 8_0_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12A366 Safari/600.1.4" />
+        <property name="language" value="" />
+        <property name="password" value="123456" />
+        <property name="userName" value="151007020423" />
+        <property name="login" value="#top > div.hdr_button.login > a" />
+        <property name="cashier" value="#top > div.hdr_button.cashier > a" />
+    </bean>
+    
+    <bean class="com.wh.auto.whcc.mobile.TestLoginMobile">
+        <property name="browserType" value="safari" />
+        <property name="currency" value="£" />
+    </bean>
+    
+    <bean class="com.wh.auto.whcc.mobile.pages.DepositPage" lazy-init="true">
+        <constructor-arg><ref bean="Browsers"/></constructor-arg>
+        <property name="month" value="February" /> 
+        <property name="currency" value="£" />
+    </bean>
+    
+    <bean id="Browsers" class="com.wh.auto.common.Browsers">
+    </bean>
+    	    
+</beans>

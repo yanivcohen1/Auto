@@ -1,0 +1,37 @@
+
+<div *ngIf="test1">
+    <h2><span jhiTranslate="gatwayApp.test1.detail.title">Test 1</span> {{test1.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="gatwayApp.test1.test">Test</span></dt>
+        <dd>
+            <span>{{test1.test}}</span>
+        </dd>
+        <dt><span jhiTranslate="gatwayApp.test1.value">Value</span></dt>
+        <dd>
+            <span>{{test1.value}}</span>
+        </dd>
+        <dt><span jhiTranslate="gatwayApp.test1.date">Date</span></dt>
+        <dd>
+            <span>{{test1.date | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span jhiTranslate="gatwayApp.test1.enums">Enums</span></dt>
+        <dd>
+            <span jhiTranslate="{{'gatwayApp.Y.' + test1.enums}}">{{test1.enums}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'test-1/'+ test1.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

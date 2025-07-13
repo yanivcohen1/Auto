@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config />
+    <context:component-scan base-package="com.wh.auto"/>
+
+	<bean class="com.wh.auto.eurogrand.mobile.TestDepositMobile" lazy-init="true">
+        <property name="scenario" value="RegisterDepositDe" />
+        <property name="feature" value="Eurogrand/RegisterDeposit.feature" />
+    </bean>
+    
+    <bean class="com.wh.auto.eurogrand.mobile.pages.MainWebPage" lazy-init="true">
+    	<property name="browserType" value="chrome" />
+        <property name="url" value="http://ads.eurogrand.com/redirect.aspx?pid=17213278&amp;lpid=1485379745&amp;bid=1485897945" />
+        <property name="language" value="http://www.eurogrand.com/de" />
+        <property name="userAgent" value="Mozilla/5.0 (iPhone; U; CPU iPhone OS 5_1_1 like Mac OS X; da-dk) AppleWebKit/534.46.0 (KHTML, like Gecko) CriOS/19.0.1084.60 Mobile/9B206 Safari/7534.48.3" />
+    </bean>
+       	   
+    <bean class="com.wh.auto.eurogrand.mobile.pages.RegisterPage" lazy-init="true">
+		<property name="linkOrder" value="5" />
+        <property name="playersUsersName" value="\\PlayersUsersNames.txt" />
+        <property name="casinoName" value="EGChromeMobileDe" />
+    </bean>
+    
+    <bean class="com.wh.auto.eurogrand.mobile.pages.DepositPage" lazy-init="true">
+        <property name="month" value="February" /> 
+    </bean>	
+    
+    <bean id="Browsers" class="com.wh.auto.common.Browsers">
+    </bean>
+    	    
+</beans>

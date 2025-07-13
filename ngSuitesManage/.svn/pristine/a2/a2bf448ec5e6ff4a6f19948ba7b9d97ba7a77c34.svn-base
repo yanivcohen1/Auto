@@ -1,0 +1,56 @@
+﻿//This handles retrieving data and is used by controllers. 3 options (server, factory, provider) with 
+//each doing the same thing just structuring the functions/data differently.
+app.service('suitesService', function (AllSutiesFactory) {
+
+    var suites;
+
+    this.setSuites = function (suitess) {
+        suites = suitess;
+    };
+
+    this.getSuites = function () {
+        return suites
+    };
+
+    this.insertSuite = function (firstName, lastName, city) {
+        var topID = suites.length + 1;
+        suites.push({
+            id: topID,
+            firstName: firstName,
+            lastName: lastName,
+            city: city
+        });
+    };
+
+    this.deleteSuite = function (id) {
+        for (var i = suites.length - 1; i >= 0; i--) {
+            if (suites[i].id === id) {
+                suites.splice(i, 1);
+                break;
+            }
+        }
+    };
+
+    this.getSuite = function (id) {
+        for (var i = 0; i < suites.length; i++) {
+            if (suites[i].id === id) {
+                return suites[i];
+            }
+        }
+        return null;
+    };
+
+    //var suites = [{ suiteId: 1, suiteName: "BAU Tests", xmlFileLocation: "C:\\Tomcat\\webapps\\RunSuiteSelectedTests\\BauAutomationTests\\testngClientsDebug.xml", jenkinsURL: "http://172.21.54.222:8080/view/BAU/job/BAU-Tests_debug/"},
+       // {suiteId: 2, suiteName: "BAU Tests Secend", xmlFileLocation: "C:\\Tomcat\\webapps\\RunSuiteSelectedTests\\BauAutomationTests\\testngBAUDebug.xml", jenkinsURL: "http://172.21.54.222:8080/view/BAU/job/BAU-Tests_Branch_debug/"}];
+
+});
+
+app.factory('AllSutiesFactory', function ($resource) {
+    return $resource('http://localhost:8080/ngSuitesManage/rest/suites/print/all', {}, {
+        query: { //'save':   {method:'POST'}
+            method: 'GET',
+            params: {},
+            isArray: false
+        }
+    })
+});

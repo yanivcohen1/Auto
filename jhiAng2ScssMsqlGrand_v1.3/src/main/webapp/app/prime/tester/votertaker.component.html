@@ -1,0 +1,289 @@
+<p-growl [value]="glowMsgs"></p-growl>
+
+<sticky [sticky-offset-top]="10" [ngbCollapse]="isCollapsed" >
+  <div class="float">
+      To hide this ?  &nbsp;
+      <!-- <button type="button" class="btn btn-default btn-xs" (click)="this.isCollapsed = true">Yes</button> -->
+      <button pButton type="button" (click)="this.isCollapsed = true" 
+      class="ui-button-secondary" label="Yes"></button>
+      &nbsp;
+      <button pButton type="button" (click)="this.isCollapsed = false" 
+      class="ui-button-secondary" label="No"></button>
+  </div>
+</sticky>
+
+<br/>
+<br/>
+<p-breadcrumb [model]="breadcrumb_items"></p-breadcrumb>
+
+<br>
+<br>
+<jhi-dynamic-form-builder></jhi-dynamic-form-builder>
+
+<br/>
+<p>
+  Show a self-closing message that disappears after 5 seconds.
+</p>
+<ngb-alert *ngIf="successMessage" type="success" (close)="successMessage = null">{{ successMessage }}</ngb-alert>
+<p>
+  <button class="btn btn-primary" (click)="changeSuccessMessage()">Change message</button>
+</p>
+
+<p-messages [(value)]="msgs2"></p-messages>
+<button type="button" (click)="show()">Show</button>
+
+<br/>
+<br/>
+<p-tree [value]="items2" selectionMode="single" [(selection)]="selectedFile" 
+(onNodeSelect)="nodeSelect($event)" (onNodeExpand)="nodeExpand($event)"></p-tree>
+
+<br/>
+<br/>
+<jhi-context-menu></jhi-context-menu>
+
+<br/>
+<br/>
+<p-panelMenu [model]="items3" [style]="{'width':'200px'}" [multiple]="false"></p-panelMenu>
+
+<br/>
+<br/>
+<jhi-di-demo></jhi-di-demo>
+
+<br/>
+<br/>
+<button (click)="startLoading()">Start Loading</button>
+<button (click)="stopLoading()">Stop Loading</button>
+<button (click)="completeLoading()">Complete Loading</button>
+
+<br/>
+<br/>
+<button (click)='modalService.open(modalId)'>Open Modal</button>
+<jhi-app-modal [modalTitle]="'Some title'" [blocking]='false' [bgColor]="'e4e5e6'" [modalId]='modalId'>
+  <div align="center"> Are You confairm ? </div>
+  <div align="right">
+    <button pButton type="button" (click)="onclickDialog(true)" label="Yes"></button>
+    <button pButton type="button" (click)="onclickDialog(false)" label="No"></button>
+  </div>
+</jhi-app-modal>
+
+<br/>
+<button (click)="openModal()">open NG modal</button>
+<hr>
+<pre>{{closeResult}}</pre>
+
+<p-confirmDialog></p-confirmDialog>
+<button type="button" (click)="confirm1()" pButton icon="fa-check" label="Confirm"></button>
+<button type="button" (click)="confirm2()" pButton icon="fa-trash" label="Delete"></button>
+
+<br>
+<br>
+<jhi-validation></jhi-validation>
+
+<br/>
+<br/>
+<div>
+  <jhi-markdown></jhi-markdown>
+</div>
+
+<br/>
+<jhi-computer-provider></jhi-computer-provider>
+
+<br/>
+<br/>
+<h2>Should mankind colonize the Universe?</h2>
+<input [(ngModel)]="search" type="text" placeholder="Enter your search"/>
+<button pButton type="button" (click)="onclick()" label="Click"></button>
+<h3>Agree: {{agreed}}, Disagree: {{disagreed}}</h3>
+<jhi-my-voter *ngFor="let voter of voters | filter:search"
+  [name]="voter"
+  (onVoted)="onVoted($event)">
+</jhi-my-voter>
+
+<p *jhiMyNgIf="color === 'green'">
+  this is my Ngif Dirctive
+</p>
+
+<p [jhiMyHighlight]="color" defaultColor="violet">
+  My Highlight Directive 
+</p>
+
+<br/>
+<br/>
+<p><ngb-progressbar [showValue]="true" type="info" [value]="50"></ngb-progressbar></p>
+
+<div class="btn-group" ngbDropdown>
+  <button type="button" class="btn btn-primary">Split me</button>
+  <button class="btn btn-primary dropdown-toggle-split" ngbDropdownToggle></button>
+  <div class="dropdown-menu" ngbDropdownMenu>
+    <button class="dropdown-item" (click)="onPopup('1')">
+        <span class="fa fa-list"></span> One</button>
+    <button class="dropdown-item" (click)="onPopup('2')">Two</button>
+    <button class="dropdown-item" (click)="onPopup('4')">Four!</button>
+  </div>
+</div>
+
+<div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+  <button class="btn btn-outline-primary" ngbDropdownToggle>Drop me</button>
+  <div class="dropdown-menu" ngbDropdownMenu>
+    <button class="dropdown-item">One</button>
+    <button class="dropdown-item">Two</button>
+    <button class="dropdown-item">Four!</button>
+  </div>
+</div>
+
+<br/>
+<br/>
+<p-splitButton label="Save" icon="fa-check" (onClick)="save()" [model]="items"></p-splitButton>
+
+<br/>
+<br/>
+<button type="text" pButton label="popup view" (click)="op1.toggle($event)"></button>
+<button type="text" pButton label="popup view" (click)="op2.toggle($event)"></button>
+
+<p-overlayPanel #op1>
+    <img src="../../../content/images/hipster.png" alt="Galleria 1" />
+    <!-- <img src="/api/attachment/59eb564e71f59d30807011be" alt="Galleria 1" /> -->
+</p-overlayPanel>
+
+<p-overlayPanel #op2>
+<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+<span class="sr-only">Loading...</span>
+</p-overlayPanel>
+
+<br/>
+<p-tabMenu [model]="items" [activeItem]="items[0]"></p-tabMenu>
+<div>show content for {{selectedTab}}</div>
+
+<br/>
+<p-tabView [activeIndex]="index" orientation="left" (onChange)="log($event.index)">
+    <p-tabPanel header="Header 1" leftIcon="fa-bell-o">
+       Content 1
+    </p-tabPanel>
+    <p-tabPanel header="Header 2" [selected]="true">
+        Content 2
+    </p-tabPanel>
+    <p-tabPanel header="Header 3" [disabled]="true">
+        Content 3    
+    </p-tabPanel>
+    <p-tabPanel header="Header 4" leftIcon="fa-bell-o">
+        Content 4
+     </p-tabPanel>
+     <p-tabPanel header="Header 5" [selected]="false">
+         Content 5
+     </p-tabPanel>
+</p-tabView>
+
+<div class="btn-group" ngbRadioGroup name="radioBasic" [(ngModel)]="model1">
+  <label ngbButtonLabel class="btn-primary">
+    <input ngbButton type="radio" [value]="1"> Left (pre-checked)
+  </label>
+  <label ngbButtonLabel class="btn-primary">
+    <input ngbButton type="radio" value="middle"> Middle
+  </label>
+  <label ngbButtonLabel class="btn-primary">
+    <input ngbButton type="radio" [value]="false"> Right
+  </label>
+</div>
+<hr>
+<pre>{{model1}}</pre>
+
+<h3>Basic</h3>
+<p-spinner></p-spinner>
+
+<br/>
+<div class="ui-g-12 ui-md-4">
+    <h3>Icon</h3>
+    <p-calendar [(ngModel)]="date3" [showIcon]="true"></p-calendar> <span style="margin-left:35px">{{date3|date}}</span>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<input type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".pdf,.doc,.docx">
+
+<br/>
+<br/>
+<label for="typeahead-basic">Search for a state:</label>
+<input id="typeahead-basic" type="text" class="form-control" [(ngModel)]="model" [ngbTypeahead]="searchAuto"/>
+<hr>
+<pre>Model: {{ model | json }}</pre>
+
+<br/>
+<p>
+  <a (click)="beginAnimFade()">Toggle Fade State</a>
+  <br/>
+  <a (click)="beginAnimVisability()">Toggle Visibility State</a>
+</p>
+
+<div class="dummyComponent" [@fadeInOut]="state" [@visibilityChanged]="state1"> 
+</div>
+
+<br/>
+<div>Current State: <b>{{state}}</b></div>
+<div>Current State: <b>{{state1}}</b></div>
+
+<br/>
+<button type="button" class="btn btn-outline-secondary" ngbPopover="You see, I show up on hover!" triggers="mouseenter:mouseleave" popoverTitle="Pop title">
+    Hover over me!
+</button>  
+
+<br>
+<br>
+<jhi-observer></jhi-observer>
+
+<jhi-wikipedia-search></jhi-wikipedia-search>
+
+<br/>
+<h1>
+  Split Pane Example
+</h1>
+<div style="height:400px; width:100%; border:1px solid #555">
+  <div style="height: 100%;">
+    <horizontal-split-pane #box1 primary-component-minsize="35" secondary-component-minsize="35" local-storage-key="split-pane" (on-change)="onHChange($event)">
+      <div class="split-pane-content-primary">
+        <div class="upper">
+          Upper pane
+        </div>
+        <jhi-computer-provider></jhi-computer-provider>
+      </div>
+      <div class="split-pane-content-secondary" style="height:100%;">
+        <div class="lower">
+          <vertical-split-pane primary-component-minsize="35" secondary-component-minsize="35" primary-component-initialratio="0.8" (on-change)="onVChange($event)">
+            <div class="split-pane-content-primary">
+              <div class="left">
+                Left
+              </div>
+            </div>
+            <div class="split-pane-content-secondary">
+              <div class="right">
+                Right
+              </div>
+            </div>
+          </vertical-split-pane>
+        </div>
+      </div>
+    </horizontal-split-pane>
+  </div>
+</div>
+
+<br/>
+<div id="leaflet"></div>
+
+<br/>
+<jhi-data-table-crud></jhi-data-table-crud>
+
+<br/>
+<button type="button" (click)="update(chart)">update chart</button>
+<button type="button" (click)="update(line)">update line</button>
+
+<br/>
+<p-growl [value]="msgs"></p-growl>
+<p-chart #line type="line" [data]="data2" (onDataSelect)="selectData($event)"></p-chart>
+
+<br/>
+<p-chart #chart type="doughnut" [data]="data"></p-chart>
+
+<br>
+<br>
+<jhi-dynamic-component-loader></jhi-dynamic-component-loader>

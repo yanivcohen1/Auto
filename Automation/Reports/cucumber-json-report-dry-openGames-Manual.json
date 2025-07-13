@@ -1,0 +1,6859 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "id": "games;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "login to casino",
+            "match": {
+              "location": "GamesAutomation.login_to_casino()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Ace Ventura\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ace Ventura",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 41
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Leprechaun\u0027s Luck\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Leprechaun\u0027s Luck",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 47
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Magical Stacks\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Magical Stacks",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 44
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Ocean Princess\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ocean Princess",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 44
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;6",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Thor\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Thor",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 34
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;7",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Wild Spirit\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Wild Spirit",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 41
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;8",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Top Trump Celebs\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Top Trump Celebs",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 46
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;9",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Forest of Wonders\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Forest of Wonders",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 47
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;10",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Archer\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Archer",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 36
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;11",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Cowboys and Aliens\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cowboys and Aliens",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 48
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;12",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Adventures in Wonderland Deluxe\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Adventures in Wonderland Deluxe",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 61
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;13",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Atlantis Queen\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Atlantis Queen",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 44
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;14",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"3 Card Brag\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3 Card Brag",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 41
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;15",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Daring Dave and the Eye of Ra\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Daring Dave and the Eye of Ra",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 59
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 27,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;16",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Captain America - The First Avenger\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Captain America - The First Avenger",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 65
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;17",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Top Gun\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Top Gun",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 37
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;18",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Fei Cui Gong Zhu\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fei Cui Gong Zhu",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 46
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 30,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;19",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Dolphin Reef\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dolphin Reef",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 42
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 31,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;20",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Funky Fruits farm\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Funky Fruits farm",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 47
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;21",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Life of Brian\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Life of Brian",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 43
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;22",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Purple Hot\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Purple Hot",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 40
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;23",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Vikingmania\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Vikingmania",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 41
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 35,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;24",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Winnings of Oz\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Winnings of Oz",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 44
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 36,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;25",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Wings Of Gold\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Wings Of Gold",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 43
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 37,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;26",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Greatest Odyssey\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Greatest Odyssey",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 46
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 38,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;27",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"The Glass Slipper\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "The Glass Slipper",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 47
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 39,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;28",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Football Rules\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Football Rules",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 44
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 40,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;29",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Funky Monkey\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Funky Monkey",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 42
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;30",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Piggies and the Wolf\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Piggies and the Wolf",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 50
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 42,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;31",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Golden Games\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Golden Games",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 42
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 43,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;32",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Thai Temple\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Thai Temple",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 41
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 44,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;33",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Rocky\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Rocky",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 35
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 45,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;34",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Fortunes of the Fox\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fortunes of the Fox",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 49
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 46,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;35",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Fairest of them All\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fairest of them All",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 49
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 47,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;36",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Cops n\u0027 Bandits\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cops n\u0027 Bandits",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 45
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 48,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;37",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Bounty of the Beanstalk\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bounty of the Beanstalk",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 53
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 49,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;38",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Cat in Vegas\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cat in Vegas",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 42
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 50,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;39",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Who Wants To Be A Millionaire\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Who Wants To Be A Millionaire",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 59
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 51,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;40",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Sinbad\u0027s Golden Voyage\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sinbad\u0027s Golden Voyage",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 52
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 52,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;41",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"X-Men 50 Lines\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "X-Men 50 Lines",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 44
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 53,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;42",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Nian Nian You Yu\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Nian Nian You Yu",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 46
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 54,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;43",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"The Riches of Don Quixote\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "The Riches of Don Quixote",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 55
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 55,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;44",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Chests of Plenty\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Chests of Plenty",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 46
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 56,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;45",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Wild Gambler 2 Arctic Adventure\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Wild Gambler 2 Arctic Adventure",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 61
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 57,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;46",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Marilyn Monroe\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Marilyn Monroe",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 44
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 58,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;47",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Heart of the Jungle\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Heart of the Jungle",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 49
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 59,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;48",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Funky Fruits\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Funky Fruits",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 42
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 60,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;49",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Full Moon Fortunes\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Full Moon Fortunes",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 48
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 61,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;50",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Crazy-7\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Crazy-7",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 37
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 62,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;51",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Cherry Love\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cherry Love",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 41
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 63,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;52",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Cat Queen\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cat Queen",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 39
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 64,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;53",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Bonus Bears\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bonus Bears",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 41
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 65,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;54",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Arctic Treasure\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Arctic Treasure",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 45
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 66,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;55",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Easter Surprise\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Easter Surprise",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 45
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 67,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;56",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Amazon WIld\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Amazon WIld",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 41
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 68,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;57",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Battle Of The Gods\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Battle Of The Gods",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 48
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 69,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;58",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Esmeralda\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Esmeralda",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 39
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 70,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;59",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Silver Bullet\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Silver Bullet",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 43
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 71,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;60",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"A Night Out\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "A Night Out",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 41
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 72,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;61",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Baccarat\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Baccarat",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 38
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 73,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;62",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Beach Life\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Beach Life",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 40
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 74,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;63",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Blackjack Switch\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Blackjack Switch",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 46
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 75,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;64",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Captain\u0027s Treasure\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Captain\u0027s Treasure",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 48
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 76,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;65",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Casino Hold Em\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Casino Hold Em",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 44
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 77,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;66",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Chinese Kitchen\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Chinese Kitchen",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 45
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 78,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;67",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Dr Love More\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dr Love More",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 42
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 79,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;68",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Everybody\u0027s Jackpot\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Everybody\u0027s Jackpot",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 49
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 80,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;69",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Fantastic Four 50 lines\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fantastic Four 50 lines",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 53
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 81,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;70",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Football Carnival\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Football Carnival",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 47
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 82,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;71",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Frankie Dettori\u0027s Magic Seven\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Frankie Dettori\u0027s Magic Seven",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 59
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 83,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;72",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Frankie Dettori\u0027s Magic Seven Jackpot\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Frankie Dettori\u0027s Magic Seven Jackpot",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 67
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 84,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;73",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Geisha Story\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Geisha Story",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 42
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 85,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;74",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Gladiator Jackpot\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Gladiator Jackpot",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 47
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 86,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;75",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Great Blue\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Great Blue",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 40
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 87,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;76",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Halloween Fortune\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Halloween Fortune",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 47
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 88,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;77",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Highway Kings\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Highway Kings",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 43
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 89,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;78",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"The Incredible Hulk\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "The Incredible Hulk",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 49
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 90,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;79",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Ice Run\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ice Run",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 37
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 91,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;80",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Irish Luck\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Irish Luck",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 40
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 92,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;81",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Iron Man 2\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Iron Man 2",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 40
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 93,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;82",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Iron Man 3\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Iron Man 3",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 40
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 94,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;83",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Jackpot Giant\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Jackpot Giant",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 43
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 95,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;84",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Jacks or Better Multi-Hand\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Jacks or Better Multi-Hand",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 56
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 96,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;85",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"KONG THE EIGHTH WONDER OF THE WORLD\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "KONG THE EIGHTH WONDER OF THE WORLD",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 65
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 97,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;86",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Lotto Madnes\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Lotto Madnes",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 42
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 98,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;87",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Mobile Blackjack\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mobile Blackjack",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 46
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 99,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;88",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Mobile Desert Treasure\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mobile Desert Treasure",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 52
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 100,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;89",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Mobile Premium Roulette\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mobile Premium Roulette",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 53
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 101,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;90",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Monty Python’s Spamalot\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Monty Python’s Spamalot",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 53
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 102,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;91",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Mr. Cashback\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mr. Cashback",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 42
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 103,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;92",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Panther Moon\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Panther Moon",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 42
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 104,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;93",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Penguin Vacation\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Penguin Vacation",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 46
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 105,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;94",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Pink Panther\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pink Panther",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 42
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 106,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;95",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Plenty O’ Fortune\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Plenty O’ Fortune",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 47
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 107,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;96",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Samba Brazil\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Samba Brazil",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 42
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 108,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;97",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Santa Surprise\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Santa Surprise",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 44
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 109,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;98",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Secrets of the Amazon\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Secrets of the Amazon",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 51
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 110,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;99",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Sherlock Mystery\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sherlock Mystery",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 46
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 111,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;100",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Silent Samurai\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Silent Samurai",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 44
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 112,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;101",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Spider-Man: Attack of the Green Goblin\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Spider-Man: Attack of the Green Goblin",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 68
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 113,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;102",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Streak of Luck\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Streak of Luck",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 44
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 114,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;103",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Sweet Party\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sweet Party",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 41
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 115,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;104",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Thai Paradise\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Thai Paradise",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 43
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 116,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;105",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"The Avengers\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "The Avengers",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 42
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 117,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;106",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"The Three Musketeers and the Queen’s Diamond\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "The Three Musketeers and the Queen’s Diamond",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 74
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 118,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;107",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Vacation Station Deluxe\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Vacation Station Deluxe",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 53
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 119,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;108",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"White King\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "White King",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 40
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 120,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;109",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Wild Gambler\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Wild Gambler",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 42
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 121,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;110",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Wu Long\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Wu Long",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 37
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 122,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;111",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Zhao Cai Jin Bao\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Zhao Cai Jin Bao",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 46
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 123,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;112",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Golden Tour\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Golden Tour",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 41
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 124,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;113",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Catwalk\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Catwalk",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 37
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 125,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;114",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Dragon Kingdom\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dragon Kingdom",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 44
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 126,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;115",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Hawaiian Treasure\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hawaiian Treasure",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 47
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 127,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;116",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Fountain Of Youth\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fountain Of Youth",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 47
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 128,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;117",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Jungle Trouble\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Jungle Trouble",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 44
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 129,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;118",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Land Of Gold\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Land Of Gold",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 42
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 130,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;119",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Neptunes Kingdom\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Neptunes Kingdom",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 46
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 131,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;120",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Wacky Waters\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Wacky Waters",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 42
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 132,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;121",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Bermuda Triangle\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bermuda Triangle",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 46
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 133,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;122",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Haunted House\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Haunted House",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 43
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 134,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;123",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Pinball Roulette\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pinball Roulette",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 46
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 135,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;124",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Premium European Roulette\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Premium European Roulette",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 55
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 136,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;125",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Nostradamus\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Nostradamus",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 41
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 137,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;126",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Jekyll and Hyde\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Jekyll and Hyde",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 45
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 138,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;127",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Firemen\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Firemen",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 37
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 139,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;128",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Innocence or Temptation\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Innocence or Temptation",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 53
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 140,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;129",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"The Love Boat™\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "The Love Boat™",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 44
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 141,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;130",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Bai Shi\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bai Shi",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 37
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 142,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;131",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Juicy Booty\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Juicy Booty",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 41
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 143,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;132",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Spin A Win\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Spin A Win",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 40
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 144,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;133",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Furious Four\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Furious Four",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 42
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 145,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;134",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"king of Olympus\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "king of Olympus",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 45
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 146,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;135",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"John Wayne™\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "John Wayne™",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 41
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 147,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;136",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Spud O´Reilly´s\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Spud O´Reilly´s",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 45
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 148,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;137",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Age of the Gods\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Age of the Gods",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 45
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 149,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;138",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"World Football Stars 2014\" is this Mgp Game \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "World Football Stars 2014",
+                  "offset": 10
+                },
+                {
+                  "val": "false",
+                  "offset": 55
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 150,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;139",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Blackjack Multihand\" is this Mgp Game \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Blackjack Multihand",
+                  "offset": 10
+                },
+                {
+                  "val": "true",
+                  "offset": 49
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 151,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;140",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Chicago Streets Scratch\" is this Mgp Game \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Chicago Streets Scratch",
+                  "offset": 10
+                },
+                {
+                  "val": "true",
+                  "offset": 53
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 152,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;141",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Club Night\" is this Mgp Game \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Club Night",
+                  "offset": 10
+                },
+                {
+                  "val": "true",
+                  "offset": 40
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 153,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;142",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Classic Roulette\" is this Mgp Game \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Classic Roulette",
+                  "offset": 10
+                },
+                {
+                  "val": "true",
+                  "offset": 46
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 154,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;143",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Fish-O-Rama\" is this Mgp Game \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fish-O-Rama",
+                  "offset": 10
+                },
+                {
+                  "val": "true",
+                  "offset": 41
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 155,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;144",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Gold Rally\" is this Mgp Game \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Gold Rally",
+                  "offset": 10
+                },
+                {
+                  "val": "true",
+                  "offset": 40
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 156,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;145",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Iron Man 2 Scratch\" is this Mgp Game \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Iron Man 2 Scratch",
+                  "offset": 10
+                },
+                {
+                  "val": "true",
+                  "offset": 48
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 157,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;146",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Love Match Scratch\" is this Mgp Game \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Love Match Scratch",
+                  "offset": 10
+                },
+                {
+                  "val": "true",
+                  "offset": 48
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 158,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;147",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Pink Panther Scratch\" is this Mgp Game \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pink Panther Scratch",
+                  "offset": 10
+                },
+                {
+                  "val": "true",
+                  "offset": 50
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 159,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;148",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Rocky Scratch\" is this Mgp Game \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Rocky Scratch",
+                  "offset": 10
+                },
+                {
+                  "val": "true",
+                  "offset": 43
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 160,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;149",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Safari Heat\" is this Mgp Game \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Safari Heat",
+                  "offset": 10
+                },
+                {
+                  "val": "true",
+                  "offset": 41
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 161,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;150",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Santa’s Gifts\" is this Mgp Game \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Santa’s Gifts",
+                  "offset": 10
+                },
+                {
+                  "val": "true",
+                  "offset": 43
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 162,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;151",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Vacation Station\" is this Mgp Game \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Vacation Station",
+                  "offset": 10
+                },
+                {
+                  "val": "true",
+                  "offset": 46
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 163,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino;;152",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "open URL \"Wanted\" is this Mgp Game \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Wanted",
+                  "offset": 10
+                },
+                {
+                  "val": "true",
+                  "offset": 36
+                }
+              ],
+              "location": "GamesAutomation.open_URL_is_this_Mgp_Game(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@openMgpGames"
+          },
+          {
+            "line": 1,
+            "name": "@manual"
+          }
+        ]
+      },
+      {
+        "line": 165,
+        "name": "Casino",
+        "description": "",
+        "id": "games;casino",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 166,
+            "name": "close browser",
+            "match": {
+              "location": "GamesAutomation.close_browser()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "Games",
+    "description": "As a new user I want to be able open games",
+    "id": "games",
+    "keyword": "Feature",
+    "uri": "casino/mobile/games/Games.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@openMgpGames"
+      },
+      {
+        "line": 1,
+        "name": "@manual"
+      }
+    ]
+  }
+]

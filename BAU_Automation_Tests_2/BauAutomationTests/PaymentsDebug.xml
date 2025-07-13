@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Payments" verbose="1">
+
+	<listeners>
+               <listener class-name="com.wh.auto.common.TestListener" />
+    </listeners>
+	
+<!-- 	<test name="BuildClients">
+		<parameter name="parametersFileName"  value="ClientsTest.ini"/>
+		<classes>
+			<class name="com.wh.auto.clients.TestBuildClients" />
+		</classes>	
+	</test> -->
+	
+	<test name="WhccSelfExcludeMobile">
+		<parameter name="$test.getParameter_name()" value="$test.getParameter_value()"/> 
+		<classes>
+			<class name="com.wh.auto.whcc.SelfExcludeMobile" />
+			<methods>
+							</methods>
+		</classes>
+       	</test>
+	
+
+</suite>

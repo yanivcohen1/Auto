@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AutomationLib.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Driver" Type="System.String" Scope="User">
+      <Value Profile="(Default)">chrome</Value>
+    </Setting>
+    <Setting Name="JavaReportPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\BauAutomationTests\target\failsafe-reports\html</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

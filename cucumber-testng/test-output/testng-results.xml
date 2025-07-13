@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<div class="featureFile">Feature File: src\test\resources\com\test\Salary.feature</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="feature">Feature: Salary Management</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="scenario">Scenario: Modify an employee's salary</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="result">Given  the salary management system is initialized with the following data (passed : 0.13s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="result">When  the boss increases the salary for the employee with id '3' by 5% (passed : 0.0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="result">Then  the payroll for the employee with id '3' should display a salary of 57750 (failed : 0.0s)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="483" started-at="2015-11-30T17:33:18Z" finished-at="2015-11-30T17:33:18Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="483" started-at="2015-11-30T17:33:18Z" finished-at="2015-11-30T17:33:18Z">
+      <class name="com.test.SalarySteps">
+        <test-method status="FAIL" signature="Modify_an_employees_salary()[pri:0, instance:com.test.SalarySteps@28f67ac7]" name="Modify_an_employees_salary" duration-ms="473" started-at="2015-11-30T19:33:18Z" finished-at="2015-11-30T19:33:18Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.AssertionError: expected [57750.0] but found [57751.0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.AssertionError: expected [57750.0] but found [57751.0]
+	at com.legalmonkeys.test.AbstractCucumberTest.run(AbstractCucumberTest.java:76)
+	at com.legalmonkeys.test.AbstractCucumberTest.run(AbstractCucumberTest.java:27)
+	at com.test.SalarySteps.Modify_an_employees_salary(SalarySteps.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+Caused by: java.lang.AssertionError: expected [57750.0] but found [57751.0]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:167)
+	at com.test.SalarySteps.the_payroll_for_the_employee_with_id_should_display_a_salary_of(SalarySteps.java:46)
+	at ✽.Then the payroll for the employee with id '3' should display a salary of 57750(src\test\resources\com\test\Salary.feature:15)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<div class="featureFile">Feature File: src\test\resources\com\test\Salary.feature</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="feature">Feature: Salary Management</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="scenario">Scenario: Modify an employee's salary</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="result">Given  the salary management system is initialized with the following data (passed : 0.13s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="result">When  the boss increases the salary for the employee with id '3' by 5% (passed : 0.0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="result">Then  the payroll for the employee with id '3' should display a salary of 57750 (failed : 0.0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Modify_an_employees_salary -->
+      </class> <!-- com.test.SalarySteps -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

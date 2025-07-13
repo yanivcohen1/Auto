@@ -1,0 +1,97 @@
+<ng-loading-bar></ng-loading-bar>
+<div class="row">
+    <jhi-app-modal [modalTitle]="'Waitting Response'" [blocking]='true' [modalId]='modalId' [bgColor]="'e52325'">
+        <div align="center">waiting for jenkins server response</div>
+    </jhi-app-modal>
+  <div class="col-md-6">
+    <h3>Aveleble Tests</h3>
+    <label>Search:
+                <input [ngModel]="search" (ngModelChange)="modelChange($event)" type="text" 
+                placeholder="Enter your search"></input>
+          </label>
+    <p-tree [value]="TreeSource" draggableNodes="true" droppableNodes="true" dragdropScope="files" selectionMode="single" [(selection)]="selectedFile"
+      (onNodeSelect)="nodeSelect($event)" (onNodeExpand)="nodeExpand($event)">
+      <!-- <div *ngIf="isDivVisible(node)"> -->
+      <ng-template let-node pTemplate="default">
+        <label disabled="true" style="width:70%">
+                              {{node.label}}
+                      </label>
+        <!-- <button pButton type="button" (click)="addNode(node.label)" icon="fa-plus" style="width:10%">
+                      </button> -->
+      </ng-template>
+      <!-- </div> -->
+
+    </p-tree>
+  </div>
+
+  <!-- <div class="col-md-1">
+           <i class="fa fa-exchange" style="font-size:36px;margin-top: 28px;"></i>
+        </div> -->
+
+  <div class="col-md-6">
+    <div class="col-md-12"></div>
+      <p-growl [value]="glowMsgs" [closable]="closable"></p-growl>
+      <p-messages [value]="msgs" [closable]="closable"></p-messages>
+    <div class="col-md-12"></div>
+    <div col-tree="" id="tree2-root">
+      <h3>Your Tests</h3>
+      <p-tree [value]="TreeDestanation" draggableNodes="true" droppableNodes="true" dragdropScope="files" selectionMode="single"
+        [(selection)]="selectedFile" (onNodeDrop)="nodeDrop($event)" (onNodeSelect)="nodeDestSelect($event)">
+
+        <ng-template let-node pTemplate="default">
+          <label disabled="true">
+                          {{node.label}}
+                  </label>
+          <button pButton type="button" (click)="removeNode(node.label)" icon="fa-close" class="col-button-danger" style="width:10%">
+                  </button>
+        </ng-template>
+
+      </p-tree>
+    </div>
+    <h3></h3>
+    <div class="row col-sm-12">
+      <div class="col-sm-3">
+        <label>
+                <input type="radio" [(ngModel)]="envirment.name" value="live" checked="checked">Live</label>
+        <br>
+        <label>
+                <input type="radio" [(ngModel)]="envirment.name" value="admin">Admin</label>
+        <br>
+        <label>
+                <input type="radio" [(ngModel)]="envirment.name" value="dev">Dev</label>
+        <br>
+        <label>
+                <input type="radio" [(ngModel)]="envirment.name" value="stging">Staging</label>
+        <br>
+      </div>
+      <div class="col-sm-9">
+        <div class="col-sm-12">
+          <label class="col-sm-12">ImportTests:</label>
+          <input type="file" (change)="showContent($event)" class="btn btn-primary btn-xs col-sm-12" [class.disabled]="Process">
+          <br>
+        </div>
+        <div class="col-sm-12">
+          <br>
+          <a class="btn btn-primary btn-xs" (click)="exportTests()" [class.disabled]="Process  || !(TreeDestanation.length > 0)">
+            <font size="2">Export Tests</font>
+          </a>
+        </div>
+      </div>
+    </div>
+    <p></p>
+    <div class="col-sm-12">
+      <label>Email:
+              <input ng-model="email" placeholder="Enter your email Optional">
+            </label>
+    </div>
+    <div class="col-sm-12">
+      <a class="btn btn-success btn-xs" (click)="runTest()" [class.disabled]="Process  || !(TreeDestanation.length > 0)">
+        <font size="4">Run Tests</font>
+      </a>
+    </div>
+    <nav>
+        <a [routerLink]="['/tester']">Tester</a>
+        <a [routerLink]="['/nested']">nested</a>
+      </nav>
+  </div>
+</div>

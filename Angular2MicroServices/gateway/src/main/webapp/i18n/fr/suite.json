@@ -1,0 +1,25 @@
+{
+    "gatwayApp": {
+        "suite" : {
+            "home": {
+                "title": "Suites",
+                "createLabel": "Créer un nouveau Suite",
+                "createOrEditLabel": "Créer ou éditer un Suite",
+                "search": "Recherche pour Suite"
+            },
+            "created": "Un nouveau Suite a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Suite avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Suite avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Suite {{ id }} ?"
+            },
+            "detail": {
+                "title": "Suite"
+            },
+            "suite_name": "Suite Name",
+            "xml_file_location": "Xml File Location",
+            "jenkins_url": "Jenkins Url",
+            "tests": "Tests"
+        }
+    }
+}

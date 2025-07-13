@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config />
+    <context:component-scan base-package="com.who"/>
+
+    <bean class="com.who.tests.google.MainGoogleTest">
+		<property name="tests">
+	        <map>
+	            <entry key="Test1"  value="MainGoogleTestData1" />
+	            <entry key="Test2"  value="MainGoogleTestData2" /> 
+	        </map>
+    	</property>
+    </bean>
+     
+    <bean id="MainGoogleTestData1" class="com.who.tests.google.MainGoogleTestData">    
+        <property name="SearchPage" >
+        	<bean class="com.who.tests.google.SearchPage">
+        	    <constructor-arg><ref bean="Browsers1"/></constructor-arg>
+		       <property name="googleSearcePageUrl" value="https://www.google.co.il/" />
+		       <property name="searchKey" value="yaniv" />
+		    </bean>
+		 </property>
+		 <property name="ResultPage" >
+        	<bean class="com.who.tests.google.ResultPage">
+        	    <constructor-arg><ref bean="Browsers1"/></constructor-arg>
+		        <property name="expectedResult" value="Play YANIV Card Game Online" />
+		    </bean>
+		 </property>
+    </bean>
+		
+    <bean id="MainGoogleTestData2" class="com.who.tests.google.MainGoogleTestData">
+        <property name="SearchPage" >
+	        <bean class="com.who.tests.google.SearchPage">
+	            <constructor-arg><ref bean="Browsers2"/></constructor-arg>
+		        <property name="googleSearcePageUrl" value="https://www.google.co.il/" />
+		        <property name="searchKey" value="yan" />
+		    </bean>  
+		</property>
+        <property name="ResultPage" >
+        	<bean class="com.who.tests.google.ResultPage">
+        	    <constructor-arg><ref bean="Browsers2"/></constructor-arg>
+		        <property name="expectedResult" value=" - Wikipedia, the free encyclopedia" />
+		    </bean>
+		 </property>
+    </bean>
+		
+    <bean id="Browsers1" class="com.who.utils.Browsers">
+        <property name="browseName" value="chrome" />
+    </bean>
+    
+    <bean id="Browsers2" class="com.who.utils.Browsers">
+        <property name="browseName" value="chrome" />
+    </bean>	
+    	    		    
+</beans>

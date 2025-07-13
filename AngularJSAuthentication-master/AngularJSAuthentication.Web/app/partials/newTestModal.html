@@ -1,0 +1,28 @@
+<div class="modal-header">
+    <h3 class="modal-title">New Test</h3>
+</div>
+<div class="modal-body">
+	<table>
+	    <tr ng-class-odd="'odd'" ng-class-even="'even'">   
+	        <td class="rowTd" >Suite Name:</td>
+	        <td class="rowTd">Test Name:</td>
+	        <td class="rowTd">Class Names:</td>
+	        <td class="rowTd">Parameter Names:</td>
+	        <td class="rowTd">Parameter Values:</td>
+	    </tr>
+		<tr ng-class-odd="'odd'" ng-class-even="'even'">    
+	        <td class="rowTd"><input data-ng-model="newTest.suiteName" type="text" placeholder="Suite Name" value="{{suiteName}}" style="width:100%; padding-left:0px; padding-right:0px;"></td>
+	        <td class="rowTd"><input data-ng-model="newTest.testName" type="text" placeholder="Test Name" style="width:100%; padding-left:0px; padding-right:0px;"></td>
+	        <td class="rowTd"><input data-ng-model="newTest.classesName" type="text" placeholder="class Names" style="width:100%; padding-left:0px; padding-right:0px;"></td>
+	        <td class="rowTd"><input data-ng-model="newTest.parametersName" type="text" placeholder="Parameter Names" style="width:100%; padding-left:0px; padding-right:0px;"></td>
+	        <td class="rowTd"><input data-ng-model="newTest.parametersValue" type="text" placeholder="parameter Values" style="width:100%; padding-left:0px; padding-right:0px;"></td>
+	    </tr>
+	</table>
+</div>
+<div class="modal-footer">
+	<button id="newTest" class="btn btn-primary" type="button"
+		data-ng-disabled="!newTest.suiteName || !newTest.testName || !newTest.classesName|| !newTest.parametersName || !newTest.parametersValue"
+		data-ng-click="insertTest(newTest.suiteName, newTest.testName, newTest.classesName,newTest.parametersName, newTest.parametersValue)">Save
+	</button>
+	<button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+</div>

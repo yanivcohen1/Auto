@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="821c86cc-cc48-452c-a273-ec1a349f0597" name="yanivc@WH5000703 2014-04-29 15:36:02" runUser="ADGENCY-DOMAIN\yanivc" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Trace and Test Impact" id="76148d2d-336e-4c3d-89fc-2d0e04d85b16">
+    <Description>These are test settings for Trace and Test Impact.</Description>
+    <Deployment runDeploymentRoot="yanivc_WH5000703 2014-04-29 15_36_02">
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\AutomationLib\bin\Debug\AutomationLib.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\Common.Logging.Log4Net.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\Common.Logging.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\Selenium.WebDriverBackedSelenium.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\log4net.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\Spring.Core.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\ThoughtWorks.Selenium.Core.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\WebDriver.Support.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\WebDriver.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+        <DataCollectors>
+          <DataCollector uri="datacollector://microsoft/SystemInfo/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.SystemInfo.SystemInfoDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.SystemInfo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="System Information">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/ActionLog/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.ManualTest.ActionLog.ActionLogPlugin, Microsoft.VisualStudio.TestTools.ManualTest.ActionLog, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Actions">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/HttpProxy/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.HttpProxyCollector, Microsoft.VisualStudio.TraceCollector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/TestImpact/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.TestImpactDataCollector, Microsoft.VisualStudio.TraceCollector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Test Impact">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/TraceDebugger/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.TraceDebuggerDataCollector, Microsoft.VisualStudio.TraceCollector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="IntelliTrace">
+          </DataCollector>
+        </DataCollectors>
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-04-29T15:36:02.5927008+03:00" queuing="2014-04-29T15:36:04.6037008+03:00" start="2014-04-29T15:36:08.9657008+03:00" finish="2014-04-29T15:43:17.4317008+03:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <CollectorDataEntries>
+      <Collector agentName="WH5000703" uri="datacollector://microsoft/SystemInfo/1.0" collectorDisplayName="System Information">
+        <UriAttachments>
+          <UriAttachment>
+            <A href="WH5000703\SystemInformation.xml">System Information from WH5000703</A>
+          </UriAttachment>
+        </UriAttachments>
+      </Collector>
+    </CollectorDataEntries>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Nova21DeClient" storage="c:\svn\bau_automation_tests\trunk\clientsautomationtests\clients\bin\debug\com.who.tests.clients.dll" id="515d957c-d18a-d880-05d3-8e06386abb16">
+      <Execution timeOut="900000" id="b0fc7b85-95a9-472c-a30d-88d80ed22336" />
+      <TestMethod codeBase="C:/SVN/BAU_Automation_Tests/trunk/ClientsAutomationTests/Clients/bin/Debug/com.who.tests.clients.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="com.who.tests.clients.Nova21De, com.who.tests.clients, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Nova21DeClient" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="515d957c-d18a-d880-05d3-8e06386abb16" executionId="b0fc7b85-95a9-472c-a30d-88d80ed22336" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="b0fc7b85-95a9-472c-a30d-88d80ed22336" testId="515d957c-d18a-d880-05d3-8e06386abb16" testName="Nova21DeClient" computerName="WH5000703" duration="00:07:04.1590765" startTime="2014-04-29T15:36:09.1037008+03:00" endTime="2014-04-29T15:43:14.0137008+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b0fc7b85-95a9-472c-a30d-88d80ed22336">
+      <Output>
+        <StdOut>15:36:15.825 - About to navigating to:'http://serve.21nova.com/promoRedirect?member=goodaff&amp;campaign=DEFAULT&amp;channel=DEFAULT&amp;zone=853011616&amp;lp=0'
+INFO  - ApplicationContext Refresh: Completed
+15:36:20.695 - About to navigating to:'http://de.21novacasino.com/'
+15:36:22.461 - About to click on a findBy.PartialLinkText: Download
+15:36:31.809 - find DownloadPage with param:Keep
+15:36:33.552 - click on button name: Keep
+15:36:44.553 - click on button name:  SetupCasino_745aec_de.exe
+15:36:45.912 - find DownloadPage with param:Run
+15:36:47.023 - click on button name: Run
+15:36:53.284 - find LanguagePage with param:WEITER
+15:36:56.578 - click on text name: WEITER
+15:36:57.147 - click on button name: Yes
+15:37:11.993 - find GameModePage with param:title bar
+15:37:13.358 - find JoinNowPage with param:title bar
+15:37:21.806 - find RegistrationPage with param:Weiter &gt;&gt;
+15:37:23.763 - About to write to edit name:  -the value: WHO
+15:37:23.888 - About to write to edit name:  -the value: QA
+15:37:24.010 - About to write to edit name:  -the value: test@playtech.com
+15:37:24.132 - About to write to edit name:  -the value: test@playtech.com
+15:37:24.793 - About to select on element name:  -the value: 01
+15:37:26.734 - About to select on element name:  -the value: Jan
+15:37:28.422 - About to select on element name:  -the value: 1973
+15:37:30.940 - click on radio button name: 
+15:37:32.337 - click on  name: Weiter &gt;&gt;
+15:37:33.562 - About to write to edit name:  -the value: Addr
+15:37:33.680 - About to write to edit name:  -the value: State
+15:37:33.803 - About to write to edit name:  -the value: 1234
+15:37:33.927 - About to write to edit name:  -the value: 1234567
+15:37:34.050 - About to write to edit name:  -the value: 1234567
+15:37:41.623 - About to write to edit name:  -the value: city
+15:37:42.588 - click on  name: Weiter &gt;&gt;
+15:37:43.778 - About to write to edit name:  -the value: 123456
+15:37:43.896 - About to write to edit name:  -the value: 123456
+15:37:44.710 - click on check box name: 
+15:37:46.008 - click on  name: Erstellen 
+15:37:52.099 - find CongratulationsPage with param:Weiter 
+15:37:54.108 - click on  name: Weiter 
+15:37:56.563 - find PopupMsgPage with param:Hallo WHO
+15:38:04.422 - find CashierPage with param:pane
+timeOut 200sec to find window: PTIODEVICE with param:Ihre Kreditkarten-Einzahlung wurde genehmigt und erscheint als WHG Online/AquaPay London. Vielen Dank und viel Glück! can't find</StdOut>
+        <StdErr>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\TestResults\yanivc_WH5000703 2014-04-29 15_36_02\Out. Access to the path 'C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\TestResults\yanivc_WH5000703 2014-04-29 15_36_02\Out' is denied.</StdErr>
+        <DebugTrace>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\TestResults\yanivc_WH5000703 2014-04-29 15_36_02\Out. Access to the path 'C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\TestResults\yanivc_WH5000703 2014-04-29 15_36_02\Out' is denied.
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Test method com.who.tests.clients.Nova21De.Nova21DeClient threw exception: 
+System.ArgumentException: Window can't find 
+Parameter name: PTIODEVICE param:Ihre Kreditkarten-Einzahlung wurde genehmigt und erscheint als WHG Online/AquaPay London. Vielen Dank und viel Glück!</Message>
+          <StackTrace>    at AutomationLib.Automation_Lib.waitforWindowNameClass(String NameClass, Condition controlCondition, Int32 timeOutSec, Boolean name) in C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\AutomationLib\AutomationLib.cs:line 686
+   at com.who.tests.clients.CashierPage.CloseApprovePopup() in C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Clients\Clients\CashierPage.cs:line 116
+   at com.who.tests.clients.Nova21De.Nova21DeClientTestDebug() in C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Clients\Nova21DeClient_Test.cs:line 114
+   at com.who.tests.clients.Nova21De.Nova21DeClient() in C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Clients\Nova21DeClient_Test.cs:line 150
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+      <CollectorDataEntries>
+        <Collector agentName="WH5000703" uri="datacollector://microsoft/SystemInfo/1.0" collectorDisplayName="System Information">
+          <UriAttachments>
+            <UriAttachment>
+              <A href="WH5000703\SystemInformation.xml">System Information from WH5000703</A>
+            </UriAttachment>
+          </UriAttachments>
+        </Collector>
+      </CollectorDataEntries>
+      <DataCollectorMessages>
+        <DataCollectorMessage timestamp="2014-04-29T15:36:20.7267008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An established connection was aborted by the software in your host machine</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:36:20.7457008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. An established connection was aborted by the software in your host machine</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:36:20.7467008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An established connection was aborted by the software in your host machine</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:36:20.7847008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An established connection was aborted by the software in your host machine</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:36:20.7857008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. An established connection was aborted by the software in your host machine</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:36:20.7857008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An established connection was aborted by the software in your host machine</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:37:06.0187008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0027: Unable to connect to the server described by the URI: HTTP://SC1WNPREMG11.Group.WilliamHill.PLC/Altiris/PS/getpackagesnapshot.asp?PackageId=%7B23577D88-B9F0-41C7-87B9-3543A460E23E%7D&amp;compress=1. No connection could be made because the target machine actively refused it 10.120.136.11:80</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:38:02.6527008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:38:02.6537008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:38:02.6537008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:38:02.6847008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:38:02.6847008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:38:02.6847008+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T15:43:14.0097008+03:00" dataCollectorUri="datacollector://microsoft/TestImpact/1.0" dataCollectorFriendlyName="Test Impact" agentName="WH5000703" level="Warning">
+          <Text>No Microsoft .NET applications were launched during the test run. Launch applications from Explorer or a new command prompt after a test case has started. If no .NET application is being tested, disable the Test Impact and IntelliTrace diagnostic data adapters.</Text>
+        </DataCollectorMessage>
+      </DataCollectorMessages>
+    </UnitTestResult>
+  </Results>
+</TestRun>

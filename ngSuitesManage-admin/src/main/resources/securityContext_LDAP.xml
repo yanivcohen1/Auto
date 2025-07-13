@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+       xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+       <!-- 
+             This is configuration of the security for permission validation based 
+             on data from LDAP and data base.
+       -->    
+
+
+       <global-method-security pre-post-annotations="enabled"/>
+
+       <http use-expressions="true" disable-url-rewriting="true">
+             <intercept-url pattern="/CSS/**" access="permitAll" />
+             <intercept-url pattern="/Images/**" access="permitAll" />
+             <intercept-url pattern="/Rest/System/data/**" access="permitAll" />
+             <intercept-url pattern="/Rest/System/download/logs/**" access="permitAll" />
+             <intercept-url pattern="/Rest/testConnectivityHealth" access="permitAll" />
+             <intercept-url pattern="/Rest/testConnectivityHealthShort" access="permitAll" />
+             <intercept-url pattern="/Rest/testSystemHealth" access="permitAll" />
+             <intercept-url pattern="/Rest/clearAllCache" access="permitAll" />
+             <intercept-url pattern="/Rest/v1.0/ClaimBonus/**" access="permitAll" />
+             <intercept-url pattern="/Rest/v1.0/WageringCalculation/getStatus/**" access="permitAll" />
+             <intercept-url pattern="/Rest/v1.0/BonusActivityReport/**" access="permitAll" />
+             <intercept-url pattern="/login*" access="isAnonymous()" />
+             <intercept-url pattern="/**" access="isAuthenticated()" />
+             <intercept-url pattern="/WEB-INF/jsp/**" access="isAuthenticated()" />
+             <form-login login-page="/login.html" login-processing-url="/j_spring_security_check.action"
+                    authentication-failure-url="/login-failed.html" always-use-default-target="true" default-target-url="/" />
+             <!-- Uncomment to enable X509 client authentication support <x509 /> -->
+             <!-- Uncomment to limit the number of sessions a user can have <session-management 
+                    invalid-session-url="/timeout.jsp"> <concurrency-control max-sessions="1" 
+                    error-if-maximum-exceeded="true" /> </session-management> -->
+       </http>
+
+       <authentication-manager alias="authenticationManager">
+             <authentication-provider ref='ldapAuthProvider'/>
+       </authentication-manager>
+
+       <beans:bean id="ldapAuthProvider" class="org.springframework.security.ldap.authentication.LdapAuthenticationProvider">
+             <beans:constructor-arg>
+                     <beans:bean class="org.springframework.security.ldap.authentication.BindAuthenticator">
+                         <beans:constructor-arg ref="contextSource" />
+                         <beans:property name="userSearch" ref="ldapUserSearch" />                   
+                     </beans:bean>
+                 </beans:constructor-arg>
+                 <beans:constructor-arg>
+                     <beans:bean class="com.who.tlv.security.spring.ldap.MARSLdapAuthPopulator">
+                          <beans:constructor-arg ref="contextSource"/>
+                          <beans:constructor-arg value=""/>
+                          <beans:property name="groupsAttrName" value="memberOf" />
+                          <beans:property name="groupKey" value="cn" />
+                     </beans:bean>
+                 </beans:constructor-arg>
+       </beans:bean>
+
+       <beans:bean id="contextSource" class="org.springframework.ldap.core.support.LdapContextSource">
+             <beans:property name="url" value="ldap://10.1.1.24" />
+             <beans:property name="base" value="OU=Ad-Gency,OU=IL,DC=Adgency-Domain,DC=Ad-Gency,DC=com" />
+             <beans:property name="userDn" value="mars_ldap" />
+             <beans:property name="password" value="^TW$sdht44" />
+             <beans:property name="pooled" value="false" />
+       </beans:bean>
+             
+       <beans:bean id="ldapUserSearch" class="org.springframework.security.ldap.search.FilterBasedLdapUserSearch">
+             <beans:constructor-arg index="0" value="" />
+             <beans:constructor-arg index="1" value="(sAMAccountName={0})" />
+             <beans:constructor-arg index="2" ref="contextSource" />            
+              <beans:property name="searchSubtree" value="true" />
+       </beans:bean>
+       
+</beans:beans>

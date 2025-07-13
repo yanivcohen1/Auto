@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.williamhill.whgtf</groupId>
+	<artifactId>whgtf.telaviv</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>${project.artifactId}</name>
+	<description>WHGTF Cucumber Test Project</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<cucumber.version>1.2.4</cucumber.version>
+		<selenium.version>2.44.0</selenium.version>
+		<maven.cucumber.reporting.version>0.0.6</maven.cucumber.reporting.version>
+		<maven.compiler.version>3.2</maven.compiler.version>
+		<maven.surefire.version>2.18</maven.surefire.version>
+		<totallylazy.version>1077</totallylazy.version>
+		<surefire.thread.count>1</surefire.thread.count>
+	</properties>
+
+	<repositories>
+		<!-- <repository>
+			<id>nexus-releases</id>
+			<url>http://maven.apps.local:8082/nexus/content/repositories/releases/</url>
+		</repository>
+		<repository>
+			<id>nexus-snapshots</id>
+			<url>http://maven.apps.local:8082/nexus/content/repositories/snapshots/</url>
+		</repository> -->
+		<repository>
+			<id>oss.sonatype.org</id>
+			<url>https://oss.sonatype.org/content/repositories/releases/</url>
+		</repository>
+		<repository>
+			<id>oss.sonatype.org2</id>
+			<url>http://oss.sonatype.org/content/groups/public</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>maven.jenkins-ci.org</id>
+			<url>http://maven.jenkins-ci.org/content/groups/artifacts/</url>
+		</repository>
+		<repository>
+			<id>repo1.maven.org</id>
+			<url>http://repo1.maven.org/maven2/</url>
+		</repository>
+		<!-- <repository>
+			<id>repository.codehaus.org</id>
+			<url>http://repository.codehaus.org/</url>
+		</repository> -->
+		<repository>
+			<id>download.oracle.com</id>
+			<url>http://download.oracle.com/maven</url>
+		</repository>
+		<repository>
+			<id>repository.apache.org</id>
+			<url>https://repository.apache.org/content/groups/public/</url>
+		</repository>
+		<repository>
+			<id>download.java.net</id>
+			<url>http://download.java.net/maven/2/</url>
+		</repository>
+		<repository>
+			<id>repo.bodar.com</id>
+			<url>http://repo.bodar.com</url>
+		</repository>
+		<repository>
+			<id>repository.jboss.org</id>
+			<url>http://repository.jboss.org/nexus/content/groups/public/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+
+	<profiles>
+		<profile>
+			<id>parallel</id>
+			<properties>
+				<surefire.thread.count>${threads}</surefire.thread.count>
+			</properties>
+		</profile>
+	</profiles>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven.compiler.version}</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>${maven.surefire.version}</version>
+				<configuration>
+					<testFailureIgnore>true</testFailureIgnore>
+					<forkCount>${surefire.thread.count}</forkCount>
+					<reuseForks>false</reuseForks>
+					<parallel>classes</parallel>
+					<useUnlimitedThreads>true</useUnlimitedThreads>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>net.masterthought</groupId>
+				<artifactId>maven-cucumber-reporting</artifactId>
+				<version>${maven.cucumber.reporting.version}</version>
+				<executions>
+					<execution>
+						<id>execution</id>
+						<phase>test</phase>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+						<configuration>
+							<projectName>${project.artifactId}</projectName>
+							<outputDirectory>${project.build.directory}/cucumber/cucumber-html-reports</outputDirectory>
+							<cucumberOutput>${project.build.directory}/cucumber/cucumber-json-report.json</cucumberOutput>
+							<enableFlashCharts>true</enableFlashCharts>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<!-- Cucumber Dependencies -->
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- <dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>1.2.4</version>
+		</dependency> -->
+
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-picocontainer</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope> 
+		</dependency>
+		
+		<dependency>
+		    <groupId>net.masterthought</groupId>
+		    <artifactId>cucumber-reporting</artifactId>
+		    <version>3.4.0</version>
+		</dependency>
+		<!-- WHGTF Dependencies -->
+		<!-- <dependency>
+			<groupId>com.williamhill.whgtf</groupId>
+			<artifactId>whgtf-automation-scripting-language</artifactId>
+			<version>RELEASE</version>
+		</dependency> -->
+		<!-- required by maven-cucumber-reporting plugin -->
+		<dependency>
+			<groupId>com.googlecode.totallylazy</groupId>
+			<artifactId>totallylazy</artifactId>
+			<version>${totallylazy.version}</version>
+		</dependency>
+		
+	</dependencies>
+
+</project>

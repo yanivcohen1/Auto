@@ -1,0 +1,22 @@
+{
+    "testmanageApp": {
+        "tests" : {
+            "home": {
+                "title": "Testss",
+                "createLabel": "Create a new Tests",
+                "createOrEditLabel": "Create or edit a Tests"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Tests {{ id }}?"
+            },
+            "detail": {
+                "title": "Tests"
+            },
+            "test_name": "Test_name",
+            "class_name": "Class_name",
+            "parameter_name": "Parameter_name",
+            "parameter_value": "Parameter_value",
+            "suite": "suite"
+        }
+    }
+}

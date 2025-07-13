@@ -1,0 +1,61 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:c="urn:import:com.google.gwt.user.cellview.client">
+
+	<ui:style>
+	.header {
+		font-size: 150%;
+		color: gray;
+		text-align: center;
+		font-weight:bold;
+		margin: 0;
+	}
+	.buttonOK {
+		background: #04c;
+		font-size: 150%;
+		color: White;
+		text-align: center;
+		font-weight:bold;
+		margin:auto;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.buttonCancel {
+		background: gray;
+		font-size: 150%;
+		color: White;
+		text-align: center;
+		font-weight:bold;
+		margin:auto;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.cellTable {
+		border-bottom: 1px solid #ccc;
+		text-align: left;
+		margin-bottom: 4px;
+	}
+	</ui:style>
+
+	<g:HTMLPanel>
+		<table cellspacing='0' cellpadding='0' >
+			<tr>
+				<td>
+					<g:Label addStyleNames='{style.header}' text="New Test" ui:field="msgLable" />
+				</td>
+			</tr>
+			<tr>
+				<td valign='top' align="center">
+					<c:CellTable addStyleNames='{style.cellTable}'
+						pageSize='1' ui:field='table' />
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<g:Button text="OK" ui:field="okButten" styleName='{style.buttonOK}' />
+					<g:Button text="Cancel" ui:field="cancelButten" styleName='{style.buttonCancel}'/>
+				</td>
+			</tr>
+		</table>
+	</g:HTMLPanel>
+</ui:UiBinder>

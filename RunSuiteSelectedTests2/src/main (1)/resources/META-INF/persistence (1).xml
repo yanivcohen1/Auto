@@ -1,0 +1,41 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+    
+    <persistence-unit name="RunSuiteSelectedTests" transaction-type="RESOURCE_LOCAL">
+    	<provider>org.hibernate.ejb.HibernatePersistence</provider>
+    	<class>com.who.test.server.db.model.Classe</class>
+    	<class>com.who.test.server.db.model.Parameters</class>
+    	<class>com.who.test.server.db.model.Suites</class>
+    	<class>com.who.test.server.db.model.Tests</class>
+      <properties>
+       	<!-- <property name="hibernate.connection.username" value="root"/>
+		<property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/testsdb"/>
+		<property name="hibernate.connection.driver_class" value="org.gjt.mm.mysql.Driver"/>
+ -->	<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/testsdb"/>
+		<property name="javax.persistence.jdbc.user" value="root"/>
+		<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+		<property name="hibernate.archive.autodetection" value="class"/>
+		<property name="hibernate.format_sql" value="true"/>
+		<property name="hibernate.hbm2ddl.auto" value="validate"/><!-- create-drop -->
+		<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect"/>
+			
+        <property name="hibernate.max_fetch_depth" value="3"/>
+        <property name="hibernate.show_sql" value="false"/>
+        <property name="eclipselink.logging.level" value="FINE"/>
+        <property name="openjpa.Log" value="DefaultLevel=WARN, Runtime=INFO, Tool=INFO, SQL=TRACE"/>
+        <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+        <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/testsdb"/>
+        <property name="hibernate.connection.username" value="root"/>
+       
+         <!-- cache configuration -->
+         <!-- <property name="hibernate.ejb.classcache.org.hibernate.ejb.test.Item" value="read-write"/>
+         <property name="hibernate.ejb.collectioncache.org.hibernate.ejb.test.Item.distributors" value="read-write, RegionName"/> -->
+
+         <!-- alternatively to <class> and <property> declarations, you can use a regular hibernate.cfg.xml file -->
+         <!-- property name="hibernate.ejb.cfgfile" value="/org/hibernate/ejb/test/hibernate.cfg.xml"/ -->
+      </properties>
+   </persistence-unit>
+
+</persistence>

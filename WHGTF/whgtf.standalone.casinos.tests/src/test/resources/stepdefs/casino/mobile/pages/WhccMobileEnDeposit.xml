@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+      http://www.springframework.org/schema/beans 
+      http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+      http://www.springframework.org/schema/context 
+      http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <context:annotation-config/>
+    <context:component-scan base-package="com.wh.auto"/>
+    <context:property-placeholder location="classpath:utility.properties" />
+       	   
+    <bean class="stepdefs.casino.mobile.pages.RegisterPage" lazy-init="true">
+        <property name="linkOrder" value="4" />
+        <property name="casinoName" value="WhccChromeMobileEN" />
+    </bean>
+    
+    <bean class="stepdefs.casino.mobile.pages.DepositPage" lazy-init="true">
+        <property name="month" value="February" />
+        <property name="currency" value="£" />
+    </bean>
+    
+</beans>

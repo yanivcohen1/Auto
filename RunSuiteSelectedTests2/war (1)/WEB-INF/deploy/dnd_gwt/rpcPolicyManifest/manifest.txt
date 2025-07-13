@@ -1,0 +1,3 @@
+# Module dnd_gwt
+# RPC service class, partial path of RPC policy file
+com.who.test.client.IMainService, 9234F85D23572639DB55066D1A96E81F.gwt.rpc

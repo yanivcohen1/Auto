@@ -1,0 +1,39 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "tests",
+            "otherEntityName": "tests",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "suite"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "suite_name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "xml_file_location",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "jenkins_url",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20170207071533",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "suite",
+    "pagination": "pagination"
+}

@@ -1,0 +1,70 @@
+
+<div>
+    <h2><span translate="testmanagerApp.tests.detail.title">Tests</span> {{tests.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="testmanagerApp.tests.test_name">Test_name</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{tests.test_name}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="testmanagerApp.tests.class_name">Class_name</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{tests.class_name}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="testmanagerApp.tests.method_name">method_name</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{tests.method_name}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="testmanagerApp.tests.parameter_name">Parameter_name</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{tests.parameter_name}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="testmanagerApp.tests.parameter_value">Parameter_value</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{tests.parameter_value}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="testmanagerApp.tests.suite">suite</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{tests.suite.suite_name}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="tests"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

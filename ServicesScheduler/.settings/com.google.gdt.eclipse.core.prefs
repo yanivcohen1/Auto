@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+jarsExcludedFromWebInfLib=
+launchConfigExternalUrlPrefix=http\://10.1.2.9\:443/ServicesWebsite/
+warSrcDir=war
+warSrcDirIsOutput=true

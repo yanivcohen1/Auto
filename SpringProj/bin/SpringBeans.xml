@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+	xmlns:context="http://www.springframework.org/schema/context">
+
+	<!-- <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/> -->
+	
+	<bean id="customer" class="com.spring.common.Customer" >
+		<property name="action" value="buy" />
+		<property name="type" value="1" />
+	</bean>
+		
+	<bean id="personA" class="com.spring.common.Person" >
+		<property name="name" value="mkyongA" />
+	</bean>
+	
+	<context:annotation-config/>
+	
+	<context:component-scan base-package="com.spring.common"></context:component-scan>
+	
+</beans>

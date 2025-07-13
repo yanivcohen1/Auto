@@ -1,0 +1,29 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "suite",
+            "otherEntityName": "suite",
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": [
+                "required"
+            ],
+            "otherEntityField": "suiteName"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "testName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20170925082559",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "tests",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pagination"
+}

@@ -1,0 +1,124 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 22,
+            "value": "#| value21 | value22 | value23 |"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 4610437992,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSteps.before(Scenario)"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Login with guest account2",
+        "description": "",
+        "id": "login;login-with-guest-account2;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 33771,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSteps.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7284053741,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "a precondition has value value31 val value32",
+            "match": {
+              "arguments": [
+                {
+                  "val": "31",
+                  "offset": 30
+                },
+                {
+                  "val": "32",
+                  "offset": 42
+                }
+              ],
+              "location": "GamingStepDef.a_precondition_has_value_value_val_value(int,int)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 120185,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "something with value32",
+            "match": {
+              "arguments": [
+                {
+                  "val": "32",
+                  "offset": 20
+                }
+              ],
+              "location": "GamingStepDef.something_with_value(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2311652,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "check value33 is the output",
+            "match": {
+              "arguments": [
+                {
+                  "val": "33",
+                  "offset": 11
+                }
+              ],
+              "location": "GamingStepDef.check_value_is_the_output(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "login.feature"
+  }
+]

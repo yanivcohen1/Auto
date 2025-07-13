@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <context:annotation-config/>
+    <context:component-scan base-package="com.wh.auto"/>
+    
+    <bean id="Browsers" class="com.wh.auto.common.Browsers">
+    </bean>
+    
+    <bean id="applicationContextProvider" class="com.wh.auto.repository.ApplicationContextProvider"/>
+
+	<bean class="com.wh.auto.eurogrand.mobile.TestDepositMobile" lazy-init="true">
+        <property name="scenario" value="RegisterDepositEn" />
+        <property name="feature" value="Eurogrand/RegisterDeposit.feature" />
+    </bean>
+
+	<bean class="com.wh.auto.eurogrand.mobile.pages.MainWebPage" lazy-init="true">
+        <property name="browserType" value="safari" />
+        <property name="url" value="http://ads.eurogrand.com/redirect.aspx?pid=17213278&amp;lpid=1485379745&amp;bid=1485897945" />
+        <property name="language" value="http://www.eurogrand.com" />
+        <property name="userAgent" value="Mozilla/5.0 (iPhone; U; CPU iPhone OS 5_1_1 like Mac OS X; da-dk) AppleWebKit/534.46.0 (KHTML, like Gecko) CriOS/19.0.1084.60 Mobile/9B206 Safari/7534.48.3" />
+    </bean>
+       	   
+    <bean class="com.wh.auto.eurogrand.mobile.pages.RegisterPage" lazy-init="true">
+        <property name="linkOrder" value="4" />
+        <property name="playersUsersName" value="\\PlayersUsersNames.txt" />
+        <property name="casinoName" value="EgMobileSafariEN" />
+    </bean>
+    
+    <bean class="com.wh.auto.eurogrand.mobile.pages.DepositPage" lazy-init="true">
+        <!-- <constructor-arg><ref bean="Browsers"/></constructor-arg> -->
+        <property name="month" value="February" />
+        <property name="currency" value="£" />
+    </bean>
+    
+</beans>

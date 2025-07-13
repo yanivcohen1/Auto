@@ -1,0 +1,1 @@
+http://blog.stevensanderson.com/2016/10/04/angular2-template-for-visual-studio/

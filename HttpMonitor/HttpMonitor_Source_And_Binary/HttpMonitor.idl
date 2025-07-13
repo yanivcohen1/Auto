@@ -1,0 +1,74 @@
+// HttpMonitor.idl : IDL source for HttpMonitor
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (HttpMonitor.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(1DDEADAB-4555-4880-AAEB-C564D6E8D222),
+	dual,
+	nonextensible,
+	helpstring("IHttpMon Interface"),
+	pointer_default(unique)
+]
+interface IHttpMon : IDispatch{
+	[propget, id(1), helpstring("property IEWindow")] HRESULT IEWindow([out, retval] LONG* pVal);
+	[propput, id(1), helpstring("property IEWindow")] HRESULT IEWindow([in] LONG newVal);
+};
+[
+	uuid(4C05CC35-4113-4626-833A-DC1C231184CC),
+	version(1.0),
+	helpstring("HttpMonitor 1.0 Type Library")
+]
+library HttpMonitorLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(E1127FDE-80F7-4E86-A601-71BB885CE9DA),
+		helpstring("_IHttpMonEvents Interface")
+	]
+	dispinterface _IHttpMonEvents
+	{
+		properties:
+		methods:
+		[id(1), helpstring("OnRequest Event")]
+		void OnRequest([in] LONG id, [in] LONG containerId, [in] BSTR url, [in] BSTR headers, [in] BSTR method, [in] VARIANT postData);
+		[id(2), helpstring("OnResponse Event")]
+		void OnResponse([in] LONG id, [in] LONG containerId, [in] BSTR url, [in] LONG responseCode, [in] BSTR headers);
+		[id(3), helpstring("OnRedirect Event")]
+		void OnRedirect([in] LONG id, [in] LONG containerId, [in] LONG redirectedId, [in] BSTR url, [in] BSTR redirectedUrl, [in] BSTR responseHeaders, [in] BSTR requestHeaders);
+		[id(4), helpstring("OnDataRecieved Event")]
+		void OnDataRecieved([in] LONG id, [in] LONG containerId, [in] BSTR url, [in] VARIANT data, [in] VARIANT_BOOL isComplete);
+		[id(5), helpstring("OnCookieSent Event")]
+		void OnCookieSent([in] LONG id, [in] LONG containerId, [in] BSTR url, [in] BSTR cookies);
+		[id(6), helpstring("OnCookieRecieved Event")]
+		void OnCookieRecieved([in] LONG id, [in] LONG containerId, [in] BSTR url, [in] BSTR cookies);
+		[id(7), helpstring("OnCacheLoaded Event")]
+		void OnCacheLoaded([in] LONG id, [in] LONG containerId, [in] BSTR url, [in] BSTR location);
+		[id(8), helpstring("OnMimeTypeAvailable Event")]
+		void OnMimeTypeAvailable([in] LONG id, [in] LONG containerId, [in] BSTR url, [in] BSTR type);
+		[id(9), helpstring("OnP3PHeaderRecieved Event")]
+		void OnP3PHeaderRecieved([in] LONG id, [in] LONG containerId, [in] BSTR url, [in] BSTR p3PHeader);
+		[id(10), helpstring("OnError Event")]
+		void OnError([in] LONG id, [in] LONG containerId, [in] BSTR url, [in] LONG result, [in] LONG errorCode);
+		[id(11), helpstring("ConfirmRequest Event")]
+		void ConfirmRequest([in] LONG id, [in] LONG containerId, [in] BSTR url, [in] LONG totalInstances, [in,out] VARIANT_BOOL * itsMine);
+		[id(12), helpstring("OnProgress Event")]
+		void OnProgress([in] LONG id, [in] LONG containerId, [in] BSTR url, [in] LONG grfBSCF, [in] ULONG progress, [in] ULONG progressMax);
+		[id(13), helpstring("GetIUnknownOnStart Event")]
+		void GetIServiceProviderOnStart([in] LONG id, [in] LONG containerId, [in] BSTR url, [in] LONG ptr);
+	};
+	[
+		uuid(D5DEA129-C130-4268-A3AB-14CED69E052D),
+		helpstring("HttpMon Class")
+	]
+	coclass HttpMon
+	{
+		[default] interface IHttpMon;
+		[default, source] dispinterface _IHttpMonEvents;
+	};
+};

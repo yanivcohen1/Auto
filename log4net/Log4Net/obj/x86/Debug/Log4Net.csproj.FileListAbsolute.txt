@@ -1,0 +1,1 @@
+C:\SVN\log4net\Log4Net\obj\x86\Debug\ResolveAssemblyReference.cache

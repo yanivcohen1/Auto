@@ -1,0 +1,48 @@
+package cucumber_runners;
+
+import junit.framework.JUnit4TestAdapter;
+import junit.framework.TestResult;
+import junit.framework.TestSuite;
+import junit.textui.TestRunner;
+
+import org.junit.Test;
+import org.junit.internal.runners.JUnit4ClassRunner;
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
+import org.junit.runners.AllTests;
+
+import cucumber.api.junit.Cucumber;
+
+@RunWith(AllTests.class)
+public class tests
+{
+	public static TestSuite suite;
+    public static TestSuite suite()
+    {
+        suite = new TestSuite();
+        //suite.addTest();
+        JUnit4TestAdapter jUnit4TestAdapter = new JUnit4TestAdapter(DropdownRunner.class);
+        suite.addTest(jUnit4TestAdapter);
+        //TestResult result = TestRunner.run(jUnit4TestAdapter);
+        
+        //suite.run(result);
+        //JUnitCore junit = new JUnitCore();
+        //Result result = junit.run(runnerOld.class);
+        //suite.run(result.);//(new JUnit4TestAdapter(runnerOld.class));
+
+        return suite;
+     }
+}
+
+/*@RunWith(Cucumber.class)
+public class test1 {
+
+	public void main() {
+		JUnitCore junit = new JUnitCore();
+		Result result = junit.run(runnerOld.class);
+	}
+
+}*/

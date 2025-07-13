@@ -1,0 +1,22 @@
+<div class="modal-header">
+    <h3 class="modal-title">New Suite</h3>
+</div>
+<table>
+    <tr ng-class-odd="'odd'" ng-class-even="'even'">   
+        <td class="rowTd">Suite Name:</td>
+        <td class="rowTd">Xml FileLocation:</td>
+        <td class="rowTd">Jenkins URL:</td>
+    </tr>
+	<tr ng-class-odd="'odd'" ng-class-even="'even'">    
+        <td class="rowTd"><input data-ng-model="newSuite.suiteName" type="text" placeholder="Suite Name" value="{{suiteName}}" style="width:100%; padding-left:0px; padding-right:0px;"></td>
+        <td class="rowTd"><input data-ng-model="newSuite.xmlFileLocation" type="text" placeholder="XML File Location" value="{{xmlFileLocation}}" style="width:100%; padding-left:0px; padding-right:0px;"></td>
+        <td class="rowTd"><input data-ng-model="newSuite.jenkinsURL" type="text" placeholder="Jenkins URL" style="width:100%; padding-left:0px; padding-right:0px;"></td>
+    </tr>
+</table>
+<div class="modal-footer">
+	<button id="newSuite" class="btn btn-primary" type="button"
+		data-ng-disabled="!newSuite.suiteName || !newSuite.xmlFileLocation || !newSuite.jenkinsURL"
+		data-ng-click="insertSuite(newSuite.suiteName, newSuite.xmlFileLocation, newSuite.jenkinsURL)">Save
+	</button>
+	<button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+</div>

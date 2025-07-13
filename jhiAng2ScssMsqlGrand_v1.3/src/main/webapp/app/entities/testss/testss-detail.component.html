@@ -1,0 +1,37 @@
+
+<div *ngIf="testss">
+    <h2><span>Testss</span> {{testss.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span>Name</span></dt>
+        <dd>
+            <span>{{testss.name}}</span>
+        </dd>
+        <dt><span>Val</span></dt>
+        <dd>
+            <span>{{testss.val}}</span>
+        </dd>
+        <dt><span>Enums</span></dt>
+        <dd>
+            <span>{{testss.enums}}</span>
+        </dd>
+        <dt><span>Dates</span></dt>
+        <dd>
+            <span>{{testss.dates | date:'mediumDate'}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'testss/'+ testss.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span> Edit</span>
+    </button>
+</div>

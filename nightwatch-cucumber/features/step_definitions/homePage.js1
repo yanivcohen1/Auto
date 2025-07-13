@@ -1,0 +1,56 @@
+// features/step_definitions/stepDefinitions.js
+//var homePage = require('../pages/homePage.js');
+const { client } = require('nightwatch-cucumber')
+const { defineSupportCode } = require('cucumber')
+
+defineSupportCode(({ Given, Then, When }) => {
+
+  const BRAND = {EG:"EG", WHCC:"WHCC"}
+  const TYPE =  {MOBI:"MOBI", DESK:"DESK"}
+
+  var language;
+  var brand;
+  var type;
+
+  this.getLanguage = function() {
+    return language;
+  }
+
+  this.getBrand = function() {
+    return brand;
+  }
+
+  this.getType = function() {
+    return type;
+  }
+
+  this.Given(/^migUser language "([^"]*)" and Brand "([^"]*)" and "([^"]*)"$/, function (language, brand, type, callback) {
+        this.language = language;
+        if (brand === "EG") {
+          this.brand = BRAND.EG;
+        }else if (brand === "WHCC"){
+          this.brand = BRAND.WHCC;
+        }
+        if (type === "MOBI") {
+          this.type = TYPE.MOBI;
+        }else if (type === "DESK"){
+          this.type = TYPE.DESK;
+        }
+         callback();
+       });
+
+  this.Given(/^migUser is navigating to "([^"]*)"$/, function (url, callback) {
+        browser.get(url);
+        callback();
+       });
+
+  this.Given(/^migUser Click Register top Button$/, function (callback) {
+      var css = "#eg_hp_joinnow";
+      browser
+        .wait(until.presenceOf(element(by.css(css))), 5000, 'Element taking too long')
+        element(by.css(css)).click()
+        .sleep(2000);
+      callback();
+    });
+
+});

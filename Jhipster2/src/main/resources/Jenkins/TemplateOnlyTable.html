@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="$suiteName" verbose="1">
+
+<!-- 	<test name="BuildClients">
+		<parameter name="parametersFileName"  value="ClientsTest.ini"/>
+		<classes>
+			<class name="com.wh.auto.clients.TestBuildClients" />
+		</classes>	
+	</test> -->
+	
+#set( $index = 0 )
+#foreach( $test in $tests )
+	<test name="$test.getTest_name()">
+		<parameter name="$test.getParameter_name()" value="$test.getParameter_value()"/> 
+		<classes>
+			<class name="$test.getClass_name()" />
+		</classes>
+       #set( $index = $index + 1 )
+	</test>
+    
+#end
+
+</suite>

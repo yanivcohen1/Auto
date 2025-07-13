@@ -1,0 +1,309 @@
+package com.who.rest.service;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+//import javax.ejb.Stateless;
+import javax.persistence.Query;
+import javax.transaction.Transactional;
+
+import org.apache.log4j.Logger;
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+//import org.springframework.transaction.annotation.Transactional;
+import com.who.rest.data.SuitesData;
+import com.who.rest.data.SuitesDatas;
+import com.who.rest.data.TestsData;
+import com.who.rest.data.TestsDataFlat;
+import com.who.rest.data.TestsDatasf;
+import com.who.rest.db.model.Classe;
+import com.who.rest.db.model.Parameters;
+import com.who.rest.db.model.Suites;
+import com.who.rest.db.model.Tests;
+import com.who.rest.util.Common;
+import com.who.rest.util.Loger;
+
+@Service
+public class TestsUtil extends Common{
+	
+	Logger logger = Loger.getLoger();
+	
+	public static void main(String[] args) throws IOException, InterruptedException {
+		TestsUtil tcr = new TestsUtil();
+		//tcr.getTests();
+	}
+	
+	@Transactional
+	public List<String> GetSuiteTests(String suiteName) {
+		List<String> returnList = null;
+		
+		String HQL = "select testss from Tests as testss "+ 
+			     "where testss.suites.suiteName =:suiteName "+
+			     "order by testss.testName";
+		Query query = getEntityManager().createQuery(HQL);
+		query.setParameter("suiteName", suiteName);
+		List<Tests> tests = query.getResultList();
+		for (Tests test : tests) {
+			returnList.add(test.getTestName());
+		}
+		return returnList;
+	}
+	
+	@Transactional
+	public List<String> getAllSuitsNames() {
+		List<String> returnList = new ArrayList<String>();
+		String HQL = "select suitess from Suites as suitess "+ 
+			     	 "order by suitess.suiteName";
+
+		List<Suites> suites = getEntityManager().createQuery(HQL).getResultList();
+		for (Suites suite : suites) {
+			returnList.add(suite.getSuiteName());
+		}
+		return returnList;
+	}
+	
+	@Transactional
+	public List<TestsDataFlat> getTestsData(int id) throws IllegalArgumentException {
+		String HQL = "";
+		List<Tests> tests = null;
+		if (id == -1) {
+			HQL = "select testss from Tests as testss "+
+					 "order by testss.testName, testss.suites.suiteName ";
+			Query query = getEntityManager().createQuery(HQL);
+			tests = query.getResultList();
+			
+		}else{
+			
+			HQL = "select testss from Tests as testss "+
+				  "where testss.suites.suitesId =:suitesId "+
+			      "order by testss.testName, testss.suites.suiteName ";
+			Query query = getEntityManager().createQuery(HQL);
+			query.setParameter("suitesId", id);
+			tests = query.getResultList();
+		}	
+		return convertTestsToTestDataf(tests);
+	}
+
+	@Transactional
+	public List<Tests> getTestsNames(String suiteName) throws IllegalArgumentException {
+		List<Tests> returnList = new ArrayList<Tests>();
+		String[] returnArray = null;
+		String HQL = "select testss from Tests as testss "+ 
+			     "where testss.suites.suiteName =:suiteName "+
+			     "order by testss.testName";
+		Query query = getEntityManager().createQuery(HQL);
+		query.setParameter("suiteName", suiteName);
+		List<Tests> tests =query.getResultList();
+		for (Tests test : tests) {
+			returnList.add(test);
+		}
+		return returnList;	
+	}
+	
+	public List<TestsData> convertTestsToTestData(List<Tests> tests) {
+		List<TestsData> testData = new ArrayList<TestsData>();
+		for (Tests test : tests) {
+				List<Integer> parametersIDs = new ArrayList<Integer>();
+				List<String> parametersNames = new ArrayList<String>();
+				List<String> parametersValues = new ArrayList<String>();
+				List<Integer> classesIDs = new ArrayList<Integer>();
+				List<String> classesNames = new ArrayList<String>();
+				for (Parameters parameter : test.getParameterses()) {
+					parametersIDs.add(parameter.getParameterId());
+					parametersNames.add(parameter.getParameterName());
+					parametersValues.add(parameter.getParameterValue());
+				}
+				for (Classe classe : test.getClasses()) {
+					classesIDs.add(classe.getClassId());
+					classesNames.add(classe.getClassName());
+				}
+				TestsData testsData = new TestsData();
+				testsData.setTestId(test.getTestsId());
+				testsData.setTestName(test.getTestName());
+				testsData.setSuiteId(test.getSuites().getSuitesId());
+				testsData.setSuiteName(test.getSuites().getSuiteName());
+				testsData.setParametersIDs(parametersIDs);
+				testsData.setParametersNames(parametersNames);
+				testsData.setParametersValues(parametersValues);
+				testsData.setClassesIDs(classesIDs);
+				testsData.setClassesNames(classesNames);
+				testData.add(testsData);
+		}
+		return testData;
+	}
+	
+	@Transactional
+	public boolean updateTests(List<TestsDataFlat> testsDataf) throws IllegalArgumentException {
+		try {
+			List<Suites> suites = convertTestDatafToTests(testsDataf);
+			
+			for (Suites suite : suites) {
+				getEntityManager().persist(suite);
+				logger.debug("taskId:"+ suite.getSuitesId());
+			}
+		}
+		catch (HibernateException e) {
+			logger.error("UpdateTests error", e);
+			throw new IllegalArgumentException("Error:" + e.getMessage());
+		}
+		return true;
+	}
+		
+	@Transactional
+	public boolean removeTest(int id) throws IllegalArgumentException {
+		try {
+			Tests test = getEntityManager().find(Tests.class, id);
+			String testName = test.getTestName();
+			getEntityManager().remove(test);
+			logger.debug("taskId:"+ testName);
+		}
+		catch (HibernateException e) {
+			logger.error("RemoveTest error", e);
+			throw new IllegalArgumentException("Error:" + e.getMessage());
+		}
+		return true;
+	}
+	
+	@Transactional
+	public boolean addTest(TestsDataFlat testsData) throws IllegalArgumentException {
+			try {
+				String HQL = "select suite from Suites as suite " +
+						"where suite.suiteName=:suiteName ";
+				Query query = getEntityManager().createQuery(HQL);
+				query.setParameter("suiteName", testsData.getSuiteName());
+				List<Suites> suites = query.getResultList();
+				Suites suite;
+				if (suites.size() != 0) {
+					suite = suites.get(0);
+				}else{
+					suite = new Suites();
+					suite.setSuiteName(testsData.getSuiteName());
+					getEntityManager().persist(suite);
+				}
+				suite.setSuiteName(testsData.getSuiteName());
+				Tests test = new Tests();
+				test.setTestName(testsData.getTestName());
+				//test.setTestsId(testsData.getTestId());
+				test.setSuites(suite);
+				suite.getTestses().add(test);
+				getEntityManager().persist(test);
+				
+				for (int i = 0; i < testsData.getParametersNames().size(); i++) {
+					Parameters parameters = new Parameters(test, testsData.getParametersNames().get(i),
+							testsData.getParametersValues().get(i));
+					test.getParameterses().add(parameters);
+					getEntityManager().persist(parameters);
+				}
+				
+				for (int i = 0; i < testsData.getClassesNames().size(); i++) {
+					Classe classes = new Classe(test, testsData.getClassesNames().get(i));
+					test.getClasses().add(classes);
+					getEntityManager().persist(classes);
+				}
+				getEntityManager().merge(test);
+				getEntityManager().merge(suite);
+				logger.debug("taskId:" + test.getTestsId());
+			}
+			catch (HibernateException e) {
+				logger.error("AddTest error", e);
+				throw new IllegalArgumentException("Error:" + e.getMessage());
+			}
+			return true;
+	}
+	
+	@Transactional
+	public List<Suites> convertTestDataToTests(List<TestsData> testsDatas) {
+		List<Suites> suites = new ArrayList<Suites>();
+		for (TestsData testData : testsDatas) {
+			Suites suite = getSuite(testData.getSuiteId(), suites);
+			suite.setSuiteName(testData.getSuiteName());
+			Tests test = getEntityManager().find(Tests.class, testData.getTestId());
+			test.setTestName(testData.getTestName());
+			for (int i = 0; i < testData.getParametersIDs().size(); i++) {
+				Parameters parameters = getEntityManager().find(Parameters.class, testData.getParametersIDs().get(i));
+				parameters.setParameterName(testData.getParametersNames().get(i));
+				parameters.setParameterValue(testData.getParametersValues().get(i));
+			}
+			for (int i = 0; i < testData.getClassesIDs().size(); i++) {
+				Classe classes = getEntityManager().find(Classe.class, testData.getClassesIDs().get(i));
+				classes.setClassName(testData.getClassesNames().get(i));
+			}
+		}
+		return suites;
+	}
+	
+	private Suites getSuite(Integer suiteId ,List<Suites> suites) {
+		Suites suite = null;
+		boolean find = false;
+		for (Suites suite2 : suites) {
+			if(suite2.getSuitesId() == suiteId){
+				suite = suite2;
+				find = true;
+				break;
+			}
+		}
+		if (!find) {
+			suite  = getEntityManager().find(Suites.class, suiteId);
+			suites.add(suite);
+		}
+		return suite;
+	}
+	
+	public List<TestsDataFlat> convertTestsToTestDataf(List<Tests> tests) {
+		List<TestsDataFlat> testDataf = new ArrayList<TestsDataFlat>();
+		for (Tests test : tests) {
+				List<Integer> parametersIDs = new ArrayList<Integer>();
+				List<String> parametersNames = new ArrayList<String>();
+				List<String> parametersValues = new ArrayList<String>();
+				List<Integer> classesIDs = new ArrayList<Integer>();
+				List<String> classesNames = new ArrayList<String>();
+				for (Parameters parameter : test.getParameterses()) {
+					parametersIDs.add(parameter.getParameterId());
+					parametersNames.add(parameter.getParameterName());
+					parametersValues.add(parameter.getParameterValue());
+				}
+				for (Classe classe : test.getClasses()) {
+					classesIDs.add(classe.getClassId());
+					classesNames.add(classe.getClassName());
+				}
+				TestsDataFlat testsDataFlat = new TestsDataFlat();
+				testsDataFlat.setTestId(test.getTestsId());
+				testsDataFlat.setTestName(test.getTestName());
+				testsDataFlat.setSuiteId(test.getSuites().getSuitesId());
+				testsDataFlat.setSuiteName(test.getSuites().getSuiteName());
+				testsDataFlat.setParametersIDs(parametersIDs);
+				testsDataFlat.setParametersNames(parametersNames);
+				testsDataFlat.setParametersValues(parametersValues);
+				testsDataFlat.setClassesIDs(classesIDs);
+				testsDataFlat.setClassesNames(classesNames);
+				testDataf.add(testsDataFlat);
+		}
+		return testDataf;
+	}
+	
+	@Transactional
+	public List<Suites> convertTestDatafToTests(List<TestsDataFlat> testsDataf) {
+		List<Suites> suites = new ArrayList<Suites>();
+		for (TestsDataFlat testData : testsDataf) {
+			Suites suite = getSuite(testData.getSuiteId(), suites);
+			suite.setSuiteName(testData.getSuiteName());
+			Tests test = getEntityManager().find(Tests.class, testData.getTestId());
+			test.setTestName(testData.getTestName());
+			for (int i = 0; i < testData.getParametersIDs().size(); i++) {
+				Parameters parameters = getEntityManager().find(Parameters.class, testData.getParametersIDs().get(i));
+				parameters.setParameterName(testData.getParametersNames().get(i));
+				parameters.setParameterValue(testData.getParametersValues().get(i));
+			}
+			for (int i = 0; i < testData.getClassesIDs().size(); i++) {
+				Classe classes = getEntityManager().find(Classe.class, testData.getClassesIDs().get(i));
+				classes.setClassName(testData.getClassesNames().get(i));
+			}
+		}
+		return suites;
+	}
+	
+}

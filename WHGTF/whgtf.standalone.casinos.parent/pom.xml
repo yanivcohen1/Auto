@@ -1,0 +1,348 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.williamhill.whgtf</groupId>
+	<artifactId>whgtf.standalone.casinos.parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<properties>
+		<selenium.version>2.48.2</selenium.version>
+		<spring.version>4.2.5.RELEASE</spring.version>
+        <!-- <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding> -->
+        <cucumber.version>1.2.0</cucumber.version>
+        <totallylazy.version>1077</totallylazy.version>
+        <surefire.thread.count>1</surefire.thread.count>
+        
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.cucumber.reporting.version>0.1.0</maven.cucumber.reporting.version>
+		<maven.compiler.version>3.2</maven.compiler.version>
+		<maven.surefire.version>2.18</maven.surefire.version>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>nexus-releases</id>
+			<url>http://maven.apps.local:8082/nexus/content/repositories/releases/</url>
+		</repository>
+		<repository>
+			<id>nexus-snapshots</id>
+			<url>http://maven.apps.local:8082/nexus/content/repositories/snapshots/</url>
+		</repository>
+		<repository>
+			<id>oss.sonatype.org</id>
+			<url>https://oss.sonatype.org/content/repositories/releases/</url>
+		</repository>
+		<repository>
+			<id>oss.sonatype.org2</id>
+			<url>http://oss.sonatype.org/content/groups/public</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>maven.jenkins-ci.org</id>
+			<url>http://maven.jenkins-ci.org/content/groups/artifacts/</url>
+		</repository>
+		<repository>
+			<id>repo1.maven.org</id>
+			<url>http://repo1.maven.org/maven2/</url>
+		</repository>
+		<repository>
+			<id>repository.codehaus.org</id>
+			<url>http://repository.codehaus.org/</url>
+		</repository>
+		<repository>
+			<id>download.oracle.com</id>
+			<url>http://download.oracle.com/maven</url>
+		</repository>
+		<repository>
+			<id>repository.apache.org</id>
+			<url>https://repository.apache.org/content/groups/public/</url>
+		</repository>
+		<repository>
+			<id>download.java.net</id>
+			<url>http://download.java.net/maven/2/</url>
+		</repository>
+		<repository>
+			<id>repo.bodar.com</id>
+			<url>http://repo.bodar.com</url>
+		</repository>
+		<repository>
+			<id>repository.jboss.org</id>
+			<url>http://repository.jboss.org/nexus/content/groups/public/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	
+	 <build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.1.2</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<attach>true</attach>
+				</configuration>
+			</plugin>
+
+			<plugin>
+		        <groupId>org.apache.maven.plugins</groupId>
+		        <artifactId>maven-javadoc-plugin</artifactId>
+		        <version>2.9.1</version>
+		        <configuration>
+		          Default configuration for all reports
+		          <helpfile>target/javadoc/help-doc.html</helpfile>
+		        </configuration>
+		      </plugin>
+			
+		</plugins>
+
+	</build>
+
+	<profiles>
+		<profile>
+			<id>parallel</id>
+			<properties>
+				<surefire.thread.count>${surefire.thread.count}</surefire.thread.count>
+			</properties>
+		</profile>
+	</profiles>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>jexcelapi</groupId>
+				<artifactId>jxl</artifactId>
+				<version>2.6</version>
+			</dependency>
+			<dependency>
+				<groupId>org.gatein.common</groupId>
+				<artifactId>common-logging</artifactId>
+				<version>2.2.2.Final</version>
+			</dependency>
+<!-- 			<dependency>
+				<groupId>org.uncommons</groupId>
+				<artifactId>reportng</artifactId>
+				<version>1.1.4</version>
+			</dependency> -->
+			<dependency>
+				<groupId>com.google.inject</groupId>
+				<artifactId>guice</artifactId>
+				<version>4.0</version>
+			</dependency>
+<!-- 			<dependency>
+				<groupId>org.testng</groupId>
+				<artifactId>testng</artifactId>
+				<version>6.9.10</version>
+			</dependency> -->
+
+			<dependency>
+				<artifactId>selenium-java</artifactId>
+				<groupId>org.seleniumhq.selenium</groupId>
+				<version>${selenium.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-core</artifactId>
+				<version>5.1.0.Final</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-validator</artifactId>
+				<version>5.2.4.Final</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-commons-annotations</artifactId>
+				<version>3.2.0.Final</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.hibernate.javax.persistence</groupId>
+				<artifactId>hibernate-jpa-2.0-api</artifactId>
+				<version>1.0.1.Final</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-entitymanager</artifactId>
+				<version>5.1.0.Final</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jboss.logging</groupId>
+				<artifactId>jboss-logging</artifactId>
+				<version>3.3.0.Final</version>
+			</dependency>
+
+			<!-- <dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>1.7.7</version>
+			</dependency> -->
+			<dependency>
+				<groupId>javax.ejb</groupId>
+				<artifactId>ejb-api</artifactId>
+				<version>3.0</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.validation</groupId>
+				<artifactId>validation-api</artifactId>
+				<version>1.1.0.Final</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+		 		<groupId>org.apache.velocity</groupId>
+		 		<artifactId>velocity</artifactId>
+	 			<version>1.7</version>
+	 		</dependency>
+
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-core</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-test</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<!-- <dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-log4j12</artifactId>
+				<version>1.7.7</version>
+			</dependency> -->
+			
+<!-- 			<dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-jvm-deps</artifactId>
+            <version>1.0.3</version>
+        </dependency> -->
+<!--         <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>compile</scope>
+        </dependency> -->
+        <!-- <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency> -->
+        
+        <dependency>
+            <groupId>com.sikulix</groupId>
+            <artifactId>sikulixapi</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+        
+        <!-- <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-spring</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency> -->
+        
+        <dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		
+<!--         <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency> -->
+        
+        <dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.1.7</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+			<version>1.1.7</version>
+		</dependency>
+	
+		<!-- New Dependency -->
+<!-- 		<dependency>
+			<groupId>com.williamhill.whgtf</groupId>
+			<artifactId>whgtf.standalone.casinos.lib</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency> -->
+		<!-- Cucumber Dependencies -->
+
+		<!-- WHGTF Dependencies -->
+		<dependency>
+			<groupId>com.williamhill.whgtf</groupId>
+			<artifactId>whgtf-automation-scripting-language</artifactId>
+			<version>3.1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${cucumber.version}</version>
+			<!-- <scope>test</scope> -->
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>${cucumber.version}</version>
+			<!-- <scope>test</scope> -->
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-picocontainer</artifactId>
+			<version>${cucumber.version}</version>
+			<!-- <scope>test</scope> -->
+		</dependency>
+		<!-- required by maven-cucumber-reporting plugin -->
+		<dependency>
+			<groupId>com.googlecode.totallylazy</groupId>
+			<artifactId>totallylazy</artifactId>
+			<version>${totallylazy.version}</version>
+		</dependency>
+
+		<!-- MAIL REPORT -->
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4.7</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>xml-apis</groupId>
+		    <artifactId>xml-apis</artifactId>
+		    <version>1.4.01</version>
+		</dependency>
+	</dependencies>
+
+	</dependencyManagement>
+</project>

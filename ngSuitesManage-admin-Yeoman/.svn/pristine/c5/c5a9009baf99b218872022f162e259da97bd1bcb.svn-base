@@ -1,0 +1,121 @@
+package com.who.rest.service;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Path;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
+import javax.transaction.Transactional;
+
+import org.apache.log4j.Logger;
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
+
+import com.sun.jersey.api.spring.Autowire;
+import com.who.rest.dao.jpa.IJpaSuitesDao;
+import com.who.rest.dao.jpa.IJpaTestsDao;
+import com.who.rest.dao.jpa.JpaSuitesDao;
+import com.who.rest.db.model.Classe;
+import com.who.rest.db.model.Parameters;
+import com.who.rest.db.model.Suites;
+import com.who.rest.db.model.Suites_;
+import com.who.rest.db.model.Tests;
+import com.who.rest.db.model.Tests_;
+import com.who.rest.dto.SuitesData;
+import com.who.rest.dto.SuitesDto;
+import com.who.rest.jenkins.RunJenkins;
+import com.who.rest.util.Common;
+import com.who.rest.util.Loger;
+
+@Repository
+public class ManualUtil extends Common{
+	
+	Logger logger = Loger.getLoger();
+	String manualSuiteName = "Manual Tests";
+	
+	@Autowired
+	private IJpaTestsDao jpaTestsDao;
+	
+	public static void main(String[] args) throws IOException, InterruptedException {
+		ManualUtil tcr = new ManualUtil();
+		//tcr.getTests();
+	}
+
+	@Transactional
+	public SuitesData getAllManualTets_old() throws IllegalArgumentException {
+		List<Tests> tests = null;
+		SuitesData returnList = new SuitesData();
+		try {// Manual Tests
+			String HQL = "select testss from Tests as testss "
+					+ "where testss.suites.suiteName =:suiteName "
+					+ "order by testss.testName";
+			Query query = getEntityManager().createQuery(HQL);
+			query.setParameter("suiteName", manualSuiteName);
+			tests = jpaTestsDao.runQuery(query);
+			for (Tests test : tests) {
+				returnList.getTestsName().add(test.getTestName());
+			}
+		} catch (Exception e) {
+			logger.error("getAllManualTets error", e);
+			throw new IllegalArgumentException("Error:" + e.getMessage());
+		}
+		return returnList;
+	}
+	
+	@Transactional
+	public SuitesData getAllManualTets() throws IllegalArgumentException {
+		List<Tests> tests = null;
+		SuitesData returnList = new SuitesData();
+		try {// Manual Tests
+			CriteriaBuilder builder = getEntityManager().getCriteriaBuilder();
+			CriteriaQuery<Tests> select = builder.createQuery(Tests.class);
+			Root<Tests> fromTests = select.from(Tests.class);
+			Path<Suites> fromSuites = fromTests.get(Tests_.suites);
+			Predicate equalsSuiteName = builder.equal(fromSuites.get(Suites_.suiteName), manualSuiteName);
+			//Predicate equalsLastName = builder.equal(fromPerson.get(Person_.lastName), lastName);
+			//select.where(builder.and(equalsFirstName, equalsLastName));
+			select.where(equalsSuiteName);
+			tests = getEntityManager().createQuery(select).getResultList();
+			//return em.createQuery(select).getResultList();
+			for (Tests test : tests) {
+				returnList.getTestsName().add(test.getTestName());
+			}
+		} catch (Exception e) {
+			logger.error("getAllManualTets error", e);
+			throw new IllegalArgumentException("Error:" + e.getMessage());
+		}
+		return returnList;
+	}
+
+	@Transactional
+	public void RunManualTest(SuitesData testData, String testManualContent) throws IllegalArgumentException {
+			if (testData.getTestName() != null) {
+				testData.setSuiteName(manualSuiteName);
+				testData.getTestsName().add(testData.getTestName());
+				testData.setTestContent(testManualContent);
+				try {
+					RunJenkins.runTests(testData);
+				} catch (Exception e) {
+					e.printStackTrace();
+					logger.error("RunManualTest error", e);
+					throw new IllegalArgumentException("Error:" + e.getMessage());
+				}
+			}else{
+				String errorMsg = "Error: Test "+ testData.getTestName() +" not Find";
+				logger.error("RunManualTest " + errorMsg);
+				throw new IllegalArgumentException(errorMsg);
+			}
+	}
+
+}

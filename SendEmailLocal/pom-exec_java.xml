@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.who.sendEmail</groupId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>SendingEmailReport</name>
+  <description>Sending Email Report</description>
+  <artifactId>SendEmail</artifactId>
+  <url>http://maven.apache.org</url>
+  
+   <repositories>
+    <repository>
+  	<id>Java.Net</id>
+  	<url>http://download.java.net/maven/2/</url>
+    </repository>
+  </repositories>
+ 
+  <dependencies>
+    <!-- Java Mail API -->
+    <dependency>
+	 <groupId>javax.mail</groupId>
+	 <artifactId>mail</artifactId>
+	 <version>1.4.3</version>
+    </dependency>
+  </dependencies>
+  
+  <build>
+	  <plugins>
+			<plugin>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>exec-maven-plugin</artifactId>
+			<configuration>
+				 <mainClass>com.who.sendEmail.SendReportEmail</mainClass>
+			</configuration>
+			</plugin>
+	  </plugins>
+  </build>
+  
+</project>

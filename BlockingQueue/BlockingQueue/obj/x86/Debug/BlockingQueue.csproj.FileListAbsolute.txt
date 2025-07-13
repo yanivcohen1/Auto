@@ -1,0 +1,13 @@
+C:\Users\yanivc\Documents\Visual Studio 2010\Projects\BlockingQueue\BlockingQueue\bin\Debug\BlockingQueue.exe
+C:\Users\yanivc\Documents\Visual Studio 2010\Projects\BlockingQueue\BlockingQueue\bin\Debug\BlockingQueue.pdb
+C:\Users\yanivc\Documents\Visual Studio 2010\Projects\BlockingQueue\BlockingQueue\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\yanivc\Documents\Visual Studio 2010\Projects\BlockingQueue\BlockingQueue\obj\x86\Debug\MainWindow.baml
+C:\Users\yanivc\Documents\Visual Studio 2010\Projects\BlockingQueue\BlockingQueue\obj\x86\Debug\MainWindow.g.cs
+C:\Users\yanivc\Documents\Visual Studio 2010\Projects\BlockingQueue\BlockingQueue\obj\x86\Debug\App.g.cs
+C:\Users\yanivc\Documents\Visual Studio 2010\Projects\BlockingQueue\BlockingQueue\obj\x86\Debug\BlockingQueue_MarkupCompile.cache
+C:\Users\yanivc\Documents\Visual Studio 2010\Projects\BlockingQueue\BlockingQueue\obj\x86\Debug\BlockingQueue.g.resources
+C:\Users\yanivc\Documents\Visual Studio 2010\Projects\BlockingQueue\BlockingQueue\obj\x86\Debug\BlockingQueue.Properties.Resources.resources
+C:\Users\yanivc\Documents\Visual Studio 2010\Projects\BlockingQueue\BlockingQueue\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\yanivc\Documents\Visual Studio 2010\Projects\BlockingQueue\BlockingQueue\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\yanivc\Documents\Visual Studio 2010\Projects\BlockingQueue\BlockingQueue\obj\x86\Debug\BlockingQueue.exe
+C:\Users\yanivc\Documents\Visual Studio 2010\Projects\BlockingQueue\BlockingQueue\obj\x86\Debug\BlockingQueue.pdb

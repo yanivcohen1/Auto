@@ -1,0 +1,26 @@
+HKCR
+{
+	HttpMonitor.HttpMon.1 = s 'HttpMon Class'
+	{
+		CLSID = s '{D5DEA129-C130-4268-A3AB-14CED69E052D}'
+	}
+	HttpMonitor.HttpMon = s 'HttpMon Class'
+	{
+		CLSID = s '{D5DEA129-C130-4268-A3AB-14CED69E052D}'
+		CurVer = s 'HttpMonitor.HttpMon.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {D5DEA129-C130-4268-A3AB-14CED69E052D} = s 'HttpMon Class'
+		{
+			ProgID = s 'HttpMonitor.HttpMon.1'
+			VersionIndependentProgID = s 'HttpMonitor.HttpMon'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{4C05CC35-4113-4626-833A-DC1C231184CC}'
+		}
+	}
+}

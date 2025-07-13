@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 	xmlns="http://www.springframework.org/schema/beans"
+		xmlns:p="http://www.springframework.org/schema/p"
+		xmlns:tx="http://www.springframework.org/schema/tx"
+      	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       	xmlns:context="http://www.springframework.org/schema/context"
+      	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/tx
+                           http://www.springframework.org/schema/tx/spring-tx.xsd">
+	
+	<bean id="propertyConfigurer" class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
+		<property name="ignoreResourceNotFound" value="true" />
+		<property name="ignoreUnresolvablePlaceholders" value="true" />
+		<property name="localOverride" value="false" />
+		<property name="location" value="classpath:/config.properties" />
+
+		<!-- Use this property file for Production: <property name="location" value="classpath:mars.prod.properties"/> Use this property file for PP1: <property 
+			name="location" value="classpath:mars.test.properties"/> Use this property file for Systest: <property name="location" value="classpath:mars.systest.properties"/> 
+			Use this property file for PTE: <property name="location" value="classpath:mars.pte.properties"/> -->
+	</bean>
+	
+	<context:component-scan base-package="com.who.rest" />
+    <context:annotation-config/>
+    <context:property-placeholder location="classpath:/config.properties" />
+    <tx:annotation-driven transaction-manager="transactionManager" /> 
+	
+    <import resource="securityContext.xml" />
+    
+    <bean id="jpaSuitesDao" class="com.who.rest.dao.jpa.JpaSuitesDao">
+	</bean>
+    
+     <!-- The bean initializes the application context in the AppContext. -->
+    <bean id="applicationContextProvider" class="com.who.rest.util.ApplicationContextProvider" />
+    
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+		<property name="entityManagerFactory" ref="entityManagerFactory" />
+	</bean>
+
+	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+	    <property name="dataSource" ref="dataSource" />
+	    <property name="persistenceUnitName" value="ngSuitesManage" />
+	    <property name="packagesToScan" value="com.who.test" />
+	    <property name="jpaProperties">
+	        <props>
+	            <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</prop>
+	            <prop key="hibernate.max_fetch_depth">3</prop>
+	            <prop key="hibernate.jdbc.fetch_size">50</prop>
+	            <prop key="hibernate.jdbc.batch_size">10</prop>
+	            <prop key="hibernate.show_sql">false</prop>
+	            <prop key="hibernate.format_sql">true</prop>
+	            <prop key="hibernate.hbm2ddl.auto">update</prop>
+	        </props>        
+	    </property>
+	</bean>
+
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="driverClass" value="com.mysql.jdbc.Driver" />
+		<property name="jdbcUrl" value="${DB.url}" />
+		<property name="user" value="${DB.username}" />
+		<property name="password" value="${DB.password}" />
+		<property name="initialPoolSize" value="5" />
+		<property name="minPoolSize" value="10" />
+		<property name="maxPoolSize" value="100" />
+		<property name="maxStatements" value="0" />
+		<property name="maxIdleTime" value="60" />
+		<property name="preferredTestQuery" value="SELECT COUNT(*) FROM suites" />
+		<property name="testConnectionOnCheckout" value="true" />
+	</bean>  
+	
+</beans>

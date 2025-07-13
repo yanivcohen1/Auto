@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+	
+    <context:annotation-config/>
+    
+    <context:component-scan base-package="com.who.test" />
+    <context:property-placeholder location="classpath:/Config.properties" />
+
+	<bean id="entityUtil" class="com.who.test.server.db.EntityUtil" init-method="init">
+		<property name="dbUrl" value="${DB.url}" />
+		<property name="dbUsername" value="${DB.username}" />
+		<property name="dbPassword" value="${DB.password}" />
+		<property name="createDB" value="${DB.create}" />
+		<property name="show_sql" value="${DB.show_sql}" />
+		<property name="driver_class" value="com.mysql.jdbc.Driver" />
+		<property name="dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+		<property name="format_sql" value="true" />
+	</bean>
+
+	<bean id="userDto" class="com.who.test.shared.UserDto">
+		<property name="password" value="${Web.Admin.password}" />
+	</bean>
+
+	<bean id="BAU Tests" class="com.who.test.server.jenkins.RunJenkins">
+		<property name="xmlFileLocation" value="C:\Tomcat\webapps\RunSuiteSelectedTests\BauAutomationTests\testngClientsDebug.xml" />
+		<property name="jenkinsURL" value="http://172.21.54.222:8080/view/BAU/job/BAU-Tests_debug/" />
+	</bean>
+	
+	<bean id="BAU Tests Second" class="com.who.test.server.jenkins.RunJenkins">
+		<property name="xmlFileLocation" value="C:\Tomcat\webapps\RunSuiteSelectedTests\BauAutomationTests\testngBAUDebug.xml" />
+		<property name="jenkinsURL" value="http://172.21.54.222:8080/view/BAU/job/BAU-Tests_Branch_debug/" />
+	</bean>
+	
+</beans>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+       <appender name="FA" class="org.apache.log4j.RollingFileAppender">
+<!--            #${CATALINA_HOME}/work/notifications/logs/alerts.log -->
+             <param name="File" value="${log}/logs/alerts.log" />
+             <param name="Append" value="true" />
+             <param name="MaxFileSize" value="1MB"/>
+             <param name="MaxBackupIndex" value="5"/>
+             <layout class="org.apache.log4j.PatternLayout">
+                    <param name="ConversionPattern" value="%d %-5p [%t] %l - %m%n"/>
+             </layout>
+       </appender>
+       
+       <!-- Comment next tag to allow logging from selenium framework. -->    
+       <logger name="org.openqa.selenium">
+             <level value="warn"/>
+       </logger>
+       
+       <!-- Comment next tag to allow logging from http framework. -->    
+       <logger name="org.apache.http">
+             <level value="warn"/>
+       </logger>
+       
+       <!-- Comment next tag to allow logging from HttpClient framework. -->    
+       <logger name="org.apache.http">
+             <level value="warn"/>
+       </logger>
+       
+       <!-- Comment next tag to allow logging from Hibernate framework. -->     
+       <logger name="org.hibernate">
+             <level value="warn"/>
+       </logger>
+       
+       <!-- Comment next tag to allow logging for HtmlUnits -->
+       <logger name="com.gargoylesoftware.htmlunit">
+             <level value="fatal" />
+       </logger>
+       
+       <!-- Comment next tag to allow debug logging from org.springframework. -->
+       <logger name="org.springframework">
+             <level value="warn" />
+       </logger>
+       
+       <root>
+              <level value="debug" /><!-- <level value="error" /> -->
+             <appender-ref ref="FA" />
+       </root>
+</log4j:configuration>

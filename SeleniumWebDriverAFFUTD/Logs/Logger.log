@@ -1,0 +1,25 @@
+2012-11-27 16:46:21,656 DEBUG [main] MainProgram.MainTest(MainProgram.java:90) - 2012-11-27 16:46:21.654 AFFUTD :*************************Test Started 
+2012-11-27 16:46:25,716 DEBUG [main] MainProgram.MainTest(MainProgram.java:98) - 2012-11-27 16:46:21.654 AFFUTD :Opening URL
+2012-11-27 16:46:36,048 DEBUG [main] MainProgram.MainTest(MainProgram.java:105) - 2012-11-27 16:46:21.654 AFFUTD :LogIn
+2012-11-27 16:46:36,090 DEBUG [main] MainProgram.MainTest(MainProgram.java:115) - 2012-11-27 16:46:21.654 AFFUTD :Test Pass
+2012-11-27 16:46:36,312 DEBUG [main] MainProgram.MainTest(MainProgram.java:124) - 2012-11-27 16:46:21.654 AFFUTD :Close FF
+2012-11-27 16:49:14,409 DEBUG [main] MainProgram.MainTest(MainProgram.java:90) - 2012-11-27 16:49:14.408 AFFUTD :*************************Test Started 
+2012-11-27 16:49:18,885 DEBUG [main] MainProgram.MainTest(MainProgram.java:98) - 2012-11-27 16:49:14.408 AFFUTD :Opening URL
+2012-11-27 16:49:28,803 DEBUG [main] MainProgram.MainTest(MainProgram.java:105) - 2012-11-27 16:49:14.408 AFFUTD :LogIn
+2012-11-27 16:49:28,849 DEBUG [main] MainProgram.MainTest(MainProgram.java:115) - 2012-11-27 16:49:14.408 AFFUTD :Test Pass
+2012-11-27 16:49:29,108 DEBUG [main] MainProgram.MainTest(MainProgram.java:124) - 2012-11-27 16:49:14.408 AFFUTD :Close FF
+2012-11-27 16:58:24,662 DEBUG [main] MainProgram.MainTest(MainProgram.java:90) - 2012-11-27 16:58:24.66 AFFUTD :*************************Test Started 
+2012-11-27 16:58:30,187 DEBUG [main] MainProgram.MainTest(MainProgram.java:98) - 2012-11-27 16:58:24.66 AFFUTD :Opening URL
+2012-11-27 16:58:39,731 DEBUG [main] MainProgram.MainTest(MainProgram.java:105) - 2012-11-27 16:58:24.66 AFFUTD :LogIn
+2012-11-27 16:58:39,772 DEBUG [main] MainProgram.MainTest(MainProgram.java:115) - 2012-11-27 16:58:24.66 AFFUTD :Test Pass
+2012-11-27 16:58:40,025 DEBUG [main] MainProgram.MainTest(MainProgram.java:124) - 2012-11-27 16:58:24.66 AFFUTD :Close FF
+2012-11-27 17:14:15,935 DEBUG [main] MainProgram.MainTest(MainProgram.java:91) - 2012-11-27 17:14:15.934 AFFUTD :*************************Test Started 
+2012-11-27 17:14:22,729 DEBUG [main] MainProgram.MainTest(MainProgram.java:99) - 2012-11-27 17:14:15.934 AFFUTD :Opening URL
+2012-11-27 17:14:32,467 DEBUG [main] MainProgram.MainTest(MainProgram.java:106) - 2012-11-27 17:14:15.934 AFFUTD :LogIn
+2012-11-27 17:14:32,533 DEBUG [main] MainProgram.MainTest(MainProgram.java:116) - 2012-11-27 17:14:15.934 AFFUTD :Test Pass
+2012-11-27 17:14:32,801 DEBUG [main] MainProgram.MainTest(MainProgram.java:125) - 2012-11-27 17:14:15.934 AFFUTD :Close FF
+2012-11-27 17:19:53,295 DEBUG [main] MainProgram.MainTest(MainProgram.java:91) - 2012-11-27 17:19:53.294 AFFUTD :*************************Test Started 
+2012-11-27 17:20:00,131 DEBUG [main] MainProgram.MainTest(MainProgram.java:99) - 2012-11-27 17:19:53.294 AFFUTD :Opening URL
+2012-11-27 17:20:10,072 DEBUG [main] MainProgram.MainTest(MainProgram.java:106) - 2012-11-27 17:19:53.294 AFFUTD :LogIn
+2012-11-27 17:20:10,113 DEBUG [main] MainProgram.MainTest(MainProgram.java:116) - 2012-11-27 17:19:53.294 AFFUTD :Test Pass
+2012-11-27 17:20:10,358 DEBUG [main] MainProgram.MainTest(MainProgram.java:125) - 2012-11-27 17:19:53.294 AFFUTD :Close FF

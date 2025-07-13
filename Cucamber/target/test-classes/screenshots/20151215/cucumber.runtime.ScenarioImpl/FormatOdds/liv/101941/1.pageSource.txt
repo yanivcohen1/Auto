@@ -1,0 +1,913 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="macau" data-ng-strict-di=""><head><script src="https://script.crazyegg.com/pages/scripts/0010/9787.js?402824" async="" type="text/javascript"></script><script src="https://nexus.ensighten.com/williamhill/prod/code/ca45c8996e45845c231e77fa5ab99590.js?conditionId0=400383"></script><script type="text/javascript" async="" src="https://nexus.ensighten.com/williamhill/prod/code/6b19022f51376a1541e0ad39ba1dae1b.js?conditionId0=209495"></script><script src="//nexus.ensighten.com/williamhill/prod/serverComponent.php?r=847302959.7662389&amp;ClientID=154&amp;PageID=https%3A%2F%2Fmacau.williamhill.com%2F%3FfirstDeposit%3Dfalse"></script><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+      
+												
+						<title data-attr-control="{'html': 'title' }">William Hill Macau - Asian-themed online casino games</title>
+<meta name="description" content="Sign up to William Hill Macau and get a bonus to play the best Chinese casino games online like Sic Bo, Pai Gow, as well as Roulette, Baccarat, Blackjack" data-attr-control="{'content': 'description' }" />
+<meta name="keywords" content="" data-attr-control="{'content': 'keywords' }" />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://macau.williamhill.com" data-attr-control="{'href': 'canonical' }" />
+<meta name="google-site-verification" content="vo3P-rH0FqBMaoVnoFZFb1OBdsAxH2sfJCDSPvw60tI" />
+<meta name="msvalidate.01" content="CB8C2E3D2CF62C91B3E5B791C008D7FC" />
+<meta name="fragment" content="!" />						
+
+      
+												
+						<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+<link rel="shortcut icon" type="image/png" href="https://cmscdn.staticcache.org/assets/image/0005/291551/favicon.png " />
+<link href="https://cmscdn.staticcache.org/assets/image/0007/367495/MACAU_57x57.png?v=0.1.2" rel="apple-touch-icon-precomposed" />
+<link href="https://cmscdn.staticcache.org/assets/image/0008/367496/MACAU_72x72.png?v=0.1.2" rel="apple-touch-icon-precomposed" sizes="72x72" />
+<link href="https://cmscdn.staticcache.org/assets/image/0009/367497/MACAU_114x114.png?v=0.1.2" rel="apple-touch-icon-precomposed" sizes="114x114" />
+<meta name="apple-mobile-web-app-title" content="William Hill Mobile" />						
+     
+      
+												
+						<link rel="stylesheet" type="text/css" href="https://cwf.staticcache.org/gaming/macau/1.3.1/styles/components.css" media="all" />
+						
+      
+												
+						<link rel="stylesheet" type="text/css" href="https://cwf.staticcache.org/gaming/macau/1.3.1/styles/main.css" media="all" />
+						
+
+      
+												
+						<script type="text/javascript" src="/api/alldata.js"></script>						
+
+      
+												
+						<script type="text/javascript" src="//nexus.ensighten.com/williamhill/Bootstrap.js"></script><style>.mboxDefault { visibility:hidden; }</style>
+<script type="text/javascript" src="//cwf.staticcache.org/scripts/tracking/1.6.0/wh_tracking.min.js"></script>  						
+
+<!--
+  Running Squiz Matrix
+  Developed by Squiz - http://www.squiz.net
+  Squiz, Squiz Matrix, MySource, MySource Matrix and Squiz.net are registered Trademarks of Squiz Pty Ltd
+  Page generated: 15 December 2015 05:10:19
+-->
+
+
+
+<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script></head>
+<body>
+      <!-- uiView:  --><div class="application load-complete" data-ui-view=""><section data-wf-header="global"><!-- ngIf: visible --><header class="wf-header" data-ng-if="visible">
+    <!-- ngIf: logo --><a title="William Hill Logo" class="wf-header__whlogo" data-ng-href="http://sports.williamhill.com/" data-ng-if="logo" data-ng-style="{'background-image': 'url(' + logo + ')'}" href="http://sports.williamhill.com/" style="background-image: url(&quot;https://cmscdn.staticcache.org/assets/file/0005/367268/wh-logo.svg&quot;);"></a><!-- end ngIf: logo -->
+    <div class="wf-header__component" data-wf-navigation="p2p-mobile-button"><!-- ngInclude: template --><div data-ng-include="template"><!-- ngIf: visible -->
+</div></div>
+    <div class="wf-header__component" data-wf-navigation="p2p-landscape"><!-- ngInclude: template --><div data-ng-include="template"><!-- ngIf: visible --><nav data-ng-if="visible" class="wf-navigation__p2p-landscape">
+    <!-- ngRepeat: item in list track by $index --><a ng-repeat="item in list track by $index" ng-class="{'selected': $index === current}" href="http://sports.williamhill.com/bet/en-gb" title="Betting" data-wf-target="_self" target="_self">
+        <span><i class=""></i>Betting</span>
+    </a><!-- end ngRepeat: item in list track by $index --><a ng-repeat="item in list track by $index" ng-class="{'selected': $index === current}" href="http://vegas.williamhill.com/" title="Vegas" data-wf-target="_self" target="_self">
+        <span><i class=""></i>Vegas</span>
+    </a><!-- end ngRepeat: item in list track by $index --><a ng-repeat="item in list track by $index" ng-class="{'selected': $index === current}" href="https://macau.williamhill.com" title="Macau" data-wf-target="_self" target="_self" class="selected">
+        <span><i class=""></i>Macau</span>
+    </a><!-- end ngRepeat: item in list track by $index --><a ng-repeat="item in list track by $index" ng-class="{'selected': $index === current}" href="http://casino.williamhill.com/" title="Casino" data-wf-target="_self" target="_self">
+        <span><i class=""></i>Casino</span>
+    </a><!-- end ngRepeat: item in list track by $index --><a ng-repeat="item in list track by $index" ng-class="{'selected': $index === current}" href="http://vegas.williamhill.com/live-casino/" title="Live Casino" data-wf-target="_self" target="_self">
+        <span><i class=""></i>Live Casino</span>
+    </a><!-- end ngRepeat: item in list track by $index --><a ng-repeat="item in list track by $index" ng-class="{'selected': $index === current}" href="https://games.williamhill.com/" title="Games" data-wf-target="_self" target="_self">
+        <span><i class=""></i>Games</span>
+    </a><!-- end ngRepeat: item in list track by $index --><a ng-repeat="item in list track by $index" ng-class="{'selected': $index === current}" href="https://scratchcards.williamhill.com/" title="Scratchcards" data-wf-target="_self" target="_self">
+        <span><i class=""></i>Scratchcards</span>
+    </a><!-- end ngRepeat: item in list track by $index --><a ng-repeat="item in list track by $index" ng-class="{'selected': $index === current}" href="http://bingo.williamhill.com/" title="Bingo" data-wf-target="_self" target="_self">
+        <span><i class=""></i>Bingo</span>
+    </a><!-- end ngRepeat: item in list track by $index --><a ng-repeat="item in list track by $index" ng-class="{'selected': $index === current}" href="http://poker.williamhill.com/" title="Poker" data-wf-target="_self" target="_self">
+        <span><i class=""></i>Poker</span>
+    </a><!-- end ngRepeat: item in list track by $index --><a ng-repeat="item in list track by $index" ng-class="{'selected': $index === current}" href="http://financials.williamhill.com/" title="Financials" data-wf-target="_self" target="_self">
+        <span><i class=""></i>Financials</span>
+    </a><!-- end ngRepeat: item in list track by $index -->
+</nav><!-- end ngIf: visible --></div></div>
+    <div class="wf-header__component wf-account-menu__panel-view" data-wf-account-menu="global"><div class="wf-account-menu">
+    <!-- ngIf: !user.loggedin --><a data-ng-href="/#!/action/login" class="wf-account-menu__button" data-wf-target="_self" data-ng-if="!user.loggedin" href="/#!/action/login" target="_self">
+        <i data-ng-class="{'icon-account-nli':!user.loggedin, 'icon-accountLI':user.loggedin}" class="icon-account-nli"></i>
+        <!-- ngIf: user.loggedin -->
+        <!-- ngIf: user.loggedin -->
+    </a><!-- end ngIf: !user.loggedin -->
+
+    <!-- ngIf: user.loggedin -->
+
+    <!-- ngIf: user.loggedin -->
+</div>
+</div>
+    <div class="wf-header__component" data-wf-join-button="global"><!-- ngIf: button.visible --><a data-ng-href="#!/action/register" data-wf-target="_self" data-ng-if="button.visible" class="wf-join-button" href="#!/action/register" target="_self" data-trk-cta="attached" data-trk-position="macau | reg launch | Top Button">Join</a><!-- end ngIf: button.visible --></div>
+    <div class="wf-header__component" data-wf-main-balance="global"><span style="font-size:0">
+    <!-- ngIf: balance.visible -->
+    <!-- ngIf: balance.visible -->
+</span>
+</div>
+    <div class="wf-header__component" data-wf-util-navigation="global"><!-- ngIf: utilNavigation.visible --><div class="wf-util-navigation" data-ng-if="utilNavigation.visible">
+    <ul>
+        <!-- ngRepeat: option in utilNavigation.options --><li data-ng-repeat="option in utilNavigation.options">
+            <a data-ng-href="https://williamhill-lang.custhelp.com/app/chat/chat_landing/_icf_77/MACAU_MOBILE_CONTACT_US/_icf_376/product_2" data-wf-target="_blank" title="Live Chat" href="https://williamhill-lang.custhelp.com/app/chat/chat_landing/_icf_77/MACAU_MOBILE_CONTACT_US/_icf_376/product_2" target="_blank">
+                <i class="icon-chat"></i>
+            </a>
+        </li><!-- end ngRepeat: option in utilNavigation.options --><li data-ng-repeat="option in utilNavigation.options">
+            <a data-ng-href="#!/action/help" data-wf-target="_self" title="Help" href="#!/action/help" target="_self">
+                <i class="icon-help"></i>
+            </a>
+        </li><!-- end ngRepeat: option in utilNavigation.options -->
+    </ul>
+</div><!-- end ngIf: utilNavigation.visible --></div>
+    <div class="wf-header__component" data-wf-language="global"></div>
+</header><!-- end ngIf: visible -->
+</section>
+<section data-wf-navigation="p2p-portrait"><!-- ngInclude: template --><div data-ng-include="template"><!-- ngIf: visible --></div></section>
+
+<div data-fix-to-top="{ watchElement: 'window', fixedClass: 'fixToTop' }" class="menu">
+    <div data-menu=""><!-- ngIf: visible --><div data-ng-if="visible" class="menu-bar">
+    <!-- ngIf: logo.visible --><div class="menu-bar-logo" ng-if="logo.visible">
+        <a ng-href="/#!/" href="/#!/">
+            <img ng-src="https://cmscdn.staticcache.org/assets/file/0008/388790/macau_logo.svg" alt="" src="https://cmscdn.staticcache.org/assets/file/0008/388790/macau_logo.svg" />
+        </a>
+    </div><!-- end ngIf: logo.visible -->
+    <div class="menu-bar-label">
+        <span>HOME</span>
+    </div>
+    <div class="menu-bar-list">
+        <div>
+            <!-- ngRepeat: item in maxList track by $index --><a ng-repeat="item in maxList track by $index" ng-class="{'selected': item.label === current.label}" ui-sref="#!/" href="#!/" title="HOME" data-wf-target="_self" target="_self" class="selected">
+                <!-- ngIf: item.name --><span data-ng-if="item.name">HOME</span><!-- end ngIf: item.name -->
+            </a><!-- end ngRepeat: item in maxList track by $index --><a ng-repeat="item in maxList track by $index" ng-class="{'selected': item.label === current.label}" ui-sref="#!/promotions" href="#!/promotions" title="PROMOTIONS" data-wf-target="_self" target="_self">
+                <!-- ngIf: item.name --><span data-ng-if="item.name">PROMOTIONS</span><!-- end ngIf: item.name -->
+            </a><!-- end ngRepeat: item in maxList track by $index --><a ng-repeat="item in maxList track by $index" ng-class="{'selected': item.label === current.label}" ui-sref="#!/lobby/az" href="#!/lobby/az" title="A-Z" data-wf-target="_self" target="_self">
+                <!-- ngIf: item.name --><span data-ng-if="item.name">A-Z</span><!-- end ngIf: item.name -->
+            </a><!-- end ngRepeat: item in maxList track by $index --><a ng-repeat="item in maxList track by $index" ng-class="{'selected': item.label === current.label}" ui-sref="#!/lobby/new" href="#!/lobby/new" title="NEW" data-wf-target="_self" target="_self">
+                <!-- ngIf: item.name --><span data-ng-if="item.name">NEW</span><!-- end ngIf: item.name -->
+            </a><!-- end ngRepeat: item in maxList track by $index --><a ng-repeat="item in maxList track by $index" ng-class="{'selected': item.label === current.label}" ui-sref="#!/lobby/jackpots" href="#!/lobby/jackpots" title="JACKPOTS" data-wf-target="_self" target="_self">
+                <!-- ngIf: item.name --><span data-ng-if="item.name">JACKPOTS</span><!-- end ngIf: item.name -->
+            </a><!-- end ngRepeat: item in maxList track by $index --><a ng-repeat="item in maxList track by $index" ng-class="{'selected': item.label === current.label}" ui-sref="#!/lobby/table" href="#!/lobby/table" title="TABLE" data-wf-target="_self" target="_self">
+                <!-- ngIf: item.name --><span data-ng-if="item.name">TABLE</span><!-- end ngIf: item.name -->
+            </a><!-- end ngRepeat: item in maxList track by $index --><a ng-repeat="item in maxList track by $index" ng-class="{'selected': item.label === current.label}" ui-sref="#!/lobby/slots" href="#!/lobby/slots" title="SLOTS" data-wf-target="_self" target="_self">
+                <!-- ngIf: item.name --><span data-ng-if="item.name">SLOTS</span><!-- end ngIf: item.name -->
+            </a><!-- end ngRepeat: item in maxList track by $index -->
+        </div>
+    </div>
+    <div class="menu-bar-menu">
+        <!-- ngIf: minList.length>0 -->
+        <!-- ngIf: minList.length>0 -->
+    </div>
+</div><!-- end ngIf: visible --></div>
+</div>
+
+<!-- uiView:  --><div class="content" data-ui-view=""><!-- ngIf: category.label=='home' --><div ng-if="category.label=='home'" class="slider" data-slider=""><span class="swipeLeft" ng-click="swipeLeft()"></span>
+<div class="slides promotion-tiles__lg">
+    <!-- ngRepeat: slide in promotions.promotions track by $index --><!-- ngIf: slide.visibleOnLobby --><div ng-repeat="slide in promotions.promotions track by $index" ng-if="slide.visibleOnLobby" class="slide" data-wf-promotion-tile="slide" data-claim-function="claimFunction"><!-- ngIf: visible --><figure data-ng-if="visible" class="wf-promotion-tile">
+
+    <img ng-click="showInfo()" draggable="false" class="wf-promotion-tile__image" alt="" ng-src="https://cmscdn.staticcache.org/assets/image/0003/414822/1152x250-MACAU-JACKPOT-44525.jpg" src="https://cmscdn.staticcache.org/assets/image/0003/414822/1152x250-MACAU-JACKPOT-44525.jpg" />
+
+    <!-- ngIf: promotion.tileContent -->
+
+    <!-- ngIf: promotion.bonusId && promotion.bonusId !== '' -->
+
+    <div class="wf-promotion-tile__cta-container">
+        <!-- ngIf: promotion.cta && promotion.cta.label.length > 0 && promotion.cta.claimCode.length > 0 -->
+        <!-- ngIf: promotion.cta && promotion.cta.label.length > 0 && promotion.cta.claimCode.length === 0 --><a data-ng-href="https://macau.williamhill.com/#!/lobby/jackpots" class="wf-promotion-tile__cta" data-wh-target="_self" data-ng-if="promotion.cta &amp;&amp; promotion.cta.label.length &gt; 0 &amp;&amp; promotion.cta.claimCode.length === 0" href="https://macau.williamhill.com/#!/lobby/jackpots">Play Now</a><!-- end ngIf: promotion.cta && promotion.cta.label.length > 0 && promotion.cta.claimCode.length === 0 -->
+    </div>
+
+    <!-- ngIf: promotion.cta && promotion.cta.label.length === 0 -->
+
+    <figcaption>
+        <!-- ngIf: promotion.showTerms -->
+    </figcaption>
+</figure><!-- end ngIf: visible --></div><!-- end ngIf: slide.visibleOnLobby --><!-- end ngRepeat: slide in promotions.promotions track by $index --><!-- ngIf: slide.visibleOnLobby --><!-- end ngRepeat: slide in promotions.promotions track by $index --><!-- ngIf: slide.visibleOnLobby --><div ng-repeat="slide in promotions.promotions track by $index" ng-if="slide.visibleOnLobby" class="slide active" data-wf-promotion-tile="slide" data-claim-function="claimFunction"><!-- ngIf: visible --><figure data-ng-if="visible" class="wf-promotion-tile">
+
+    <img ng-click="showInfo()" draggable="false" class="wf-promotion-tile__image" alt="" ng-src="https://cmscdn.staticcache.org/assets/image/0015/414330/1152x250-MACAU-RouDiceFeat-44379.jpg" src="https://cmscdn.staticcache.org/assets/image/0015/414330/1152x250-MACAU-RouDiceFeat-44379.jpg" />
+
+    <!-- ngIf: promotion.tileContent -->
+
+    <!-- ngIf: promotion.bonusId && promotion.bonusId !== '' -->
+
+    <div class="wf-promotion-tile__cta-container">
+        <!-- ngIf: promotion.cta && promotion.cta.label.length > 0 && promotion.cta.claimCode.length > 0 -->
+        <!-- ngIf: promotion.cta && promotion.cta.label.length > 0 && promotion.cta.claimCode.length === 0 --><a data-ng-href="https://macau.williamhill.com/#!/action/launch/macau-roulette" class="wf-promotion-tile__cta" data-wh-target="_self" data-ng-if="promotion.cta &amp;&amp; promotion.cta.label.length &gt; 0 &amp;&amp; promotion.cta.claimCode.length === 0" href="https://macau.williamhill.com/#!/action/launch/macau-roulette" data-trk-position="1" data-trk-cta="attached">Play Now</a><!-- end ngIf: promotion.cta && promotion.cta.label.length > 0 && promotion.cta.claimCode.length === 0 -->
+    </div>
+
+    <!-- ngIf: promotion.cta && promotion.cta.label.length === 0 -->
+
+    <figcaption>
+        <!-- ngIf: promotion.showTerms -->
+    </figcaption>
+</figure><!-- end ngIf: visible --></div><!-- end ngIf: slide.visibleOnLobby --><!-- end ngRepeat: slide in promotions.promotions track by $index -->
+</div>
+<span class="swipeRight" ng-click="swipeRight()"></span>
+</div><!-- end ngIf: category.label=='home' -->
+<section class="lobby">
+    <!-- ngRepeat: group in category.list track by $index --><div data-ng-repeat="group in category.list track by $index" data-wf-game-tile-group="group"><!-- ngIf: visible --><div class="wf-game-tile-group" ng-if="visible">
+    <!-- ngIf: config.title -->
+    <div class="games-container cols6">
+        <!-- ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash">Exclusive</span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/roulette-intable" href="#!/action/launch/roulette-intable" data-trk-position="2" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/roulette-intable" href="#!/action/launch/roulette-intable" data-trk-position="3" data-trk-cta="attached">
+        <img class="main-image" alt="Roulette Macau Live" ng-src="https://cmscdn.staticcache.org/assets/image/0014/404240/MACAU-194x194-Live-43638-Roul.jpg" src="https://cmscdn.staticcache.org/assets/image/0014/404240/MACAU-194x194-Live-43638-Roul.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash">Exclusive</span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/blackjack" href="#!/action/launch/blackjack" data-trk-position="4" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/blackjack" href="#!/action/launch/blackjack" data-trk-position="5" data-trk-cta="attached">
+        <img class="main-image" alt="Blackjack Macau Live" ng-src="https://cmscdn.staticcache.org/assets/image/0018/404316/MACAU-194x194-Live-43638-BlackJnew.jpg" src="https://cmscdn.staticcache.org/assets/image/0018/404316/MACAU-194x194-Live-43638-BlackJnew.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash">Exclusive</span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/baccarat-intable" href="#!/action/launch/baccarat-intable" data-trk-position="6" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/baccarat-intable" href="#!/action/launch/baccarat-intable" data-trk-position="7" data-trk-cta="attached">
+        <img class="main-image" alt="Baccarat Macau Live" ng-src="https://cmscdn.staticcache.org/assets/image/0003/404238/MACAU-194x194-Live-43638-Baccarat.jpg" src="https://cmscdn.staticcache.org/assets/image/0003/404238/MACAU-194x194-Live-43638-Baccarat.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash">Exclusive</span>
+    <!-- ngIf: game.jackpot.value > 0 --><span class="tile-jackpot" ng-if="game.jackpot.value &gt; 0">£58,654</span><!-- end ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/5-treasures" href="#!/action/launch/5-treasures" data-trk-position="8" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/5-treasures" href="#!/action/launch/5-treasures" data-trk-position="9" data-trk-cta="attached">
+        <img class="main-image" alt="5 Treasures" ng-src="https://cmscdn.staticcache.org/assets/image/0019/404218/MACAU-194x194-41870-5Treasures.jpg" src="https://cmscdn.staticcache.org/assets/image/0019/404218/MACAU-194x194-41870-5Treasures.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash">Exclusive</span>
+    <!-- ngIf: game.jackpot.value > 0 --><span class="tile-jackpot" ng-if="game.jackpot.value &gt; 0">£58,654</span><!-- end ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/rich-traditions" href="#!/action/launch/rich-traditions" data-trk-position="10" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/rich-traditions" href="#!/action/launch/rich-traditions" data-trk-position="11" data-trk-cta="attached">
+        <img class="main-image" alt="Rich Traditions" ng-src="https://cmscdn.staticcache.org/assets/image/0013/404230/MACAU-194x194-41870-RichTraditions.jpg" src="https://cmscdn.staticcache.org/assets/image/0013/404230/MACAU-194x194-41870-RichTraditions.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash">New</span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/wishing-you-a-fortune" href="#!/action/launch/wishing-you-a-fortune" data-trk-position="12" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/wishing-you-a-fortune" href="#!/action/launch/wishing-you-a-fortune" data-trk-position="13" data-trk-cta="attached">
+        <img class="main-image" alt="Wishing You Fortune" ng-src="https://cmscdn.staticcache.org/assets/image/0003/391944/MACAU-194x194-41870-WishingYouFortune.jpg" src="https://cmscdn.staticcache.org/assets/image/0003/391944/MACAU-194x194-41870-WishingYouFortune.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash">Exclusive</span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/macau-roulette" href="#!/action/launch/macau-roulette" data-trk-position="14" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/macau-roulette" href="#!/action/launch/macau-roulette" data-trk-position="15" data-trk-cta="attached">
+        <img class="main-image" alt="Roulette Macau" ng-src="https://cmscdn.staticcache.org/assets/image/0005/415049/MACAU-194x194-MACAU-ROU.jpg" src="https://cmscdn.staticcache.org/assets/image/0005/415049/MACAU-194x194-MACAU-ROU.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash">Exclusive</span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/macau-big-wheel" href="#!/action/launch/macau-big-wheel" data-trk-position="16" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/macau-big-wheel" href="#!/action/launch/macau-big-wheel" data-trk-position="17" data-trk-cta="attached">
+        <img class="main-image" alt="Big Wheel Macau" ng-src="https://cmscdn.staticcache.org/assets/image/0016/415042/MACAU-194x194-MACAU-BigWheel.jpg" src="https://cmscdn.staticcache.org/assets/image/0016/415042/MACAU-194x194-MACAU-BigWheel.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash">Exclusive</span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/macau-sic-bo" href="#!/action/launch/macau-sic-bo" data-trk-position="18" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/macau-sic-bo" href="#!/action/launch/macau-sic-bo" data-trk-position="19" data-trk-cta="attached">
+        <img class="main-image" alt="Sic Bo Macau" ng-src="https://cmscdn.staticcache.org/assets/image/0005/415625/MACAU-194x194MACAU-SicBo.jpg" src="https://cmscdn.staticcache.org/assets/image/0005/415625/MACAU-194x194MACAU-SicBo.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash">Exclusive</span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/macau-baccarat" href="#!/action/launch/macau-baccarat" data-trk-position="20" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/macau-baccarat" href="#!/action/launch/macau-baccarat" data-trk-position="21" data-trk-cta="attached">
+        <img class="main-image" alt="Baccarat Macau" ng-src="https://cmscdn.staticcache.org/assets/image/0019/415045/MACAU-194x194-MACAU-Baccarat.jpg" src="https://cmscdn.staticcache.org/assets/image/0019/415045/MACAU-194x194-MACAU-Baccarat.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash">Exclusive</span>
+    <!-- ngIf: game.jackpot.value > 0 --><span class="tile-jackpot" ng-if="game.jackpot.value &gt; 0">£58,654</span><!-- end ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/diamond-eternity" href="#!/action/launch/diamond-eternity" data-trk-position="22" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/diamond-eternity" href="#!/action/launch/diamond-eternity" data-trk-position="23" data-trk-cta="attached">
+        <img class="main-image" alt="Diamond Eternity" ng-src="https://cmscdn.staticcache.org/assets/image/0018/404226/MACAU-194x194-41870-DiamondEternity.jpg" src="https://cmscdn.staticcache.org/assets/image/0018/404226/MACAU-194x194-41870-DiamondEternity.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash">Exclusive</span>
+    <!-- ngIf: game.jackpot.value > 0 --><span class="tile-jackpot" ng-if="game.jackpot.value &gt; 0">£58,654</span><!-- end ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/dancing-drums" href="#!/action/launch/dancing-drums" data-trk-position="24" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/dancing-drums" href="#!/action/launch/dancing-drums" data-trk-position="25" data-trk-cta="attached">
+        <img class="main-image" alt="Dancing Drums" ng-src="https://cmscdn.staticcache.org/assets/image/0020/404228/MACAU-194x194-41870-DancingDrums.jpg" src="https://cmscdn.staticcache.org/assets/image/0020/404228/MACAU-194x194-41870-DancingDrums.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash"></span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/thai-princess" href="#!/action/launch/thai-princess" data-trk-position="26" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/thai-princess" href="#!/action/launch/thai-princess" data-trk-position="27" data-trk-cta="attached">
+        <img class="main-image" alt="Thai Princess" ng-src="https://cmscdn.staticcache.org/assets/image/0018/391032/MACAU-194x194-41870-ThaiPrincess.jpg" src="https://cmscdn.staticcache.org/assets/image/0018/391032/MACAU-194x194-41870-ThaiPrincess.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash"></span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/wheres-the-gold" href="#!/action/launch/wheres-the-gold" data-trk-position="28" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/wheres-the-gold" href="#!/action/launch/wheres-the-gold" data-trk-position="29" data-trk-cta="attached">
+        <img class="main-image" alt="Where's the Gold" ng-src="https://cmscdn.staticcache.org/assets/image/0016/390400/MACAU-194x194-41870-WheresTheGold.jpg" src="https://cmscdn.staticcache.org/assets/image/0016/390400/MACAU-194x194-41870-WheresTheGold.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash"></span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/eastern-dragon" href="#!/action/launch/eastern-dragon" data-trk-position="30" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/eastern-dragon" href="#!/action/launch/eastern-dragon" data-trk-position="31" data-trk-cta="attached">
+        <img class="main-image" alt="Eastern Dragon" ng-src="https://cmscdn.staticcache.org/assets/image/0020/390233/MACAU-194x194-41870-EasternDragon.jpg" src="https://cmscdn.staticcache.org/assets/image/0020/390233/MACAU-194x194-41870-EasternDragon.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash"></span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/50-dragons" href="#!/action/launch/50-dragons" data-trk-position="32" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/50-dragons" href="#!/action/launch/50-dragons" data-trk-position="33" data-trk-cta="attached">
+        <img class="main-image" alt="50 Dragons" ng-src="https://cmscdn.staticcache.org/assets/image/0017/390221/MACAU-194x194-41870-50Dragons.jpg" src="https://cmscdn.staticcache.org/assets/image/0017/390221/MACAU-194x194-41870-50Dragons.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash"></span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/break-da-bank-again" href="#!/action/launch/break-da-bank-again" data-trk-position="34" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/break-da-bank-again" href="#!/action/launch/break-da-bank-again" data-trk-position="35" data-trk-cta="attached">
+        <img class="main-image" alt="Break Da Bank Again" ng-src="https://cmscdn.staticcache.org/assets/image/0011/391943/MACAU-194x194-41870-BreakDaBankAgain.jpg" src="https://cmscdn.staticcache.org/assets/image/0011/391943/MACAU-194x194-41870-BreakDaBankAgain.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash"></span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/thunderstruck" href="#!/action/launch/thunderstruck" data-trk-position="36" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/thunderstruck" href="#!/action/launch/thunderstruck" data-trk-position="37" data-trk-cta="attached">
+        <img class="main-image" alt="Thunderstruck" ng-src="https://cmscdn.staticcache.org/assets/image/0009/390249/MACAU-194x194-41870-Thunderstruck.jpg" src="https://cmscdn.staticcache.org/assets/image/0009/390249/MACAU-194x194-41870-Thunderstruck.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash"></span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/emperors-garden" href="#!/action/launch/emperors-garden" data-trk-position="38" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/emperors-garden" href="#!/action/launch/emperors-garden" data-trk-position="39" data-trk-cta="attached">
+        <img class="main-image" alt="Emperor's Garden" ng-src="https://cmscdn.staticcache.org/assets/image/0019/391033/MACAU-194x194-41870-EmperorsGarden.jpg" src="https://cmscdn.staticcache.org/assets/image/0019/391033/MACAU-194x194-41870-EmperorsGarden.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash"></span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/cherry-blossoms" href="#!/action/launch/cherry-blossoms" data-trk-position="40" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/cherry-blossoms" href="#!/action/launch/cherry-blossoms" data-trk-position="41" data-trk-cta="attached">
+        <img class="main-image" alt="Cherry Blossoms" ng-src="https://cmscdn.staticcache.org/assets/image/0003/390225/MACAU-194x194-41870-CherryBlossoms.jpg" src="https://cmscdn.staticcache.org/assets/image/0003/390225/MACAU-194x194-41870-CherryBlossoms.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash"></span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/dragon-emperor" href="#!/action/launch/dragon-emperor" data-trk-position="42" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/dragon-emperor" href="#!/action/launch/dragon-emperor" data-trk-position="43" data-trk-cta="attached">
+        <img class="main-image" alt="Dragon Emperor" ng-src="https://cmscdn.staticcache.org/assets/image/0007/390229/MACAU-194x194-41870-DragonsEmperor.jpg" src="https://cmscdn.staticcache.org/assets/image/0007/390229/MACAU-194x194-41870-DragonsEmperor.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash"></span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/choy-sun-doa" href="#!/action/launch/choy-sun-doa" data-trk-position="44" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/choy-sun-doa" href="#!/action/launch/choy-sun-doa" data-trk-position="45" data-trk-cta="attached">
+        <img class="main-image" alt="Choy Sun Doa" ng-src="https://cmscdn.staticcache.org/assets/image/0006/390228/MACAU-194x194-41870-ChoySunDoa.jpg" src="https://cmscdn.staticcache.org/assets/image/0006/390228/MACAU-194x194-41870-ChoySunDoa.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash"></span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/lucky-88" href="#!/action/launch/lucky-88" data-trk-position="46" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/lucky-88" href="#!/action/launch/lucky-88" data-trk-position="47" data-trk-cta="attached">
+        <img class="main-image" alt="Lucky 88" ng-src="https://cmscdn.staticcache.org/assets/image/0012/390999/MACAU-194x194-41870-Lucky88.jpg" src="https://cmscdn.staticcache.org/assets/image/0012/390999/MACAU-194x194-41870-Lucky88.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash"></span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/miss-kitty" href="#!/action/launch/miss-kitty" data-trk-position="48" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/miss-kitty" href="#!/action/launch/miss-kitty" data-trk-position="49" data-trk-cta="attached">
+        <img class="main-image" alt="Miss Kitty" ng-src="https://cmscdn.staticcache.org/assets/image/0005/390407/MACAU-194x194-41870-MissKitty.jpg" src="https://cmscdn.staticcache.org/assets/image/0005/390407/MACAU-194x194-41870-MissKitty.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index -->
+    </div>
+</div><!-- end ngIf: visible --></div><!-- end ngRepeat: group in category.list track by $index --><div data-ng-repeat="group in category.list track by $index" data-wf-game-tile-group="group"><!-- ngIf: visible --><div class="wf-game-tile-group" ng-if="visible">
+    <!-- ngIf: config.title --><span class="games-group-title" ng-if="config.title">VEGAS GAMES</span><!-- end ngIf: config.title -->
+    <div class="games-container cols6">
+        <!-- ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash"></span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/lucky-duck" href="#!/action/launch/lucky-duck" data-trk-position="50" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/lucky-duck" href="#!/action/launch/lucky-duck" data-trk-position="51" data-trk-cta="attached">
+        <img class="main-image" alt="Lucky Duck" ng-src="https://cmscdn.staticcache.org/assets/image/0019/404236/MACAU-194x194-44075-V-LuckyDuck-VM.jpg" src="https://cmscdn.staticcache.org/assets/image/0019/404236/MACAU-194x194-44075-V-LuckyDuck-VM.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash"></span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/fortune-of-the-gods" href="#!/action/launch/fortune-of-the-gods" data-trk-position="52" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/fortune-of-the-gods" href="#!/action/launch/fortune-of-the-gods" data-trk-position="53" data-trk-cta="attached">
+        <img class="main-image" alt="Fortune of the Gods" ng-src="https://cmscdn.staticcache.org/assets/image/0010/404596/FOTG-388x388.jpg" src="https://cmscdn.staticcache.org/assets/image/0010/404596/FOTG-388x388.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash"></span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/toy-factory" href="#!/action/launch/toy-factory" data-trk-position="54" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/toy-factory" href="#!/action/launch/toy-factory" data-trk-position="55" data-trk-cta="attached">
+        <img class="main-image" alt="Toy Factory" ng-src="https://cmscdn.staticcache.org/assets/image/0007/404197/MACAU-194x194-44075-V-ToyFactory-VM.jpg" src="https://cmscdn.staticcache.org/assets/image/0007/404197/MACAU-194x194-44075-V-ToyFactory-VM.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash"></span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/koi-princess" href="#!/action/launch/koi-princess" data-trk-position="56" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/koi-princess" href="#!/action/launch/koi-princess" data-trk-position="57" data-trk-cta="attached">
+        <img class="main-image" alt="Koi Princess" ng-src="https://cmscdn.staticcache.org/assets/image/0011/404201/MACAU-194x194-44075-V-KoiPrincess.jpg" src="https://cmscdn.staticcache.org/assets/image/0011/404201/MACAU-194x194-44075-V-KoiPrincess.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash"></span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/wish-upon-a-jackpot" href="#!/action/launch/wish-upon-a-jackpot" data-trk-position="58" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/wish-upon-a-jackpot" href="#!/action/launch/wish-upon-a-jackpot" data-trk-position="59" data-trk-cta="attached">
+        <img class="main-image" alt="Wish Upon a Jackpot" ng-src="https://cmscdn.staticcache.org/assets/image/0012/404211/MACAU-194x194-44075-V-WishUponAJackpot.jpg" src="https://cmscdn.staticcache.org/assets/image/0012/404211/MACAU-194x194-44075-V-WishUponAJackpot.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index --><div ng-repeat="game in games | limitTo: tiles track by $index" data-wf-game-tile="game" class="game-tile wf-game-tile"><figure>
+
+    <span class="tile-sash"></span>
+    <!-- ngIf: game.jackpot.value > 0 -->
+
+    <a class="tile-overlay" ng-href="#!/action/launch/rise-of-the-phoenix" href="#!/action/launch/rise-of-the-phoenix" data-trk-position="60" data-trk-cta="attached">
+        <span class="tile-overlay-button">Play</span>
+    </a>
+
+    <a class="image-container" ng-href="#!/action/launch/rise-of-the-phoenix" href="#!/action/launch/rise-of-the-phoenix" data-trk-position="61" data-trk-cta="attached">
+        <img class="main-image" alt="Rise of the Phoenix" ng-src="https://cmscdn.staticcache.org/assets/image/0014/404600/Rise.jpg" src="https://cmscdn.staticcache.org/assets/image/0014/404600/Rise.jpg" />
+    </a>
+
+    <figcaption>
+        <a class="information-button" ng-click="showInfo()" data-trk-cta="attached"><i class="icon-info"></i></a>
+    </figcaption>
+
+</figure></div><!-- end ngRepeat: game in games | limitTo: tiles track by $index -->
+    </div>
+</div><!-- end ngIf: visible --></div><!-- end ngRepeat: group in category.list track by $index -->
+</section>
+<br />
+<div data-seobox="category.label.toLowerCase()"><!-- ngIf: seobox --><div ng-if="seobox" data-wf-expandable-section="seobox-home" data-wf-expandable-section-content="seobox.content" class="seobox"><div class="wf-expandable-section">
+
+    <h1 class="wf-expandable-section__header" data-wf-toggle-targets="wf-expandable-section__article__seobox-home wf-expandable-section__icon__seobox-home">William Hill Macau – A Fine Choice of Asian-themed Online Casino Games
+        <em data-wf-toggle="wf-expandable-section__icon__seobox-home" data-wf-toggle-options="{ onClass: content.arrowOpen, offClass: content.arrowClose, initialState: content.expand }" class="icon-arrow-right"></em>
+    </h1>
+    <article class="wf-expandable-section__content ng-hide" data-wf-toggle="wf-expandable-section__article__seobox-home" data-wf-toggle-options="{ onClass: '', offClass: 'ng-hide', initialState: content.expand }" data-ng-bind-html="content.body"><p>Players can enjoy a wonderful choice of Asian casino games as well as great bonus promotions at William Hill Macau. </p>
+
+<h1> Discover the best range of Asian casino games </h1>
+<p>William Hill Macau is proud to showcase our great range of casino games, including those based on traditional Asian favourites and some new titles to discover as well.</p>
+<p>Macau has long been seen as a home for innovative gaming, and we up the ante with online William Hill Macau, the number one choice for playing Chinese casino games online.</p>
+<p>Check out classics like Sic Bo, and Pai Gow, and modern versions like Macau Blackjack, Macau Roulette and Squeeze Baccarat. All of these games offer fun and great jackpots. Asian themed slots will tempt as well! </p>
+
+<h2>Games with a Chinese theme, plus great bonuses</h2>
+<p>We have carefully selected all of our games to ensure maximum enjoyment for all of our players – especially casino players who are looking for a colourful and rich Asian games selection.</p>
+<p>When you sign up to William Hill Macau you can enjoy a generous bonus offer to help you try all of these great choices with a far-eastern flavour.</p>
+<p>Check out our promotions page for details on how you can get extra power to play with. </p> 
+<p>William Hill is one of the world’s leading names in online casino games and there is nowhere better to start playing.</p>
+<p>Don’t forget that as well as Asian and Chinese inspired games there are hundreds of other titles to choose from in a variety of interesting themes. </p> </article>
+</div>
+</div><!-- end ngIf: seobox -->
+</div>
+<br /></div>
+
+<section data-wf-footer="global"><!-- ngIf: visible --><footer class="wf-footer" data-ng-if="visible">
+    <div class="wf-footer__wrapper">
+        <section class="wf-footer__leftPanel">
+
+            <aside class="wf-footer__copyright">
+                <span class="wf-footer__clock" data-wf-footer-time=""><span class="time">10:20:46</span> <span class="wf-footer__clock__country-code">UK</span></span>
+                <span>| © 1998-2015 WHG (International) Ltd</span>
+            </aside>
+
+            <ul class="wf-footer__links">
+                <!-- ngRepeat: link in links --><li data-ng-repeat="link in links">
+                    <a href="#!/action/terms-and-condition" data-wf-target="_self" title="Terms &amp; Conditions" target="_self">Terms &amp; Conditions</a>
+                </li><!-- end ngRepeat: link in links --><li data-ng-repeat="link in links">
+                    <a href="#!/action/privacy-policy" data-wf-target="_self" title="Privacy Policy" target="_self">Privacy Policy</a>
+                </li><!-- end ngRepeat: link in links --><li data-ng-repeat="link in links">
+                    <a href="#!/action/help" data-wf-target="_self" title="Help" target="_self">Help</a>
+                </li><!-- end ngRepeat: link in links --><li data-ng-repeat="link in links">
+                    <a href="#!/action/contacts" data-wf-target="_self" title="Contact Us" target="_self">Contact Us</a>
+                </li><!-- end ngRepeat: link in links --><li data-ng-repeat="link in links">
+                    <a href="http://www.williamhillmedia.com/" data-wf-target="_blank" title="William Hill Press Office" target="_blank">William Hill Press Office</a>
+                </li><!-- end ngRepeat: link in links --><li data-ng-repeat="link in links">
+                    <a href="#!/action/feedback" data-wf-target="_self" title="Your Feedback" target="_self">Your Feedback</a>
+                </li><!-- end ngRepeat: link in links --><li data-ng-repeat="link in links">
+                    <a href="http://www.williamhill.com/shop-locator/" data-wf-target="_blank" title="Shop Locator" target="_blank">Shop Locator</a>
+                </li><!-- end ngRepeat: link in links --><li data-ng-repeat="link in links">
+                    <a href="http://careers.williamhillplc.com/" data-wf-target="_blank" title="Jobs &amp; Careers" target="_blank">Jobs &amp; Careers</a>
+                </li><!-- end ngRepeat: link in links --><li data-ng-repeat="link in links">
+                    <a href="http://www.williamhillplc.com/about/" data-wf-target="_blank" title="About William Hill" target="_blank">About William Hill</a>
+                </li><!-- end ngRepeat: link in links --><li data-ng-repeat="link in links">
+                    <a href="http://www.affutd.com/" data-wf-target="_blank" title="Affiliate Program" target="_blank">Affiliate Program</a>
+                </li><!-- end ngRepeat: link in links -->
+            </ul>
+
+        </section>
+
+        <section class="wf-footer__rightPanel">
+
+            <p class="wf-footer__responsible" data-ng-bind-html="trustHtml(responsible)">William Hill is committed to supporting <a href="#!/action/responsible-gaming" title="Responsible Gaming">Responsible Gaming</a>. Underage gambling is an offence.</p>
+
+            <ul class="wf-footer__icons">
+                <!-- ngRepeat: logo in logos --><li data-ng-repeat="logo in logos">
+                    <a href="#!/action/over-18" data-wf-target="_self" title="18+" target="_self">
+                        <i data-ng-class="logo.icon" class="icon-and-over"></i>
+                    </a>
+                </li><!-- end ngRepeat: logo in logos --><li data-ng-repeat="logo in logos">
+                    <a href="http://www.gambleaware.co.uk/" data-wf-target="_blank" title="Gambleaware" target="_blank">
+                        <i data-ng-class="logo.icon" class="icon-gamble-aware"></i>
+                    </a>
+                </li><!-- end ngRepeat: logo in logos --><li data-ng-repeat="logo in logos">
+                    <a href="http://www.gamcare.org.uk/" data-wf-target="_blank" title="Gamcare" target="_blank">
+                        <i data-ng-class="logo.icon" class="icon-gamcare"></i>
+                    </a>
+                </li><!-- end ngRepeat: logo in logos --><li data-ng-repeat="logo in logos">
+                    <a href="http://www.gamblersanonymous.org.uk/" data-wf-target="_blank" title="Gamblers Anonymous" target="_blank">
+                        <i data-ng-class="logo.icon" class="icon-gamblers-anonymous"></i>
+                    </a>
+                </li><!-- end ngRepeat: logo in logos --><li data-ng-repeat="logo in logos">
+                    <a href="http://www.gamblingtherapy.org/" data-wf-target="_blank" title="Gamblers Therapy" target="_blank">
+                        <i data-ng-class="logo.icon" class="icon-gambling-therapy"></i>
+                    </a>
+                </li><!-- end ngRepeat: logo in logos --><li data-ng-repeat="logo in logos">
+                    <a href="http://www.responsiblegamblingtrust.org.uk/" data-wf-target="_blank" title="Responsible Gambling Trust" target="_blank">
+                        <i data-ng-class="logo.icon" class="icon-responsible-gambling-trust"></i>
+                    </a>
+                </li><!-- end ngRepeat: logo in logos --><li data-ng-repeat="logo in logos">
+                    <a href="http://www.gbga.gi/" data-wf-target="_blank" title="GBGA" target="_blank">
+                        <i data-ng-class="logo.icon" class="icon-gbga"></i>
+                    </a>
+                </li><!-- end ngRepeat: logo in logos --><li data-ng-repeat="logo in logos">
+                    <a href="http://www.gambleaware.co.uk" data-wf-target="_blank" title="FUN-STOPS" target="_blank">
+                        <i data-ng-class="logo.icon" class="icon-fun-stops"></i>
+                    </a>
+                </li><!-- end ngRepeat: logo in logos -->
+            </ul>
+
+            <article class="legal" data-ng-bind-html="trustHtml(description)"><a href="http://www.gibraltar.gov.gi/remotegambling" target="_blank" class="logo-link" title="Remote Gambling"></a> William Hill is operated by WHG (International) Limited, a company registered in Gibraltar. William Hill is licensed and regulated by the <a href="http://www.gamblingcommission.gov.uk/" target="_blank" title="UK Gambling Commission">UK Gambling Commission</a> (<a href="https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39225" target="blank">Number: 000-039225 R-319373-001</a>) for customers in Great Britain, and licensed
+  by the Gibraltar Government and regulated by the <a title="Gibraltar Gambling Commissioner" href="https://www.gibraltar.gov.gi/remotegambling" target="blank">Gibraltar Gambling Commissioner </a> (RGL no. 034 &amp; 042) for all other customers.
+<p></p>
+<p>
+   The registered office of William Hill is at 6/1 Waterport Place, Gibraltar, with registered company number 99191. William Hill is a registered <a href="http://www.ibas-uk.com" target="_blank" title="I.B.A.S.">I.B.A.S.</a> bookmaker.</p></article>
+
+            <p class="cookies" data-ng-bind-html="trustHtml(cookie)">We use cookies: <a href="#!/action/cookies" title="We use cookies">This policy</a> describes how we use them.</p>
+
+            <ul>
+                <!-- ngRepeat: payment in paymentMethods --><li data-ng-repeat="payment in paymentMethods">
+                    <a href="#!/action/payment-methods" data-wf-target="_self" title="Visa" target="_self">
+                        <i data-ng-class="payment.icon" class="icon-visa"></i>
+                    </a>
+                </li><!-- end ngRepeat: payment in paymentMethods --><li data-ng-repeat="payment in paymentMethods">
+                    <a href="#!/action/payment-methods" data-wf-target="_self" title="MasterCard" target="_self">
+                        <i data-ng-class="payment.icon" class="icon-master-card"></i>
+                    </a>
+                </li><!-- end ngRepeat: payment in paymentMethods --><li data-ng-repeat="payment in paymentMethods">
+                    <a href="#!/action/payment-methods" data-wf-target="_self" title="Maestro" target="_self">
+                        <i data-ng-class="payment.icon" class="icon-maestro"></i>
+                    </a>
+                </li><!-- end ngRepeat: payment in paymentMethods --><li data-ng-repeat="payment in paymentMethods">
+                    <a href="#!/action/payment-methods" data-wf-target="_self" title="PayPal" target="_self">
+                        <i data-ng-class="payment.icon" class="icon-paypal"></i>
+                    </a>
+                </li><!-- end ngRepeat: payment in paymentMethods --><li data-ng-repeat="payment in paymentMethods">
+                    <a href="#!/action/payment-methods" data-wf-target="_self" title="Skrill" target="_self">
+                        <i data-ng-class="payment.icon" class="icon-skrill"></i>
+                    </a>
+                </li><!-- end ngRepeat: payment in paymentMethods -->
+            </ul>
+
+        </section>
+    </div>
+</footer><!-- end ngIf: visible --></section>
+
+<section data-gateway-check="gatewayCheck"><iframe class="ng-hide" width="0" height="0" ng-src="https://gaming.williamhill.com/session/auth/login?gateway=true&amp;cust_login=true&amp;returnUrl=https%3A%2F%2Fgaming.williamhill.com%2Fsession%2Fuser%2Fsessioncheck-iframe%3FdocUrl%3Dhttps%253A%252F%252Fmacau.williamhill.com%252F%2523!%252F" src="https://gaming.williamhill.com/session/auth/login?gateway=true&amp;cust_login=true&amp;returnUrl=https%3A%2F%2Fgaming.williamhill.com%2Fsession%2Fuser%2Fsessioncheck-iframe%3FdocUrl%3Dhttps%253A%252F%252Fmacau.williamhill.com%252F%2523!%252F"></iframe></section>
+
+<div data-wf-detail-overlay="global" data-wf-detail-overlay-properties="{ expandDelay: 250 }"><div class="wf-detail-overlay__container  ">
+    <div class="wf-detail-overlay__content"></div>
+    <a data-ng-click="closePanel()" class="wf-detail-overlay__close-button">
+        <i class="icon-x"></i>
+    </a>
+</div>
+</div>
+
+<div ng-class="ng-hide" data-blur-application=""></div>
+
+<div data-scroll-on-orientation=""> </div>
+
+<div data-loading="loading" class="loading"><!-- ngIf: loading --></div></div>
+      
+												
+						<script type="text/javascript" src="https://cwf.staticcache.org/gaming/macau/1.3.1/scripts/app.js"></script>
+						
+      
+												
+						<script type="text/javascript">
+Brombone = {};
+Brombone.beforeCaching = function() {
+    try {
+        var element = document.getElementById("overlayShadeDiv");
+        element.parentNode.removeChild(element);
+        element = document.getElementById("noticeIframe");
+        element.parentNode.parentNode.removeChild(element.parentNode);
+    } catch (e) {
+
+    };
+    return true;
+}
+</script>						
+      
+												
+						
+<script>
+// Google tracking script
+window._gaq = window._gaq || [];
+window._gaq.push( [ '_setAccount', 'UA-25322811-1' ] );
+window._gaq.push( [ '_setDomainName', '.williamhill.com' ] );
+window._gaq.push( [ '_setAllowLinker', true ] );
+window._gaq.push( [ '_setCustomVar', 2, 'member', ''+commonUtilities.getCookie('trk_cmp')+'' ,2] );
+window._gaq.push( [ '_setVar', ''+commonUtilities.getCookie('trk_cmp')+''] );
+window._gaq.push( [ '_trackPageview' ] );
+( function () {
+    var ga = document.createElement( 'script' );
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ( 'https:' == document.location.protocol ? 'https://ssl' : 'http://www' ) + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName( 'head' )[ 0 ];
+    s.appendChild( ga );
+} )();
+</script>
+						
+
+
+
+<script src="https://williamhill.tt.omtrdc.net/m2/williamhill/sc/standard?mboxHost=macau.williamhill.com&amp;mboxSession=1450167602324-218171&amp;mboxPC=1450167602324-218171.28_22&amp;mboxPage=1450167606401-827333&amp;screenHeight=1080&amp;screenWidth=1920&amp;browserWidth=1846&amp;browserHeight=1019&amp;browserTimeOffset=120&amp;colorDepth=24&amp;mboxCount=1&amp;mbox=SiteCatalyst%3A%20event&amp;mboxId=0&amp;mboxTime=1450174808263&amp;visitorNamespace=williamhill&amp;pageName=macau%3A&amp;server=macau.williamhill.com&amp;resolution=1920x1080&amp;javascriptVersion=1.6&amp;javaEnabled=N&amp;cookiesEnabled=Y&amp;trackDownloadLinks=true&amp;trackExternalLinks=true&amp;trackInlineStats=true&amp;linkLeaveQueryString=false&amp;linkDownloadFileTypes=exe%2Czip%2Cwav%2Cmp3%2Cmov%2Cmpg%2Cavi%2Cwmv%2Cpdf%2Cdoc%2Cdocx%2Cxls%2Cxlsx%2Cppt%2Cpptx&amp;linkInternalFilters=williamhill.com%2Cwilliamhill.it%2Cwilliamhill.es%2Cjavascript%3A%2Cmacau.williamhill.com&amp;linkTrackVars=None&amp;linkTrackEvents=None&amp;prop1=D%3Dg&amp;prop2=D%3Dv21&amp;prop6=D%3Dv25&amp;prop7=D%3Dv26&amp;eVar10=D%3Ds_vi&amp;eVar12=Non-customer&amp;eVar13=Non-customer&amp;prop14=D%3Dbw&amp;prop15=8%3A20%20AM&amp;prop16=Mozilla%2F5.0%20(Windows%20NT%206.1%3B%20WOW64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F47.0.2526.80%20Safari%2F537.36&amp;eVar20=D%3Dg&amp;eVar21=macau&amp;prop23=8%3A20%20AM%7CTuesday&amp;eVar25=default&amp;eVar26=https%3A%2F%2Fmacau.williamhill.com%2F&amp;prop32=1450167602324-218171.28_22&amp;eVar60=8%3A20%20AM%7CTuesday&amp;eVar63=Mozilla%2F5.0%20(Windows%20NT%206.1%3B%20WOW64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F47.0.2526.80%20Safari%2F537.36&amp;eVar75=Tue%20Dec%2015%202015&amp;mboxURL=https%3A%2F%2Fmacau.williamhill.com%2F%23!%2F&amp;mboxReferrer=http%3A%2F%2Fsports.williamhill.com%2Fbet%2Fen-gb&amp;mboxVersion=55&amp;scPluginVersion=1"></script><script src="https://williamhill.tt.omtrdc.net/m2/williamhill/sc/standard?mboxHost=macau.williamhill.com&amp;mboxSession=1450167602324-218171&amp;mboxPC=1450167602324-218171.28_22&amp;mboxPage=1450167606401-827333&amp;screenHeight=1080&amp;screenWidth=1920&amp;browserWidth=1846&amp;browserHeight=1019&amp;browserTimeOffset=120&amp;colorDepth=24&amp;mboxCount=2&amp;mbox=SiteCatalyst%3A%20event&amp;mboxId=1&amp;mboxTime=1450174811003&amp;visitorNamespace=williamhill&amp;pageName=macau%3Alobby&amp;server=macau.williamhill.com&amp;resolution=1920x1080&amp;javascriptVersion=1.6&amp;javaEnabled=N&amp;cookiesEnabled=Y&amp;trackDownloadLinks=true&amp;trackExternalLinks=true&amp;trackInlineStats=true&amp;linkLeaveQueryString=false&amp;linkDownloadFileTypes=exe%2Czip%2Cwav%2Cmp3%2Cmov%2Cmpg%2Cavi%2Cwmv%2Cpdf%2Cdoc%2Cdocx%2Cxls%2Cxlsx%2Cppt%2Cpptx&amp;linkInternalFilters=williamhill.com%2Cwilliamhill.it%2Cwilliamhill.es%2Cjavascript%3A%2Cmacau.williamhill.com&amp;linkTrackVars=None&amp;linkTrackEvents=None&amp;prop1=D%3Dg&amp;prop2=D%3Dv21&amp;prop4=D%3Dv23&amp;prop6=D%3Dv25&amp;prop7=D%3Dv26&amp;prop9=D%3Dv28&amp;eVar10=D%3Ds_vi&amp;eVar12=Non-customer&amp;eVar13=Non-customer&amp;prop14=D%3Dbw&amp;prop15=8%3A20%20AM&amp;prop16=Mozilla%2F5.0%20(Windows%20NT%206.1%3B%20WOW64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F47.0.2526.80%20Safari%2F537.36&amp;eVar20=D%3Dg&amp;eVar21=macau&amp;prop23=8%3A20%20AM%7CTuesday&amp;eVar23=game%2Fhome&amp;eVar25=desktop&amp;eVar26=https%3A%2F%2Fmacau.williamhill.com%2F&amp;eVar28=GBP&amp;prop32=1450167602324-218171.28_22&amp;eVar60=8%3A20%20AM%7CTuesday&amp;eVar63=Mozilla%2F5.0%20(Windows%20NT%206.1%3B%20WOW64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F47.0.2526.80%20Safari%2F537.36&amp;eVar75=Tue%20Dec%2015%202015&amp;mboxURL=https%3A%2F%2Fmacau.williamhill.com%2F%23!%2F&amp;mboxReferrer=http%3A%2F%2Fsports.williamhill.com%2Fbet%2Fen-gb&amp;mboxVersion=55&amp;scPluginVersion=1"></script></body></html>

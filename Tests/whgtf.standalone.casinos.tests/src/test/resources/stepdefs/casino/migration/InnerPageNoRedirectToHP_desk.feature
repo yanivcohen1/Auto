@@ -1,0 +1,27 @@
+@RedirectEn @AllMig
+Feature: InnerPageNoRedirectToHP Desktop
+	As a new migUser I want to be able Login
+
+Scenario Outline: InnerPageNoRedirectToHP_<Type>_<Brand>_<language>
+	Given "<Type>" User is connect to the internet ""
+    Given migUser language "<language>" and Brand "<Brand>" and "<Type>"
+    Given migUser is navigating to "<URL>"
+    Then Redirection To "<Home>"
+		
+	@EgDeskRedirectEn @EgAllMig
+    Examples:
+		| language | Brand | Type 		 | migUserName 	| Password  | Home 									  | URL |
+		| En	   | Eg    | Desk 	     | 170129040528 | 123456    | https://www.eurogrand.com/en/promotions | https://ww2.eurogrand.com/en/promotions?cat=most%20popular |
+	
+	@WhccDeskRedirectEn @WhccAllMig
+    Examples:
+		| language | Brand | Type 	 | migUserName 	| Password    | Home 									        				| URL |
+		| En	   | Whcc  | Desk 	 | 170129033419 | 123456      | https://ww2.williamhillcasino.com/promotions?cat=most%20popular | https://ww2.williamhillcasino.com/promotions?cat=most%20popular |
+#	@EgDeLogin
+#    Examples:
+#		| language | Brand | configurationFile 		 | migUserName 	| Password  |
+#		| de	   | Eg  | EgMobileEnLogin.xml 	     | 141215123054 | 123456    |
+		
+#Background: RegisterDeposit
+    #chrome firefox
+	#Given migUser is connect to the internet <"">

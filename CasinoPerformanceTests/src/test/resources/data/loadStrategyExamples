@@ -1,0 +1,19 @@
+//setUp(scn.inject(rampUsers(numberOfUsers.toInt) over (timeInterval.toInt seconds)).protocols(httpConf))
+
+  //    setUp(scn.inject(constantUsersPerSec(1) during(1 minutes))).throttle(
+  //  reachRps(10) in (10 seconds),
+  //  holdFor(1 minute),
+  //  jumpToRps(50),
+  //  holdFor(5 minutes))
+  //.protocols(httpConf)
+
+  //    setUp(
+  //  scn.inject(
+  //    nothingFor(4 seconds), // 1
+  //    atOnceUsers(10), // 2
+  //    rampUsers(10) over(5 seconds), // 3
+  //    constantUsersPerSec(1) during(20 seconds) randomized, // 5
+  //    rampUsersPerSec(80) to(100) during(2 minutes) randomized, // 7
+  //    ).protocols(httpConf))
+  
+  setUp(scn.inject(constantUsersPerSec(20).during(3 minutes).randomized)).maxDuration(3 minutes).protocols(httpConf)

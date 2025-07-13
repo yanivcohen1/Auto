@@ -1,0 +1,256 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="BAU Tests" verbose="1">
+
+	<listeners>
+               <listener class-name="com.wh.auto.common.TestListener" />
+   
+    </listeners>
+
+	<test name="BuildClients">
+         <parameter name="parametersFileName"  value="ClientsTest.ini"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestBuildClients" />
+		</classes>	
+	</test>
+	 
+     <test name="Sport Banner">
+         <parameter name="parametersFileName"  value="SportBanner.csv"/>
+         <classes>
+             <class name="com.wh.auto.general.TestSportBanner" />
+		</classes>	
+	</test>
+     
+     <test name="Affutd">
+         <parameter name="parametersFileName"  value="Affutd.ini"/>
+         <classes>
+             <class name="com.wh.auto.affutd.TestAffutd" />
+		</classes>
+	</test>
+	 
+      <test name="Freespin">
+          <parameter name="parametersFileName"  value="FreespinTest.ini"/>
+         <classes>
+             <class name="com.wh.auto.prestige.TestFreespin" />
+		</classes>	
+	</test>
+    
+    <!-- <test name="EurograndClientDeNew">
+         <parameter name="test-name"  value="EurograndDeNewClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>
+	</test> -->
+	
+     <test name="EurograndWebEn">
+         <parameter name="test-path"  value="..\EurograndWebEn\bin\Release\EurograndWebEn.dll"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClients" />
+		</classes>	
+	 </test>
+    
+    <!-- <test name="EurograndWebDe">
+         <parameter name="test-path"  value="..\EurograndWebDe\bin\Release\EurograndWebDe.dll"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClients" />
+		</classes>	
+	</test> -->
+    
+    <test name="EurograndWebLoginEN">
+         <parameter name="parametersFileName"  value="LoginDE.xml"/>
+         <classes>
+             <class name="com.wh.auto.eurogrand.TestLogin" />
+		</classes>		
+	</test>
+	
+    <!-- <test name="EurograndWebLoginDE">
+         <parameter name="parametersFileName"  value="LoginEN.xml"/>
+         <classes>
+             <class name="com.wh.auto.eurogrand.TestLogin" />
+		</classes>		
+	</test> -->
+     
+    <!-- <test name="PrestigeClientDe">
+         <parameter name="test-name"  value="PrestigeDeClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	 </test> -->
+	 
+     <!-- <test name="JoylandClientDe">
+         <parameter name="test-name"  value="JoylandDeClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	 </test> -->
+     
+     <test name="RubyBingoEn">
+         <parameter name="test-path"  value="..\RubyBingoEn\bin\Release\RubyBingoEn.dll"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClients" />
+		</classes>	
+	 </test>
+     
+     <!-- <test name="SkykingClientDe">
+         <parameter name="test-name"  value="SkykingDeClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	</test> -->
+	
+     <!-- <test name="Tracing">
+         <parameter name="parametersFileName"  value="PT_Advertiser.ini"/>
+         <classes>
+             <class name="com.wh.auto.pt_admin.Test_PT_Advertiser" />
+		</classes>	
+	</test> -->  
+    
+    <!-- <test name="21NovaClientDe">
+         <parameter name="test-name"  value="Nova21DeClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	</test> -->
+	
+    <!-- <test name="21NovaClientRu">
+         <parameter name="test-name"  value="Nova21RuClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	</test> -->
+      
+    <test name="21NovaWebEn">
+         <parameter name="parametersFileName"  value="nova21DepositEN.xml"/>
+         <classes>
+             <class name="com.wh.auto.nova21.TestDeposit21Nova" />
+		</classes>	
+	</test>
+     
+     <!-- <test name="21NovaWebDe">
+         <parameter name="parametersFileName"  value="nova21DepositDE.xml"/>
+         <classes>
+             <class name="com.wh.auto.nova21.TestDeposit21Nova" />
+		</classes>	
+	</test> -->
+     
+     <!-- <test name="21NovaWebRu">
+         <parameter name="parametersFileName"  value="nova21DepositRU.xml"/>
+         <classes>
+             <class name="com.wh.auto.nova21.TestDeposit21Nova" />
+		</classes>	
+	</test> -->
+     
+     <test name="21NovaWebLoginEn">
+         <parameter name="parametersFileName"  value="nova21LoginEN.xml"/>
+         <classes>
+             <class name="com.wh.auto.nova21.TestLogin21Nova" />
+		</classes>		
+	</test>
+	
+    <!-- <test name="21NovaWebLoginDe">
+         <parameter name="parametersFileName"  value="nova21LoginDE.xml"/>
+         <classes>
+             <class name="com.wh.auto.nova21.TestLogin21Nova" />
+		</classes>		
+	</test> -->
+    
+    <!-- <test name="21NovaWebLoginRu">
+         <parameter name="parametersFileName"  value="nova21LoginRU.xml"/>
+         <classes>
+             <class name="com.wh.auto.nova21.TestLogin21Nova" />
+		</classes>		
+	</test> -->
+     
+      <!-- <test name="WhccClientDe">
+         <parameter name="test-name"  value="WilliamhillDeClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	</test> -->
+    
+    <test name="WhccWebEn">
+         <parameter name="parametersFileName"  value="DepositEN.xml"/>
+         <classes>
+             <class name="com.wh.auto.whcc.TestDeposit" />
+		</classes>	
+	</test>
+     
+    <!--  <test name="WhccWebDe">
+         <parameter name="parametersFileName"  value="DepositDE.xml"/>
+         <classes>
+             <class name="com.wh.auto.whcc.TestDeposit" />
+		</classes>	
+	</test> -->
+     
+     <test name="WHccWebLoginEn">
+         <parameter name="parametersFileName"  value="LoginEN.xml"/>
+         <classes>
+             <class name="com.wh.auto.whcc.TestLogin" />
+		</classes>		
+	</test>
+	
+    <!-- <test name="WhccWebLoginDe">
+         <parameter name="parametersFileName"  value="LoginDE.xml"/>
+         <classes>
+             <class name="com.wh.auto.whcc.TestLogin" />
+		</classes>		
+	</test> -->
+    
+     
+	
+	<test name="WhccClientEn">
+         <parameter name="test-name"  value="WilliamhillEnClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	 </test>
+
+	<test name="EurograndClientEn">
+         <parameter name="test-name"  value="EurograndEnClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	</test>
+	
+	<test name="21NovaClientEn">
+         <parameter name="test-name"  value="Nova21EnClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>
+	</test>
+	
+	<test name="EurograndClientEnNew">
+         <parameter name="test-name"  value="EurograndEnNewClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	</test>
+	
+	<test name="PrestigeClientEn">
+         <parameter name="test-name"  value="PrestigeEnClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>
+	 </test>
+	 
+	 <test name="JoylandClientEn">
+         <parameter name="test-name"  value="JoylandEnClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>		
+	 </test>
+	 
+	 <test name="SkykingClientEn">
+         <parameter name="test-name"  value="SkykingEnClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	 </test>
+	 
+	 <test name="Tracing">
+         <parameter name="parametersFileName"  value="PT_Advertiser.ini"/>
+         <classes>
+             <class name="com.wh.auto.pt_admin.Test_PT_Advertiser" />
+		</classes>	
+	</test>
+	
+</suite>

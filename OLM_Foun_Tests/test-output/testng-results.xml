@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="50152" started-at="2013-08-15T15:02:56Z" finished-at="2013-08-15T15:03:46Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="50152" started-at="2013-08-15T15:02:56Z" finished-at="2013-08-15T15:03:46Z">
+      <class name="com.wh.auto.eurogrand.MobileRedirectionTestsChrome">
+        <test-method status="PASS" signature="browserTarget(java.lang.String, java.lang.String)[pri:0, instance:com.wh.auto.eurogrand.MobileRedirectionTestsChrome@17889e9]" name="browserTarget" duration-ms="24255" started-at="2013-08-15T18:02:56Z" description="Test The Browser UserAgent in Chrome" data-provider="Language" finished-at="2013-08-15T18:03:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; Galaxy S II Build/GRJ22) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://serve.eurogrand.com/promoRedirect?zone=1477487947&lp=1477487945]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserTarget -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.wh.auto.eurogrand.MobileRedirectionTestsChrome@17889e9]" name="after" is-config="true" duration-ms="1475" started-at="2013-08-15T18:03:20Z" finished-at="2013-08-15T18:03:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="browserTarget(java.lang.String, java.lang.String)[pri:0, instance:com.wh.auto.eurogrand.MobileRedirectionTestsChrome@17889e9]" name="browserTarget" duration-ms="22911" started-at="2013-08-15T18:03:21Z" description="Test The Browser UserAgent in Chrome" data-provider="Language" finished-at="2013-08-15T18:03:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mozilla/5.0 (Linux; U; Android 2.2; en-ca; GT-P1000M Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://serve.eurogrand.com/promoRedirect?zone=1477487749&lp=1477487747]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserTarget -->
+        <test-method status="PASS" signature="after()[pri:0, instance:com.wh.auto.eurogrand.MobileRedirectionTestsChrome@17889e9]" name="after" is-config="true" duration-ms="1496" started-at="2013-08-15T18:03:44Z" finished-at="2013-08-15T18:03:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- com.wh.auto.eurogrand.MobileRedirectionTestsChrome -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

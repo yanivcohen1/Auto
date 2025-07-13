@@ -1,0 +1,44 @@
+<br>
+<div class="container">
+    <header>
+    <center><h3 >Manual Tests</h3></center>
+    </header>
+	<div class="row" >
+	
+		<div class="well col-md-12">
+			<form class="form-horizontal">
+				<!-- <h1>Select text file</h1> -->
+				<div class="form-group">
+				<!-- <span class="btn btn-default btn-file">
+				    Browse <input type="file" on-read-file="showContent($fileContent)" class="col-sm-3">
+				</span> -->
+					<input type="file" on-read-file="showContent($fileContent)" class="btn btn-success col-sm-3" />
+						<label for="sel1" class="col-sm-3 control-label">Select Test:</label>
+						<div class="col-sm-4">
+							<select ng-model="selected" class="form-control col-sm-6" id="sel1" ng-options="option for option in options"><!-- ng-options="color.name for color in colors" -->
+								<!-- <option>Select Test</option> -->
+								<!-- <option>TestManualRedirect</option> -->
+								<!-- <option>3</option>
+								<option>4</option> -->
+							</select> 
+						</div>
+					<input type="button" value="Run Test" class="btn btn-primary"
+						ng-click="runTest(content)" data-ng-disabled="!content || !selected"
+						class="col-sm-2" />
+				</div>
+				<br>
+				<div class="form-group">
+					<!-- ng-if="content" -->
+					<strong class="col-sm-12">Manual content is:</strong>
+					<!-- 				        <pre>{{ content }}</pre> -->
+					<textarea class="col-sm-12" ng-model="content" rows="10%"></textarea>
+	
+				</div>
+				<hr />
+	
+	
+			</form>
+		</div>
+	
+	</div>
+</div>

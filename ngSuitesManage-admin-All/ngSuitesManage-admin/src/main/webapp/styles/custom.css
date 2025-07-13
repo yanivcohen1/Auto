@@ -1,0 +1,103 @@
+body {
+    padding: 15px;
+    padding-top: 5px;
+    margin:0;
+    width:100%;/* needed for background decoration */
+    height:100%;/* needed for background decoration */
+    text-align:center;
+    background-color:#F8F8F8;
+    color:#222222;
+    font-family:Arial,"Lucida Sans","Lucida Grande",Lucida,sans-serif;
+    font-size:13px; /* all other sizes depend on this and will be defined as X.Yem */
+}
+
+/* Animation */
+.view {
+    left: 60px;
+    position: relative;
+    opacity: 0.0;
+}
+
+ng-hide {
+	display: none;
+}
+
+/* Loading msg main page */
+.loader {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: bold;
+	width: 200px;
+	height: 36px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+/* Bootstrap overrides */
+.navbar-inner {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color: #F0F0F0;
+    background-image: none;
+}
+
+.navbar .navbar-fixed-bottom {
+	background-color: #E8E8E8;
+}
+
+.navbar .nav {
+    margin-left:50px;
+    margin-top:15px;
+}
+
+.close {
+    opacity: 1.0;
+}
+
+.dropdown-menu > li > a:hover {
+  	text-decoration: none;
+  	color: #ffffff;
+  	background-color: #0081c2;
+
+}
+/* Bootstrap overrides End*/
+
+span.required { color:#ff0000; }
+
+/* Tables*/
+tr.even {
+    background-color: #f0f0f0;
+}
+
+tr.odd {
+    background-color: #f8f8f8;
+}
+
+/* List rows and cells */
+th, td {
+    border: 1px solid black;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.ng-table {
+    border: 1px solid #000;
+}
+
+th.sortable {
+    background-color: #E3E4E4;
+    /* text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75); */
+}
+/* Tables End*/ 
+
+/* loading-bar*/
+#loading-bar .bar {
+  background: #FF0000;
+}

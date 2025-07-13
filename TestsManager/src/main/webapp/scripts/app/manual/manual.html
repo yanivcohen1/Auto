@@ -1,0 +1,63 @@
+<br>
+<!-- <div class="orders ">
+	<div class="container"> -->
+	    <header>
+	    <center><h3 >Manual Tests</h3></center>
+	    </header>
+		<div class="row" >
+			<div class="well col-md-12">
+				<form class="form-horizontal">
+					<!-- <h1>Select text file</h1> -->
+					<!-- <div class="form-group"> -->
+					<!-- <span class="btn btn-default btn-file">
+					    Browse <input type="file" on-read-file="showContent($fileContent)" class="col-sm-3">
+					</span> -->
+							<input type="file" on-read-file="showContent($fileContent)" class="btn btn-success col-sm-2" />
+							<div class="col-sm-2">
+							<button class="btn btn-primary "
+							ng-click="downloadCsv()" data-ng-disabled="!doneLoading">Download CSV</button>
+							</div>
+							<button class="btn btn-default col-sm-1" ng-click="isCollapsed = !isCollapsed">Toggle In</button>
+							<div class="col-sm-1">
+								<button class="btn btn-default" ng-click="refresh()">Refresh</button>
+							</div>
+							<!-- <label for="sel1" class="col-sm-1 control-label">Select Test:</label> -->
+							<div class="nullable col-sm-3">
+								<select ng-model="selected" class="form-control col-sm-6" id="sel1" ng-options="option for option in options"><!-- ng-options="color.name for color in colors" -->
+									<option value="">-- choose Test --</option>
+									<!-- <option>4</option> -->
+								</select> 
+							</div>
+						<div class="col-sm-2">
+						<pre class="form-control">{{ status }}</pre>
+						</div>
+						<input type="button" value={{run}} class="btn btn-primary col-sm-1"
+							ng-click="runTest()" data-ng-disabled="!content || !selected" />
+					<!-- </div> -->
+					<br>
+					<div collapse="isCollapsed">
+						<div class="form-group">
+							<!-- ng-if="content" -->
+							<strong class="col-sm-12">Manual Table is:</strong>
+							<!-- 				        <pre>{{ content }}</pre> -->
+							<div class="col-sm-11 grid" id="grid1" ui-grid="gridOptions" ui-grid-cellNav ui-grid-edit ui-grid-resize-columns ui-grid-pinning ui-grid-move-columns ui-grid-importer ui-grid-exporter></div>
+						</div>
+						<!-- <div class="form-group" >
+							ng-if="content"
+							<strong class="col-sm-12">Manual content is:</strong>
+											        <pre>{{ content }}</pre>
+							<textarea class="col-sm-12" ng-model="content" rows="10%"></textarea>
+						</div> -->
+					</div>
+					<hr />
+					<div class="form-group">
+							<!-- ng-if="content" -->
+							<strong class="col-sm-12">Result Table is:</strong>
+							<!-- 				        <pre>{{ content }}</pre> -->
+							<div class="col-sm-11 grid" id="grid2" ui-grid="gridOptions2" ui-grid-cellNav ui-grid-edit ui-grid-resize-columns ui-grid-pinning ui-grid-move-columns ui-grid-importer ui-grid-exporter></div>
+						</div>
+				</form>
+			</div>
+		</div>
+<!-- 	</div>
+<div> -->

@@ -1,0 +1,21 @@
+2015-07-26_18:23:15.265 [main] INFO  com.who.bi.App - Start App
+
+2015-07-26_18:23:15.268 [main] INFO  com.who.bi.App - download Path: C:/Users/yanivc/Downloads
+2015-07-26_18:23:15.268 [main] DEBUG com.who.bi.App - debug 
+2015-07-26_18:23:15.268 [main] INFO  com.who.bi.App - copy Path: c:/ILAnalitics
+2015-07-26_18:23:15.566 [main] INFO  com.who.bi.App - start Date:2015_07_25
+2015-07-26_18:23:15.566 [main] INFO  com.who.bi.App - end Date:2015_07_25
+2015-07-26_18:23:17.678 [main] INFO  com.who.bi.MyEventListener - About to navigating to:'https://dev.flurry.com//secure/login.do'
+2015-07-26_18:23:24.388 [main] INFO  com.who.bi.MyEventListener - About to write to input findBy.id: emailInput
+2015-07-26_18:23:25.673 [main] INFO  com.who.bi.MyEventListener - About to write to input findBy.id: emailInput
+2015-07-26_18:23:26.971 [main] INFO  com.who.bi.MyEventListener - About to write to input findBy.id: passwordInput
+2015-07-26_18:23:28.938 [main] ERROR com.who.bi.App - null
+java.lang.NullPointerException: null
+	at org.openqa.selenium.support.events.EventFiringWebDriver.extractInterfaces(EventFiringWebDriver.java:117) ~[selenium-support-2.45.0.jar:na]
+	at org.openqa.selenium.support.events.EventFiringWebDriver.access$500(EventFiringWebDriver.java:63) ~[selenium-support-2.45.0.jar:na]
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.<init>(EventFiringWebDriver.java:322) ~[selenium-support-2.45.0.jar:na]
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.<init>(EventFiringWebDriver.java:316) ~[selenium-support-2.45.0.jar:na]
+	at org.openqa.selenium.support.events.EventFiringWebDriver.createWebElement(EventFiringWebDriver.java:286) ~[selenium-support-2.45.0.jar:na]
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:186) ~[selenium-support-2.45.0.jar:na]
+	at com.who.bi.App.login(App.java:147) ~[classes/:na]
+	at com.who.bi.App.main(App.java:73) ~[classes/:na]

@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RubyBingoEn</name>
+    </assembly>
+    <members>
+        <member name="M:RubyBingoEn.CongragulationPage.#ctor(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Open the WebPage
+            </summary>
+            <param name="_driver"></param>
+        </member>
+        <member name="M:RubyBingoEn.CongragulationPage.ClickGoToBingo(System.String)">
+            <summary>
+            Click On PlayBingo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RubyBingoEn.CashierPage.EnterDetails">
+            <summary>
+            Enter Cashier form Details
+            </summary>
+        </member>
+        <member name="M:RubyBingoEn.CashierPage.CloseApprovePopup">
+            <summary>
+            Popup Your deposit has been approved and will be charged as WH ONLINE. Thank you and good luck!
+            </summary>
+        </member>
+        <member name="T:RubyBingoEn.DepositPage">
+            <summary>
+            The Deposit Page
+            </summary>
+        </member>
+        <member name="M:RubyBingoEn.DepositPage.Deposit">
+            <summary>
+            Deposit 50 URO
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RubyBingoEn.DepositPage.CloseApprovePopup">
+            <summary>
+            Popup Your deposit has been approved and will be charged as WH ONLINE. Thank you and good luck!
+            </summary>
+        </member>
+        <member name="M:RubyBingoEn.DepositPage.ReadCurrentBalance">
+            <summary>
+            Read Current Balance
+            </summary>
+        </member>
+        <member name="M:RubyBingoEn.MainGamePage.ClickOnBank">
+            <summary>
+            Click On Bank
+            </summary>
+        </member>
+        <member name="M:RubyBingoEn.RegistrationPage.FillRegisterDetail(System.String)">
+            <summary>
+            Fill Register Detail
+            </summary>
+        </member>
+        <member name="M:RubyBingoEn.LoginPage.ClickOnRegister">
+            <summary>
+            Click OnR egister
+            </summary>
+        </member>
+        <member name="M:RubyBingoEn.MainWebPage.#ctor(OpenQA.Selenium.IWebDriver)">
+            <summary>
+            Open the WebPage
+            </summary>
+            <param name="_driver"></param>
+        </member>
+        <member name="M:RubyBingoEn.MainWebPage.ClickOnPlayBingo">
+            <summary>
+            Click On PlayBingo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:RubyBingoEn.RubyBingoEnOnline">
+             <summary>
+            This is a test class for ProgramTest and is intended
+            to contain all ProgramTest Unit Tests
+            </summary>
+        </member>
+        <member name="F:RubyBingoEn.RubyBingoEnOnline._driver">
+            <summary>
+            the selenium driver
+            </summary>
+        </member>
+        <member name="M:RubyBingoEn.RubyBingoEnOnline.TestInitialize">
+            <summary>
+            Use TestInitialize to run code before running each test
+            </summary>
+        </member>
+        <member name="M:RubyBingoEn.RubyBingoEnOnline.RubyBingoEnTestDebug">
+             <summary>
+            The main test
+            </summary>
+        </member>
+        <member name="M:RubyBingoEn.RubyBingoEnOnline.RubyBingoEnTest">
+             <summary>
+            A test for Program Constructor
+            </summary>
+        </member>
+        <member name="M:RubyBingoEn.RubyBingoEnOnline.TestCleanup">
+            <summary>
+            Use TestCleanup to run code after each test has run
+            </summary>
+        </member>
+        <member name="P:RubyBingoEn.RubyBingoEnOnline.TestContext">
+             <summary>
+            Gets or sets the test context which provides
+            information about and functionality for the current test run.
+            </summary>
+        </member>
+    </members>
+</doc>

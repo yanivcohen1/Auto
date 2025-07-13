@@ -1,0 +1,37 @@
+Language_Name,Language_Symbol,Language_Browser_Accept_Langauge
+Arabic,ar,ar
+Deutsch[at] ,at,at-AT
+Czech,cs,cs
+Czech[cz],cz,cs-CZ
+Danish ,da,da
+Deutsch,de,de
+Deutsch[de],de,de-DE
+Greek,el,el-GR
+English,en,en
+English[AU],au,en-AU
+English [CA],ca,en-CA
+English [uk],uk,en-GB
+Español,es,es
+Español[es],es,es-ES
+English[eu],eu,eu-EU
+Finland ,fi,fi-FI
+Français,fr,fr
+Quebec,qc,fr-CA
+Français[FR],fr,fr-FR
+Hungarian,hu,hu-HU
+Italiano,it,it-IT
+Japanese,ja,ja-JP
+Dutch,nl,nl-NL
+Nynorsk,no,no
+Polski,pl,pl
+Português,pt,pt
+Romania,ro,ro
+Russian,ru,ru-ru
+Serbo Croatian,sh,sh-SH
+Slovenian,sl,sl-SL
+Serbian,sr,sr
+Swedish,sv,sv
+Swedish[se],se,sv-SE
+Turkish,tr,tr-TR
+Chinese(Traditional),zh,zh
+Chinese(Simplified),cn,zh-CN

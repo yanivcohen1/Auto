@@ -1,0 +1,21 @@
+{
+    "testmanageApp": {
+        "suite" : {
+            "home": {
+                "title": "Suites",
+                "createLabel": "Create a new Suite",
+                "createOrEditLabel": "Create or edit a Suite"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Suite {{ id }}?"
+            },
+            "detail": {
+                "title": "Suite"
+            },
+            "suite_name": "Suite_name",
+            "xml_file_location": "Xml_file_location",
+            "jenkins_url": "Jenkins_url",
+            "tests": "tests"
+        }
+    }
+}

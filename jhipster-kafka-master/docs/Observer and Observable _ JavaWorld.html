@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<!-- saved from url=(0081)https://www.javaworld.com/article/2077258/learn-java/observer-and-observable.html -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./Observer and Observable _ JavaWorld_files/ads"></script><script src="./Observer and Observable _ JavaWorld_files/ads(1)"></script><script src="./Observer and Observable _ JavaWorld_files/ads(2)"></script><script>var eid = 18; var dpi = 556675421;</script><script async="" src="./Observer and Observable _ JavaWorld_files/webtag.js.download"></script><script src="./Observer and Observable _ JavaWorld_files/628093423999127" async=""></script><script async="" src="./Observer and Observable _ JavaWorld_files/fbevents.js.download"></script><script src="./Observer and Observable _ JavaWorld_files/osd.js.download"></script><script src="./Observer and Observable _ JavaWorld_files/init"></script><script src="./Observer and Observable _ JavaWorld_files/pubads_impl_rendering_moa_c_20171107.js.download"></script><script src="./Observer and Observable _ JavaWorld_files/ads(3)"></script><script type="text/javascript" async="" src="./Observer and Observable _ JavaWorld_files/linkid.js.download"></script><script type="text/javascript" async="" src="./Observer and Observable _ JavaWorld_files/analytics.js.download"></script><script async="" src="./Observer and Observable _ JavaWorld_files/beacon.js.download"></script><script async="" type="text/javascript" src="./Observer and Observable _ JavaWorld_files/gpt.js.download"></script><script type="text/javascript" async="" src="./Observer and Observable _ JavaWorld_files/recaptcha__en.js.download"></script><script type="text/javascript" async="" src="./Observer and Observable _ JavaWorld_files/yieldbot.intent.js.download"></script><script type="text/javascript" async="" src="./Observer and Observable _ JavaWorld_files/jpt"></script><script type="text/javascript" async="" src="./Observer and Observable _ JavaWorld_files/jpt(1)"></script><script type="text/javascript" async="" src="./Observer and Observable _ JavaWorld_files/jpt(2)"></script><script type="text/javascript" async="" src="./Observer and Observable _ JavaWorld_files/auction"></script><script type="text/javascript" async="" src="./Observer and Observable _ JavaWorld_files/auction(1)"></script><script type="text/javascript" async="" src="./Observer and Observable _ JavaWorld_files/auction(2)"></script><script type="text/javascript" async="" src="./Observer and Observable _ JavaWorld_files/auction(3)"></script><script async="" src="./Observer and Observable _ JavaWorld_files/gtm.js.download"></script><script type="text/javascript" async="" src="./Observer and Observable _ JavaWorld_files/prebid.min.js.download"></script>
+<!-- metas -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>Observer and Observable | JavaWorld</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://www.javaworld.com/javaworld/jw-10-1996/jw-10-howto.html">
+<meta itemprop="url" content="https://www.javaworld.com/article/2077258/learn-java/observer-and-observable.html">
+<meta name="description" content="Here&#39;s an introduction to the Observer interface and the Observable
+class found in the Java programming language class library. This
+article describes both and demonstrates how they can be used to
+implement programs based on the Model/View/Controller architecture
+introduced and popularized by the Smalltalk programming language.
+(2,200 words)">
+<meta name="DC.date.issued" content="1996-10-01T01:00-05:00">
+<meta name="date" content="1996-10-01">
+<meta property="og:title" content="Observer and Observable">
+<meta property="og:description" content="Here&#39;s an introduction to the Observer interface and the Observable
+class found in the Java programming language class library. This
+article describes both and demonstrates how they can be used to
+implement programs based on the Model/View/Controller architecture
+introduced and popularized by the Smalltalk programming language.
+(2,200 words)">
+<meta property="og:image" content="https://www.javaworld.com/www.idge.jvw/images/JVW_logo_300x300.png">
+<meta itemprop="image" content="https://www.javaworld.com/www.idge.jvw/images/JVW_logo_300x300.png">
+<meta itemprop="thumbnailURl" content="https://www.javaworld.com/www.idge.jvw/images/JVW_logo_300x300.png">
+<link rel="image_src" href="https://www.javaworld.com/www.idge.jvw/images/JVW_logo_300x300.png">
+<meta name="twitter:image" content="https://www.javaworld.com/www.idge.jvw/images/JVW_logo_300x300.png">
+<meta property="og:type" content="article">
+<meta name="author" content="Todd Sundsted">
+<meta property="og:site_name" content="JavaWorld">
+<meta property="fb:app_id" content="196366870381968">
+<meta property="og:url" content="https://www.javaworld.com/article/2077258/learn-java/observer-and-observable.html">
+<!-- Use Twitter Summary Card with Large Image for articles and videos -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@javaworldcom">
+<meta name="twitter:description" content="Here&#39;s an introduction to the Observer interface and the Observable
+class found in the Java programming language class library. This
+article describes both and demonstrates how they can be used to
+implement programs based on the Model/View/Controller architecture
+introduced and popularized by the Smalltalk programming language.
+(2,200 words)">
+<meta name="rating" content="General">
+<meta name="robots" content="NOODP,NOYDIR">
+<meta name="msvalidate.01" content="04917178B598F0648B9BAD693FEC29A3">
+<!-- Sailthru -->
+<meta name="sailthru.tags" content="learn-java,application-development,java-language,todd-sundsted,how-to-java,howto,long">
+<meta name="sailthru.title" content="Observer and Observable">
+<meta name="sailthru.description" content="Here&#39;s an introduction to the Observer interface and the Observable
+class found in the Java programming language class library. This
+article describes both and demonstrates how they can be used to
+implement programs based on the Model/View/Controller architecture
+introduced and popularized by the Smalltalk programming language.
+(2,200 words)">
+<meta name="displaytype" content="article">
+<meta name="blogs" content="how-to java">
+<meta name="source" content="javaworld">
+<meta name="category" content="learn java,software development,java">
+<meta name="storytype" content="howto">
+<!-- pagination -->
+<link rel="next" href="https://www.javaworld.com/article/2077258/learn-java/observer-and-observable.html?page=2">
+<link id="mobile-size" rel="stylesheet" href="./Observer and Observable _ JavaWorld_files/inline-header-mobile.css"><link id="desktop-size" rel="stylesheet" href="./Observer and Observable _ JavaWorld_files/inline-header.css">
+<script>if(window.matchMedia("(min-width: 768px)").matches){document.getElementById('mobile-size').insertAdjacentHTML('afterend','<link id="desktop-size" rel="stylesheet" href="/www.idge/css/inline-header.css?v=20171219113540" />');}</script>
+<link rel="stylesheet" href="./Observer and Observable _ JavaWorld_files/inline-header(1).css">
+<!-- css -->
+<link rel="stylesheet" href="./Observer and Observable _ JavaWorld_files/normalize.css">
+<link rel="stylesheet" href="./Observer and Observable _ JavaWorld_files/prettify.css">
+<link rel="stylesheet" href="./Observer and Observable _ JavaWorld_files/select2.css">
+<link rel="stylesheet" href="./Observer and Observable _ JavaWorld_files/article.css">
+<link rel="stylesheet" href="./Observer and Observable _ JavaWorld_files/insider-promo-styles.css">
+<link rel="stylesheet" href="./Observer and Observable _ JavaWorld_files/print.css" media="print">
+<link rel="stylesheet" href="./Observer and Observable _ JavaWorld_files/article(1).css">
+<link rel="stylesheet" href="./Observer and Observable _ JavaWorld_files/ss-social.css">
+<link rel="stylesheet" href="./Observer and Observable _ JavaWorld_files/ss-standard.css">
+<!--[if lte IE 8]>  
+		<link href="/www.idge/css/webfonts/ss-ie8.css" rel="stylesheet" />
+	<![endif]-->
+<link href="./Observer and Observable _ JavaWorld_files/css" rel="stylesheet" type="text/css">
+<!--  fav and touch icons -->
+<link rel="shortcut icon" type="image/x-icon" href="https://www.javaworld.com/www.idge.jvw/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.javaworld.com/www.idge.jvw/touchicon_144.gif">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.javaworld.com/www.idge.jvw/touchicon_114.gif">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.javaworld.com/www.idge.jvw/touchicon_72.gif">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://www.javaworld.com/www.idge.jvw/touchicon_57.gif">
+<link rel="apple-touch-icon" href="https://www.javaworld.com/www.idge.jvw/images/JVW_logo_300x300.png">
+<!-- js -->
+<script src="./Observer and Observable _ JavaWorld_files/jquery-1.10.2.min.js.download"></script>
+<script src="./Observer and Observable _ JavaWorld_files/init_device.js.download"></script>
+<!-- google_dfp needs jquery defined first -->
+<script type="text/javascript" src="./Observer and Observable _ JavaWorld_files/gpt_includes.js.download"></script>
+<script type="text/javascript">if(adLayer==null||adLayer=='undefined'){var adLayer=[];}adLayer["itemType"]="article";</script>
+<script src="./Observer and Observable _ JavaWorld_files/narf_prebid.js.download"></script>
+<!-- LiveRamp Sources -->
+<script type="text/javascript" src="./Observer and Observable _ JavaWorld_files/pippio.min.js.download" async=""></script>
+<script src="./Observer and Observable _ JavaWorld_files/liveRamp.js.download"></script>
+<!-- End of LiveRamp -->
+<script type="text/javascript">try{IDG.GPT.unitName="/8456/IDG.US_E_JavaWorld.com";}catch(exception){console.log("google_dfp can't use IDG.GPT "+exception);}try{IDG.GPT.unitName=IDG.GPT.unitName+"/"+"application-development_section";}catch(exception){console.log("google_dfp can't use IDG.GPT "+exception);}var global_ShowSuper=true;var global_ShowHero=false;var url=window.location.href;if(url.indexOf("?")>1){url=url.split('?')[0];}try{IDG.GPT.addTarget("URL",encodeURIComponent(url));}catch(exception){console.log("google_dfp can't use IDG.GPT "+exception);}try{IDG.GPT.addTarget("zone",'article-blog/learn-java');}catch(exception){console.log("google_dfp can't use IDG.GPT "+exception);}try{IDG.GPT.addTarget("blogId",'416');}catch(exception){console.log("google_dfp can't use IDG.GPT "+exception);}try{IDG.GPT.addTarget("articleId",'2077258');}catch(exception){console.log("google_dfp can't use IDG.GPT "+exception);}try{IDG.GPT.addTarget("type",'howto');}catch(exception){console.log("google_dfp can't use IDG.GPT "+exception);}try{IDG.GPT.addTarget("typeId",'4');}catch(exception){console.log("google_dfp can't use IDG.GPT "+exception);}try{IDG.GPT.addTarget("manufacturer",'hp');}catch(exception){console.log("google_dfp can't use IDG.GPT "+exception);}try{IDG.GPT.addTarget("templateType",'article-default');}catch(exception){console.log("google_dfp can't use IDG.GPT "+exception);}try{IDG.GPT.addTarget("categoryIds",[3187,3646,3469]);}catch(exception){console.log("google_dfp can't use IDG.GPT "+exception);}try{IDG.GPT.addTarget("categorySlugs",['learn-java','application-development','java-language']);}catch(exception){console.log("google_dfp can't use IDG.GPT "+exception);}try{if(null!=IDG.GPT.getQsVal("env")){IDG.GPT.addTarget("env",IDG.GPT.getQsVal("env").replace(/\W/g,""));}}catch(exception){console.log("google_dfp can't use IDG.GPT "+exception);}try{IDG.GPT.addTarget("author",'Todd Sundsted');}catch(exception){console.log("google_dfp can't use IDG.GPT "+exception);}try{IDG.GPT.addTarget("page_type",'');}catch(exception){console.log("google_dfp can't use IDG.GPT "+exception);}try{IDG.GPT.addTarget("blog_name",'How-to Java');}catch(exception){console.log("google_dfp can't use IDG.GPT "+exception);}try{IDG.GPT.addTarget("insiderContent",'false');}catch(exception){console.log("google_dfp can't use IDG.GPT "+exception);}</script>
+<script type="text/javascript">console.log("PROXIMIC RESPONSE: PAGE-LEVEL");(function(){try{var proximic_data={"data":["300003","121100","131108","131100","131120","131119","240000","240002","240003","240004","240001","240005","240006","240007","240008","240009","240011","240012","240013","240014","240017","240015","240016","20f4sh","r03wnl","folvaf","bkwp85","enwcef","44ywyv","xks7sj","yn3dkv","x8eev1","7grvv1","9v0tiu","pcz604","32xt66","500207","500209","500220","500234","500225","500226","500247","500241","500230","500221","500218"]};IDG.GPT.addTarget("proximic",proximic_data.data);}catch(e){console.log("Error: "+e);}})();</script>
+<script type="text/javascript"></script>
+<script src="./Observer and Observable _ JavaWorld_files/thm_pre.js.download"></script>
+<script type="text/javascript">$thm.useBusinessData=true;</script>
+<script>var isMobile=(typeof IDG.DEVICE!=='undefined')?IDG.DEVICE.isMobile():false;try{IDG.GPT.addBiddingParams("yieldbotPsn",(isMobile?"7541":"c5a9"));IDG.GPT.addBiddingParams("appnexusPlacementId",(isMobile?"6451477":"6353206"));IDG.GPT.addBiddingParams("TriLiftPrefix","javaworld_ros_");}catch(e){console.log("Error in adding bidding params: "+e);}</script>
+<script type="text/javascript" src="./Observer and Observable _ JavaWorld_files/prebid_gpt_launcher.js.download"></script>
+<script src="./Observer and Observable _ JavaWorld_files/select2.js.download"></script>
+<script>$(document).ready(function(){$("select#country").select2({placeholder:"country",minimumResultsForSearch:Infinity,allowClear:true});$("#jobPosition").select2({placeholder:"position",minimumResultsForSearch:Infinity,allowClear:true});$("#jobFunction").select2({placeholder:"function",minimumResultsForSearch:Infinity,allowClear:true});$("#companySize").select2({placeholder:"company size",minimumResultsForSearch:Infinity,allowClear:true});$("#industry").select2({placeholder:"industry",minimumResultsForSearch:Infinity,allowClear:true});});</script>
+<script>var brandCode="jvw";var brandName="JavaWorld";var regDebugLog=false;var regApiUrl="https://regdev.idge.int/api/";var tokenPrefix='www';var tokenSuffix='.com/insider/token?';var brandDomain=".javaworld.com";var insiderContentType="article";var notEmptyArticle=false;var notEmptyMediaResource=false;var isInsiderPremium=false;var isResourceInsiderPremium=false;regApiUrl="https://reg.idgenterprise.com/api/";regDebugLog=false;tokenPrefix="http://www";tokenSuffix="/insider/token";notEmptyArticle=true;</script>
+<script src="./Observer and Observable _ JavaWorld_files/alc_hashes.js.download"></script>
+<script src="./Observer and Observable _ JavaWorld_files/insider_reg_api.js.download"></script>
+<script src="./Observer and Observable _ JavaWorld_files/jquery.maskedinput-1.4.min.js.download"></script>
+<script>$(document).ready(function(){if(typeof(IDG.insiderReg.readCookie('nsdr'))!=='undefined'){$('#welcome-message').show();IDG.insiderReg.personalize();}else{$('.signin-register').show();}});</script>
+<script type="text/javascript">var g_arrModules=new Array();</script>
+<script type="text/javascript" src="./Observer and Observable _ JavaWorld_files/load.js.download" async=""></script>
+<script src="./Observer and Observable _ JavaWorld_files/ads.js.download"></script>
+<script>var insiderSignedIn=document.cookie.indexOf("nsdr")>-1;insiderSignedIn=insiderSignedIn.toString();var sincePublished='7760 days';sincePublished=sincePublished.split(" ")[0];dataLayer=[{'articleId':'2077258','articleDisplayId':'1','articleTitle':'Observer and Observable','articleType':'How-To','audience':'enterprise','author':'Todd Sundsted','blogName':'How-to Java','brandpost':'false','categoryIdList':'3187,3646,3469','categoryIdPrimary':'3187','contentStrategy':'','contentType':'howto','datePublished':'1996-10-01','dateUpdated':'','daysSincePublished':sincePublished,'daysSinceUpdated':'','displayType':'article','environment':'production','ga_enabled':'true','gaTrackingId':'UA-300704-19','geolocEnabled':'true','insiderSignedIn':insiderSignedIn,'isBlog':'true','isInsiderContent':'false','isICN':'false','pageNumber':'1','parselyEnabled':'','parselyDomain':'','platform':'Web','primaryCategory':'learn java','primaryCategoryList':'learn java,software development,java','property':'javaworld','propertyCountry':'US','purchaseIntent':'','sailthruCustomerId':'8a7950ccf4b505820f4688ea815011b6','skimlinksId':'','source':'javaworld','sponsorName':'','tags':'','videoAutoplay':'false'}];</script>
+<script type="text/javascript">var _sf_async_config={};_sf_async_config.uid=29363;_sf_async_config.path="/article/2077258/learn-java/observer-and-observable.html";_sf_async_config.title="Observer and Observable | JavaWorld";_sf_async_config.domain="javaworld.com";if(window.location.href.indexOf("video")&&true){_sf_async_config.playerdomain=_sf_async_config.domain.replace("www.","");}_sf_async_config.useCanonical=true;_sf_async_config.sections="learn-java";_sf_async_config.authors="Todd Sundsted";</script>
+<script>var dataLayer=window.dataLayer=window.dataLayer||[];var adBlockStatus='false';function AdBlockEnabled(){var ad=document.createElement('ins');ad.className='AdSense';ad.style.display='block';ad.style.position='absolute';ad.style.top='-1px';ad.style.height='1px';if(document.body!=null){document.body.appendChild(ad);var isAdBlockEnabled=!ad.clientHeight;document.body.removeChild(ad);}return isAdBlockEnabled;}if(AdBlockEnabled()!=undefined){adBlockStatus=AdBlockEnabled().toString();}if(document.body==null){if(window.canRunAds===undefined){adBlockStatus='true';}else{adBlockStatus='false';}}dataLayer.push({'adBlockStatus':adBlockStatus});</script>
+<!-- Google Tag Manager -->
+<noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?GTM-MMJKZ9" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MMJKZ9');</script>
+<!-- End Google Tag Manager -->
+<script type="text/javascript" src="./Observer and Observable _ JavaWorld_files/t"></script><link rel="preload" href="./Observer and Observable _ JavaWorld_files/integrator.js.download" as="script"><script type="text/javascript" src="./Observer and Observable _ JavaWorld_files/integrator.js.download"></script><link rel="preload" href="./Observer and Observable _ JavaWorld_files/integrator.js(1).download" as="script"><script type="text/javascript" src="./Observer and Observable _ JavaWorld_files/integrator.js(1).download"></script><script src="./Observer and Observable _ JavaWorld_files/pubads_impl_moa_c_20171107.js.download" async=""></script><link rel="prefetch" href="https://securepubads.g.doubleclick.net/static/3p_cookie.html"><script src="./Observer and Observable _ JavaWorld_files/iiqPEB.js.download"></script><script src="./Observer and Observable _ JavaWorld_files/acset.json"></script></head>
+<body id="article2077258" class="article blog416 javaworld insider-plus" style="">
+<!-- Begin welcome ad overlay - gpt-overlay position  -->
+<div id="superadunit" class="hidden">
+<div class="ad">
+<div class="ad-header">
+<div class="brand-logo"></div>
+<a href="javascript:unhide(&#39;superadunit&#39;);" id="superstitial-text" automate_uuid="01bae5b0-b315-4501-b483-586148f30a21">Close Ad</a>
+</div>
+<div id="gpt-overlay" class=" ad-container" data-google-query-id="CJKWid7Ts9gCFUgX4AodJd8LzA" style="display: none;">
+<script type="text/javascript">IDG.GPT.addDisplayedAd("gpt-overlay","true");IDG.GPT.displayGoogleTagSlot('gpt-overlay');</script>
+<div id="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_2__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_2" title="3rd party ad content" name="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_2" width="640" height="480" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Observer and Observable _ JavaWorld_files/saved_resource.html"></iframe></div></div>
+</div>
+</div>
+<!--  End welcome ad overlay - gpt-overlay position -->
+<!-- BEGIN PAGE HEADER -->
+<header id="banner">
+<script>if(!$thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)){$('.main-header').insertBefore($('#banner .ad'));}</script>
+<div class="topics-wrap">
+<section class="topics">
+<nav id="scrollable">
+<!-- blx4 #670 blox4.raw_link_list  -->
+<ul>
+<li class="header">Trending<span class="colon">:</span></li>
+<li><a href="https://www.javaworld.com/category/learn-java/" automate_uuid="1231e3e8-0a0f-411b-806d-4434993fbe66">Learn Java</a></li>
+<li><a href="https://www.javaworld.com/blog/java-101/" automate_uuid="02e54fc0-684a-46ba-b570-833eb05b7625"> Java 101</a></li>
+<li><a href="https://www.javaworld.com/category/java-app-dev/" automate_uuid="0ace9a94-989e-499e-b905-94fe3d1ae802"> Java App Dev</a></li>
+<li><a href="https://www.javaworld.com/category/developer-tools-ide/" automate_uuid="86e16561-b0f8-45a4-a434-a668232e43dd">Java Toolbox</a></li>
+<li><a href="https://www.javaworld.com/blog/open-source-java-projects/" automate_uuid="fdb1ebdb-b6ad-4be3-a0a3-d459e6d33bc4">Open Source Java </a></li>
+<li><a href="https://www.javaworld.com/category/careers/" automate_uuid="71b0333d-f442-4978-9b18-addb5a3e8fb8">Programming Careers</a></li>
+<li><a href="https://www.javaworld.com/blog/java-qanda/" automate_uuid="7323db37-227e-4c31-a27c-2f60f3d13544">Java Q&amp;A</a></li>
+<li><a href="https://www.javaworld.com/resources" automate_uuid="59ff551d-7c0b-462f-b4dd-28c283459b39">Resources/White Papers</a></li>
+</ul>
+</nav>
+<div class="fading-gradient"></div>
+<nav class="tools">
+<ul class="user">
+<li class="search-icon"><a href="https://www.javaworld.com/article/2077258/learn-java/observer-and-observable.html#search" id="search-btn" automate_uuid="015a5a30-a72a-4ad0-8cdb-dc5d9f392c35"><i class="ss-icon">Search</i></a></li>
+</ul>
+<ul class="social">
+<li><a href="https://twitter.com/javaworldcom" itemprop="sameAs" rel="nofollow" target="_blank" onclick="brandFollowTrack(&#39;Twitter&#39;)" automate_uuid="2b1afaed-f8af-43b0-9542-4f949b45554d"><i class="ss-icon ss-social-circle ss-twitter"></i></a></li>
+<li><a href="http://www.linkedin.com/company/javaworld-com" itemprop="sameAs" rel="nofollow" target="_blank" onclick="brandFollowTrack(&#39;LinkedIn&#39;)" automate_uuid="bf5099d2-16fc-4dbb-b65a-9295b607f08d"><i class="ss-icon ss-social-circle brand ss-linkedin"></i></a></li>
+<li><a href="https://www.facebook.com/pages/JavaWorld/107993545895326" itemprop="sameAs" rel="nofollow" target="_blank" onclick="brandFollowTrack(&#39;Facebook&#39;)" automate_uuid="ed39b25a-107b-409f-8c60-040ebbe71401"><i class="ss-icon ss-social-circle brand ss-facebook"></i></a></li>
+<li><a href="https://plus.google.com/117974570132126965756/posts" itemprop="sameAs" rel="publisher" target="_blank" onclick="brandFollowTrack(&#39;Google+&#39;)" automate_uuid="152e0a34-33d6-4fe5-8c97-c8f445aea1aa"><i class="ss-icon ss-social-circle brand ss-googleplus"></i></a></li>
+<li><a href="https://www.javaworld.com/about/rss.html" target="_blank" automate_uuid="18f694d6-8404-4b36-9ca6-13fdbf039b46"><i class="ss-icon ss-social-circle ss-rss"></i></a></li>
+<li class="more-social"><i class="ss-icon ss-ellipsis"></i></li>
+</ul>
+</nav>
+</section>
+</div>
+<div id="sticky-anchor"></div>
+<section id="sticky-head" class="main stick">
+<div class="wrapper">
+<div class="masthead">
+<button><i class="ss-icon ss-rows"></i></button>
+<a href="https://www.javaworld.com/" automate_uuid="53bb563a-11d0-4fe2-ba1a-c82bd66d6406"><span class="ir logo">javaworld</span></a>
+<!--
+	            	<img class="print-only" src="/www.idge.jvw/images/javaworld-logo-print.png">
+	            	-->
+<img class="print-only" src="./Observer and Observable _ JavaWorld_files/javaworld-logo-print.png">
+</div>
+<div id="reading-tools-wrapper">
+<nav class="tools">
+<ul class="user">
+</ul>
+</nav>
+</div>
+<div class="insider-signin">
+<span class="signin-register" style="display: inline;">
+<a href="https://www.javaworld.com/learn-about-insider/" automate_uuid="bfec81fa-76df-4b4c-a3da-117428ce3b0d"><span class="insider"></span></a> <a href="javascript://" onclick="IDG.insiderReg.registerLinkEvent(&#39;insider-reg-signin&#39;)" class="js-open-modal signin" data-modal-id="insider-popup" automate_uuid="f56020fc-9f47-4568-98bd-01a02df31bdc">Sign In</a> <span class="divider">|</span> <a href="javascript://" onclick="IDG.insiderReg.registerLinkEvent(&#39;insider-reg-form-short&#39;)" class="js-open-modal register" data-modal-id="insider-popup" automate_uuid="e3240ebe-f329-40a1-ae93-1fc7ffded6fa">Register</a>
+</span>
+<div id="welcome-message" class="insider-list" style="display: none;">
+<div id="insider-selector">
+<div id="insider-welcome" class="label"></div>
+<div class="stories">
+<div class="personalization">Hi<span id="person-first-name"></span>! Here are the latest Insider stories.</div>
+<ul>
+<li><a href="https://www.javaworld.com/article/3243694/agile-development/how-to-excel-in-agile-software-development.html" automate_uuid="8faebb04-018c-47a6-9518-b6e51230f031">How to excel in agile software development</a></li>
+<li><a href="https://www.javaworld.com/article/3241853/devops/jenkins-tutorial-get-started-with-jenkins-continuous-delivery.html" automate_uuid="bf9075b7-cf10-4fc9-b344-f3acebce812f">Jenkins tutorial: Get started with Jenkins continuous delivery</a></li>
+<li><a href="https://www.javaworld.com/article/3238081/agile-development/how-to-improve-your-scrum-master-skills.html" automate_uuid="5c24d968-2728-4e49-b147-fe326ce7155a">How to improve your scrum master skills</a></li>
+<li><a href="https://www.javaworld.com/article/3227414/application-development/8-technologies-transforming-the-database.html" automate_uuid="74a523e9-218c-4958-a7ca-7fd65cb17996">8 technologies transforming the database</a></li>
+</ul>
+<div class="sign-out-link">
+<a class="more-insider" href="https://www.javaworld.com/insider/" automate_uuid="2a6d38fb-79d7-4f79-8f53-e8a14703288a">More Insider</a>
+<a class="sign-out" href="javascript://" onclick="IDG.insiderReg.logout()" automate_uuid="7320cb90-5a82-497a-8736-e95af5eafa46">Sign Out</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>$('.signin-register').hide();$('#welcome-message').hide();</script>
+</div>
+</section>
+<section class="tools-expand  ">
+<form class="search" id="search-form" action="https://www.javaworld.com/search">
+<label for="search-box">Search for</label>
+<input type="text" name="query" id="banner-search-term" value="" class="searchbox-input-class ui-autocomplete-input" autocomplete="off"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+<input type="submit" id="banner-search-submit" value="Go">
+<input type="hidden" name="contentType" value="article,resource">
+<div class="search-suggest">Suggestions for you</div>
+</form>
+<div class="user">
+<form>
+<label for="login-email">Insider email</label> <input id="login-email" type="text">
+</form>
+</div>
+<ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-1" tabindex="0" style="z-index: 1; display: none;"></ul></section>
+<div id="sticky-anchor-nav"></div>
+<nav id="sticky-nav" class="main stick" style="height: 622px; top: 52px;">
+<ul class="topnav">
+<li><a href="https://www.javaworld.com/article/2077258/learn-java/observer-and-observable.html#" class="hasChildren notMobile" automate_uuid="0eccdc0e-e4dc-4890-a65d-608a2b44ec77">Core Java<span class="ss-icon ss-navigatedown"></span></a>
+<ul class="subnav" style="display: none;">
+<li><a href="https://www.javaworld.com/category/core-java/" automate_uuid="d4034427-ead2-4aa2-88f7-4654e27864b6">All Core Java</a></li>
+<li><a href="https://www.javaworld.com/category/agile-development/" automate_uuid="1721133e-8e96-4f2d-a4c3-8c50884d8c7b">Agile Development</a></li>
+<li><a href="https://www.javaworld.com/category/java-concurrency/" automate_uuid="0fd5a0f4-163c-4650-93c3-5de8af940989">Java Concurrency</a></li>
+<li><a href="https://www.javaworld.com/category/java-language/" automate_uuid="0fbd7f10-00bb-4b96-96a7-7a3652003a6e">Java Language</a></li>
+<li><a href="https://www.javaworld.com/category/java-platform/" automate_uuid="cf442451-909f-499f-b27c-fec77d9ce87e">Java Platform</a></li>
+<li><a href="https://www.javaworld.com/category/security/" automate_uuid="8e9cc970-b689-4d11-b702-fb7eeac358cb">Java Security</a></li>
+<li><a href="https://www.javaworld.com/category/careers/" automate_uuid="9f0dbafa-2be5-467d-be66-e65a9e528312">Programming Careers</a></li>
+<li><a href="https://www.javaworld.com/category/testing-debugging/" automate_uuid="3dc31efe-fe28-4b16-8e57-27a915420d94">Testing and Debugging</a></li>
+</ul>
+</li>
+<li><a href="https://www.javaworld.com/article/2077258/learn-java/observer-and-observable.html#" class="hasChildren notMobile" automate_uuid="c45b4b3f-c285-4095-9a62-99f398ede779">Enterprise Java<span class="ss-icon ss-navigatedown"></span></a>
+<ul class="subnav" style="display: none;">
+<li><a href="https://www.javaworld.com/category/enterprise-java/" automate_uuid="141ca625-bcca-49a7-9693-157cd395ab87">All Enterprise Java</a></li>
+<li><a href="https://www.javaworld.com/category/apis/" automate_uuid="e6e97e33-7d2b-4bc1-9064-3c7affe185a3">APIs</a></li>
+<li><a href="https://www.javaworld.com/category/big-data/" automate_uuid="68240e13-0144-446e-976a-806ed8a30fcc">Big Data</a></li>
+<li><a href="https://www.javaworld.com/category/cloud-computing/" automate_uuid="f72a8856-4305-4a59-8b6e-8dca708a201f">Cloud Computing</a></li>
+<li><a href="https://www.javaworld.com/category/analytics/" automate_uuid="ecc7f397-8be9-43ec-9dbf-6c581e708b30">Data Analytics</a></li>
+<li><a href="https://www.javaworld.com/category/development-tools/" automate_uuid="4908f9a1-b781-4a29-af3d-086020e5800e">Development Tools</a></li>
+<li><a href="https://www.javaworld.com/category/application-development/" automate_uuid="39699eb3-8529-4626-a72c-0054657b0115">Java App Dev</a></li>
+<li><a href="https://www.javaworld.com/category/web-development/" automate_uuid="a1d4f3f4-058d-4ece-8c3c-b95cd468adf0">Java Web Development</a></li>
+<li><a href="https://www.javaworld.com/category/open-source-tools/" automate_uuid="8ed827ee-ab7d-4190-9ae6-5feae0ac6e08">Open Source</a></li>
+<li><a href="https://www.javaworld.com/category/scripting-jvm-languages/" automate_uuid="9590d545-41fa-44e0-b3d4-40df77ec47df">Scripting and JVM Languages</a></li>
+</ul>
+</li>
+<li><a href="https://www.javaworld.com/article/2077258/learn-java/observer-and-observable.html#" class="hasChildren notMobile" automate_uuid="e3b8de5a-fd7e-446e-bad0-5ad085bd0868">Learn Java<span class="ss-icon ss-navigatedown"></span></a>
+<ul class="subnav" style="display: none;">
+<li><a href="https://www.javaworld.com/category/learn-java/" automate_uuid="8a693c3f-6eea-49e9-add3-8023a9ca46f5">All Learn Java</a></li>
+<li><a href="https://www.javaworld.com/category/design-patterns/" automate_uuid="c0dc0c19-fe3f-492f-af83-ace4f267280e">Design Patterns</a></li>
+</ul>
+</li>
+<li><a href="https://www.javaworld.com/article/2077258/learn-java/observer-and-observable.html#" class="hasChildren notMobile" automate_uuid="13dff727-3e33-4811-bbde-cee0a0aa79cc">Mobile Java<span class="ss-icon ss-navigatedown"></span></a>
+<ul class="subnav" style="display: none;">
+<li><a href="https://www.javaworld.com/category/mobile-java/" automate_uuid="5fe3d557-e7a8-4184-a60d-efb0f6c2eb96">All Mobile Java</a></li>
+<li><a href="https://www.javaworld.com/category/android/" automate_uuid="67c11be5-f94a-499d-bbff-f49c9b181500">Java Android Developers</a></li>
+<li><a href="https://www.javaworld.com/category/ios/" automate_uuid="60df5686-bde6-4a35-ac86-ad9087498ace">Java iOS Developers</a></li>
+</ul>
+</li>
+</ul>
+<ul class="secondary topnav">
+<li><a href="https://www.javaworld.com/news/" automate_uuid="ef761ed4-19da-4c34-bf41-d8a8e3134fcf">News</a></li>
+<li><a href="https://www.javaworld.com/feature/" automate_uuid="9429f125-f1a1-4bdc-8d7d-c8561f841fb9">Features</a></li>
+<li><a href="https://www.javaworld.com/howto/" automate_uuid="eaa5a1bc-9366-4b06-879a-63f63e3f955b">How-Tos</a></li>
+<li><a href="https://www.javaworld.com/blogs/" automate_uuid="f3706b24-1b50-46a2-b7d1-d8eec0773b39">Blogs</a></li>
+<li><a href="https://www.javaworld.com/resources/" automate_uuid="7f863839-d468-4542-aeaa-3c1d97dca6e8">Resources/White Papers</a></li>
+<li><a href="https://www.javaworld.com/newsletters/signup.html" automate_uuid="afa3b139-7518-4ce8-ab49-2e166499ef1d">Newsletters</a></li>
+</ul>
+</nav>
+<script>if(!$thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)){$('div.insider-signin').prependTo('section.topics nav.tools');}</script>
+<script>$(document).ready(function(){if($thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)){$("nav ul li a.hasChildren").attr("href","#").addClass('notMobile');$('nav#sticky-nav ul.secondary').addClass('topnav');}if(!$thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)){$("nav#sticky-nav > ul").switchClass("topnav","primary");}});</script>
+<script>if(!$thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)){$('#sticky-anchor, section.main, section.topics, section.tools-expand, #sticky-anchor-nav, nav.main').insertBefore($('#banner .ad'));$(document).ready(function(){$('#banner section.tools-expand').addClass('top-margin');});}</script>
+</header>
+<script>$(document).ready(function(){$('body').addClass('insider-plus');var headerHeight=$('header#banner').height();$('header#banner nav#sticky-nav.main.no-stick').css("top",headerHeight);if(!$thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)){var stickyHeaderHeight=$('section.topics').height()+$('#sticky-head.main').height();stickyHeaderHeight=stickyHeaderHeight-8;}var supportsOrientationChange="onorientationchange"in window,orientationEvent=supportsOrientationChange?"orientationchange":"resize";if($thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)){window.addEventListener(orientationEvent,function(){var top=$('section#sticky-head.main').offset().top;if(top<170){top=0;}else{top=top-50;}if(window.orientation==90||window.orientation==-90){window.scrollTo(0,top);}},false);}if($thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)&&$thm.deviceHeight()<768){if($('html').hasClass('touch')){$('#insider-popup.modal-box .modal-body').addClass('short');}else{$('#insider-popup.modal-box .modal-body').addClass('short-desk');}}if(!$thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)){window.addEventListener(orientationEvent,function(){var top=$('section#sticky-head.main').offset().top;if(top<50){top=5;}else{top=top-40;}if(window.orientation==90||window.orientation==-90){window.scrollTo(0,top);}},false);}var ua=navigator.userAgent.toLowerCase();var isAndroid=ua.indexOf("android")>-1;window.addEventListener(orientationEvent,function(){if(isAndroid&&(screen.width==600||screen.width==960)){location.reload(true);}},false);if($thm.deviceWidthAtLeast($thm.deviceBreakpoints.desktop)&&!$('html').hasClass('touch')){$("ul.social li.more-social").mouseenter(function(){$('ul.social > li').addClass('display-icon');});$("ul.social").mouseleave(function(){$('ul.social > li').removeClass('display-icon');});};if($thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)&&$('html').hasClass('touch')){$("ul.social li.more-social").click(function(){$('ul.social > li').toggleClass('display-icon');});};$('.searchbox-input-class').each(function(){$(this).change(function(){var qStr=$(this).val();if($(this).val().indexOf('@')!=-1){qStr=qStr.replace(/@/g,' ');$(this).val(qStr);}});});});function sticky_relocate(){var headerHeight=$('header#banner').height();var winHeight=$(window).height();if($thm.deviceWidthAtLeast($thm.deviceBreakpoints.wide)){winHeight=winHeight-40;if(window.orientation==90||window.orientation==-90){winHeight=winHeight+50;}}else if($thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)&&!$thm.deviceWidthAtLeast($thm.deviceBreakpoints.wide)){winHeight=winHeight+40;}else{winHeight=winHeight+10;}$('#banner nav#sticky-nav.main').css("height",winHeight);if($thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)){var window_top=$(window).scrollTop();var div_top=$('#sticky-anchor').offset().top;if(window_top>div_top){$('#sticky-head').addClass('stick');$('#page-wrapper').addClass('top-pad');$('#banner .ad').addClass('top-margin');}else{$('#sticky-head').removeClass('stick');$('#page-wrapper').removeClass('top-pad');$('#banner .ad').removeClass('top-margin');}}if(!$thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)){$('section.topics').addClass('stick-topics');$('#sticky-head').addClass('stick-head');$('#page-wrapper').addClass('top-pad');$('#banner .ad').addClass('top-margin');$('#banner section.tools-expand').addClass('search');var window_top=$(window).scrollTop();var div_top=$('#sticky-anchor').offset().top+30;if(window_top>div_top){$('#sticky-head').addClass('stick');$('.topics.stick-topics, #search-form').addClass('remove');$('li.search-icon').fadeOut("fast");}else{$('#sticky-head').removeClass('stick');$('.topics.stick-topics, #search-form').removeClass('remove');$('li.search-icon').fadeIn("fast");}}if($thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)){if($('#sticky-head').hasClass('stick')){var stickyHeaderHeight=$('section.main').height();stickyHeaderHeight=52;$('header#banner nav#sticky-nav.main').css("top",stickyHeaderHeight);$('#sticky-nav').addClass('stick');$('#sticky-nav').removeClass('no-stick');}else{stickyHeaderHeight=$('header#banner').height();$('header#banner nav#sticky-nav.main').css("top",stickyHeaderHeight);$('#sticky-nav').removeClass('stick');$('#sticky-nav').addClass('no-stick');}}if(!$thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)){var stickyHeaderHeight=$('section.topics').height()+$('#sticky-head.main.stick-head').height();stickyHeaderHeight=stickyHeaderHeight-8;$('header#banner nav#sticky-nav.main').css("top",stickyHeaderHeight);$('#sticky-nav').addClass('stick');if($('#sticky-head').hasClass('stick')){$('#sticky-head.stick').siblings('#sticky-nav').addClass('nav-stick');$('#sticky-head').siblings('#sticky-nav').removeClass('no-stick');}else{$('#sticky-head').siblings('#sticky-nav').removeClass('nav-stick');$('#sticky-head').siblings('#sticky-nav').addClass('no-stick');}}}$(function(){$(window).scroll(sticky_relocate);sticky_relocate();});</script>
+<div id="insider-popup" class="modal-box " style="top: 10px; left: 0px;">
+<div class="insider-modal-wrapper">
+<div class="modal-header-title">
+<div class="modal-banner-insider"><span class="insider"></span></div>
+<div class="modal-close close">×</div>
+</div>
+<div class="modal-body short-desk">
+<script>$(document).ready(function(){$('a[data-link]').click(function(){var dataLink=$(this).attr('data-link');var toKeep='div[data-link="'+dataLink+'"]';$('div[data-link]').not(toKeep).hide();if($(this).hasClass('link-transition')){$(toKeep).fadeIn(800);}else{$(toKeep).show();}return false;});});</script>
+</div>
+<div class="modal-footer">
+<div class="modal-close close-btn">Close</div>
+</div>
+</div>
+</div>
+<script>$(document).ready(function(){var appendthis=("<div class='modal-overlay modal-close'></div>");if($thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)){$('.modal-box').css({top:10,left:0});}if(!$thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)){$('.modal-box').height($(document).height());$('.modal-box').css('top','0');}var userAg=navigator.userAgent;$('a[data-modal-id]').click(function(e){e.preventDefault();$('body').append(appendthis);$('.modal-overlay').fadeTo(500,0.9);$('.modal-overlay').height($(document).height());var modalBox=$(this).attr('data-modal-id');if($(".modal-box").hasClass('triggered')||(userAg.indexOf("Firefox")!=-1)){$('#'+modalBox).fadeIn($(this).data());}else{if(!$thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)){$('#'+modalBox).toggle('slide',{direction:'up'},800);}else{$('#'+modalBox).toggle('slide',{direction:'left'},600);}}if(!$thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)){$("html, body").animate({scrollTop:0},700);$('a.btn.continue-on').click(function(){$('html, body').animate({scrollTop:0},500);});return false;}if(navigator.userAgent.match(/(iPad)/)){$("html, body").animate({scrollTop:0},500);}});$(".modal-close, .modal-overlay").click(function(){$('.select2-drop').css('display','none');$(".modal-overlay").fadeOut(500,function(){$(".modal-overlay").remove();});if($(".modal-box").hasClass('triggered')||(userAg.indexOf("Firefox")!=-1)){$(".modal-box").fadeOut(500);}else{if(!$thm.deviceWidthAtLeast($thm.deviceBreakpoints.tablet)){$('.modal-box').toggle('slide',{direction:'up'},800);}else{$('.modal-box').toggle('slide',{direction:'left'},600);}}});});</script>
+<!-- END PAGE HEADER -->
+<div id="page-wrapper" class="page-wrapper top-pad">
+<div id="skinAdTarget"></div>
+<section role="main">
+<article itemscope="" itemtype="http://schema.org/BlogPosting" class="blog">
+<div class="ticker-ad ad">
+<div id="ticker" class=" ad-container" data-google-query-id="CJSWid7Ts9gCFUgX4AodJd8LzA">
+<div id="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_4__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_4" title="3rd party ad content" name="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_4" width="970" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" data-integralas-id-11031d6f-2e6b-cdfd-450b-11d2609da46f="" src="./Observer and Observable _ JavaWorld_files/saved_resource(3).html"></iframe></div></div>
+<script type="text/javascript">IDG.GPT.addDisplayedAd("ticker","true");$('#ticker').responsiveAd({screenSize:'971 1115',scriptTags:[]});IDG.GPT.log("Creating ad: ticker - [971 1115]");</script>
+</div>
+<!-- Events Header -->
+<!-- //end Events Header -->
+<header class="cat">
+<nav class="breadcrumbs horiz">
+<ul itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+<li><a href="https://www.javaworld.com/" itemprop="url" automate_uuid="e192168b-25fd-4650-83ae-21031cb3cae2"><span itemprop="title">Home</span></a></li>
+<li><a href="https://www.javaworld.com/category/learn-java/" itemprop="url" automate_uuid="9b170c25-e75e-4c49-bdc4-98bd5cf7fc24"><span itemprop="title">Learn Java</span></a></li>
+</ul>
+</nav>
+<div class="blog-byline vcard author " itemscope="" itemtype="http://schema.org/Person" itemprop="author">
+<div class="brand ">
+<div class="blog-branding-text">
+<div class="blog-title"><a href="https://www.javaworld.com/blog/how-to-java/" automate_uuid="6059b895-0bec-4ea6-8ed5-6e4abf7791ee">How-to Java</a></div>
+<p class="name" itemscope="" itemtype="http://schema.org/Person" itemprop="author">
+By <span class="fn" itemprop="name">Todd Sundsted</span>,
+<span class="cn-container">
+</span>
+<span itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization"><span class="publisher" itemprop="name">JavaWorld</span><meta itemprop="logo" content="https://www.javaworld.com/www.idge.jvw/images/JVW_logo_300x300.png"></span>
+<span class="divider">|</span>
+<span class="pub-date" itemprop="datePublished" content="1996-10-01T01:00-0700">Oct 1, 1996 1:00 AM
+PT
+</span>
+</p>
+</div>
+</div>
+</div>
+<div class="category"><a href="https://www.javaworld.com/howto" itemprop="genre" automate_uuid="c6d5563f-96cb-4e8c-b949-351eb63a64d2">How-To</a></div>
+<h1 itemprop="headline">Observer and Observable</h1>
+<section class="deck viewability">
+<h3 itemprop="description">An introduction to the Observer interface and Observable class using the Model/View/Controller architecture as a guide</h3>
+</section>
+<div class="cat-social">
+<div id="sharer" class="cat sidecar show blog">
+<ul id="share-tool" class="expand">
+<li class="sosh">
+<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.javaworld.com%2Farticle%2F2077258%2Flearn-java%2Fobserver-and-observable.html&amp;via=javaworldcom&amp;text=Observer+and+Observable" target="_blank" onclick="sharingTrack(&#39;Twitter-vert&#39;, &#39;twshare&#39;)" automate_uuid="5bad4b8f-dd4b-475e-992d-335f33d338b3">
+<img class="sidecar-icon" src="./Observer and Observable _ JavaWorld_files/twitter.svg">
+</a>
+</li>
+<li class="sosh">
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.javaworld.com%2Farticle%2F2077258%2Flearn-java%2Fobserver-and-observable.html" target="_blank" onclick="sharingTrack(&#39;Facebook-vert&#39;, &#39;fblike&#39;)" automate_uuid="330cf71f-fd24-421b-a955-48278b1046e7">
+<img class="sidecar-icon" src="./Observer and Observable _ JavaWorld_files/facebook.svg">
+</a>
+</li>
+<li class="sosh">
+<a href="http://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.javaworld.com%2Farticle%2F2077258%2Flearn-java%2Fobserver-and-observable.html&amp;title=Observer+and+Observable" target="_blank" onclick="sharingTrack(&#39;LinkedIn-vert&#39;)" automate_uuid="3c6afa37-2e86-44d9-a63a-53ae8b424806">
+<img class="sidecar-icon" src="./Observer and Observable _ JavaWorld_files/linkedin.svg">
+</a>
+</li>
+<li class="sosh">
+<a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.javaworld.com%2Farticle%2F2077258%2Flearn-java%2Fobserver-and-observable.html" target="_blank" onclick="sharingTrack(&#39;GooglePlus-vert&#39;, &#39;googplus&#39;)" automate_uuid="19c88af6-bad6-4434-8903-2649664d71d6">
+<img class="sidecar-icon" src="./Observer and Observable _ JavaWorld_files/gplus.svg">
+</a>
+</li>
+<li class="sosh hide">
+<a href="http://reddit.com/submit?url=https%3A%2F%2Fwww.javaworld.com%2Farticle%2F2077258%2Flearn-java%2Fobserver-and-observable.html&amp;title=Observer+and+Observable" target="_blank" onclick="sharingTrack(&#39;Reddit-vert&#39;)" automate_uuid="56fcc5a4-1f08-4e82-9ce6-1cdcbbe18fef">
+<img class="sidecar-icon" src="./Observer and Observable _ JavaWorld_files/reddit.svg">
+</a>
+</li>
+<li class="sosh hide">
+<a href="http://www.stumbleupon.com/submit?url=https%3A%2F%2Fwww.javaworld.com%2Farticle%2F2077258%2Flearn-java%2Fobserver-and-observable.html" target="_blank" onclick="sharingTrack(&#39;ShareStumbleupPrint-vert&#39;)" automate_uuid="8b3dd11d-3d52-4ca0-a4fb-01d21e878362">
+<img class="sidecar-icon" src="./Observer and Observable _ JavaWorld_files/stumbleupon.svg">
+</a>
+</li>
+<li class="sosh hide">
+<a href="https://www.javaworld.com/article/2077258/learn-java/observer-and-observable.html#email" id="email-icon" automate_uuid="a1572c6f-ab81-4a16-ab8b-cc4539ab36de">
+<img class="sidecar-icon" src="./Observer and Observable _ JavaWorld_files/mail.svg">
+</a>
+</li>
+<li class="sosh hide print">
+<a href="javascript:window.print();" automate_uuid="34ee0209-3eb3-4ef0-a327-9f76b7eeb915">
+<img class="sidecar-icon" src="./Observer and Observable _ JavaWorld_files/print.svg">
+</a>
+</li>
+<li class="more">
+<div class="more-icon" onclick="document.getElementById(&#39;share-tool&#39;).className = &#39;expand&#39;;"></div>
+</li>
+</ul>
+</div>
+<script type="text/javascript">var isValidEmailAddress=isValidEmailAddress||function(emailAddress){var pattern=new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,5}$/i);return pattern.test(emailAddress);};function encodeQueryData(params){var ret=[];for(var paramKey in params){ret.push(encodeURIComponent(paramKey)+"="+encodeURIComponent(params[paramKey]));}return ret.join("&");}function bindEmailModal(){$('#emailModal').on("click",".close-btn",function(event){event.preventDefault();$('#emailModal').hide();$("#emailModal .eml-friend").show();$(".eml-friend-success").hide();$(".eml-friend-error").hide();$('#emailModal').fadeOut(200);$('#email-to').val('');$('#email-from').val('');$('#name').val('');$('#personalization').val('');$('#eml-from-address-message').html("");$('#eml-to-address-message').html("");$('#eml-friend-captcha-message').html("");});$('#emailModal').on("submit","form",function(event){event.preventDefault();var $form=$(this);var action=$form.attr('action');var formData=$form.serialize();var emailFrom=$('#email-from').val();var emailTo=$('#email-to').val();var uresponse=$('#g-recaptcha-response').val();$('#eml-from-address-message').html("");$('#eml-to-address-message').html("");$('#eml-friend-captcha-message').html("");if(isValidEmailAddress(emailFrom)&&isValidEmailAddress(emailTo)&&uresponse!=""){$.ajax(action,{type:'POST',data:formData,success:function(data,textStatus,xhr){$("#emailModal .eml-friend").hide();$(".eml-friend-success").fadeIn(800);},error:function(xhr,textStatus,errorThrown){$("#emailModal .eml-friend").hide();$(".eml-friend-error").fadeIn(800);}});}else{if(uresponse==""){$('#eml-friend-captcha-message').html("Please verify you're not a robot!");}if(!isValidEmailAddress(emailTo)){$('#eml-to-address-message').html("Please enter a valid email address.");}if(!isValidEmailAddress(emailFrom)){$('#eml-from-address-message').html("Please enter a valid email address.");}}});}$(document).ready(function(){$(document).on("click","#email-icon",function(event){event.preventDefault();bindEmailModal();sharingTrack('Email-vert');$('#emailModal').fadeIn(800);});});</script>
+<div class="modal eml-friend-wrapper" id="emailModal" style="display:none;">
+<form class="eml-friend" action="https://www.javaworld.com/eloquaemail/article?eloqua=false&amp;id=2077258">
+<input type="hidden" name="title" value="Observer and Observable">
+<input type="hidden" name="url" value="https://www.javaworld.com/article/2077258/learn-java/observer-and-observable.html">
+<a href="https://www.javaworld.com/article/2077258/learn-java/observer-and-observable.html#" class="close-btn" automate_uuid="87da3106-9646-44ee-bc3d-ee13a053e439"><i class="ss-icon ss-delete"></i></a>
+<h3>Email a friend</h3>
+<div class="input-row">
+<div id="eml-to-address-message" class="error-msg"></div>
+<h4 class="input-label">To</h4>
+<input id="email-to" value="" placeholder="Email address (required)" type="email" name="recipients" tabindex="1">
+<p class="addl-text">Use commas to separate multiple email addresses</p>
+</div>
+<hr>
+<div class="input-row">
+<div id="eml-from-address-message" class="error-msg"></div>
+<h4 class="input-label">From</h4>
+<input id="name" value="" placeholder="Name (optional)" type="text" name="name" tabindex="2">
+</div>
+<div class="input-row">
+<input id="email-from" value="" placeholder="Email address (required)" type="email" name="sender" tabindex="3">
+</div>
+<div class="input-row">
+<textarea name="message" placeholder="Check out this article I found on JavaWorld." id="personalization" tabindex="4"></textarea>
+</div>
+<hr>
+<div class="input-row">
+<div id="eml-friend-captcha-message" class="error-msg"></div>
+<script src="./Observer and Observable _ JavaWorld_files/api.js.download" async="" defer=""></script>
+<div class="g-recaptcha" data-sitekey="6LdPbfsSAAAAAB89GpzHsyYe-AGzZXYy9K_4KAnF"><div style="width: 304px; height: 78px;"><div><iframe src="./Observer and Observable _ JavaWorld_files/anchor.html" width="304" height="78" role="presentation" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
+</div>
+<hr>
+<div class="submit">
+<input type="submit" value="Send" class="input-submit" tabindex="5">
+<a href="https://www.javaworld.com/about/privacy.html" class="submit-privacy" target="_blank" automate_uuid="7c075300-bde7-4c3e-a6a4-259c25460395">Privacy Policy</a>
+</div>
+</form>
+<div class="eml-ty eml-friend-success" style="display:none;">
+<a href="https://www.javaworld.com/article/2077258/learn-java/observer-and-observable.html#" class="close-btn" automate_uuid="e1f029fc-5c60-414f-81c7-af125d204440"><i class="ss-icon ss-delete"></i></a>
+<h3>Thank you</h3>
+<p class="msg-sent">Your message has been sent.</p>
+</div>
+<div class="eml-friend-error" style="display:none;">
+<a href="https://www.javaworld.com/article/2077258/learn-java/observer-and-observable.html#" class="close-btn" automate_uuid="e85fc3f1-a05e-4263-a1e7-fb099f7ebf78"><i class="ss-icon ss-delete"></i></a>
+<h3>Sorry</h3>
+<p class="msg-sent">There was an error emailing this page.</p>
+</div>
+</div>
+</div>
+<div class="ad viewability">
+<div id="topleaderboard" class=" ad-container" data-google-query-id="CJOWid7Ts9gCFUgX4AodJd8LzA">
+<div id="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_3__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_3" title="3rd party ad content" name="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_3" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" data-integralas-id-564734ef-8d6c-6016-7a81-63c28f044ad7="" src="./Observer and Observable _ JavaWorld_files/saved_resource(4).html"></iframe></div></div>
+<script type="text/javascript">IDG.GPT.addDisplayedAd("topleaderboard","true");$('#topleaderboard').responsiveAd({screenSize:'971 1115',scriptTags:[]});IDG.GPT.log("Creating ad: topleaderboard - [971 1115]");</script>
+</div>
+</header>
+<section class="epo cat-narrow" id="drr-top-ad">
+<!-- Related -->
+<div class="related-promo-wrapper">
+<div class="promo apart">
+<div class="hed">More like this</div>
+<ul class="">
+<li class="clearfix ">
+<div class="item">
+<div class="title"><a href="https://www.javaworld.com/article/2077231/java-and-the-new-internet-programming-paradigm.html" automate_uuid="e4e03dc4-5c19-46e4-b30d-f869c5e43d36">Java and the new Internet programming paradigm</a></div>
+</div>
+</li>
+<li class="clearfix ">
+<div class="item">
+<div class="title"><a href="https://www.javaworld.com/article/2077513/learn-java/java-tip-17--integrating-java-with-c--.html" automate_uuid="1e99beb1-93c1-4add-8843-75606f560b2e">Java Tip 17: Integrating Java with C++</a></div>
+</div>
+</li>
+<li class="clearfix ">
+<div class="item">
+<div class="title"><a href="https://www.javaworld.com/article/2076632/core-java/mvc-meets-swing.html" automate_uuid="f8e0288f-0115-4027-b0fa-490f5c4abe06">MVC meets Swing</a></div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="ad top-ad">
+<div id="topimu" class="adunit ad-container" data-google-query-id="CJWWid7Ts9gCFUgX4AodJd8LzA">
+<div id="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_5__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_5" title="3rd party ad content" name="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_5" width="300" height="600" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" data-integralas-id-779a619e-7af2-2893-e051-83c1380797cc="" src="./Observer and Observable _ JavaWorld_files/saved_resource(5).html"></iframe></div></div>
+<script type="text/javascript">if($(window).width()>=930){IDG.GPT.addDisplayedAd("topimu","true");$('#topimu').responsiveAd({screenSize:'971 1115',scriptTags:[]});IDG.GPT.log("Creating ad: topimu - [971 1115]");}</script>
+</div>
+<div class="apart ad lazyload_ad_article"><code type="text/javascript"><!--IDG.GPT.IMUCounter = IDG.GPT.IMUCounter + 1;IDG.GPT.addDisplayedAd(IDG.GPT.getIMUSlotName(), "true");document.write('<div id="' +IDG.GPT.getIMUSlotName() + '" class="ad-container">');IDG.GPT.defineGoogleTagSlot(IDG.GPT.getIMUSlotName(), [[300,250],[300,600]]);document.write('</div>');$('#' + IDG.GPT.getIMUSlotName()).responsiveAd({screenSize:'971 1115', scriptTags: []});if (Object.keys(IDG.GPT.companions).length > 0) { IDG.GPT.display(IDG.GPT.getIMUSlotName());}//--></code><div class="wrapAd"><div id="imu2" class="ad-container" data-google-query-id="CNXviuDTs9gCFYQ44AodUEML4w" style="display: none;"><div id="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_7__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_7" title="3rd party ad content" name="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_7" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Observer and Observable _ JavaWorld_files/saved_resource(6).html"></iframe></div></div></div></div><div class="apart ad lazyload_ad_article"><code type="text/javascript"><!--IDG.GPT.IMUCounter = IDG.GPT.IMUCounter + 1;IDG.GPT.addDisplayedAd(IDG.GPT.getIMUSlotName(), "true");document.write('<div id="' +IDG.GPT.getIMUSlotName() + '" class="ad-container">');IDG.GPT.defineGoogleTagSlot(IDG.GPT.getIMUSlotName(), [[300,250],[300,600]]);document.write('</div>');$('#' + IDG.GPT.getIMUSlotName()).responsiveAd({screenSize:'971 1115', scriptTags: []});if (Object.keys(IDG.GPT.companions).length > 0) { IDG.GPT.display(IDG.GPT.getIMUSlotName());}//--></code><div class="wrapAd"><div id="imu3" class="ad-container" data-google-query-id="COr6-uDTs9gCFVcX4AodLK0MuQ" style="display: none;"><div id="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_8__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_8" title="3rd party ad content" name="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_8" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Observer and Observable _ JavaWorld_files/saved_resource(7).html"></iframe></div></div></div></div><div class="apart ad lazyload_ad_article"><code type="text/javascript"><!--IDG.GPT.IMUCounter = IDG.GPT.IMUCounter + 1;IDG.GPT.addDisplayedAd(IDG.GPT.getIMUSlotName(), "true");document.write('<div id="' +IDG.GPT.getIMUSlotName() + '" class="ad-container">');IDG.GPT.defineGoogleTagSlot(IDG.GPT.getIMUSlotName(), [[300,250],[300,600]]);document.write('</div>');$('#' + IDG.GPT.getIMUSlotName()).responsiveAd({screenSize:'971 1115', scriptTags: []});if (Object.keys(IDG.GPT.companions).length > 0) { IDG.GPT.display(IDG.GPT.getIMUSlotName());}//--></code></div><div id="drr-mod-0">
+<div class="insider-promo-wrapper not-nsdr drr" data-placement-id="drr-mod-0">
+<div class="promo apart">
+<div class="insider-both">
+<div class="other-insider">
+<div class="insider-module-title">
+<div class="hed">Related Articles</div>
+</div>
+<ul>
+<li class="clearfix">
+<div class="sized-img"><a href="https://www.javaworld.com/article/3243694/agile-development/how-to-excel-in-agile-software-development.html" automate_uuid="1c601bc7-9f61-412f-9636-532a4b6dc7f3"><img class="small.3x2Image  imgId100588281 " src="./Observer and Observable _ JavaWorld_files/agile-cloud-ts-100588281-small.3x2.jpg" alt="agile cloud ts" itemprop="image"></a></div>
+<div class="hed"><a href="https://www.javaworld.com/article/3243694/agile-development/how-to-excel-in-agile-software-development.html#tk.jvw_nsdr_ndxprmomod" automate_uuid="658dfafa-e308-4114-a02f-a107073aa259">How to excel in agile software development</a></div>
+</li>
+<li class="clearfix">
+<div class="sized-img"><a href="https://www.javaworld.com/article/3241853/devops/jenkins-tutorial-get-started-with-jenkins-continuous-delivery.html" automate_uuid="9d835591-10e4-4b65-bf65-6e6106848f6b"><img class="carousel.idgeImage  imgId100638792 " src="./Observer and Observable _ JavaWorld_files/marketing-automation-100638792-carousel.idge.jpeg" alt="marketing automation gears" itemprop="image"></a></div>
+<div class="hed"><a href="https://www.javaworld.com/article/3241853/devops/jenkins-tutorial-get-started-with-jenkins-continuous-delivery.html#tk.jvw_nsdr_ndxprmomod" automate_uuid="ef2f529d-6e83-4ac4-8dd4-12acae49f533">Jenkins tutorial: Get started with Jenkins continuous...</a></div>
+</li>
+<li class="clearfix">
+<div class="sized-img"><a href="https://www.javaworld.com/article/3238081/agile-development/how-to-improve-your-scrum-master-skills.html" automate_uuid="8bda4a4d-c758-42fc-a733-aab27c3ba7fd"><img class="small.3x2Image  imgId100741388 " src="./Observer and Observable _ JavaWorld_files/scrum-agile-rugby-100741388-small.3x2.jpg" alt="scrum agile rugby" itemprop="image"></a></div>
+<div class="hed"><a href="https://www.javaworld.com/article/3238081/agile-development/how-to-improve-your-scrum-master-skills.html#tk.jvw_nsdr_ndxprmomod" automate_uuid="df970f58-7d6c-451b-ad93-63c34e444fca">How to improve your scrum master skills</a></div>
+</li>
+</ul>
+<div class="more-insider"><a href="https://www.javaworld.com/insider" automate_uuid="5f18d19f-77c7-4a4c-ba40-bdae3eb232f9"><span class="insider"></span>See all Insider</a></div>
+</div><!-- //.other-insider -->
+</div><!-- //.insider-both -->
+</div><!--  //.promo.apart -->
+</div>
+</div><div class="apart ad lazyload_ad_article"><code type="text/javascript"><!--IDG.GPT.IMUCounter = IDG.GPT.IMUCounter + 1;IDG.GPT.addDisplayedAd(IDG.GPT.getIMUSlotName(), "true");document.write('<div id="' +IDG.GPT.getIMUSlotName() + '" class="ad-container">');IDG.GPT.defineGoogleTagSlot(IDG.GPT.getIMUSlotName(), [[300,250]], false, true);document.write('</div>');$('#' + IDG.GPT.getIMUSlotName()).responsiveAd({screenSize:'971 1115', scriptTags: []});if (Object.keys(IDG.GPT.companions).length > 0) { IDG.GPT.display(IDG.GPT.getIMUSlotName());}//--></code><div class="wrapAd"><div id="imu4" class="ad-container" data-google-query-id="CMuV3OHTs9gCFQIU4AodT-0BhQ" style="display: none;"><div id="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_9__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_9" title="3rd party ad content" name="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_9" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Observer and Observable _ JavaWorld_files/saved_resource(8).html"></iframe></div></div></div></div><div class="apart ad lazyload_ad_article"><code type="text/javascript"><!--IDG.GPT.IMUCounter = IDG.GPT.IMUCounter + 1;IDG.GPT.addDisplayedAd(IDG.GPT.getIMUSlotName(), "true");document.write('<div id="' +IDG.GPT.getIMUSlotName() + '" class="ad-container">');IDG.GPT.defineGoogleTagSlot(IDG.GPT.getIMUSlotName(), [[300,250]], false, true);document.write('</div>');$('#' + IDG.GPT.getIMUSlotName()).responsiveAd({screenSize:'971 1115', scriptTags: []});if (Object.keys(IDG.GPT.companions).length > 0) { IDG.GPT.display(IDG.GPT.getIMUSlotName());}//--></code></div><div class="apart ad lazyload_ad_article"><code type="text/javascript"><!--IDG.GPT.IMUCounter = IDG.GPT.IMUCounter + 1;IDG.GPT.addDisplayedAd(IDG.GPT.getIMUSlotName(), "true");document.write('<div id="' +IDG.GPT.getIMUSlotName() + '" class="ad-container">');IDG.GPT.defineGoogleTagSlot(IDG.GPT.getIMUSlotName(), [[300,250]], false, true);document.write('</div>');$('#' + IDG.GPT.getIMUSlotName()).responsiveAd({screenSize:'971 1115', scriptTags: []});if (Object.keys(IDG.GPT.companions).length > 0) { IDG.GPT.display(IDG.GPT.getIMUSlotName());}//--></code></div><div class="apart ad lazyload_ad_article"><code type="text/javascript"><!--IDG.GPT.IMUCounter = IDG.GPT.IMUCounter + 1;IDG.GPT.addDisplayedAd(IDG.GPT.getIMUSlotName(), "true");document.write('<div id="' +IDG.GPT.getIMUSlotName() + '" class="ad-container">');IDG.GPT.defineGoogleTagSlot(IDG.GPT.getIMUSlotName(), [[300,250]], false, true);document.write('</div>');$('#' + IDG.GPT.getIMUSlotName()).responsiveAd({screenSize:'971 1115', scriptTags: []});if (Object.keys(IDG.GPT.companions).length > 0) { IDG.GPT.display(IDG.GPT.getIMUSlotName());}//--></code></div></section>
+<section class="bodee">
+<div class="ad placement">
+<!--  Begin gpt-skin/inread -->
+<div id="inread" class=" ad-container" data-google-query-id="CJGWid7Ts9gCFUgX4AodJd8LzA" style="display: none;">
+<div id="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_1__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_1" title="3rd party ad content" name="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_1" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Observer and Observable _ JavaWorld_files/saved_resource(9).html"></iframe></div></div>
+<script type="text/javascript">IDG.GPT.addDisplayedAd("inread","true");IDG.GPT.displayGoogleTagSlot('inread');</script>
+<!--  End gpt-skin/inread -->
+</div>
+<script>var dataLayer=window.dataLayer=window.dataLayer||[];dataLayer.push({'event':'loadTopCollectionModule'});</script>
+<script type="text/javascript">$(document).ready(function(){$('.articleBloxAd').filter(":visible").each(function(index,item){var id=$(item).attr('id');var divClass=$(item).attr('class');var adString=IDG.GPT.getLazyAdCode();$(item).replaceWith("<div id=\""+id+"\" class=\"lazyload_blox_ad "+divClass+"\">"+adString+"</div>");});try{$("div.lazyload_blox_ad").lazyLoadAd({threshold:0,forceLoad:false,onLoad:false,onComplete:false,timeout:1500,debug:false,xray:false});}catch(exception){console.log("error loading lazyload_ad "+exception);}});</script>
+<script type="text/javascript">$(function(){var MOBILE_BREAK=929;if($(window).width()<=MOBILE_BREAK){executeDRRMobile();}else{executeDRRDesktop();}});function executeDRRMobile(){var TOP_IMU_HEIGHT=250,INTERMODULE_HEIGHT=400,GRAF_HEIGHT=25,MODULE_HEIGHT_BUFFER=350,AD_HEIGHT_BUFFER=350,RIGHT_PIXEL_WINDOW=300,DEBUG=false;var articleDRRModuleList=["dealposts","insider.promo.direct"],moduleUrls=[],modules=[],placementIndex=[],moduleCounter=0,adPositions=new Array(0,1,3,5);cumulativeHeight=0,loopCounter=0,placementTarget=TOP_IMU_HEIGHT+MODULE_HEIGHT_BUFFER+GRAF_HEIGHT+INTERMODULE_HEIGHT;if(true){var dealpostsIdx=articleDRRModuleList.indexOf("dealposts");if(dealpostsIdx>-1){articleDRRModuleList.splice(dealpostsIdx,1);adPositions=[0,1,2,4];}}for(var i=0;i<articleDRRModuleList.length;i++){var articleDRRModuleName=articleDRRModuleList[i];if(articleDRRModuleName=="products.latest-reviews"){articleDRRModuleName+="&pageSize=3";articleDRRModuleName+="&categoryId=3187";}else if(articleDRRModuleName=="articles.latest-reviews"){articleDRRModuleName+="&categoryId=3646";}else if(articleDRRModuleName=="insider.promo.direct"){var isPremium=false;showPromo=false;articleDRRModuleName+="&pageSize=3&showPromo="+showPromo;articleDRRModuleName+="&categoryId=3646";}moduleUrls.push("/napi/tile?def="+articleDRRModuleName+"&excludeCurrentArticle=true&excludeIds=2077258");}if($("figure.hero-img").height()){placementTarget+=$("figure.hero-img").height();}var firstModIndex=$("#drr-container > p:eq(7)").index();$("#drr-container").children().slice(0,firstModIndex).each(function(){placementTarget+=$(this).height();});var firstMobileAdHtml=getLazyLoadAdHtml();$("#drr-container").children().each(function(index,value){if($(this).is(':visible')){if(DEBUG){console.log($(this));}if(cumulativeHeight>=placementTarget){if(DEBUG){console.log("cumulativeHeight >= placementTarget and cumulativeHeight is "+cumulativeHeight+" and placementTarget is "+placementTarget);}var placementDiff=0;if($.inArray(loopCounter,adPositions)!=-1||loopCounter>=5){try{IDG.GPT.addExtIMU();var adDivString;if(true){adDivString=getLazyLoadAdHtml();}else{IDG.GPT.IMUCounter=IDG.GPT.IMUCounter+1;var slotName=IDG.GPT.getIMUSlotName(),adString="<div id='"+slotName+"'></div><script>$('#"+slotName+"').responsiveAd({screenSize:'971 1115', scriptTags: []});if (Object.keys(IDG.GPT.companions).length > 0) {IDG.GPT.refreshAd('"+slotName+"');}<\/script>";adDivString="<div class='apart ad'>"+adString+"</div>";IDG.GPT.defineGoogleTagSlot(slotName,[[320,50],[300,250],[300,50]],false,true);}placementDiff=applyInsert($(this),adDivString);if(DEBUG){console.log("Just placed an ad and the placementDiff is: "+placementDiff);}placementTarget=cumulativeHeight+placementDiff+INTERMODULE_HEIGHT+AD_HEIGHT_BUFFER;}catch(e){console.log("Error: "+e);}}else if(moduleCounter<articleDRRModuleList.length){var elementId="drr-mod-"+moduleCounter;var moduleDivString="<div id=\""+elementId+"\" />";modules.push(elementId);placementDiff=applyInsert($(this),moduleDivString);if(DEBUG){console.log("Just placed a module and the placementDiff is: "+placementDiff);}placementTarget=cumulativeHeight+placementDiff+INTERMODULE_HEIGHT+MODULE_HEIGHT_BUFFER;moduleCounter++;}loopCounter++;}if($(this).is("figure")&&!$(this).is("figure.large")){cumulativeHeight+=GRAF_HEIGHT;}else{cumulativeHeight+=$(this).height()+GRAF_HEIGHT;}}});var $relatedStories=$('.related-promo-wrapper');if($relatedStories.length){var $relatedStoriesClone=$relatedStories.clone();$relatedStoriesClone.insertAfter("#drr-container > p:eq(7)");}if(false){var $dealPost=$('.dealpost-mod');var $amazonWidget=$('#amazon-widget');if($dealPost.length&&$amazonWidget.length){var $dealPostClone=$dealPost.remove();var $amazonWidgetClone=$amazonWidget.remove();$dealPostClone.insertAfter("#drr-container > p:eq(7)");$amazonWidgetClone.insertAfter($dealPostClone);}}if(firstMobileAdHtml){$(firstMobileAdHtml).insertAfter("#drr-container > p:eq(1)");}var $insiderPromo=$('.insider-promo-wrapper');if($insiderPromo.length){var $insiderPromoClone=$insiderPromo.clone();$insiderPromoClone.insertAfter("#drr-container > p:eq(1)");}try{IDG.GPT.trackOmniture();}catch(e){console.log("Error: "+e);}var placeModule=function(data){var placementId=$(data).filter('div').attr('data-placement-id');$("#"+placementId).html(data);};for(i=0;i<modules.length;i++){if(moduleUrls[i]!==undefined){$.get(moduleUrls[i]+"&divId="+modules[i],placeModule);}}$("div.lazyload_ad_article").lazyLoadAd({threshold:0,forceLoad:false,onLoad:false,onComplete:false,timeout:1500,debug:false,xray:false});function getLazyLoadAdHtml(){try{var adString=IDG.GPT.getLazyAdCode(true);return"<div class=\"apart ad lazyload_ad_article\">"+adString+"</div>";}catch(e){console.log("Error: "+e);}}function applyInsert(jqo,divString){if(DEBUG){console.log("applyInsert at top and jqo index is: "+jqo.index());}for(var i=0;i<=6;i++){$thisElement=jqo.nextAll().andSelf().slice(i,i+1);if(DEBUG){console.log("Checking first six and i is: "+i+" and this element index is "+$thisElement.index());}if($thisElement.index()<0){break;}if(allowPlacement($thisElement)){return addElement(jqo,$thisElement,divString);}}if(DEBUG){console.log("No nearby allows so just place in first spot that is not after reject.");}var numElements=jqo.nextAll().length;var startIndex=jqo.index();for(var i=startIndex;i<=numElements;i++){var $element=$("#drr-container").children().eq(i);if($element!=null&&(placementIndex==null||placementIndex.indexOf(i)==-1)&&!isReject($element.prev())){return addElement(jqo,$element,divString);}}if(DEBUG){console.log("Not going to place element: return 0.");}return 0;}function addElement(jqo,allowElement,divString){var offset=allowElement.index()-jqo.index();if(DEBUG){console.log("addElement: jqo index is "+jqo.index()+" allowElement index is "+allowElement.index());}if(elementNotNearEnd(allowElement,RIGHT_PIXEL_WINDOW)){allowElement.before(divString);if(DEBUG){console.log("addElement: Adding "+allowElement.index()+" to placementIndex.");}placementIndex.push(allowElement.index());if(offset==0){return 0;}else{return getHeightDifference(jqo,allowElement);}}else{if(DEBUG){console.log("addElement: Near the end so do NOT add.");}return 0;}}function getHeightDifference(jqo,allowElement){var offset=allowElement.index()-jqo.index(),height=0,children=null;if(offset>0){children=$("#drr-container").children().slice(jqo.index(),allowElement.index());}else{children=$("#drr-container").children().slice(allowElement.index(),jqo.index());}if(children!=null){children.each(function(i){if(DEBUG){console.log("About to add this element's height to heigh diff offset");console.log($(this));}height+=$(this).height()+GRAF_HEIGHT;});}if(offset<0){height*=-1;}if(DEBUG){console.log("getHeightDifference: offset was "+offset+" and height diff is : "+height);}return height;}function allowPlacement(jqo){if(jqo.prev()!=null&&isReject(jqo.prev())){return false;}return true;}function isReject(jqo){if(jqo!=null){if(jqo.is('h2')||jqo.is('h3')||jqo.is('h4')||jqo.is('h5')){if(DEBUG){console.log("isReject: found header");}return true;}}return false;}function elementNotNearEnd(element,pixelWindow){if(pixelWindow===null){pixelWindow=500;}if(element===null){return false;}var remainingHeight=0,children=$("#drr-container").children().slice(element.index());if(children===null){return false;}children.each(function(i){remainingHeight+=$(this).height();});if(remainingHeight>pixelWindow){return true;}else{if(DEBUG){console.log("Element too close to end. Remaining height is: "+remainingHeight+" and window is "+pixelWindow);}return false;}}}function executeDRRDesktop(){var heroImgHeight=$('figure.hero-img').outerHeight(true);if(heroImgHeight===null){heroImgHeight=0;}var galleryItemHeight=$('figure.thm-gallery').outerHeight(true);if(galleryItemHeight===null){galleryItemHeight=0;}var atAglanceTop=$('.at-a-glance.top').height();if(atAglanceTop===null){atAglanceTop=0;}var drrContainerHeight=$('div#drr-container').outerHeight(true);var topIMUheight=$('#topimu').height();if(topIMUheight===0){topIMUheight=600;}var dealPostHeight;var relatedPromoHeight;relatedPromoHeight=$('div.related-promo-wrapper').outerHeight(true);if(relatedPromoHeight===null){relatedPromoHeight=0;}dealPostHeight=0;var videoHowtoHeight=$('div#video-howto-wrapper').outerHeight(true);if(videoHowtoHeight===null){videoHowtoHeight=0;}var teadsInreadHeight=$('div.teads-inread').height();if(teadsInreadHeight===null){teadsInreadHeight=0;}var unrulyAdHeight=$('.unruly_in_article_placement').height();if(unrulyAdHeight===null){unrulyAdHeight=0;}var collapsibleAdHeight=unrulyAdHeight+teadsInreadHeight;var workingRRheight=((heroImgHeight+galleryItemHeight+atAglanceTop+drrContainerHeight)-(topIMUheight+relatedPromoHeight+dealPostHeight+videoHowtoHeight));workingRRheight=workingRRheight-collapsibleAdHeight;if(galleryItemHeight>0){workingRRheight=workingRRheight-1400;}var DEBUG=false;if(DEBUG){console.log('-----working RR height = '+workingRRheight);}var articleDRRModuleList=["dealposts","insider.promo.direct"],moduleUrls=[],modules=[],moduleCounter=0,loopCounter=0;var adPositions=new Array(0,1,3,5);if(true){var dealpostsIdx=articleDRRModuleList.indexOf("dealposts");if(dealpostsIdx>-1){articleDRRModuleList.splice(dealpostsIdx,1);adPositions=[0,1,2,4];}}for(var i=0;i<articleDRRModuleList.length;i++){var articleDRRModuleName=articleDRRModuleList[i];if(articleDRRModuleName=="products.latest-reviews"){articleDRRModuleName+="&pageSize=3";articleDRRModuleName+="&categoryId=3187";}else if(articleDRRModuleName=="articles.latest-reviews"){articleDRRModuleName+="&categoryId=3646";}else if(articleDRRModuleName=="insider.promo.direct"){var isPremium=false;showPromo=false;articleDRRModuleName+="&pageSize=3&showPromo="+showPromo;articleDRRModuleName+="&categoryId=3646";}moduleUrls.push("/napi/tile?def="+articleDRRModuleName+"&excludeCurrentArticle=true&excludeIds=2077258");}var numItems=0;var minRRHeight=1000;if(workingRRheight>minRRHeight){numItems=1;minRRHeight=2000;}if(workingRRheight>minRRHeight){numItems=2;minRRHeight=3000;}if(workingRRheight>minRRHeight){numItems=3;minRRHeight=4000;}if(workingRRheight>minRRHeight){numItems=4;minRRHeight=4700;}while(workingRRheight>minRRHeight){numItems++;minRRHeight+=700;}for(var currIndex=0;currIndex<numItems;currIndex++){if($.inArray(currIndex,adPositions)!=-1||currIndex>=5){try{IDG.GPT.addExtIMU();var adDivString;if(true){if(currIndex<4){var adString="<code type=\"text\/javascript\">"+"<!--IDG.GPT.IMUCounter = IDG.GPT.IMUCounter + 1;IDG.GPT.addDisplayedAd(IDG.GPT.getIMUSlotName(), \"true\");"+"document.write('<div id=\"' +IDG.GPT.getIMUSlotName() + '\" class=\"ad-container\">');"+"IDG.GPT.defineGoogleTagSlot(IDG.GPT.getIMUSlotName(), [[300,250],[300,600]]);"+"document.write('</div>');"+"$('#' + IDG.GPT.getIMUSlotName()).responsiveAd({screenSize:'971 1115', scriptTags: []});"+"if (Object.keys(IDG.GPT.companions).length > 0) { IDG.GPT.display(IDG.GPT.getIMUSlotName());}//--></code>";adDivString="<div class=\"apart ad lazyload_ad_article\">"+adString+"</div>";}else{adDivString=getLazyLoadAdHtml();}}else{IDG.GPT.IMUCounter=IDG.GPT.IMUCounter+1;var slotName=IDG.GPT.getIMUSlotName(),adString="<div id='"+slotName+"'></div><script>$('#"+slotName+"').responsiveAd({screenSize:'971 1115', scriptTags: []});if (Object.keys(IDG.GPT.companions).length > 0) {IDG.GPT.refreshAd('"+slotName+"');}<\/script>";adDivString="<div class='apart ad'>"+adString+"</div>";if(currIndex<4){IDG.GPT.defineGoogleTagSlot(slotName,[[300,250],[300,600]],false,true);}else{IDG.GPT.defineGoogleTagSlot(slotName,[[300,250]],false,true);}}$(adDivString).appendTo('#drr-top-ad');if(DEBUG){console.log("-----Just placed an AD currIndex = "+currIndex);}}catch(e){console.log("Error: "+e);}}else if(moduleCounter<articleDRRModuleList.length){var elementId="drr-mod-"+moduleCounter;var moduleDivString="<div id=\""+elementId+"\" />";modules.push(elementId);$('#drr-top-ad').append(moduleDivString);if(DEBUG){console.log("-----Just placed a MODULE and currIndex =  "+currIndex);}moduleCounter++;}}try{IDG.GPT.trackOmniture();}catch(e){console.log("Error: "+e);}var placeModule=function(data){var placementId=$(data).filter('div').attr('data-placement-id');$("#"+placementId).html(data);};for(i=0;i<modules.length;i++){if(moduleUrls[i]!==undefined){$.get(moduleUrls[i]+"&divId="+modules[i],placeModule);}}$("div.lazyload_ad_article").lazyLoadAd({threshold:0,forceLoad:false,onLoad:false,onComplete:false,timeout:1500,debug:false,xray:false});function getLazyLoadAdHtml(){try{var adString=IDG.GPT.getLazyAdCode(true);return"<div class=\"apart ad lazyload_ad_article\">"+adString+"</div>";}catch(e){console.log("Error: "+e);}}}</script>
+<div id="drr-container" class="cat no-primary-image" itemprop="articleBody">
+<p>Here's the problem: You're designing a program that will render data describing a three-dimensional scene in two dimensions. The program must be modular and must permit multiple, simultaneous views of the same scene. Each view must be able to display the scene from a different vantage point, under different lighting conditions. More importantly, if any portion of the underlying scene changes, the views must update themselves.</p><p>None of these requirements presents an insurmountable programming challenge. If the code that handles each requirement had to be written <em>de novo</em>, however, it would add significant work to the overall effort. Fortunately, support for these tasks is already provided by the Java class library in the form of interface Observer and class Observable. The functionalities of these two were inspired, in part, by the requirements of the Model/View/Controller architecture.</p><h2>The Model/View/Controller architecture</h2><p>The Model/View/Controller architecture was introduced as part of the Smalltalk-80 version of the Smalltalk programming language (a popular object-oriented programming language invented by Alan Kay). The Model/View/Controller architecture was designed to reduce the programming effort required to build systems that made use of multiple, synchronized presentations of the same data. Its central characteristics are that the model, the controllers, and the views are treated as separate entities, and that changes made to the model should be reflected automatically in each of the views.</p><p>In addition to the program example described in the opening paragraph above, the Model/View/Controller architecture may be used for projects such as the following:</p><aside class="nativo-promo nativo-promo-1 smartphone" id=""> </aside><ul><li><p>A graph package that contains simultaneous bar-chart, line-chart, and pie-chart views of the same data</p></li><li><p>A CAD system, in which portions of the design can be viewed at different magnifications, in different windows, and at different scales</p></li></ul><p>Figure 1 illustrates the Model/View/Controller architecture in its most general form. There is one model. Multiple controllers manipulate the model; multiple views display the data in the model, and change as the state of the model changes.</p><figure class="center"><img alt="The MVC Architecture" src="./Observer and Observable _ JavaWorld_files/fig1-100158662-orig.gif"></figure><center><em>Figure 1: The Model/View/Controller architecture</em></center><p>The Model/View/Controller architecture has several benefits:</p><ul><li><p>There is a clearly defined separation between components of a program -- problems in each domain can be solved independently.</p></li><li><p>There is a well defined API -- anything that uses the API properly can replace either the model, the view, or the controller.</p></li><li><p>The binding between the model and the view is dynamic -- it occurs at run time, rather than at compile time.</p></li></ul><p>By incorporating the Model/View/Controller architecture into a design, pieces of a program can be designed separately (and designed to do their job well) and then bound together at run time. If a component is later deemed to be unsuitable, it can be replaced without affecting the other pieces. Contrast that scenario with the monolithic approach typical of many quick-and-dirty Java programs. Often a frame contains all of the state, handles all events, does all of the calculations, and displays the result. Thus, in all but the simplest of such systems, making changes after the fact is not trivial.</p><h2>Defining the parts</h2><p>The model is the object that represents the data in the program. It manages the data and conducts all transformations on that data. The model has no specific knowledge of either its controllers or its views -- it contains no internal references to either. Rather, the system itself takes on the responsibility of maintaining links between the model and its views and notifying the views when the model changes.</p><p data-src="https://ib.3lift.com/ttj?inv_code=tan_JavaWorld_MOAP" style="display: none;"></p><script type="text/javascript" src="./Observer and Observable _ JavaWorld_files/ttj" tl_id="42164"></script>  <script type="text/javascript">     var script = document.createElement("script");      script.type = "text/javascript";     script.src="//ib.3lift.com/ttj?inv_code=tan_JavaWorld_MOAP";     var child = document.getElementById("ntv-tan_JavaWorld_MOAP");     child.parentNode.insertBefore(script, child);   child.parentNode.removeChild(child);  </script><p>The view is the object that manages the visual display of the data represented by the model. It produces the visual representation of the model object and displays the data to the user. It interacts with the model via a reference to the model object itself.</p><p>The controller is the object that provides the means for user interaction with the data represented by the model. It provides the means by which changes are made, either to the information in the model or to the appearance of the view. It interacts with the model via a reference to the model object itself.</p><p>At this point a concrete example might be helpful. Consider as an example the system described in the introduction.</p><figure class="center"><img alt="3D Visualization System" src="./Observer and Observable _ JavaWorld_files/fig2-100158663-orig.gif"></figure><center><em>Figure 2: Three-dimensional visualization system</em></center><p>The central piece of the system is the model of the three-dimensional scene. The model is a mathematical description of the vertices and the faces that make up the scene. The data describing each vertex or face can be modified (perhaps as the result of user input or a scene distortion or morphing algorithm). However, there is no notion of point of view, method of display (wireframe or solid), perspective, or light source. The model is a pure representation of the elements that make up the scene.</p><p>The portion of the program that transforms the data in the model into a graphical display is the view. The view embodies the actual display of the scene. It is the graphical representation of the scene from a particular point of view, under particular lighting conditions.</p><p>The controller knows what can be done to the model, and implements the user interface that allows that action to be initiated. In this example, a data entry control panel might allow the user to add, modify, or delete vertices and faces.</p><aside class="nativo-promo nativo-promo-2 tablet desktop smartphone" id=""> </aside><h2>Observer and Observable</h2><p>The Java programming language provides support for the Model/View/Controller architecture with two classes:</p><ul><li><p>Observer -- any object that wishes to be notified when the state of another object changes</p></li><li><p>Observable -- any object whose state may be of interest, and in whom another object may register an interest</p></li></ul><p>These two classes can be used to implement much more than just the Model/View/Controller architecture. They are suitable for any system wherein objects need to be automatically notified of changes that occur in other objects.</p><p>Typically, the model is a subtype of Observable and the view is a subtype of observer. These two classes handle the automatic notification function of the Model/View/Controller architecture. They provide the mechanism by which the views can be automatically notified of changes in the model. Object references to the model in both the controller and the view allow access to data in the model.</p><h2>Observer and Observable functions</h2><p>The following are code listings for observer and observable functions:</p><p><strong>Observer</strong></p><dl><dd></dd><dt><p><code>public void update(Observable obs, Object obj)</code></p></dt><dd><p>Called when a change has occurred in the state of the observable.</p></dd></dl><p><strong>Observable</strong></p><dl><dd></dd><dt><p><code>public void addObserver(Observer obs)</code></p></dt><dd><p>Adds an observer to the internal list of observers.</p></dd><dt><p><code>public void deleteObserver(Observer obs)</code></p></dt><dd><p>Deletes an observer from the internal list of observers.</p></dd><dt><p><code>public void deleteObservers()</code></p></dt><dd><p>Deletes all observers from the internal list of observers.</p></dd><dt><p><code>public int countObservers()</code></p></dt><dd><p>Returns the number of observers in the internal list of observers.</p></dd><dt><p><code>protected void setChanged()</code></p></dt><dd><p>Sets the internal flag that indicates this observable has changed</p><p>state.</p></dd><dt><p><code>protected void clearChanged()</code></p></dt><dd><p>Clears the internal flag that indicates this observable has</p><p>changed state.</p></dd><dt><p><code>public boolean hasChanged()</code></p></dt><dd><p>Returns the boolean value true if this observable has changed</p><p>state.</p></dd><dt><p><code>public void notifyObservers()</code></p></dt><dd><p>Checks the internal flag to see if the observable has changed</p><p>state and notifies all observers.</p></dd><dt><p><code>public void notifyObservers(Object obj)</code></p></dt><dd><p>Checks the internal flag to see if the observable has changed</p><p>state and notifies all observers. Passes the object specified in the</p><p>parameter list to the <code>notify()</code> method of the observer.</p></dd></dl><h2>How to use interface Observer and class Observable</h2><p>The following section describes in detail how to create a new observable class and a new observer class, and how to tie the two together.</p><h2>Extend an observable</h2><p>A new class of observable objects is created by extending class Observable. Because class Observable already implements all of the methods necessary to provide the observer/observable behavior, the derived class need only provide some mechanism for adjusting and accessing the internal state of the observable object.</p><p>In the class ObservableValue listing below, the internal state of the model is captured by the integer <code>n</code>. This value is accessed (and, more importantly, modified) only through public accessors. If the value is changed, the observable object invokes its own <code>setChanged()</code> method to indicate that the state of the model has changed. It then invokes its own <code>notifyObservers()</code> method in order to update all of the registered observers.</p><pre class="prettyprint prettyprinted" style=""><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Observable</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ObservableValue</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">Observable</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+   </span><span class="kwd">private</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> n </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+   </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">ObservableValue</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> n</span><span class="pun">)</span><span class="pln">
+   </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">n </span><span class="pun">=</span><span class="pln"> n</span><span class="pun">;</span><span class="pln">
+   </span><span class="pun">}</span><span class="pln">
+   </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> setValue</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> n</span><span class="pun">)</span><span class="pln">
+   </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">n </span><span class="pun">=</span><span class="pln"> n</span><span class="pun">;</span><span class="pln">
+      setChanged</span><span class="pun">();</span><span class="pln">
+      notifyObservers</span><span class="pun">();</span><span class="pln">
+   </span><span class="pun">}</span><span class="pln">
+   </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> getValue</span><span class="pun">()</span><span class="pln">
+   </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">return</span><span class="pln"> n</span><span class="pun">;</span><span class="pln">
+   </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></pre><h2>Implement an observer</h2><p>A new class of objects that observe the changes in state of another object is created by implementing the Observer interface. The Observer interface requires that an <code>update()</code> method be provided in the new class. The <code>update()</code> method is called whenever the observable changes state and announces this fact by calling its <code>notifyObservers()</code> method. The observer should then interrogate the observable object to determine its new state, and, in the case of the Model/View/Controller architecture, adjust its view appropriately.</p><p>In the following class TextObserver listing, the <code>notify()</code> method first checks to ensure that the observable that has announced an update is the observable that this observer is observing. If it is, it then reads the observable's state, and prints the new value.</p><pre class="prettyprint prettyprinted" style=""><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Observer</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Observable</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">TextObserver</span><span class="pln"> </span><span class="kwd">implements</span><span class="pln"> </span><span class="typ">Observer</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+   </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">ObservableValue</span><span class="pln"> ov </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+   </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">TextObserver</span><span class="pun">(</span><span class="typ">ObservableValue</span><span class="pln"> ov</span><span class="pun">)</span><span class="pln">
+   </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">ov </span><span class="pun">=</span><span class="pln"> ov</span><span class="pun">;</span><span class="pln">
+   </span><span class="pun">}</span><span class="pln">
+   </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> update</span><span class="pun">(</span><span class="typ">Observable</span><span class="pln"> obs</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Object</span><span class="pln"> obj</span><span class="pun">)</span><span class="pln">
+   </span><span class="pun">{</span><span class="pln">
+      </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">obs </span><span class="pun">==</span><span class="pln"> ov</span><span class="pun">)</span><span class="pln">
+      </span><span class="pun">{</span><span class="pln">
+         </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">ov</span><span class="pun">.</span><span class="pln">getValue</span><span class="pun">());</span><span class="pln">
+      </span><span class="pun">}</span><span class="pln">
+   </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></pre><h2>Tie the two together</h2><p>A program notifies an observable object that an observer wishes to be notified about changes in its state by calling the observable object's <code>addObserver()</code> method. The <code>addObserver()</code> method adds the observer to the internal list of observers that should be notified if the state of the observable changes.</p><p>The example below, showing class Main, demonstrates how to use the <code>addObserver()</code> method to add an instance of the TextObserver class (see the TextObserver listing above) to the observable list maintained by the ObservableValue class (see the ObservableValue listing above).</p><pre class="prettyprint prettyprinted" style=""><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Main</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+   </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">Main</span><span class="pun">()</span><span class="pln">
+   </span><span class="pun">{</span><span class="pln">
+      </span><span class="typ">ObservableValue</span><span class="pln"> ov </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ObservableValue</span><span class="pun">(</span><span class="lit">0</span><span class="pun">);</span><span class="pln">
+      </span><span class="typ">TextObserver</span><span class="pln"> to </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">TextObserver</span><span class="pun">(</span><span class="pln">ov</span><span class="pun">);</span><span class="pln">
+      ov</span><span class="pun">.</span><span class="pln">addObserver</span><span class="pun">(</span><span class="pln">to</span><span class="pun">);</span><span class="pln">
+   </span><span class="pun">}</span><span class="pln">
+   </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> </span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln">
+   </span><span class="pun">{</span><span class="pln">
+      </span><span class="typ">Main</span><span class="pln"> m </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Main</span><span class="pun">();</span><span class="pln">
+   </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></pre><h2>How it all works together</h2><p>The following sequence of events describes how the interaction between an observable and an observer typically occurs within a program.</p><ol><li><p>First the user manipulates a user interface component representing a controller. The controller makes a change to the model via a public accessor method -- which is <code>setValue()</code> in the example above.</p></li><li><p>The public accessor method modifies the private data, adjusts the internal state of the model, and calls its <code>setChanged()</code> method to indicate that its state has changed. It then calls <code>notifyObservers()</code> to notify the observers that it has changed. The call to <code>notifyObservers()</code> could also be performed elsewhere, such as in an update loop running in another thread.</p></li><li><p>The <code>update()</code> methods on each of the observers are called, indicating that a change in state has occurred. The observers access the model's data via the model's public accessor methods and update their respective views.</p></li></ol><h2>A demonstration</h2><p>The example in Figure 3 demonstrates how observables and observers typically work together in the Model/View/Controller architecture.</p>
+</div>
+<script>$("a[data-product-id]").on('click',function(e){var e=e||window.event;var dataLayer=window.dataLayer=window.dataLayer||[];var prodName=$(this).attr("data-product-name");prodName=prodName.replace("\\'","'");dataLayer.push({'event':'affiliateLink','eventCategory':'Affiliate Link','eventAction':'Click','eventLabel':''+e.target+'','productVendor':$(this).attr("data-bkvndr"),'productManufacturer':$(this).attr("data-bkmfr"),'productName':prodName,'productId':$(this).attr("data-product-id")});});</script>
+<div class="apart-alt tags">
+<span class="related">Related: </span>
+<ul>
+<li><a href="https://www.javaworld.com/category/learn-java" automate_uuid="0be6f68f-df31-4ac3-9ba1-2194f477d944">Learn Java</a></li>
+<li><a href="https://www.javaworld.com/category/application-development" automate_uuid="4a16c9a3-b2e0-4d1c-a6ed-c226989c749e">Java App Dev</a></li>
+<li><a href="https://www.javaworld.com/category/java-language" automate_uuid="71eb59e3-0cf3-4eaf-9548-2945f742678d">Java Language</a></li>
+</ul>
+</div>
+<section class="pagination">
+<span class="page-numbers">
+<a href="https://www.javaworld.com/article/2077258/learn-java/observer-and-observable.html" class="page-link current" automate_uuid="44b34c25-cdba-42a2-b1fb-6b331448f0d7">1</a>
+<a href="https://www.javaworld.com/article/2077258/learn-java/observer-and-observable.html?page=2" class="page-link " automate_uuid="0d442232-d85f-4715-a1ff-dba913271502">2</a>
+</span>
+<span class="current-page">
+Page 1
+</span>
+<a href="https://www.javaworld.com/article/2077258/learn-java/observer-and-observable.html?page=2" class="page-link next" rel="next" automate_uuid="835f2d9e-045e-462e-a8b8-e70b0b36fc2f">Next <i class="ss-icon ss-navigateright"></i></a>
+</section>
+<div class="mobile-page-nav">
+<div id="article-top-page-number">Page 1 of 2</div>
+<a href="https://www.javaworld.com/article/2077258/learn-java/observer-and-observable.html?page=2" class="page-link next" rel="next" automate_uuid="7da9bf41-c82e-4834-8552-cf1198dfa02c"><i class="ss-icon ss-navigateright"></i></a>
+</div>
+<script type="text/javascript">$(document).ready(function(){$('.pagination .page-link').click(function(e){oClickTrack("Article Detail:Pagination");});});</script>
+<script src="./Observer and Observable _ JavaWorld_files/embedder.js.download"></script>
+</section><!-- /.bodee -->
+<div class="six-column" id="recommended">
+<div class="head">Recommended</div>
+<ul>
+<li class=" first">
+<figure class="well-img">
+<a href="https://www.javaworld.com/article/3114167/development-tools/choosing-your-java-ide.html" automate_uuid="bfd0f193-301a-408e-81ba-b92e96134c6e"><img class="lazy carousel.idgeImage  imgId100681048 " data-original="https://images.techhive.com/images/article/2016/09/jw-java-ides-100681048-carousel.idge.jpg" alt="JavaWorld Java IDEs review, September 2016" src="./Observer and Observable _ JavaWorld_files/jw-java-ides-100681048-carousel.idge.jpg" style="display: inline;"></a>
+</figure>
+<div class="post-cont">
+<div class="title">
+<a href="https://www.javaworld.com/article/3114167/development-tools/choosing-your-java-ide.html" automate_uuid="9f9a7727-6cc3-42d3-ab7b-f589e9b3d491">Eclipse, NetBeans, or IntelliJ? Choose your Java IDE</a>
+</div>
+</div>
+</li>
+<li class=" ">
+<figure class="well-img">
+<a href="https://www.javaworld.com/article/3148705/application-development/osgi-at-the-uks-biggest-science-lab.html" automate_uuid="8da47529-bbd7-4907-a7e6-819dc7cfedc2"><img class="lazy small.3x2Image  imgId100703839 " data-original="https://images.techhive.com/images/article/2017/01/diamond-light-source-synchrotron-main-100703839-small.3x2.jpg" alt="diamond light source synchrotron main chamber" src="./Observer and Observable _ JavaWorld_files/diamond-light-source-synchrotron-main-100703839-small.3x2.jpg" style="display: inline;"></a>
+</figure>
+<div class="post-cont">
+<div class="title">
+<a href="https://www.javaworld.com/article/3148705/application-development/osgi-at-the-uks-biggest-science-lab.html" automate_uuid="d81205b6-816e-4c61-a287-211e7c906a50">OSGi at the UK's biggest science lab</a>
+</div>
+</div>
+</li>
+<li class=" ">
+<figure class="well-img">
+<a href="https://www.javaworld.com/article/3104621/mobile-java/android-studio-for-beginners-part-2-explore-and-code-the-app.html" automate_uuid="3d507d17-a7a2-46d4-a3ff-df36d141c964"><img class="lazy smallImage  imgId100678712 " data-original="https://images.techhive.com/images/article/2016/08/android-beginners2-100678712-small.jpg" alt="android beginners2" src="./Observer and Observable _ JavaWorld_files/android-beginners2-100678712-small.jpg" style="display: inline;"></a>
+</figure>
+<div class="post-cont">
+<div class="title">
+<a href="https://www.javaworld.com/article/3104621/mobile-java/android-studio-for-beginners-part-2-explore-and-code-the-app.html" automate_uuid="e71d3f28-1ed9-4044-a7b4-b7b5c57f2e3b">Android Studio for beginners: Code the app</a>
+</div>
+</div>
+</li>
+<li class=" ">
+<figure class="well-img">
+<a href="https://www.javaworld.com/article/3123117/development-tools/open-source-java-projects-jenkins-with-docker-part-1.html" automate_uuid="731f3dff-b829-485c-8963-eb73b6b366b2"><img class="lazy carousel.idgeImage  imgId100685229 " data-original="https://images.techhive.com/images/article/2016/09/357376583_8381f9d690_z-100685229-carousel.idge.jpg" alt="CI/CD with Jenkins and Docker, Part 1" src="./Observer and Observable _ JavaWorld_files/357376583_8381f9d690_z-100685229-carousel.idge.jpg" style="display: inline;"></a>
+</figure>
+<div class="post-cont">
+<div class="title">
+<a href="https://www.javaworld.com/article/3123117/development-tools/open-source-java-projects-jenkins-with-docker-part-1.html" automate_uuid="bca831aa-a170-45e7-8b40-56cbba1f8380">Jenkins with Docker, Part 1</a>
+</div>
+</div>
+</li>
+</ul>
+</div><!-- /.six-column -->
+<div class="lazyload_ad">
+<code type="text/javascript">
+<!--
+		document.write('<div id="ciu" class=" ad-container">');
+		IDG.GPT.addDisplayedAd("ciu", "true");
+		IDG.GPT.addLazyloadedAd("ciu", "true");
+		document.write('</div>');
+		
+			
+			
+				$('#ciu').responsiveAd({screenSize:'971 1115', scriptTags: []});
+			
+		
+		if (Object.keys(IDG.GPT.companions).length > 0) {
+		IDG.GPT.refreshAd('ciu');
+		}
+		//-->
+</code>
+</div>
+<link rel="stylesheet" href="./Observer and Observable _ JavaWorld_files/sponsored-links.css">
+<link rel="stylesheet" href="./Observer and Observable _ JavaWorld_files/sponsored-links(1).css">
+<section id="resources-sponsored-links">
+<section class="sponsored-links">
+<div class="head">Sponsored Links</div>
+</section>
+</section>
+</article>
+</section><!-- /role=main -->
+</div><!-- /#page-wrapper -->
+<link rel="stylesheet" href="./Observer and Observable _ JavaWorld_files/foot.css">
+<link rel="stylesheet" href="./Observer and Observable _ JavaWorld_files/foot(1).css">
+<footer>
+<section class="brand" itemscope="" itemtype="http://schema.org/Organization">
+<link itemprop="url" href="http://www.javaworld.com/">
+<a href="https://www.javaworld.com/" automate_uuid="32e54407-3dd6-454c-b8c0-dfffd9323f81"><span class="logo">JavaWorld</span></a>
+<span class="tagline"> JavaWorld is the original independent resource for Java developers, architects, and managers.</span>
+<span class="follow">
+<label>Follow us</label>
+<ul>
+<li><a href="https://twitter.com/javaworldcom" itemprop="sameAs" rel="nofollow" target="_blank" onclick="brandFollowTrack(&#39;Twitter&#39;)" automate_uuid="acf2867e-71ba-45aa-8592-269c0604cab0"><i class="ss-icon ss-social-circle ss-twitter"></i></a></li>
+<li><a href="http://www.linkedin.com/company/javaworld-com" itemprop="sameAs" rel="nofollow" target="_blank" onclick="brandFollowTrack(&#39;LinkedIn&#39;)" automate_uuid="8f4454b5-4a49-4c2b-9700-8b4d48f33063"><i class="ss-icon ss-social-circle brand ss-linkedin"></i></a></li>
+<li><a href="https://www.facebook.com/pages/JavaWorld/107993545895326" itemprop="sameAs" rel="nofollow" target="_blank" onclick="brandFollowTrack(&#39;Facebook&#39;)" automate_uuid="e533851b-b1ff-43a6-ad18-72e3920ec1da"><i class="ss-icon ss-social-circle brand ss-facebook"></i></a></li>
+<li><a href="https://plus.google.com/117974570132126965756/posts" itemprop="sameAs" rel="publisher" target="_blank" onclick="brandFollowTrack(&#39;Google+&#39;)" automate_uuid="ef30969b-8fb0-4485-bbad-e4aa07c519fb"><i class="ss-icon ss-social-circle brand ss-googleplus"></i></a></li>
+<li><a href="https://www.javaworld.com/about/rss.html" target="_blank" automate_uuid="b14cc46e-7d31-4d81-873d-e45172ea40fb"><i class="ss-icon ss-social-circle ss-rss"></i></a></li>
+</ul>
+</span>
+</section>
+<section class="topics">
+<nav id="ft1">
+<ul>
+<li><a href="https://www.javaworld.com/category/core-java/" automate_uuid="8a0aa527-9792-4de8-a194-0e38b0c3d227">Core Java</a>
+</li>
+<li><a href="https://www.javaworld.com/category/enterprise-java/" automate_uuid="20b07a2e-a4a3-43c2-ba4f-aee22851e1f5">Enterprise Java</a>
+</li>
+<li class="selected"><a href="https://www.javaworld.com/category/learn-java/" class="active" automate_uuid="2362f952-e067-4bde-b04f-9f4933f26d67">Learn Java</a>
+</li>
+<li><a href="https://www.javaworld.com/category/mobile-java/" automate_uuid="ef4b254c-f5fc-497d-a471-bf411016ed8a">Mobile Java</a>
+</li>
+</ul>
+</nav>
+<nav id="ft2">
+<ul>
+<li><a href="https://www.javaworld.com/howto" automate_uuid="f78b913a-6267-4fe3-836a-9b0380bf0dbc">How-Tos</a></li>
+<li><a href="https://www.javaworld.com/feature" automate_uuid="cf61ac37-67da-4fa4-9a88-79dbf3850351">Features</a></li>
+<li><a href="https://www.javaworld.com/news" automate_uuid="35fbf0b1-4a94-4ac1-9171-1f5c0cc4331f">News</a></li>
+<li><a href="https://www.javaworld.com/blogs" automate_uuid="cfbbb6bd-6f55-413e-bf74-800ed7f1cc27">Blogs</a></li>
+<li><a href="https://www.javaworld.com/resources" automate_uuid="f08f6687-a3ad-4fe9-b5a6-eb0fb806b56a">Resources</a></li>
+<li><a href="https://www.javaworld.com/newsletters/signup.html" automate_uuid="8716ebb7-ad2e-4751-863b-7a21f23ac7c3">Newsletters</a></li>
+</ul>
+</nav>
+</section>
+<section class="about">
+<div class="wrapper">
+<nav class="tertiary" id="ft3">
+<ul>
+<li><a href="https://www.javaworld.com/about/about.html" automate_uuid="603f09c8-6861-40a7-a9ac-23aba921d6dd">About Us</a>
+</li><li><a href="https://www.javaworld.com/about/contactus.html" automate_uuid="784c8c5e-a81d-49bf-bf95-d9dcdc3854dc">Contact</a>
+</li><li><a href="https://www.javaworld.com/about/privacy.html" automate_uuid="c3410af7-925c-4a58-8cb3-5cc9098effbc">Privacy Policy</a>
+</li><li><a href="http://www.idgenterprise.com/reach/javaworld/" target="_blank" rel="nofollow" automate_uuid="f6f13698-7dbc-4caa-acdf-42ca368331f4">Advertising</a>
+</li><li><a href="https://www.idg.com/work-here/" target="_blank" rel="nofollow" automate_uuid="617aa02e-aedc-455d-92ee-5a122ac87082">Careers at IDG</a>
+</li><li><a href="https://www.javaworld.com/about/adchoices.html" automate_uuid="6ac8f4e6-8a90-40b4-a0b8-350016094647">Ad Choices</a>
+</li><li><a href="https://www.javaworld.com/about/affiliates.html" automate_uuid="af9d70ea-74bd-4c7c-8320-7da5dffc130c">E-commerce Affiliate Relationships</a>
+</li></ul>
+</nav>
+</div>
+</section>
+<section class="copyright">
+<div class="wrapper">
+<p><a href="https://www.javaworld.com/about/copyright.html" automate_uuid="c982e9c0-0985-4114-a747-766947954fe1">Copyright</a> © 2017 IDG Communications, Inc.</p>
+<div class="network">
+<div id="network-selector">
+<div class="label">Explore the IDG Network <i class="ss-icon tick">descend</i></div>
+<ul>
+<li><a href="https://www.cio.com/" target="_blank" rel="nofollow" automate_uuid="7d51ae10-73c7-49b6-88e6-15def230e3ab">CIO</a></li>
+<li><a href="https://www.computerworld.com/" target="_blank" rel="nofollow" automate_uuid="4a8195d2-0be6-4aeb-ad49-00095cd5bc24">Computerworld</a></li>
+<li><a href="https://www.csoonline.com/" target="_blank" rel="nofollow" automate_uuid="97159817-d1ac-47f7-b195-d1a1984636bb">CSO</a></li>
+<li><a href="https://www.gamestar.com/" target="_blank" rel="nofollow" automate_uuid="f32aef43-cd31-42c9-9afa-7bc36dc30d25">GameStar</a></li>
+<li><a href="https://www.greenbot.com/" target="_blank" rel="nofollow" automate_uuid="2a7d199d-ae7c-4744-a17d-0f8e497eaa76">Greenbot</a></li>
+<li><a href="https://www.idc.com/" target="_blank" rel="nofollow" automate_uuid="8b4f3238-ed6d-49fa-a4dc-58e98d9f7b89">IDC</a></li>
+<li><a href="https://www.idg.com/" target="_blank" rel="nofollow" automate_uuid="aa7d689b-6979-4e1a-b502-ea7664db0b29">IDG</a></li>
+<li><a href="https://www.idgconnect.com/" target="_blank" rel="nofollow" automate_uuid="3ba159c9-0f14-4ff0-87e2-afae00cc19b7">IDG Connect</a></li>
+<li><a href="https://www.idgtechnetwork.com/" target="_blank" rel="nofollow" automate_uuid="daed4dea-ed94-4852-922f-36865d2d26da">IDG TechNetwork</a></li>
+<li><a href="https://www.idg.tv/" target="_blank" rel="nofollow" automate_uuid="ce839f20-f77a-49cd-afdb-f7c92a6ac8c9">IDG.TV</a></li>
+<li><a href="https://www.idgventures.com/" target="_blank" rel="nofollow" automate_uuid="c4da8b2b-9147-4ca2-9ede-47a1f8a0fc59">IDG Ventures</a></li>
+<li><a href="https://www.infoworld.com/" target="_blank" rel="nofollow" automate_uuid="1a4422d2-3870-43ff-b77f-f82e131052dd">Infoworld</a></li>
+<li><a href="https://www.itnews.com/" target="_blank" rel="nofollow" automate_uuid="202d6934-f3c6-47eb-a8ce-cea4dfe49e4b">IT News</a></li>
+<li><a href="https://www.itwhitepapers.com/" target="_blank" rel="nofollow" automate_uuid="857b4404-68a6-49a0-81d1-7fe6c69fcae0">ITwhitepapers</a></li>
+<li><a href="https://www.itworld.com/" target="_blank" rel="nofollow" automate_uuid="5d9727cd-e85d-47b1-9af7-4911a192770d">ITworld</a></li>
+<li><a href="https://www.javaworld.com/" target="_blank" rel="nofollow" automate_uuid="ae9a8daf-7062-4f12-9b6a-17fd1439d1a2">JavaWorld</a></li>
+<li><a href="https://www.linuxworld.com/" target="_blank" rel="nofollow" automate_uuid="9ddbd361-df0e-4080-b304-91a1f5c94ad1">LinuxWorld</a></li>
+<li><a href="https://www.macworld.com/" target="_blank" rel="nofollow" automate_uuid="f07caa1f-cfb8-4545-a1c2-0c9dd84f0294">Macworld</a></li>
+<li><a href="https://www.networkworld.com/" target="_blank" rel="nofollow" automate_uuid="ee5ae971-091f-409f-a536-171212bcecc2">Network World</a></li>
+<li><a href="https://www.pcworld.com/" target="_blank" rel="nofollow" automate_uuid="22ee92fa-a934-433f-923c-ea121c4ba1e3">PCWorld</a></li>
+<li><a href="https://www.techconnect.com/" target="_blank" rel="nofollow" automate_uuid="9bfc3ff9-a7da-4887-81f0-a56d21c474a6">TechConnect</a></li>
+<li><a href="https://www.techhive.com/" target="_blank" rel="nofollow" automate_uuid="5cc4628d-4350-477a-ac4b-f0ded913e1d4">TechHive</a></li>
+</ul>
+</div><!-- /#network-selector -->
+</div><!-- /.network -->
+</div><!-- /.wrapper -->
+</section>
+</footer>
+<script src="./Observer and Observable _ JavaWorld_files/mouse_down.js.download"></script><script type="text/javascript" id="" src="./Observer and Observable _ JavaWorld_files/spm.v1.min.js.download"></script><script type="text/javascript" id="">var firstSessionDate=google_tag_manager["GTM-MMJKZ9"].macro('gtm1'),lastSessionDate=google_tag_manager["GTM-MMJKZ9"].macro('gtm2'),currentSessionDate=google_tag_manager["GTM-MMJKZ9"].macro('gtm3'),sessionNumber=google_tag_manager["GTM-MMJKZ9"].macro('gtm4')||1,inSession=google_tag_manager["GTM-MMJKZ9"].macro('gtm5'),daysSinceLastSession=0,currentTime=new Date,longExpiry=15768E8;
+if("undefined"===typeof firstSessionDate)google_tag_manager["GTM-MMJKZ9"].macro('gtm6')("inSession",!0,18E5,"/"),lastSessionDate=firstSessionDate=currentSessionDate=currentTime.toUTCString(),google_tag_manager["GTM-MMJKZ9"].macro('gtm7')("firstSessionDate",firstSessionDate,longExpiry,"/"),google_tag_manager["GTM-MMJKZ9"].macro('gtm8')("currentSessionDate",currentSessionDate,longExpiry,"/"),google_tag_manager["GTM-MMJKZ9"].macro('gtm9')("sessionNumber",sessionNumber,longExpiry,"/"),google_tag_manager["GTM-MMJKZ9"].macro('gtm10')("lastSessionDate",lastSessionDate,longExpiry,"/");else if("undefined"===typeof inSession&&(google_tag_manager["GTM-MMJKZ9"].macro('gtm11')("inSession",
+!0,18E5,"/"),sessionNumber=+sessionNumber+1,google_tag_manager["GTM-MMJKZ9"].macro('gtm12')("sessionNumber",sessionNumber,longExpiry,"/"),lastSessionDate=currentSessionDate,google_tag_manager["GTM-MMJKZ9"].macro('gtm13')("lastSessionDate",lastSessionDate,longExpiry,"/"),currentSessionDate=currentTime.toUTCString(),google_tag_manager["GTM-MMJKZ9"].macro('gtm14')("currentSessionDate",currentSessionDate,longExpiry,"/")),"undefined"!=typeof lastSessionDate){var lastSessionMS=(new Date(lastSessionDate)).getTime();daysSinceLastSession=Math.round((currentTime.getTime()-lastSessionMS)/
+864E5)}dataLayer.push({event:"Session Vars Set",daysSinceLastSession:daysSinceLastSession,firstSessionDate:firstSessionDate,lastSessionDate:lastSessionDate,sessionNumber:sessionNumber});</script>
+<script src="./Observer and Observable _ JavaWorld_files/jquery-ui.js.download"></script>
+<script src="./Observer and Observable _ JavaWorld_files/jquery.dfp.min.js.download"></script>
+<script src="./Observer and Observable _ JavaWorld_files/shortstack_nav.js.download"></script>
+<div id="mobilewelcomead" class=" ad-container">
+</div>
+<script type="text/javascript">IDG.GPT.addDisplayedAd("mobilewelcomead","true");$('#mobilewelcomead').responsiveAd({screenSize:'971 1115',scriptTags:[]});IDG.GPT.log("Creating ad: mobilewelcomead - [971 1115]");</script>
+<script src="./Observer and Observable _ JavaWorld_files/tracking.js.download"></script>
+<script src="./Observer and Observable _ JavaWorld_files/autocomplete.js.download"></script>
+<script src="./Observer and Observable _ JavaWorld_files/social_sidecar.js.download"></script>
+<script src="./Observer and Observable _ JavaWorld_files/jquery.colorbox-min.js.download"></script>
+<script src="./Observer and Observable _ JavaWorld_files/article.js.download"></script>
+<script src="./Observer and Observable _ JavaWorld_files/prettify.js.download"></script>
+<script src="./Observer and Observable _ JavaWorld_files/responsive-tables.js.download"></script>
+<script src="./Observer and Observable _ JavaWorld_files/jquery.tablesorter.min.js.download"></script>
+<script>$(document).ready(function(){$("table.tablesorter").tablesorter({widgets:['zebra']});$("table.tablesorter tbody tr").hover(function(){$(this).toggleClass("selected");});$("table.tablesorter thead tr th").each(function(){if($(this).find('.ss-icon').length<1){$(this).append('<i class="ss-icon"></i>');}});});</script>
+<script src="./Observer and Observable _ JavaWorld_files/jquery.lazyload.min.js.download"></script>
+<script src="./Observer and Observable _ JavaWorld_files/global.js.download"></script>
+<script src="./Observer and Observable _ JavaWorld_files/ss-social.js.download"></script>
+<script src="./Observer and Observable _ JavaWorld_files/ss-standard.js.download"></script>
+<script src="./Observer and Observable _ JavaWorld_files/brandAnalytics.js.download"></script>
+<!-- Begin BlueKai Tag -->
+<iframe name="__bkframe" height="0" width="0" frameborder="0" src="javascript:void(0)" src="./Observer and Observable _ JavaWorld_files/saved_resource(10).html"></iframe>
+<script type="text/javascript" src="./Observer and Observable _ JavaWorld_files/bk-coretag.js.download"></script>
+<script type="text/javascript" src="./Observer and Observable _ JavaWorld_files/jquery_cookie.js.download"></script>
+<!-- CryptoJS -->
+<script src="./Observer and Observable _ JavaWorld_files/md5.js.download"></script>
+<script type="text/javascript" src="./Observer and Observable _ JavaWorld_files/idg_bk_coreapi.js.download"></script>
+<script type="text/javascript">bk_allow_multiple_calls=true;var blueKaiId=14349;var blueKaiPort=10;var brandCode="jvw";var regUrl="https://regdev.idge.int/api/"
+var daysToRefresh=30;var bk_debug_log=false;regUrl="https://reg.idgenterprise.com/api/";daysToRefresh=30;if(typeof(s)!='undefined'){bk_addPageCtx("pageType",(typeof(s.pageType)!='undefined')?s.pageType:'');}bk_addPageCtx("cmscatids","[3187,3646,3469]");bk_addPageCtx("cmpy","[]");bk_addPageCtx('tid','4');params=getUrlParams('phint');if(Object.keys(params).length>0){bk_addPageCtx("idg_eid",params['idg_eid']);bk_addPageCtx("newt",params['newt']);bk_addPageCtx("isnl","1");}try{IDG.bkCoreApi.start();}catch(e){bk_doJSTag(blueKaiId,blueKaiPort);if(window.console&&window.console.log){window.console.log("Error Occured While Processing Profile Siubmission")}}$('article, #slideshowCarousel').on('click','.product-list-price, .btn-amazon, .productLink',function(e){var $linkEl=$(e.target);var po=$linkEl.data('po');if($.inArray(po,['amazon','vendor','other'])>=0){if(po=='amazon'){var prCat=$linkEl.data('bkc');if(typeof prCat!='undefined'){bk_addPageCtx('event','AmazonClick'+prCat);}bk_addPageCtx('event','AmazonClickLearnJava');bk_addPageCtx('event','AmazonClickJavaAppDev');bk_addPageCtx('event','AmazonClickJavaLanguage');}var prMfr=$linkEl.data('bkmfr');if(typeof prMfr!='undefined'){bk_addPageCtx('event','eCommerceMFR'+prMfr);}var prVndr=$linkEl.data('bkvndr');if(typeof prVndr!='undefined'){bk_addPageCtx('event','eCommerceClickVendor'+prVndr);}bk_doJSTag(34202,1);}});</script>
+<!-- End BlueKai Tag -->
+<div id="catfish" class=" ad-container">
+</div>
+<script type="text/javascript">IDG.GPT.addDisplayedAd("catfish","true");$('#catfish').responsiveAd({screenSize:'971 1115',scriptTags:[]});IDG.GPT.log("Creating ad: catfish - [971 1115]");</script>
+<!--  Begin gpt-skin/inread -->
+<div id="gpt-skin" class=" ad-container" data-google-query-id="CJCWid7Ts9gCFUgX4AodJd8LzA" style="display: none;">
+<div id="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_0" title="3rd party ad content" name="google_ads_iframe_/8456/IDG.US_E_JavaWorld.com/application-development_section_0" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Observer and Observable _ JavaWorld_files/saved_resource(11).html"></iframe></div></div>
+<script type="text/javascript">IDG.GPT.addDisplayedAd("gpt-skin","true");IDG.GPT.displayGoogleTagSlot('gpt-skin');</script>
+<!--  End gpt-skin/inread -->
+<script type="text/javascript" src="./Observer and Observable _ JavaWorld_files/jquery.lazyload-ad.js.download"></script>
+<script type="text/javascript">$("div.lazyload_ad").lazyLoadAd({threshold:0,forceLoad:false,onLoad:false,onComplete:false,timeout:1500,debug:false,xray:false});</script>
+<script type="text/javascript">g_arrModules['']=true;g_arrModules['Article Detail:Top:Breadcrumb']=true;g_arrModules['Article Detail:Social Sharing Vertical']=true;g_arrModules['Article Detail:Pagination']=true;g_arrModules['Article Detail:Left:Recommended']=true;</script>
+<!-- Begin comScore Tag -->
+<script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"6035308",c3:"",c5:"Learn Java",c6:"Article: How-To",c15:"2077258"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el);})();</script>
+<noscript>
+&lt;img src="https://sb.scorecardresearch.com/p?c1=2&amp;c2=6035308&amp;cv=2.0&amp;cj=1"/&gt;
+</noscript>
+<!-- End comScore Tag -->
+<script language="JavaScript" type="text/javascript">var omniture_account="idgjavaworld";var omniture_trackingServer="idgenterprise.d1.sc.omtrdc.net";g_sOmnitureReportSuite="idgjavaworld";$(document).ready(function(){if(!!$('.sharing-tools').length||!!$('#ss-share').length||(!!$('#sharer').length&&!!!$('#sharer.sidecar').length)){Socialite.load();Socialite.setup({twitter:{lang:'en',onclick:function(e){socialTrack("Article","Twitter","Click");},ontweet:function(e){socialTrack("Article","Twitter","Tweet");$thm.logPlEvent({"b":"jvw","e":"twshare","t":"article","id":"2077258"});},onretweet:function(e){socialTrack("Article","Twitter","Retweet");},onfavorite:function(e){socialTrack("Article","Twitter","Favorite");},onfollow:function(e){socialTrack("Article","Twitter","Follow");followTrack();}},facebook:{lang:'en_US',appId:'196366870381968',onlike:function(url){socialTrack("Article","Facebook","Like");$thm.logPlEvent({"b":"jvw","e":"fblike","t":"article","id":"2077258"});},onunlike:function(url){socialTrack("Article","Facebook","Unlike");},xfbml:true,version:'v2.1'},googleplus:{lang:'en-US',callback:function(el,e){socialTrack("Article","Googleplus","Click");$thm.logPlEvent({"b":"jvw","e":"googplus","t":"article","id":"2077258"});}}});$('#ss-share').show();}$('a.pinterest-pinit').click(function(e){socialTrack('Article','Pinterest','share');});$('li.redditShare').click(function(e){socialTrack('Article','Reddit','share');});$('li.stumbleUponShare').click(function(e){socialTrack('Article','StumbleUpon','share');});$('.banner-tw').click(function(e){brandFollowTrack("twitter");});$('.banner-fb').click(function(e){brandFollowTrack("facebook");});$('.mediaresource #download-asset').click(function(e){Analytics.logAssetDownload($(this).data('id'));});if(typeof(FB)!='undefined'){FB.Event.subscribe('edge.create',function(response){s=s_gi(g_sOmnitureReportSuite);s.linkTrackEvents=s.events="event36";s.prop48="facebook share";s.linkTrackVars="prop48,events";s.tl(true,'o','Social Media share');});}if(typeof(digMag)!='undefined'){if(typeof(digLogin)!='undefined'){DigAnalytics.logSignIn(digLogin);}}});var Analytics=new Object();Analytics.logArticleComment=function(){s=s_gi(g_sOmnitureReportSuite);s.linkTrackVars="prop25,eVar25,events";s.linkTrackEvents="event19";s.events="event19";s.prop25='Article Comment';s.tl(this,'o','Article Comments');};Analytics.logSocialSignin=function(provider){s=s_gi(g_sOmnitureReportSuite);s.linkTrackEvents=s.events="event32";s.prop19=provider;s.linkTrackVars="prop19,events";s.tl(true,'o',provider);};Analytics.logInternalSignin=function(){s=s_gi(g_sOmnitureReportSuite);s.linkTrackEvents=s.events="event32";s.prop19="Internal Login";s.linkTrackVars="prop19,events";s.tl(true,'o','Login');};Analytics.logAssetDownload=function(assetname){s=s_gi(g_sOmnitureReportSuite);s.linkTrackVars="prop52,eVar37,events";s.linkTrackEvents="event49";s.pagename='filetype:'+s.pagename;s.events="event49";s.prop52='asset:'+assetname;eVar37=s.prop52;s.tl(this,'o','Asset Download');}
+function socialTrack(loc,network,socialAction){var trackString=network+":"+loc+":"+socialAction;console.log("socialTrack() "+trackString);s.prop48=trackString;s.eVar27="D=c48";s.event36=trackString;s.linkTrackEvents=s.events="event36";s.linkTrackVars="prop48,eVar27,events";s.tl(true,'o','Social media');}function linkedInTrack(){socialTrack("Article","LinkedIn","Share");};function followTrack(){console.log("followTrack()");s=s_gi(g_sOmnitureReportSuite);s.linkTrackEvents=s.events="event37";s.prop49="social media";s.linkTrackVars="prop49,events";s.tl(true,'o','Social media follow');}function brandFollowTrack(network){console.log("brandFollowTrack()");s=s_gi(g_sOmnitureReportSuite);s.eVar16="followed on:"+network;s.linkTrackEvents=s.events="event37";s.prop49="social media";s.linkTrackVars="prop49,eVar16,events";s.tl(true,'o','Social media brand follow');if(typeof IDG.Eloqua!="undefined"){IDG.Eloqua.invoke_flash("social-"+network);}}function sharingTrack(type,pixelLogString){s=s_gi(g_sOmnitureReportSuite);s.eVar16="Sharing on: "+type;s.linkTrackEvents=s.events="event37";s.prop49="social media sharing";s.linkTrackVars="prop49,eVar16,events";s.tl(true,'o','Social Media Sharing');if(typeof IDG.Eloqua!="undefined"){IDG.Eloqua.invoke_flash("social-"+type);}if(pixelLogString!==undefined){$thm.logPlEvent({"b":"jvw","e":pixelLogString,"t":"article","id":"2077258"});}}function moduleTrack(moduleName,loc){console.log("moduleTrack()");s=s_gi(g_sOmnitureReportSuite);s.eVar42=moduleName;s.eVar44=loc;s.linkTrackEvents=s.events='event31';s.list3=s.prop42+","+s.eVar42;s.tl(true,'o','Module click');}function trackSlideshow(articleId,slideTitle,slideNumber){s=s_gi(g_sOmnitureReportSuite);s.prop15="page number:"+slideNumber;s.eVar15="D=c15";s.tl(true,'o','Track Slideshow: articleId:'+articleId+' title:'+slideTitle+" Slide No.:"+slideNumber);}function oClickTrack(key){if(typeof(key)!='undefined'&&key.length>0){s=s_gi(g_sOmnitureReportSuite);s.linkTrackVars="eVar42,events";s.events="event49";s.linkTrackEvents="event49";s.eVar42=key;s.list3=s.prop42+","+s.eVar42;s.tl(true,'o','module click');}};</script>
+<!-- SiteCatalyst code version: H.26.2.
+Copyright 1996-2013 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="./Observer and Observable _ JavaWorld_files/s_code.js.download"></script>
+<script language="JavaScript" type="text/javascript" id="omniVars">g_sOmnitureReportSuite=typeof g_sOmnitureReportSuite!='undefined'&&g_sOmnitureReportSuite?g_sOmnitureReportSuite:"idgjavaworld";s.pageName="JavaWorld:article:howto:Learn Java:2077258:Observer and Observable";s.pageType="";if(typeof omnitureChannel!='undefined'){s.channel=omnitureChannel;}s.prop1="source:javaworld";s.eVar1="D=c1";s.prop2="content type:howto";s.eVar2="D=c2";s.prop3="display type:article:howto";s.eVar3="D=c3";s.prop4="7760 days";s.eVar4="D=c4";s.prop5="blog";s.prop6="";s.prop7="blogs:how-to java";s.eVar7="D=c7";s.prop9="category:learn java";s.eVar9="D=c9";s.prop11="published:01-Oct-96";s.eVar11="D=c11";s.prop12="aid:2077258";s.eVar12="D=c12";s.prop13="";s.eVar13="D=c13";s.prop14="author:todd sundsted";s.eVar14="D=c14";s.prop15="page number:1";s.eVar15="D=c15";s.prop17="uri:/article/2077258/learn-java/observer-and-observable.html";s.eVar17="D=c17";s.prop18="";s.eVar18="D=c18";s.prop24=getLoginStatusForOmniture();s.eVar24="D=c24";s.prop28=getTrackingToken('tk')?"tokens:"+getTrackingToken('tk'):"";s.eVar28="D=c28";s.prop37="rpn:jvw:howto:javaworld:article:howto:learn java:2077258:observer and observable";s.eVar37="D=c37";s.prop39="";s.eVar39="D=c39";s.prop40="";try{s.prop41=IDG.GPT.getDisplayedAds(',')+','+IDG.GPT.getOtherAds(',');s.prop42=IDG.GPT.getModules(',');s.eVar42="D=c42";}catch(e){console.log("error in setting omniture vars: "+e);}s.prop53="3187";s.eVar53="D=c53";s.prop54="learn java,software development,java";s.eVar30="D=c54";s.eVar33=s.prop55="3187,3646,3469";s.eVar33="D=c55";s.prop56="";s.eVar40="D=c56";s.prop61="";s.eVar10="D=c61";s.prop74="architecture";s.eVar58="D=c74";s.prop75="software-development";s.eVar60="D=c75";s.prop58="architecture:software-development";s.eVar59="D=c58";var sModules='';for(var i in g_arrModules){if(g_arrModules[i]&&i!=''){sModules+=i+',';}}sModules=sModules.replace(/,$/,'');s.prop42=sModules;s.eVar42="D=c42";s.events="";s.events=s.apl(s.events,'event33',',');s.eVar41="01-Oct-96";s.list3=s.prop42+","+s.eVar42;for(var p in s){if(s[p]&&p.match(/^(prop|ceVar)\d+$/)){s[p]=s[p].toLowerCase();}}s.campaign=s.getQueryParam('cid');var s_code=s.t();if(s_code)document.write(s_code)</script>
+<script language="JavaScript" type="text/javascript">if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')</script><noscript>&lt;img src="http://idgenterprise.d1.sc.omtrdc.net/b/ss/idgjavaworld/1/H.25--NS/0" height="1" width="1" border="0" alt=""/&gt;</noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.26.2. -->
+<script type="text/javascript">$thm.logPlEvent({"b":"jvw","e":"view","t":"article","id":"2077258"});</script>
+<div id="loginModal"></div>
+<div id="logoffModal"></div>
+<script type="text/javascript">a=top;f=self;if(a!=f){a.location=f.location;}</script>
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div style="display: none; visibility: hidden;"><script>(function(){var g="1100laKZ",d='[href^\x3d"https://apple.com"],[href*\x3d"store"],[href*\x3d"www"],[href^\x3d"http://apple.com"]',e="(http(s)?://((www|store)(.))?apple.com)(/(uk|au|ca|ie|nl|se|de))?",f=new RegExp(e+"(/.*)","i"),h=/(\/browse\/home\/specialdeals)|(\/macos\/high-sierra-preview)|(\/homepod)|(\/newsroom)|(\/imac-pro)|(\/iphone-8\/specs)|(\/iphone-x\/specs)|(\/apple-tv-4k\/specs)|(aos.prf.hn)/i;$('a[href*\x3d"apple.com"]').filter(d).each(function(d,e){var b=$(this).attr("href");if(f.test(b)&&
+!h.test(b)){var c=b.replace(f,"$8");var a="http://aos.prf.hn/click/camref:"+g+"/destination:http://www.apple.com";0<=b.indexOf("store.")&&(a+="/shop");a+=c;c=10;0<=a.indexOf("/shop/")&&(c+=1);b="/";a=a.split(b).slice(0,c);a=a.join(b);$(this).attr("href",a)}})})();</script></div><script type="text/javascript" id="">/*
+ @preserve
+ jquery.scrolldepth.js | v1.0
+ Copyright (c) 2016 Rob Flaherty (@robflaherty)
+ Licensed under the MIT and GPL licenses.
+*/
+(function(c){"function"===typeof define&&define.amd?define(["jquery"],c):"object"===typeof module&&module.exports?module.exports=c(require("jquery")):c(jQuery)})(function(c){var n={minHeight:0,percentage:!0,pixelDepth:!0,nonInteraction:!0,gtmOverride:!1,trackerName:!1,dataLayer:"dataLayer"},d=c(window),g=[],h=0,f;c.scrollDepth=function(a){function p(b,c,e,u){f&&a.pixelDepth&&2<arguments.length&&e>h&&(h=e,f({event:"ScrollDistance",scrollEventCategory:"Scroll Depth",scrollEventAction:c,scrollEventLabel:(250*
+Math.floor(e/250)).toString()+"px",eventValue:1,eventNonInteraction:a.nonInteraction}))}function q(b,a,e){c.each(b,function(b,d){-1===c.inArray(b,g)&&a>=d&&(p("Percentage",b,a,e),g.push(b))})}function r(b,c){var a,d,g,k=null,l=0,h=function(){l=new Date;k=null;g=b.apply(a,d)};return function(){var e=new Date;l||(l=e);var f=c-(e-l);a=this;d=arguments;0>=f?(clearTimeout(k),k=null,l=e,g=b.apply(a,d)):k||(k=setTimeout(h,f));return g}}function m(){d.on("scroll.scrollDepth",r(function(){var b=c(document).height(),
+f=window.innerHeight?window.innerHeight:d.height();f=d.scrollTop()+f;b={"25%":parseInt(.25*b,10),"50%":parseInt(.5*b,10),"75%":parseInt(.75*b,10),"100%":b-5};var e=+new Date-t;g.length>=(a.percentage?4:0)?d.off("scroll.scrollDepth"):a.percentage&&q(b,f,e)},500))}var t=+new Date;a=c.extend({},n,a);c(document).height()<a.minHeight||(c.scrollDepth.reset=function(){g=[];h=0;d.off("scroll.scrollDepth");m()},m(),"undefined"===typeof window[a.dataLayer]||"function"!==typeof window[a.dataLayer].push||a.gtmOverride||
+(f=function(b){window[a.dataLayer].push(b)}))};return c.scrollDepth});</script>
+<script type="text/javascript" id="">jQuery(function(){jQuery.scrollDepth()});window.addEventListener("beforeunload",function(a){dataLayer.push({event:"pushOnUnload"})});</script><div style="display: none; visibility: hidden;">
+<script type="text/javascript">var _auto={accountKey:"0cf738c9d2c2033aaa3bb88f6ae0a9f57c18d1b822b19058d46be2fd29de4f58",u1:"jw",apiURL:"https://www.popshops.com",snippetURL:"https://automate-prod.s3.amazonaws.com/minified_logic.js",automateURL:"https://automate.linksynergy.com",widgetKey:"xp35fk24bu8fvo1ajpk3qdt2izxuffjj",aelJS:null,useDefaultAEL:!1,loaded:!1,events:[]},ael=window.addEventListener;
+window.addEventListener=function(a,b,c,d){"click"!==a&&_auto.useDefaultAEL?ael(a,b,c):_auto.events.push({type:a,handler:b,capture:c,rakuten:d})};_auto.links={};var httpRequest=new XMLHttpRequest;httpRequest.open("GET",_auto.snippetURL,!0);httpRequest.timeout=5E3;httpRequest.ontimeout=function(){if(!_auto.loaded){for(i=0;i<_auto.events.length;i++){var a=_auto.events[i];ael(a.type,a.handler,a.capture)}_auto.useDefaultAEL=!0}};
+httpRequest.onreadystatechange=function(){httpRequest.readyState===XMLHttpRequest.DONE&&200===httpRequest.status&&(eval(httpRequest.responseText),_auto.run(ael))};httpRequest.send(null);</script>
+
+
+
+<script src="./Observer and Observable _ JavaWorld_files/am.js.download"></script>
+</div><div style="display: none; visibility: hidden;">
+<script src="./Observer and Observable _ JavaWorld_files/oct.js.download" type="text/javascript"></script>
+<script type="text/javascript">twttr.conversion.trackPid("nuqtk",{tw_sale_amount:0,tw_order_quantity:0});</script>
+<noscript></noscript>
+</div><div style="display: none; visibility: hidden;">
+<script>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","//connect.facebook.net/en_US/fbevents.js");fbq("init","628093423999127");fbq("track","PageView");</script>
+<noscript></noscript>
+</div><div style="display: none; visibility: hidden;">
+<script src="./Observer and Observable _ JavaWorld_files/oct.js.download" type="text/javascript"></script>
+<script type="text/javascript">twttr.conversion.trackPid("nukm3",{tw_sale_amount:0,tw_order_quantity:0});</script>
+<noscript></noscript>
+</div><div style="display: none; visibility: hidden;"><script>var _alcTag=_alcTag||[];(function(){var a=document.createElement("script");a.async=1;a.src="//wt.alcmpn.com/wt/116/webtag.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script></div><iframe id="149341ed7bea16e" height="0" width="0" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="./Observer and Observable _ JavaWorld_files/async_usersync.html" style="border: 0px; display: none;"></iframe>
+<script type="text/javascript" id="">Sailthru.init({customerId:"8a7950ccf4b505820f4688ea815011b6",useStoredTags:!1});</script><div style="background-color: #fff; border: 1px solid #ccc; box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); position: absolute; left: 0px; top: -10000px; transition: visibility 0s linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: #fff; opacity: 0.05;  filter: alpha(opacity=5)"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge" src="./Observer and Observable _ JavaWorld_files/bframe.html" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" name="n5k64cui5cyl" style="width: 100%; height: 100%;"></iframe></div></div><iframe id="google_osd_static_frame_605307080411" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./Observer and Observable _ JavaWorld_files/saved_resource(12).html"></iframe><p data-src="https://ib.3lift.com/rev/53b40d3f3ba16d3e9f5d72230bd159a548a960ac/dist/bundle.js" style="display: none;"></p><script src="./Observer and Observable _ JavaWorld_files/bundle.js.download"></script><iframe width="0" height="0" style="display: none;" src="./Observer and Observable _ JavaWorld_files/saved_resource(13).html"></iframe><iframe width="0" height="0" src="./Observer and Observable _ JavaWorld_files/userSync.html" style="display: none;"></iframe><div id="_BC_P" style="visibility: visible;"></div><iframe src="./Observer and Observable _ JavaWorld_files/ProfilesEngineServlet.html" width="1" height="1" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" tabindex="-1" style="visibility: hidden;"></iframe><img src="./Observer and Observable _ JavaWorld_files/ProfilesEngineServlet" width="1" height="1"><script src="./Observer and Observable _ JavaWorld_files/adsct" type="text/javascript"></script><script src="./Observer and Observable _ JavaWorld_files/adsct(1)" type="text/javascript"></script></body></html>

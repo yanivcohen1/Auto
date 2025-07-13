@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{29F18C5D-948B-411C-A657-ECEFA2B5E612}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>com.who.tests</RootNamespace>
+    <AssemblyName>com.who.tests.clients</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\com.who.tests.clients.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <HintPath>..\Resources\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net, Version=1.2.0.2, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\Resources\Common.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <HintPath>..\Resources\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Selenium.WebDriverBackedSelenium">
+      <HintPath>..\Resources\Selenium.WebDriverBackedSelenium.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core, Version=1.3.1.20711, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <HintPath>..\Resources\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.Selenium.Core">
+      <HintPath>..\Resources\ThoughtWorks.Selenium.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationClientsideProviders" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WebDriver">
+      <HintPath>..\Resources\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\Resources\WebDriver.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clients\CashierPage.cs" />
+    <Compile Include="Clients\CongratulationsPage.cs" />
+    <Compile Include="Clients\CongratulationsEuroPage.cs" />
+    <Compile Include="Clients\RgistrationChromePage.cs" />
+    <Compile Include="Clients\RgistrationWhccPage.cs" />
+    <Compile Include="Clients\Rgistration21novaPage.cs" />
+    <Compile Include="Clients\DepositPage.cs" />
+    <Compile Include="Clients\DownloadPage.cs" />
+    <Compile Include="Clients\FinishPage.cs" />
+    <Compile Include="Clients\GameModePage.cs" />
+    <Compile Include="Clients\JoinNowPage.cs" />
+    <Compile Include="Clients\LanguagePage.cs" />
+    <Compile Include="Clients\LicensePage.cs" />
+    <Compile Include="Clients\MainCasinoPage.cs" />
+    <Compile Include="Clients\MainWebPage.cs" />
+    <Compile Include="Clients\PopupMsgPage.cs" />
+    <Compile Include="Clients\RgistrationEuroPage.cs" />
+    <Compile Include="EurograndClientDe_PT.cs" />
+    <Compile Include="EurograndClientEn_PT.cs" />
+    <Compile Include="WilliamhillClientDePT.cs" />
+    <Compile Include="Nova21ClientDe_PT.cs" />
+    <Compile Include="Nova21ClientEn_PT_Test.cs" />
+    <Compile Include="Tracking\EurograndEnClient_Test.cs" />
+    <Compile Include="Tracking\WilliamhillEnClientParam_Test.cs" />
+    <Compile Include="EurograndClientDe_Test.cs" />
+    <Compile Include="EurograndClientEn_Test.cs" />
+    <Compile Include="Nova21ClientDe_Test.cs" />
+    <Compile Include="Nova21ClientEn_Test.cs" />
+    <Compile Include="Nova21ClientRu_Test.cs" />
+    <Compile Include="WilliamhillClientDe.cs" />
+    <Compile Include="WilliamhillClientEn.cs" />
+    <Compile Include="JoylandDeClient_Test.cs" />
+    <Compile Include="JoylandEnClient_Test.cs" />
+    <Compile Include="PrestigeDeClient_Test.cs" />
+    <Compile Include="PrestigeEnClient_Test.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SkykingDeClient_Test.cs" />
+    <Compile Include="SkykingEnClient_Test.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Clients\RgistrationPage.cs" />
+    <Compile Include="WilliamhillClientEnPT.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AutomationLib\AutomationLib.csproj">
+      <Project>{28FF8250-5EE1-4F66-9349-546FBF0B7831}</Project>
+      <Name>AutomationLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SkykingEnClientContext.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SkykingDeClientContext.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PrestigeEnClientContext.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PrestigeDeClientContext.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="JoylandEnClientContext.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="JoylandDeClientContext.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WilliamhillClientEnContext.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WilliamhillClientDeContext.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WilliamhillClientEnPTContext.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WilliamhillClientDePTContext.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Content Include="Nova21ClientDe_PT_Context.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Nova21ClientEn_PT_Context.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EurograndClientDe_PT_Context.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EurograndClientEn_PT_Context.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EurograndClientDeContext.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EurograndClientEnContext.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Nova21ClientDeContext.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Nova21ClientEnContext.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Nova21ClientRuContext.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Tracking\EurograndEnClientContext.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="Tracking\WilliamhillEnClientContext.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

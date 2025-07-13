@@ -1,0 +1,152 @@
+package com.who.rest.service;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
+
+import org.apache.log4j.Logger;
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
+
+import com.sun.jersey.api.spring.Autowire;
+import com.who.rest.dao.jpa.IJpaSuitesDao;
+import com.who.rest.dao.jpa.JpaSuitesDao;
+import com.who.rest.data.SuitesData;
+import com.who.rest.data.SuitesDatas;
+import com.who.rest.data.TestsData;
+import com.who.rest.db.model.Classe;
+import com.who.rest.db.model.Parameters;
+import com.who.rest.db.model.Suites;
+import com.who.rest.db.model.Tests;
+import com.who.rest.util.Common;
+import com.who.rest.util.Loger;
+
+@Repository
+public class SuitesUtil {
+	
+	Logger logger = Loger.getLoger();
+
+	@Autowired
+	private IJpaSuitesDao jpaSuitesDao;
+	
+	public static void main(String[] args) throws IOException, InterruptedException {
+		SuitesUtil tcr = new SuitesUtil();
+		//tcr.getTests();
+	}
+	
+	public List<SuitesData> convertSuitesToSuitesData(List<Suites> suitesList) {
+		List<SuitesData> suitesDatas = new ArrayList<SuitesData>();
+		for (Suites suites : suitesList) {
+			SuitesData SuitesData = new SuitesData();
+			SuitesData.setSuiteId(suites.getSuitesId());
+			SuitesData.setSuiteName(suites.getSuiteName());
+			SuitesData.setJenkinsURL(suites.getJenkinsURL());
+			SuitesData.setXmlFileLocation(suites.getXmlFileLocation());
+			suitesDatas.add(SuitesData);
+		}
+		return suitesDatas;
+	}
+	
+	public List<Suites> convertSuitesDataToSuites(List<SuitesData> suitesDataList) {
+		List<Suites> suites = new ArrayList<Suites>();
+		for (SuitesData suite : suitesDataList) {
+			Suites _suite = jpaSuitesDao.find(suite.getSuiteId());
+			_suite.setSuiteName(suite.getSuiteName());
+			_suite.setJenkinsURL(suite.getJenkinsURL());
+			_suite.setXmlFileLocation(suite.getXmlFileLocation());
+			suites.add(_suite);
+		}
+		return suites;
+	}
+
+	@Transactional
+	public boolean updateSuites(List<SuitesData> suitesData) throws IllegalArgumentException {
+		try {
+			List<Suites> suites = convertSuitesDataToSuites(suitesData);
+			for (Suites suite : suites) {
+				jpaSuitesDao.save(suite);
+				logger.debug("UpdateTests taskId:"+ suite.getSuitesId());
+			}
+		}
+		catch (HibernateException e) {
+			logger.error("UpdateTests error", e);
+			throw new IllegalArgumentException("Error:" + e.getMessage());
+		}
+		return true;
+	}
+
+	@Transactional
+	public SuitesDatas getAllSuites() throws IllegalArgumentException {
+		SuitesDatas SuitesDatas = null;
+		try {
+			String HQL = "select suitess from Suites as suitess "+ 
+					 "order by suitess.suiteName";
+			List<Suites> suites = Common.getEntityManager().createQuery(HQL).getResultList();
+			List<SuitesData> SuitesDataList = convertSuitesToSuitesData(suites);
+			SuitesDatas = new SuitesDatas();
+			SuitesDatas.getSuites().addAll(SuitesDataList);
+		} catch (Exception e) {
+			logger.error("getAllSuites error", e);
+			throw new IllegalArgumentException("Error:" + e.getMessage());
+		}
+		return SuitesDatas;
+	}
+
+	@Transactional
+	public boolean removeSuite(int id) throws IllegalArgumentException {
+		try {
+			Suites suite = jpaSuitesDao.find(id);
+			String suiteName = suite.getSuiteName();
+			
+			jpaSuitesDao.delete(suite.getSuitesId());
+			logger.debug("RemoveTest suiteName:"+ suiteName);
+		}
+		catch (HibernateException e) {
+			logger.error("RemoveTest error", e);
+			throw new IllegalArgumentException("Error:" + e.getMessage());
+		}
+		return true;
+	}
+
+	@Transactional
+	public boolean addSuite(String suiteName,String xmlFileLocation, String jenkinsURL) throws IllegalArgumentException {
+		try {
+			
+			Suites suite = new Suites(suiteName, xmlFileLocation, jenkinsURL, null);
+			jpaSuitesDao.save(suite);			
+			logger.debug("AddTest suiteId:" + suite.getSuitesId());
+		}
+		catch (HibernateException e) {
+			logger.error("AddTest error", e);
+			throw new IllegalArgumentException("Error:" + e.getMessage());
+		}
+		return true;
+	}
+	
+	@Transactional
+	public boolean updateSuite(String suiteName,String xmlFileLocation, String jenkinsURL ,int suiteId) throws IllegalArgumentException {
+		try {
+			Suites suite = jpaSuitesDao.find(suiteId);
+			suite.setSuiteName(suiteName);
+			suite.setXmlFileLocation(xmlFileLocation);
+			suite.setJenkinsURL(jenkinsURL);
+			jpaSuitesDao.save(suite);
+			
+			logger.debug("updateSuite suiteId:" + suite.getSuitesId());
+		}
+		catch (HibernateException e) {
+			logger.error("updateSuite error", e);
+			throw new IllegalArgumentException("Error:" + e.getMessage());
+		}
+		return true;
+	}
+	
+}

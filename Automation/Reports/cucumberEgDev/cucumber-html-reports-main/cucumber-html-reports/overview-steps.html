@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>Bau-Automation</td>
+                          <td>1</td>
+                        <td>05 Apr 2017, 19:48</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Duration</th>
+            <th>Average</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">DepositPage.I_Click_On_ACCEPT()</td>
+              <td>10</td>
+              <td class="duration" data-value="146309757526">2m 26s 309ms</td>
+              <td class="duration" data-value="14630975752">14s 630ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DepositPage.click_on_Save_details_and_Deposit()</td>
+              <td>6</td>
+              <td class="duration" data-value="3116658682">3s 116ms</td>
+              <td class="duration" data-value="519443113">519ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DepositPage.fill_Amount_to_Deposit_(String)</td>
+              <td>6</td>
+              <td class="duration" data-value="4662630307">4s 662ms</td>
+              <td class="duration" data-value="777105051">777ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DepositPage.fill_CVV_(String)</td>
+              <td>4</td>
+              <td class="duration" data-value="1314856496">1s 314ms</td>
+              <td class="duration" data-value="328714124">328ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DepositPage.miguser_back_to_home_page(String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="16210719">016ms</td>
+              <td class="duration" data-value="16210719">016ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DepositPage.miguser_read_the_Current_Balance_with_css()</td>
+              <td>16</td>
+              <td class="duration" data-value="178025788474">2m 58s 025ms</td>
+              <td class="duration" data-value="11126611779">11s 126ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DepositPage.msg_Your(String)</td>
+              <td>4</td>
+              <td class="duration" data-value="1318075901">1s 318ms</td>
+              <td class="duration" data-value="329518975">329ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DepositPage.select_Expiration_Mouth(String)</td>
+              <td>4</td>
+              <td class="duration" data-value="2247873402">2s 247ms</td>
+              <td class="duration" data-value="561968350">561ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DepositPage.select_Expiration_Year(String)</td>
+              <td>4</td>
+              <td class="duration" data-value="3029660194">3s 029ms</td>
+              <td class="duration" data-value="757415048">757ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DepositPage.user_MSG_You_just(String)</td>
+              <td>4</td>
+              <td class="duration" data-value="19133998595">19s 133ms</td>
+              <td class="duration" data-value="4783499648">4s 783ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DepositPage.user_Read_Limit_Msg(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="620294479">620ms</td>
+              <td class="duration" data-value="310147239">310ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DepositPage.user_click_on_Deposit_top_Button()</td>
+              <td>12</td>
+              <td class="duration" data-value="10808733794">10s 808ms</td>
+              <td class="duration" data-value="900727816">900ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DepositPage.user_insert_card_number(String)</td>
+              <td>4</td>
+              <td class="duration" data-value="11137065744">11s 137ms</td>
+              <td class="duration" data-value="2784266436">2s 784ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MainWebPage.Click_on_LOGIN_Butten_in_popup_window()</td>
+              <td>3</td>
+              <td class="duration" data-value="6879870206">6s 879ms</td>
+              <td class="duration" data-value="2293290068">2s 293ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MainWebPage.Click_on_LOGIN_top_button_on_main_page()</td>
+              <td>3</td>
+              <td class="duration" data-value="62438235585">1m 2s 438ms</td>
+              <td class="duration" data-value="20812745195">20s 812ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MainWebPage.Fill_Password_in_popup_window(String)</td>
+              <td>4</td>
+              <td class="duration" data-value="1235302252">1s 235ms</td>
+              <td class="duration" data-value="308825563">308ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MainWebPage.migUser_Click_on_LOGIN_Butten_in_popup_window()</td>
+              <td>13</td>
+              <td class="duration" data-value="4201623948">4s 201ms</td>
+              <td class="duration" data-value="323201842">323ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MainWebPage.migUser_Click_on_LOGIN_top_button_on_main_page()</td>
+              <td>13</td>
+              <td class="duration" data-value="155378119848">2m 35s 378ms</td>
+              <td class="duration" data-value="11952163065">11s 952ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MainWebPage.migUser_Fill_Password_in_popup_window(String)</td>
+              <td>12</td>
+              <td class="duration" data-value="4305166997">4s 305ms</td>
+              <td class="duration" data-value="358763916">358ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MainWebPage.migUser_Fill_Username_in_popup_window(String)</td>
+              <td>12</td>
+              <td class="duration" data-value="11501557878">11s 501ms</td>
+              <td class="duration" data-value="958463156">958ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MainWebPage.miguser_language_and_Brand_and(String,String,String)</td>
+              <td>30</td>
+              <td class="duration" data-value="24028754">024ms</td>
+              <td class="duration" data-value="800958">000ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MainWebPage.miguser_see_login_Popup_window()</td>
+              <td>2</td>
+              <td class="duration" data-value="40686329966">40s 686ms</td>
+              <td class="duration" data-value="20343164983">20s 343ms</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MainWebPage.no_Redirection(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="794632278">794ms</td>
+              <td class="duration" data-value="397316139">397ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MainWebPage.user_Fill_Last_Username_in_popup_window()</td>
+              <td>4</td>
+              <td class="duration" data-value="2769654524">2s 769ms</td>
+              <td class="duration" data-value="692413631">692ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MainWebPage.user_is_connect_to_the_internet(String,String)</td>
+              <td>30</td>
+              <td class="duration" data-value="86760063079">1m 26s 760ms</td>
+              <td class="duration" data-value="2892002102">2s 892ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MainWebPage.user_is_navigating_to(String)</td>
+              <td>30</td>
+              <td class="duration" data-value="693228217550">11m 33s 228ms</td>
+              <td class="duration" data-value="23107607251">23s 107ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MainWebPage.user_is_navigating_to_url(String)</td>
+              <td>3</td>
+              <td class="duration" data-value="19332639204">19s 332ms</td>
+              <td class="duration" data-value="6444213068">6s 444ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">PaymentsPage.desk_user_Read(String)</td>
+              <td>5</td>
+              <td class="duration" data-value="51645362469">51s 645ms</td>
+              <td class="duration" data-value="10329072493">10s 329ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">PaymentsPage.desk_user_Select_Methode(String)</td>
+              <td>5</td>
+              <td class="duration" data-value="22000679416">22s</td>
+              <td class="duration" data-value="4400135883">4s 400ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">PaymentsPage.not_visible_SelfExclude()</td>
+              <td>2</td>
+              <td class="duration" data-value="4247320818">4s 247ms</td>
+              <td class="duration" data-value="2123660409">2s 123ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">PaymentsPage.not_visible_Timeout()</td>
+              <td>2</td>
+              <td class="duration" data-value="10472221190">10s 472ms</td>
+              <td class="duration" data-value="5236110595">5s 236ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">PaymentsPage.user_Click_on_Timeout_ok()</td>
+              <td>2</td>
+              <td class="duration" data-value="10526183634">10s 526ms</td>
+              <td class="duration" data-value="5263091817">5s 263ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">PaymentsPage.user_Click_on_ok()</td>
+              <td>2</td>
+              <td class="duration" data-value="10688854589">10s 688ms</td>
+              <td class="duration" data-value="5344427294">5s 344ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">PaymentsPage.user_Logout_msg_OK_click()</td>
+              <td>2</td>
+              <td class="duration" data-value="10651314902">10s 651ms</td>
+              <td class="duration" data-value="5325657451">5s 325ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">PaymentsPage.user_Read(String)</td>
+              <td>5</td>
+              <td class="duration" data-value="52052718431">52s 052ms</td>
+              <td class="duration" data-value="10410543686">10s 410ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">PaymentsPage.user_Select_Methode(String)</td>
+              <td>5</td>
+              <td class="duration" data-value="42933333427">42s 933ms</td>
+              <td class="duration" data-value="8586666685">8s 586ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">PaymentsPage.user_Set_Hours(int)</td>
+              <td>2</td>
+              <td class="duration" data-value="11246946190">11s 246ms</td>
+              <td class="duration" data-value="5623473095">5s 623ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">PaymentsPage.user_Set_exclude()</td>
+              <td>2</td>
+              <td class="duration" data-value="926703813">926ms</td>
+              <td class="duration" data-value="463351906">463ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">PaymentsPage.user_Set_months(int)</td>
+              <td>2</td>
+              <td class="duration" data-value="4935008779">4s 935ms</td>
+              <td class="duration" data-value="2467504389">2s 467ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">PaymentsPage.user_Successfull_timeOut_ok_click()</td>
+              <td>2</td>
+              <td class="duration" data-value="1136929972">1s 136ms</td>
+              <td class="duration" data-value="568464986">568ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">PaymentsPage.user_open_Menu()</td>
+              <td>3</td>
+              <td class="duration" data-value="14993808152">14s 993ms</td>
+              <td class="duration" data-value="4997936050">4s 997ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">PaymentsPage.user_open_Responsible_Gaming()</td>
+              <td>3</td>
+              <td class="duration" data-value="7010737957">7s 010ms</td>
+              <td class="duration" data-value="2336912652">2s 336ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">PaymentsPage.user_open_my_account()</td>
+              <td>3</td>
+              <td class="duration" data-value="2078442092">2s 078ms</td>
+              <td class="duration" data-value="692814030">692ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">PaymentsPage.user_read_exclude(String)</td>
+              <td>4</td>
+              <td class="duration" data-value="9071335602">9s 071ms</td>
+              <td class="duration" data-value="2267833900">2s 267ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">PaymentsPage.user_read_msg(String)</td>
+              <td>4</td>
+              <td class="duration" data-value="9024742251">9s 024ms</td>
+              <td class="duration" data-value="2256185562">2s 256ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">PaymentsPage.user_save_TimeOut()</td>
+              <td>2</td>
+              <td class="duration" data-value="713165220">713ms</td>
+              <td class="duration" data-value="356582610">356ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">RegisterPage.Click_Register_top_Butten()</td>
+              <td>14</td>
+              <td class="duration" data-value="194368840734">3m 14s 368ms</td>
+              <td class="duration" data-value="13883488623">13s 883ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">RegisterPage.Contiue_to_step(int)</td>
+              <td>7</td>
+              <td class="duration" data-value="2113742948">2s 113ms</td>
+              <td class="duration" data-value="301963278">301ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">RegisterPage.click_on_Create_Account()</td>
+              <td>14</td>
+              <td class="duration" data-value="6581570841">6s 581ms</td>
+              <td class="duration" data-value="470112202">470ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">RegisterPage.fill_Address_(String)</td>
+              <td>14</td>
+              <td class="duration" data-value="7138320653">7s 138ms</td>
+              <td class="duration" data-value="509880046">509ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">RegisterPage.fill_City_(String)</td>
+              <td>14</td>
+              <td class="duration" data-value="8302908333">8s 302ms</td>
+              <td class="duration" data-value="593064880">593ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">RegisterPage.fill_Mobile_(int)</td>
+              <td>14</td>
+              <td class="duration" data-value="8514735813">8s 514ms</td>
+              <td class="duration" data-value="608195415">608ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">RegisterPage.fill_Post_code_(int)</td>
+              <td>14</td>
+              <td class="duration" data-value="5139455434">5s 139ms</td>
+              <td class="duration" data-value="367103959">367ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">RegisterPage.fill_Title_(String)</td>
+              <td>14</td>
+              <td class="duration" data-value="76804854805">1m 16s 804ms</td>
+              <td class="duration" data-value="5486061057">5s 486ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">RegisterPage.fill_date_of_birth_(int,int,int)</td>
+              <td>14</td>
+              <td class="duration" data-value="38784827680">38s 784ms</td>
+              <td class="duration" data-value="2770344834">2s 770ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">RegisterPage.fill_email_with_email_(String)</td>
+              <td>14</td>
+              <td class="duration" data-value="13005389231">13s 005ms</td>
+              <td class="duration" data-value="928956373">928ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">RegisterPage.fill_first_(String)</td>
+              <td>14</td>
+              <td class="duration" data-value="7725874100">7s 725ms</td>
+              <td class="duration" data-value="551848150">551ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">RegisterPage.fill_last_(String)</td>
+              <td>14</td>
+              <td class="duration" data-value="8522019976">8s 522ms</td>
+              <td class="duration" data-value="608715712">608ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">RegisterPage.fill_password_(int)</td>
+              <td>14</td>
+              <td class="duration" data-value="6903844205">6s 903ms</td>
+              <td class="duration" data-value="493131728">493ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">RegisterPage.fill_user_name_with_timestamp()</td>
+              <td>14</td>
+              <td class="duration" data-value="8575949734">8s 575ms</td>
+              <td class="duration" data-value="612567838">612ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">RegisterPage.miguser_Account_was_Created_Msg_with_css_and_deposit()</td>
+              <td>14</td>
+              <td class="duration" data-value="52323655661">52s 323ms</td>
+              <td class="duration" data-value="3737403975">3s 737ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">RegisterPage.miguser_Deposit_limit_with_limit_Amount(String,String)</td>
+              <td>2</td>
+              <td class="duration" data-value="2863977685">2s 863ms</td>
+              <td class="duration" data-value="1431988842">1s 431ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">RegisterPage.select_country_United_Kingdom(String)</td>
+              <td>14</td>
+              <td class="duration" data-value="120053400921">2m 053ms</td>
+              <td class="duration" data-value="8575242922">8s 575ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">RegisterPage.select_currency_GBP()</td>
+              <td>14</td>
+              <td class="duration" data-value="2307276">002ms</td>
+              <td class="duration" data-value="164805">000ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SharedSteps.after(Scenario)</td>
+              <td>30</td>
+              <td class="duration" data-value="60195501663">1m 195ms</td>
+              <td class="duration" data-value="2006516722">2s 006ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SharedSteps.before(Scenario)</td>
+              <td>30</td>
+              <td class="duration" data-value="1196846524">1s 196ms</td>
+              <td class="duration" data-value="39894884">039ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Test_PT_Advertiser.user_Click_Submit()</td>
+              <td>2</td>
+              <td class="duration" data-value="2373781584">2s 373ms</td>
+              <td class="duration" data-value="1186890792">1s 186ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Test_PT_Advertiser.user_Fill_Password_in_popup_window()</td>
+              <td>2</td>
+              <td class="duration" data-value="566364720">566ms</td>
+              <td class="duration" data-value="283182360">283ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Test_PT_Advertiser.user_Fill_Username_in_popup_window()</td>
+              <td>2</td>
+              <td class="duration" data-value="917860510">917ms</td>
+              <td class="duration" data-value="458930255">458ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Test_PT_Advertiser.user_Find_Advertiser(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="11284106778">11s 284ms</td>
+              <td class="duration" data-value="5642053389">5s 642ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Test_PT_Advertiser.user_Select_internalaccount()</td>
+              <td>2</td>
+              <td class="duration" data-value="10655523817">10s 655ms</td>
+              <td class="duration" data-value="5327761908">5s 327ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Test_PT_Advertiser.user_Submit()</td>
+              <td>2</td>
+              <td class="duration" data-value="3412376153">3s 412ms</td>
+              <td class="duration" data-value="1706188076">1s 706ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Test_PT_Advertiser.user_fill_username(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="11256701062">11s 256ms</td>
+              <td class="duration" data-value="5628350531">5s 628ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Test_PT_Advertiser.user_is_navigating_to_Playtech_Admin()</td>
+              <td>2</td>
+              <td class="duration" data-value="12534320423">12s 534ms</td>
+              <td class="duration" data-value="6267160211">6s 267ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Test_PT_Advertiser.user_is_navigating_to_Playtech_AdminSearchUserUrl()</td>
+              <td>2</td>
+              <td class="duration" data-value="10829450670">10s 829ms</td>
+              <td class="duration" data-value="5414725335">5s 414ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>75</td>
+            <td>606</td>
+            <td class="duration">40m 40s 581ms</td>
+            <td class="duration">4s 027ms</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

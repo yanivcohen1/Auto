@@ -1,0 +1,118 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 202956,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSteps.before(Scenario)"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Format Odds2 ODDS1",
+        "description": "",
+        "id": "perform-search-in-google-\u003coddtype\u003e;format-odds2-\u003coddtype\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 31453,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSteps.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 134439845,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "test ODDS1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 9
+                }
+              ],
+              "location": "GamingStepDef.test_ODDS(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 172827,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSteps.before(Scenario)"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Format Odds2 ODDS2",
+        "description": "",
+        "id": "perform-search-in-google-\u003coddtype\u003e;format-odds2-\u003coddtype\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 59264,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSteps.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 376776,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "test ODDS2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 9
+                }
+              ],
+              "location": "GamingStepDef.test_ODDS(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "Perform search in google \u003coddType\u003e",
+    "description": "",
+    "id": "perform-search-in-google-\u003coddtype\u003e",
+    "keyword": "Feature",
+    "uri": "test.feature"
+  }
+]

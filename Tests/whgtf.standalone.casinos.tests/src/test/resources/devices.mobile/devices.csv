@@ -1,0 +1,8 @@
+DEVICE,platformName,platformVersion,deviceName,appiumServerIP,appiumServerPort,udid
+iPadEmulator,chromeEmulator,,Apple iPad,,,
+iPhone6Emulator,chromeEmulator,,Apple iPhone 6,,,
+iPhone6Simulator,iOS,9.1,iPhone 6,0.0.0.0,4723,
+iPhone6Real,iOS,9.1,iPhone6,0.0.0.0,4723,6eb74a9d940a41b8e5d314a493398cac0e47bf06
+androidS6curve,Android,5,04157df45bc7e123,0.0.0.0,4723,
+androidNexusEmulator,Android,5,192.168.56.101:5555,0.0.0.0,4723,
+galaxy_s5,Android,5,emulator-5554,127.0.0.1,4723,

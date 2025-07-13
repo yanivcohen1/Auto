@@ -1,0 +1,38 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "val",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "date",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "enums",
+            "fieldType": "Enums",
+            "fieldValues": "one,two,tree"
+        }
+    ],
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "mongo_test",
+    "pagination": "pager",
+    "microserviceName": "microServiceMongoMvn",
+    "searchEngine": false
+}

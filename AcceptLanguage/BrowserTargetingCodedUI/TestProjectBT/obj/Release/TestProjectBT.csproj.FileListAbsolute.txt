@@ -1,0 +1,5 @@
+C:\SVN\Automation_Tools\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\bin\Release\TestProjectBT.dll
+C:\SVN\Automation_Tools\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\bin\Release\TestProjectBT.pdb
+C:\SVN\Automation_Tools\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\obj\Release\ResolveAssemblyReference.cache
+C:\SVN\Automation_Tools\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\obj\Release\TestProjectBT.dll
+C:\SVN\Automation_Tools\AcceptLanguage\BrowserTargetingCodedUI\TestProjectBT\obj\Release\TestProjectBT.pdb

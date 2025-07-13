@@ -1,0 +1,3 @@
+d:\projects\DeleteAllCasinosConsole\DeleteAllCasinosConsole\obj\Debug\DeleteAllCasinosConsole.exe
+d:\projects\DeleteAllCasinosConsole\DeleteAllCasinosConsole\obj\Debug\DeleteAllCasinosConsole.xml
+d:\projects\DeleteAllCasinosConsole\DeleteAllCasinosConsole\obj\Debug\DeleteAllCasinosConsole.pdb

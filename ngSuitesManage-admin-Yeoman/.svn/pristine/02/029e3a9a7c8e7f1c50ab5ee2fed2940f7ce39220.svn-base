@@ -1,0 +1,26 @@
+<persistence version="2.1" 
+    xmlns="http://xmlns.jcp.org/xml/ns/persistence" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+
+	<persistence-unit name="ngSuitesManage" transaction-type="RESOURCE_LOCAL">
+	    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>com.who.rest.db.model.Classe</class>
+		<class>com.who.rest.db.model.Parameters</class>
+		<class>com.who.rest.db.model.Suites</class>
+		<class>com.who.rest.db.model.Tests</class>
+		<properties>
+			<property name="hibernate.connection.username" value="root"/>
+			<property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/testsdb"/>
+			<property name="hibernate.connection.driver_class" value="org.gjt.mm.mysql.Driver"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/testsdb"/>
+			<property name="javax.persistence.jdbc.user" value="root"/>
+			<property name="javax.persistence.jdbc.password" value=""/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+			<property name="hibernate.archive.autodetection" value="class"/>
+			<property name="hibernate.format_sql" value="true"/>
+			<property name="hibernate.hbm2ddl.auto" value="validate"/><!-- create-drop -->
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect"/>
+		</properties>
+	</persistence-unit>
+</persistence>

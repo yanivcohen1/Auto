@@ -1,0 +1,64 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "tests",
+            "relationshipNameCapitalized": "Tests",
+            "relationshipFieldName": "tests",
+            "otherEntityName": "tests",
+            "relationshipType": "one-to-many",
+            "otherEntityNameCapitalized": "Tests",
+            "otherEntityRelationshipName": "suite"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "suite_name",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Suite_name",
+            "fieldNameUnderscored": "suite_name",
+            "fieldInJavaBeanMethod": "Suite_name",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "xml_file_location",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Xml_file_location",
+            "fieldNameUnderscored": "xml_file_location",
+            "fieldInJavaBeanMethod": "Xml_file_location",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "jenkins_url",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Jenkins_url",
+            "fieldNameUnderscored": "jenkins_url",
+            "fieldInJavaBeanMethod": "Jenkins_url",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOwnerOneToOne": false,
+    "fieldsContainOneToMany": true,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150610081532",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "validation": true
+}

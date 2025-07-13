@@ -1,0 +1,18 @@
+<h2>Products</h2>
+<button (click)="openModal()">Edit selected Product</button>
+<div [ngbCollapse]="isCollapsed">
+  <input type="text" placeholder="Search" #queryElem (keyup)="0">
+  <ul class="items">
+    <li *ngFor="let hero of heroes$ | async | filterAsync:queryElem.value:'name'"
+      [class.selected]="hero.id === selectedId">
+      <a [routerLink]="['./hero', hero.id]" (click)="setSelectId(hero.id)">
+        <span class="badge">{{ hero.id }}</span>{{ hero.name }}
+      </a>
+    </li>
+  </ul>
+</div>
+<div [ngbCollapse]="!isCollapsed">
+  <button (click)="this.isCollapsed = false">show Product</button>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,1 @@
+C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\21NovaClientEn\obj\Debug\21NovaClientEn.csprojResolveAssemblyReference.cache

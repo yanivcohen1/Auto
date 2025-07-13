@@ -1,0 +1,29 @@
+
+<div *ngIf="suite">
+    <h2><span jhiTranslate="testManagerApp.suite.detail.title">Suite</span> {{suite.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="testManagerApp.suite.suiteName">Suite Name</span></dt>
+        <dd>
+            <span>{{suite.suiteName}}</span>
+        </dd>
+        <dt><span jhiTranslate="testManagerApp.suite.jenkinsUrl">Jenkins Url</span></dt>
+        <dd>
+            <span>{{suite.jenkinsUrl}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'suite/'+ suite.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

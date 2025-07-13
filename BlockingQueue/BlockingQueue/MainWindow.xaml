@@ -1,0 +1,8 @@
+﻿<Window x:Class="BlockingQueue.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Content="Button" Height="38" HorizontalAlignment="Left" Margin="50,37,0,0" Name="button1" VerticalAlignment="Top" Width="101" Click="button1_Click" />
+    </Grid>
+</Window>

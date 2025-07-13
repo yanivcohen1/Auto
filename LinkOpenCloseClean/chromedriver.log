@@ -1,0 +1,173 @@
+[0.001][INFO]:      ChromeDriver 23.0.1240.0 C:\SVN\SeleniumAndroidTest\Publish\chromedriver.exe
+[0.488][FINE]:      Initializing session with capabilities {
+   "browserName": "chrome",
+   "platform": "ANY",
+   "version": ""
+}
+
+[0.489][INFO]:      Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --enable-logging --log-level=1 --disable-hang-monitor --disable-prompt-on-repost --dom-automation --full-memory-crash-report --no-default-browser-check --no-first-run --disable-background-networking --disable-sync --disable-translate --disable-web-resources --safebrowsing-disable-auto-update --safebrowsing-disable-download-protection --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --ignore-certificate-errors about:blank
+[1.478][INFO]:      Connected to Chrome successfully. Version: 27.0.1453.94
+[1.484][FINE]:      Command received (/session/0fba7205d822177f4d66637c60d8a488)
+[1.484][FINE]:      Command finished (/session/0fba7205d822177f4d66637c60d8a488) with response {
+   "sessionId": "0fba7205d822177f4d66637c60d8a488",
+   "status": 0,
+   "value": {
+      "acceptSslCerts": false,
+      "applicationCacheEnabled": false,
+      "browserConnectionEnabled": false,
+      "browserName": "chrome",
+      "chrome.chromedriverVersion": "23.0.1240.0",
+      "chrome.nativeEvents": false,
+      "cssSelectorsEnabled": true,
+      "databaseEnabled": false,
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "locationContextEnabled": false,
+      "nativeEvents": true,
+      "platform": "windows",
+      "rotatable": false,
+      "takesScreenshot": true,
+      "version": "27.0.1453.94",
+      "webStorageEnabled": true
+   }
+}
+
+[1.488][FINE]:      Command received (/session/0fba7205d822177f4d66637c60d8a488/timeouts/implicit_wait) with params {
+   "ms": 5000
+}
+
+[1.488][FINER]:     Waiting for all views to stop loading...
+[1.489][FINER]:     Done waiting for all views to stop loading
+[1.489][FINER]:     Waiting for all views to stop loading...
+[1.489][FINER]:     Done waiting for all views to stop loading
+[1.489][FINE]:      Command finished (/session/0fba7205d822177f4d66637c60d8a488/timeouts/implicit_wait) with response {
+   "sessionId": "0fba7205d822177f4d66637c60d8a488",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[1.492][FINE]:      Command received (/session/0fba7205d822177f4d66637c60d8a488/url) with params {
+   "url": "http://static.williamhill.com/seotestb"
+}
+
+[1.492][FINER]:     Waiting for all views to stop loading...
+[1.492][FINER]:     Done waiting for all views to stop loading
+[2.987][FINER]:     Waiting for all views to stop loading...
+[2.988][FINER]:     Done waiting for all views to stop loading
+[2.988][FINE]:      Command finished (/session/0fba7205d822177f4d66637c60d8a488/url) with response {
+   "sessionId": "0fba7205d822177f4d66637c60d8a488",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[7.992][FINE]:      Command received (/session/0fba7205d822177f4d66637c60d8a488/cookie)
+[7.992][FINER]:     Waiting for all views to stop loading...
+[7.993][FINER]:     Done waiting for all views to stop loading
+[7.999][FINER]:     Waiting for all views to stop loading...
+[7.999][FINER]:     Done waiting for all views to stop loading
+[7.999][FINE]:      Command finished (/session/0fba7205d822177f4d66637c60d8a488/cookie) with response {
+   "sessionId": "0fba7205d822177f4d66637c60d8a488",
+   "status": 0,
+   "value": [ {
+      "domain": "static.williamhill.com",
+      "http_only": false,
+      "name": "X-Mapping-fjhppofk",
+      "path": "/",
+      "secure": false,
+      "value": "980EA962760C5C36A26AEEFE6724AFE6"
+   }, {
+      "domain": ".williamhill.com",
+      "expiry": 1432914324.0,
+      "http_only": false,
+      "name": "__utma",
+      "path": "/",
+      "secure": false,
+      "value": "176734970.1798418288.1369842325.1369842325.1369842325.1"
+   }, {
+      "domain": ".williamhill.com",
+      "expiry": 1369844124.0,
+      "http_only": false,
+      "name": "__utmb",
+      "path": "/",
+      "secure": false,
+      "value": "176734970.1.10.1369842325"
+   }, {
+      "domain": ".williamhill.com",
+      "http_only": false,
+      "name": "__utmc",
+      "path": "/",
+      "secure": false,
+      "value": "176734970"
+   }, {
+      "domain": ".williamhill.com",
+      "expiry": 1385610324.0,
+      "http_only": false,
+      "name": "__utmz",
+      "path": "/",
+      "secure": false,
+      "value": "176734970.1369842325.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)"
+   }, {
+      "domain": ".williamhill.com",
+      "expiry": 1370101524.0,
+      "http_only": false,
+      "name": "dlp",
+      "path": "/",
+      "secure": false,
+      "value": "no"
+   }, {
+      "domain": ".williamhill.com",
+      "expiry": 1370101524.0,
+      "http_only": false,
+      "name": "vars_info",
+      "path": "/",
+      "secure": false,
+      "value": "&var2=seotestB_ch"
+   }, {
+      "domain": ".williamhill.com",
+      "expiry": 1370101524.0,
+      "http_only": false,
+      "name": "clickinfo",
+      "path": "/",
+      "secure": false,
+      "value": "member=Seowhw2&campaign=DEFAULT&channel=DEFAULT"
+   }, {
+      "domain": ".williamhill.com",
+      "expiry": 1370101524.0,
+      "http_only": false,
+      "name": "zname_extension",
+      "path": "/",
+      "secure": false,
+      "value": "Poker"
+   }, {
+      "domain": ".williamhill.com",
+      "expiry": 1370101524.0,
+      "http_only": false,
+      "name": "banner_click",
+      "path": "/",
+      "secure": false,
+      "value": "Seowhw2,affw4,affw4,,admap:9273835873EA27FC43E4DD0CB6A89D21%3bzone:WHPpixeltracking%3bchannel:DEF..."
+   }, {
+      "domain": ".williamhill.com",
+      "expiry": 1370101524.0,
+      "http_only": false,
+      "name": "banner_domainclick",
+      "path": "/",
+      "secure": false,
+      "value": "Seowhw2,affw4,affw4,,admap:9273835873EA27FC43E4DD0CB6A89D21%3bzone:WHPpixeltracking%3bchannel:DEF..."
+   }, {
+      "domain": ".williamhill.com",
+      "expiry": 1370101524.0,
+      "http_only": false,
+      "name": "fd_click",
+      "path": "/",
+      "secure": false,
+      "value": "Seowhw2,affw4,affw4,,admap:9273835873EA27FC43E4DD0CB6A89D21%3bzone:WHPpixeltracking%3bchannel:DEF..."
+   } ]
+}
+
+[8.005][FINE]:      Command received (/session/0fba7205d822177f4d66637c60d8a488)
+[8.213][INFO]:      Chrome shutdown

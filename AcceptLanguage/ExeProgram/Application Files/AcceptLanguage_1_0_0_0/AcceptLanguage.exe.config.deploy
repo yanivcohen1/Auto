@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <connectionStrings>
+    <add name="AutomationEntities1" connectionString="metadata=res://*/Automation.csdl|res://*/Automation.ssdl|res://*/Automation.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=XP-PB2;Initial Catalog=Automation;Persist Security Info=True;User ID=Yaniv;Password=YC123456;MultipleActiveResultSets=True&quot;" providerName="System.Data.EntityClient" />
+  </connectionStrings>
+</configuration>

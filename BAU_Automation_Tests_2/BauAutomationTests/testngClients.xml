@@ -1,0 +1,88 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="BAU Tests" verbose="1">
+
+     <test name="BuildClients">
+         <parameter name="parametersFileName"  value="ClientsTest.ini"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestBuildClients" />
+		</classes>	
+	</test>
+	 
+     <test name="Sport Banner">
+         <parameter name="parametersFileName"  value="SportBanner.csv"/>
+         <classes>
+             <class name="com.wh.auto.general.TestSportBanner" />
+		</classes>	
+	</test>
+     
+     <test name="Affutd">
+         <parameter name="parametersFileName"  value="Affutd.ini"/>
+         <classes>
+             <class name="com.wh.auto.affutd.TestAffutd" />
+		</classes>
+	</test>
+	 
+    <!--  <test name="Freespin">
+          <parameter name="parametersFileName"  value="FreespinTest.ini"/>
+         <classes>
+             <class name="com.wh.auto.prestige.TestFreespin" />
+		</classes>	
+	</test>
+
+     <test name="PrestigeClientEn">
+         <parameter name="test-name"  value="PrestigeEnClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>
+	 </test>
+	 
+    <test name="PrestigeClientDe">
+         <parameter name="test-name"  value="PrestigeDeClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	 </test>
+     
+     <test name="JoylandClientEn">
+         <parameter name="test-name"  value="JoylandEnClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>		
+	 </test>
+	 
+     <test name="JoylandClientDe">
+         <parameter name="test-name"  value="JoylandDeClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	 </test> -->
+     
+     <!-- <test name="RubyBingoEn">
+         <parameter name="test-path"  value="..\RubyBingoEn\bin\Release\RubyBingoEn.dll"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClients" />
+		</classes>	
+	 </test> -->
+     
+     <!-- <test name="SkykingClientEn">
+         <parameter name="test-name"  value="SkykingEnClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	 </test>
+     
+     <test name="SkykingClientDe">
+         <parameter name="test-name"  value="SkykingDeClient"/>
+         <classes>
+             <class name="com.wh.auto.clients.TestRunClientsInSingleDll" />
+		</classes>	
+	</test> -->
+	
+     <!-- <test name="Tracing">
+         <parameter name="parametersFileName"  value="PT_Advertiser.ini"/>
+         <classes>
+             <class name="com.wh.auto.pt_admin.Test_PT_Advertiser" />
+		</classes>	
+	</test> -->
+     
+</suite>

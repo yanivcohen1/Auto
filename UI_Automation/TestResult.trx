@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9e8a3eb8-c492-4288-8726-06a8dc8f94c2" name="yanivc@WH5000727 2013-11-14 17:16:25" runUser="ADGENCY-DOMAIN\yanivc" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="a8e736e6-9210-4655-a232-2350af89808d">
+    <Deployment userDeploymentRoot="C:\SVN\UI_Automation" useDefaultDeploymentRoot="false" runDeploymentRoot="yanivc_WH5000727 2013-11-14 17_16_25" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-11-14T17:16:25.8152164+02:00" queuing="2013-11-14T17:16:27.8294178+02:00" start="2013-11-14T17:16:27.8764225+02:00" finish="2013-11-14T17:17:23.9950338+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" passed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="PrestigeClientEnTest" storage="prestigeclienten\bin\release\prestigeclienten.dll" id="4649cf33-5b03-c3ef-642b-a383b025b288">
+      <Execution timeOut="300000" id="ad8c3ba7-5220-4f90-9dbd-a032366bd528" />
+      <TestMethod codeBase="C:/SVN/UI_Automation/prestigeClientEn/bin/Release/PrestigeClientEn.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="PrestigeClientEn.PrestigeEN, PrestigeClientEn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PrestigeClientEnTest" />
+    </UnitTest>
+    <UnitTest name="EurograndClientEnTest" storage="eurograndclienten\bin\release\eurograndclienten.dll" id="3d8ddc0d-63d4-b123-13be-9dae2c0b4c54">
+      <Execution timeOut="300000" id="75b2a4c2-2db3-42af-bebf-6b34b5415722" />
+      <TestMethod codeBase="C:/SVN/UI_Automation/EurograndClientEn/bin/Release/EurograndClientEn.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="EuroGrandClientEn.EuroGrandEN, EurograndClientEn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EurograndClientEnTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="3d8ddc0d-63d4-b123-13be-9dae2c0b4c54" executionId="75b2a4c2-2db3-42af-bebf-6b34b5415722" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4649cf33-5b03-c3ef-642b-a383b025b288" executionId="ad8c3ba7-5220-4f90-9dbd-a032366bd528" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="75b2a4c2-2db3-42af-bebf-6b34b5415722" testId="3d8ddc0d-63d4-b123-13be-9dae2c0b4c54" testName="EurograndClientEnTest" computerName="WH5000727" duration="00:00:49.3962431" startTime="2013-11-14T17:16:27.8864235+02:00" endTime="2013-11-14T17:17:17.6483992+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="75b2a4c2-2db3-42af-bebf-6b34b5415722">
+    </UnitTestResult>
+    <UnitTestResult executionId="ad8c3ba7-5220-4f90-9dbd-a032366bd528" testId="4649cf33-5b03-c3ef-642b-a383b025b288" testName="PrestigeClientEnTest" computerName="WH5000727" duration="00:00:05.9457287" startTime="2013-11-14T17:17:17.6513995+02:00" endTime="2013-11-14T17:17:23.8220165+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ad8c3ba7-5220-4f90-9dbd-a032366bd528">
+      <Output>
+        <StdErr>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SVN\UI_Automation\yanivc_WH5000727 2013-11-14 17_16_25\Out\Error.log. The process cannot access the file 'C:\SVN\UI_Automation\yanivc_WH5000727 2013-11-14 17_16_25\Out\Error.log' because it is being used by another process.</StdErr>
+        <DebugTrace>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SVN\UI_Automation\yanivc_WH5000727 2013-11-14 17_16_25\Out\Error.log. The process cannot access the file 'C:\SVN\UI_Automation\yanivc_WH5000727 2013-11-14 17_16_25\Out\Error.log' because it is being used by another process.
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Test method PrestigeClientEn.PrestigeEN.PrestigeClientEnTest threw exception: 
+OpenQA.Selenium.NoSuchElementException: Unable to find element with partial link text == Download1</Message>
+          <StackTrace>    at PrestigeClientEn.PrestigeEN.PrestigeClientEnTest() in C:\SVN\UI_Automation\prestigeClientEn\PrestigeEnTest.cs:line 108
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

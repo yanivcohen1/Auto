@@ -1,0 +1,11 @@
+C:\SVN\log4net\Log4Net\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\SVN\log4net\Log4Net\bin\Debug\Log4NetXml.exe.config
+C:\SVN\log4net\Log4Net\bin\Debug\Log4NetXml.exe
+C:\SVN\log4net\Log4Net\bin\Debug\Log4NetXml.pdb
+C:\SVN\log4net\Log4Net\bin\Debug\log4net.dll
+C:\SVN\log4net\Log4Net\bin\Debug\log4net.xml
+C:\SVN\log4net\Log4Net\obj\x86\Debug\Log4NetXml.exe
+C:\SVN\log4net\Log4Net\obj\x86\Debug\Log4NetXml.pdb
+C:\SVN\log4net\Log4Net\obj\x86\Debug\Log4NetXml.Properties.Resources.resources
+C:\SVN\log4net\Log4Net\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\SVN\log4net\Log4Net\obj\x86\Debug\GenerateResource.write.1.tlog

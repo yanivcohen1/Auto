@@ -1,0 +1,130 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="BAU" verbose="1">
+
+	<listeners>
+        <listener class-name="com.wh.auto.common.TestListener" />
+    </listeners>
+	
+	<test name="EgMobileDeDeposit">
+		<parameter name="parametersFileName" value="EgMobileDeDeposit.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+	<test name="EgMobileEnDeposit">
+		<parameter name="parametersFileName" value="EgMobileEnDeposit.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+    <test name="EgMobileDeSafariDeposit">
+		<parameter name="parametersFileName" value="EgMobileDeSafariDeposit.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+	<test name="EgMobileEnSafariDeposit">
+		<parameter name="parametersFileName" value="EgMobileEnSafariDeposit.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+    <test name="EgMobileEnLogin">
+		<parameter name="parametersFileName" value="EgMobileEnLogin.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+	<test name="EgMobileDeLogin">
+		<parameter name="parametersFileName" value="EgMobileDeLogin.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+    <test name="EgMobileEnSafariLogin">
+		<parameter name="parametersFileName" value="EgMobileEnSafariLogin.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+	<test name="EgMobileDeSafariLogin">
+		<parameter name="parametersFileName" value="EgMobileDeSafariLogin.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+    
+    
+    <test name="WhccMobileDeDeposit">
+		<parameter name="parametersFileName" value="WhccMobileDeDeposit.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+	<test name="WhccMobileEnDeposit">
+		<parameter name="parametersFileName" value="WhccMobileEnDeposit.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+    <test name="WhccMobileDeSafariDeposit">
+		<parameter name="parametersFileName" value="WhccMobileDeSafariDeposit.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+	<test name="WhccMobileEnSafariDeposit">
+		<parameter name="parametersFileName" value="WhccMobileEnSafariDeposit.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+    <test name="WhccMobileEnLogin">
+		<parameter name="parametersFileName" value="WhccMobileEnLogin.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+	<test name="WhccMobileDeLogin">
+		<parameter name="parametersFileName" value="WhccMobileDeLogin.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+    <test name="WhccMobileEnSafariLogin">
+		<parameter name="parametersFileName" value="WhccMobileEnSafariLogin.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+	<test name="WhccMobileDeSafariLogin">
+		<parameter name="parametersFileName" value="WhccMobileDeSafariLogin.xml"/>
+		<classes>
+			<class name="com.wh.auto.general.mobile.TestDepositMobile" />
+		</classes>
+    </test>
+    
+	<!-- <test name="Tracking">
+		<parameter name="parametersFileName" value="PT_Advertiser.ini"/> 
+		<classes>
+			<class name="com.wh.auto.pt_admin.Test_PT_Advertiser" />
+		</classes>
+    </test> -->
+	
+
+</suite>

@@ -1,0 +1,47 @@
+
+<div *ngIf="tests">
+    <h2><span jhiTranslate="jhipsterAngular2MavenApp.tests.detail.title">Tests</span> {{tests.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row">
+        <dt><span jhiTranslate="jhipsterAngular2MavenApp.tests.test_name">Test Name</span></dt>
+        <dd>
+            <span>{{tests.test_name}}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterAngular2MavenApp.tests.class_name">Class Name</span></dt>
+        <dd>
+            <span>{{tests.class_name}}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterAngular2MavenApp.tests.method_name">Method Name</span></dt>
+        <dd>
+            <span>{{tests.method_name}}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterAngular2MavenApp.tests.parameter_name">Parameter Name</span></dt>
+        <dd>
+            <span>{{tests.parameter_name}}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterAngular2MavenApp.tests.parameter_value">Parameter Value</span></dt>
+        <dd>
+            <span>{{tests.parameter_value}}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterAngular2MavenApp.tests.suite">Suite</span></dt>
+        <dd>
+            <div *ngIf="tests.suite">
+                <a [routerLink]="['suite', tests.suite?.id]">{{tests.suite?.suite_name}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'tests/'+ tests.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

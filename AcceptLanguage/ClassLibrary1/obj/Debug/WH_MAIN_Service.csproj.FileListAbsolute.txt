@@ -1,0 +1,24 @@
+C:\Temp2\AcceptLanguage\ClassLibrary1\bin\Debug\WH_MAIN_Service.dll.config
+C:\Temp2\AcceptLanguage\ClassLibrary1\bin\Debug\WH_MAIN_Service.dll
+C:\Temp2\AcceptLanguage\ClassLibrary1\bin\Debug\WH_MAIN_Service.pdb
+C:\Temp2\AcceptLanguage\ClassLibrary1\obj\Debug\ResolveAssemblyReference.cache
+C:\Temp2\AcceptLanguage\ClassLibrary1\obj\Debug\WH_MAIN_Service.dll
+C:\Temp2\AcceptLanguage\ClassLibrary1\obj\Debug\WH_MAIN_Service.pdb
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\ClassLibrary1\bin\Debug\WH_MAIN_Service.dll.config
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\ClassLibrary1\bin\Debug\WH_MAIN_Service.dll
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\ClassLibrary1\bin\Debug\WH_MAIN_Service.pdb
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\ClassLibrary1\obj\Debug\ResolveAssemblyReference.cache
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\ClassLibrary1\obj\Debug\WH_MAIN_Service.dll
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\ClassLibrary1\obj\Debug\WH_MAIN_Service.pdb
+C:\SVN\Automation_Tools\AcceptLanguage\ClassLibrary1\bin\Debug\WH_MAIN_Service.dll.config
+C:\SVN\Automation_Tools\AcceptLanguage\ClassLibrary1\bin\Debug\WH_MAIN_Service.dll
+C:\SVN\Automation_Tools\AcceptLanguage\ClassLibrary1\bin\Debug\WH_MAIN_Service.pdb
+C:\SVN\Automation_Tools\AcceptLanguage\ClassLibrary1\obj\Debug\ResolveAssemblyReference.cache
+C:\SVN\Automation_Tools\AcceptLanguage\ClassLibrary1\obj\Debug\WH_MAIN_Service.dll
+C:\SVN\Automation_Tools\AcceptLanguage\ClassLibrary1\obj\Debug\WH_MAIN_Service.pdb
+C:\SVN\AcceptLanguage\ClassLibrary1\bin\Debug\WH_MAIN_Service.dll.config
+C:\SVN\AcceptLanguage\ClassLibrary1\bin\Debug\WH_MAIN_Service.dll
+C:\SVN\AcceptLanguage\ClassLibrary1\bin\Debug\WH_MAIN_Service.pdb
+C:\SVN\AcceptLanguage\ClassLibrary1\obj\Debug\ResolveAssemblyReference.cache
+C:\SVN\AcceptLanguage\ClassLibrary1\obj\Debug\WH_MAIN_Service.dll
+C:\SVN\AcceptLanguage\ClassLibrary1\obj\Debug\WH_MAIN_Service.pdb

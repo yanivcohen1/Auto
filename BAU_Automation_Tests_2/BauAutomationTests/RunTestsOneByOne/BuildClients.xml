@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="BAU Tests" verbose="1">
+    
+	<test name="BuildClients">
+		<parameter name="parametersFileName"  value="ClientsTest.ini"/>
+		<classes>
+			<class name="com.wh.auto.clients.TestBuildClients" />
+		</classes>	
+	</test>
+    
+</suite>

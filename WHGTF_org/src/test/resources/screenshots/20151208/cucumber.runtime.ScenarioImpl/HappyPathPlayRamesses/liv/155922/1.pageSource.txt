@@ -1,0 +1,1799 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="WHO-WebFramework" data-ng-strict-di=""><head><script src="https://script.crazyegg.com/pages/scripts/0010/9787.js?402661" async="" type="text/javascript"></script><script src="https://cwf.staticcache.org/scripts/tracking/1.6.0/wh_tracking.min.js" async="" type="text/javascript"></script><script src="https://nexus.ensighten.com/williamhill/prod/code/4c7dacb57c3b070a1a779cd2656c3801.js?conditionId0=209495"></script><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style><script type="text/javascript" async="" src="https://nexus.ensighten.com/williamhill/prod/code/102886c37c2636473db402c13e3d3625.js?conditionId0=362522"></script><script src="//nexus.ensighten.com/williamhill/prod/serverComponent.php?r=0.012769526802003384&amp;ClientID=154&amp;PageID=https%3A%2F%2Fscratchcards.williamhill.com%2F%3FfirstDeposit%3Dfalse%23!%2F"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+						
+						<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+						    
+    
+						
+						<title data-bind-to-inner-html="seo.title">Scratchcards online | Play William Hill Scratch card games</title>
+<meta name="description" content="" data-attr-control="{'name':'description','content':seo.description}" />
+<meta name="robots" content="index,follow" data-attr-control="{'name':'robots','content':seo.robots}" />
+
+<link rel="canonical" href="https://scratchcards.williamhill.com" data-attr-control="{'rel':'canonical','href':seo.canonical}" />
+<meta name="fragment" content="!" />
+<meta name="debug" value="brombone" />						
+    
+						
+						<script type="text/javascript" src="//nexus.ensighten.com/williamhill/Bootstrap.js"></script>
+						
+    
+						
+						<meta name="google-site-verification" content="vo3P-rH0FqBMaoVnoFZFb1OBdsAxH2sfJCDSPvw60tI" />
+<meta name="msvalidate.01" content="CB8C2E3D2CF62C91B3E5B791C008D7FC" />
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cmscdn.staticcache.org/assets/image/0005/291551/favicon.png?v=0.1.4" />
+
+<link href="https://cmscdn.staticcache.org/assets/image/0020/316055/WH_SCRATCHCARDS_57x57.png" rel="apple-touch-icon-precomposed" />
+<link href="https://cmscdn.staticcache.org/assets/image/0003/316056/WH_SCRATCHCARDS_72x72.png" rel="apple-touch-icon-precomposed" sizes="72x72" />
+<link href="https://cmscdn.staticcache.org/assets/image/0004/316057/WH_SCRATCHCARDS_114x114.png" rel="apple-touch-icon-precomposed" sizes="114x114" />
+
+<meta name="apple-mobile-web-app-title" content="William Hill Scratchcards" />
+						
+
+    
+						
+						<script type="text/javascript" src="https://scratchcards.williamhill.com/conf/general.js"></script>						
+    
+						
+						<!-- Custom scripts -->
+<script type="text/javascript" src="https://cmscdn.staticcache.org/assets/js_file/0005/351419/custom_script.js?v=0.1.3"></script>
+						
+
+    
+						
+						<script type="text/javascript">
+Brombone = {};
+Brombone.beforeCaching = function() {
+    /*var element = document.getElementById("overlayShadeDiv");
+    element.parentNode.removeChild(element);
+    element = document.getElementById("noticeIframe");
+    element.parentNode.parentNode.removeChild(element.parentNode);*/
+    var appBanner = document.querySelector('div[data-smart-app-banner=""]');
+    if (appBanner) {
+        appBanner.parentNode.removeChild(appBanner);
+    }
+    var smartAppBanner = document.querySelector('div[data-smart-banner=""]');
+    if (smartAppBanner) {
+        smartAppBanner.parentNode.removeChild(smartAppBanner);
+    }
+
+    return true;
+}
+</script>
+						
+    
+						
+												
+
+    
+						
+						<link rel="stylesheet" type="text/css" href="https://cwf.staticcache.org/gaming/wf/8.7.3/main.css" media="all" />						
+
+    
+    
+
+<!--
+  Running Squiz Matrix
+  Developed by Squiz - http://www.squiz.net
+  Squiz, Squiz Matrix, MySource, MySource Matrix and Squiz.net are registered Trademarks of Squiz Pty Ltd
+  Page generated: 08 December 2015 13:59:38
+-->
+
+
+
+</head>
+
+<!-- uiView:  --><body ui-view="" class="" id="Scratchcards" style="background-image : undefined; background-color: undefined; background-position : undefined; background-repeat : no-repeat"><div data-smart-app-banner=""><!-- ngIf: sab.loaded --></div>
+<div data-smart-banner=""><!-- ngIf: banner.loaded && !banner.isSmallBannerHidden() --></div>
+<header class="header">
+    <section class="header__inner">
+        <section class="cw">
+            <a ng-href="https://sports.williamhill.com" title="William Hill Logo" class="whlogo" href="https://sports.williamhill.com"></a>
+
+            <!-- uiView: mobileProductButton --><div data-ui-view="mobileProductButton" class=""><!-- mobile only - product tab -->
+<button title="William Hill Scratchcards" class="product-tab desktop-hide" data-toggle-targets="navigation-menu navigation-menu-button" data-toggle="navigation-menu-button" data-toggle-on-class="-expanded" data-toggle-off-class="" data-toggle-initial-state="off" data-toggle-on-state-change="off">
+    Scratchcards
+    <i class="icon-select if-collapsed"></i>
+    <i class="icon-x icon-small if-expanded"></i>
+</button>
+</div>
+            <!-- uiView: productNavigation --><div data-ui-view="productNavigation" class="productnavigation"><!-- ngIf: wideView --><!-- ngInclude: 'Navigation/views/Navigation.html' --><nav ng-if="wideView" data-ng-include="'Navigation/views/Navigation.html'" class=""><!-- product list -->
+<!-- ngRepeat: menu in products track by $index --><a class="productnavigation__button button" data-ng-repeat="menu in products track by $index" data-ng-href="http://sports.williamhill.com" data-wh-target="::menu.link.target" data-ng-class="{'-active': currentProduct==menu.name}" title="Betting" href="http://sports.williamhill.com" target="_self">
+    <span>Betting</span>
+</a><!-- end ngRepeat: menu in products track by $index --><a class="productnavigation__button button" data-ng-repeat="menu in products track by $index" data-ng-href="http://vegas.williamhill.com/" data-wh-target="::menu.link.target" data-ng-class="{'-active': currentProduct==menu.name}" title="Vegas" href="http://vegas.williamhill.com/" target="_self">
+    <span>Vegas</span>
+</a><!-- end ngRepeat: menu in products track by $index --><a class="productnavigation__button button" data-ng-repeat="menu in products track by $index" data-ng-href="https://macau.williamhill.com" data-wh-target="::menu.link.target" data-ng-class="{'-active': currentProduct==menu.name}" title="Macau" href="https://macau.williamhill.com" target="_self">
+    <span>Macau</span>
+</a><!-- end ngRepeat: menu in products track by $index --><a class="productnavigation__button button" data-ng-repeat="menu in products track by $index" data-ng-href="http://casino.williamhill.com/" data-wh-target="::menu.link.target" data-ng-class="{'-active': currentProduct==menu.name}" title="Casino" href="http://casino.williamhill.com/" target="_self">
+    <span>Casino</span>
+</a><!-- end ngRepeat: menu in products track by $index --><a class="productnavigation__button button" data-ng-repeat="menu in products track by $index" data-ng-href="http://vegas.williamhill.com/live-casino/" data-wh-target="::menu.link.target" data-ng-class="{'-active': currentProduct==menu.name}" title="Live Casino" href="http://vegas.williamhill.com/live-casino/" target="_self">
+    <span>Live Casino</span>
+</a><!-- end ngRepeat: menu in products track by $index --><a class="productnavigation__button button" data-ng-repeat="menu in products track by $index" data-ng-href="https://games.williamhill.com" data-wh-target="::menu.link.target" data-ng-class="{'-active': currentProduct==menu.name}" title="Games" href="https://games.williamhill.com" target="_self">
+    <span>Games</span>
+</a><!-- end ngRepeat: menu in products track by $index --><a class="productnavigation__button button -active" data-ng-repeat="menu in products track by $index" data-ng-href="https://scratchcards.williamhill.com/" data-wh-target="::menu.link.target" data-ng-class="{'-active': currentProduct==menu.name}" title="Scratchcards" href="https://scratchcards.williamhill.com/" target="_self">
+    <span>Scratchcards</span>
+</a><!-- end ngRepeat: menu in products track by $index --><a class="productnavigation__button button" data-ng-repeat="menu in products track by $index" data-ng-href="http://bingo.williamhill.com/" data-wh-target="::menu.link.target" data-ng-class="{'-active': currentProduct==menu.name}" title="Bingo" href="http://bingo.williamhill.com/" target="_self">
+    <span>Bingo</span>
+</a><!-- end ngRepeat: menu in products track by $index --><a class="productnavigation__button button" data-ng-repeat="menu in products track by $index" data-ng-href="http://poker.williamhill.com/" data-wh-target="::menu.link.target" data-ng-class="{'-active': currentProduct==menu.name}" title="Poker" href="http://poker.williamhill.com/" target="_self">
+    <span>Poker</span>
+</a><!-- end ngRepeat: menu in products track by $index --><a class="productnavigation__button button" data-ng-repeat="menu in products track by $index" data-ng-href="http://financials.williamhill.com/" data-wh-target="::menu.link.target" data-ng-class="{'-active': currentProduct==menu.name}" title="Financials" href="http://financials.williamhill.com/" target="_self">
+    <span>Financials</span>
+</a><!-- end ngRepeat: menu in products track by $index -->
+</nav><!-- end ngIf: wideView --></div>
+            <!-- uiView: accountTab --><div data-ui-view="accountTab" class=""><!-- user section - logged-in/logged-out -->
+<!-- ngIf: !user.loggedin -->
+
+<!-- ngIf: !user.loggedin -->
+
+<!-- ngIf: user.loggedin --><button data-ng-if="user.loggedin" class="account-tab" title="Your account" data-toggle-targets="account-menu account-menu-button" data-toggle="account-menu-button" data-toggle-on-class="-expanded" data-toggle-off-class="" data-toggle-initial-state="off" data-toggle-on-state-change="off">
+    <i class="icon-accountLI"></i>
+    <i class="icon-expanded icon-small if-collapsed"></i>
+    <i class="icon-x icon-small if-expanded"></i>
+</button><!-- end ngIf: user.loggedin -->
+
+<!-- ngIf: user.loggedin --><a data-ng-if="user.loggedin" data-ng-href="https://sports.williamhill.com/acc/en-gb/payment/deposit/deposit.html?source=SA" data-wh-target="balance.link.target" data-append-params="" class="header__balance button -small" ng-bind-html="user.balance | whCurrency : user.currency" href="https://sports.williamhill.com/acc/en-gb/payment/deposit/deposit.html?source=SA" target="_blank">£31.93</a><!-- end ngIf: user.loggedin -->
+
+<!-- ngIf: user.loggedin && user.numberOfMessages > 0 -->
+</div>
+        </section>
+
+        <aside class="utilnavigation-header">
+            <a data-ui-sref="WHO.WF.help" class="button -clear -round" href="#!/help"><i class="icon-help"></i></a>
+        </aside>
+        <aside class="utilnavigation-header" data-i18n=""></aside>
+    </section>
+
+    <!-- uiView: accountPanel --><div data-ui-view="accountPanel" class="panelwrapper"><section id="account-menu" class="account" data-toggle="account-menu" data-toggle-on-class="-expanded" data-toggle-off-class="" data-toggle-initial-state="off" data-toggle-close-targets="navigation-menu navigation-menu-button" data-toggle-on-state-change="off" navigation-menu="">
+    <!-- Log in Form -->
+    <!-- ngIf: !user.loggedin -->
+
+    <!-- Account -->
+    <!-- ngIf: user.loggedin --><!-- ngInclude: 'Account/views/Panel/LoggedIn.html' --><div data-ng-if="user.loggedin" data-ng-include="'Account/views/Panel/LoggedIn.html'" class=""><div class="accountbalance">
+    <span class="title">Balance</span>
+        <span class="row main-bonus-balance">
+        <span class="label">Main:</span>
+        <span class="amount">
+            <span ng-bind-html="user.balance | whCurrency : user.currency">£31.93</span>
+        </span>
+    </span>
+    <!-- ngIf: bonusWalletEnabled --><!-- ngInclude: 'Bonus/views/main-balance-panel.html' --><div data-ng-if="bonusWalletEnabled" data-ng-include="'Bonus/views/main-balance-panel.html'" class=""><div class="mainContainer">
+    <!-- ngIf: bonusWalletEnabled && user.bonus.liveBonusCount > 0 -->
+    <!-- ngIf: bonusWalletEnabled && user.bonus.liveBonusCount > 0 -->
+</div>
+<!--div class="balance grayed" ng-if="user.casino && user.casino.balance > 0">
+    <span class="label">Casino:</span>
+    <span class="amount">
+        <span ng-bind-html="user.casino.balance | whCurrency : user.currency"></span>
+    </span>
+</div-->
+<!-- ngIf: bonusWalletEnabled && user.bonus.liveBonusCount > 0 -->
+
+</div><!-- end ngIf: bonusWalletEnabled -->
+</div>
+<nav class="accountnavigation">
+    <!-- ngRepeat: option in accountOptions --><a data-ng-repeat="option in accountOptions" data-ng-href="https://sports.williamhill.com/acc/en-gb/payment/deposit/deposit.html?source=SA" data-wh-target="option.link.target" class="accountnavigation__button button -clear" href="https://sports.williamhill.com/acc/en-gb/payment/deposit/deposit.html?source=SA" target="_blank">
+        <i class="icon-deposit"></i>Deposit
+    </a><!-- end ngRepeat: option in accountOptions --><a data-ng-repeat="option in accountOptions" data-ng-href="https://sports.williamhill.com/acc/en-gb/payment/transfer/transfer.html?source=SA" data-wh-target="option.link.target" class="accountnavigation__button button -clear" href="https://sports.williamhill.com/acc/en-gb/payment/transfer/transfer.html?source=SA" target="_blank">
+        <i class="icon-transfer"></i>Balance transfer
+    </a><!-- end ngRepeat: option in accountOptions --><a data-ng-repeat="option in accountOptions" data-ng-href="https://sports.williamhill.com/acc/en-gb/payment/withdraw/withdraw.html?source=SA" data-wh-target="option.link.target" class="accountnavigation__button button -clear" href="https://sports.williamhill.com/acc/en-gb/payment/withdraw/withdraw.html?source=SA" target="_blank">
+        <i class="icon-withdraw"></i>Withdraw
+    </a><!-- end ngRepeat: option in accountOptions --><a data-ng-repeat="option in accountOptions" data-ng-href="https://sports.williamhill.com/acc/en-gb/payment/withdraw/reverse_withdraw.html?source=SA" data-wh-target="option.link.target" class="accountnavigation__button button -clear" href="https://sports.williamhill.com/acc/en-gb/payment/withdraw/reverse_withdraw.html?source=SA" target="_blank">
+        <i class="icon-reverse-withdrawal"></i>Reverse Withdrawal
+    </a><!-- end ngRepeat: option in accountOptions --><a data-ng-repeat="option in accountOptions" data-ng-href="https://sports.williamhill.com/acc/en-gb?action=GoHistory" data-wh-target="option.link.target" class="accountnavigation__button button -clear" href="https://sports.williamhill.com/acc/en-gb?action=GoHistory" target="_self">
+        <i class="icon-transactions"></i>Transactions
+    </a><!-- end ngRepeat: option in accountOptions --><a data-ng-repeat="option in accountOptions" data-ng-href="https://sports.williamhill.com/acc?action=GoAcctUpdate&amp;returnUrl=https%3A%2F%2Fscratchcards.williamhill.com" data-wh-target="option.link.target" class="accountnavigation__button button -clear" href="https://sports.williamhill.com/acc?action=GoAcctUpdate&amp;returnUrl=https%3A%2F%2Fscratchcards.williamhill.com" target="_self">
+        <i class="icon-settings"></i>Preferences
+    </a><!-- end ngRepeat: option in accountOptions --><a data-ng-repeat="option in accountOptions" data-ng-href="https://sports.williamhill.com/acc?action=DoHistory" data-wh-target="option.link.target" class="accountnavigation__button button -clear" href="https://sports.williamhill.com/acc?action=DoHistory" target="_self">
+        <i class="icon-openBets"></i>Your Bets
+    </a><!-- end ngRepeat: option in accountOptions --><a data-ng-repeat="option in accountOptions" data-ng-href="https://sports.williamhill.com/acc?action=GoAcctFreebet" data-wh-target="option.link.target" class="accountnavigation__button button -clear" href="https://sports.williamhill.com/acc?action=GoAcctFreebet" target="_self">
+        <i class="icon-promotions"></i>Free Bets/Bonuses
+    </a><!-- end ngRepeat: option in accountOptions --><a data-ng-repeat="option in accountOptions" data-ng-href="https://sports.williamhill.com/acc?action=GoInbox" data-wh-target="option.link.target" class="accountnavigation__button button -clear" href="https://sports.williamhill.com/acc?action=GoInbox" target="_self">
+        <i class="icon-messages"></i>Messages
+    </a><!-- end ngRepeat: option in accountOptions --><a data-ng-repeat="option in accountOptions" data-ng-href="https://sports.williamhill.com/gambling_controls/index?layout=desktop&amp;closeButton=true" data-wh-target="option.link.target" class="accountnavigation__button button -clear" href="https://sports.williamhill.com/gambling_controls/index?layout=desktop&amp;closeButton=true" target="_blank">
+        <i class="icon-gambling-controls"></i>Gambling Controls
+    </a><!-- end ngRepeat: option in accountOptions -->
+</nav>
+
+<footer class="account__footer">
+    <div class="account__details">
+        <dl class="details -small fl">
+            <dt class="account__name">Iain</dt>
+            <dd class="account__id"><span class="emp">Account ID:</span> 48659AH</dd>
+        </dl>
+        <a data-ng-href="https://gaming.williamhill.com/session/auth/logout?returnUrl=https%3A%2F%2Fscratchcards.williamhill.com%2F%23%21%2F&amp;clientId=ScratchCards" data-wh-target="logout.target" data-append-params="" class="account__logout button -form -small fl" href="https://gaming.williamhill.com/session/auth/logout?returnUrl=https%3A%2F%2Fscratchcards.williamhill.com%2F%23%21%2F&amp;clientId=ScratchCards&amp;source=SA" target="_self">Log Out</a>
+        <!-- ngInclude: 'Account/views/Panel/HelpButtons.html' --><span data-ng-include="'Account/views/Panel/HelpButtons.html'" class=""><aside class="utilnavigation">
+    <a href="https://williamhill-lang.custhelp.com/app/chat/chat_landing/_icf_77/SCRATCHCARDS/_icf_376/scratchcards?" class="button -clear -round" target="_blank"><i class="icon-chat"></i></a>
+    <a data-ui-sref="WHO.WF.help" class="button -clear -round" href="#!/help"><i class="icon-help"></i></a>
+</aside>
+</span>
+    </div>
+</footer>
+</div><!-- end ngIf: user.loggedin -->
+</section>
+</div>
+    <!-- uiView: mobileProductNavigation --><nav data-ui-view="mobileProductNavigation" class=""><div class="productnavigation-mobile" data-toggle="navigation-menu" data-toggle-on-class="-expanded" data-toggle-off-class="" data-toggle-initial-state="off" data-toggle-close-targets="account-menu account-menu-button" data-toggle-on-state-change="off">
+    <!-- ngIf: !wideView -->
+</div>
+</nav>
+</header>
+<!-- uiView: localNavigation --><aside class="filter nav__subnav" ui-view="localNavigation"><section class="localnavigation">
+
+    <div class="localnavigation__wrapper">
+        <nav class="localnavigation__nonmobile" hidden-buttons="">
+            <div class="cw flex">
+                <!-- ngRepeat: page in navigation track by $index --><a data-ng-repeat="page in navigation track by $index" data-ng-href="#!/" class="localnavigation__button button -clear" data-ui-sref-active="-active" data-wh-target="page.link.target" href="#!/" target="_self">
+                <span class="gaming-icon icon-home"></span>
+                <span class="capitalize">Lobby</span>
+                </a><!-- end ngRepeat: page in navigation track by $index --><a data-ng-repeat="page in navigation track by $index" data-ng-href="#!/promotions/" class="localnavigation__button button -clear" data-ui-sref-active="-active" data-wh-target="page.link.target" href="#!/promotions/" target="_self">
+                <span class="gaming-icon icon-promotions"></span>
+                <span class="capitalize">Promotions</span>
+                </a><!-- end ngRepeat: page in navigation track by $index --><a data-ng-repeat="page in navigation track by $index" data-ng-href="https://sports.williamhill.com/acc/en-gb/payment/deposit/deposit.html?source=SA" class="localnavigation__button button -clear" data-ui-sref-active="-active" data-wh-target="page.link.target" href="https://sports.williamhill.com/acc/en-gb/payment/deposit/deposit.html?source=SA" target="_blank">
+                <span class="gaming-icon icon-deposit"></span>
+                <span class="capitalize">Deposit</span>
+                </a><!-- end ngRepeat: page in navigation track by $index --><a data-ng-repeat="page in navigation track by $index" data-ng-href="#!/rules/" class="localnavigation__button button -clear" data-ui-sref-active="-active" data-wh-target="page.link.target" href="#!/rules/" target="_self">
+                <span class="gaming-icon icon-rules"></span>
+                <span class="capitalize">Rules</span>
+                </a><!-- end ngRepeat: page in navigation track by $index -->
+            </div>
+        </nav>
+    </div>
+
+</section>
+</aside>
+
+<!-- banner -->
+<!-- uiView: banner --><div data-ui-view="banner" class=""><!-- uiView: promotions-slider --><div data-ui-view="promotions-slider" class=""><div ng-class="{hideBackground:hideBackground}" class="promotion-slider" data-promotions-slider="" data-promotions-slider-show-terms="true" data-is-lobby="true"><div ng-mouseenter="pause()" ng-mouseleave="play()" class="carousel" ng-swipe-right="prev()" ng-swipe-left="next()" interval="slideInterval" carousel-index="">
+    <ol class="carousel-indicators" ng-show="slides.length &gt; 1">
+        <!-- ngRepeat: slide in slides track by $index --><li ng-repeat="slide in slides track by $index" ng-class="{active: isActive(slide)}" ng-click="select(slide)" class=""></li><!-- end ngRepeat: slide in slides track by $index --><li ng-repeat="slide in slides track by $index" ng-class="{active: isActive(slide)}" ng-click="select(slide)" class=""></li><!-- end ngRepeat: slide in slides track by $index --><li ng-repeat="slide in slides track by $index" ng-class="{active: isActive(slide)}" ng-click="select(slide)" class=""></li><!-- end ngRepeat: slide in slides track by $index --><li ng-repeat="slide in slides track by $index" ng-class="{active: isActive(slide)}" ng-click="select(slide)" class="active"></li><!-- end ngRepeat: slide in slides track by $index -->
+    </ol>
+    <div class="carousel-inner" ng-transclude="">
+    <!-- ngRepeat: promotion in promotions --><div ng-class="{
+    'active': leaving || (active &amp;&amp; !entering),
+    'prev': (next || active) &amp;&amp; direction=='prev',
+    'next': (next || active) &amp;&amp; direction=='next',
+    'right': direction=='prev',
+    'left': direction=='next'
+  }" class="item text-center" ng-transclude="" ng-repeat="promotion in promotions">
+        <div class="carousel-item">
+            <img ng-src="https://cmscdn.staticcache.org/assets/image/0008/414647/10-LOB-1280x240-Merlins-millions-43883.jpg" src="https://cmscdn.staticcache.org/assets/image/0008/414647/10-LOB-1280x240-Merlins-millions-43883.jpg" />
+            <div class="carousel-item-text">
+                <!-- ngIf: promotion.imageTitle.length > 0 --><h2 data-ng-if="promotion.imageTitle.length &gt; 0" data-ng-style="{'color' : promotion.titleColor, 'background-color': promotion.titleBgColor}" class="" style="color: rgb(18, 9, 24); background-color: rgba(248, 190, 210, 0.6);">£5 Risk Free</h2><!-- end ngIf: promotion.imageTitle.length > 0 -->
+                <br />
+                <!-- ngIf: promotion.imageSubtitle.length>0 --><p data-ng-if="promotion.imageSubtitle.length&gt;0" data-ng-style="{'color' : promotion.imageSubtitleColor, 'background': promotion.imageSubtitleBgColor}" class="" style="color: rgb(18, 9, 24); background: rgba(248, 190, 210, 0.6);">When you play Merlin's Millions!</p><!-- end ngIf: promotion.imageSubtitle.length>0 -->
+                <br />
+                <span class="tagline ng-hide" data-ng-show="promotion.bonus"> </span>
+                <!-- ngIf: promotion.response.success -->
+                <!-- ngIf: promotion.response.error -->
+            </div>
+            <!-- ngIf: promotion.button.type != 'free' || (promotion.button.showButton &&  promotion.button.text.length>0) --><a href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgennative%2F70100%3Fchannel%3Ddesktop%26language%3Den%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-ng-style="{'background': promotion.button.color}" class="promotion-button button -small" data-ng-if="promotion.button.type != 'free' || (promotion.button.showButton &amp;&amp;  promotion.button.text.length&gt;0)" data-promotions-bonus="promotion" style="background: rgb(122, 179, 36);">CLAIM NOW</a><!-- end ngIf: promotion.button.type != 'free' || (promotion.button.showButton &&  promotion.button.text.length>0) -->
+               <!-- Full image link -->&gt;
+            <!-- ngIf: promotion.button.type == 'free' && (!promotion.button.showButton || promotion.button.text.length==0) -->
+        </div>
+    </div><!-- end ngRepeat: promotion in promotions --><div ng-class="{
+    'active': leaving || (active &amp;&amp; !entering),
+    'prev': (next || active) &amp;&amp; direction=='prev',
+    'next': (next || active) &amp;&amp; direction=='next',
+    'right': direction=='prev',
+    'left': direction=='next'
+  }" class="item text-center" ng-transclude="" ng-repeat="promotion in promotions">
+        <div class="carousel-item">
+            <img ng-src="https://cmscdn.staticcache.org/assets/image/0004/391423/LOB-1280x240-Retinax2-SCRATCH-EasternDragon-43529.jpg" src="https://cmscdn.staticcache.org/assets/image/0004/391423/LOB-1280x240-Retinax2-SCRATCH-EasternDragon-43529.jpg" />
+            <div class="carousel-item-text">
+                <!-- ngIf: promotion.imageTitle.length > 0 --><h2 data-ng-if="promotion.imageTitle.length &gt; 0" data-ng-style="{'color' : promotion.titleColor, 'background-color': promotion.titleBgColor}" class="" style="color: rgb(252, 236, 139); background-color: rgba(252, 38, 11, 0.498039);">New &amp; Exclusive Eastern Dragon!</h2><!-- end ngIf: promotion.imageTitle.length > 0 -->
+                <br />
+                <!-- ngIf: promotion.imageSubtitle.length>0 --><p data-ng-if="promotion.imageSubtitle.length&gt;0" data-ng-style="{'color' : promotion.imageSubtitleColor, 'background': promotion.imageSubtitleBgColor}" class="" style="color: rgb(252, 236, 139); background: rgba(252, 38, 11, 0.498039);">Unleash your inner beast</p><!-- end ngIf: promotion.imageSubtitle.length>0 -->
+                <br />
+                <span class="tagline ng-hide" data-ng-show="promotion.bonus"> </span>
+                <!-- ngIf: promotion.response.success -->
+                <!-- ngIf: promotion.response.error -->
+            </div>
+            <!-- ngIf: promotion.button.type != 'free' || (promotion.button.showButton &&  promotion.button.text.length>0) --><a href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgennative%2F70129%3Fchannel%3Ddesktop%26language%3Den%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-ng-style="{'background': promotion.button.color}" class="promotion-button button -small" data-ng-if="promotion.button.type != 'free' || (promotion.button.showButton &amp;&amp;  promotion.button.text.length&gt;0)" data-promotions-bonus="promotion" style="background: rgb(122, 179, 36);">Play Now</a><!-- end ngIf: promotion.button.type != 'free' || (promotion.button.showButton &&  promotion.button.text.length>0) -->
+               <!-- Full image link -->&gt;
+            <!-- ngIf: promotion.button.type == 'free' && (!promotion.button.showButton || promotion.button.text.length==0) -->
+        </div>
+    </div><!-- end ngRepeat: promotion in promotions --><div ng-class="{
+    'active': leaving || (active &amp;&amp; !entering),
+    'prev': (next || active) &amp;&amp; direction=='prev',
+    'next': (next || active) &amp;&amp; direction=='next',
+    'right': direction=='prev',
+    'left': direction=='next'
+  }" class="item text-center" ng-transclude="" ng-repeat="promotion in promotions">
+        <div class="carousel-item">
+            <img ng-src="https://cmscdn.staticcache.org/assets/image/0011/375626/LOB-1280x240-Retinax2-41803.jpg" src="https://cmscdn.staticcache.org/assets/image/0011/375626/LOB-1280x240-Retinax2-41803.jpg" />
+            <div class="carousel-item-text">
+                <!-- ngIf: promotion.imageTitle.length > 0 --><h2 data-ng-if="promotion.imageTitle.length &gt; 0" data-ng-style="{'color' : promotion.titleColor, 'background-color': promotion.titleBgColor}" class="" style="color: rgb(251, 219, 53); background-color: rgba(0, 0, 0, 0.701961);">£2,100,000+ up for grabs</h2><!-- end ngIf: promotion.imageTitle.length > 0 -->
+                <br />
+                <!-- ngIf: promotion.imageSubtitle.length>0 --><p data-ng-if="promotion.imageSubtitle.length&gt;0" data-ng-style="{'color' : promotion.imageSubtitleColor, 'background': promotion.imageSubtitleBgColor}" class="" style="color: rgb(251, 219, 53); background: rgba(0, 0, 0, 0.701961);">on VEGAS MILLIONS Scratchcards!</p><!-- end ngIf: promotion.imageSubtitle.length>0 -->
+                <br />
+                <span class="tagline ng-hide" data-ng-show="promotion.bonus"> </span>
+                <!-- ngIf: promotion.response.success -->
+                <!-- ngIf: promotion.response.error -->
+            </div>
+            <!-- ngIf: promotion.button.type != 'free' || (promotion.button.showButton &&  promotion.button.text.length>0) --><a href="https://scratchcards.williamhill.com/#!/lobby/vegas-millions" data-ng-style="{'background': promotion.button.color}" class="promotion-button button -small" data-ng-if="promotion.button.type != 'free' || (promotion.button.showButton &amp;&amp;  promotion.button.text.length&gt;0)" data-promotions-bonus="promotion" style="background: rgb(122, 179, 36);">Play Now</a><!-- end ngIf: promotion.button.type != 'free' || (promotion.button.showButton &&  promotion.button.text.length>0) -->
+               <!-- Full image link -->&gt;
+            <!-- ngIf: promotion.button.type == 'free' && (!promotion.button.showButton || promotion.button.text.length==0) -->
+        </div>
+    </div><!-- end ngRepeat: promotion in promotions --><div ng-class="{
+    'active': leaving || (active &amp;&amp; !entering),
+    'prev': (next || active) &amp;&amp; direction=='prev',
+    'next': (next || active) &amp;&amp; direction=='next',
+    'right': direction=='prev',
+    'left': direction=='next'
+  }" class="item text-center active" ng-transclude="" ng-repeat="promotion in promotions">
+        <div class="carousel-item">
+            <img ng-src="https://cmscdn.staticcache.org/assets/image/0006/367908/A-1280x240-39572-1.jpg" src="https://cmscdn.staticcache.org/assets/image/0006/367908/A-1280x240-39572-1.jpg" />
+            <div class="carousel-item-text">
+                <!-- ngIf: promotion.imageTitle.length > 0 --><h2 data-ng-if="promotion.imageTitle.length &gt; 0" data-ng-style="{'color' : promotion.titleColor, 'background-color': promotion.titleBgColor}" class="" style="color: rgb(20, 32, 80); background-color: rgba(133, 215, 119, 0.498039);">New Player Bonus</h2><!-- end ngIf: promotion.imageTitle.length > 0 -->
+                <br />
+                <!-- ngIf: promotion.imageSubtitle.length>0 --><p data-ng-if="promotion.imageSubtitle.length&gt;0" data-ng-style="{'color' : promotion.imageSubtitleColor, 'background': promotion.imageSubtitleBgColor}" class="" style="color: rgb(20, 32, 80); background: rgba(133, 215, 119, 0.498039);">100% Cashback Up to £5</p><!-- end ngIf: promotion.imageSubtitle.length>0 -->
+                <br />
+                <span class="tagline ng-hide" data-ng-show="promotion.bonus"> </span>
+                <!-- ngIf: promotion.response.success -->
+                <!-- ngIf: promotion.response.error -->
+            </div>
+            <!-- ngIf: promotion.button.type != 'free' || (promotion.button.showButton &&  promotion.button.text.length>0) --><a href="https://scratchcards.williamhill.com/#!/promotions/cashback-new-players" data-ng-style="{'background': promotion.button.color}" class="promotion-button button -small" data-ng-if="promotion.button.type != 'free' || (promotion.button.showButton &amp;&amp;  promotion.button.text.length&gt;0)" data-promotions-bonus="promotion" style="background: rgb(122, 179, 36);">Read More</a><!-- end ngIf: promotion.button.type != 'free' || (promotion.button.showButton &&  promotion.button.text.length>0) -->
+               <!-- Full image link -->&gt;
+            <!-- ngIf: promotion.button.type == 'free' && (!promotion.button.showButton || promotion.button.text.length==0) -->
+        </div>
+    </div><!-- end ngRepeat: promotion in promotions -->
+    <!-- ngIf: promotions[getCurrentIndex()].hideTermsView == false --><div class="view-terms-wrapper" data-ng-if="promotions[getCurrentIndex()].hideTermsView == false">
+         <a href="#!/promotions/cashback-new-players" class="view-terms"><span>View Terms</span></a>
+    </div><!-- end ngIf: promotions[getCurrentIndex()].hideTermsView == false -->
+    <div ng-hide="hideShadow" class="promotion-shadow left"></div>
+    <div ng-hide="hideShadow" class="promotion-shadow right"></div>
+
+</div>
+    <a class="left carousel-control" ng-click="prev()" ng-show="slides.length &gt; 1"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" ng-click="next()" ng-show="slides.length &gt; 1"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+</div></div></div>
+<!-- uiView: app --><div id="site-wrapper" ng-style="{'background' : background.siteframe}" data-ui-view="app" class=""><div data-background=""></div><div data-template=""></div><a ng-href="" ng-show="isActive" class="sideBanner-left fixedWidth ng-hide" ng-class="{'fixedWidth':fixedWidth}" data-wh-lazy-src="" data-no-queue="true" style="background-color:;" data-sidebanner="" data-side="left"> </a><div id="content-container" ng-class="{showSideBanners:showBanners}" ;"=""><!-- uiView:  --><div class="view-section" data-ui-view=""><!--Filters  -->
+
+<!-- ngIf: selectedCategory && selectedCategory.id --><section ng-if="selectedCategory &amp;&amp; selectedCategory.id" data-filters="selectedCategory" class="filters-container"><div class="filters-wrapper fixed hideRightGradient" ng-class="{expandingShadows:showGradient,hideLeftGradient:hideLeft,hideRightGradient:hideRight}">
+  <nav class="filters">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- ngRepeat: (index, element) in categories track by $index --><!-- ngIf: element.showLabel --><div class="swiper-slide" ng-class="{active:selected.id==element.id}" ng-repeat="(index, element) in categories track by $index" ng-if="element.showLabel">
+            <!-- ngIf: element.id==searchCategory --><a ng-click="scrollTo($event);focusOnInput()" ng-if="element.id==searchCategory" ui-sref="WHO.WF.lobby.details({ url: element.name })" href="#!/lobby/Search" class="">
+                <i class="icon-search"></i> <span class="text-search">Search</span>
+            </a><!-- end ngIf: element.id==searchCategory -->
+            <!-- ngIf: element.id!=searchCategory -->
+        </div><!-- end ngIf: element.showLabel --><!-- end ngRepeat: (index, element) in categories track by $index --><!-- ngIf: element.showLabel --><div class="swiper-slide active" ng-class="{active:selected.id==element.id}" ng-repeat="(index, element) in categories track by $index" ng-if="element.showLabel">
+            <!-- ngIf: element.id==searchCategory -->
+            <!-- ngIf: element.id!=searchCategory --><a ng-click="scrollTo($event);" ng-if="element.id!=searchCategory" ui-sref="WHO.WF.lobby.details({ url: element.name })" href="#!/lobby/Lobby" class="">
+                    Lobby
+
+            <!-- ngIf: favouritesCategoryId == element.id && favouritesCounter -->
+            </a><!-- end ngIf: element.id!=searchCategory -->
+        </div><!-- end ngIf: element.showLabel --><!-- end ngRepeat: (index, element) in categories track by $index --><!-- ngIf: element.showLabel --><div class="swiper-slide" ng-class="{active:selected.id==element.id}" ng-repeat="(index, element) in categories track by $index" ng-if="element.showLabel">
+            <!-- ngIf: element.id==searchCategory -->
+            <!-- ngIf: element.id!=searchCategory --><a ng-click="scrollTo($event);" ng-if="element.id!=searchCategory" ui-sref="WHO.WF.lobby.details({ url: element.name })" href="#!/lobby/Recently%20Played" class="">
+                    Recently Played
+
+            <!-- ngIf: favouritesCategoryId == element.id && favouritesCounter -->
+            </a><!-- end ngIf: element.id!=searchCategory -->
+        </div><!-- end ngIf: element.showLabel --><!-- end ngRepeat: (index, element) in categories track by $index --><!-- ngIf: element.showLabel --><div class="swiper-slide" ng-class="{active:selected.id==element.id}" ng-repeat="(index, element) in categories track by $index" ng-if="element.showLabel">
+            <!-- ngIf: element.id==searchCategory -->
+            <!-- ngIf: element.id!=searchCategory --><a ng-click="scrollTo($event);" ng-if="element.id!=searchCategory" ui-sref="WHO.WF.lobby.details({ url: element.name })" href="#!/lobby/A-Z" class="">
+                    A-Z
+
+            <!-- ngIf: favouritesCategoryId == element.id && favouritesCounter -->
+            </a><!-- end ngIf: element.id!=searchCategory -->
+        </div><!-- end ngIf: element.showLabel --><!-- end ngRepeat: (index, element) in categories track by $index --><!-- ngIf: element.showLabel --><div class="swiper-slide" ng-class="{active:selected.id==element.id}" ng-repeat="(index, element) in categories track by $index" ng-if="element.showLabel">
+            <!-- ngIf: element.id==searchCategory -->
+            <!-- ngIf: element.id!=searchCategory --><a ng-click="scrollTo($event);" ng-if="element.id!=searchCategory" ui-sref="WHO.WF.lobby.details({ url: element.name })" href="#!/lobby/Favourites" class="">
+                    Favourites
+
+            <!-- ngIf: favouritesCategoryId == element.id && favouritesCounter -->
+            </a><!-- end ngIf: element.id!=searchCategory -->
+        </div><!-- end ngIf: element.showLabel --><!-- end ngRepeat: (index, element) in categories track by $index --><!-- ngIf: element.showLabel --><div class="swiper-slide" ng-class="{active:selected.id==element.id}" ng-repeat="(index, element) in categories track by $index" ng-if="element.showLabel">
+            <!-- ngIf: element.id==searchCategory -->
+            <!-- ngIf: element.id!=searchCategory --><a ng-click="scrollTo($event);" ng-if="element.id!=searchCategory" ui-sref="WHO.WF.lobby.details({ url: element.name })" href="#!/lobby/New" class="">
+                    New
+
+            <!-- ngIf: favouritesCategoryId == element.id && favouritesCounter -->
+            </a><!-- end ngIf: element.id!=searchCategory -->
+        </div><!-- end ngIf: element.showLabel --><!-- end ngRepeat: (index, element) in categories track by $index --><!-- ngIf: element.showLabel --><!-- end ngRepeat: (index, element) in categories track by $index -->
+      </div>
+    </div>
+  </nav>
+    <div ng-show="selected.id==searchCategory" class="ng-hide">
+        <div class="search">
+            <input ng-model="search.filter" ng-change="searchFilterChanged()" placeholder="Search for a game title..." autofocus="" class="ng-pristine ng-untouched ng-valid" />
+        </div>
+    </div>
+</div>
+</section><!-- end ngIf: selectedCategory && selectedCategory.id -->
+
+<!--Games Container-->
+<section class="games load-complete" data-loading-data="games.json" data-infinite-scroll="addMoreTiles()" data-infinite-scroll-distance="1">
+
+    <div data-loading-overlay="" class="loader-overlay"><i class="icon-spinner"></i><span class="error">There was an error loading the content</span></div>
+
+    <!--Display a message when there are no recently played games available -->
+    <!-- ngIf: selectedCategory.list.length == 0 && selectedCategory.id == recentlyPlayedCategoryId -->
+    <!--Display a message when there are no game available in the selected section -->
+    <!-- ngIf: selectedCategory.list.length == 0 && selectedCategory.id == favouritesCategoryId -->
+
+    <!-- ngRepeat: (subCategoryIndex, subCategory) in selectedCategory.categories --><!-- ngIf: selectedCategory.id != recentlyPlayedCategoryId || (selectedCategory.list == 0 && user.loggedin && selectedCategory.isLoaded) --><section class="group" data-ng-repeat="(subCategoryIndex, subCategory) in selectedCategory.categories" data-group="subCategory" data-group-games="games" data-group-jackpots="jackpots" data-ng-if="selectedCategory.id != recentlyPlayedCategoryId || (selectedCategory.list == 0 &amp;&amp; user.loggedin &amp;&amp; selectedCategory.isLoaded)">    <!-- category title -->
+    <!-- ngIf: group.showLabel && filteredGroupList.length >= minGamesInContainer -->
+
+    <!-- display games list for the current group -->
+    <!-- ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="merlinsmillions-scratchcard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Merlin's Millions Scratchcard" data-type="promo" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgennative%2F70100%3Fchannel%3Ddesktop%26language%3Den%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="1" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0003/356421/VEGAS-LOBGrid-208x242-39956-MerlinsMills-Scratch.jpg" alt="Merlin's Millions Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0003/356421/VEGAS-LOBGrid-208x242-39956-MerlinsMills-Scratch.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0004/356422/VEGAS-LOBGrid-208x242-39956-MerlinsMills-Scratch-2.jpg" alt="Merlin's Millions Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0004/356422/VEGAS-LOBGrid-208x242-39956-MerlinsMills-Scratch-2.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Merlin's Millions Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Stake from 20p to £200</li>
+                <li>Win upto 1000x your stake in base game</li>
+                <li>Trigger 5 FREE guarateed win scratches all doubled</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Merlin's Millions Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgennative%2F70100%3Fchannel%3Ddesktop%26language%3Den%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/merlinsmillions-scratchcard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="eastern-dragon" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Eastern Dragon Scratchcard" data-type="new" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgennative%2F70129%3Fchannel%3Ddesktop%26language%3Den%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="2" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0005/368447/VEGAS-LOBGrid-208x242-39956-EasternDragon-SCRATCH.jpg" alt="Eastern Dragon Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0005/368447/VEGAS-LOBGrid-208x242-39956-EasternDragon-SCRATCH.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0006/391416/VEGAS-LOBGrid-208x242-39956-EasternDragon-SCRATCH-2.jpg" alt="Eastern Dragon Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0006/391416/VEGAS-LOBGrid-208x242-39956-EasternDragon-SCRATCH-2.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Eastern Dragon Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Scratch with 4 ways to win</li>
+                <li>Stake from 20p to £200</li>
+                <li>Win upto 1000x your stake in base game</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Eastern Dragon Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgennative%2F70129%3Fchannel%3Ddesktop%26language%3Den%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/eastern-dragon">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="cherry-blossoms-scratchcard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Cherry Blossoms Scratchcard" data-type="new" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FZPEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="3" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0020/356132/VEGAS-LOBGrid-208x242-39956-CherryBlossoms-SCRATCH.jpg" alt="Cherry Blossoms Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0020/356132/VEGAS-LOBGrid-208x242-39956-CherryBlossoms-SCRATCH.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0009/369162/VEGAS-LOBGrid-208x242-39956-CherryBlossoms-SCRATCH-2.jpg" alt="Cherry Blossoms Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0009/369162/VEGAS-LOBGrid-208x242-39956-CherryBlossoms-SCRATCH-2.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Cherry Blossoms Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Win upto 1000x your stake in base game</li>
+                <li>Stake from 20p to £100</li>
+                <li>Trigger 10 FREE spins in the slot</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Cherry Blossoms Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FZPEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/cherry-blossoms-scratchcard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="volcano" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Volcano Scratchcard" data-type="new" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fvegas2%2FVolcanoScratchDesktop%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="4" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0004/387247/LOBGrid-208x242-Volcano_Scratchcard_43070.jpg" alt="Volcano Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0004/387247/LOBGrid-208x242-Volcano_Scratchcard_43070.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0006/387249/LOBGrid-208x242-Volcano_Scratchcard_43070_ScreenShot.jpg" alt="Volcano Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0006/387249/LOBGrid-208x242-Volcano_Scratchcard_43070_ScreenShot.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Volcano Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>EXCLUSIVE to William Hill!</li>
+                <li>Scratchcard with 3 bonus features</li>
+                <li>Win upto a massive £500,000</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Volcano Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fvegas2%2FVolcanoScratchDesktop%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/volcano">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="mad-mad-monkey-scratchcard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Mad Mad Monkey Scratchcard" data-type="new" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FZQEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="5" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0004/356134/VEGAS-LOBGrid-208x242-39956-MadMadMonkey-SCRATCH.jpg" alt="Mad Mad Monkey Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0004/356134/VEGAS-LOBGrid-208x242-39956-MadMadMonkey-SCRATCH.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0011/369164/VEGAS-LOBGrid-208x242-39956-MadMadMonkey-SCRATCH-2.jpg" alt="Mad Mad Monkey Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0011/369164/VEGAS-LOBGrid-208x242-39956-MadMadMonkey-SCRATCH-2.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Mad Mad Monkey Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Win upto 1000x your stake in base game</li>
+                <li>Stake from 50p to £25</li>
+                <li>Trigger 10 FREE spins in the slot</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Mad Mad Monkey Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FZQEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/mad-mad-monkey-scratchcard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="vikings-of-fortune" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Vikings of Fortune Scratchcard" data-type="new" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fvegas2%2Fvikingsoffortunescratchcard%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="6" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0005/385817/LOBGrid-208x242-Vikings-of-Fortune-429791.jpg" alt="Vikings of Fortune Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0005/385817/LOBGrid-208x242-Vikings-of-Fortune-429791.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0007/385819/LOBGrid-208x242-Vikings-of-Fortune-42979-Screen.jpg" alt="Vikings of Fortune Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0007/385819/LOBGrid-208x242-Vikings-of-Fortune-42979-Screen.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Vikings of Fortune Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>EXCLUSIVE to William Hill</li>
+                <li>Win up to 1000x your stake</li>
+                <li>Stake as low as 20p or as high as £500</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Vikings of Fortune Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fvegas2%2Fvikingsoffortunescratchcard%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/vikings-of-fortune">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="joker-jester-scratchcard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Joker Jester Scratchcard" data-type="new" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FYMEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="7" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0009/356148/VEGAS-LOBGrid-208x242-39956-JokerJester-SCRATCH.jpg" alt="Joker Jester Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0009/356148/VEGAS-LOBGrid-208x242-39956-JokerJester-SCRATCH.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0006/369159/VEGAS-LOBGrid-208x242-39956-JokerJester-SCRATCH-2.jpg" alt="Joker Jester Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0006/369159/VEGAS-LOBGrid-208x242-39956-JokerJester-SCRATCH-2.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Joker Jester Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Scratch with 4 ways to win</li>
+                <li>Stake from 20p to £200</li>
+                <li>Win upto 1000x your stake in base game</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Joker Jester Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FYMEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/joker-jester-scratchcard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="lucky-duck" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Lucky Duck Scratchcard" data-type="" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fvegas2%2FLuckyDuckScratchcardVM%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="8" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0004/375853/JP-LOBGrid-208x242-SCRATCH-42148-LuckyDuck-1.jpg" alt="Lucky Duck Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0004/375853/JP-LOBGrid-208x242-SCRATCH-42148-LuckyDuck-1.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0011/375572/LOBGrid-208x242-LuckyDSCRATCH-2-42096.jpg" alt="Lucky Duck Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0011/375572/LOBGrid-208x242-LuckyDSCRATCH-2-42096.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Lucky Duck Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Exclusive to William Hill!</li>
+                <li>Stake between 20p and £500</li>
+                <li>Watch for V-E-G-A-S for a chance to Win £1 Million Jackpot</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Lucky Duck Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fvegas2%2FLuckyDuckScratchcardVM%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/lucky-duck">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="genie-jackpots" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Genie Jackpots Scratchcard" data-type="" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fvegas2%2FGenieJackpotsScratchcardVM%3Fcode%3D1EEN%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="9" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0007/375847/JP-LOBGrid-208x242-SCRATCH-42148-GenieJackpots-1.jpg" alt="Genie Jackpots Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0007/375847/JP-LOBGrid-208x242-SCRATCH-42148-GenieJackpots-1.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0007/375676/2LOBGrid-208x242-GenieJackpotSCRATCH-2-41145.jpg" alt="Genie Jackpots Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0007/375676/2LOBGrid-208x242-GenieJackpotSCRATCH-2-41145.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Genie Jackpots Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Exclusive to William Hill!</li>
+                <li>Scratch and Win in Slot Bonus</li>
+                <li>Win a VEGAS MILLIONS Jackpot</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Genie Jackpots Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fvegas2%2FGenieJackpotsScratchcardVM%3Fcode%3D1EEN%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/genie-jackpots">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="pig-wizard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Pig Wizard Scratchcard" data-type="" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fvegas2%2FThePigWizardScratchcardVM%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="10" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0011/375851/JP-LOBGrid-208x242-SCRATCH-42148-Pigwizard-1.jpg" alt="Pig Wizard Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0011/375851/JP-LOBGrid-208x242-SCRATCH-42148-Pigwizard-1.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0007/375568/LOBGrid-208x242-PigWizSCRATCH-2-42096.jpg" alt="Pig Wizard Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0007/375568/LOBGrid-208x242-PigWizSCRATCH-2-42096.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Pig Wizard Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Exclusive to William Hill!</li>
+                <li>Scratch and Win in Slot Bonus Round</li>
+                <li>Watch for V-E-G-A-S for a chance at Vegas Millions Jackpot</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Pig Wizard Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fvegas2%2FThePigWizardScratchcardVM%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/pig-wizard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="wish-upon-a-jackpot" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Wish Upon a Jackpot Scratchcard" data-type="" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fvegas2%2FWishUponAJackpotScratchcard%3Fcode%3D1AEN%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="11" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0007/368251/VEGAS-LOBGrid-208x242-WishUponSCRATCH-38441.jpg" alt="Wish Upon a Jackpot Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0007/368251/VEGAS-LOBGrid-208x242-WishUponSCRATCH-38441.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0004/351409/LOBGrid-208x242-WUAJ-38841-2.jpg" alt="Wish Upon a Jackpot Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0004/351409/LOBGrid-208x242-WUAJ-38841-2.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Wish Upon a Jackpot Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Exclusive to William Hill!</li>
+                <li>£500,000 Max Win!</li>
+                <li>Bonus Round</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Wish Upon a Jackpot Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fvegas2%2FWishUponAJackpotScratchcard%3Fcode%3D1AEN%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/wish-upon-a-jackpot">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="cuckoo" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Cuckoo Scratchcard" data-type="new" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fvegas2%2Fcuckooscratchdesktop%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="12" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0010/366391/LOBGrid-208x242-41226-CUCKOOSCRATCH.jpg" alt="Cuckoo Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0010/366391/LOBGrid-208x242-41226-CUCKOOSCRATCH.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0011/366392/LOBGrid-208x242-41226-CUCKOOSCRATCH-2.jpg" alt="Cuckoo Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0011/366392/LOBGrid-208x242-41226-CUCKOOSCRATCH-2.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Cuckoo Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>EXCLUSIVE to William Hill!</li>
+                <li>Ladder Bonus</li>
+                <li>Win up to x1000 your stake</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Cuckoo Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fvegas2%2Fcuckooscratchdesktop%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/cuckoo">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="gorilla-go-wild-scratchcard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Gorilla Go Wild Scratchcard" data-type="" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FYPEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="13" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0004/356152/VEGAS-LOBGrid-208x242-39956-GorillaGoWild-SCRATCH.jpg" alt="Gorilla Go Wild Scratchcard" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0003/365763/VEGAS-LOBGrid-208x242-39956-GorillaGoWild-SCRATCH-2.jpg" alt="Gorilla Go Wild Scratchcard" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Gorilla Go Wild Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Win upto 1000x your stake in base game</li>
+                <li>Stake from 30p to £180</li>
+                <li>Trigger 10 FREE spins in the slot</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Gorilla Go Wild Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FYPEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/gorilla-go-wild-scratchcard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="irisheyes2-scratchcard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Irish Eyes 2 Scratchcard" data-type="" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgennative%2F70094%3Fchannel%3Ddesktop%26language%3Den%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="14" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0007/356425/VEGAS-LOBGrid-208x242-39956-IE2-Scratch.jpg" alt="Irish Eyes 2 Scratchcard" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0008/356426/VEGAS-LOBGrid-208x242-39956-IE2-Scratch-2.jpg" alt="Irish Eyes 2 Scratchcard" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Irish Eyes 2 Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Stake from 20p to £200</li>
+                <li>Win upto 1000x your stake in base game</li>
+                <li>Trigger 5 FREE guarateed win scratches all doubled</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Irish Eyes 2 Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgennative%2F70094%3Fchannel%3Ddesktop%26language%3Den%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/irisheyes2-scratchcard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="foxinwins-scratchcard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Foxin' Wins Scratchcard" data-type="" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgennative%2F70095%3Fchannel%3Ddesktop%26language%3Den%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="15" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0004/356413/VEGAS-LOBGrid-208x242-39956-FoxinWins-Scratch.jpg" alt="Foxin' Wins Scratchcard" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0020/356411/VEGAS-LOBGrid-208x242-39956-FoxinWins-Scratch-2.jpg" alt="Foxin' Wins Scratchcard" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Foxin' Wins Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Stake from 20p to £200</li>
+                <li>Win upto 1000x your stake in base game</li>
+                <li>Trigger 5 FREE guarateed wins all doubled</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Foxin' Wins Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgennative%2F70095%3Fchannel%3Ddesktop%26language%3Den%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/foxinwins-scratchcard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="oilmania-scratchcard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Oil mania Scratchcard" data-type="" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FZUEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="16" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0005/356144/VEGAS-LOBGrid-208x242-39956-OilMania-SCRATCH.jpg" alt="Oil mania Scratchcard" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0006/356343/VEGAS-LOBGrid-208x242-39956-OilMania-SCRATCH-2.jpg" alt="Oil mania Scratchcard" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Oil mania Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Stake from 20p to £200</li>
+                <li>Bet 25p - £200</li>
+                <li>Win upto 1000x your stake in base game</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Oil mania Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FZUEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/oilmania-scratchcard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="call-of-the-colosseum-scratchcard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Call of the Colosseum Scratchcard" data-type="" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FZNEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="17" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0005/365765/VEGAS-LOBGrid-208x242-39956-CallofColosseumSCRATCH.jpg" alt="Call of the Colosseum Scratchcard" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0007/368728/VEGAS-LOBGrid-208x242-39956-CallofColosseumSCRATCH-2.jpg" alt="Call of the Colosseum Scratchcard" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Call of the Colosseum Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Win upto 1000x your stake</li>
+                <li>Stake from 20p to £200</li>
+                <li>Enter the bonus round for big money</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Call of the Colosseum Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FZNEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/call-of-the-colosseum-scratchcard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="medusa-scratchcard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Medusa Scratchcard" data-type="" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgennative%2F70099%3Fchannel%3Ddesktop%26language%3Den%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="18" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0006/356415/VEGAS-LOBGrid-208x242-39956-Medusa-Scratch.jpg" alt="Medusa Scratchcard" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0020/350138/LOBGrid-208x242-NEW-39572-77.jpg" alt="Medusa Scratchcard" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Medusa Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Stake from 20p to £200</li>
+                <li>Win upto 1000x your stake in base game</li>
+                <li>Trigger 5 FREE guarateed win scratches all doubled</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Medusa Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgennative%2F70099%3Fchannel%3Ddesktop%26language%3Den%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/medusa-scratchcard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="ramessesriches-scratchcard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Ramesses Riches Scratchcard  " data-type="" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgennative%2F70101%3Fchannel%3Ddesktop%26language%3Den%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="19" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0011/356447/VEGAS-LOBGrid-208x242-39956-RamessesRiches-Scratch.jpg" alt="Ramesses Riches Scratchcard  " src="https://cmscdn.staticcache.org/assets/image/0011/356447/VEGAS-LOBGrid-208x242-39956-RamessesRiches-Scratch.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0003/356448/VEGAS-LOBGrid-208x242-39956-RamessesRiches-Scratch-2.jpg" alt="Ramesses Riches Scratchcard  " src="https://cmscdn.staticcache.org/assets/image/0003/356448/VEGAS-LOBGrid-208x242-39956-RamessesRiches-Scratch-2.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Ramesses Riches Scratchcard  </p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Scratch n match 3 symbols to win</li>
+                <li>Win upto 1000x your stake in base game</li>
+                <li>Stake from 20p to £200</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Ramesses Riches Scratchcard  " data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgennative%2F70101%3Fchannel%3Ddesktop%26language%3Den%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/ramessesriches-scratchcard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="thecodfather-scratchcard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="The Codfather Scratchcard" data-type="" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgennative%2F70093%3Fchannel%3Ddesktop%26language%3Den%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="20" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0011/356429/VEGAS-LOBGrid-208x242-39956-Codfather-Scratch.jpg" alt="The Codfather Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0011/356429/VEGAS-LOBGrid-208x242-39956-Codfather-Scratch.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0003/356430/VEGAS-LOBGrid-208x242-39956-Codfather-Scratch-2.jpg" alt="The Codfather Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0003/356430/VEGAS-LOBGrid-208x242-39956-Codfather-Scratch-2.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">The Codfather Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Stake from 20p to £200</li>
+                <li>Win upto 1000x your stake in base game</li>
+                <li>Trigger 5 FREE guarateed win scratches all doubled</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="The Codfather Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgennative%2F70093%3Fchannel%3Ddesktop%26language%3Den%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/thecodfather-scratchcard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="volcanoeruption-scratchcard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Volcano Eruption Scratchcard" data-type="" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FYOEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="21" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0010/365761/VEGAS-LOBGrid-208x242-39956-VolcanicEruption-SCRATCH.jpg" alt="Volcano Eruption Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0010/365761/VEGAS-LOBGrid-208x242-39956-VolcanicEruption-SCRATCH.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0007/365758/VEGAS-LOBGrid-208x242-39956-VolcanicEruption-SCRATCH-2.jpg" alt="Volcano Eruption Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0007/365758/VEGAS-LOBGrid-208x242-39956-VolcanicEruption-SCRATCH-2.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Volcano Eruption Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Win upto 50,000x your stake</li>
+                <li>Stake from 20p to £200</li>
+                <li>Trigger ladder bonus for big money</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Volcano Eruption Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FYOEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/volcanoeruption-scratchcard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="venetianrose-scratchcard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Venetian Rose Scratchcard" data-type="new" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FZSEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="22" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0008/356138/VEGAS-LOBGrid-208x242-39956-VenetianRose-SCRATCH.jpg" alt="Venetian Rose Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0008/356138/VEGAS-LOBGrid-208x242-39956-VenetianRose-SCRATCH.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0004/369157/VEGAS-LOBGrid-208x242-39956-VenetianRose-SCRATCH-2.jpg" alt="Venetian Rose Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0004/369157/VEGAS-LOBGrid-208x242-39956-VenetianRose-SCRATCH-2.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Venetian Rose Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Trigger ladder bonus for big money</li>
+                <li>Stake from 20p to £200</li>
+                <li>Trigger ladder bonus for big money</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Venetian Rose Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FZSEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/venetianrose-scratchcard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="drloveonvacation-scratchcard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Dr Love: On Vacation Scratchcard" data-type="" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgennative%2F70098%3Fchannel%3Ddesktop%26language%3Den%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="23" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0006/356433/VEGAS-LOBGrid-208x242-39956-DrLoveVaction-Scratch.jpg" alt="Dr Love: On Vacation Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0006/356433/VEGAS-LOBGrid-208x242-39956-DrLoveVaction-Scratch.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0007/356407/VEGAS-LOBGrid-208x242-39956-DrLoveVaction-Scratch-2.jpg" alt="Dr Love: On Vacation Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0007/356407/VEGAS-LOBGrid-208x242-39956-DrLoveVaction-Scratch-2.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Dr Love: On Vacation Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Scratch N Match</li>
+                <li>Win up to x £1000 stake</li>
+                <li>Bet 20p - £200</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Dr Love: On Vacation Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgennative%2F70098%3Fchannel%3Ddesktop%26language%3Den%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/drloveonvacation-scratchcard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="genie-wild-scratchcard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Genie Wild Scratchcard" data-type="new" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FYNEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="24" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0020/356150/VEGAS-LOBGrid-208x242-39956-GenieWild-SCRATCH.jpg" alt="Genie Wild Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0020/356150/VEGAS-LOBGrid-208x242-39956-GenieWild-SCRATCH.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0007/369151/VEGAS-LOBGrid-208x242-39956-GenieWild-SCRATCH-2.jpg" alt="Genie Wild Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0007/369151/VEGAS-LOBGrid-208x242-39956-GenieWild-SCRATCH-2.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Genie Wild Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Win upto 1000x your stake in base game</li>
+                <li>Stake from 25p to £200</li>
+                <li>Trigger 10 FREE spins in the slot</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Genie Wild Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FYNEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/genie-wild-scratchcard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="the-snake-charmer-scratchcard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="The Snake Charmer Scratchcard" data-type="" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FZVEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="25" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0004/356143/VEGAS-LOBGrid-208x242-39956-SnakeCharmer-SCRATCH.jpg" alt="The Snake Charmer Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0004/356143/VEGAS-LOBGrid-208x242-39956-SnakeCharmer-SCRATCH.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0006/365757/VEGAS-LOBGrid-208x242-39956-SnakeCharmer-SCRATCH-2.jpg" alt="The Snake Charmer Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0006/365757/VEGAS-LOBGrid-208x242-39956-SnakeCharmer-SCRATCH-2.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">The Snake Charmer Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Win upto 1000x your stake in base game</li>
+                <li>Stake from 25p to £200</li>
+                <li>Trigger 10 FREE spins in the slot</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="The Snake Charmer Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FZVEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/the-snake-charmer-scratchcard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="emperorsgarden-scratchcard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Emperor's Garden Scratchcard" data-type="" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgennative%2F70096%3Fchannel%3Ddesktop%26language%3Den%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="26" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0004/371164/VEGAS-LOBGrid-208x242-39956-EmperorsGarden-Scratch.jpg" alt="Emperor's Garden Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0004/371164/VEGAS-LOBGrid-208x242-39956-EmperorsGarden-Scratch.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0009/356409/VEGAS-LOBGrid-208x242-39956-EmperorsGarden-Scratch-2.jpg" alt="Emperor's Garden Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0009/356409/VEGAS-LOBGrid-208x242-39956-EmperorsGarden-Scratch-2.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Emperor's Garden Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Scratch n match 3 symbols to win</li>
+                <li>Win upto 1000x your stake in base game</li>
+                <li>Stake from 20p to £200</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Emperor's Garden Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgennative%2F70096%3Fchannel%3Ddesktop%26language%3Den%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/emperorsgarden-scratchcard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="drlove-scratchcard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Dr Love Scratchcard" data-type="" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgennative%2F70097%3Fchannel%3Ddesktop%26language%3Den%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="27" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0008/356417/VEGAS-LOBGrid-208x242-39956-DrLove-Scratch.jpg" alt="Dr Love Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0008/356417/VEGAS-LOBGrid-208x242-39956-DrLove-Scratch.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0008/368711/VEGAS-LOBGrid-208x242-39956-DrLove-Scratch-2.jpg" alt="Dr Love Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0008/368711/VEGAS-LOBGrid-208x242-39956-DrLove-Scratch-2.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Dr Love Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Scratch N Match</li>
+                <li>Win up to x £1000 stake</li>
+                <li>Bet 20p - £200</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Dr Love Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgennative%2F70097%3Fchannel%3Ddesktop%26language%3Den%26returnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/drlove-scratchcard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="irish-eyes-scratchcard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Irish Eyes Scratchcard" data-type="" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FYVEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="28" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0010/356158/VEGAS-LOBGrid-208x242-39956-IE-Scratch.jpg" alt="Irish Eyes Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0010/356158/VEGAS-LOBGrid-208x242-39956-IE-Scratch.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0011/356159/VEGAS-LOBGrid-208x242-39956-IE-Scratch-2.jpg" alt="Irish Eyes Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0011/356159/VEGAS-LOBGrid-208x242-39956-IE-Scratch-2.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Irish Eyes Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Scratch n match 3 symbols to win</li>
+                <li>Win upto 1000x your stake in base game</li>
+                <li>Stake from 20p to £200</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Irish Eyes Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FYVEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/irish-eyes-scratchcard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="bigfoot-scratchcard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Big Foot Scratchcard" data-type="new" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FZTEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="29" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0019/356140/VEGAS-LOBGrid-208x242-39956-BigFoot-SCRATCH.jpg" alt="Big Foot Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0019/356140/VEGAS-LOBGrid-208x242-39956-BigFoot-SCRATCH.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0010/369127/VEGAS-LOBGrid-208x242-39956-BigFoot-SCRATCH-2.jpg" alt="Big Foot Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0010/369127/VEGAS-LOBGrid-208x242-39956-BigFoot-SCRATCH-2.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Big Foot Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Scratch with 4 ways to win</li>
+                <li>Stake from 20p to £200</li>
+                <li>Win upto 1000x your stake in base game</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Big Foot Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FZTEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/bigfoot-scratchcard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><div class="game" data-ng-repeat="(gameIndex, game) in filteredGroupList | limitTo: tiles" data-game="games[game]" data-game-name="pandamania-scratchcard" data-game-jackpot="jackpots[games[game].jackpotCode]" ng-if="filteredGroupList.length &gt;= minGamesInContainer"><figure data-ng-class="{showGamePanel: showGamePanel, 'favourites-remove-class': game.fadeOutClass }">
+    <div class="maximize-icon-container">
+        <i class="icon-minimize"></i>
+    </div>
+
+    <a class="game__tile" title="Pandamania Scratchcard" data-type="new" data-jackpot="" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FZYEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse" data-trk-position="30" data-trk-cta="attached">
+        <img class="game__image" data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0007/356146/VEGAS-LOBGrid-208x242-39956-Pandamania-SCRATCH.jpg" alt="Pandamania Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0007/356146/VEGAS-LOBGrid-208x242-39956-Pandamania-SCRATCH.jpg" />
+        <!-- ngIf: isDesktop --><div ng-if="isDesktop" class="game__image__overlay">
+            <img data-wh-lazy-src="https://cmscdn.staticcache.org/assets/image/0010/368713/VEGAS-LOBGrid-208x242-39956-Pandamania-SCRATCH-2.jpg" alt="Pandamania Scratchcard" src="https://cmscdn.staticcache.org/assets/image/0010/368713/VEGAS-LOBGrid-208x242-39956-Pandamania-SCRATCH-2.jpg" class="" />
+            <div class="image__overlay"></div>
+            <span class="game__button play">Play</span>
+        </div><!-- end ngIf: isDesktop -->
+    </a>
+
+    <figcaption ng-class="tileButtonGradient" class="white-gradient">
+        <a ng-style="tileButtonStyle" href="" data-favourites-btn="game" data-is-authenticated="authenticated" style="color: rgb(1, 116, 181);">
+            <!-- ngIf: isDesktop --><i ng-if="isDesktop" ng-class="{ 'icon-star-full': game.isFavourite , 'icon-star-empty': !game.isFavourite  }" tooltip-append-to-body="true" tooltip-placement="top" tooltip-html-unsafe="Click to add&lt;br/&gt;game to Favourites" class="icon-star-empty"></i><!-- end ngIf: isDesktop -->
+            <!-- ngIf: !isDesktop -->
+        </a>
+        <a ng-style="tileButtonStyle" href="" ng-click="showGamePanel = true" style="color: rgb(1, 116, 181);"><i class="icon-info"></i></a>
+    </figcaption>
+
+    <aside class="game__information">
+        <div class="details__wrapper" ng-click="showGamePanel = false">
+            <p class="game__title">Pandamania Scratchcard</p>
+            <!-- ngIf: game.description.length>0 -->
+            <ul>
+                <li>Win upto 50,000x your stake</li>
+                <li>Stake from 20p to £200</li>
+                <li>Trigger ladder bonus for big money</li>
+            </ul>
+        </div>
+        <div class="game__navigation">
+            <a class="game__button play" title="Pandamania Scratchcard" data-launcher="game" href="http://scratchcards.williamhill.com/minilobby#!/minilobby?launchUrl=https%3A%2F%2Fgaming.williamhill.com%2Flaunch%2Fnextgen-desktop%2FZYEN%3FreturnUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%26clientId%3DScratchCards%26channel%3Ddesktop%26joinin_link%3Dhttps%253A%252F%252Fsports.williamhill.com%252Facc%252Fen-gb%252Fregister%252FSA%252Fregister.html%253Fsource%253DSA%26freePlay%3Dfalse">Play</a>
+            <!-- ngIf: isDesktop && enableFreePlayButton && authenticated -->
+            <!-- ngIf: displayRulesButton --><a class="link" data-ui-sref="WHO.WF.rules.details({url:game.url})" data-ng-if="displayRulesButton" href="#!/rules/pandamania-scratchcard">Rules</a><!-- end ngIf: displayRulesButton -->
+        </div>
+    </aside>
+
+</figure>
+</div><!-- end ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles -->
+
+    <!-- show more button-->
+    <!-- ngIf: filteredGroupList.length > initialTiles && filteredGroupList.length >= minGamesInContainer -->
+</section><!-- end ngIf: selectedCategory.id != recentlyPlayedCategoryId || (selectedCategory.list == 0 && user.loggedin && selectedCategory.isLoaded) --><!-- end ngRepeat: (subCategoryIndex, subCategory) in selectedCategory.categories --><!-- ngIf: selectedCategory.id != recentlyPlayedCategoryId || (selectedCategory.list == 0 && user.loggedin && selectedCategory.isLoaded) --><section class="group" data-ng-repeat="(subCategoryIndex, subCategory) in selectedCategory.categories" data-group="subCategory" data-group-games="games" data-group-jackpots="jackpots" data-ng-if="selectedCategory.id != recentlyPlayedCategoryId || (selectedCategory.list == 0 &amp;&amp; user.loggedin &amp;&amp; selectedCategory.isLoaded)">    <!-- category title -->
+    <!-- ngIf: group.showLabel && filteredGroupList.length >= minGamesInContainer -->
+
+    <!-- display games list for the current group -->
+    <!-- ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles --><!-- ngIf: filteredGroupList.length >= minGamesInContainer --><!-- end ngRepeat: (gameIndex, game) in filteredGroupList | limitTo: tiles -->
+
+    <!-- show more button-->
+    <!-- ngIf: filteredGroupList.length > initialTiles && filteredGroupList.length >= minGamesInContainer -->
+</section><!-- end ngIf: selectedCategory.id != recentlyPlayedCategoryId || (selectedCategory.list == 0 && user.loggedin && selectedCategory.isLoaded) --><!-- end ngRepeat: (subCategoryIndex, subCategory) in selectedCategory.categories -->
+
+    <!-- display games list for the current group -->
+    <!-- ngRepeat: (gameIndex, game) in selectedCategory.list | limitTo: visibleTiles -->
+
+    <!-- ngIf: selectedCategory.id==defaultCategoryId --><div class="seobox__content" ng-if="selectedCategory.id==defaultCategoryId" data-seo-box=""><div class="games_article">
+<h1 class="games_article-title" data-toggle-targets="article_content article_content-icon">
+
+   <!-- TITLE EDITING STARTS HERE -->
+   <strong>William Hill Scratchcards - Discover our Incredible Selection </strong>
+   <!-- TITLE EDITING ENDS HERE -->
+
+   <em id="article_icon" data-toggle="article_content-icon" data-toggle-on-class="icon-expanded" data-toggle-off-class="icon-collapsed" data-toggle-initial-state="off" class="icon-collapsed"></em>
+</h1>
+
+<div id="article_content" data-toggle="article_content" data-toggle-on-class="" data-toggle-off-class="ng-hide" data-toggle-initial-state="off" class="ng-hide">
+
+<!-- CONTENT EDITING STARTS HERE -->
+
+<p>Enjoy an amazing variety of popular and exclusive Scratchcards at William Hill. Play Scratchcards online anytime you want, with unique options that you won't find anywhere else. The games are simple to play, fun and come in a huge choice of themes, free games and these exclusive new Scratchcards have bonus rounds where you can win up to £250,000. Simply pick one and start playing right now.</p>
+<p>Take advantage of the spectacular Scratchcards bonus.</p>
+<p>William Hill Scratchcards come with a fantastic bonus for new players. Get 100% cash back up to £5 on losses. Use this opportunity to play awesome bonus rounds and even free Scratchcards within the games, just to make sure there are lots of great surprises.</p>
+<p>William Hill Scratchcards uses some of your favourite slot names, Doctor Love, Foxin Wins, Medusa, Codfather and Merlins Millions Superbet, just some of the great names you'll find in our new Scratchcard product.</p>
+<p>Some of the William Hill Scratchcard titles are not only standalone games, but actually link directly to a some popular slot games, all exclusive to William Hill! Just click and start exploring.</p>
+
+<!-- CONTENT EDITING END HERE -->
+
+</div>
+
+</div>
+
+</div><!-- end ngIf: selectedCategory.id==defaultCategoryId -->
+    <a class="download-app-button ng-hide" ng-href="" ng-show="button.show" data-downloadappbutton=""><img data-wh-lazy-src="" alt="" /> </a>
+</section>
+</div></div><a ng-href="" ng-show="isActive" class="sideBanner-right fixedWidth ng-hide" ng-class="{'fixedWidth':fixedWidth}" data-wh-lazy-src="" data-no-queue="true" style="background-color:;" data-sidebanner="" data-side="right"> </a></div>
+<!-- uiView: footer --><footer data-ui-view="footer" id="footer-container" class=""><div data-top-button="" class="top-button-container"><a class="top-button hidden" data-ng-class="{ hidden: !isVisible }" data-ng-click="scrollTop()"><i class="icon-to-top"></i></a>
+<a class="top-button top-button-lower" data-ng-class="{ hidden: !lowerIsVisible }" data-ng-click="scrollTop()"><i class="icon-to-top"></i></a></div>
+
+<div class="footer__wrapper">
+
+    <section class="leftPanel">
+
+        <!-- refactor into directive -->
+        <aside class="copyright" data-ng-controller="ClockController">
+            <span class="time">13:59:58</span>
+            UK |
+            © 1998-2015 WHG (International) Ltd
+        </aside>
+
+        <ul class="links">
+            <!-- ngRepeat: item in ::footer.BottomLinks track by $index --><li data-ng-repeat="item in ::footer.BottomLinks track by $index" class="">
+                <a title="Terms &amp; Conditions" data-ng-href="#!/help/support/terms-conditions" data-wh-target="::item.link.target" href="#!/help/support/terms-conditions" target="_self">
+                Terms &amp; Conditions
+                </a>
+            </li><!-- end ngRepeat: item in ::footer.BottomLinks track by $index --><li data-ng-repeat="item in ::footer.BottomLinks track by $index" class="">
+                <a title="Privacy Policy" data-ng-href="#!/help/support/privacy-policy" data-wh-target="::item.link.target" href="#!/help/support/privacy-policy" target="_self">
+                Privacy Policy
+                </a>
+            </li><!-- end ngRepeat: item in ::footer.BottomLinks track by $index --><li data-ng-repeat="item in ::footer.BottomLinks track by $index" class="">
+                <a title="Help" data-ng-href="#!/help" data-wh-target="::item.link.target" href="#!/help" target="_self">
+                Help
+                </a>
+            </li><!-- end ngRepeat: item in ::footer.BottomLinks track by $index --><li data-ng-repeat="item in ::footer.BottomLinks track by $index" class="">
+                <a title="Contact Us" data-ng-href="#!/contacts" data-wh-target="::item.link.target" href="#!/contacts" target="_self">
+                Contact Us
+                </a>
+            </li><!-- end ngRepeat: item in ::footer.BottomLinks track by $index --><li data-ng-repeat="item in ::footer.BottomLinks track by $index" class="">
+                <a title="William Hill Press Office" data-ng-href="http://www.williamhillmedia.com" data-wh-target="::item.link.target" href="http://www.williamhillmedia.com" target="_blank">
+                William Hill Press Office
+                </a>
+            </li><!-- end ngRepeat: item in ::footer.BottomLinks track by $index --><li data-ng-repeat="item in ::footer.BottomLinks track by $index" class="">
+                <a title="Your Feedback" data-ng-href="#!/feedback" data-wh-target="::item.link.target" href="#!/feedback" target="_self">
+                Your Feedback
+                </a>
+            </li><!-- end ngRepeat: item in ::footer.BottomLinks track by $index --><li data-ng-repeat="item in ::footer.BottomLinks track by $index" class="">
+                <a title="Shop Locator" data-ng-href="http://www.williamhill.com/shop-locator/" data-wh-target="::item.link.target" href="http://www.williamhill.com/shop-locator/" target="_blank">
+                Shop Locator
+                </a>
+            </li><!-- end ngRepeat: item in ::footer.BottomLinks track by $index --><li data-ng-repeat="item in ::footer.BottomLinks track by $index" class="">
+                <a title="Jobs &amp; Careers" data-ng-href="http://careers.williamhillplc.com/" data-wh-target="::item.link.target" href="http://careers.williamhillplc.com/" target="_blank">
+                Jobs &amp; Careers
+                </a>
+            </li><!-- end ngRepeat: item in ::footer.BottomLinks track by $index --><li data-ng-repeat="item in ::footer.BottomLinks track by $index" class="">
+                <a title="About William Hill" data-ng-href="http://www.williamhillplc.com/about/" data-wh-target="::item.link.target" href="http://www.williamhillplc.com/about/" target="_blank">
+                About William Hill
+                </a>
+            </li><!-- end ngRepeat: item in ::footer.BottomLinks track by $index --><li data-ng-repeat="item in ::footer.BottomLinks track by $index" class="">
+                <a title="Affiliate Program" data-ng-href="http://www.affutd.com/" data-wh-target="::item.link.target" href="http://www.affutd.com/" target="_blank">
+                Affiliate Program
+                </a>
+            </li><!-- end ngRepeat: item in ::footer.BottomLinks track by $index -->
+        </ul>
+    </section>
+
+    <section class="rightPanel">
+        <p class="respGambling" data-ng-bind-html="::footer.respGambling"><p>William Hill is committed to supporting <a href="#!/help/support/responsible-gaming">Responsible Gaming</a>. Underage gambling is an offence.</p></p>
+
+        <ul class="clearfix gambling-links inlineList">
+            <!-- ngRepeat: item in ::footer.TopLinks track by $index --><li data-ng-repeat="item in ::footer.TopLinks track by $index" class="">
+                <a title="18 Plus" data-ng-href="#!/help/support/over-18" data-wh-target="::item.link.target" href="#!/help/support/over-18" target="_self">
+                <i class="icon-and-over"></i>
+                </a>
+            </li><!-- end ngRepeat: item in ::footer.TopLinks track by $index --><li data-ng-repeat="item in ::footer.TopLinks track by $index" class="">
+                <a title="Gambleaware" data-ng-href="http://www.gambleaware.co.uk/" data-wh-target="::item.link.target" href="http://www.gambleaware.co.uk/" target="_blank">
+                <i class="icon-gamble-aware"></i>
+                </a>
+            </li><!-- end ngRepeat: item in ::footer.TopLinks track by $index --><li data-ng-repeat="item in ::footer.TopLinks track by $index" class="">
+                <a title="Gamcare" data-ng-href="http://www.gamcare.org.uk/" data-wh-target="::item.link.target" href="http://www.gamcare.org.uk/" target="_blank">
+                <i class="icon-gamcare"></i>
+                </a>
+            </li><!-- end ngRepeat: item in ::footer.TopLinks track by $index --><li data-ng-repeat="item in ::footer.TopLinks track by $index" class="">
+                <a title="Gamblers Anonymous" data-ng-href="http://www.gamblersanonymous.org.uk/" data-wh-target="::item.link.target" href="http://www.gamblersanonymous.org.uk/" target="_blank">
+                <i class="icon-gamblers-anonymous"></i>
+                </a>
+            </li><!-- end ngRepeat: item in ::footer.TopLinks track by $index --><li data-ng-repeat="item in ::footer.TopLinks track by $index" class="">
+                <a title="Gamblers Therapy" data-ng-href="http://www.gamblingtherapy.org/" data-wh-target="::item.link.target" href="http://www.gamblingtherapy.org/" target="_blank">
+                <i class="icon-gambling-therapy"></i>
+                </a>
+            </li><!-- end ngRepeat: item in ::footer.TopLinks track by $index --><li data-ng-repeat="item in ::footer.TopLinks track by $index" class="">
+                <a title="Responsible Gambling Trust" data-ng-href="http://www.responsiblegamblingtrust.org.uk/" data-wh-target="::item.link.target" href="http://www.responsiblegamblingtrust.org.uk/" target="_blank">
+                <i class="icon-responsible-gambling-trust"></i>
+                </a>
+            </li><!-- end ngRepeat: item in ::footer.TopLinks track by $index --><li data-ng-repeat="item in ::footer.TopLinks track by $index" class="">
+                <a title="GBGA" data-ng-href="http://www.gbga.gi/" data-wh-target="::item.link.target" href="http://www.gbga.gi/" target="_blank">
+                <i class="icon-gbga"></i>
+                </a>
+            </li><!-- end ngRepeat: item in ::footer.TopLinks track by $index --><li data-ng-repeat="item in ::footer.TopLinks track by $index" class="">
+                <a title="FUN-STOPS" data-ng-href="http://www.gambleaware.co.uk/" data-wh-target="::item.link.target" href="http://www.gambleaware.co.uk/" target="_blank">
+                <i class="icon-fun-stops"></i>
+                </a>
+            </li><!-- end ngRepeat: item in ::footer.TopLinks track by $index -->
+        </ul>
+
+        <article class="legal">
+            <!-- ngRepeat: item in ::footer.OtherLinks | limitTo: 1 track by $index --><a data-ng-repeat="item in ::footer.OtherLinks | limitTo: 1 track by $index" data-ng-href="http://www.gibraltar.gov.gi/remotegambling" data-wh-target="::item.link.target" title="Remote Gambling" href="http://www.gibraltar.gov.gi/remotegambling" target="_blank" class=""></a><!-- end ngRepeat: item in ::footer.OtherLinks | limitTo: 1 track by $index -->
+            <p data-ng-bind-html="::footer.operatedBy"><p>William Hill is operated by WHG (International) Limited a company registered in Gibraltar. William Hill is licensed by the <a href="http://www.gamblingcommission.gov.uk/" target="_blank">Gambling Commission </a>(<a href="https://secure.gamblingcommission.gov.uk/gccustomweb/PublicRegister/PRSearch.aspx?ExternalAccountId=39225" target="_blank">Number: 000-039225 R-319373-001</a>) for customers in Great Britain, and licensed by the Gibraltar Government and regulated by the <a href="https://www.gibraltar.gov.gi/remotegambling" target="_blank">Gibraltar Gambling Commissioner</a> (RGL no. 034 &amp; 042) for all other customers.</p></p>
+            <p data-ng-bind-html="::footer.registeredOffice"><p>The registered office of William Hill is at 6/1 Waterport Place, Gibraltar, with registered company number 99191. William Hill is a registered <a href="http://www.ibas-uk.com" target="_blank">I.B.A.S.</a> bookmaker.</p></p>
+        </article>
+
+        <p class="cookies" data-ng-bind-html="::footer.cookieText"><p>We use cookies: <a href="#!/help/support/cookies">This policy</a> describes how we use them.</p></p>
+
+        <ul class="paymentMethods inlineList">
+            <!-- ngRepeat: method in ::footer.PaymentMethods track by $index --><li data-ng-repeat="method in ::footer.PaymentMethods track by $index" class="">
+                <a data-ng-href="#!/help/my-account/payment-methods" data-wh-target="method.link.target" title="Visa" href="#!/help/my-account/payment-methods" target="_self"><i class="icon-visa"></i></a>
+            </li><!-- end ngRepeat: method in ::footer.PaymentMethods track by $index --><li data-ng-repeat="method in ::footer.PaymentMethods track by $index" class="">
+                <a data-ng-href="#!/help/my-account/payment-methods" data-wh-target="method.link.target" title="MasterCard" href="#!/help/my-account/payment-methods" target="_self"><i class="icon-master-card"></i></a>
+            </li><!-- end ngRepeat: method in ::footer.PaymentMethods track by $index --><li data-ng-repeat="method in ::footer.PaymentMethods track by $index" class="">
+                <a data-ng-href="#!/help/my-account/payment-methods" data-wh-target="method.link.target" title="Maestro" href="#!/help/my-account/payment-methods" target="_self"><i class="icon-maestro"></i></a>
+            </li><!-- end ngRepeat: method in ::footer.PaymentMethods track by $index --><li data-ng-repeat="method in ::footer.PaymentMethods track by $index" class="">
+                <a data-ng-href="#!/help/my-account/payment-methods" data-wh-target="method.link.target" title="PayPal" href="#!/help/my-account/payment-methods" target="_self"><i class="icon-paypal"></i></a>
+            </li><!-- end ngRepeat: method in ::footer.PaymentMethods track by $index --><li data-ng-repeat="method in ::footer.PaymentMethods track by $index" class="">
+                <a data-ng-href="#!/help/my-account/payment-methods" data-wh-target="method.link.target" title="Skrill" href="#!/help/my-account/payment-methods" target="_self"><i class="icon-skrill"></i></a>
+            </li><!-- end ngRepeat: method in ::footer.PaymentMethods track by $index -->
+        </ul>
+    </section>
+
+</div>
+</footer>
+
+<!-- iframe for session api auth -->
+<iframe data-gateway-check="" src="https://gaming.williamhill.com/session/auth/login?gateway=true&amp;cust_login=true&amp;returnUrl=https%3A%2F%2Fgaming.williamhill.com%2Fsession%2Fuser%2Fsessioncheck-iframe%3FdocUrl%3Dhttps%253A%252F%252Fscratchcards.williamhill.com%252F%2523!%252F" width="0" height="0"></iframe>
+<a id="shadow-link" target="_self" href="javascript:void(0)" data-interstitial-link-binder=""></a>
+</body></html>

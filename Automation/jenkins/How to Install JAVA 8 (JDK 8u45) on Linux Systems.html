@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://www.tecmint.com/install-java-jdk-jre-in-linux/ -->
+<html class="js" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="http://cdn.api.twitter.com/1/urls/count.json?url=http%3A%2F%2Fwww.tecmint.com%2Finstall-java-jdk-jre-in-linux%2F&amp;callback=jQuery1124011914051505322742_1492561480815&amp;_=1492561480816"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="alexaVerifyID" content="qqxQUyWSeUfqZOencfEoRM9vrVk">
+<meta name="msvalidate.01" content="E8C9208AD2F47ED874ED18E35FC370CE">
+<meta name="google-translate-customization" content="c567e5d7624a883b-609bf053fa02c58b-g01de0b1961de0feb-f">
+<meta property="article:publisher" content="https://facebook.com/tecmint">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://www.tecmint.com/xmlrpc.php">
+<title>How to Install JAVA 8 (JDK 8u45) on Linux Systems</title>
+<script src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/ca-pub-2601749019656699.js.download"></script><script async="" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/analytics.js.download"></script><script>document.documentElement.className = document.documentElement.className.replace("no-js","js");</script>
+<!-- All in One SEO Pack 2.3.12.2.1 by Michael Torbert of Semper Fi Web Design[621,731] -->
+<link rel="author" href="https://plus.google.com/u/0/107665449243972690526">
+<meta name="description" content="Java platform is used by millions of applications and websites (specially used in banking sites) due to its fast, secure and reliable nature.">
+<meta name="keywords" content="install java in centos 7,install java in centos 6,install java in debian,install java in ubuntu,install java in fedora,java">
+<link rel="canonical" href="http://www.tecmint.com/install-java-jdk-jre-in-linux/">
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-33207530-1', { 'cookieDomain': 'tecmint.com','allowLinker': true } );
+ga('require', 'linker');
+ga('linker:autoLink', ['tecmint.com'] );
+ga('send', 'pageview');
+</script>
+<!-- /all in one seo pack -->
+<link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Tecmint: Linux Howtos, Tutorials &amp; Guides » Feed" href="http://feeds.feedburner.com/tecmint">
+<link rel="alternate" type="application/rss+xml" title="Tecmint: Linux Howtos, Tutorials &amp; Guides » Comments Feed" href="http://www.tecmint.com/comments/feed/">
+<link href="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="Tecmint: Linux Howtos, Tutorials &amp; Guides » How to Install JAVA 8 (JDK 8u45) on Linux Systems Comments Feed" href="http://www.tecmint.com/install-java-jdk-jre-in-linux/feed/">
+<!-- <link rel='stylesheet' id='dgd-scrollbox-plugin-core-css'  href='http://www.tecmint.com/wp-content/plugins/dreamgrow-scroll-triggered-box/css/style.css?ver=2.3' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='fancybox-style-css'  href='http://www.tecmint.com/wp-content/plugins/light/css/jquery.fancybox.css?ver=4.7.3' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='style-css'  href='http://www.tecmint.com/wp-content/themes/tecmint/style.css?ver=4.7.3' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='responsive-css'  href='http://www.tecmint.com/wp-content/themes/tecmint/responsive.css?ver=4.7.3' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='custom-css'  href='http://www.tecmint.com/wp-content/themes/tecmint/custom.css?ver=4.7.3' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='font-awesome-css'  href='http://www.tecmint.com/wp-content/themes/tecmint/fonts/font-awesome.min.css?ver=4.7.3' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='qbp-css'  href='http://www.tecmint.com/wp-content/plugins/quickiebar-pro/public/style/qbp.css?ver=1.4.6' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/1492430009index.css" media="all">
+<script src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/1492430009index.js.download" type="text/javascript"></script>
+<!-- <script type='text/javascript' src='http://www.tecmint.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script> -->
+<!-- <script type='text/javascript' src='http://www.tecmint.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script> -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var $DGD = {"ajaxurl":"\/wp-admin\/admin-ajax.php","nonce":"9fb0125b61","debug":"","permalink":"http:\/\/www.tecmint.com\/install-java-jdk-jre-in-linux\/","title":"How to Install JAVA 8 (JDK 8u45) on Linux Systems","thumbnail":"http:\/\/www.tecmint.com\/wp-content\/uploads\/2015\/06\/Install-Java-8-in-Linux.jpeg","scripthost":"\/wp-content\/plugins\/dreamgrow-scroll-triggered-box\/","scrollboxes":[{"trigger":{"action":"scroll","scroll":"40","delaytime":"0","element":""},"vpos":"bottom","hpos":"right","cookieLifetime":"1","hide_mobile":"1","receiver_email":"0","thankyou":"You are subscribed. Thank You!","submit_auto_close":"5","delay_auto_close":"0","lightbox":{"color":"#000000","opacity":"0.7"},"theme":"clean_white","widget_enabled":"1","height":"auto","width":"300","jsCss":{"padding":"10","margin":"10","backgroundColor":"","boxShadow":"0px","borderColor":"","borderWidth":"0px","borderRadius":"0px","backgroundImageUrl":""},"closeImageUrl":"","transition":{"from":"b","effect":"fade","speed":"400"},"social":{"facebook":"","twitter":"","google":"","pinterest":"","stumbleupon":"","linkedin":""},"id":"dgd_scrollbox-11027","mode":"stb","voff":0,"hoff":0}]};
+/* ]]> */
+</script>
+<script src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/1492430009index.js(1).download" type="text/javascript"></script>
+<!-- <script type='text/javascript' src='http://www.tecmint.com/wp-content/plugins/dreamgrow-scroll-triggered-box/js/script.js?ver=2.3'></script> -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var ajaxurl = "http:\/\/www.tecmint.com\/wp-admin\/admin-ajax.php";
+var QBP_PUBLIC_GLOBALS = {"QBP_PUBLIC_NONCE":"2adefd3e45","USER_TYPE":"public","VISIBILITY_DATA":{"is_page":false,"is_post":true,"is_homepage":false,"is_archive":false,"is_custom_post_type":false,"id":14218}};
+/* ]]> */
+</script>
+<script src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/1492430009index.js(2).download" type="text/javascript"></script>
+<!-- <script type='text/javascript' src='http://www.tecmint.com/wp-content/plugins/quickiebar-pro/public/js/qbp.js?ver=1.4.6'></script> -->
+<link rel="https://api.w.org/" href="http://www.tecmint.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.tecmint.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.tecmint.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Installing LEMP (Linux, Nginx, MariaDB and PHP) on Fedora 22" href="http://www.tecmint.com/install-lemp-linux-nginx-mysql-php-on-fedora-22/">
+<link rel="next" title="How to Install and Configure Apache Tomcat 8.0.23 in Linux" href="http://www.tecmint.com/install-and-configure-apache-tomcat-8-in-linux/">
+<meta name="generator" content="WordPress 4.7.3">
+<link rel="shortlink" href="http://www.tecmint.com/?p=14218">
+<link rel="alternate" type="application/json+oembed" href="http://www.tecmint.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.tecmint.com%2Finstall-java-jdk-jre-in-linux%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://www.tecmint.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.tecmint.com%2Finstall-java-jdk-jre-in-linux%2F&amp;format=xml">
+<!-- Facebook Like Thumbnail (v0.3.4) -->
+<meta property="og:image" content="http://www.tecmint.com/wp-content/uploads/2015/06/Install-Java-8-in-Linux.jpeg">
+<!-- using featured thumbnail -->
+<!-- Facebook Like Thumbnail (By Ashfame - https://github.com/ashfame/facebook-like-thumbnail) -->
+<link rel="shortcut icon" href="http://www.tecmint.com/wp-content/themes/tecmint/images/favicon.ico">
+<!--[if lt IE 9]>
+<script src="http://www.tecmint.com/wp-content/themes/tecmint/js/ie/html5.js"></script>
+<script src="http://www.tecmint.com/wp-content/themes/tecmint/js/ie/selectivizr.js"></script>
+<![endif]-->
+<link rel="amphtml" href="http://www.tecmint.com/install-java-jdk-jre-in-linux/amp/"><link rel="icon" href="http://www.tecmint.com/wp-content/uploads/2015/01/tecmint_square_logo.png" sizes="32x32">
+<link rel="icon" href="http://www.tecmint.com/wp-content/uploads/2015/01/tecmint_square_logo.png" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="http://www.tecmint.com/wp-content/uploads/2015/01/tecmint_square_logo.png">
+<meta name="msapplication-TileImage" content="http://www.tecmint.com/wp-content/uploads/2015/01/tecmint_square_logo.png">
+<style type="text/css">
+/* Dynamic CSS: For no styles in head, copy and put the css below in your custom.css or child theme's style.css, disable dynamic styles */
+body { font-family: "Roboto Condensed", Arial, sans-serif; }
+.boxed #wrapper, .container-inner { max-width: 1280px; }
+.sidebar .widget { padding-left: 20px; padding-right: 20px; padding-top: 20px; }
+.search-expand,
+#nav-topbar.nav-container { background-color: #23588c; }
+@media only screen and (min-width: 720px) {
+#nav-topbar .nav ul { background-color: #23588c; }
+}			
+#header { background-color: #075b88; }
+@media only screen and (min-width: 720px) {
+#nav-header .nav ul { background-color: #075b88; }
+}			
+#nav-header.nav-container { background-color: #2f6dab; }
+@media only screen and (min-width: 720px) {
+#nav-header .nav ul { background-color: #2f6dab; }
+}			
+#footer-bottom { background-color: #2f6dab; }
+.site-title a img { max-height: 90px; }
+img { -webkit-border-radius: 2px; border-radius: 2px; }
+</style>
+<link rel="author" href="https://plus.google.com/107665449243972690526/posts">
+<script async="" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/adsbygoogle.js.download"></script>
+<script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type": "WebSite",
+"url": "http://www.tecmint.com/",
+"potentialAction": {
+"@type": "SearchAction",
+"target": "http://www.tecmint.com/?s={search_term}",
+"query-input": "required name=search_term"
+}
+}
+</script>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({
+google_ad_client: "ca-pub-2601749019656699",
+enable_page_level_ads: true
+});
+</script>
+<script type="text/javascript">
+this.randomtip=function(){var e=jQuery("#tips li").length,t=Math.floor(Math.random()*e)+1;jQuery("#tips li:nth-child("+t+")").show()},jQuery(document).ready(function($){randomtip()});</script>
+</head>
+<body class="post-template-default single single-post postid-14218 single-format-standard col-2cl full-width topbar-enabled gecko s1-collapse s2-collapse">
+<div id="wrapper">
+<header id="header">
+<nav class="nav-container group" id="nav-topbar">
+<div class="nav-toggle"><i class="fa fa-bars"></i></div>
+<div class="nav-text"><!-- put your mobile menu text here --></div>
+<div class="nav-wrap container"><ul id="menu-home" class="nav container-inner group"><li id="menu-item-334" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-334"><a href="http://www.tecmint.com/">Home</a></li>
+<li id="menu-item-10774" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10774"><a target="_blank" href="http://www.tecmint.com/who-we-are/">About</a></li>
+<li id="menu-item-3912" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3912"><a title="Free Linux eBooks" target="_blank" href="http://tecmint.tradepub.com/category/information-technology-servers-and-linux-server-os/806/">Free eBooks</a></li>
+<li id="menu-item-17151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17151"><a title="Discover and save on the best gear, gadgets, and software" target="_blank" href="http://deals.tecmint.com/">Deals</a></li>
+<li id="menu-item-18575" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18575"><a title="Support Us" href="http://www.tecmint.com/donate-to-tecmint/">Donate</a></li>
+<li id="menu-item-10775" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10775"><a target="_blank" href="http://www.tecmint.com/submit-articles/">Join TecMint</a></li>
+<li id="menu-item-11736" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11736"><a target="_blank" href="http://www.tecmint.com/linux-online-training-courses/">Linux Online Courses</a></li>
+<li id="menu-item-11907" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11907"><a title="Subscribe to Daily Updates" target="_blank" href="http://www.tecmint.com/subscribe-to-blog/">Subscribe</a></li>
+<li id="menu-item-13338" class="hosting menu-item menu-item-type-custom menu-item-object-custom menu-item-13338"><a title="Best Web Hosting Companies" target="_blank" href="http://www.tecmint.com/best-web-hosting-for-linux/">Linux Hosting</a></li>
+<li id="menu-item-24734" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24734"><a title="Start Your Blog in 10 Minutes Now!" target="_blank" href="http://www.tecmint.com/how-to-start-a-blog/">Start Your Blog Now!</a></li>
+</ul></div>
+<div class="container">
+<div class="container-inner">		
+<div class="toggle-search"><i class="fa fa-search"></i></div>
+<div class="search-expand">
+<div class="search-expand-inner">
+<form action="http://www.tecmint.com/search/" id="cse-search-box">
+<div>
+<input type="hidden" name="cx" value="partner-pub-2601749019656699:2173448976">
+<input type="hidden" name="cof" value="FORID:10">
+<input type="hidden" name="ie" value="UTF-8">
+<input type="text" class="search" name="q" size="20" placeholder="Custom Search" style="border: 1px solid rgb(126, 157, 185); padding: 2px; background: url(&quot;https://www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png&quot;) left center no-repeat rgb(255, 255, 255); text-indent: 48px;">
+<input type="submit" name="sa" value="Search">
+</div>
+<input name="siteurl" type="hidden" value="www.tecmint.com/install-java-jdk-jre-in-linux/"><input name="ref" type="hidden" value="www.google.co.il/"><input name="ss" type="hidden" value=""></form>
+<script type="text/javascript" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/brand"></script>							</div>
+</div>
+</div><!--/.container-inner-->
+</div><!--/.container-->
+</nav><!--/#nav-topbar-->
+<div class="container group">
+<div class="container-inner">
+<div class="group pad">
+<p class="site-title"><a href="http://www.tecmint.com/" rel="home"><img src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/logo.png" alt="Tecmint: Linux Howtos, Tutorials &amp; Guides"></a></p>
+<div id="header-ads">
+<div id="text-17" class="widget widget_text">			<div class="textwidget"><!-- Top Banner Ads 728x90 -->
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-2601749019656699" data-ad-slot="8210224606" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/saved_resource.html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>					</div><!--/#header-ads-->
+</div>
+<nav class="nav-container group" id="nav-header">
+<div class="nav-toggle"><i class="fa fa-bars"></i></div>
+<div class="nav-text"><!-- put your mobile menu text here --></div>
+<div class="nav-wrap container"><ul id="menu-header" class="nav container-inner group"><li id="menu-item-20410" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20410"><a target="_blank" href="http://news.tecmint.com/">News</a></li>
+<li id="menu-item-10770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10770"><a href="http://www.tecmint.com/best-linux-distributions/">Linux Distro’s</a></li>
+<li id="menu-item-10771" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10771"><a href="http://www.tecmint.com/category/interview-questions/">Interview Questions</a></li>
+<li id="menu-item-20869" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-20869"><a href="http://www.tecmint.com/#">Programming</a>
+<ul class="sub-menu" style="display: none;">
+<li id="menu-item-10772" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10772"><a title="Learn Linux Shell Scripting" href="http://www.tecmint.com/category/bash-shell/">Shell Scripting</a></li>
+<li id="menu-item-20870" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20870"><a href="http://www.tecmint.com/category/python/">Learn Python</a></li>
+<li id="menu-item-20871" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20871"><a href="http://www.tecmint.com/category/awk-command/">Learn Awk</a></li>
+</ul>
+</li>
+<li id="menu-item-10773" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10773"><a href="http://www.tecmint.com/category/linux-commands/">Linux Commands</a></li>
+<li id="menu-item-14795" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14795"><a href="http://www.tecmint.com/tag/linux-tricks/">Linux Tricks</a></li>
+<li id="menu-item-19684" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19684"><a href="http://www.tecmint.com/category/top-tools/">Best Linux Tools</a></li>
+<li id="menu-item-10443" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-10443"><a target="_blank" href="http://www.tecmint.com/#">Certifications</a>
+<ul class="sub-menu" style="display: none;">
+<li id="menu-item-14880" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14880"><a href="http://www.tecmint.com/how-to-setup-and-configure-static-network-routing-in-rhel/">RHCE Exam</a></li>
+<li id="menu-item-11906" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11906"><a target="_blank" href="http://www.tecmint.com/rhcsa-exam-reviewing-essential-commands-system-documentation/">RHCSA Exam</a></li>
+<li id="menu-item-10444" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10444"><a target="_blank" href="http://www.tecmint.com/installing-network-services-and-configuring-services-at-system-boot/">LFCE Exam</a></li>
+<li id="menu-item-14793" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14793"><a href="http://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/">LFCS Exam</a></li>
+</ul>
+</li>
+<li id="menu-item-12399" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-12399"><a href="http://www.tecmint.com/#">Guides</a>
+<ul class="sub-menu" style="display: none;">
+<li id="menu-item-18564" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18564"><a href="http://www.tecmint.com/install-docker-and-learn-containers-in-centos-rhel-7-6/">Docker Seires</a></li>
+<li id="menu-item-17150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17150"><a href="http://www.tecmint.com/setup-postfix-mail-server-and-dovecot-with-mariadb-in-centos/">Postfix Mail</a></li>
+<li id="menu-item-15041" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15041"><a href="http://www.tecmint.com/citrix-xenserver-installation-and-network-configuration-in-linux/">XenServer Series</a></li>
+<li id="menu-item-14794" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14794"><a href="http://www.tecmint.com/install-redhat-virtualization-rhev/">RHEV Series</a></li>
+<li id="menu-item-14805" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14805"><a href="http://www.tecmint.com/what-is-clustering-and-advantages-disadvantages-of-clustering-in-linux/">Clustering Series</a></li>
+<li id="menu-item-12400" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12400"><a href="http://www.tecmint.com/create-lvm-storage-in-linux/">LVM Series</a></li>
+<li id="menu-item-12402" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12402"><a href="http://www.tecmint.com/understanding-raid-setup-in-linux/">RAID Series</a></li>
+<li id="menu-item-12403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12403"><a href="http://www.tecmint.com/install-and-configure-kvm-in-linux/">KVM Series</a></li>
+<li id="menu-item-12401" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12401"><a href="http://www.tecmint.com/create-centralized-secure-storage-using-iscsi-targetin-linux/">iSCSI Series</a></li>
+<li id="menu-item-12406" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12406"><a href="http://www.tecmint.com/install-zentyal-as-primary-domain-controller-and-integrate-windows-system/">Zentyal Series</a></li>
+<li id="menu-item-16084" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16084"><a href="http://www.tecmint.com/install-and-configure-ansible-automation-tool-in-linux/">Ansible Series</a></li>
+<li id="menu-item-16395" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16395"><a href="http://www.tecmint.com/install-and-configure-django-web-framework-in-centos-debian-ubuntu/">Django Series</a></li>
+<li id="menu-item-14603" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14603"><a href="http://www.tecmint.com/create-gui-applications-in-linux/">Create GUI Apps</a></li>
+</ul>
+</li>
+<li id="menu-item-14796" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14796"><a href="http://www.tecmint.com/command-line-tools-to-monitor-linux-performance/">Monitoring Tools</a>
+<ul class="sub-menu" style="display: none;">
+<li id="menu-item-14797" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14797"><a href="http://www.tecmint.com/install-nagios-in-linux/">Nagios</a></li>
+<li id="menu-item-14798" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14798"><a href="http://www.tecmint.com/install-and-configure-zabbix-monitoring-on-debian-centos-rhel/">Zabbix</a></li>
+<li id="menu-item-14799" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14799"><a href="http://www.tecmint.com/install-cacti-network-monitoring-on-rhel-centos-6-3-5-8-and-fedora-17-12/">Cacti</a></li>
+<li id="menu-item-14800" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14800"><a href="http://www.tecmint.com/install-observium-in-centos/">Observium</a></li>
+<li id="menu-item-14801" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14801"><a href="http://www.tecmint.com/monitorix-a-lightweight-system-and-network-monitoring-tool-for-linux/">Monitorix</a></li>
+<li id="menu-item-14802" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14802"><a href="http://www.tecmint.com/install-collectd-and-collectd-web-to-monitor-server-resources-in-linux/">Collectd</a></li>
+<li id="menu-item-14803" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14803"><a href="http://www.tecmint.com/linux-performance-monitoring-with-collectl-tool/">Collectl</a></li>
+<li id="menu-item-14804" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14804"><a href="http://www.tecmint.com/mysql-performance-monitoring/">MySQL Monitoring</a></li>
+</ul>
+</li>
+</ul></div>
+</nav><!--/#nav-header-->
+</div><!--/.container-inner-->
+</div><!--/.container-->
+</header><!--/#header-->
+<div class="container" id="page">
+<div class="container-inner">			
+<div class="main">
+<div class="main-inner group">
+<section class="content">
+<div class="page-title pad group">
+<ul class="meta-single group">
+<li class="category"><a href="http://www.tecmint.com/category/open-source/" rel="category tag">Open Source</a></li>
+<li class="comments"><a href="http://www.tecmint.com/install-java-jdk-jre-in-linux/#comments"><i class="fa fa-comments-o"></i>35</a></li>
+</ul>
+</div><!--/.page-title-->	
+<div class="pad group">
+<article class="post-14218 post type-post status-publish format-standard has-post-thumbnail hentry category-open-source tag-java-2">	
+<div class="post-inner group">
+<h1 class="post-title">How to Install JAVA 8 (JDK 8u45) on Linux Systems</h1>
+<p class="post-byline">by <a href="http://www.tecmint.com/author/avishek/" title="Posts by Editor" rel="author">Editor</a> | Published: June 18, 2015 | <!-- if the post updated datetime is not equal to the post datetime, show the updated datetime -->
+Last Updated: June 19, 2015    </p>
+<div class="clear"></div>
+<!-- Above Post Ads 468x15 -->
+<div class="add-box">
+<ins class="adsbygoogle" style="display:inline-block;width:468px;height:15px" data-ad-client="ca-pub-2601749019656699" data-ad-slot="1986283779" data-adsbygoogle-status="done"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:15px;margin:0;padding:0;position:relative;visibility:visible;width:468px;background-color:transparent"><ins id="aswift_2_anchor" style="display:block;border:none;height:15px;margin:0;padding:0;position:relative;visibility:visible;width:468px;background-color:transparent"><iframe width="468" height="15" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/saved_resource(1).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="clear"></div>
+<div id="exam_announcement">
+<i style="color:#28557a; font-size:20px;" class="fa fa-book"></i>
+<b>Download Your Free eBooks NOW</b> - <a target="_blank" style="text-decoration:underline;" href="http://www.tecmint.com/10-useful-free-linux-ebooks-for-newbies-and-administrators/">10 Free Linux eBooks for Administrators</a> | <a style="text-decoration:underline;" target="_blank" href="http://www.tecmint.com/free-linux-shell-scripting-books/">4 Free Shell Scripting eBooks</a>
+</div>
+<div class="clear"></div>
+<div class="ads-inner-mobile">
+<center>
+<!-- Post Inner Mobile Ads -->
+<ins class="adsbygoogle" style="display: inline-block; width: 300px; height: 250px;" data-ad-client="ca-pub-2601749019656699" data-ad-slot="9946480174" data-adsbygoogle-status="done"><ins id="aswift_3_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><ins id="aswift_3_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_3" name="aswift_3" style="left:0;position:absolute;top:0;" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/saved_resource(2).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+</div>
+<div class="clear"></div>
+<div class="entry share">	
+<div class="entry-inner">
+<p><strong>Java</strong> is a collection of software better known for it’s cross platform availability was developed by Sun Microsystems in 1995. Java platform is used by millions of applications and websites (specially used in banking sites) due to its fast, secure and reliable nature. Today, Java is everywhere, from desktops to data-centers, game consoles to scientific computers, mobile phones to the Internet, etc…</p>
+<p>There are more than one version of Java can be installed and running on same computer and also it’s possible to have different version of <strong>JDK</strong> and <strong>JRE</strong> simultaneously on a machine, actually there are abundant of applications that requires Java-jre (<strong>Java Runtime Environment</strong>) and those who are developer required Java-sdk (<strong>Software Development Kit</strong>).</p>
+<div id="attachment_14231" style="width: 630px" class="wp-caption aligncenter"><a href="http://www.tecmint.com/wp-content/uploads/2015/06/Install-Java-8-in-Linux.jpeg"><img src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/Install-Java-8-in-Linux-620x297.jpeg" alt="Install Java 8 in Linux" width="620" height="297" class="size-medium wp-image-14231" srcset="http://www.tecmint.com/wp-content/uploads/2015/06/Install-Java-8-in-Linux-620x297.jpeg 620w, http://www.tecmint.com/wp-content/uploads/2015/06/Install-Java-8-in-Linux.jpeg 720w" sizes="(max-width: 620px) 100vw, 620px" data-lazy-loaded="true" style="display: inline;"><noscript>&lt;img src="http://www.tecmint.com/wp-content/uploads/2015/06/Install-Java-8-in-Linux-620x297.jpeg" alt="Install Java 8 in Linux" width="620" height="297" class="size-medium wp-image-14231" srcset="http://www.tecmint.com/wp-content/uploads/2015/06/Install-Java-8-in-Linux-620x297.jpeg 620w, http://www.tecmint.com/wp-content/uploads/2015/06/Install-Java-8-in-Linux.jpeg 720w" sizes="(max-width: 620px) 100vw, 620px" /&gt;</noscript></a><p class="wp-caption-text">Install Java 8 in Linux</p></div>
+<p>A lots of Linux distribution comes with other version of Java called <strong>OpenJDK</strong> (not the one developed by Sun Microsystems and acquired by Oracle Corporation). <strong>OpenJDK</strong> is an open source implementation of Java application. </p>
+<p>Latest stable release of Java version is <strong>1.8.0_45</strong> i.e <strong>8u45</strong>. </p>
+<h3>Install Java 8 in Linux</h3>
+<center style="padding-bottom: 20px;padding-top: 10px;"><ins class="adsbygoogle" style="display: block; height: 60px;" data-ad-client="ca-pub-2601749019656699" data-ad-slot="5590002574" data-ad-format="auto" data-adsbygoogle-status="done"><ins id="aswift_4_expand" style="display:inline-table;border:none;height:60px;margin:0;padding:0;position:relative;visibility:visible;width:542px;background-color:transparent"><ins id="aswift_4_anchor" style="display:block;border:none;height:60px;margin:0;padding:0;position:relative;visibility:visible;width:542px;background-color:transparent"><iframe width="542" height="60" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_4" name="aswift_4" style="left:0;position:absolute;top:0;" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/saved_resource(3).html"></iframe></ins></ins></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></center><p><strong>1.</strong> Before installing Java, make sure to first verify the version of installed Java.</p>
+<pre># java -version
+java version "1.7.0_75"
+OpenJDK Runtime Environment (IcedTea 2.5.4) (7u75-2.5.4-2)
+OpenJDK 64-Bit Server VM (build 24.75-b04, mixed mode)
+</pre>
+<p>It’s clear from the output above that the installed version of Java is <strong>OpenJDK 1.7.0_75</strong>.</p>
+<p><strong>2.</strong> Make a directory where you want to install Java. For global access (for all users) install it preferably in the directory <code>/opt/java</code>. </p>
+<pre># mkdir /opt/java &amp;&amp; cd /opt/java
+</pre>
+<p><strong>3.</strong> Now it’s time to download <strong>Java (JDK) 8u45</strong> source tarball files for your system architecture by going to official <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank">Java download</a> page.  </p>
+<p>For reference, we have provided the source tarball file-names, please select and download these below mentioned files only.</p>
+<pre>jdk-8u45-linux-i586.tar.gz		[For <strong>32-bit</strong> Systems]
+jdk-8u45-linux-x64.tar.gz		[For <strong>64-bit</strong> Systems]
+</pre>
+<p>Alternatively, you may use wget command to download files directly into the <code>/opt/java</code> directory as shown below.</p>
+<pre>--------------- For <strong>32-bit</strong> Systems ---------------
+# cd /opt/java
+# wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u45-b14/jdk-8u45-linux-i586.tar.gz"
+</pre>
+<pre>--------------- For <strong>64-bit</strong> Systems --------------
+# cd /opt/java
+# wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u45-b14/jdk-8u45-linux-x64.tar.gz"
+</pre>
+<p><strong>4.</strong> Once file has been downloaded, you may extract the tarball using <a href="http://www.tecmint.com/18-tar-command-examples-in-linux/" target="_blank">tar command</a> as shown below.</p>
+<pre># tar -zxvf jdk-8u45-linux-i586.tar.gz		[For <strong>32-bit</strong> Systems]
+# tar -zxvf jdk-8u45-linux-x64.tar.gz		[For <strong>64-bit</strong> Systems]
+</pre>
+<p><strong style="color:red">Note</strong>: I have used <strong>64-bit</strong> tarball throughout the tutorial. If you are using <strong>32-bit</strong>, you may change it accordingly. </p>
+<p><strong>5.</strong> Next, move to the extracted directory and use command <code>update-alternatives</code> to tell system where java and its executables are installed.</p>
+<pre># cd jdk1.8.0_45/
+# update-alternatives --install /usr/bin/java java /opt/java/jdk1.8.0_45/bin/java 100  
+# update-alternatives --config java
+</pre>
+<div id="attachment_14223" style="width: 630px" class="wp-caption aligncenter"><a href="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/Update-Java-Alternatives.png"><img src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/Update-Java-Alternatives.png" alt="Update Java Alternatives" width="620" height="152" class="size-medium wp-image-14223" srcset="http://www.tecmint.com/wp-content/uploads/2015/06/Update-Java-Alternatives.png 880w, http://www.tecmint.com/wp-content/uploads/2015/06/Update-Java-Alternatives-620x152.png 620w" sizes="(max-width: 620px) 100vw, 620px" data-lazy-loaded="true" style="display: inline;"><noscript>&lt;img src="http://www.tecmint.com/wp-content/uploads/2015/06/Update-Java-Alternatives.png" alt="Update Java Alternatives" width="620" height="152" class="size-medium wp-image-14223" srcset="http://www.tecmint.com/wp-content/uploads/2015/06/Update-Java-Alternatives.png 880w, http://www.tecmint.com/wp-content/uploads/2015/06/Update-Java-Alternatives-620x152.png 620w" sizes="(max-width: 620px) 100vw, 620px" /&gt;</noscript></a><p class="wp-caption-text">Update Java Alternatives</p></div>
+<p><strong>6.</strong> Tell system to update <strong>javac</strong> alternatives as:</p>
+<pre># update-alternatives --install /usr/bin/javac javac /opt/java/jdk1.8.0_45/bin/javac 100
+# update-alternatives --config javac
+</pre>
+<div id="attachment_14225" style="width: 630px" class="wp-caption aligncenter"><a href="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/Update-Javac-Alternatives.png"><img src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/Update-Javac-Alternatives.png" alt="Update Javac Alternatives" width="620" height="142" class="size-medium wp-image-14225" srcset="http://www.tecmint.com/wp-content/uploads/2015/06/Update-Javac-Alternatives.png 1030w, http://www.tecmint.com/wp-content/uploads/2015/06/Update-Javac-Alternatives-620x142.png 620w, http://www.tecmint.com/wp-content/uploads/2015/06/Update-Javac-Alternatives-1024x235.png 1024w" sizes="(max-width: 620px) 100vw, 620px" data-lazy-loaded="true" style="display: inline;"><noscript>&lt;img src="http://www.tecmint.com/wp-content/uploads/2015/06/Update-Javac-Alternatives.png" alt="Update Javac Alternatives" width="620" height="142" class="size-medium wp-image-14225" srcset="http://www.tecmint.com/wp-content/uploads/2015/06/Update-Javac-Alternatives.png 1030w, http://www.tecmint.com/wp-content/uploads/2015/06/Update-Javac-Alternatives-620x142.png 620w, http://www.tecmint.com/wp-content/uploads/2015/06/Update-Javac-Alternatives-1024x235.png 1024w" sizes="(max-width: 620px) 100vw, 620px" /&gt;</noscript></a><p class="wp-caption-text">Update Javac Alternatives</p></div>
+<p><strong>7.</strong> Similarly, update <strong>jar</strong> alternatives as:</p>
+<pre># update-alternatives --install /usr/bin/jar jar /opt/java/jdk1.8.0_45/bin/jar 100
+# update-alternatives --config jar
+</pre>
+<div id="attachment_14226" style="width: 630px" class="wp-caption aligncenter"><a href="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/Update-Jar-Alternatives.png"><img src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/Update-Jar-Alternatives.png" alt="Update Jar Alternatives" width="620" height="154" class="size-medium wp-image-14226" srcset="http://www.tecmint.com/wp-content/uploads/2015/06/Update-Jar-Alternatives.png 980w, http://www.tecmint.com/wp-content/uploads/2015/06/Update-Jar-Alternatives-620x154.png 620w" sizes="(max-width: 620px) 100vw, 620px" data-lazy-loaded="true" style="display: inline;"><noscript>&lt;img src="http://www.tecmint.com/wp-content/uploads/2015/06/Update-Jar-Alternatives.png" alt="Update Jar Alternatives" width="620" height="154" class="size-medium wp-image-14226" srcset="http://www.tecmint.com/wp-content/uploads/2015/06/Update-Jar-Alternatives.png 980w, http://www.tecmint.com/wp-content/uploads/2015/06/Update-Jar-Alternatives-620x154.png 620w" sizes="(max-width: 620px) 100vw, 620px" /&gt;</noscript></a><p class="wp-caption-text">Update Jar Alternatives</p></div>
+<p><strong>8.</strong> Setting up Java Environment Variables.</p>
+<pre># export JAVA_HOME=/opt/java/jdk1.8.0_45/	
+# export JRE_HOME=/opt/java/jdk1.8.0._45/jre 	
+# export PATH=$PATH:/opt/java/jdk1.8.0_45/bin:/opt/java/jdk1.8.0_45/jre/bin
+</pre>
+<div id="attachment_14227" style="width: 630px" class="wp-caption aligncenter"><a href="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/Set-Java-Path.png"><img src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/Set-Java-Path.png" alt="Set Java Environment Variables" width="620" height="61" class="size-medium wp-image-14227" srcset="http://www.tecmint.com/wp-content/uploads/2015/06/Set-Java-Path.png 907w, http://www.tecmint.com/wp-content/uploads/2015/06/Set-Java-Path-620x61.png 620w" sizes="(max-width: 620px) 100vw, 620px" data-lazy-loaded="true" style="display: inline;"><noscript>&lt;img src="http://www.tecmint.com/wp-content/uploads/2015/06/Set-Java-Path.png" alt="Set Java Environment Variables" width="620" height="61" class="size-medium wp-image-14227" srcset="http://www.tecmint.com/wp-content/uploads/2015/06/Set-Java-Path.png 907w, http://www.tecmint.com/wp-content/uploads/2015/06/Set-Java-Path-620x61.png 620w" sizes="(max-width: 620px) 100vw, 620px" /&gt;</noscript></a><p class="wp-caption-text">Set Java Environment Variables</p></div>
+<p><strong>9.</strong> Now You may verify the Java version again, to confirm.</p>
+<pre># java -version
+java version "1.8.0_45"
+Java(TM) SE Runtime Environment (build 1.8.0_45-b14)
+Java HotSpot(TM) 64-Bit Server VM (build 25.45-b02, mixed mode)
+</pre>
+<p><strong style="color:red">Suggested</strong>: If you are not using <strong>OpenJDK</strong> (open source implementation of java), you may remove it as:</p>
+<pre># apt-get remove openjdk-*
+</pre>
+<h4>Enable Java Support in Firefox</h4>
+<p><strong>10.</strong> To enable <strong>Java 8 JDK 8u45</strong> Support in <strong>Firefox</strong>, you need to run following commands to enable Java module for Firefox.</p>
+<h5>On Debian, Ubuntu and Mint</h5>
+<pre>--------------- For <strong>32-bit</strong> Systems ---------------
+# update-alternatives --install /usr/lib/mozilla/plugins/libjavaplugin.so libjavaplugin.so /opt/java/jdk1.8.0_45/jre/lib/i386/libnpjp2.so 20000
+--------------- For <strong>64-bit</strong> Systems ---------------
+# update-alternatives --install /usr/lib/mozilla/plugins/libjavaplugin.so libjavaplugin.so /opt/java/jdk1.8.0_45/jre/lib/amd64/libnpjp2.so 20000
+</pre>
+<h5>On RHEL, CentOS and Fedora</h5>
+<pre>--------------- For <strong>32-bit</strong> Systems ---------------
+# alternatives --install /usr/lib/mozilla/plugins/libjavaplugin.so libjavaplugin.so /opt/java/jdk1.8.0_45/jre/lib/i386/libnpjp2.so 20000
+--------------- For <strong>64-bit</strong> Systems ---------------
+# alternatives --install /usr/lib/mozilla/plugins/libjavaplugin.so libjavaplugin.so /opt/java/jdk1.8.0_45/jre/lib/amd64/libnpjp2.so 20000
+</pre>
+<p><strong>11.</strong> Now verify the Java support by restarting Firefox and enter <strong>about:plugins</strong> on the address bar. You will get similar to below screen.</p>
+<div id="attachment_14246" style="width: 630px" class="wp-caption aligncenter"><a href="http://www.tecmint.com/wp-content/uploads/2015/06/Java-8-Support-in-Firefox.png"><img src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/1x1.trans.gif" data-lazy-src="http://www.tecmint.com/wp-content/uploads/2015/06/Java-8-Support-in-Firefox-620x391.png" alt="Java 8 Support in Firefox" width="620" height="391" class="size-medium wp-image-14246" srcset="http://www.tecmint.com/wp-content/uploads/2015/06/Java-8-Support-in-Firefox-620x391.png 620w, http://www.tecmint.com/wp-content/uploads/2015/06/Java-8-Support-in-Firefox.png 820w" sizes="(max-width: 620px) 100vw, 620px"><noscript>&lt;img src="http://www.tecmint.com/wp-content/uploads/2015/06/Java-8-Support-in-Firefox-620x391.png" alt="Java 8 Support in Firefox" width="620" height="391" class="size-medium wp-image-14246" srcset="http://www.tecmint.com/wp-content/uploads/2015/06/Java-8-Support-in-Firefox-620x391.png 620w, http://www.tecmint.com/wp-content/uploads/2015/06/Java-8-Support-in-Firefox.png 820w" sizes="(max-width: 620px) 100vw, 620px" /&gt;</noscript></a><p class="wp-caption-text">Java 8 Support in Firefox</p></div>
+<p>That’s all for now. Hope this post of mine will help you in setting oracle Java, the easiest way. I would like to know your view on this. Keep connected, Stay tuned! Like and share us and help us get spread.</p>
+</div>
+<div class="sharrre-container" style="position: relative; top: 932.52px; left: 0px;">
+<span>Share</span>
+<div id="twitter" data-url="http://www.tecmint.com/install-java-jdk-jre-in-linux/" data-text="How to Install JAVA 8 (JDK 8u45) on Linux Systems" data-title="Tweet" class="sharrre"><a class="box" href="http://www.tecmint.com/install-java-jdk-jre-in-linux/#"><div class="count" href="#">+</div><div class="share"><i class="fa fa-twitter"></i></div></a></div>
+<div id="facebook" data-url="http://www.tecmint.com/install-java-jdk-jre-in-linux/" data-text="How to Install JAVA 8 (JDK 8u45) on Linux Systems" data-title="Like" class="sharrre"><a class="box" href="http://www.tecmint.com/install-java-jdk-jre-in-linux/#"><div class="count" href="#">0</div><div class="share"><i class="fa fa-facebook-square"></i></div></a></div>
+<div id="googleplus" data-url="http://www.tecmint.com/install-java-jdk-jre-in-linux/" data-text="How to Install JAVA 8 (JDK 8u45) on Linux Systems" data-title="+1" class="sharrre"><a class="box" href="http://www.tecmint.com/install-java-jdk-jre-in-linux/#"><div class="count" href="#">52</div><div class="share"><i class="fa fa-google-plus-square"></i></div></a></div>
+<div id="linkedin" data-url="http://www.tecmint.com/install-java-jdk-jre-in-linux/" data-text="How to Install JAVA 8 (JDK 8u45) on Linux Systems" data-title="Share It" class="sharrre"><a class="box" href="http://www.tecmint.com/install-java-jdk-jre-in-linux/#" rel="nofollow"><div class="count" href="#">12</div><div class="share"><i class="fa fa-linkedin"></i></div></a></div>
+<div style="font-weight: 600; padding-top: 10px; width: 55px;"><a href="http://www.tecmint.com/install-java-jdk-jre-in-linux/#comments"><img alt="Ask Anything" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/help.png"></a></div>
+</div><!--/.sharrre-container-->
+<script type="text/javascript">
+// Sharrre
+jQuery(document).ready(function(){
+jQuery('#twitter').sharrre({
+share: {
+twitter: true
+},
+template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-twitter"></i></div></a>',
+enableHover: false,
+enableTracking: true,
+buttons: { twitter: {via: 'tecmint'}},
+click: function(api, options){
+api.simulateClick();
+api.openPopup('twitter');
+}
+});
+jQuery('#facebook').sharrre({
+share: {
+facebook: true
+},
+template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-facebook-square"></i></div></a>',
+enableHover: false,
+enableTracking: true,
+click: function(api, options){
+api.simulateClick();
+api.openPopup('facebook');
+}
+});
+jQuery('#googleplus').sharrre({
+share: {
+googlePlus: true
+},
+template: '<a class="box" href="#"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-google-plus-square"></i></div></a>',
+enableHover: false,
+enableTracking: true,
+urlCurl: 'http://www.tecmint.com/wp-content/themes/tecmint/js/sharrre.php',
+click: function(api, options){
+api.simulateClick();
+api.openPopup('googlePlus');
+}
+});
+jQuery('#linkedin').sharrre({
+share: {
+linkedin: true
+},
+template: '<a class="box" href="#" rel="nofollow"><div class="count" href="#">{total}</div><div class="share"><i class="fa fa-linkedin"></i></div></a>',
+enableHover: false,
+enableTracking: true,
+buttons: {
+linkedin: {
+description: 'How to Install JAVA 8 (JDK 8u45) on Linux Systems',media: 'http://www.tecmint.com/wp-content/uploads/2015/06/Install-Java-8-in-Linux.jpeg'				}
+},
+click: function(api, options){
+api.simulateClick();
+api.openPopup('linkedin');
+}
+});
+// Scrollable sharrre bar, contributed by Erik Frye. Awesome!
+var shareContainer = jQuery(".sharrre-container"),
+header = jQuery('#header'),
+postEntry = jQuery('.entry'),
+$window = jQuery(window),
+distanceFromTop = 20,
+startSharePosition = shareContainer.offset(),
+contentBottom = postEntry.offset().top + postEntry.outerHeight(),
+topOfTemplate = header.offset().top;
+getTopSpacing();
+shareScroll = function(){
+if($window.width() > 719){	
+var scrollTop = $window.scrollTop() + topOfTemplate,
+stopLocation = contentBottom - (shareContainer.outerHeight() + topSpacing);
+if(scrollTop > stopLocation){
+shareContainer.offset({top: contentBottom - shareContainer.outerHeight(),left: startSharePosition.left});
+}
+else if(scrollTop >= postEntry.offset().top-topSpacing){
+shareContainer.offset({top: scrollTop + topSpacing, left: startSharePosition.left});
+}else if(scrollTop < startSharePosition.top+(topSpacing-1)){
+shareContainer.offset({top: startSharePosition.top,left:startSharePosition.left});
+}
+}
+},
+shareMove = function(){
+startSharePosition = shareContainer.offset();
+contentBottom = postEntry.offset().top + postEntry.outerHeight();
+topOfTemplate = header.offset().top;
+getTopSpacing();
+};
+/* As new images load the page content body gets longer. The bottom of the content area needs to be adjusted in case images are still loading. */
+setTimeout(function() {
+contentBottom = postEntry.offset().top + postEntry.outerHeight();
+}, 2000);
+if (window.addEventListener) {
+window.addEventListener('scroll', shareScroll, false);
+window.addEventListener('resize', shareMove, false);
+} else if (window.attachEvent) {
+window.attachEvent('onscroll', shareScroll);
+window.attachEvent('onresize', shareMove);
+}
+function getTopSpacing(){
+if($window.width() > 1024)
+topSpacing = distanceFromTop + jQuery('.nav-wrap').outerHeight();
+else
+topSpacing = distanceFromTop;
+}
+});
+</script>
+<div class="clear"></div>				
+</div><!--/.entry-->
+</div><!--/.post-inner-->
+</article><!--/.post-->				
+<div class="clear"></div>
+<div class="clear"></div>
+<div class="ads-inner-mobile">
+<center style="padding-top:30px;">
+<!-- Post-Bottom-Inner-300x250 -->
+<ins class="adsbygoogle" style="display: inline-block; width: 300px; height: 250px;" data-ad-client="ca-pub-2601749019656699" data-ad-slot="7807254572" data-adsbygoogle-status="done"><ins id="aswift_5_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><ins id="aswift_5_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_5" name="aswift_5" style="left:0;position:absolute;top:0;" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/saved_resource(4).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+</div>
+<div class="clear"></div>
+<div class="after-post-box">
+<h2>If You Appreciate What We Do Here On TecMint, You Should Consider:</h2>
+<ol>
+<li>Stay Connected to: <strong><a target="_blank" rel="nofollow" href="http://bit.ly/1TP6lcM" title="Follow TecMint on Twitter">Twitter</a></strong> | <strong><a target="_blank" rel="nofollow" href="http://bit.ly/1rDYrdj" title="Like Us on Facebook">Facebook</a></strong> | <strong><a target="_blank" rel="nofollow" href="http://bit.ly/24J6lna" title="Join Us On Google+">Google Plus</a></strong></li>
+<li>Subscribe to our email updates: <strong><a target="_blank" rel="nofollow" href="http://bit.ly/2dhBpWQ" title="Subscribe to TecMint Email Updates">Sign Up Now</a></strong></li>
+<li>Use our <strong><a target="_blank" rel="nofollow" title="Linux Hosting" href="http://partners.hostgator.com/c/352064/177309/3094?u=https://www.hostgator.com/promo/tecmint">Hosting referral link</a></strong> if you planning to <strong><a href="http://www.tecmint.com/how-to-start-a-blog/" target="_blank">start your blog</a></strong> <i>($3.82/month)</i>.
+</li>
+<li>Become a Supporter - <strong><a target="_blank" href="http://www.tecmint.com/donate-to-tecmint/">Make a contribution via PayPal</a></strong></li>
+<li>Support us by <strong><a href="http://www.tecmint.com/linux-books-in-pdf-format/" target="_blank">purchasing our premium books</a></strong> in PDF format.</li>
+<li>Support us by taking our <strong><a rel="nofollow" target="_blank" href="https://deals.tecmint.com/search?utf8=%E2%9C%93&amp;query=linux">online Linux courses</a></strong></li>
+</ol>
+<p style="text-align: center;"><strong style=" color:#fe3300;font-size:20px;">We are thankful for your never ending support.</strong></p>
+</div>
+<div class="clear"></div>
+<p class="post-tags"><span>Tags:</span> <a href="http://www.tecmint.com/tag/java-2/" rel="tag">java</a></p>		<div class="hr"></div>
+<div class="grid one-fourth">
+<a href="http://www.tecmint.com/red-hat-rhcsa-rhce-exam-certification-book/" target="_blank"><img alt="RedHat RHCE and RHCSA Certification Book" width="200" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/RedHat-RHCSA-RHCE-Exam-Study-Ebook.png" style="margin-right:10px;"></a>
+</div>
+<div class="grid one-fourth">
+<a href="http://www.tecmint.com/linux-foundation-lfcs-lfce-certification-exam-book/" target="_blank"><img alt="Linux Foundation LFCS and LFCE Certification Preparation Guide" width="200" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/Linux-Foundation-LFCS-LFCE-Certification-Ebook.png"></a>
+</div>
+<div class="grid one-fourth">
+<a href="https://deals.tecmint.com/sales/complete-linux-crash-course-includes-topics-on-red-hat-unix-kali-python-and-opensuse?utm_source=tecmint.com&amp;utm_medium=referral&amp;utm_campaign=complete-linux-crash-course-includes-topics-on-red-hat-unix-kali-python-and-opensu" rel="nofollow" target="_blank"><img width="200" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/Linux-System-Administrator-Course.png" style="margin-right:10px;"></a>
+</div>
+<div class="grid one-fourth last">
+<a href="https://deals.tecmint.com/sales/become-an-ethical-hacker-bonus-bundle?utm_source=tecmint.com&amp;utm_medium=referral&amp;utm_campaign=become-an-ethical-hacker-bonus-bundle_090216" rel="nofollow" target="_blank"><img width="200" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/Become-an-Ethical-Hacker.png"></a>
+</div>
+<div class="clear"></div>
+<div class="hr"></div>
+<ul class="post-nav group">
+<li class="next"><a href="http://www.tecmint.com/install-and-configure-apache-tomcat-8-in-linux/" rel="next"><i class="fa fa-chevron-right"></i><strong>Next story</strong> <span>How to Install and Configure Apache Tomcat 8.0.23 in Linux</span></a></li>
+<li class="previous"><a href="http://www.tecmint.com/install-lemp-linux-nginx-mysql-php-on-fedora-22/" rel="prev"><i class="fa fa-chevron-left"></i><strong>Previous story</strong> <span>Installing LEMP (Linux, Nginx, MariaDB and PHP) on Fedora 22</span></a></li>
+</ul>
+<h4 class="heading">
+<i class="fa fa-hand-o-right"></i>You may also like...</h4>
+<ul class="related-posts group">
+<li class="related post-hover">
+<article class="post-8866 post type-post status-publish format-standard has-post-thumbnail hentry category-open-source tag-phabricator">
+<div class="post-thumbnail">
+<a href="http://www.tecmint.com/install-phabricator-in-linux/" title="Phabricator – An Open Source Powerful “Project Management” Tool for Linux">
+<img src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/1x1.trans.gif" data-lazy-src="http://www.tecmint.com/wp-content/uploads/2014/09/Install-Phabricator-in-Linux-520x245.jpg" width="520" height="245" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="Install Phabricator in CentOS" srcset="http://www.tecmint.com/wp-content/uploads/2014/09/Install-Phabricator-in-Linux-520x245.jpg 520w, http://www.tecmint.com/wp-content/uploads/2014/09/Install-Phabricator-in-Linux-620x292.jpg 620w, http://www.tecmint.com/wp-content/uploads/2014/09/Install-Phabricator-in-Linux.jpg 720w" sizes="(max-width: 520px) 100vw, 520px"><noscript>&lt;img width="520" height="245" src="http://www.tecmint.com/wp-content/uploads/2014/09/Install-Phabricator-in-Linux-520x245.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="Install Phabricator in CentOS" srcset="http://www.tecmint.com/wp-content/uploads/2014/09/Install-Phabricator-in-Linux-520x245.jpg 520w, http://www.tecmint.com/wp-content/uploads/2014/09/Install-Phabricator-in-Linux-620x292.jpg 620w, http://www.tecmint.com/wp-content/uploads/2014/09/Install-Phabricator-in-Linux.jpg 720w" sizes="(max-width: 520px) 100vw, 520px" /&gt;</noscript>																								</a>
+<a class="post-comments" href="http://www.tecmint.com/install-phabricator-in-linux/#comments"><span><i class="fa fa-comments-o"></i>6</span></a>
+</div><!--/.post-thumbnail-->
+<div class="related-inner">
+<h4 class="post-title">
+<a href="http://www.tecmint.com/install-phabricator-in-linux/" rel="bookmark" title="Phabricator – An Open Source Powerful “Project Management” Tool for Linux">Phabricator – An Open Source Powerful “Project Management” Tool for Linux</a>
+</h4><!--/.post-title-->
+<div class="post-meta group">
+<p class="post-date">19 Sep, 2014</p>
+</div><!--/.post-meta-->
+</div><!--/.related-inner-->
+</article>
+</li><!--/.related-->
+<li class="related post-hover">
+<article class="post-23349 post type-post status-publish format-standard has-post-thumbnail hentry category-open-source tag-commandline-tools">
+<div class="post-thumbnail">
+<a href="http://www.tecmint.com/neofetch-shows-linux-system-information-with-logo/" title="Neofetch – Shows Linux System Information with Distribution Logo">
+<img src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/1x1.trans.gif" data-lazy-src="http://www.tecmint.com/wp-content/uploads/2016/11/Neofetch-Show-Linux-System-Information.png" width="720" height="340" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt=""><noscript>&lt;img width="720" height="340" src="http://www.tecmint.com/wp-content/uploads/2016/11/Neofetch-Show-Linux-System-Information.png" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="" /&gt;</noscript>																								</a>
+<a class="post-comments" href="http://www.tecmint.com/neofetch-shows-linux-system-information-with-logo/#respond"><span><i class="fa fa-comments-o"></i>0</span></a>
+</div><!--/.post-thumbnail-->
+<div class="related-inner">
+<h4 class="post-title">
+<a href="http://www.tecmint.com/neofetch-shows-linux-system-information-with-logo/" rel="bookmark" title="Neofetch – Shows Linux System Information with Distribution Logo">Neofetch – Shows Linux System Information with Distribution Logo</a>
+</h4><!--/.post-title-->
+<div class="post-meta group">
+<p class="post-date">12 Nov, 2016</p>
+</div><!--/.post-meta-->
+</div><!--/.related-inner-->
+</article>
+</li><!--/.related-->
+<li class="related post-hover">
+<article class="post-3033 post type-post status-publish format-standard has-post-thumbnail hentry category-open-source">
+<div class="post-thumbnail">
+<a href="http://www.tecmint.com/skype-4-2-released-install-on-ubuntu-debian-linux-mint-and-fedora/" title="Skype 4.2 Released – Install on Ubuntu/Debian/Linux Mint and Fedora">
+<img src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/1x1.trans.gif" data-lazy-src="http://www.tecmint.com/wp-content/uploads/2013/05/Skype-4-2.jpg" width="640" height="400" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="Install Skype in Linux" srcset="http://www.tecmint.com/wp-content/uploads/2013/05/Skype-4-2.jpg 640w, http://www.tecmint.com/wp-content/uploads/2013/05/Skype-4-2-620x387.jpg 620w" sizes="(max-width: 640px) 100vw, 640px"><noscript>&lt;img width="640" height="400" src="http://www.tecmint.com/wp-content/uploads/2013/05/Skype-4-2.jpg" class="attachment-thumb-medium size-thumb-medium wp-post-image" alt="Install Skype in Linux" srcset="http://www.tecmint.com/wp-content/uploads/2013/05/Skype-4-2.jpg 640w, http://www.tecmint.com/wp-content/uploads/2013/05/Skype-4-2-620x387.jpg 620w" sizes="(max-width: 640px) 100vw, 640px" /&gt;</noscript>																								</a>
+<a class="post-comments" href="http://www.tecmint.com/skype-4-2-released-install-on-ubuntu-debian-linux-mint-and-fedora/#comments"><span><i class="fa fa-comments-o"></i>13</span></a>
+</div><!--/.post-thumbnail-->
+<div class="related-inner">
+<h4 class="post-title">
+<a href="http://www.tecmint.com/skype-4-2-released-install-on-ubuntu-debian-linux-mint-and-fedora/" rel="bookmark" title="Skype 4.2 Released – Install on Ubuntu/Debian/Linux Mint and Fedora">Skype 4.2 Released – Install on Ubuntu/Debian/Linux Mint and Fedora</a>
+</h4><!--/.post-title-->
+<div class="post-meta group">
+<p class="post-date">22 May, 2013</p>
+</div><!--/.post-meta-->
+</div><!--/.related-inner-->
+</article>
+</li><!--/.related-->
+</ul><!--/.post-related-->
+<section id="comments" class="themeform">
+<h3 class="heading">35 Responses</h3>
+<ul class="comment-tabs group">
+<li class="active"><a href="http://www.tecmint.com/install-java-jdk-jre-in-linux/#commentlist-container"><i class="fa fa-comments-o"></i>Comments<span>6</span></a></li>
+<li><a href="http://www.tecmint.com/install-java-jdk-jre-in-linux/#pinglist-container"><i class="fa fa-share"></i>Pingbacks<span>0</span></a></li>
+</ul>
+<div id="commentlist-container" class="comment-tab">
+<ol class="commentlist">
+<li class="comment even thread-even depth-1" id="comment-883258">
+<div id="div-comment-883258" class="comment-body">
+<div class="comment-author vcard">
+<img src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/1x1.trans.gif" data-lazy-src="http://2.gravatar.com/avatar/8de174b4403eac03f6631b3ae820fff6?s=96&amp;d=blank&amp;r=g" alt="" srcset="http://2.gravatar.com/avatar/8de174b4403eac03f6631b3ae820fff6?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96"><noscript>&lt;img alt='' src='http://2.gravatar.com/avatar/8de174b4403eac03f6631b3ae820fff6?s=96&amp;#038;d=blank&amp;#038;r=g' srcset='http://2.gravatar.com/avatar/8de174b4403eac03f6631b3ae820fff6?s=192&amp;amp;d=blank&amp;amp;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /&gt;</noscript>			<cite class="fn">Sk Haider</cite> <span class="says">says:</span>		</div>
+<div class="comment-meta commentmetadata"><a href="http://www.tecmint.com/install-java-jdk-jre-in-linux/comment-page-3/#comment-883258">
+April 12, 2017 at 5:11 pm</a>		</div>
+<p>Its still showing previous version</p>
+<div class="reply"><a rel="nofollow" class="comment-reply-link" href="http://www.tecmint.com/install-java-jdk-jre-in-linux/?replytocom=883258#respond" onclick="return addComment.moveForm( &quot;div-comment-883258&quot;, &quot;883258&quot;, &quot;respond&quot;, &quot;14218&quot; )" aria-label="Reply to Sk Haider">Reply</a></div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-868868">
+<div id="div-comment-868868" class="comment-body">
+<div class="comment-author vcard">
+<img src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/1x1.trans.gif" data-lazy-src="http://2.gravatar.com/avatar/83f95612f3f01365c54acf8773d95242?s=96&amp;d=blank&amp;r=g" alt="" srcset="http://2.gravatar.com/avatar/83f95612f3f01365c54acf8773d95242?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96"><noscript>&lt;img alt='' src='http://2.gravatar.com/avatar/83f95612f3f01365c54acf8773d95242?s=96&amp;#038;d=blank&amp;#038;r=g' srcset='http://2.gravatar.com/avatar/83f95612f3f01365c54acf8773d95242?s=192&amp;amp;d=blank&amp;amp;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /&gt;</noscript>			<cite class="fn">Amit</cite> <span class="says">says:</span>		</div>
+<div class="comment-meta commentmetadata"><a href="http://www.tecmint.com/install-java-jdk-jre-in-linux/comment-page-3/#comment-868868">
+February 18, 2017 at 11:29 am</a>		</div>
+<p>Hi Guys, Here I am writing some simple steps to install JAVA JDK AND JRE on Linux systems.</p>
+<p>First download <strong>jdk-8u112-linux-x64.tar.gz</strong> and <strong>jre-8u112-linux-x64.tar.gz</strong></p>
+<p><strong>Note:</strong> Here I am sharing my Java installation instructions, which I have done in my Linux system using root user account or sudo privileges will also work.</p>
+<p><strong>1.</strong> Switch to root user.</p>
+<pre>amit@Deepin:~$sudo -i
+[sudo] password for amit: *******  
+{after this you will reach into root privileged}
+</pre>
+<p><strong>2.</strong> Create one folder where you would like to copy your both JDK and JRE software, In my case I place my software in <strong>/usr/local/java</strong> directory.</p>
+<p>So after downloading go into downloading directory folder mostly it will be: <strong>/home/amit/Downloads</strong> – in your case username will be yours.</p>
+<pre>root@Deepin:~# cd /home/amit/Downloads
+root@Deepin:~# ls    
+jre-8u112-linux-x64.tar.gz	jdk-8u112-linux-x64.tar.gz
+</pre>
+<p><strong>3.</strong> Now copy both jdk and jre into your desire system location:</p>
+<pre>root@Deepin:~# mkdir /usr/local/java
+root@Deepin:~#cp jre-8u112-linux-x64.tar.gz /usr/local/java
+root@Deepin:~#cp jdk-8u112-linux-x64.tar.gz /usr/local/java
+</pre>
+<p><strong>4.</strong> Extract the content of both files.</p>
+<pre>root@Deepin:~#cd /usr/local/java
+root@Deepin:~#tar zxvf jre-8u112-linux-x64.tar.gz
+root@Deepin:~#tar zxvf jdk-8u112-linux-x64.tar.gz
+</pre>
+<p>Verify the contents</p>
+<pre>root@Deepin:~#ls
+jdk1.8.0_112 	jdk-8u112-linux-x64.tar.gz
+jre1.8.0_112 	jre-8u112-linux-x64.tar.gz
+</pre>
+<p><strong>5.</strong> Now set tha Java environment variables.<br>
+<rpe><br>
+root@Deepin:~# gedit /etc/profile</rpe></p>
+<p>At the bottom you just copy and paste below lines.</p>
+<pre>unset _JAVA_OPTIONS
+JAVA_HOME=/usr/local/java/jdk1.8.0_112
+JRE_HOME=/usr/local/java/jre1.8.0_112
+PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
+export JAVA_HOME
+export JRE_HOME
+export PATH
+</pre>
+<pre>Else, if only JDK installation Require
+</pre>
+<pre>unset _JAVA_OPTIONS
+JAVA_HOME=/usr/local/java/jdk1.8.0_112
+JRE_HOME=$JAVA_HOME/jre
+PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
+export JAVA_HOME
+export JRE_HOME
+export PATH
+</pre>
+<p>Now just save and close page:</p>
+<p><strong>6.</strong> After this perform some commands in terminal.</p>
+<pre>root@Deepin:~# update-alternatives --install "/usr/bin/java" "java" /usr/local/java/jre1.8.0_112/bin/java" 1
+root@Deepin:~# update-alternatives --install "/usr/bin/javac" "javac" /usr/local/java/jdk1.8.0_112/bin/javac" 1
+root@Deepin:~# update-alternatives --install "/usr/bin/javaws" "javaws" /usr/local/java/jre1.8.0_112/bin/javaws" 1
+root@Deepin:~# update-alternatives --set java /usr/local/java/jre1.8.0_112/bin/java
+root@Deepin:~# update-alternatives --set javac /usr/local/java/jdk1.8.0_112/bin/javac
+root@Deepin:~# update-alternatives --set javaws /usr/local/java/jre1.8.0_112/bin/javaws
+root@Deepin:~# . /etc/profile
+root@Deepin:~#
+</pre>
+<p><strong>7.</strong> Finally, you can check java version, JAVA HOME, and JRE Home. PATH.</p>
+<pre>root@Deepin:~# echo $HOME
+/root
+</pre>
+<p><code><br>
+root@Deepin:~# echo $PATH<br>
+/u01/app/oracle/product/11.2.0/xe/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/java/jdk1.8.0_112/bin:/usr/local/java/jre1.8.0_112/bin<br>
+</code></p>
+<pre>root@Deepin:~# echo $JAVA_HOME
+/usr/local/java/jdk1.8.0_112
+root@Deepin:~# echo $JRE_HOME
+/usr/local/java/jre1.8.0_112
+root@Deepin:~# java -version
+java version "1.8.0_112"
+Java(TM) SE Runtime Environment (build 1.8.0_112-b15)
+Java HotSpot(TM) 64-Bit Server VM (build 25.112-b15, mixed mode)
+</pre>
+<p>Thanks..</p>
+<div class="reply"><a rel="nofollow" class="comment-reply-link" href="http://www.tecmint.com/install-java-jdk-jre-in-linux/?replytocom=868868#respond" onclick="return addComment.moveForm( &quot;div-comment-868868&quot;, &quot;868868&quot;, &quot;respond&quot;, &quot;14218&quot; )" aria-label="Reply to Amit">Reply</a></div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment even thread-even depth-1 parent" id="comment-842119">
+<div id="div-comment-842119" class="comment-body">
+<div class="comment-author vcard">
+<img src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/1x1.trans.gif" data-lazy-src="http://0.gravatar.com/avatar/039c602d33bace8a74078630b0a0028a?s=96&amp;d=blank&amp;r=g" alt="" srcset="http://0.gravatar.com/avatar/039c602d33bace8a74078630b0a0028a?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96"><noscript>&lt;img alt='' src='http://0.gravatar.com/avatar/039c602d33bace8a74078630b0a0028a?s=96&amp;#038;d=blank&amp;#038;r=g' srcset='http://0.gravatar.com/avatar/039c602d33bace8a74078630b0a0028a?s=192&amp;amp;d=blank&amp;amp;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /&gt;</noscript>			<cite class="fn">Arpit Semwal</cite> <span class="says">says:</span>		</div>
+<div class="comment-meta commentmetadata"><a href="http://www.tecmint.com/install-java-jdk-jre-in-linux/comment-page-3/#comment-842119">
+November 27, 2016 at 11:10 pm</a>		</div>
+<p>‘java -version’ command still shows the previous version.</p>
+<div class="reply"><a rel="nofollow" class="comment-reply-link" href="http://www.tecmint.com/install-java-jdk-jre-in-linux/?replytocom=842119#respond" onclick="return addComment.moveForm( &quot;div-comment-842119&quot;, &quot;842119&quot;, &quot;respond&quot;, &quot;14218&quot; )" aria-label="Reply to Arpit Semwal">Reply</a></div>
+</div>
+<ul class="children">
+<li class="comment byuser comment-author-admin odd alt depth-2" id="comment-842261">
+<div id="div-comment-842261" class="comment-body">
+<div class="comment-author vcard">
+<img src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/1x1.trans.gif" data-lazy-src="http://1.gravatar.com/avatar/7badddbc53297b2e8ed7011cf45df0c0?s=96&amp;d=blank&amp;r=g" alt="" srcset="http://1.gravatar.com/avatar/7badddbc53297b2e8ed7011cf45df0c0?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96"><noscript>&lt;img alt='' src='http://1.gravatar.com/avatar/7badddbc53297b2e8ed7011cf45df0c0?s=96&amp;#038;d=blank&amp;#038;r=g' srcset='http://1.gravatar.com/avatar/7badddbc53297b2e8ed7011cf45df0c0?s=192&amp;amp;d=blank&amp;amp;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /&gt;</noscript>			<cite class="fn">Ravi Saive</cite> <span class="says">says:</span>		</div>
+<div class="comment-meta commentmetadata"><a href="http://www.tecmint.com/install-java-jdk-jre-in-linux/comment-page-3/#comment-842261">
+November 28, 2016 at 10:52 am</a>		</div>
+<p>@Arpit,</p>
+<p>Seems your Java installation was not successful, try to follow the instructions again carefully..</p>
+<div class="reply"><a rel="nofollow" class="comment-reply-link" href="http://www.tecmint.com/install-java-jdk-jre-in-linux/?replytocom=842261#respond" onclick="return addComment.moveForm( &quot;div-comment-842261&quot;, &quot;842261&quot;, &quot;respond&quot;, &quot;14218&quot; )" aria-label="Reply to Ravi Saive">Reply</a></div>
+</div>
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+<li class="comment even thread-odd thread-alt depth-1" id="comment-840165">
+<div id="div-comment-840165" class="comment-body">
+<div class="comment-author vcard">
+<img src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/1x1.trans.gif" data-lazy-src="http://1.gravatar.com/avatar/10345a22e885e8200863a4b75a19c75e?s=96&amp;d=blank&amp;r=g" alt="" srcset="http://1.gravatar.com/avatar/10345a22e885e8200863a4b75a19c75e?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96"><noscript>&lt;img alt='' src='http://1.gravatar.com/avatar/10345a22e885e8200863a4b75a19c75e?s=96&amp;#038;d=blank&amp;#038;r=g' srcset='http://1.gravatar.com/avatar/10345a22e885e8200863a4b75a19c75e?s=192&amp;amp;d=blank&amp;amp;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /&gt;</noscript>			<cite class="fn">lothmas</cite> <span class="says">says:</span>		</div>
+<div class="comment-meta commentmetadata"><a href="http://www.tecmint.com/install-java-jdk-jre-in-linux/comment-page-3/#comment-840165">
+November 21, 2016 at 11:18 pm</a>		</div>
+<p>really cool, thanks a lot. this saved me a lot of time</p>
+<div class="reply"><a rel="nofollow" class="comment-reply-link" href="http://www.tecmint.com/install-java-jdk-jre-in-linux/?replytocom=840165#respond" onclick="return addComment.moveForm( &quot;div-comment-840165&quot;, &quot;840165&quot;, &quot;respond&quot;, &quot;14218&quot; )" aria-label="Reply to lothmas">Reply</a></div>
+</div>
+</li><!-- #comment-## -->
+<li class="comment odd alt thread-even depth-1" id="comment-819340">
+<div id="div-comment-819340" class="comment-body">
+<div class="comment-author vcard">
+<img src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/1x1.trans.gif" data-lazy-src="http://2.gravatar.com/avatar/2393ec328807ca8ffe4c0c6503f01b0b?s=96&amp;d=blank&amp;r=g" alt="" srcset="http://2.gravatar.com/avatar/2393ec328807ca8ffe4c0c6503f01b0b?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96"><noscript>&lt;img alt='' src='http://2.gravatar.com/avatar/2393ec328807ca8ffe4c0c6503f01b0b?s=96&amp;#038;d=blank&amp;#038;r=g' srcset='http://2.gravatar.com/avatar/2393ec328807ca8ffe4c0c6503f01b0b?s=192&amp;amp;d=blank&amp;amp;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /&gt;</noscript>			<cite class="fn">Cristian</cite> <span class="says">says:</span>		</div>
+<div class="comment-meta commentmetadata"><a href="http://www.tecmint.com/install-java-jdk-jre-in-linux/comment-page-3/#comment-819340">
+September 19, 2016 at 11:18 pm</a>		</div>
+<p>This is great, I always come back to this</p>
+<div class="reply"><a rel="nofollow" class="comment-reply-link" href="http://www.tecmint.com/install-java-jdk-jre-in-linux/?replytocom=819340#respond" onclick="return addComment.moveForm( &quot;div-comment-819340&quot;, &quot;819340&quot;, &quot;respond&quot;, &quot;14218&quot; )" aria-label="Reply to Cristian">Reply</a></div>
+</div>
+</li><!-- #comment-## -->
+</ol><!--/.commentlist-->
+<nav class="comments-nav group">
+<div class="nav-previous"><a href="http://www.tecmint.com/install-java-jdk-jre-in-linux/comment-page-2/#comments">« Older Comments</a></div>
+<div class="nav-next"></div>
+</nav><!--/.comments-nav-->
+</div>	
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Got something to say? Join the discussion. <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://www.tecmint.com/install-java-jdk-jre-in-linux/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="http://www.tecmint.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required="true" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required="true" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200"></p>
+<!-- Subscribe to Comments Reloaded version 160915 --><!-- BEGIN: subscribe to comments reloaded --><p class="comment-form-subscriptions"><label for="subscribe-reloaded"><input style="width:30px" type="checkbox" name="subscribe-reloaded" id="subscribe-reloaded" value="yes"> Notify me of followup comments via e-mail. You can also <a href="http://www.tecmint.com/comment-subscriptions/?srp=14218&amp;srk=36825693b60cf9e86d1b1a5fd485bc79&amp;sra=s&amp;srsrc=f">subscribe</a> without commenting.</label></p><!-- END: subscribe to comments reloaded --><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="14218" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="450ba57ad5"></p><p style="display: none;"></p>			<input type="hidden" id="ak_js" name="ak_js" value="1492561481336"></form>
+</div><!-- #respond -->
+</section><!--/#comments-->		
+</div><!--/.pad-->
+</section><!--/.content-->
+<div class="sidebar s1">
+<a class="sidebar-toggle" title="Expand Sidebar"><i class="fa icon-sidebar-toggle"></i></a>
+<div class="sidebar-content">
+<div class="sidebar-top group">
+<span style="color:#002873; font-weight:600; font-size:20px;">I <i class="fa fa-heart col-love-l"></i> TecMint :</span>
+<ul class="social-links"><li><a rel="nofollow" class="social-tooltip" title="twitter" href="http://twitter.com/tecmint" target="Array"><i class="fa fa-twitter" style="color: #33ccff;"></i></a></li><li><a rel="nofollow" class="social-tooltip" title="facebook" href="https://www.facebook.com/TecMint" target="Array"><i class="fa fa-facebook" style="color: #3b5998;"></i></a></li><li><a rel="nofollow" class="social-tooltip" title="Google+" href="https://plus.google.com/101049688653487009744" target="Array"><i class="fa fa-google-plus" style="color: #db4a39;"></i></a></li><li><a rel="nofollow" class="social-tooltip" title="Feedly" href="http://feedly.com/i/subscription/feed/http://www.tecmint.com/feed/" target="Array"><i class="fa fa-rss" style="color: #87c040;"></i></a></li><li><a rel="nofollow" class="social-tooltip" title="Youtube" href="https://www.youtube.com/channel/UCkiRkzdLvoGBtW_YArytJlQ" target="Array"><i class="fa fa fa-youtube-square" style="color: #c4302b;"></i></a></li></ul>			</div>
+<div id="text-23" class="widget widget_text">			<div class="textwidget">  <div style="background:#db4455;" class="message">
+<center><a href="http://www.tecmint.com/free-online-linux-learning-guide-for-beginners/" target="_blank"><span style="font-weight:bold;font-size:18px;"><i class="fa fa-linux"></i> BEGINNER'S GUIDE FOR LINUX <i class="fa fa-linux"></i></span> <span style="font-weight:bold;font-size:16px;">Start learning Linux in minutes</span> <i class="fa fa-arrow-right"></i></a>
+</center>
+</div></div>
+</div><div id="text-21" class="widget widget_text">			<div class="textwidget"><center>
+<!-- Sidebar Top Ad 300x250 -->
+<ins class="adsbygoogle" style="display: inline-block; width: 300px; height: 250px;" data-ad-client="ca-pub-2601749019656699" data-ad-slot="7270921771" data-adsbygoogle-status="done"><ins id="aswift_6_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><ins id="aswift_6_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_6" name="aswift_6" style="left:0;position:absolute;top:0;" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/saved_resource(5).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center></div>
+</div><div id="text-25" class="widget widget_text">			<div class="textwidget"><div class="message"><center><a href="http://www.tecmint.com/vi-editor-usage/" target="_blank"><span style="font-weight:bold;font-size:17px;"><i class="fa fa-linux"></i> Vi/Vim Editor BEGINNER'S GUIDE <i class="fa fa-linux"></i></span> <span style="font-weight:bold;font-size:16px;">Learn vi/vim as a Full Text Editor</span> <i class="fa fa-file-text"></i>
+</a></center></div></div>
+</div><div id="text-24" class="widget widget_text">			<div class="textwidget"><span style="float:right; text-decoration:underline"><a onclick="ga(&#39;send&#39;,&#39;event&#39;,&#39;Advertise Here&#39;,&#39;www.tecmint.com&#39;)" target="_blank" href="http://www.tecmint.com/advertise/">Advertise Here</a></span>
+<script type="text/javascript"><!--
+e9 = new Object();
+e9.size = "300x250";
+//--></script>
+<script type="text/javascript" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/tags.js.download"></script><div align="center"><iframe src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/saved_resource(6).html" id="tfasyncframe_7" marginwidth="0" align="center" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" allowtransparency="true" width="300" height="250"> </iframe></div>
+</div>
+</div><div id="text-26" class="widget widget_text">			<div class="textwidget"><div class="message" style="background-color: #ab0619;"><center><span style="font-weight:bold;font-size:17px;"><i class="fa fa-linux"></i> Linux Foundation Certification <i class="fa fa-linux"></i></span> <span style="font-weight:bold;font-size:16px;">Exam Study Guide to <a style="text-decoration:underline;" target="_blank" href="http://www.tecmint.com/linux-foundation-lfcs-lfce-certification-exam-book/">LFCS and LFCE</a></span></center></div></div>
+</div><div id="text-3" class="widget widget_text">			<div class="textwidget"><div class="ads-sidebar-desktop">
+<center>
+<!-- SideBar2 Ads 300x600 -->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-2601749019656699" data-ad-slot="9098920170" data-adsbygoogle-status="done"><ins id="aswift_7_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><ins id="aswift_7_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><iframe width="300" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_7" name="aswift_7" style="left:0;position:absolute;top:0;" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/saved_resource(7).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center>
+</div></div>
+</div><div id="alxtabs-2" class="widget widget_alx_tabs">
+<ul class="alx-tabs-nav group tab-count-2"><li class="alx-tab tab-popular active"><a href="http://www.tecmint.com/install-java-jdk-jre-in-linux/#tab-popular" title="Popular Posts"><i class="fa fa-star"></i><span>Popular Posts</span></a></li><li class="alx-tab tab-comments"><a href="http://www.tecmint.com/install-java-jdk-jre-in-linux/#tab-comments" title="Recent Comments"><i class="fa fa-comments-o"></i><span>Recent Comments</span></a></li></ul>
+<div class="alx-tabs-container">
+<ul id="tab-popular" class="alx-tab group " style="display: block;">
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-title"><a href="http://www.tecmint.com/how-to-add-linux-host-to-nagios-monitoring-server/" rel="bookmark" title="How to Add Linux Host to Nagios Monitoring Server Using NRPE Plugin">How to Add Linux Host to Nagios Monitoring Server Using NRPE Plugin</a></p>
+</div>
+</li>
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-title"><a href="http://www.tecmint.com/install-nagios-in-linux/" rel="bookmark" title="Nagios 4.2.0 Released – Install on RHEL/CentOS 7.x/6.x/5.x and Fedora 24-19">Nagios 4.2.0 Released – Install on RHEL/CentOS 7.x/6.x/5.x and Fedora 24-19</a></p>
+</div>
+</li>
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-title"><a href="http://www.tecmint.com/install-cacti-network-monitoring-on-rhel-centos-6-3-5-8-and-fedora-17-12/" rel="bookmark" title="Install Cacti (Network Monitoring) on RHEL/CentOS 7.x/6.x/5.x and Fedora 24-12">Install Cacti (Network Monitoring) on RHEL/CentOS 7.x/6.x/5.x and Fedora 24-12</a></p>
+</div>
+</li>
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-title"><a href="http://www.tecmint.com/install-google-chrome-on-redhat-centos-fedora-linux/" rel="bookmark" title="Google Chrome 56 Released – Install on RHEL/CentOS 7/6 and Fedora 25-20">Google Chrome 56 Released – Install on RHEL/CentOS 7/6 and Fedora 25-20</a></p>
+</div>
+</li>
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-title"><a href="http://www.tecmint.com/install-ubuntu-16-04-alongside-with-windows-10-or-8-in-dual-boot/" rel="bookmark" title="How to Install Ubuntu 16.10/16.04 Alongside With Windows 10 or 8 in Dual-Boot">How to Install Ubuntu 16.10/16.04 Alongside With Windows 10 or 8 in Dual-Boot</a></p>
+</div>
+</li>
+<li>
+<div class="tab-item-inner group">
+<p class="tab-item-title"><a href="http://www.tecmint.com/red-hat-rhcsa-rhce-exam-certification-book/" rel="bookmark" title="Ebook: Introducing the RHCSA and RHCE Exam Preparation Guide">Ebook: Introducing the RHCSA and RHCE Exam Preparation Guide</a></p>
+</div>
+</li>
+</ul><!--/.alx-tab-->
+<ul id="tab-comments" class="alx-tab group avatars-enabled" style="display: none;">
+<li>
+<div class="tab-item-avatar">
+<a href="http://www.tecmint.com/cloud-commander-browser-based-file-manager-for-linux/comment-page-1/#comment-884265">
+<img src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/4e444ab611c7b8c7bcb76e58d2e82ae0" alt="" srcset="http://1.gravatar.com/avatar/4e444ab611c7b8c7bcb76e58d2e82ae0?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96" data-lazy-loaded="true" style="display: block;"><noscript>&lt;img alt='' src='http://1.gravatar.com/avatar/4e444ab611c7b8c7bcb76e58d2e82ae0?s=96&amp;#038;d=blank&amp;#038;r=g' srcset='http://1.gravatar.com/avatar/4e444ab611c7b8c7bcb76e58d2e82ae0?s=192&amp;amp;d=blank&amp;amp;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /&gt;</noscript>							</a>
+</div>
+<div class="tab-item-inner group">
+<div class="tab-item-name">Aaron Kili says:</div>
+<div class="tab-item-comment"><a href="http://www.tecmint.com/cloud-commander-browser-based-file-manager-for-linux/comment-page-1/#comment-884265">@Nick     Good concern, security should always come...</a></div>
+</div>
+</li>
+<li>
+<div class="tab-item-avatar">
+<a href="http://www.tecmint.com/cloud-commander-browser-based-file-manager-for-linux/comment-page-1/#comment-884262">
+<img src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/4e444ab611c7b8c7bcb76e58d2e82ae0" alt="" srcset="http://1.gravatar.com/avatar/4e444ab611c7b8c7bcb76e58d2e82ae0?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96" data-lazy-loaded="true" style="display: block;"><noscript>&lt;img alt='' src='http://1.gravatar.com/avatar/4e444ab611c7b8c7bcb76e58d2e82ae0?s=96&amp;#038;d=blank&amp;#038;r=g' srcset='http://1.gravatar.com/avatar/4e444ab611c7b8c7bcb76e58d2e82ae0?s=192&amp;amp;d=blank&amp;amp;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /&gt;</noscript>							</a>
+</div>
+<div class="tab-item-inner group">
+<div class="tab-item-name">Aaron Kili says:</div>
+<div class="tab-item-comment"><a href="http://www.tecmint.com/cloud-commander-browser-based-file-manager-for-linux/comment-page-1/#comment-884262">@Jalal    Welcome and thanks for the feedback.</a></div>
+</div>
+</li>
+<li>
+<div class="tab-item-avatar">
+<a href="http://www.tecmint.com/bd-quickly-go-back-to-a-linux-parent-directory/comment-page-1/#comment-884258">
+<img src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/4e444ab611c7b8c7bcb76e58d2e82ae0" alt="" srcset="http://1.gravatar.com/avatar/4e444ab611c7b8c7bcb76e58d2e82ae0?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96" data-lazy-loaded="true" style="display: block;"><noscript>&lt;img alt='' src='http://1.gravatar.com/avatar/4e444ab611c7b8c7bcb76e58d2e82ae0?s=96&amp;#038;d=blank&amp;#038;r=g' srcset='http://1.gravatar.com/avatar/4e444ab611c7b8c7bcb76e58d2e82ae0?s=192&amp;amp;d=blank&amp;amp;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /&gt;</noscript>							</a>
+</div>
+<div class="tab-item-inner group">
+<div class="tab-item-name">Aaron Kili says:</div>
+<div class="tab-item-comment"><a href="http://www.tecmint.com/bd-quickly-go-back-to-a-linux-parent-directory/comment-page-1/#comment-884258">We'll check this out, thanks for writing back.</a></div>
+</div>
+</li>
+<li>
+<div class="tab-item-avatar">
+<a href="http://www.tecmint.com/best-calendar-apps-linux-desktop/comment-page-1/#comment-884257">
+<img src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/4e444ab611c7b8c7bcb76e58d2e82ae0" alt="" srcset="http://1.gravatar.com/avatar/4e444ab611c7b8c7bcb76e58d2e82ae0?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96" data-lazy-loaded="true" style="display: block;"><noscript>&lt;img alt='' src='http://1.gravatar.com/avatar/4e444ab611c7b8c7bcb76e58d2e82ae0?s=96&amp;#038;d=blank&amp;#038;r=g' srcset='http://1.gravatar.com/avatar/4e444ab611c7b8c7bcb76e58d2e82ae0?s=192&amp;amp;d=blank&amp;amp;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /&gt;</noscript>							</a>
+</div>
+<div class="tab-item-inner group">
+<div class="tab-item-name">Aaron Kili says:</div>
+<div class="tab-item-comment"><a href="http://www.tecmint.com/best-calendar-apps-linux-desktop/comment-page-1/#comment-884257">@Marco    Many thanks for sharing this with us,...</a></div>
+</div>
+</li>
+<li>
+<div class="tab-item-avatar">
+<a href="http://www.tecmint.com/micro-linuxtext-editor-with-syntax-highlighting/comment-page-1/#comment-884256">
+<img src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/4e444ab611c7b8c7bcb76e58d2e82ae0" alt="" srcset="http://1.gravatar.com/avatar/4e444ab611c7b8c7bcb76e58d2e82ae0?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96" data-lazy-loaded="true" style="display: block;"><noscript>&lt;img alt='' src='http://1.gravatar.com/avatar/4e444ab611c7b8c7bcb76e58d2e82ae0?s=96&amp;#038;d=blank&amp;#038;r=g' srcset='http://1.gravatar.com/avatar/4e444ab611c7b8c7bcb76e58d2e82ae0?s=192&amp;amp;d=blank&amp;amp;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /&gt;</noscript>							</a>
+</div>
+<div class="tab-item-inner group">
+<div class="tab-item-name">Aaron Kili says:</div>
+<div class="tab-item-comment"><a href="http://www.tecmint.com/micro-linuxtext-editor-with-syntax-highlighting/comment-page-1/#comment-884256">@Jalal    Sure, thanks for the feedback.</a></div>
+</div>
+</li>
+<li>
+<div class="tab-item-avatar">
+<a href="http://www.tecmint.com/bd-quickly-go-back-to-a-linux-parent-directory/comment-page-1/#comment-884255">
+<img src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/4e444ab611c7b8c7bcb76e58d2e82ae0" alt="" srcset="http://1.gravatar.com/avatar/4e444ab611c7b8c7bcb76e58d2e82ae0?s=192&amp;d=blank&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96" data-lazy-loaded="true" style="display: block;"><noscript>&lt;img alt='' src='http://1.gravatar.com/avatar/4e444ab611c7b8c7bcb76e58d2e82ae0?s=96&amp;#038;d=blank&amp;#038;r=g' srcset='http://1.gravatar.com/avatar/4e444ab611c7b8c7bcb76e58d2e82ae0?s=192&amp;amp;d=blank&amp;amp;r=g 2x' class='avatar avatar-96 photo' height='96' width='96' /&gt;</noscript>							</a>
+</div>
+<div class="tab-item-inner group">
+<div class="tab-item-name">Aaron Kili says:</div>
+<div class="tab-item-comment"><a href="http://www.tecmint.com/bd-quickly-go-back-to-a-linux-parent-directory/comment-page-1/#comment-884255">@Jesse    That is the command given on the...</a></div>
+</div>
+</li>
+</ul><!--/.alx-tab-->
+</div>
+</div>
+<div id="text-27" class="widget widget_text">			<div class="textwidget"><center>
+<a target="_blank" href="http://www.tecmint.com/red-hat-rhcsa-rhce-exam-certification-book/"><img alt="RedHat RHCSA and RHCE Certification Exam Study Ebook" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/RedHat-RHCSA-RHCE-Exam.png"></a>
+</center></div>
+</div><div id="text-28" class="widget widget_text">			<div class="textwidget"><div class="message" style="background-color: #0d7c39;"><center><p style="font-weight:bold;font-size:18px;">Linux System Administrator Bundle with 7-Courses (96% off)</p> 
+<p style="background-color: #03441d;margin:6px 35px;padding:10px;"><a rel="nofollow" target="_blank" href="https://deals.tecmint.com/sales/complete-linux-crash-course-includes-topics-on-red-hat-unix-kali-python-and-opensuse?utm_source=tecmint.com&amp;utm_medium=referral&amp;utm_campaign=complete-linux-crash-course-includes-topics-on-red-hat-unix-kali-python-and-opensu&amp;_ga=1.95416024.550662903.1451974395" style="font-size:25px;font-weight:bold;">Add to Cart - $69</a></p>
+<p style="font-size:14px;font-weight:bold;"><i aria-hidden="true" class="fa fa-clock-o"></i> Ending In: 3 days
+</p></center></div>
+<div style="background-color: #f4403b;" class="message"><center><p style="font-weight:bold;font-size:18px;">Computer Hacker Professional Certification Course (96% Off)</p> 
+<p style="background-color: #9d1815;margin:6px 35px;padding:10px;"><a style="font-size:25px;font-weight:bold;" href="https://deals.tecmint.com/sales/computer-hacker-professional-certification-package-2" target="_blank" rel="nofollow">Add to Cart - $59</a></p>
+<p style="font-size:14px;font-weight:bold;"><i class="fa fa-clock-o" aria-hidden="true"></i> Ending In: 4 days
+</p></center></div></div>
+</div><div id="text-4" class="widget widget_text"><h3>Download Free Linux eBooks</h3>			<div class="textwidget"><ol>
+<li><a onclick="ga(&#39;send&#39;,&#39;event&#39;,&#39;Linux Command Line Cheat Sheet&#39;,&#39;tecmint.tradepub.com&#39;)" href="http://tecmint.tradepub.com/free/w_makb09/prgm.cgi" rel="nofollow" target="_blank">Complete Linux Command Line Cheat Sheet</a></li>
+<li><a onclick="ga(&#39;send&#39;,&#39;event&#39;,&#39;The GNU/Linux Advanced Administration Guide&#39;,&#39;tecmint.tradepub.com&#39;)" href="http://tecmint.tradepub.com/free/w_free01/prgm.cgi" rel="nofollow" target="_blank">The GNU/Linux Advanced Administration Guide</a></li>
+<li><a onclick="ga(&#39;send&#39;,&#39;event&#39;,&#39;Securing &amp; Optimizing Linux&#39;,&#39;tecmint.tradepub.com&#39;)" href="http://tecmint.tradepub.com/free/w_opeb01/prgm.cgi" rel="nofollow" target="_blank">Securing &amp; Optimizing Linux Servers</a></li>
+<li><a onclick="ga(&#39;send&#39;,&#39;event&#39;,&#39;Linux Patch Management&#39;,&#39;tecmint.tradepub.com&#39;)" href="http://tecmint.tradepub.com/free/w_infk12/prgm.cgi" rel="nofollow" target="_blank">Linux Patch Management: Keeping Linux Up To Date</a></li>
+<li><a onclick="ga(&#39;send&#39;,&#39;event&#39;,&#39;Introduction to Linux - A Hands on Guide&#39;,&#39;tecmint.tradepub.com&#39;)" href="http://tecmint.tradepub.com/free/w_mach01/prgm.cgi" rel="nofollow" target="_blank">Introduction to Linux – A Hands on Guide</a></li>
+<li><a onclick="ga(&#39;send&#39;,&#39;event&#39;,&#39;Understanding the Linux - Virtual Memory Manager&#39;,&#39;tecmint.tradepub.com&#39;)" href="http://tecmint.tradepub.com/free/w_infk10/prgm.cgi" rel="nofollow" target="_blank">Understanding the Linux® Virtual Memory Manager</a></li>
+<li><a onclick="ga(&#39;send&#39;,&#39;event&#39;,&#39;Getting Started with Ubuntu 16.04&#39;,&#39;tecmint.tradepub.com&#39;)" href="http://tecmint.tradepub.com/free/w_ubun08/prgm.cgi" rel="nofollow" target="_blank">Getting Started with Ubuntu 16.04</a></li>
+<li><a onclick="ga(&#39;send&#39;,&#39;event&#39;,&#39;A Newbie’s Getting Started Guide&#39;,&#39;tecmint.tradepub.com&#39;)" href="http://tecmint.tradepub.com/free/w_make07/prgm.cgi" rel="nofollow" target="_blank">A Newbie’s Getting Started Guide to Linux</a></li>
+<li><a onclick="ga(&#39;send&#39;,&#39;event&#39;,&#39;Linux from Scratch&#39;,&#39;tecmint.tradepub.com&#39;)" href="http://tecmint.tradepub.com/free/w_linu01/prgm.cgi" rel="nofollow" target="_blank">Linux from Scratch – Create Your Own Linux OS</a></li>
+<li><a onclick="ga(&#39;send&#39;,&#39;event&#39;,&#39;Linux Shell Scripting Cookbook&#39;,&#39;tecmint.tradepub.com&#39;)" href="http://tecmint.tradepub.com/free/w_pack42/prgm.cgi" rel="nofollow" target="_blank">Linux Shell Scripting Cookbook, Second Edition</a></li>
+<li><a onclick="ga(&#39;send&#39;,&#39;event&#39;,&#39;Securing and Optimizing Linux&#39;,&#39;tecmint.tradepub.com&#39;)" href="http://tecmint.tradepub.com/free/w_opeb01/prgm.cgi" rel="nofollow" target="_blank">Securing &amp; Optimizing Linux: The Hacking Solution</a></li>
+<li><a onclick="ga(&#39;send&#39;,&#39;event&#39;,&#39;User Mode Linux&#39;,&#39;tecmint.tradepub.com&#39;)" href="http://tecmint.tradepub.com/free/w_infk09/prgm.cgi" rel="nofollow" target="_blank">User Mode Linux – Understanding and Administration</a></li>
+</ol></div>
+</div><div id="text-29" class="widget widget_text">			<div class="textwidget"><div style="background-color: rgb(25, 67, 87); color: rgb(255, 255, 255); border-radius: 5px; text-align: center; padding: 10px;">
+<div class="follow-subscribe-social">
+<ul>
+<li><a href="http://twitter.com/tecmint" target="_blank"><i class="fa fa-twitter"></i></a></li>
+<li><a href="https://www.facebook.com/TecMint" target="_blank"><i class="fa fa-facebook"></i></a></li>
+<li><a href="https://plus.google.com/101049688653487009744" target="_blank"><i class="fa fa-google"></i></a></li>
+<li><a href="https://www.youtube.com/channel/UCkiRkzdLvoGBtW_YArytJlQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+<li><a href="https://www.linkedin.com/company/tecmint" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+</ul>
+</div>
+<p style="font-weight: bold; font-size: 20px; margin-bottom: 10px; margin-top: 10px;">Never Miss Any Linux Tutorials, Guides, Tips and Free eBooks</p> 
+<p>Join Our Community Of <strong style="color:#fff;font-weight:bold;">150,000+ Linux Lovers</strong> and get a weekly newsletter in your inbox</p>
+<p style="background-color: rgb(0, 0, 0); border-radius: 5px; padding: 6px;"><a style="font-size:20px;font-weight:bold;color:#fff;" href="http://subscribe.tecmint.com/newsletter" target="_blank" rel="nofollow">YES! SIGN ME UP</a></p></div></div>
+</div>			
+</div><!--/.sidebar-content-->
+</div><!--/.sidebar-->
+				</div><!--/.main-inner-->
+</div><!--/.main-->			
+</div><!--/.container-inner-->
+</div><!--/.container-->
+<footer id="footer">
+<section class="container" id="footer-ads">
+<div class="container-inner">
+</div><!--/.container-inner-->
+</section><!--/.container-->
+<section class="container" id="footer-widgets">
+<div class="container-inner">
+<div class="pad group">
+<div class="footer-widget-1 grid one-third ">
+<div id="alxposts-3" class="widget widget_alx_posts">
+<h3>Linux Monitoring Tools</h3>
+<ul class="alx-posts group ">
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="http://www.tecmint.com/monitor-ethernet-activity-in-linux/" rel="bookmark" title="Arpwatch Tool to Monitor Ethernet Activity in Linux">Arpwatch Tool to Monitor Ethernet Activity in Linux</a></p>
+<p class="post-item-date">16 Apr, 2013</p>			</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="http://www.tecmint.com/pydash-a-web-based-linux-performance-monitoring-tool/" rel="bookmark" title="pyDash – A Web Based Linux Performance Monitoring Tool">pyDash – A Web Based Linux Performance Monitoring Tool</a></p>
+<p class="post-item-date">8 Apr, 2017</p>			</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="http://www.tecmint.com/linux-performance-monitoring-with-vmstat-and-iostat-commands/" rel="bookmark" title="Linux Performance Monitoring with Vmstat and Iostat Commands">Linux Performance Monitoring with Vmstat and Iostat Commands</a></p>
+<p class="post-item-date">5 Sep, 2012</p>			</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="http://www.tecmint.com/psensor-monitors-hardware-temperature-in-linux/" rel="bookmark" title="Psensor – A Graphical Hardware Temperature Monitoring Tool for Linux">Psensor – A Graphical Hardware Temperature Monitoring Tool for Linux</a></p>
+<p class="post-item-date">2 Jul, 2015</p>			</div>
+</li>
+</ul><!--/.alx-posts-->
+</div>
+</div>
+<div class="footer-widget-2 grid one-third ">
+<div id="alxposts-4" class="widget widget_alx_posts">
+<h3>Linux Interview Questions</h3>
+<ul class="alx-posts group ">
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="http://www.tecmint.com/10-interview-questions-and-answers-on-various-commands-in-linux/" rel="bookmark" title="10 Interview Questions and Answers on Various Commands in Linux">10 Interview Questions and Answers on Various Commands in Linux</a></p>
+<p class="post-item-date">22 Mar, 2014</p>			</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="http://www.tecmint.com/basic-linux-interview-questions-and-answers-part-ii/" rel="bookmark" title="Basic Linux Interview Questions and Answers – Part II">Basic Linux Interview Questions and Answers – Part II</a></p>
+<p class="post-item-date">23 Nov, 2013</p>			</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="http://www.tecmint.com/linux-firewall-iptables-interview-questions-and-answers/" rel="bookmark" title="Nishita Agarwal Shares Her Interview Experience on Linux ‘iptables’ Firewall">Nishita Agarwal Shares Her Interview Experience on Linux ‘iptables’ Firewall</a></p>
+<p class="post-item-date">4 Jun, 2015</p>			</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="http://www.tecmint.com/basic-mysql-interview-questions-for-database-administrators/" rel="bookmark" title="15 Basic MySQL Interview Questions for Database Administrators">15 Basic MySQL Interview Questions for Database Administrators</a></p>
+<p class="post-item-date">20 Dec, 2013</p>			</div>
+</li>
+</ul><!--/.alx-posts-->
+</div>
+</div>
+<div class="footer-widget-3 grid one-third last">
+<div id="alxposts-5" class="widget widget_alx_posts">
+<h3>Open Source Tools</h3>
+<ul class="alx-posts group ">
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="http://www.tecmint.com/install-dropbox-in-linux/" rel="bookmark" title="How to Install Dropbox (An Ultimate Cloud Storage) in Linux">How to Install Dropbox (An Ultimate Cloud Storage) in Linux</a></p>
+<p class="post-item-date">7 Apr, 2014</p>			</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="http://www.tecmint.com/a-brief-introduction-to-makefiles-in-open-source-software-development-with-gnu-make/" rel="bookmark" title="A Brief Introduction to ‘Makefiles’ in Open Source Software Development with GNU Make">A Brief Introduction to ‘Makefiles’ in Open Source Software Development with GNU Make</a></p>
+<p class="post-item-date">18 Mar, 2014</p>			</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="http://www.tecmint.com/automating-linux-system-administration-tasks/" rel="bookmark" title="Fabric – Automate Your Linux Administration Tasks and Application Deployments Over SSH">Fabric – Automate Your Linux Administration Tasks and Application Deployments Over SSH</a></p>
+<p class="post-item-date">18 Nov, 2015</p>			</div>
+</li>
+<li>
+<div class="post-item-inner group">
+<p class="post-item-title"><a href="http://www.tecmint.com/install-go-in-linux/" rel="bookmark" title="How to Install GoLang (Go Programming Language) in Linux">How to Install GoLang (Go Programming Language) in Linux</a></p>
+<p class="post-item-date">18 Nov, 2016</p>			</div>
+</li>
+</ul><!--/.alx-posts-->
+</div>
+</div>
+</div><!--/.pad-->
+</div><!--/.container-inner-->
+</section><!--/.container-->	
+<nav class="nav-container group" id="nav-footer">
+<div class="nav-toggle"><i class="fa fa-bars"></i></div>
+<div class="nav-text"><!-- put your mobile menu text here --></div>
+<div class="nav-wrap"><ul id="menu-footer" class="nav container group"><li id="menu-item-18572" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18572"><a href="http://www.tecmint.com/donate-to-tecmint/">Donate to TecMint</a></li>
+<li id="menu-item-10437" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10437"><a href="http://www.tecmint.com/contact-us/">Contact Us</a></li>
+<li id="menu-item-10442" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10442"><a href="http://www.tecmint.com/advertise/">Advertise on TecMint</a></li>
+<li id="menu-item-10441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10441"><a href="http://www.tecmint.com/services/">Linux Services</a></li>
+<li id="menu-item-10435" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10435"><a href="http://www.tecmint.com/copyright-policy/">Copyright Policy</a></li>
+<li id="menu-item-10436" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10436"><a href="http://www.tecmint.com/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-13339" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13339"><a href="http://www.tecmint.com/career/">Career</a></li>
+<li id="menu-item-24288" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24288"><a href="http://www.tecmint.com/sponsored-post-guidelines-tecmint/">Sponsored Post</a></li>
+</ul></div>
+</nav><!--/#nav-footer-->
+<section class="container" id="footer-bottom">
+<div class="container-inner">
+<a id="back-to-top" href="http://www.tecmint.com/install-java-jdk-jre-in-linux/#"><i class="fa fa-angle-up"></i></a>
+<div class="pad group">
+<div class="grid one-half">
+<div id="copyright">
+<p>Tecmint: Linux Howtos, Tutorials &amp; Guides © 2017. All Rights Reserved.</p>
+<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license"><b style="color:#ccc;">(cc) BY-NC</b></a></p>
+<p>The material in this site cannot be republished either online or offline, without our permission.</p>
+</div><!--/#copyright-->
+</div>
+<div class="grid one-half last">	
+<ul class="social-links"><li><a rel="nofollow" class="social-tooltip" title="twitter" href="http://twitter.com/tecmint" target="Array"><i class="fa fa-twitter" style="color: #33ccff;"></i></a></li><li><a rel="nofollow" class="social-tooltip" title="facebook" href="https://www.facebook.com/TecMint" target="Array"><i class="fa fa-facebook" style="color: #3b5998;"></i></a></li><li><a rel="nofollow" class="social-tooltip" title="Google+" href="https://plus.google.com/101049688653487009744" target="Array"><i class="fa fa-google-plus" style="color: #db4a39;"></i></a></li><li><a rel="nofollow" class="social-tooltip" title="Feedly" href="http://feedly.com/i/subscription/feed/http://www.tecmint.com/feed/" target="Array"><i class="fa fa-rss" style="color: #87c040;"></i></a></li><li><a rel="nofollow" class="social-tooltip" title="Youtube" href="https://www.youtube.com/channel/UCkiRkzdLvoGBtW_YArytJlQ" target="Array"><i class="fa fa fa-youtube-square" style="color: #c4302b;"></i></a></li></ul>					</div>
+</div><!--/.pad-->
+</div><!--/.container-inner-->
+</section><!--/.container-->
+</footer><!--/#footer-->
+</div><ins class="adsbygoogle" data-adsbygoogle-status="done" style="display: none; width: auto; height: auto;"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent"><iframe width="0" height="0" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/saved_resource(8).html"></iframe></ins></ins></ins><!--/#wrapper-->
+<script type="text/javascript" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/form.js.download"></script>
+<!-- <link rel='stylesheet' id='stcr-plugin-style-css'  href='http://www.tecmint.com/wp-content/plugins/subscribe-to-comments-reloaded/includes/css/stcr-plugin-style.css?ver=4.7.3' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/1492430009index(1).css" media="all">
+<script type="text/javascript" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/jquery.fancybox.pack.js.download"></script>
+<script type="text/javascript" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/light.js.download"></script>
+<script type="text/javascript" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/scripts.js.download"></script>
+<script type="text/javascript" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/jquery.sharrre.min.js.download"></script>
+<script type="text/javascript" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/comment-reply.min.js.download"></script>
+<script type="text/javascript" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/jquery.sonar.min.js.download"></script>
+<script type="text/javascript" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/lazy-load.js.download"></script>
+<script type="text/javascript" src="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/stcr-plugin.js.download"></script>
+<!--[if lt IE 9]>
+<script src="http://www.tecmint.com/wp-content/themes/tecmint/js/ie/respond.js"></script>
+<![endif]-->
+<!--     ===== START Dreamgrow Scroll Triggered Box 2.3 =====   -->
+<div class="dgd_overlay"></div>
+<div class="dgd_stb_box clean_white" id="dgd_scrollbox-11027" style="padding: 10px; opacity: 0; width: 300px; bottom: -222px; right: 10px; display: none;"><a class="dgd_stb_box_close dgd_stb_box_x" href="javascript:void(0);"> </a><h5>Join Over 300K+ Linux Users</h5>
+<div id="social_sprite">
+<ol>
+<li><a href="https://www.facebook.com/TecMint" target="_blank"><span id="soc_fbuk" class="soc_icon"></span><span class="count">257,757</span></a></li>
+<li><a href="http://twitter.com/tecmint" target="_blank"><span id="soc_twitter" class="soc_icon"> </span><span class="count">11,967</span></a></li>
+<li><a href="https://plus.google.com/101049688653487009744" target="_blank"><span id="soc_gplus" class="soc_icon"> </span><span class="count">39,682</span></a></li>
+</ol>
+</div>
+<p style="background-color:#c33; border-radius: 5px; padding: 6px;margin-top:10px;text-align:center;"><a rel="nofollow" target="_blank" href="http://subscribe.tecmint.com/newsletter" style="font-size:20px;font-weight:bold;color:#fff;">Are you subscribed?</a></p>
+<p class="stbMsgArea">
+</p><link rel="stylesheet" type="text/css" href="./How to Install JAVA 8 (JDK 8u45) on Linux Systems_files/style.css"><ul class="stb_social"></ul></div>
+<!--     ===== END OF Dreamgrow Scroll Triggered Box 2.3 =====   -->
+<div class="fixedBar">
+<div class="boxfloat">
+<ul id="tips">
+<li><a href="http://www.tecmint.com/51-useful-lesser-known-commands-for-linux-users/">51 Useful Lesser Known Commands for Linux Users</a></li>
+<li><a href="http://www.tecmint.com/linux-server-hardening-security-tips/">25 Hardening Security Tips for Linux Servers</a></li>
+<li><a href="http://www.tecmint.com/60-commands-of-linux-a-guide-from-newbies-to-system-administrator/">60 Commands of Linux : A Guide from Newbies to System Administrator</a></li>
+<li><a href="http://www.tecmint.com/command-line-tools-to-monitor-linux-performance/">20 Command Line Tools to Monitor Linux Performance</a></li>
+<li><a href="http://www.tecmint.com/18-tar-command-examples-in-linux/">18 Tar Command Examples in Linux</a></li>
+<li><a href="http://www.tecmint.com/20-linux-yum-yellowdog-updater-modified-commands-for-package-mangement/">20 Linux YUM (Yellowdog Updater, Modified) Commands</a></li>
+<li><a href="http://www.tecmint.com/useful-basic-commands-of-apt-get-and-apt-cache-for-package-management/">25 Useful Basic Commands of APT-GET and APT-CACHE</a></li>
+<li><a href="http://www.tecmint.com/20-funny-commands-of-linux-or-linux-is-fun-in-terminal/">20 Funny Commands of Linux or Linux is Fun in Terminal</a></li>
+<li><a href="http://www.tecmint.com/red-hat-rhcsa-rhce-exam-certification-book/">Ebook: Introducing the RHCSA and RHCE Exam Preparation Guide</a></li>
+<li><a href="http://www.tecmint.com/sed-command-to-create-edit-and-manipulate-files-in-linux/">Preparation for the LFCS (Linux Foundation Certified SysAdmin) Exam</a></li>
+<li><a href="http://www.tecmint.com/installing-network-services-and-configuring-services-at-system-boot/">Preparation for the LFCE (Linux Foundation Certified Engineer) Exam</a></li>
+<li style="display: list-item;"><a href="http://www.tecmint.com/10-useful-free-linux-ebooks-for-newbies-and-administrators/">10 Useful Free Linux eBooks for Newbies and Administrators</a></li>
+<li><a href="http://www.tecmint.com/free-linux-shell-scripting-books/">4 Free Shell Scripting eBooks for Newbies and Administrators</a></li>
+</ul>
+</div>
+</div>
+
+</body></html>

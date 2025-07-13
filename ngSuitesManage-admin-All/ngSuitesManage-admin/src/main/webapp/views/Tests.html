@@ -1,0 +1,57 @@
+<div class="orders view">
+    <div class="container">
+        <header>
+        <br />
+        <center><h3 ng-if="suiteId == -1">All Tests<a class="pull-right btn btn-primary btn-mini" ng-click="open('lg')" >New Test</a></h3></center>
+        <center><h3 ng-if="suiteId != -1">Tests for {{data[0].suiteName}}<a class="pull-right btn btn-primary btn-mini" ng-click="open('lg')" >New Test</a></h3></center>
+        </header>
+        <br />
+        <div>
+            <div class="row">
+                <table ng-table="tableParams" show-filter="true" class="table">
+					<tbody ng-repeat="user in $data"  >
+					<!-- | filter:search | orderBy:suiteName"> -->
+						<tr id="tr{{user.testId}}" ng-class-odd="'odd'" ng-class-even="'even'">
+							<td class="rowTd" data-title="'Suite_Name'"
+								sortable="'suiteName'" filter="{ 'suiteName': 'text' }">{{user.suiteName}}</td>
+							<td class="rowTd" data-title="'Test Name'"
+								sortable="'testName'"
+								filter="{ 'testName': 'text' }">{{user.testName}}</td>
+							<td class="rowTd" data-title="'Class Names'"
+								sortable="'classesNamef'" filter="{ 'classesNamef': 'text' }">{{user.classesNamef}}</td>
+							<td class="rowTd" data-title="'Parameter Names'"
+								sortable="'parametersNamef'" filter="{ 'parametersNamef': 'text' }">{{user.parametersNamef}}</td>
+							<td class="rowTd" data-title="'Parameter Values'"
+								sortable="'parametersValuef'" filter="{ 'parametersValuef': 'text' }">{{user.parametersValuef}}</td>
+								
+							<td class="rowTd" data-title="'Actions'" style="width: 50px">
+								<a id="editRowBtn{{user.testId}}" rel="tooltip" href="" ng-click="setEditId(user.testId)" tooltip-placement="up" tooltip="Edit">
+									<i class="glyphicon glyphicon-pencil"></i>
+								</a>    
+								<a id="editRowBtn{{user.testId}}" rel="tooltip" href="" ng-click="deleteTest(user.testId)" tooltip-placement="up" tooltip="Delete">
+									<i class="glyphicon glyphicon-trash"></i>
+								</a>
+							</td>
+								
+							<!-- <td class="rowTd" data-title="'Actions'">
+								<input type=button
+									id="editRowBtn{{user.testId}}" class="btn btn-primary btn-xs"
+									ng-click="setEditId(user.testId)" value="Edit"> 
+								<input	type=button id="editRowBtn{{user.testId}}"
+									class="btn btn-danger btn-xs"
+									ng-click="deleteTest(user.testId)" value="Delete">
+							</td> -->
+						</tr>
+						<tr ng-show="editId===user.testId" ng-if="editId===user.testId">
+							<td colspan="7" ng-include src="'views/editTestRow.html'"></td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<script type="text/ng-template" id="newTestModal.html">
+					<div ng-include src="'views/newTestModal.html'" style="width:900px;"></div>
+				</script>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,254 @@
+[
+  {
+    "source": "^a precondition has value value(\\d+) val value(\\d+)$",
+    "steps": [
+      {
+        "name": "a precondition has value value11 val value12",
+        "aggregatedDurations": {
+          "average": 1.423747882,
+          "median": 1.423747882
+        },
+        "durations": [
+          {
+            "duration": 1.423747882,
+            "location": "login.feature:11"
+          }
+        ]
+      },
+      {
+        "name": "a precondition has value value31 val value32",
+        "aggregatedDurations": {
+          "average": 0.663567148,
+          "median": 0.621419551
+        },
+        "durations": [
+          {
+            "duration": 0.621419551,
+            "location": "login.feature:11"
+          },
+          {
+            "duration": 0.819883511,
+            "location": "login.feature:11"
+          },
+          {
+            "duration": 0.549398383,
+            "location": "login.feature:11"
+          }
+        ]
+      },
+      {
+        "name": "a precondition has value value41 val value42",
+        "aggregatedDurations": {
+          "average": 0.780846076,
+          "median": 0.719477334
+        },
+        "durations": [
+          {
+            "duration": 0.646088118,
+            "location": "login.feature:25"
+          },
+          {
+            "duration": 0.574560268,
+            "location": "login.feature:25"
+          },
+          {
+            "duration": 0.602927398,
+            "location": "login.feature:30"
+          },
+          {
+            "duration": 0.56556234,
+            "location": "login.feature:30"
+          },
+          {
+            "duration": 0.638587693,
+            "location": "login.feature:30"
+          },
+          {
+            "duration": 0.774754483,
+            "location": "login2.feature:26"
+          },
+          {
+            "duration": 0.926766063,
+            "location": "login2.feature:26"
+          },
+          {
+            "duration": 1.518706036,
+            "location": "login2.feature:26"
+          },
+          {
+            "duration": 0.759043121,
+            "location": "login2.feature:31"
+          },
+          {
+            "duration": 0.862833991,
+            "location": "login2.feature:31"
+          },
+          {
+            "duration": 0.719477334,
+            "location": "login2.feature:31"
+          }
+        ]
+      },
+      {
+        "name": "a precondition has value value41 val value12",
+        "aggregatedDurations": {
+          "average": 0.742318967,
+          "median": 0.811549079
+        },
+        "durations": [
+          {
+            "duration": 0.57697521,
+            "location": "login2.feature:11"
+          },
+          {
+            "duration": 0.811549079,
+            "location": "login2.feature:11"
+          },
+          {
+            "duration": 0.838432612,
+            "location": "login2.feature:11"
+          }
+        ]
+      },
+      {
+        "name": "a precondition has value value51 val value32",
+        "aggregatedDurations": {
+          "average": 0.695122803,
+          "median": 0.695122803
+        },
+        "durations": [
+          {
+            "duration": 0.581291249,
+            "location": "login2.feature:11"
+          },
+          {
+            "duration": 0.808954358,
+            "location": "login2.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^something with value(\\d+)$",
+    "steps": [
+      {
+        "name": "something with value12",
+        "aggregatedDurations": {
+          "average": 0.000105285,
+          "median": 0.000105285
+        },
+        "durations": [
+          {
+            "duration": 0.000105285,
+            "location": "login.feature:12"
+          }
+        ]
+      },
+      {
+        "name": "something with value32",
+        "aggregatedDurations": {
+          "average": 0.000121111,
+          "median": 0.000106941
+        },
+        "durations": [
+          {
+            "duration": 0.000106941,
+            "location": "login.feature:12"
+          },
+          {
+            "duration": 0.000104955,
+            "location": "login.feature:12"
+          },
+          {
+            "duration": 0.000196003,
+            "location": "login.feature:12"
+          },
+          {
+            "duration": 0.000134421,
+            "location": "login2.feature:13"
+          },
+          {
+            "duration": 0.000063238,
+            "location": "login2.feature:13"
+          }
+        ]
+      },
+      {
+        "name": "something with value42",
+        "aggregatedDurations": {
+          "average": 0.000186856,
+          "median": 0.000137069
+        },
+        "durations": [
+          {
+            "duration": 0.000153955,
+            "location": "login.feature:26"
+          },
+          {
+            "duration": 0.000295328,
+            "location": "login.feature:26"
+          },
+          {
+            "duration": 0.00010661,
+            "location": "login.feature:31"
+          },
+          {
+            "duration": 0.000395317,
+            "location": "login.feature:31"
+          },
+          {
+            "duration": 0.000093035,
+            "location": "login.feature:31"
+          },
+          {
+            "duration": 0.000102637,
+            "location": "login2.feature:27"
+          },
+          {
+            "duration": 0.000120184,
+            "location": "login2.feature:27"
+          },
+          {
+            "duration": 0.000227788,
+            "location": "login2.feature:27"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^check value(\\d+) is the output$",
+    "steps": [
+      {
+        "name": "check value33 is the output",
+        "aggregatedDurations": {
+          "average": 0.000406904,
+          "median": 0.000097008
+        },
+        "durations": [
+          {
+            "duration": 0.001592855,
+            "location": "login.feature:13"
+          },
+          {
+            "duration": 0.000172496,
+            "location": "login.feature:27"
+          },
+          {
+            "duration": 0.000078137,
+            "location": "login.feature:27"
+          },
+          {
+            "duration": 0.000094028,
+            "location": "login2.feature:12"
+          },
+          {
+            "duration": 0.000097008,
+            "location": "login2.feature:12"
+          }
+        ]
+      }
+    ]
+  }
+]

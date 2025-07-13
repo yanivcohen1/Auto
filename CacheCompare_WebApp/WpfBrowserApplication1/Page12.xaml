@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfBrowserApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Compare Files" Height="314" Width="818" Loaded="Window_Loaded">
+    <Grid>
+        <Button Content="Start" Height="22" HorizontalAlignment="Left" Margin="15,9,0,0" Name="Start_B" VerticalAlignment="Top" Width="63" Click="Start_B_Click" />
+        <Button Content="Save" Height="23" HorizontalAlignment="Left" Margin="102,8,0,0" Name="Save_B" VerticalAlignment="Top" Width="64" Click="Save_B_Click" />
+        <Label Height="28" Margin="73,35,12,0" Name="File1_l" VerticalAlignment="Top" />
+        <Label Height="29" Margin="73,65,12,0" Name="File2_l" VerticalAlignment="Top" />
+        <DataGrid AutoGenerateColumns="True" Margin="0,97,0,0" Name="ResultGrid" DataContext="{Binding}" />
+        <Label Content="Old File:" Height="25" HorizontalAlignment="Left" Margin="12,37,0,0" Name="label1" VerticalAlignment="Top" Width="55" />
+        <Label Content="New File:" Height="25" HorizontalAlignment="Left" Margin="12,66,0,0" Name="label2" VerticalAlignment="Top" Width="55" />
+        <Label Height="24" Margin="310,9,12,0" Name="Status_l" VerticalAlignment="Top" />
+    </Grid>
+</Window>

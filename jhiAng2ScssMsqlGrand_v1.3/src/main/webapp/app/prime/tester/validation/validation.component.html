@@ -1,0 +1,95 @@
+  <h1>Validation Form</h1>
+  <form #heroForm="ngForm">
+    <div [hidden]="heroForm.submitted">
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name" name="name" class="form-control"
+               required minlength="4" jhiForbiddenName="bob1"
+               [(ngModel)]="hero.name" #name="ngModel" >
+
+        <div *ngIf="name.invalid && (name.dirty || name.touched)"
+             class="form-text text-danger">
+
+          <div *ngIf="name.errors.required">
+            Name is required.
+          </div>
+          <div *ngIf="name.errors.minlength">
+            Name must be at least 4 characters long.
+          </div>
+          <div *ngIf="name.errors.forbiddenName">
+            Name cannot contain Bob.
+          </div>
+
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-control-label" for="field_val">Val</label>
+        <input type="number" class="form-control" name="val" id="field_val"
+            [(ngModel)]="hero.val" required />
+        <div [hidden]="!(heroForm.controls.val?.dirty && heroForm.controls.val?.invalid)">
+            <small class="form-text text-danger"
+               [hidden]="!heroForm.controls.val?.errors?.required">
+               This field is required.
+            </small>
+            <small class="form-text text-danger"
+                [hidden]="!heroForm.controls.val?.errors?.number">
+                This field should be a number.
+            </small>
+        </div>
+    </div>
+
+    <div class="form-group">
+      <label class="form-control-label" for="field_dates">Dates</label>
+      <div class="input-group">
+          <input id="field_dates" type="text" class="form-control" name="dates" ngbDatepicker  #datesDp="ngbDatepicker" [(ngModel)]="hero.dates"
+          required/>
+          <span class="input-group-btn">
+              <button type="button" class="btn btn-secondary" (click)="datesDp.toggle()"><i class="fa fa-calendar"></i></button>
+          </span>
+      </div>
+      <div [hidden]="!(heroForm.controls.dates?.dirty && heroForm.controls.dates?.invalid)">
+          <small class="form-text text-danger"
+             [hidden]="!heroForm.controls.dates?.errors?.required">
+             This field is required.
+          </small>
+      </div>
+    </div>
+
+      <div class="form-group">
+        <label for="alterEgo">Alter Ego</label>
+        <input id="alterEgo" class="form-control"
+               name="alterEgo" [(ngModel)]="hero.alterEgo" >
+      </div>
+
+      <div class="form-group">
+        <label for="power">Hero Power</label>
+        <select id="power" name="power" class="form-control"
+                required [(ngModel)]="hero.power" #power="ngModel" >
+          <option *ngFor="let p of powers" [value]="p">{{p}}</option>
+        </select>
+
+        <div *ngIf="power.errors && power.touched" class="form-text text-danger">
+          <div *ngIf="power.errors.required">Power is required.</div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-default"
+              [disabled]="heroForm.invalid">Submit</button>
+      <button type="button" class="btn btn-default"
+              (click)="heroForm.resetForm({})">Reset</button>
+    </div>
+
+    <div class="submitted-message" *ngIf="heroForm.submitted">
+      <p>You've submitted your hero, {{ heroForm.value.name }}!</p>
+      <button (click)="heroForm.resetForm({})">Add new hero</button>
+    </div>
+  </form>
+
+
+<!-- 
+Copyright 2017 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

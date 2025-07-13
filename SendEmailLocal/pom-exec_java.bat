@@ -1,0 +1,1 @@
+mvn -f pom-exec_java.xml install exec:java

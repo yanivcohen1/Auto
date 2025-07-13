@@ -1,0 +1,29 @@
+
+<div *ngIf="aA">
+    <h2><span jhiTranslate="jhipsterAngular2MavenApp.aA.detail.title">AA</span> {{aA.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row">
+        <dt><span jhiTranslate="jhipsterAngular2MavenApp.aA.aaName">Aa Name</span></dt>
+        <dd>
+            <span>{{aA.aaName}}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterAngular2MavenApp.aA.value">Value</span></dt>
+        <dd>
+            <span>{{aA.value}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'a-a/'+ aA.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

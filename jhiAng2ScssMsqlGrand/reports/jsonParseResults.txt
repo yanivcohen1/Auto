@@ -1,0 +1,76 @@
+--featureName:  To search cucumber in google
+----------------------------------
+----ScenarioName:  Cucumber Google Search
+------TagName:  @outlineScenario2
+------stepName:  Before
+------stepName:  Given I am on google page
+--------mime_type:  text/plain
+--------message:  attch msg: Start google
+------stepName:  When I type "OutlineScenario21"
+------stepName:  Then I click on search button
+------stepName:  Then I clear the search text
+------stepName:  After
+--------mime_type:  image/png
+--------message:  null
+----ScenarioName:  Cucumber Google Search
+------TagName:  @outlineScenario2
+------stepName:  Before
+------stepName:  Given I am on google page
+--------mime_type:  text/plain
+--------message:  attch msg: Start google
+------stepName:  When I type "OutlineScenario22"
+------stepName:  Then I click on search button
+------stepName:  Then I clear the search text
+------stepName:  After
+--------mime_type:  image/png
+--------message:  null
+----ScenarioName:  Cucumber Google Search
+------TagName:  @outlineScenario3
+------stepName:  Before
+------stepName:  Given I am on google page
+--------mime_type:  text/plain
+--------message:  attch msg: Start google
+------stepName:  When I type "OutlineScenario3"
+------stepName:  Then I click on search button
+------stepName:  Then I clear the search text
+------stepName:  After
+--------mime_type:  image/png
+--------message:  null
+--featureName:  To search protractor in google
+----------------------------------
+----ScenarioName:  Protractor Google Search
+------TagName:  @scenario1
+------stepName:  Before
+------stepName:  Given I am on google page
+--------mime_type:  text/plain
+--------message:  attch msg: Start google
+------stepName:  When I type "simpleScenario"
+------stepName:  Then I click on search button
+------stepName:  Then I clear the search text
+------stepName:  After
+--------mime_type:  image/png
+--------message:  null
+----ScenarioName:  Typescript Google Search
+------TagName:  @outlineScenario1
+------stepName:  Before
+------stepName:  Given I am on google page
+--------mime_type:  text/plain
+--------message:  attch msg: Start google
+------stepName:  When I type "OutlineScenario11"
+------stepName:  Then I click on search button
+------stepName:  Then I clear the search text
+------stepName:  After
+--------mime_type:  image/png
+--------message:  null
+----ScenarioName:  Typescript Google Search
+------TagName:  @outlineScenario1
+------stepName:  Before
+------stepName:  Given I am on google page
+--------mime_type:  text/plain
+--------message:  attch msg: Start google
+------stepName:  When I type "OutlineScenario12"
+------stepName:  Then I click on search button
+------stepName:  Then I clear the search text
+------stepName:  After
+--------mime_type:  image/png
+--------message:  null

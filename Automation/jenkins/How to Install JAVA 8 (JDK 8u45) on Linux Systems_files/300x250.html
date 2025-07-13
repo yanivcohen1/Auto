@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- saved from url=(0169)https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/15735973146520963717/300x250.html?v=simple-ctrl#t=3292231470747159652&p=https%3A%2F%2Fgoogleads.g.doubleclick.net -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./exitapi-impl.js.download" type="text/javascript"></script><script src="./addata.js.download" type="text/javascript"></script><meta content="width=300,height=250" name="ad.size"><title>300x250</title><script src="./createjs-2015.11.26.min.js.download"></script><script src="./300x250.js.download"></script><script>
+var canvas, stage, exportRoot;
+function init() {
+	// --- write your JS code here ---
+	
+	canvas = document.getElementById("canvas");
+	images = images||{};
+
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(lib.properties.manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete(evt) {
+	exportRoot = new lib._300x250();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+
+</script><script type="text/javascript" src="./06dBPUkfu9JZnU5tFs8i612dlV3pjfJYeZ70BViAu_k.js.download"></script></head><body onclick="ExitApi.exit();" onload="init();" style="background-color:#D4D4D4;margin:0px;; cursor:pointer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<canvas height="250" id="canvas" style="background-color:#FFFFFF" width="300"></canvas>
+
+
+</body></html>

@@ -1,0 +1,388 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AutomationLib</name>
+    </assembly>
+    <members>
+        <member name="T:AutomationLib.Automation_Lib">
+            <summary>
+            The main Automation library
+            </summary>
+        </member>
+        <member name="F:AutomationLib.Automation_Lib._rootElement">
+            <summary>
+            Save the Root Element
+            </summary>
+        </member>
+        <member name="F:AutomationLib.Automation_Lib._rootPath">
+            <summary>
+            save the root path
+            </summary>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.#cctor">
+            <summary>
+            Initialize the class
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.ReadParamFromEnvirment(System.String)">
+            <summary>
+            Read Param From Envirment variable
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.ChackFolderExist(System.String)">
+            <summary>
+            Chack Folder Exist
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.Init(System.Type)">
+            <summary>
+            Initialize the automation library
+            </summary>
+            <param name="logType"></param>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.InitDebug(System.Type)">
+            <summary>
+            Initialize the automation library for debug
+            </summary>
+            <param name="logType"></param>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.ChangeFileName(System.String)">
+            <summary>
+            Change File Name
+            </summary>
+            <param name="_CustomerName"></param>
+            <param name="_Project"></param>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.Kill_Processes">
+            <summary>
+            Kill All Old running Processes
+            </summary>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.loggerError(System.Exception,System.Boolean)">
+            <summary>
+            Write the error to the logger
+            </summary>
+            <param name="e"></param>
+            <param name="throwEcep"></param>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.AddHTMLColor(System.String,AutomationLib.Automation_Lib.HTMLColor,AutomationLib.Automation_Lib.HTMLStyle)">
+            <summary>
+            Add HTML Color
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.GetEnumDescription(System.Enum)">
+            <summary>
+            Get Enum Description
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.PrintErrorLine(System.Exception)">
+            <summary>
+            Print Error Line
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.WriteToErrorfile(System.String,System.Exception)">
+            <summary>
+            Write To Error file
+            </summary>
+            <param name="msg"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.WriteToPlayersUsersfile(System.String)">
+            <summary>
+            Write To Players User name file
+            </summary>
+            <param name="userName"></param>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.GetRootElement">
+            <summary>
+            Get the Root Element for bebug
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.CopyFiletoBuild(System.String,System.String)">
+            <summary>
+            Copy File to Build
+            </summary>
+            <param name="fromPath"></param>
+            <param name="filename"></param>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.FindRootPath(System.String,System.String)">
+            <summary>
+            Find the Root Path
+            </summary>
+            <param name="Allpath"></param>
+            <param name="SearchDir"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.RunProcess(System.String,System.String,System.Int32)">
+            <summary>
+            Run CMD Process
+            </summary>
+            <param name="Path"></param>
+            <param name="arg"></param>
+            <param name="timeoutMin"></param>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.WriteText(System.Windows.Automation.AutomationElement,System.String)">
+            <summary>
+            Write text to control
+            </summary>
+            <param name="targetControl"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.MouseClick(System.Int32,System.Int32)">
+            <summary>
+            Mouse Click on x y location
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.InvokeAutomationElement(System.Windows.Automation.AutomationElement)">
+            <summary>
+            Invoke (click) AutomationElement
+            </summary>
+            <param name="automationElement"></param>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.SelectListItem(System.Windows.Automation.AutomationElement,System.String)">
+            <summary>
+            Select List Item
+            </summary>
+            <param name="element"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.SelectPopupListItem(System.Windows.Automation.AutomationElement,System.String)">
+            <summary>
+             Select Popup List Item
+            </summary>
+            <param name="listElement"></param>
+            <param name="itemText"></param>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.SelectListItemBySendText(System.Windows.Automation.AutomationElement,System.String)">
+            <summary>
+            Select ListItem By Send Text
+            </summary>
+            <param name="element"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.ClickElement(System.Windows.Automation.AutomationElement)">
+            <summary>
+            Click on Element
+            </summary>
+            <param name="automationElement"></param>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.setforgrandwindow(System.Windows.Automation.AutomationElement)">
+            <summary>
+            set forgrand window
+            </summary>
+            <param name="automationElement"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.SendKey(System.Int32)">
+            <summary>
+            send key
+            </summary>
+            <param name="ASCII_key"></param>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.waitforWindowNameClass(System.String,System.Windows.Automation.Condition,System.Int32,System.Boolean)">
+            <summary>
+            wait for Window Name or Class
+            </summary>
+            <param name="NameClass"></param>
+            <param name="controlCondition"></param>
+            <param name="timeOutSec"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.Screenshot(System.String,System.String)">
+            <summary>
+            take Screenshot
+            </summary>
+            <param name="FileName"></param>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.GenerateTime">
+            <summary>
+            Generate time string
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.GenerateTimePrint">
+            <summary>
+            Generate time string to print
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.GenerateUserName">
+            <summary>
+            Generate time string to print
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.ReplaceComma(System.String)">
+            <summary>
+            Replace Comma
+            </summary>
+            <param name="expretion"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutomationLib.Automation_Lib.WaitForResponeInCallback(System.Int32)">
+            <summary>
+            WaitForResponeInCallback
+            </summary>
+            <param name="timeoutSec"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AutomationLib.UnsafeNativeMethods">
+            <summary>
+            Unsafe Native Methods
+            </summary>
+        </member>
+        <member name="T:AutomationLib.Commons">
+            <summary>
+            Save common Data
+            </summary>
+        </member>
+        <member name="M:AutomationLib.Commons.InitSpring(System.String)">
+            <summary>
+            Init Spring
+            </summary>
+            <param name="contextFileName"></param>
+            <returns></returns>
+        </member>
+        <member name="P:AutomationLib.Commons.WebBrowser">
+            <summary>
+            save the WebBrowser
+            </summary>
+        </member>
+        <member name="P:AutomationLib.Commons.Auto">
+            <summary>
+            save the auto lib
+            </summary>
+        </member>
+        <member name="P:AutomationLib.Commons.Driver">
+            <summary>
+            save the driver
+            </summary>
+        </member>
+        <member name="P:AutomationLib.Commons.DriverTimeout">
+            <summary>
+            save driver time out
+            </summary>
+        </member>
+        <member name="P:AutomationLib.Commons.ApplicationContext">
+            <summary>
+            save driver time out
+            </summary>
+        </member>
+        <member name="T:AutomationLib.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:AutomationLib.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:AutomationLib.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:AutomationLib.WebSelenium">
+            <summary>
+            The WebSelenium library
+            </summary>
+        </member>
+        <member name="M:AutomationLib.WebSelenium.#ctor">
+            <summary>
+            Start the web Browser
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AutomationLib.WebSelenium.FindElement(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By,System.Int32)">
+            <summary>
+            selenium Find Element 
+            </summary>
+            <param name="by"></param>
+            <param name="TimeoutSec"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AutomationLib.WebSelenium.goToURLContainWindow(OpenQA.Selenium.IWebDriver,System.String)">
+            <summary>
+            go To URL Contain Window
+            </summary>
+            <param name="urlContain"></param>
+        </member>
+        <member name="M:AutomationLib.WebSelenium.SelectElementByText(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.By,System.String)">
+            <summary>
+            Select Element By Text
+            </summary>
+            <param name="by"></param>
+            <param name="textSelect"></param>
+        </member>
+        <member name="M:AutomationLib.WebSelenium.SafeClick(OpenQA.Selenium.IWebDriver,OpenQA.Selenium.IWebElement)">
+            <summary>
+            go To URL Contain Window
+            </summary>
+            <param name="urlContain"></param>
+        </member>
+        <member name="M:AutomationLib.WebSelenium.firingDriver_ElementClicking(System.Object,OpenQA.Selenium.Support.Events.WebElementEventArgs)">
+            <summary>
+            firing event Element Clicking
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AutomationLib.WebSelenium.firingDriver_ExceptionThrown(System.Object,OpenQA.Selenium.Support.Events.WebDriverExceptionEventArgs)">
+            <summary>
+            firing event Exception Thrown
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AutomationLib.WebSelenium.firingDriver_Navigating(System.Object,OpenQA.Selenium.Support.Events.WebDriverNavigationEventArgs)">
+            <summary>
+            firing event Navigating
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AutomationLib.WebSelenium.firingDriver_ElementValueChanging(System.Object,OpenQA.Selenium.Support.Events.WebElementEventArgs)">
+            <summary>
+            firing event Value Changing
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AutomationLib.WebSelenium.firingDriver_ElementValueChanged(System.Object,OpenQA.Selenium.Support.Events.WebElementEventArgs)">
+            <summary>
+            firing event Element Value Changed
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AutomationLib.WebSelenium.firingDriver_FindingElement(System.Object,OpenQA.Selenium.Support.Events.FindElementEventArgs)">
+            <summary>
+            firing event Finding Element
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:AutomationLib.WebSelenium.firingDriver_ScriptExecuting(System.Object,OpenQA.Selenium.Support.Events.WebDriverScriptEventArgs)">
+            <summary>
+            firing event Script Executing
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+    </members>
+</doc>

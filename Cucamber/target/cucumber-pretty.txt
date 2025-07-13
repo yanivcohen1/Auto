@@ -1,0 +1,277 @@
+Feature: Login
+
+  Scenario Outline: Login with guest account <param1>    [90m# login.feature:10[0m
+    [36mGiven [0m[36ma precondition has value <param1> val <param2>[0m
+    [36mWhen [0m[36msomething with <param2>[0m
+    [36mThen [0m[36mcheck <param3> is the output[0m
+
+    Examples: 
+
+  Scenario Outline: Login with guest account value11   [90m# login.feature:17[0m
+    [32mGiven [0m[32ma precondition has value value[0m[32m[1m11[0m[32m val value[0m[32m[1m12[0m [90m# GamingStepDef.a_precondition_has_value_value_val_value(int,int)[0m
+    [32mWhen [0m[32msomething with value[0m[32m[1m12[0m                        [90m# GamingStepDef.something_with_value(int)[0m
+    [32mThen [0m[32mcheck value[0m[32m[1m33[0m[32m is the output[0m                   [90m# GamingStepDef.check_value_is_the_output(int)[0m
+
+    Examples: 
+
+  #| value21 | value22 | value23 |
+  Scenario Outline: Login with guest account value31   [90m# login.feature:22[0m
+    [32mGiven [0m[32ma precondition has value value[0m[32m[1m31[0m[32m val value[0m[32m[1m32[0m [90m# GamingStepDef.a_precondition_has_value_value_val_value(int,int)[0m
+    [32mWhen [0m[32msomething with value[0m[32m[1m32[0m                        [90m# GamingStepDef.something_with_value(int)[0m
+    [31mThen [0m[31mcheck value[0m[31m[1m13[0m[31m is the output[0m                   [90m# GamingStepDef.check_value_is_the_output(int)[0m
+      [31mjava.lang.AssertionError: expected:<33> but was:<13>
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.failNotEquals(Assert.java:743)
+      	at org.junit.Assert.assertEquals(Assert.java:118)
+      	at org.junit.Assert.assertEquals(Assert.java:555)
+      	at org.junit.Assert.assertEquals(Assert.java:542)
+      	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+      	at ✽.Then check value13 is the output(login.feature:13)
+      [0m
+
+  #| value21 | value22 | value23 |
+  Scenario Outline: Login with guest account value31   [90m# login.feature:22[0m
+    [32mGiven [0m[32ma precondition has value value[0m[32m[1m31[0m[32m val value[0m[32m[1m32[0m [90m# GamingStepDef.a_precondition_has_value_value_val_value(int,int)[0m
+    [32mWhen [0m[32msomething with value[0m[32m[1m32[0m                        [90m# GamingStepDef.something_with_value(int)[0m
+    [31mThen [0m[31mcheck value[0m[31m[1m13[0m[31m is the output[0m                   [90m# GamingStepDef.check_value_is_the_output(int)[0m
+      [31mjava.lang.AssertionError: expected:<33> but was:<13>
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.failNotEquals(Assert.java:743)
+      	at org.junit.Assert.assertEquals(Assert.java:118)
+      	at org.junit.Assert.assertEquals(Assert.java:555)
+      	at org.junit.Assert.assertEquals(Assert.java:542)
+      	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+      	at ✽.Then check value13 is the output(login.feature:13)
+      [0m
+
+  #| value21 | value22 | value23 |
+  Scenario Outline: Login with guest account value31   [90m# login.feature:22[0m
+    [32mGiven [0m[32ma precondition has value value[0m[32m[1m31[0m[32m val value[0m[32m[1m32[0m [90m# GamingStepDef.a_precondition_has_value_value_val_value(int,int)[0m
+    [32mWhen [0m[32msomething with value[0m[32m[1m32[0m                        [90m# GamingStepDef.something_with_value(int)[0m
+    [31mThen [0m[31mcheck value[0m[31m[1m13[0m[31m is the output[0m                   [90m# GamingStepDef.check_value_is_the_output(int)[0m
+      [31mjava.lang.AssertionError: expected:<33> but was:<13>
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.failNotEquals(Assert.java:743)
+      	at org.junit.Assert.assertEquals(Assert.java:118)
+      	at org.junit.Assert.assertEquals(Assert.java:555)
+      	at org.junit.Assert.assertEquals(Assert.java:542)
+      	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+      	at ✽.Then check value13 is the output(login.feature:13)
+      [0m
+
+  @test4
+  Scenario: Login with guest account4                  [90m# login.feature:24[0m
+    [32mGiven [0m[32ma precondition has value value[0m[32m[1m41[0m[32m val value[0m[32m[1m42[0m [90m# GamingStepDef.a_precondition_has_value_value_val_value(int,int)[0m
+    [32mWhen [0m[32msomething with value[0m[32m[1m42[0m                        [90m# GamingStepDef.something_with_value(int)[0m
+    [32mThen [0m[32mcheck value[0m[32m[1m33[0m[32m is the output[0m                   [90m# GamingStepDef.check_value_is_the_output(int)[0m
+
+  @test4
+  Scenario: Login with guest account4                  [90m# login.feature:24[0m
+    [32mGiven [0m[32ma precondition has value value[0m[32m[1m41[0m[32m val value[0m[32m[1m42[0m [90m# GamingStepDef.a_precondition_has_value_value_val_value(int,int)[0m
+    [32mWhen [0m[32msomething with value[0m[32m[1m42[0m                        [90m# GamingStepDef.something_with_value(int)[0m
+    [32mThen [0m[32mcheck value[0m[32m[1m33[0m[32m is the output[0m                   [90m# GamingStepDef.check_value_is_the_output(int)[0m
+
+  @test5
+  Scenario: Login with guest account5                  [90m# login.feature:29[0m
+    [32mGiven [0m[32ma precondition has value value[0m[32m[1m41[0m[32m val value[0m[32m[1m42[0m [90m# GamingStepDef.a_precondition_has_value_value_val_value(int,int)[0m
+    [32mWhen [0m[32msomething with value[0m[32m[1m42[0m                        [90m# GamingStepDef.something_with_value(int)[0m
+    [31mThen [0m[31mcheck value[0m[31m[1m55[0m[31m is the output[0m                   [90m# GamingStepDef.check_value_is_the_output(int)[0m
+      [31mjava.lang.AssertionError: expected:<33> but was:<55>
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.failNotEquals(Assert.java:743)
+      	at org.junit.Assert.assertEquals(Assert.java:118)
+      	at org.junit.Assert.assertEquals(Assert.java:555)
+      	at org.junit.Assert.assertEquals(Assert.java:542)
+      	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+      	at ✽.Then check value55 is the output(login.feature:32)
+      [0m
+
+  @test5
+  Scenario: Login with guest account5                  [90m# login.feature:29[0m
+    [32mGiven [0m[32ma precondition has value value[0m[32m[1m41[0m[32m val value[0m[32m[1m42[0m [90m# GamingStepDef.a_precondition_has_value_value_val_value(int,int)[0m
+    [32mWhen [0m[32msomething with value[0m[32m[1m42[0m                        [90m# GamingStepDef.something_with_value(int)[0m
+    [31mThen [0m[31mcheck value[0m[31m[1m55[0m[31m is the output[0m                   [90m# GamingStepDef.check_value_is_the_output(int)[0m
+      [31mjava.lang.AssertionError: expected:<33> but was:<55>
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.failNotEquals(Assert.java:743)
+      	at org.junit.Assert.assertEquals(Assert.java:118)
+      	at org.junit.Assert.assertEquals(Assert.java:555)
+      	at org.junit.Assert.assertEquals(Assert.java:542)
+      	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+      	at ✽.Then check value55 is the output(login.feature:32)
+      [0m
+
+  @test5
+  Scenario: Login with guest account5                  [90m# login.feature:29[0m
+    [32mGiven [0m[32ma precondition has value value[0m[32m[1m41[0m[32m val value[0m[32m[1m42[0m [90m# GamingStepDef.a_precondition_has_value_value_val_value(int,int)[0m
+    [32mWhen [0m[32msomething with value[0m[32m[1m42[0m                        [90m# GamingStepDef.something_with_value(int)[0m
+    [31mThen [0m[31mcheck value[0m[31m[1m55[0m[31m is the output[0m                   [90m# GamingStepDef.check_value_is_the_output(int)[0m
+      [31mjava.lang.AssertionError: expected:<33> but was:<55>
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.failNotEquals(Assert.java:743)
+      	at org.junit.Assert.assertEquals(Assert.java:118)
+      	at org.junit.Assert.assertEquals(Assert.java:555)
+      	at org.junit.Assert.assertEquals(Assert.java:542)
+      	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+      	at ✽.Then check value55 is the output(login.feature:32)
+      [0m
+Feature: Logis
+
+  @testw
+  Scenario Outline: Login with guest account <param1>    [90m# login2.feature:10[0m
+    [36mGiven [0m[36ma precondition has value <param1> val <param2>[0m
+    [36mThen [0m[36mcheck <param3> is the output[0m
+    [36mWhen [0m[36msomething with <param2>[0m
+
+    Examples: 
+
+  @testw
+  Scenario Outline: Login with guest account value41   [90m# login2.feature:18[0m
+    [32mGiven [0m[32ma precondition has value value[0m[32m[1m41[0m[32m val value[0m[32m[1m12[0m [90m# GamingStepDef.a_precondition_has_value_value_val_value(int,int)[0m
+    [31mThen [0m[31mcheck value[0m[31m[1m13[0m[31m is the output[0m                   [90m# GamingStepDef.check_value_is_the_output(int)[0m
+      [31mjava.lang.AssertionError: expected:<33> but was:<13>
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.failNotEquals(Assert.java:743)
+      	at org.junit.Assert.assertEquals(Assert.java:118)
+      	at org.junit.Assert.assertEquals(Assert.java:555)
+      	at org.junit.Assert.assertEquals(Assert.java:542)
+      	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+      	at ✽.Then check value13 is the output(login2.feature:12)
+      [0m
+    [36mWhen [0m[36msomething with value[0m[36m[1m12[0m                        [90m# GamingStepDef.something_with_value(int)[0m
+
+  @testw
+  Scenario Outline: Login with guest account value41   [90m# login2.feature:18[0m
+    [32mGiven [0m[32ma precondition has value value[0m[32m[1m41[0m[32m val value[0m[32m[1m12[0m [90m# GamingStepDef.a_precondition_has_value_value_val_value(int,int)[0m
+    [31mThen [0m[31mcheck value[0m[31m[1m13[0m[31m is the output[0m                   [90m# GamingStepDef.check_value_is_the_output(int)[0m
+      [31mjava.lang.AssertionError: expected:<33> but was:<13>
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.failNotEquals(Assert.java:743)
+      	at org.junit.Assert.assertEquals(Assert.java:118)
+      	at org.junit.Assert.assertEquals(Assert.java:555)
+      	at org.junit.Assert.assertEquals(Assert.java:542)
+      	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+      	at ✽.Then check value13 is the output(login2.feature:12)
+      [0m
+    [36mWhen [0m[36msomething with value[0m[36m[1m12[0m                        [90m# GamingStepDef.something_with_value(int)[0m
+
+  @testw
+  Scenario Outline: Login with guest account value41   [90m# login2.feature:18[0m
+    [32mGiven [0m[32ma precondition has value value[0m[32m[1m41[0m[32m val value[0m[32m[1m12[0m [90m# GamingStepDef.a_precondition_has_value_value_val_value(int,int)[0m
+    [31mThen [0m[31mcheck value[0m[31m[1m13[0m[31m is the output[0m                   [90m# GamingStepDef.check_value_is_the_output(int)[0m
+      [31mjava.lang.AssertionError: expected:<33> but was:<13>
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.failNotEquals(Assert.java:743)
+      	at org.junit.Assert.assertEquals(Assert.java:118)
+      	at org.junit.Assert.assertEquals(Assert.java:555)
+      	at org.junit.Assert.assertEquals(Assert.java:542)
+      	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+      	at ✽.Then check value13 is the output(login2.feature:12)
+      [0m
+    [36mWhen [0m[36msomething with value[0m[36m[1m12[0m                        [90m# GamingStepDef.something_with_value(int)[0m
+
+    Examples: 
+
+  #| value21 | value22 | value23 |
+  @testw
+  Scenario Outline: Login with guest account value51   [90m# login2.feature:23[0m
+    [32mGiven [0m[32ma precondition has value value[0m[32m[1m51[0m[32m val value[0m[32m[1m32[0m [90m# GamingStepDef.a_precondition_has_value_value_val_value(int,int)[0m
+    [32mThen [0m[32mcheck value[0m[32m[1m33[0m[32m is the output[0m                   [90m# GamingStepDef.check_value_is_the_output(int)[0m
+    [32mWhen [0m[32msomething with value[0m[32m[1m32[0m                        [90m# GamingStepDef.something_with_value(int)[0m
+
+  #| value21 | value22 | value23 |
+  @testw
+  Scenario Outline: Login with guest account value51   [90m# login2.feature:23[0m
+    [32mGiven [0m[32ma precondition has value value[0m[32m[1m51[0m[32m val value[0m[32m[1m32[0m [90m# GamingStepDef.a_precondition_has_value_value_val_value(int,int)[0m
+    [32mThen [0m[32mcheck value[0m[32m[1m33[0m[32m is the output[0m                   [90m# GamingStepDef.check_value_is_the_output(int)[0m
+    [32mWhen [0m[32msomething with value[0m[32m[1m32[0m                        [90m# GamingStepDef.something_with_value(int)[0m
+
+  @test8
+  Scenario: Login with guest account8                  [90m# login2.feature:25[0m
+    [32mGiven [0m[32ma precondition has value value[0m[32m[1m41[0m[32m val value[0m[32m[1m42[0m [90m# GamingStepDef.a_precondition_has_value_value_val_value(int,int)[0m
+    [32mWhen [0m[32msomething with value[0m[32m[1m42[0m                        [90m# GamingStepDef.something_with_value(int)[0m
+    [31mThen [0m[31mcheck value[0m[31m[1m44[0m[31m is the output[0m                   [90m# GamingStepDef.check_value_is_the_output(int)[0m
+      [31mjava.lang.AssertionError: expected:<33> but was:<44>
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.failNotEquals(Assert.java:743)
+      	at org.junit.Assert.assertEquals(Assert.java:118)
+      	at org.junit.Assert.assertEquals(Assert.java:555)
+      	at org.junit.Assert.assertEquals(Assert.java:542)
+      	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+      	at ✽.Then check value44 is the output(login2.feature:28)
+      [0m
+
+  @test8
+  Scenario: Login with guest account8                  [90m# login2.feature:25[0m
+    [32mGiven [0m[32ma precondition has value value[0m[32m[1m41[0m[32m val value[0m[32m[1m42[0m [90m# GamingStepDef.a_precondition_has_value_value_val_value(int,int)[0m
+    [32mWhen [0m[32msomething with value[0m[32m[1m42[0m                        [90m# GamingStepDef.something_with_value(int)[0m
+    [31mThen [0m[31mcheck value[0m[31m[1m44[0m[31m is the output[0m                   [90m# GamingStepDef.check_value_is_the_output(int)[0m
+      [31mjava.lang.AssertionError: expected:<33> but was:<44>
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.failNotEquals(Assert.java:743)
+      	at org.junit.Assert.assertEquals(Assert.java:118)
+      	at org.junit.Assert.assertEquals(Assert.java:555)
+      	at org.junit.Assert.assertEquals(Assert.java:542)
+      	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+      	at ✽.Then check value44 is the output(login2.feature:28)
+      [0m
+
+  @test8
+  Scenario: Login with guest account8                  [90m# login2.feature:25[0m
+    [32mGiven [0m[32ma precondition has value value[0m[32m[1m41[0m[32m val value[0m[32m[1m42[0m [90m# GamingStepDef.a_precondition_has_value_value_val_value(int,int)[0m
+    [32mWhen [0m[32msomething with value[0m[32m[1m42[0m                        [90m# GamingStepDef.something_with_value(int)[0m
+    [31mThen [0m[31mcheck value[0m[31m[1m44[0m[31m is the output[0m                   [90m# GamingStepDef.check_value_is_the_output(int)[0m
+      [31mjava.lang.AssertionError: expected:<33> but was:<44>
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.failNotEquals(Assert.java:743)
+      	at org.junit.Assert.assertEquals(Assert.java:118)
+      	at org.junit.Assert.assertEquals(Assert.java:555)
+      	at org.junit.Assert.assertEquals(Assert.java:542)
+      	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+      	at ✽.Then check value44 is the output(login2.feature:28)
+      [0m
+
+  @test9
+  Scenario: Login with guest account9                  [90m# login2.feature:30[0m
+    [32mGiven [0m[32ma precondition has value value[0m[32m[1m41[0m[32m val value[0m[32m[1m42[0m [90m# GamingStepDef.a_precondition_has_value_value_val_value(int,int)[0m
+    [31mThen [0m[31mcheck value[0m[31m[1m53[0m[31m is the output[0m                   [90m# GamingStepDef.check_value_is_the_output(int)[0m
+      [31mjava.lang.AssertionError: expected:<33> but was:<53>
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.failNotEquals(Assert.java:743)
+      	at org.junit.Assert.assertEquals(Assert.java:118)
+      	at org.junit.Assert.assertEquals(Assert.java:555)
+      	at org.junit.Assert.assertEquals(Assert.java:542)
+      	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+      	at ✽.Then check value53 is the output(login2.feature:32)
+      [0m
+    [36mWhen [0m[36msomething with value[0m[36m[1m42[0m                        [90m# GamingStepDef.something_with_value(int)[0m
+
+  @test9
+  Scenario: Login with guest account9                  [90m# login2.feature:30[0m
+    [32mGiven [0m[32ma precondition has value value[0m[32m[1m41[0m[32m val value[0m[32m[1m42[0m [90m# GamingStepDef.a_precondition_has_value_value_val_value(int,int)[0m
+    [31mThen [0m[31mcheck value[0m[31m[1m53[0m[31m is the output[0m                   [90m# GamingStepDef.check_value_is_the_output(int)[0m
+      [31mjava.lang.AssertionError: expected:<33> but was:<53>
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.failNotEquals(Assert.java:743)
+      	at org.junit.Assert.assertEquals(Assert.java:118)
+      	at org.junit.Assert.assertEquals(Assert.java:555)
+      	at org.junit.Assert.assertEquals(Assert.java:542)
+      	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+      	at ✽.Then check value53 is the output(login2.feature:32)
+      [0m
+    [36mWhen [0m[36msomething with value[0m[36m[1m42[0m                        [90m# GamingStepDef.something_with_value(int)[0m
+
+  @test9
+  Scenario: Login with guest account9                  [90m# login2.feature:30[0m
+    [32mGiven [0m[32ma precondition has value value[0m[32m[1m41[0m[32m val value[0m[32m[1m42[0m [90m# GamingStepDef.a_precondition_has_value_value_val_value(int,int)[0m
+    [31mThen [0m[31mcheck value[0m[31m[1m53[0m[31m is the output[0m                   [90m# GamingStepDef.check_value_is_the_output(int)[0m
+      [31mjava.lang.AssertionError: expected:<33> but was:<53>
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.failNotEquals(Assert.java:743)
+      	at org.junit.Assert.assertEquals(Assert.java:118)
+      	at org.junit.Assert.assertEquals(Assert.java:555)
+      	at org.junit.Assert.assertEquals(Assert.java:542)
+      	at stepdefs.gaming.GamingStepDef.check_value_is_the_output(GamingStepDef.java:38)
+      	at ✽.Then check value53 is the output(login2.feature:32)
+      [0m
+    [36mWhen [0m[36msomething with value[0m[36m[1m42[0m                        [90m# GamingStepDef.something_with_value(int)[0m

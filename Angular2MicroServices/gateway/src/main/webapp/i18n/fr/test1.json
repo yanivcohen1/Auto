@@ -1,0 +1,25 @@
+{
+    "gatwayApp": {
+        "test1" : {
+            "home": {
+                "title": "Test1S",
+                "createLabel": "Créer un nouveau Test 1",
+                "createOrEditLabel": "Créer ou éditer un Test 1",
+                "search": "Recherche pour Test 1"
+            },
+            "created": "Un nouveau Test 1 a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Test 1 avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Test 1 avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Test 1 {{ id }} ?"
+            },
+            "detail": {
+                "title": "Test 1"
+            },
+            "test": "Test",
+            "value": "Value",
+            "date": "Date",
+            "enums": "Enums"
+        }
+    }
+}

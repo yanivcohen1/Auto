@@ -1,0 +1,5 @@
+C:\Temp2\AcceptLanguage\ClassLibrary1\obj\Debug\ResolveAssemblyReference.cache
+C:\Temp2\AcceptLanguage\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Temp2\AcceptLanguage\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Temp2\AcceptLanguage\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Temp2\AcceptLanguage\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

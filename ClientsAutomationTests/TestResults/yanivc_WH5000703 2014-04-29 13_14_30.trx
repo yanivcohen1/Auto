@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7ece4f61-158b-48ac-88b3-7176f6317888" name="yanivc@WH5000703 2014-04-29 13:14:30" runUser="ADGENCY-DOMAIN\yanivc" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Trace and Test Impact" id="76148d2d-336e-4c3d-89fc-2d0e04d85b16">
+    <Description>These are test settings for Trace and Test Impact.</Description>
+    <Deployment runDeploymentRoot="yanivc_WH5000703 2014-04-29 13_14_30">
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\AutomationLib\bin\Debug\AutomationLib.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\Common.Logging.Log4Net.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\Common.Logging.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\Selenium.WebDriverBackedSelenium.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\log4net.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\Spring.Core.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\ThoughtWorks.Selenium.Core.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\WebDriver.Support.dll" />
+      <DeploymentItem filename="C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Resources\WebDriver.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+        <DataCollectors>
+          <DataCollector uri="datacollector://microsoft/SystemInfo/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.SystemInfo.SystemInfoDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.SystemInfo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="System Information">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/ActionLog/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.ManualTest.ActionLog.ActionLogPlugin, Microsoft.VisualStudio.TestTools.ManualTest.ActionLog, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Actions">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/HttpProxy/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.HttpProxyCollector, Microsoft.VisualStudio.TraceCollector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/TestImpact/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.TestImpactDataCollector, Microsoft.VisualStudio.TraceCollector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Test Impact">
+          </DataCollector>
+          <DataCollector uri="datacollector://microsoft/TraceDebugger/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TraceCollector.TraceDebuggerDataCollector, Microsoft.VisualStudio.TraceCollector, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="IntelliTrace">
+          </DataCollector>
+        </DataCollectors>
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-04-29T13:14:30.7836032+03:00" queuing="2014-04-29T13:14:31.3234671+03:00" start="2014-04-29T13:14:34.8211066+03:00" finish="2014-04-29T13:15:08.8475008+03:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <CollectorDataEntries>
+      <Collector agentName="WH5000703" uri="datacollector://microsoft/SystemInfo/1.0" collectorDisplayName="System Information">
+        <UriAttachments>
+          <UriAttachment>
+            <A href="WH5000703\SystemInformation.xml">System Information from WH5000703</A>
+          </UriAttachment>
+        </UriAttachments>
+      </Collector>
+    </CollectorDataEntries>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Nova21EnClient" storage="c:\svn\bau_automation_tests\trunk\clientsautomationtests\clients\bin\debug\com.who.tests.clients.dll" id="c2b317fb-c028-9c70-a607-017075d83dcf">
+      <Execution timeOut="900000" id="299c6cde-e6ea-417b-a1e1-f58bf2033a95" />
+      <TestMethod codeBase="C:/SVN/BAU_Automation_Tests/trunk/ClientsAutomationTests/Clients/bin/Debug/com.who.tests.clients.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="com.who.tests.clients.Nova21En, com.who.tests.clients, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Nova21EnClient" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="c2b317fb-c028-9c70-a607-017075d83dcf" executionId="299c6cde-e6ea-417b-a1e1-f58bf2033a95" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="299c6cde-e6ea-417b-a1e1-f58bf2033a95" testId="c2b317fb-c028-9c70-a607-017075d83dcf" testName="Nova21EnClient" computerName="WH5000703" duration="00:00:30.9478485" startTime="2014-04-29T13:14:34.9488378+03:00" endTime="2014-04-29T13:15:06.7888331+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="299c6cde-e6ea-417b-a1e1-f58bf2033a95">
+      <Output>
+        <StdOut>ERROR -    GetObjectInternal: error obtaining object WebSelenium
+ERROR - GetObjectInternal: error obtaining object MainWebPage</StdOut>
+        <StdErr>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\TestResults\yanivc_WH5000703 2014-04-29 13_14_30\Out. Access to the path 'C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\TestResults\yanivc_WH5000703 2014-04-29 13_14_30\Out' is denied.</StdErr>
+        <DebugTrace>log4net:ERROR [RollingFileAppender] Unable to acquire lock on file C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\TestResults\yanivc_WH5000703 2014-04-29 13_14_30\Out. Access to the path 'C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\TestResults\yanivc_WH5000703 2014-04-29 13_14_30\Out' is denied.
+</DebugTrace>
+        <ErrorInfo>
+          <Message>Test method com.who.tests.clients.Nova21En.Nova21EnClient threw exception: 
+Spring.Objects.Factory.ObjectCreationException: Error thrown by a dependency of object 'MainWebPage' defined in 'file [C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Clients\Nova21EnClientContext.xml] line 19' : Initialization of object failed : Cannot instantiate Type [AutomationLib.WebSelenium] using ctor [Void .ctor()] : 'chrome not reachable
+  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (100)'
+ while resolving 'constructor argument with name webselenium' to 'WebSelenium' defined in 'file [C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Clients\Nova21EnClientContext.xml] line 24' ---&gt; Spring.Util.FatalReflectionException: Cannot instantiate Type [AutomationLib.WebSelenium] using ctor [Void .ctor()] : 'chrome not reachable
+  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (100)' ---&gt; System.InvalidOperationException: chrome not reachable
+  (Driver info: chromedriver=2.8.241075,platform=Windows NT 6.1 SP1 x86_64) (100)</Message>
+          <StackTrace>    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 1053
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 846
+   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 814
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 89
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeDriverService service, ChromeOptions options, TimeSpan commandTimeout) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Chrome\ChromeDriver.cs:line 135
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor(ChromeOptions options) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Chrome\ChromeDriver.cs:line 80
+   at OpenQA.Selenium.Chrome.ChromeDriver..ctor() in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Chrome\ChromeDriver.cs:line 71
+   at AutomationLib.WebSelenium..ctor() in C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\AutomationLib\WebSelenium.cs:line 64
+   at _dynamic_AutomationLib.WebSelenium..ctor(Object[] )
+   at Spring.Reflection.Dynamic.SafeConstructor.Invoke(Object[] arguments)
+   at Spring.Util.ObjectUtils.InstantiateType(ConstructorInfo constructor, Object[] arguments)
+ --- End of inner exception stack trace ---
+    at Spring.Util.ObjectUtils.InstantiateType(ConstructorInfo constructor, Object[] arguments)
+   at Spring.Objects.Factory.Support.SimpleInstantiationStrategy.Instantiate(RootObjectDefinition definition, String name, IObjectFactory factory)
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.InstantiateObject(String objectName, RootObjectDefinition definition)
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.CreateObjectInstance(String objectName, RootObjectDefinition objectDefinition, Object[] arguments)
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.InstantiateObject(String name, RootObjectDefinition definition, Object[] arguments, Boolean allowEagerCaching, Boolean suppressConfigure)
+ --- End of inner exception stack trace ---
+    at Spring.Objects.Factory.Support.ObjectDefinitionValueResolver.ResolveReference(IObjectDefinition definition, String name, String argumentName, RuntimeObjectReference reference)
+   at Spring.Objects.Factory.Support.ObjectDefinitionValueResolver.ResolvePropertyValue(String name, IObjectDefinition definition, String argumentName, Object argumentValue)
+   at Spring.Objects.Factory.Support.ObjectDefinitionValueResolver.ResolveValueIfNecessary(String name, IObjectDefinition definition, String argumentName, Object argumentValue)
+   at Spring.Objects.Factory.Support.ConstructorResolver.ResolveConstructorArguments(String objectName, RootObjectDefinition definition, ObjectWrapper wrapper, ConstructorArgumentValues cargs, ConstructorArgumentValues resolvedValues)
+   at Spring.Objects.Factory.Support.ConstructorResolver.GetConstructorInstantiationInfo(String objectName, RootObjectDefinition rod, ConstructorInfo[] chosenCtors, Object[] explicitArgs)
+   at Spring.Objects.Factory.Support.ConstructorResolver.AutowireConstructor(String objectName, RootObjectDefinition rod, ConstructorInfo[] chosenCtors, Object[] explicitArgs)
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.AutowireConstructor(String name, RootObjectDefinition definition, ConstructorInfo[] ctors, Object[] explicitArgs)
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.CreateObjectInstance(String objectName, RootObjectDefinition objectDefinition, Object[] arguments)
+   at Spring.Objects.Factory.Support.AbstractAutowireCapableObjectFactory.InstantiateObject(String name, RootObjectDefinition definition, Object[] arguments, Boolean allowEagerCaching, Boolean suppressConfigure)
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.CreateAndCacheSingletonInstance(String objectName, RootObjectDefinition objectDefinition, Object[] arguments)
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.GetObjectInternal(String name, Type requiredType, Object[] arguments, Boolean suppressConfigure)
+   at Spring.Objects.Factory.Support.AbstractObjectFactory.GetObject(String name)
+   at Spring.Objects.Factory.Support.DefaultListableObjectFactory.PreInstantiateSingletons()
+   at Spring.Context.Support.AbstractApplicationContext.Refresh()
+   at AutomationLib.Commons.InitSpring(String contextFileName) in C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\AutomationLib\Commons.cs:line 62
+   at com.who.tests.clients.Nova21En.Nova21EnClientTestDebug() in C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Clients\Nova21EnClient_Test.cs:line 94
+   at com.who.tests.clients.Nova21En.Nova21EnClient() in C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\Clients\Nova21EnClient_Test.cs:line 149
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+      <CollectorDataEntries>
+        <Collector agentName="WH5000703" uri="datacollector://microsoft/SystemInfo/1.0" collectorDisplayName="System Information">
+          <UriAttachments>
+            <UriAttachment>
+              <A href="WH5000703\SystemInformation.xml">System Information from WH5000703</A>
+            </UriAttachment>
+          </UriAttachments>
+        </Collector>
+      </CollectorDataEntries>
+      <DataCollectorMessages>
+        <DataCollectorMessage timestamp="2014-04-29T13:14:36.3239440+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T13:14:36.3239440+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0007: The request or the response message was incomplete or malformed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T13:14:36.3239440+03:00" dataCollectorUri="datacollector://microsoft/HttpProxy/1.0" dataCollectorFriendlyName="ASP.NET Client Proxy for IntelliTrace and Test Impact" agentName="WH5000703" level="Warning">
+          <Text>An error occurred while processing a web request: PRXY0020: Sending the message to the server failed. An existing connection was forcibly closed by the remote host</Text>
+        </DataCollectorMessage>
+        <DataCollectorMessage timestamp="2014-04-29T13:15:06.7748625+03:00" dataCollectorUri="datacollector://microsoft/TestImpact/1.0" dataCollectorFriendlyName="Test Impact" agentName="WH5000703" level="Warning">
+          <Text>No Microsoft .NET applications were launched during the test run. Launch applications from Explorer or a new command prompt after a test case has started. If no .NET application is being tested, disable the Test Impact and IntelliTrace diagnostic data adapters.</Text>
+        </DataCollectorMessage>
+      </DataCollectorMessages>
+    </UnitTestResult>
+  </Results>
+</TestRun>

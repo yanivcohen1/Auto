@@ -1,0 +1,82 @@
+package test.proj;
+
+import java.awt.EventQueue;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+
+public class ExeTest {
+
+	static Process p;
+	static String PID;
+	static long Timeout = 5000;
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		//new Thread(new Runnable() {
+		EventQueue.invokeLater(new Runnable() {
+			   public void run() {
+				   try {
+					Thread.currentThread().sleep(Timeout);//args[0]
+					//p.destroy();
+					String[] command =  new String[3];
+			          command[0] = "cmd";
+			          command[1] = "/C";
+			          command[2] = "C:\\Temp\\KillProcess.exe " + PID;
+					Process p1 = Runtime.getRuntime().exec(command);
+					p1.waitFor();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			    //instanceOfSomething.justAnotherMethod();
+			   }
+			});//.start();
+		
+		try{
+			  String[] command =  new String[3];
+	          command[0] = "cmd";
+	          command[1] = "/C";
+	          command[2] = "C:\\Temp\\ConsoleExe.exe \"java\" \"-jar C:\\Temp\\runner.jar\"";//"java -jar C:\\Temp\\runner.jar";
+	          //command[3] = "java";
+	          //command[4] = "-jar";
+	          //command[4] = "C:\\Temp\\runner.jar";
+	          //command[2] = "C:\\Users\\yan\\Documents\\Visual Studio 2010\\Projects\\Eex\\ConsoleExe\\bin\\Debug\\ConsoleExe.exe";
+	          //command[2] = "C:\\Temp\\SeleniumAndroidTest\\ExtTest.bat";
+	          p = Runtime.getRuntime().exec(command);
+	          BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
+	 
+	          BufferedReader stdError = new BufferedReader(new InputStreamReader(p.getErrorStream()));
+	          
+	          // read the output from the command
+	 
+	          String s = null;
+	          System.out.println("Here is the standard output of the command:\n");
+	          boolean isFirst = true;
+	          while ((s = stdInput.readLine()) != null) {
+	              if (isFirst) {
+	            	  isFirst = false;
+	            	  PID = s;
+	            	  System.out.println(s);
+	              }else{
+	            	  System.out.println(s);
+	              }
+	          }
+	 
+	          // read any errors from the attempted command
+	 
+	          System.out.println("Here is the standard error of the command (if any):\n");
+	          while ((s = stdError.readLine()) != null) {
+	              System.out.println(s);
+	          }
+			System.out.println("I am In try");
+		}
+		catch(Exception e){  
+					System.out.println("I am In catch");
+		}
+
+	}
+
+}

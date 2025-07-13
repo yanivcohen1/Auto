@@ -1,0 +1,7 @@
+C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\ClickElement2\obj\x86\Debug\SetSafariUserAgent.csprojResolveAssemblyReference.cache
+C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\ClickElement2\bin\Debug\ClickSafariUserAgent.exe
+C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\ClickElement2\bin\Debug\ClickSafariUserAgent.pdb
+C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\ClickElement2\obj\x86\Debug\ClickSafariUserAgent.exe
+C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\ClickElement2\obj\x86\Debug\ClickSafariUserAgent.pdb
+C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\ClickElement2\bin\Debug\ClickSafariUserAgent.exe.config
+C:\SVN\BAU_Automation_Tests\trunk\ClientsAutomationTests\ClickElement2\bin\Debug\AutoItX3.Assembly.dll

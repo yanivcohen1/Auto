@@ -1,0 +1,44 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "suite",
+            "otherEntityName": "suite",
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": [
+                "required"
+            ],
+            "otherEntityField": "suite_name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "test_name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "class_name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "method_name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "parameter_name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "parameter_value",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170207071854",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "tests",
+    "pagination": "pagination"
+}

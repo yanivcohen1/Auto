@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+	   xsi:schemaLocation="
+      http://www.springframework.org/schema/beans 
+      http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+      http://www.springframework.org/schema/context 
+      http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+ 
+    <context:annotation-config/>
+    <context:component-scan base-package="com.wh.auto"/>
+    <context:property-placeholder location="classpath:utility.properties" />
+    
+    <bean id="Browsers" class="com.wh.auto.common.Browsers" />
+
+	 <bean class="com.wh.auto.general.mobile.TestDepositMobile" lazy-init="true">
+        <property name="scenario" value="Login" />
+        <property name="feature" value="Login.feature" />
+    </bean>
+
+    <bean class="com.wh.auto.general.mobile.pages.MainWebPage" lazy-init="true">
+        <property name="browserType" value="safari" /> 
+        <property name="url" value="${EgTrackingUrl}" />
+        <property name="languageDev" value="${EgLanguageDev}/${LanguageDE}" />
+        <property name="languageAdmin" value="${EgLanguageAdmin}/${LanguageDE}" />
+        <property name="language" value="${EgLanguage}/${LanguageDE}" />
+        <property name="userAgent" value="${MobileSafariUserAgent}" />
+        <property name="login" value="#top > table > tbody > tr > td.td_top2 > div > a" />
+        <property name="cashier" value="#top > table > tbody > tr > td.td_top2 > div > a" />
+        <property name="userName" value="141215123054" />
+        <property name="password" value="123456" />
+    </bean>
+    	  
+    <bean class="com.wh.auto.general.mobile.pages.DepositPage" lazy-init="true">
+        <property name="month" value="February" />
+        <property name="currency" value="£" />
+    </bean>  
+</beans>

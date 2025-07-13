@@ -1,0 +1,48 @@
+C:\Temp2\AcceptLanguage\AcceptLanguage\bin\Release\AcceptLanguage.exe.config
+C:\Temp2\AcceptLanguage\AcceptLanguage\bin\Release\AcceptLanguage.exe.manifest
+C:\Temp2\AcceptLanguage\AcceptLanguage\bin\Release\AcceptLanguage.application
+C:\Temp2\AcceptLanguage\AcceptLanguage\bin\Release\AcceptLanguage.exe
+C:\Temp2\AcceptLanguage\AcceptLanguage\bin\Release\AcceptLanguage.pdb
+C:\Temp2\AcceptLanguage\AcceptLanguage\bin\Release\WH_MAIN_Service.dll
+C:\Temp2\AcceptLanguage\AcceptLanguage\bin\Release\WH_MAIN_Service.pdb
+C:\Temp2\AcceptLanguage\AcceptLanguage\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Temp2\AcceptLanguage\AcceptLanguage\obj\x86\Release\AcceptLanguage.MAIN_AL.resources
+C:\Temp2\AcceptLanguage\AcceptLanguage\obj\x86\Release\AcceptLanguage.Properties.Resources.resources
+C:\Temp2\AcceptLanguage\AcceptLanguage\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Temp2\AcceptLanguage\AcceptLanguage\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Temp2\AcceptLanguage\AcceptLanguage\obj\x86\Release\AcceptLanguage.exe.manifest
+C:\Temp2\AcceptLanguage\AcceptLanguage\obj\x86\Release\AcceptLanguage.application
+C:\Temp2\AcceptLanguage\AcceptLanguage\obj\x86\Release\AcceptLanguage.exe
+C:\Temp2\AcceptLanguage\AcceptLanguage\obj\x86\Release\AcceptLanguage.pdb
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\bin\Release\AcceptLanguage.exe.config
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\obj\x86\Release\AcceptLanguage.exe
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\obj\x86\Release\AcceptLanguage.pdb
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\bin\Release\AcceptLanguage.exe.manifest
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\bin\Release\AcceptLanguage.application
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\bin\Release\AcceptLanguage.exe
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\bin\Release\AcceptLanguage.pdb
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\bin\Release\WH_MAIN_Service.dll
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\bin\Release\WH_MAIN_Service.pdb
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\obj\x86\Release\ResolveAssemblyReference.cache
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\obj\x86\Release\AcceptLanguage.MAIN_AL.resources
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\obj\x86\Release\AcceptLanguage.Properties.Resources.resources
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\obj\x86\Release\GenerateResource.read.1.tlog
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\obj\x86\Release\GenerateResource.write.1.tlog
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\obj\x86\Release\AcceptLanguage.exe.manifest
+U:\My Documents\Visual Studio 2010\Projects\AcceptLanguage\AcceptLanguage\obj\x86\Release\AcceptLanguage.application
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Release\AcceptLanguage.exe.config
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\obj\x86\Release\AcceptLanguage.exe
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\obj\x86\Release\AcceptLanguage.pdb
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Release\AcceptLanguage.exe.manifest
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Release\AcceptLanguage.application
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Release\AcceptLanguage.exe
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Release\AcceptLanguage.pdb
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Release\WH_MAIN_Service.dll
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\bin\Release\WH_MAIN_Service.pdb
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\obj\x86\Release\ResolveAssemblyReference.cache
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\obj\x86\Release\AcceptLanguage.MAIN_AL.resources
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\obj\x86\Release\AcceptLanguage.Properties.Resources.resources
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\obj\x86\Release\GenerateResource.read.1.tlog
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\obj\x86\Release\GenerateResource.write.1.tlog
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\obj\x86\Release\AcceptLanguage.exe.manifest
+C:\SVN\Automation_Tools\AcceptLanguage\AcceptLanguage\obj\x86\Release\AcceptLanguage.application

@@ -1,0 +1,46 @@
+
+<div>
+    <h2><span translate="testmanageApp.suite.detail.title">Suite</span> {{suite.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="testmanageApp.suite.suite_name">Suite_name</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{suite.suite_name}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="testmanageApp.suite.xml_file_location">Xml_file_location</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{suite.xml_file_location}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="testmanageApp.suite.jenkins_url">Jenkins_url</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{suite.jenkins_url}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="suite"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

@@ -1,0 +1,16 @@
+<h3>Steps</h3>
+<div *ngIf="product$ | async as product">
+  <h4>senario: "{{ product.name }}"</h4>
+  <!-- <div>
+    <label>Id: </label>{{ product.id }}
+  </div> -->
+  <input type="text" placeholder="Search" #queryElem (keyup)="0">
+  <ul class="items">
+    <li *ngFor="let build of builds$ | async | filterAsync:queryElem.value:'name'"
+      [class.selected]="build.id === selectedId">
+      <a (click)="selectBuildId(build.id)">
+        <span class="badge">{{ build.id }}</span>{{ build.name }}
+      </a>
+    </li>
+  </ul>
+</div>

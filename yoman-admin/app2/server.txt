@@ -1,0 +1,66 @@
+@POST
+@Path("/runManualTest")
+@Produces(MediaType.APPLICATION_JSON)
+@Consumes(MediaType.APPLICATION_JSON)
+public ManualTestOut runManualTest(ManualTestIn manualTestIn) throws JsonParseException, JsonMappingException, IOException {
+	ManualTestOut manualTestOut = new ManualTestOut();
+	if (manualTestIn.getInUrl().contentEquals(manualTestIn.getExpectedUrl())) {
+		manualTestOut.setOutUrl(manualTestIn.getExpectedUrl());
+		manualTestOut.setStatus(true);
+	}else{
+		manualTestOut.setOutUrl(manualTestIn.getExpectedUrl());
+		manualTestOut.setStatus(false);
+	}
+	try {Thread.sleep(3000);} catch (InterruptedException e) {}
+	return manualTestOut;//, String testManualContent
+}
+
+@XmlRootElement
+public class ManualTestIn {
+
+	private String inUrl;
+	private String expectedUrl;
+	
+	public String getInUrl() {
+		return inUrl;
+	}
+	public void setInUrl(String inUrl) {
+		this.inUrl = inUrl;
+	}
+	public String getExpectedUrl() {
+		return expectedUrl;
+	}
+	public void setExpectedUrl(String expectedUrl) {
+		this.expectedUrl = expectedUrl;
+	}
+	
+}
+
+ackage com.who.rest.dto;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+public class ManualTestOut {
+
+	private String outUrl;
+	private boolean status;
+	
+	public String getOutUrl() {
+		return outUrl;
+	}
+	public void setOutUrl(String outUrl) {
+		this.outUrl = outUrl;
+	}
+	
+	public boolean isStatus() {
+		return status;
+	}
+	public void setStatus(boolean status) {
+		this.status = status;
+	}
+	
+}

@@ -1,0 +1,24 @@
+{
+    "ang2MongMvnApp": {
+        "tests" : {
+            "home": {
+                "title": "Tests",
+                "createLabel": "Créer un nouveau Tests",
+                "createOrEditLabel": "Créer ou éditer un Tests"
+            },
+            "created": "Un nouveau Tests a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Tests avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Tests avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Tests {{ id }} ?"
+            },
+            "detail": {
+                "title": "Tests"
+            },
+            "num": "Num",
+            "str": "Str",
+            "enm": "Enm",
+            "time": "Time"
+        }
+    }
+}

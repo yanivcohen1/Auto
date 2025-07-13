@@ -1,0 +1,139 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomationLib", "AutomationLib\AutomationLib.csproj", "{28FF8250-5EE1-4F66-9349-546FBF0B7831}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1639DF51-7B08-49F9-BF73-EC5C8BB50EC1}"
+	ProjectSection(SolutionItems) = preProject
+		Build.cmd = Build.cmd
+		Build_Test.txt = Build_Test.txt
+		Documentation\ClientsAutoTestsDoc.shfbproj = Documentation\ClientsAutoTestsDoc.shfbproj
+		configFile.ini = configFile.ini
+		Local.testsettings = Local.testsettings
+		log4net.xml = log4net.xml
+		Tests.csv = Tests.csv
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+		UI_Automation1.vsmdi = UI_Automation1.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneralTest", "GeneralTest\GeneralTest.csproj", "{AF2003B0-F452-459A-BBD7-28A1E810AD91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RubyBingoEn", "RubyBingoEn\RubyBingoEn.csproj", "{6CBB9078-2576-4E44-975B-B4AEDFDE8E13}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Resources", "Solution Resources", "{C8BA3D4A-D592-4B1F-93B1-A22A431F90BC}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\AutoItX3_x64.dll = Resources\AutoItX3_x64.dll
+		Resources\Common.Logging.dll = Resources\Common.Logging.dll
+		Resources\Common.Logging.Log4Net.dll = Resources\Common.Logging.Log4Net.dll
+		Resources\DeleteAllCasinosConsole.exe = Resources\DeleteAllCasinosConsole.exe
+		Resources\FiddlerCore.dll = Resources\FiddlerCore.dll
+		Resources\IEDriverServer.exe = Resources\IEDriverServer.exe
+		Resources\log4net.dll = Resources\log4net.dll
+		Resources\log4net.xml = Resources\log4net.xml
+		Resources\RunTestFromCSV.exe = Resources\RunTestFromCSV.exe
+		Resources\Selenium.WebDriverBackedSelenium.dll = Resources\Selenium.WebDriverBackedSelenium.dll
+		Resources\Selenium.WebDriverBackedSelenium.pdb = Resources\Selenium.WebDriverBackedSelenium.pdb
+		Resources\Selenium.WebDriverBackedSelenium.xml = Resources\Selenium.WebDriverBackedSelenium.xml
+		Resources\SendEmailReport.exe = Resources\SendEmailReport.exe
+		Resources\Spring.Core.dll = Resources\Spring.Core.dll
+		Resources\ThoughtWorks.Selenium.Core.dll = Resources\ThoughtWorks.Selenium.Core.dll
+		Resources\ThoughtWorks.Selenium.Core.pdb = Resources\ThoughtWorks.Selenium.Core.pdb
+		Resources\ThoughtWorks.Selenium.Core.xml = Resources\ThoughtWorks.Selenium.Core.xml
+		Resources\WebDriver.dll = Resources\WebDriver.dll
+		Resources\WebDriver.pdb = Resources\WebDriver.pdb
+		Resources\WebDriver.Support.dll = Resources\WebDriver.Support.dll
+		Resources\WebDriver.Support.pdb = Resources\WebDriver.Support.pdb
+		Resources\WebDriver.Support.xml = Resources\WebDriver.Support.xml
+		Resources\WebDriver.xml = Resources\WebDriver.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clients", "Clients\Clients.csproj", "{29F18C5D-948B-411C-A657-ECEFA2B5E612}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClickControlByNameAndWinClass", "ClickElement\ClickControlByNameAndWinClass.csproj", "{E7FE590A-3927-4AB3-ADF4-C92A0CCD4C96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetSafariUserAgent", "ClickElement2\SetSafariUserAgent.csproj", "{7689854A-6791-40C8-93E8-AF5AC6CC5B7F}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = UI_Automation1.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28FF8250-5EE1-4F66-9349-546FBF0B7831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28FF8250-5EE1-4F66-9349-546FBF0B7831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28FF8250-5EE1-4F66-9349-546FBF0B7831}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{28FF8250-5EE1-4F66-9349-546FBF0B7831}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{28FF8250-5EE1-4F66-9349-546FBF0B7831}.Debug|x86.ActiveCfg = Debug|x86
+		{28FF8250-5EE1-4F66-9349-546FBF0B7831}.Debug|x86.Build.0 = Debug|x86
+		{28FF8250-5EE1-4F66-9349-546FBF0B7831}.Release|Any CPU.ActiveCfg = Release|x64
+		{28FF8250-5EE1-4F66-9349-546FBF0B7831}.Release|Any CPU.Build.0 = Release|x64
+		{28FF8250-5EE1-4F66-9349-546FBF0B7831}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{28FF8250-5EE1-4F66-9349-546FBF0B7831}.Release|Mixed Platforms.Build.0 = Release|x86
+		{28FF8250-5EE1-4F66-9349-546FBF0B7831}.Release|x86.ActiveCfg = Release|x86
+		{28FF8250-5EE1-4F66-9349-546FBF0B7831}.Release|x86.Build.0 = Release|x86
+		{AF2003B0-F452-459A-BBD7-28A1E810AD91}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{AF2003B0-F452-459A-BBD7-28A1E810AD91}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{AF2003B0-F452-459A-BBD7-28A1E810AD91}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{AF2003B0-F452-459A-BBD7-28A1E810AD91}.Debug|x86.ActiveCfg = Debug|x86
+		{AF2003B0-F452-459A-BBD7-28A1E810AD91}.Debug|x86.Build.0 = Debug|x86
+		{AF2003B0-F452-459A-BBD7-28A1E810AD91}.Release|Any CPU.ActiveCfg = Release|x86
+		{AF2003B0-F452-459A-BBD7-28A1E810AD91}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{AF2003B0-F452-459A-BBD7-28A1E810AD91}.Release|Mixed Platforms.Build.0 = Release|x86
+		{AF2003B0-F452-459A-BBD7-28A1E810AD91}.Release|x86.ActiveCfg = Release|x86
+		{AF2003B0-F452-459A-BBD7-28A1E810AD91}.Release|x86.Build.0 = Release|x86
+		{6CBB9078-2576-4E44-975B-B4AEDFDE8E13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CBB9078-2576-4E44-975B-B4AEDFDE8E13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CBB9078-2576-4E44-975B-B4AEDFDE8E13}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{6CBB9078-2576-4E44-975B-B4AEDFDE8E13}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{6CBB9078-2576-4E44-975B-B4AEDFDE8E13}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6CBB9078-2576-4E44-975B-B4AEDFDE8E13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CBB9078-2576-4E44-975B-B4AEDFDE8E13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CBB9078-2576-4E44-975B-B4AEDFDE8E13}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{6CBB9078-2576-4E44-975B-B4AEDFDE8E13}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{6CBB9078-2576-4E44-975B-B4AEDFDE8E13}.Release|x86.ActiveCfg = Release|Any CPU
+		{29F18C5D-948B-411C-A657-ECEFA2B5E612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29F18C5D-948B-411C-A657-ECEFA2B5E612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29F18C5D-948B-411C-A657-ECEFA2B5E612}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{29F18C5D-948B-411C-A657-ECEFA2B5E612}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{29F18C5D-948B-411C-A657-ECEFA2B5E612}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{29F18C5D-948B-411C-A657-ECEFA2B5E612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29F18C5D-948B-411C-A657-ECEFA2B5E612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29F18C5D-948B-411C-A657-ECEFA2B5E612}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{29F18C5D-948B-411C-A657-ECEFA2B5E612}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{29F18C5D-948B-411C-A657-ECEFA2B5E612}.Release|x86.ActiveCfg = Release|Any CPU
+		{E7FE590A-3927-4AB3-ADF4-C92A0CCD4C96}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{E7FE590A-3927-4AB3-ADF4-C92A0CCD4C96}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{E7FE590A-3927-4AB3-ADF4-C92A0CCD4C96}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{E7FE590A-3927-4AB3-ADF4-C92A0CCD4C96}.Debug|x86.ActiveCfg = Debug|x86
+		{E7FE590A-3927-4AB3-ADF4-C92A0CCD4C96}.Debug|x86.Build.0 = Debug|x86
+		{E7FE590A-3927-4AB3-ADF4-C92A0CCD4C96}.Release|Any CPU.ActiveCfg = Release|x86
+		{E7FE590A-3927-4AB3-ADF4-C92A0CCD4C96}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{E7FE590A-3927-4AB3-ADF4-C92A0CCD4C96}.Release|Mixed Platforms.Build.0 = Release|x86
+		{E7FE590A-3927-4AB3-ADF4-C92A0CCD4C96}.Release|x86.ActiveCfg = Release|x86
+		{E7FE590A-3927-4AB3-ADF4-C92A0CCD4C96}.Release|x86.Build.0 = Release|x86
+		{7689854A-6791-40C8-93E8-AF5AC6CC5B7F}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{7689854A-6791-40C8-93E8-AF5AC6CC5B7F}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{7689854A-6791-40C8-93E8-AF5AC6CC5B7F}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{7689854A-6791-40C8-93E8-AF5AC6CC5B7F}.Debug|x86.ActiveCfg = Debug|x86
+		{7689854A-6791-40C8-93E8-AF5AC6CC5B7F}.Debug|x86.Build.0 = Debug|x86
+		{7689854A-6791-40C8-93E8-AF5AC6CC5B7F}.Release|Any CPU.ActiveCfg = Release|x86
+		{7689854A-6791-40C8-93E8-AF5AC6CC5B7F}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{7689854A-6791-40C8-93E8-AF5AC6CC5B7F}.Release|Mixed Platforms.Build.0 = Release|x86
+		{7689854A-6791-40C8-93E8-AF5AC6CC5B7F}.Release|x86.ActiveCfg = Release|x86
+		{7689854A-6791-40C8-93E8-AF5AC6CC5B7F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,52 @@
+package com.who.tlv.ServicesWebsites.client.Tools;
+
+public class ReqXData {
+	
+	public static String getReqX_XML_Data() {
+		return ReqX_XML_Data;
+	}
+	public static String  m_newline = "\n";
+	public final static String ReqX_XML_Data = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" + m_newline + 
+"<ReqX>" + m_newline +
+"       <Option>" + m_newline +
+"			 <Brand>http://www.21nova.com</Brand>" + m_newline +
+"			 <SelectAll>false</SelectAll>" + m_newline +
+"       </Option>" + m_newline +
+"       <Options>" + m_newline +
+"			<Brand> http://www.williamhillcasino.com </Brand>" + m_newline +
+"			<Brand> http://www.eurogrand.com </Brand>" + m_newline +
+"			<Brand> http://www2.williamhill.com </Brand>" + m_newline +
+"			<Brand> http://www.prestigecasino.com </Brand>" + m_newline +
+"			<Brand> http://www.21nova.com </Brand>" + m_newline +
+"			<Brand> http://www.rubybingo.com </Brand>" + m_newline +
+"			<Brand> http://www.williamhill.com </Brand>" + m_newline +
+"			<Brand> http://casino.williamhill.com </Brand>" + m_newline +
+"			<Brand> http://www.cotedazurpalace.com </Brand>" + m_newline +
+"			<Brand> http://www.SkyKingsCasino.com </Brand>" + m_newline +
+"			<Brand> http://www.joylandcasino.com </Brand>" + m_newline +
+"			<Brand> http://www.cdpoker.com </Brand>" + m_newline +
+"			<Brand> http://www.newyorkcasino.com </Brand>" + m_newline +
+"			<Brand> http://www.usacasino.com </Brand>" + m_newline +
+"			<Brand> http://www.rubybingo.co.uk </Brand>" + m_newline +
+"			<Brand> http://www.ambercoastcasino.com </Brand>" + m_newline +
+"			<Brand> http://www.aqualoungecasino.com </Brand>" + m_newline +
+"			<Brand> http://www.diamondclubcasino.com </Brand>" + m_newline +
+"			<Brand> http://www.playgatecasino.com </Brand>" + m_newline +
+"			<Brand> http://www.prestige-bingo.com </Brand>" + m_newline +
+"			<Brand> http://www.affutd.com </Brand>" + m_newline +
+"			<Brand> http://www.williamhillpoker.com </Brand>" + m_newline +
+"			<Brand> http://www.eurograndmobile.com/include/img/internal/ </Brand>" + m_newline +
+"			<Brand> http://www.prestigecasino.com/sharedobj/asyncqueues </Brand>" + m_newline +
+"			<Brand> http://www.euro-casinos.net/whfeed/leeds/get_ranks_xml.php? </Brand>" + m_newline +
+"			<Brand> http://casinotimes.co.uk/ </Brand>" + m_newline +
+"			<Brand> http://help.williamhill.com/ </Brand>" + m_newline +
+"			<Brand> http://toolbar.williamhill.com </Brand>" + m_newline +
+"			<Brand> http://serve.williamhillcasino.com/promoRedirect? </Brand>" + m_newline +
+"			<Brand> http://www2.williamhill.com/en/itv2/ </Brand>" + m_newline +
+"			<Brand> http://download.prestigecasino.com/flash/16/casino_prestige </Brand>" + m_newline +
+"			<Brand> http://new.prestigecasino.com/freespin.html </Brand>" + m_newline +
+"			<Brand> http://livecasino.eurogrand.com/ </Brand>" + m_newline +
+"			<Brand> http://www.RequsetxTest.com/ </Brand>" + m_newline +
+"       </Options>" + m_newline +
+"</ReqX>";
+}

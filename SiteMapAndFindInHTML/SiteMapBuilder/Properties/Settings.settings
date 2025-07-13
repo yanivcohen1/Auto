@@ -1,0 +1,34 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SiteMapBuilder.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="LanguageFilter" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;/no/&lt;/string&gt;
+  &lt;string&gt;/pl/&lt;/string&gt;
+  &lt;string&gt;/fr/&lt;/string&gt;
+  &lt;string&gt;/sv/&lt;/string&gt;
+  &lt;string&gt;/nl/&lt;/string&gt;
+  &lt;string&gt;/fi/&lt;/string&gt;
+  &lt;string&gt;/cs/&lt;/string&gt;
+  &lt;string&gt;/ru/&lt;/string&gt;
+  &lt;string&gt;/ja/&lt;/string&gt;
+  &lt;string&gt;/es/&lt;/string&gt;
+  &lt;string&gt;/uk/&lt;/string&gt;
+  &lt;string&gt;/ro/&lt;/string&gt;
+  &lt;string&gt;/qc/&lt;/string&gt;
+  &lt;string&gt;/cz/&lt;/string&gt;
+  &lt;string&gt;/da/&lt;/string&gt;
+  &lt;string&gt;/pt/&lt;/string&gt;
+  &lt;string&gt;/de/&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="LoadDelayInMs" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="SearchString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">flashcasino.php</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

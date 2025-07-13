@@ -1,0 +1,17 @@
+<p-breadcrumb [model]="breadcrumb_items" [home]="home"></p-breadcrumb>
+<div [ngbCollapse]="isProductCollapsed">
+  <h3>Products</h3>
+  <button (click)="openModal()">Edit selected Product</button>
+  <br>
+  <input type="text" placeholder="Search" #queryElem (keyup)="0">
+  <ul class="items">
+    <li *ngFor="let product of products$ | async | filterAsync:queryElem.value:'name'"
+      [class.selected]="product.id === selectedId">
+      <a [routerLink]="['./product', product.id]" (click)="selectProductId(product.id)">
+        <span class="badge">{{ product.id }}</span>{{ product.name }}
+      </a>
+    </li>
+  </ul>
+</div>
+
+<router-outlet></router-outlet>

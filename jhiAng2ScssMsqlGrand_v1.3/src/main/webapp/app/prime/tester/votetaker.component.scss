@@ -1,0 +1,58 @@
+div.float {
+    background-color: rgba(228, 229, 230, 0.66);//#d9edf7;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 3px;
+    position: fixed;
+    margin-left: 35%;
+    border-style:groove;
+}
+
+.hipster1 {
+    //display: inline-block;
+    //width: 347px;
+    //height: 497px;
+    //background: url("../../../content/images/family.jpg") no-repeat center top;
+    background-size: contain;
+}
+
+p-tabview div ul {
+    height: auto;
+}
+
+.dummyComponent{
+    height: 200px;
+    width: 200px;
+    background-color: purple;
+    position: relative;
+    }
+
+#leaflet {
+    height: 200px;
+    width: 100%;
+    }
+
+.upper {
+    height: 100%;
+    width: 100%;
+    background-color: #fdd;
+}
+
+.lower {
+    height: 100%;
+    width: 100%;
+    background-color: #bbb;
+}
+
+.left {
+    height: 100%;
+    background-color: #ddf;
+}
+
+.right {
+    height: 100%;
+    background-color: #dfd;
+}

@@ -1,0 +1,33 @@
+-git push
+git pull
+// change the file (you can do 'git merge' [or by external tool])
+git add <path/fileName> //mark marge as done
+git commit -m 'comment' " <path/fileName>
+git push
+
+-git reset
+git reset --hard origin/master //this is for all the files
+git checkout origin/master -- testngClientsDebug.xml
+git commit -m "test" testngClientsDebug.xml
+git push
+
+-in SourceTree:
+work on feature and merg to branch
+go to the brance you want to merge right click -> merge develop into current branch
+on conflict
+go to uncommited changes
+right click on staged file you want to merge -> resulve conflict -> lunch external merge tool
+save in external tool
+in source tree right click on staged file -> commit
+
+
+-Git merge branch to master
+Switch to the master branch.
+Right click in the directory you have your repo, go to TortoiseGit->Merge.
+Select the branch your want to merge into master, then put in your merge message, hit ok
+Checkout Master
+TortoiseGit->Fetch
+TortoiseGit->Merge
+Select branch you want to merge, hit ok
+then in master branch
+TortoiseGit->push

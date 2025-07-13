@@ -1,0 +1,77 @@
+2013-11-14 10:55:12,865 [Agent: adapter run thread for test 'PrestigeClientEnTest' with id 'd131ae34-57bb-4738-a192-3d63ad43d7d3'] ERROR PrestigeClientEn.PrestigeEN.PrestigeClientEnTest(101) - Fatal Error: 
+OpenQA.Selenium.NoSuchElementException: Unable to find element with partial link text == Download1
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 993
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 846
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 877
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByPartialLinkText(String partialLinkText) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 560
+   at OpenQA.Selenium.By.<>c__DisplayClass16.<PartialLinkText>b__14(ISearchContext context) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\By.cs:line 212
+   at OpenQA.Selenium.By.FindElement(ISearchContext context) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\By.cs:line 306
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 330
+   at PrestigeClientEn.PrestigeEN.PrestigeClientEnTest() in C:\SVN\UI_Automation\prestigeClientEn\PrestigeEnTest.cs:line 91
+2013-11-14 10:57:09,758 [Agent: adapter run thread for test 'PrestigeClientEnTest' with id 'f4cc0180-4c0c-4c02-8583-c71edfec98ff'] ERROR PrestigeClientEn.PrestigeEN.PrestigeClientEnTest(101) - Fatal Error: 
+OpenQA.Selenium.NoSuchElementException: Unable to find element with partial link text == Download1
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 993
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 846
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 877
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByPartialLinkText(String partialLinkText) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 560
+   at OpenQA.Selenium.By.<>c__DisplayClass16.<PartialLinkText>b__14(ISearchContext context) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\By.cs:line 212
+   at OpenQA.Selenium.By.FindElement(ISearchContext context) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\By.cs:line 306
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 330
+   at PrestigeClientEn.PrestigeEN.PrestigeClientEnTest() in C:\SVN\UI_Automation\prestigeClientEn\PrestigeEnTest.cs:line 91
+2013-11-14 11:21:52,348 [Agent: adapter run thread for test 'PrestigeClientEnTest' with id '6ddd7179-9be3-4c26-8a4b-d3637c70f23e'] ERROR PrestigeClientEn.PrestigeEN.PrestigeClientEnTest(104) - Fatal Error: 
+OpenQA.Selenium.NoSuchElementException: Unable to find element with partial link text == Download1
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 993
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 846
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 877
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByPartialLinkText(String partialLinkText) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 560
+   at OpenQA.Selenium.By.<>c__DisplayClass16.<PartialLinkText>b__14(ISearchContext context) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\By.cs:line 212
+   at OpenQA.Selenium.By.FindElement(ISearchContext context) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\By.cs:line 306
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 330
+   at PrestigeClientEn.PrestigeEN.PrestigeClientEnTest() in C:\SVN\UI_Automation\prestigeClientEn\PrestigeEnTest.cs:line 93
+2013-11-14 11:40:11,428 [Agent: adapter run thread for test 'PrestigeClientEnTest' with id 'cc98b8ab-5a6b-4a69-817c-0179015a328b'] ERROR PrestigeClientEn.PrestigeEN.PrestigeClientEnTest(107) - Fatal Error: 
+OpenQA.Selenium.NoSuchElementException: Unable to find element with partial link text == Download1
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 993
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 846
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 877
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByPartialLinkText(String partialLinkText) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 560
+   at OpenQA.Selenium.By.<>c__DisplayClass16.<PartialLinkText>b__14(ISearchContext context) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\By.cs:line 212
+   at OpenQA.Selenium.By.FindElement(ISearchContext context) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\By.cs:line 306
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 330
+   at PrestigeClientEn.PrestigeEN.PrestigeClientEnTest() in C:\SVN\UI_Automation\prestigeClientEn\PrestigeEnTest.cs:line 96
+2013-11-14 14:21:08,747 [Agent: adapter run thread for test 'PrestigeClientEnTest' with id '82a22081-10e9-4b73-a63b-88c6457b747e'] ERROR PrestigeClientEn.PrestigeEN.PrestigeClientEnTest(107) - Fatal Error: 
+OpenQA.Selenium.NoSuchElementException: Unable to find element with partial link text == Download1
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 993
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 846
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 877
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByPartialLinkText(String partialLinkText) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 560
+   at OpenQA.Selenium.By.<>c__DisplayClass16.<PartialLinkText>b__14(ISearchContext context) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\By.cs:line 212
+   at OpenQA.Selenium.By.FindElement(ISearchContext context) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\By.cs:line 306
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 330
+   at PrestigeClientEn.PrestigeEN.PrestigeClientEnTest() in C:\SVN\UI_Automation\prestigeClientEn\PrestigeEnTest.cs:line 96
+2013-11-14 17:46:17,559 [Agent: adapter run thread for test 'PrestigeClientEnTest' with id '16ed267a-c794-4e27-91e7-432741a824bf'] ERROR PrestigeClientEn.PrestigeEN.PrestigeClientEnTest(109) - Fatal Error: 
+Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException: Assert.AreEqual failed. Expected:<http://www.prestigecasino.com/en/getting-started.html>. Actual:<ttp://www.prestigecasino.com/en/getting-started.html>. prestigecasino URL Error
+   at Microsoft.VisualStudio.TestTools.UnitTesting.Assert.HandleFail(String assertionName, String message, Object[] parameters)
+   at Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual[T](T expected, T actual, String message, Object[] parameters)
+   at PrestigeClientEn.PrestigeEN.PrestigeClientEnTest() in C:\SVN\UI_Automation\prestigeClientEn\PrestigeEnTest.cs:line 102
+2013-11-14 17:47:08,560 [Agent: adapter run thread for test 'PrestigeClientEnTest' with id '281cf8b7-ee79-43d8-9bb0-f6fc0a0337bd'] ERROR PrestigeClientEn.PrestigeEN.PrestigeClientEnTest(109) - Fatal Error: 
+Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException: Assert.AreEqual failed. Expected:<http://www.prestigecasino.com/en/getting-started.html>. Actual:<ttp://www.prestigecasino.com/en/getting-started.html>. prestigecasino URL Error
+   at Microsoft.VisualStudio.TestTools.UnitTesting.Assert.HandleFail(String assertionName, String message, Object[] parameters)
+   at Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual[T](T expected, T actual, String message, Object[] parameters)
+   at PrestigeClientEn.PrestigeEN.PrestigeClientEnTest() in C:\SVN\UI_Automation\prestigeClientEn\PrestigeEnTest.cs:line 102
+2013-11-14 17:49:40,353 [Agent: adapter run thread for test 'PrestigeClientEnTest' with id '4547883d-3f17-430f-a021-d8b8c3f3ba35'] ERROR PrestigeClientEn.PrestigeEN.PrestigeClientEnTest(104) - Fatal Error: 
+OpenQA.Selenium.WebDriverTimeoutException: Timed out after 5 seconds ---> OpenQA.Selenium.NoSuchElementException: Unable to find element with partial link text == Download1
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 993
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 846
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 877
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByPartialLinkText(String partialLinkText) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 560
+   at OpenQA.Selenium.By.<>c__DisplayClass16.<PartialLinkText>b__14(ISearchContext context) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\By.cs:line 212
+   at OpenQA.Selenium.By.FindElement(ISearchContext context) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\By.cs:line 306
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by) in c:\Projects\WebDriver\trunk\dotnet\src\webdriver\Remote\RemoteWebDriver.cs:line 330
+   at AutomationLib.WebSelenium.<>c__DisplayClass1.<FindElement>b__0(IWebDriver d) in C:\SVN\UI_Automation\AutomationLib\WebSelenium.cs:line 47
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition) in c:\Projects\WebDriver\trunk\dotnet\src\support\UI\DefaultWait.cs:line 161
+   --- End of inner exception stack trace ---
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException) in c:\Projects\WebDriver\trunk\dotnet\src\support\UI\DefaultWait.cs:line 209
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition) in c:\Projects\WebDriver\trunk\dotnet\src\support\UI\DefaultWait.cs:line 193
+   at AutomationLib.WebSelenium.FindElement(By by, Int32 TimeoutSec) in C:\SVN\UI_Automation\AutomationLib\WebSelenium.cs:line 44
+   at PrestigeClientEn.MainWebPage.ClickOnDownload() in C:\SVN\UI_Automation\prestigeClientEn\MainWebPage.cs:line 26
+   at PrestigeClientEn.PrestigeEN.PrestigeClientEnTest() in C:\SVN\UI_Automation\prestigeClientEn\PrestigeEnTest.cs:line 92

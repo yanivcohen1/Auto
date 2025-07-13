@@ -1,0 +1,47 @@
+in pom dir put file name "mkyongkeystore.jks"
+in main resource put file name "application.properties"
+server.port = 443
+server.ssl.key-store = mkyongkeystore.jks
+#server.ssl.key-store-password = secret
+server.ssl.key-password = pass
+
+server:
+    port: 8080
+    tomcat:
+        remote_ip_header: x-forwarded-for
+        protocol_header: x-forwarded-proto
+		
+"TestManager\src\main\webapp\scripts\components\util\bootswatch.service.js"
+return $http.get('https://api.bootswatch.com/3/').then(function (response) {
+
+"testmanager/src/main/java/com/who/auto/config/SecurityConfiguration.java"
+"rotected void configure(HttpSecurity http) throws Exception {"
+	//String profile = System.getProperty("spring.profiles.active");
+	//if (profile.contentEquals(Constants.SPRING_PROFILE_DEVELOPMENT)) {
+	
+	// Enforce HTTPS except on dev
+	if (env.acceptsProfiles("!"+Constants.SPRING_PROFILE_DEVELOPMENT) 
+			&& env.acceptsProfiles("!"+Constants.SPRING_PROFILE_FAST)){
+		http.requiresChannel().anyRequest().requiresSecure();
+	}
+		
+url is "https://127.0.0.1:8080/#/"
+
+velocty:
+in class RunJenkins
+@Autowired
+	private VelocityEngine engine;
+
+	in fun "private String buildTestsXML(List<Tests> tests, String suiteName) throws IOException {"
+		String templateFile = "TemplateOnlyTable.vm";
+		if (suiteName.contains("BAU Tests")) {
+			templateFile = "TemplateOnlyTable2.vm";
+		}
+		Map<String, Object> model = new HashMap<String, Object>();
+		model.put("tests", tests);
+		model.put("suiteName", suiteName);
+		String xmlReportNg = VelocityEngineUtils.mergeTemplateIntoString(this.engine,
+				"jenkins/"+ templateFile, "UTF-8", model);
+				
+	in /testmanager/src/main/resources/templates/jenkins/"
+	put TemplateOnlyTable.vm && TemplateOnlyTable2.vm

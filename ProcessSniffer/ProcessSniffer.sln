@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessSniffer", "ProcessSniffer\ProcessSniffer.csproj", "{1C6B9D8D-6BB7-4728-AD3B-048627B1B323}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tester", "Tester\Tester.csproj", "{9980BADC-EEF2-4187-8F15-0C62D110CE11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C6B9D8D-6BB7-4728-AD3B-048627B1B323}.Debug|x86.ActiveCfg = Debug|x86
+		{1C6B9D8D-6BB7-4728-AD3B-048627B1B323}.Debug|x86.Build.0 = Debug|x86
+		{1C6B9D8D-6BB7-4728-AD3B-048627B1B323}.Release|x86.ActiveCfg = Release|x86
+		{1C6B9D8D-6BB7-4728-AD3B-048627B1B323}.Release|x86.Build.0 = Release|x86
+		{9980BADC-EEF2-4187-8F15-0C62D110CE11}.Debug|x86.ActiveCfg = Debug|x86
+		{9980BADC-EEF2-4187-8F15-0C62D110CE11}.Debug|x86.Build.0 = Debug|x86
+		{9980BADC-EEF2-4187-8F15-0C62D110CE11}.Release|x86.ActiveCfg = Release|x86
+		{9980BADC-EEF2-4187-8F15-0C62D110CE11}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

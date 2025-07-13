@@ -1,0 +1,81 @@
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="myTestssLabel" jhiTranslate="testManagerApp.testss.home.createOrEditLabel">Create or edit a Testss</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!testss.id">
+            <label for="id" jhiTranslate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="testss.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="testManagerApp.testss.name" for="field_name">Name</label>
+            <input type="text" class="form-control" name="name" id="field_name"
+                [(ngModel)]="testss.name" required />
+            <div [hidden]="!(editForm.controls.name?.dirty && editForm.controls.name?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.name?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="testManagerApp.testss.val" for="field_val">Val</label>
+            <input type="number" class="form-control" name="val" id="field_val"
+                [(ngModel)]="testss.val" required />
+            <div [hidden]="!(editForm.controls.val?.dirty && editForm.controls.val?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.val?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+                <small class="form-text text-danger"
+                    [hidden]="!editForm.controls.val?.errors?.number" jhiTranslate="entity.validation.number">
+                    This field should be a number.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="testManagerApp.testss.enums" for="field_enums">Enums</label>
+            <select class="form-control" name="enums" [(ngModel)]="testss.enums" id="field_enums"  required>
+                <option value="one">{{'testManagerApp.Enums.one' | translate}}</option>
+                <option value="two">{{'testManagerApp.Enums.two' | translate}}</option>
+                <option value="three">{{'testManagerApp.Enums.three' | translate}}</option>
+            </select>
+            <div [hidden]="!(editForm.controls.enums?.dirty && editForm.controls.enums?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.enums?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="testManagerApp.testss.dates" for="field_dates">Dates</label>
+            <div class="input-group">
+                <input id="field_dates" type="text" class="form-control" name="dates" ngbDatepicker  #datesDp="ngbDatepicker" [(ngModel)]="testss.dates"
+                required/>
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-secondary" (click)="datesDp.toggle()"><i class="fa fa-calendar"></i></button>
+                </span>
+            </div>
+            <div [hidden]="!(editForm.controls.dates?.dirty && editForm.controls.dates?.invalid)">
+                <small class="form-text text-danger"
+                   [hidden]="!editForm.controls.dates?.errors?.required" jhiTranslate="entity.validation.required">
+                   This field is required.
+                </small>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

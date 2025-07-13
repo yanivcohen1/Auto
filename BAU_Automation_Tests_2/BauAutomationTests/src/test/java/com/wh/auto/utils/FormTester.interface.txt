@@ -1,0 +1,60 @@
+
+// initialize the driver and navigate to a page
+driver.get(someFormUrl)
+
+f = new WHForm("registration-form", driver);
+
+// read all the fields from the CSV file
+// the file looks like
+// *type | *name | *value/random | value type | value length
+f.getFieldsFromFile('some_file.csv');
+
+// random alpha-numeric value, length 5
+f.addField(new WHFieldText("id", WHField.RANDOM, WHField.RandomType_AlphaNumeric, 5));
+OR
+f.addField(Field.factory("text", "id", WHField.RANDOM, WHField.RandomType_AlphaNumeric, 5));
+
+// provide specific test
+f.addField(new WHFieldText("name", "Greg"));
+f.addField(new WHFieldText("family-name", WHField.RANDOM, WHField.RandomType_Alpha, 8));
+f.addField(new WHFieldText("phone", WHField.RANDOM, WHField.RandomType_Numeric, 10));
+
+// selectbox
+f.addField(new WHFieldSelect("country", WHField.RANDOM));
+
+// radio buttons
+f.addField(new WHFieldRadio("sex", WHField.RANDOM));
+
+// checkboxes
+f.addField(new WHFieldCheckbox("terms_agree1", WHField.RANDOM));
+f.addField(new WHFieldCheckbox("terms_agree2", true));
+f.addField(new WHFieldCheckbox("terms_agree3", false));
+
+// ??
+f.submit(new Function<WebDriver, boolean> { 
+	boolean apply(WebDriver driver) {
+		return (driver.getCurrentUrl() != someFormUrl);
+	}
+});
+
+
+--------------------------- initialization --------------------------------------
+
+// initialize the form
+f = new WHForm();
+
+// read the config from a file
+f.initialize('reg-form-config.ini');
+OR 
+// read list of configs (several tests on a file)
+f.initialize('reg-form-config.ini');
+
+
+------------------------- ini file -------------------------
+
+[form]
+url=https://safeverification.eurogrand.com/registration/register.php
+name=registration-form
+
+[cookies]
+

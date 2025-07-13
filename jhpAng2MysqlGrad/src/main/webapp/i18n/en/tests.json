@@ -1,0 +1,23 @@
+{
+    "testManagerApp": {
+        "tests" : {
+            "home": {
+                "title": "Tests",
+                "createLabel": "Create a new Tests",
+                "createOrEditLabel": "Create or edit a Tests",
+                "search": "Search for Tests"
+            },
+            "created": "A new Tests is created with identifier {{ param }}",
+            "updated": "A Tests is updated with identifier {{ param }}",
+            "deleted": "A Tests is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Tests {{ id }}?"
+            },
+            "detail": {
+                "title": "Tests"
+            },
+            "testName": "Test Name",
+            "suite": "Suite"
+        }
+    }
+}

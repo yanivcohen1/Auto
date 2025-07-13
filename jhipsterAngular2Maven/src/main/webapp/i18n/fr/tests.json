@@ -1,0 +1,27 @@
+{
+    "jhipsterAngular2MavenApp": {
+        "tests" : {
+            "home": {
+                "title": "Tests",
+                "createLabel": "Créer un nouveau Tests",
+                "createOrEditLabel": "Créer ou éditer un Tests",
+                "search": "Recherche pour Tests"
+            },
+            "created": "Un nouveau Tests a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Tests avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Tests avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Tests {{ id }} ?"
+            },
+            "detail": {
+                "title": "Tests"
+            },
+            "test_name": "Test Name",
+            "class_name": "Class Name",
+            "method_name": "Method Name",
+            "parameter_name": "Parameter Name",
+            "parameter_value": "Parameter Value",
+            "suite": "Suite"
+        }
+    }
+}

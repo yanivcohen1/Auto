@@ -1,0 +1,2 @@
+serviceClass: com.who.tlv.ServicesWebsites.client.GreetingService
+path: 63B93222EEC84BCEBE7AE287FA9E8E5A.gwt.rpc

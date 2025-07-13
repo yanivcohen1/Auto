@@ -1,0 +1,2 @@
+serviceClass: com.who.tlv.ServicesWebsites.client.MainService
+path: D19C0EB00D89030CD200631C099B2593.gwt.rpc

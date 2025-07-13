@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config />
+    <context:component-scan base-package="com.wh.auto"/>
+
+    <bean class="com.wh.auto.eurogrand.desktop.pages.MainWebPage" lazy-init="true">
+        <constructor-arg><ref bean="Browsers"/></constructor-arg>   
+<!--         <property name="browserType" value="firefox" /> -->
+        <property name="url" value="http://ads.eurogrand.com/redirect.aspx?pid=17213278&amp;lpid=1485379745&amp;bid=1485897945" />
+        <property name="language" value="http://www.eurogrand.com/ru" />
+    </bean>
+    
+    <bean class="com.wh.auto.eurogrand.desktop.TestDeposit">
+        <property name="browserType" value="chrome" />
+    </bean>
+       	   
+    <bean class="com.wh.auto.eurogrand.desktop.pages.RegisterPage" lazy-init="true">
+        <constructor-arg><ref bean="Browsers"/></constructor-arg>
+        <property name="gender" value="Mr" />
+        <property name="birthMonth" value="Январь" />
+        <property name="playersUsersName" value="\\PlayersUsersNames.txt" />
+        <property name="casinoName" value="eurograndWebRU" />
+        <property name="regBtnCss" value="#column-2 > div > a" />
+    </bean>
+    
+    <bean class="com.wh.auto.eurogrand.desktop.pages.DepositPage" lazy-init="true">
+        <constructor-arg><ref bean="Browsers"/></constructor-arg>
+        <property name="month" value="Jan" /> 
+    </bean>	
+    
+    <bean id="Browsers" class="com.wh.auto.common.Browsers">
+    </bean>
+    	    
+</beans>

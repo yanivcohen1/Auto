@@ -1,0 +1,27 @@
+<div class="customers ">
+    <div class="container">
+        <header>
+            <h3>New Suite</h3>
+        </header>
+        <div class="row">
+            <div class="span3">
+                Suite Name:
+                <br />
+                <input data-ng-model="newSuite.suiteName" type="text" placeholder="Suite Name">
+            </div>
+            <div class="span3">
+                XML File Location:
+                <br />
+                <input data-ng-model="newSuite.xmlFileLocation" type="text" placeholder="XML File Location">
+            </div>
+            <div class="span6">
+                Jenkins URL:
+                <br />
+                <input data-ng-model="newSuite.jenkinsURL" type="text" placeholder="Jenkins URL">
+				<button id="newSuite" class="btn btn-primary" type="button" 
+                    data-ng-disabled="!newSuite.suiteName || !newSuite.xmlFileLocation || !newSuite.jenkinsURL" 
+                    data-ng-click="insertSuite(newSuite.suiteName, newSuite.xmlFileLocation, newSuite.jenkinsURL)">Add Suites</button>
+            </div>
+        </div>
+    </div>
+</div>

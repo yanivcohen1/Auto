@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:annotation-config />
+    <context:component-scan base-package="com.wh.auto"/>
+
+    <bean class="com.wh.auto.nova21.desktop.pages.MainWebPage" lazy-init="true">
+        <constructor-arg><ref bean="Browsers"/></constructor-arg>   
+        <property name="url" value="http://serve.21nova.com/promoRedirect?member=goodaff&amp;campaign=DEFAULT&amp;channel=DEFAULT&amp;zone=853011616&amp;lp=0" />
+        <property name="language" value="http://www.21nova.com/" />
+        <property name="password" value="123456" />
+        <property name="userName" value="YY1005081227" />
+    </bean>
+    
+    <bean class="com.wh.auto.nova21.desktop.TestLogin21Nova">
+        <property name="browserType" value="chrome" />
+    </bean>
+    
+    <bean id="Browsers" class="com.wh.auto.common.Browsers">
+    </bean>
+    	    
+</beans>

@@ -1,0 +1,32 @@
+<table class="overviewTable">
+    <tr>
+    <th colspan="6" class="header suite">
+      <div class="suiteLinks">
+                      </div>
+      Empty
+    </th>
+  </tr>
+  <tr class="columnHeadings">
+    <td>&nbsp;</td>
+    <th>Duration</th>
+    <th>Passed</th>
+    <th>Skipped</th>
+    <th>Failed</th>
+    <th>Pass Rate</th>
+  </tr>
+  
+  <tr class="suite">
+    <td colspan="2" class="totalLabel">Total</td>
+
+        <td class="zero number">0</td>
+    
+        <td class="zero number">0</td>
+    
+        <td class="zero number">0</td>
+    
+    <td class="passRate suite">
+            N/A
+          </td>
+
+  </tr>
+</table>

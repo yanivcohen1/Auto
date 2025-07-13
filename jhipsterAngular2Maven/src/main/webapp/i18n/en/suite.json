@@ -1,0 +1,25 @@
+{
+    "jhipsterAngular2MavenApp": {
+        "suite" : {
+            "home": {
+                "title": "Suites",
+                "createLabel": "Create a new Suite",
+                "createOrEditLabel": "Create or edit a Suite",
+                "search": "Search for Suite"
+            },
+            "created": "A new Suite is created with identifier {{ param }}",
+            "updated": "A Suite is updated with identifier {{ param }}",
+            "deleted": "A Suite is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Suite {{ id }}?"
+            },
+            "detail": {
+                "title": "Suite"
+            },
+            "suite_name": "Suite Name",
+            "xml_file_location": "Xml File Location",
+            "jenkins_url": "Jenkins Url",
+            "tests": "Tests"
+        }
+    }
+}

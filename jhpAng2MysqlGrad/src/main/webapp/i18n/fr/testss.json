@@ -1,0 +1,25 @@
+{
+    "testManagerApp": {
+        "testss" : {
+            "home": {
+                "title": "Testsses",
+                "createLabel": "Créer un nouveau Testss",
+                "createOrEditLabel": "Créer ou éditer un Testss",
+                "search": "Recherche pour Testss"
+            },
+            "created": "Un nouveau Testss a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Testss avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Testss avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Testss {{ id }} ?"
+            },
+            "detail": {
+                "title": "Testss"
+            },
+            "name": "Name",
+            "val": "Val",
+            "enums": "Enums",
+            "dates": "Dates"
+        }
+    }
+}

@@ -1,0 +1,9 @@
+D:\git\kafka.pubsub.console\bin\Debug\netcoreapp1.1\kafka.pubsub.console.deps.json
+D:\git\kafka.pubsub.console\bin\Debug\netcoreapp1.1\kafka.pubsub.console.runtimeconfig.json
+D:\git\kafka.pubsub.console\bin\Debug\netcoreapp1.1\kafka.pubsub.console.runtimeconfig.dev.json
+D:\git\kafka.pubsub.console\bin\Debug\netcoreapp1.1\kafka.pubsub.console.dll
+D:\git\kafka.pubsub.console\bin\Debug\netcoreapp1.1\kafka.pubsub.console.pdb
+D:\git\kafka.pubsub.console\obj\Debug\netcoreapp1.1\kafka.pubsub.console.AssemblyInfo.cs
+D:\git\kafka.pubsub.console\obj\Debug\netcoreapp1.1\kafka.pubsub.console.dll
+D:\git\kafka.pubsub.console\obj\Debug\netcoreapp1.1\kafka.pubsub.console.pdb
+D:\git\kafka.pubsub.console\obj\Debug\netcoreapp1.1\kafka.pubsub.console.csprojResolveAssemblyReference.cache

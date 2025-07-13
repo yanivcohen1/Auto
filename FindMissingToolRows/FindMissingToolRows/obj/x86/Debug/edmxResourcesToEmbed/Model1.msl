@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AutomationModelStoreContainer" CdmEntityContainer="AutomationEntities">
+    <EntitySetMapping Name="BRAND">
+      <EntityTypeMapping TypeName="AutomationModel.BRAND">
+        <MappingFragment StoreEntitySet="BRAND">
+          <ScalarProperty Name="Brand_ID" ColumnName="Brand_ID" />
+          <ScalarProperty Name="Brand_Name" ColumnName="Brand_Name" />
+          <ScalarProperty Name="Brand_Symbol" ColumnName="Brand_Symbol" />
+          <ScalarProperty Name="Brand_Main_URL" ColumnName="Brand_Main_URL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BRAND_LANGUAGE">
+      <EntityTypeMapping TypeName="AutomationModel.BRAND_LANGUAGE">
+        <MappingFragment StoreEntitySet="BRAND_LANGUAGE">
+          <ScalarProperty Name="Brand_Language_ID" ColumnName="Brand_Language_ID" />
+          <ScalarProperty Name="Brand_ID" ColumnName="Brand_ID" />
+          <ScalarProperty Name="Currency_ID" ColumnName="Currency_ID" />
+          <ScalarProperty Name="Language_ID" ColumnName="Language_ID" />
+          <ScalarProperty Name="Notification_ID" ColumnName="Notification_ID" />
+          <ScalarProperty Name="Brand_Language_URL_Template" ColumnName="Brand_Language_URL_Template" />
+          <ScalarProperty Name="Brand_Language_Priority" ColumnName="Brand_Language_Priority" />
+          <ScalarProperty Name="Group_Number" ColumnName="Group_Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BrandsResult">
+      <EntityTypeMapping TypeName="AutomationModel.BrandsResult">
+        <MappingFragment StoreEntitySet="BrandsResult">
+          <ScalarProperty Name="Brand_Result_ID" ColumnName="Brand_Result_ID" />
+          <ScalarProperty Name="Brand_ID" ColumnName="Brand_ID" />
+          <ScalarProperty Name="Tool_Name" ColumnName="Tool_Name" />
+          <ScalarProperty Name="Tool_Result" ColumnName="Tool_Result" />
+          <ScalarProperty Name="Tool_last_Run_Date" ColumnName="Tool_last_Run_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tool">
+      <EntityTypeMapping TypeName="AutomationModel.Tool">
+        <MappingFragment StoreEntitySet="Tool">
+          <ScalarProperty Name="Tool_ID" ColumnName="Tool_ID" />
+          <ScalarProperty Name="Brand_Language_ID" ColumnName="Brand_Language_ID" />
+          <ScalarProperty Name="Tool_Name" ColumnName="Tool_Name" />
+          <ScalarProperty Name="Tool_Type" ColumnName="Tool_Type" />
+          <ScalarProperty Name="Tool_Description" ColumnName="Tool_Description" />
+          <ScalarProperty Name="Tool_SMS_Message_Format" ColumnName="Tool_SMS_Message_Format" />
+          <ScalarProperty Name="Tool_Email_Message_Format" ColumnName="Tool_Email_Message_Format" />
+          <ScalarProperty Name="Tool_Argument" ColumnName="Tool_Argument" />
+          <ScalarProperty Name="Tool_FilePath" ColumnName="Tool_FilePath" />
+          <ScalarProperty Name="Tool_IPAddress" ColumnName="Tool_IPAddress" />
+          <ScalarProperty Name="Group_Number" ColumnName="Group_Number" />
+          <ScalarProperty Name="Tool_TimeOut" ColumnName="Tool_TimeOut" />
+          <ScalarProperty Name="Tool_Run_Order" ColumnName="Tool_Run_Order" />
+          <ScalarProperty Name="Tool_Start_Time" ColumnName="Tool_Start_Time" />
+          <ScalarProperty Name="EstimateRunTimeMin" ColumnName="EstimateRunTimeMin" />
+          <ScalarProperty Name="RunFreqMinutes" ColumnName="RunFreqMinutes" />
+          <ScalarProperty Name="ParallelEnable" ColumnName="ParallelEnable" />
+          <ScalarProperty Name="IsSkip" ColumnName="IsSkip" />
+          <ScalarProperty Name="IsRunning" ColumnName="IsRunning" />
+          <ScalarProperty Name="Running" ColumnName="Running" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TOOL_RESULT">
+      <EntityTypeMapping TypeName="AutomationModel.TOOL_RESULT">
+        <MappingFragment StoreEntitySet="TOOL_RESULT">
+          <ScalarProperty Name="Tool_Result_ID" ColumnName="Tool_Result_ID" />
+          <ScalarProperty Name="Tool_ID" ColumnName="Tool_ID" />
+          <ScalarProperty Name="Tool_Result_Result" ColumnName="Tool_Result_Result" />
+          <ScalarProperty Name="Tool_Result_Description" ColumnName="Tool_Result_Description" />
+          <ScalarProperty Name="Tool_Result_Last_Pass_Date" ColumnName="Tool_Result_Last_Pass_Date" />
+          <ScalarProperty Name="id_temp" ColumnName="id_temp" />
+          <ScalarProperty Name="Tool_Result_Last_Run_Date" ColumnName="Tool_Result_Last_Run_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,82 @@
+﻿//This handles retrieving data and is used by controllers. 3 options (server, factory, provider) with 
+//each doing the same thing just structuring the functions/data differently.
+app.service('testsService', function ($resource, $rootScope) {
+
+    var Tests;
+
+    this.setTests = function (Testss) {
+        Tests = Testss;
+    };
+
+    this.getTests = function () {
+        return Tests
+    };
+
+    this.readTests = function ($resource) {
+        return $resource('rest/tests/readAllTests/:id', { id: '@id' }, {
+            query: { //'query':   {method:'Get'}
+                method: 'GET',
+                params: {},
+                isArray: false,
+                headers: { 'X-Auth-Token': $rootScope.authToken }
+            }
+        })
+    };
+
+    this.saveTests = function ($resource) {
+        return $resource('rest/tests/updateTests', {}, {
+            save: { method: 'POST',
+                headers: { 'X-Auth-Token': $rootScope.authToken } 
+            	}
+        })
+    };
+
+    this.deleteTest = function ($resource) {
+        return $resource('rest/tests/deleteTest/:id', { id: '@id' }, {
+            query: {
+                method: 'GET',
+                params: {},
+                isArray: false,
+                headers: { 'X-Auth-Token': $rootScope.authToken }
+            }
+        })
+    };
+
+    this.newTest = function ($resource) {
+        return $resource('rest/tests/newTest', {}, {
+            save: { method: 'POST',
+                headers: { 'X-Auth-Token': $rootScope.authToken } 
+            	}
+        })
+    };
+
+    this.updateTest = function ($resource) {
+        return $resource('rest/tests/updateTest', {}, {
+            save: { method: 'POST',
+                headers: { 'X-Auth-Token': $rootScope.authToken } 
+            	}
+        })
+    };
+    
+    this.insertTest = function (firstName, lastName, city) {
+        var topID = Tests.length + 1;
+        Tests.push({
+            id: topID,
+            firstName: firstName,
+            lastName: lastName,
+            city: city
+        });
+    };
+
+    this.getTest = function (id) {
+        for (var i = 0; i < Tests.length; i++) {
+            if (Tests[i].id === id) {
+                return Tests[i];
+            }
+        }
+        return null;
+    };
+    //var Tests = [{ suiteId: 1, suiteName: "BAU Tests", xmlFileLocation: "C:\\Tomcat\\webapps\\RunSuiteSelectedTests\\BauAutomationTests\\testngClientsDebug.xml", jenkinsURL: "http://172.21.54.222:8080/view/BAU/job/BAU-Tests_debug/"},
+       // {suiteId: 2, suiteName: "BAU Tests Secend", xmlFileLocation: "C:\\Tomcat\\webapps\\RunSuiteSelectedTests\\BauAutomationTests\\testngBAUDebug.xml", jenkinsURL: "http://172.21.54.222:8080/view/BAU/job/BAU-Tests_Branch_debug/"}];
+
+});

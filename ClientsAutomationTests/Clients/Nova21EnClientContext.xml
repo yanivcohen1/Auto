@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net" >
+  <description>21nova casino Client En Context</description>
+
+  <!--<object type="Spring.Objects.Factory.Config.VariablePlaceholderConfigurer, Spring.Core">
+    <property name="VariableSources">
+      <list>
+        <object type="Spring.Objects.Factory.Config.ConnectionStringsVariableSource, Spring.Core" />
+        <object type="Spring.Objects.Factory.Config.ConfigSectionVariableSource, Spring.Core">
+          --><!-- Sections to read, sepearated by comma (leave out spaces) --><!--
+          <property name="SectionNames"
+                    value="appSettings,userSettings/com.who.tests.Properties.Settings" />
+          --><!--applicationSettings/com.who.tests.Properties.Settings,--><!--
+        </object>
+      </list>
+    </property>
+  </object>-->
+  
+  <object id="MainWebPage" type="com.who.tests.clients.MainWebPage, com.who.tests.clients" init-method="init" >
+    <constructor-arg name="webSelenium" ref="WebSelenium"/>
+    <property name="URL_Main" value="http://serve.21nova.com/promoRedirect?member=goodaff&amp;campaign=DEFAULT&amp;channel=DEFAULT&amp;zone=853011616&amp;lp=0"/>
+  </object>
+
+  <object id="WebSelenium" type="AutomationLib.WebSelenium, AutomationLib">
+    <!--<constructor-arg name="driverType" value="chrome" />--><!--value="${Driver}"/>-->
+  </object>
+
+  <object id="LanguagePage" type="com.who.tests.clients.LanguagePage, com.who.tests.clients" >
+    <constructor-arg name="webSelenium" ref="WebSelenium"/>
+    <property name="Next" value="CONTINUE"/>
+    <property name="WinClass" value="PT_installerTopFramWnd21_0"/>
+  </object>
+
+  <object id="LicensePage" type="com.who.tests.clients.LicensePage, com.who.tests.clients" >
+    <property name="Next" value="Next"/>
+  </object>
+
+  <object id="FinishPage" type="com.who.tests.clients.FinishPage, com.who.tests.clients" >
+    <property name="Done" value="Done"/>
+  </object>
+
+  <object id="GameModePage" type="com.who.tests.clients.GameModePage, com.who.tests.clients" >
+    <property name="Points" ref="GameModePoints"/>
+  </object>
+
+  <object id="GameModePoints" type="System.Drawing.Point, System.Drawing" >
+    <constructor-arg name="X" value="393"/>
+    <constructor-arg name="Y" value="423"/>
+  </object>
+
+  <object id="JoinNowPage" type="com.who.tests.clients.JoinNowPage, com.who.tests.clients" >
+    <property name="Points" ref="JoinNowPoints"/>
+  </object>
+
+  <object id="JoinNowPoints" type="System.Drawing.Point, System.Drawing" >
+    <constructor-arg name="X" value="635"/>
+    <constructor-arg name="Y" value="536"/>
+  </object>
+  
+  <object id="RegistrationPage" type="com.who.tests.clients.RegistrationPage, com.who.tests.clients" init-method="init" lazy-init="true">
+    <property name="Next" value="next >>"/>
+    <property name="FirstName" value="WHO"/>
+    <property name="LastName" value="QA"/>
+    <property name="Email" value="test@playtech.com"/>
+    <property name="DayOfBirth" value="01"/>
+    <property name="MounthOfBirth" value="Jan"/>
+    <property name="YearOfBirth" value="1973"/>
+    <property name="Address" value="Addr"/>
+    <property name="State" value="State"/>
+    <property name="PostalCode" value="1234"/>
+    <property name="PhoneNumber" value="1234567"/>
+    <property name="MobileNumber" value="1234567"/>
+    <property name="SelectCountry" value="United Kingdom"/>
+    <property name="City" value="city"/>
+    <property name="Password" value="123456"/>
+    <property name="Create" value="C R E A T E"/>
+  </object>
+
+  <object id="CongratulationsPage" type="com.who.tests.clients.CongratulationsPage, com.who.tests.clients" >
+    <property name="Continue" value="CONTINUE"/>
+    <property name="UserName" value="Your Username is: "/>
+    <property name="PlayersUsersFile" value="Nova21ClientEn"/>
+  </object>
+
+  <object id="PopupMsgPage" type="com.who.tests.clients.PopupMsgPage, com.who.tests.clients" >
+    <property name="DearWHO" value="Dear WHO"/>
+    <property name="Points" ref="PopupMsgPoints"/>
+  </object>
+
+  <object id="PopupMsgPoints" type="System.Drawing.Point, System.Drawing" >
+    <constructor-arg name="X" value="420"/>
+    <constructor-arg name="Y" value="287"/>
+  </object>
+
+  <object id="CashierPage" type="com.who.tests.clients.CashierPage, com.who.tests.clients" >
+    <property name="SaveDetails" value="Save details and deposit"/>
+    <property name="AmountToDeposit" value=""/>
+    <property name="CardNumber" value="1111111111111111"/>
+    <property name="CVV2" value="111"/>
+    <property name="State" value="State"/>
+    <property name="CardType" value="Visa Delta"/>
+    <property name="ExpirationMounth" value="01"/>
+    <property name="ExpirationYear" value="2023"/>
+    <property name="SelectCountry" value="United Kingdom"/>
+    <property name="DepositApproved" value="Your deposit has been approved and will be charged as WH Online.Thank you and good luck!"/>
+    <property name="SuccessRegister" value="OK"/>
+    <property name="CashierPoints" ref="CashierPoints"/>
+    <property name="BonusPoints" ref="BonusPoints"/>
+    <property name="ApproveMsgPoints" ref="ApproveMsgPoints"/>
+  </object>
+
+  <object id="CashierPoints" type="System.Drawing.Point, System.Drawing" >
+    <constructor-arg name="X" value="433"/>
+    <constructor-arg name="Y" value="115"/>
+  </object>
+
+  <object id="BonusPoints" type="System.Drawing.Point, System.Drawing" >
+    <constructor-arg name="X" value="290"/>
+    <constructor-arg name="Y" value="289"/>
+  </object>
+
+  <object id="ApproveMsgPoints" type="System.Drawing.Point, System.Drawing" >
+    <constructor-arg name="X" value="238"/>
+    <constructor-arg name="Y" value="290"/>
+  </object>
+
+  <object id="DepositPage" type="com.who.tests.clients.DepositPage, com.who.tests.clients" >
+    <property name="DepositText" value="D E P O S I T"/>
+    <property name="AmountToDeposit" value="100"/>
+    <property name="CVV2" value="111"/>
+    <property name="DepositApproved" value="Your deposit has been approved and will be charged as WH Online.Thank you and good luck!"/>
+    <property name="CurrentBalance" value="Current Balance:"/><!--Current Balance:-->
+    <property name="BonusPoints" ref="BonusPoints"/>
+    <property name="ApproveMsgPoints" ref="ApproveMsgPoints"/>
+  </object>
+  
+  <object type="Spring.Objects.Factory.Attributes.RequiredAttributeObjectPostProcessor, Spring.Core"/>
+
+</objects>

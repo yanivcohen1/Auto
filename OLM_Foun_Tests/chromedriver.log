@@ -1,0 +1,97 @@
+[0.002][INFO]:      ChromeDriver 23.0.1240.0 C:\SVN\OLM_Foun_Tests\target\test-classes\chromedriver.exe
+[0.909][FINE]:      Initializing session with capabilities {
+   "browserName": "chrome",
+   "chrome.switches": [ "--disable-extensions", "--user-agent=Mozilla/5.0 (Linux; U; Android 2.2; en-ca; GT-P1000M Build/FROYO) AppleWebKit/533.1 ..." ],
+   "chromeOptions": {
+      "args": [ "--disable-extensions", "--user-agent=Mozilla/5.0 (Linux; U; Android 2.2; en-ca; GT-P1000M Build/FROYO) AppleWebKit/533.1 ..." ],
+      "extensions": [  ]
+   },
+   "platform": "ANY",
+   "version": ""
+}
+
+[0.910][INFO]:      Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --enable-logging --log-level=1 --disable-hang-monitor --disable-prompt-on-repost --dom-automation --full-memory-crash-report --no-default-browser-check --no-first-run --disable-background-networking --disable-sync --disable-translate --disable-web-resources --safebrowsing-disable-auto-update --safebrowsing-disable-download-protection --disable-client-side-phishing-detection --disable-component-update --disable-default-apps --ignore-certificate-errors --disable-extensions --user-agent="Mozilla/5.0 (Linux; U; Android 2.2; en-ca; GT-P1000M Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1" about:blank
+[2.046][INFO]:      Connected to Chrome successfully. Version: 28.0.1500.95
+[2.076][FINE]:      Command received (/session/1d7f4dda34642419b169baea651a70ac)
+[2.077][FINE]:      Command finished (/session/1d7f4dda34642419b169baea651a70ac) with response {
+   "sessionId": "1d7f4dda34642419b169baea651a70ac",
+   "status": 0,
+   "value": {
+      "acceptSslCerts": false,
+      "applicationCacheEnabled": false,
+      "browserConnectionEnabled": false,
+      "browserName": "chrome",
+      "chrome.chromedriverVersion": "23.0.1240.0",
+      "chrome.nativeEvents": false,
+      "cssSelectorsEnabled": true,
+      "databaseEnabled": false,
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "locationContextEnabled": false,
+      "nativeEvents": true,
+      "platform": "windows",
+      "rotatable": false,
+      "takesScreenshot": true,
+      "version": "28.0.1500.95",
+      "webStorageEnabled": true
+   }
+}
+
+[2.086][FINE]:      Command received (/session/1d7f4dda34642419b169baea651a70ac/timeouts/implicit_wait) with params {
+   "ms": 5000
+}
+
+[2.086][FINER]:     Waiting for all views to stop loading...
+[2.086][FINER]:     Done waiting for all views to stop loading
+[2.086][FINER]:     Waiting for all views to stop loading...
+[2.086][FINER]:     Done waiting for all views to stop loading
+[2.086][FINE]:      Command finished (/session/1d7f4dda34642419b169baea651a70ac/timeouts/implicit_wait) with response {
+   "sessionId": "1d7f4dda34642419b169baea651a70ac",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[2.091][FINE]:      Command received (/session/1d7f4dda34642419b169baea651a70ac/cookie)
+[2.091][FINER]:     Waiting for all views to stop loading...
+[2.091][FINER]:     Done waiting for all views to stop loading
+[2.130][FINER]:     Waiting for all views to stop loading...
+[2.131][FINER]:     Done waiting for all views to stop loading
+[2.132][FINE]:      Command finished (/session/1d7f4dda34642419b169baea651a70ac/cookie) with response {
+   "sessionId": "1d7f4dda34642419b169baea651a70ac",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[2.135][FINE]:      Command received (/session/1d7f4dda34642419b169baea651a70ac/window_handle)
+[2.135][FINER]:     Waiting for all views to stop loading...
+[2.137][FINER]:     Done waiting for all views to stop loading
+[2.137][FINER]:     Waiting for all views to stop loading...
+[2.137][FINER]:     Done waiting for all views to stop loading
+[2.137][FINE]:      Command finished (/session/1d7f4dda34642419b169baea651a70ac/window_handle) with response {
+   "sessionId": "1d7f4dda34642419b169baea651a70ac",
+   "status": 0,
+   "value": "f1-2"
+}
+
+[7.144][FINE]:      Command received (/session/1d7f4dda34642419b169baea651a70ac/url) with params {
+   "url": "http://serve.eurogrand.com/promoRedirect?member=goodaff&campaign=DEFAULT&channel=DEFAULT&zone=141..."
+}
+
+[7.144][FINER]:     Waiting for all views to stop loading...
+[7.145][FINER]:     Done waiting for all views to stop loading
+[17.590][FINER]:    Waiting for all views to stop loading...
+[17.591][FINER]:    Done waiting for all views to stop loading
+[17.592][FINE]:     Command finished (/session/1d7f4dda34642419b169baea651a70ac/url) with response {
+   "sessionId": "1d7f4dda34642419b169baea651a70ac",
+   "status": 0,
+   "value": {
+
+   }
+}
+
+[22.805][FINE]:     Command received (/session/1d7f4dda34642419b169baea651a70ac)
+[23.168][INFO]:     Chrome shutdown
